@@ -277,6 +277,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enumvalues_7a
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/enumvalues_7a.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/files_65.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/files_65.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/files_67.js...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/files_67.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/files_70.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/files_70.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/functions_62.js...
@@ -365,9 +367,7 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsItem.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsItem.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsLine.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsLine.cpp...
-Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPoint.cpp...
-Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPoint.cpp...
-Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hp/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:14: warning: Compound Window is not documented.
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPoint./home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:14: warning: Compound Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:7: warning: Compound GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsRectangle.hpp:7: warning: Compound GraphicsRectangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:7: warning: Compound Canvas is not documented.
@@ -376,7 +376,6 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hp/ho
 /home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp:8: warning: Compound Color is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsPolygon.hpp:7: warning: Compound GraphicsPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:7: warning: Compound GraphicsLine is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:7: warning: Compound GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp:7: warning: Compound GraphicsAnchor is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:9: warning: Compound GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:9099: warning: no uniquely matching class member found for 
@@ -460,7 +459,9 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hp/ho
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:9213: warning: no matching class member found for 
   void EZPixmap::tile(EZWindow &win, int x, int y, int w, int h) const
 
-p...
+cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPoint.cpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsRectangle.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsRectangle.cpp...
@@ -537,18 +538,16 @@ Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/Graphi
 Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp...
 Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp...
 Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp...
-Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp...
-Generating file documentation...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/ez-l/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:111: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:111: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+Generating code for file /ho/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:115: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:115: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
   parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:133: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:133: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:133: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:137: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:137: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:137: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
   parameter 'p'
   parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:144: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:144: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:148: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:148: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
   parameter 'p'
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member Canvas(EZWindow &window) (function) of class Canvas is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:11: warning: Member width() const  (function) of class Canvas is not documented.
@@ -650,23 +649,22 @@ Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/ez-l/home/trav
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp:11: warning: Member type() const  (function) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp:16: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp:19: warning: Member m_points (variable) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:9: warning: Member GraphicsText(GraphicsItem *parent=nullptr) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:10: warning: Member GraphicsText(const std::string &text, GraphicsItem *parent=nullptr) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:12: warning: Member text() const  (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:16: warning: Member setText(const std::string &text="") (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:20: warning: Member align() const  (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:24: warning: Member setAlign(const EZAlign align=EZAlign::TL) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:28: warning: Member type() const  (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:33: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:34: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsText is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:60: warning: Member align() const  (function) of class GraphicsText is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:62: warning: Member setAlign(const EZAlign align=EZAlign::TL) (function) of class GraphicsText is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:64: warning: Member type() const  (function) of class GraphicsText is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:68: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsText is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:69: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:9: warning: Member GraphicsTriangle(GraphicsItem *parent=nullptr) (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:11: warning: Member first() (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:15: warning: Member second() (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:19: warning: Member third() (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp:23: warning: Member type() const  (function) of class GraphicsTriangle is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:62: warning: argument 'x' of command @param is not found in the argument list of Point::x()
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:70: warning: argument 'y' of command @param is not found in the argument list of Point::y()
-ib/ez-draw++.hpp...
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:66: warning: argument 'x' of command @param is not found in the argument list of Point::x()
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:74: warning: argument 'y' of command @param is not found in the argument list of Point::y()
+me/travis/build/L0L022/SuperProjetCPP/include/Window.hpp...
+Generating file documentation...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.hpp...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp...
 Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp...
 Generating page documentation...
 Generating group documentation...
@@ -706,54 +704,56 @@ Generating file member index...
 Generating example index...
 finalizing index lists...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/34
-Running dot for graph 2/34
-Running dot for graph 3/34
-Running dot for graph 4/34
-Running dot for graph 5/34
-Running dot for graph 6/34
-Running dot for graph 7/34
-Running dot for graph 8/34
-Running dot for graph 9/34
-Running dot for graph 10/34
-Running dot for graph 11/34
-Running dot for graph 12/34
-Running dot for graph 13/34
-Running dot for graph 14/34
-Running dot for graph 15/34
-Running dot for graph 16/34
-Running dot for graph 17/34
-Running dot for graph 18/34
-Running dot for graph 19/34
-Running dot for graph 20/34
-Running dot for graph 21/34
-Running dot for graph 22/34
-Running dot for graph 23/34
-Running dot for graph 24/34
-Running dot for graph 25/34
-Running dot for graph 26/34
-Running dot for graph 27/34
-Running dot for graph 28/34
-Running dot for graph 29/34
-Running dot for graph 30/34
-Running dot for graph 31/34
-Running dot for graph 32/34
-Running dot for graph 33/34
-Running dot for graph 34/34
-Patching output file 1/14
-Patching output file 2/14
-Patching output file 3/14
-Patching output file 4/14
-Patching output file 5/14
-Patching output file 6/14
-Patching output file 7/14
-Patching output file 8/14
-Patching output file 9/14
-Patching output file 10/14
-Patching output file 11/14
-Patching output file 12/14
-Patching output file 13/14
-Patching output file 14/14
-symbol cache used 784/65536 hits=35812 misses=784
-lookup cache used 733/65536 hits=3120 misses=744
+Running dot for graph 1/35
+Running dot for graph 2/35
+Running dot for graph 3/35
+Running dot for graph 4/35
+Running dot for graph 5/35
+Running dot for graph 6/35
+Running dot for graph 7/35
+Running dot for graph 8/35
+Running dot for graph 9/35
+Running dot for graph 10/35
+Running dot for graph 11/35
+Running dot for graph 12/35
+Running dot for graph 13/35
+Running dot for graph 14/35
+Running dot for graph 15/35
+Running dot for graph 16/35
+Running dot for graph 17/35
+Running dot for graph 18/35
+Running dot for graph 19/35
+Running dot for graph 20/35
+Running dot for graph 21/35
+Running dot for graph 22/35
+Running dot for graph 23/35
+Running dot for graph 24/35
+Running dot for graph 25/35
+Running dot for graph 26/35
+Running dot for graph 27/35
+Running dot for graph 28/35
+Running dot for graph 29/35
+Running dot for graph 30/35
+Running dot for graph 31/35
+Running dot for graph 32/35
+Running dot for graph 33/35
+Running dot for graph 34/35
+Running dot for graph 35/35
+Patching output file 1/15
+Patching output file 2/15
+Patching output file 3/15
+Patching output file 4/15
+Patching output file 5/15
+Patching output file 6/15
+Patching output file 7/15
+Patching output file 8/15
+Patching output file 9/15
+Patching output file 10/15
+Patching output file 11/15
+Patching output file 12/15
+Patching output file 13/15
+Patching output file 14/15
+Patching output file 15/15
+symbol cache used 785/65536 hits=36031 misses=785
+lookup cache used 738/65536 hits=3125 misses=749
 finished...

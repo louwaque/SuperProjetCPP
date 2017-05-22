@@ -20,7 +20,8 @@ var searchData=
   ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'']]],
   ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html',1,'']]],
   ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html',1,'']]],
-  ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'']]],
+  ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'GraphicsText'],['../class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb',1,'GraphicsText::GraphicsText(GraphicsItem *parent=nullptr)'],['../class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1',1,'GraphicsText::GraphicsText(const std::string &amp;text, GraphicsItem *parent=nullptr)']]],
+  ['graphicstext_2ehpp',['GraphicsText.hpp',['../_graphics_text_8hpp.html',1,'']]],
   ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]],
   ['grave',['grave',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa76c4e7221ad9f2d4adb3067fcd80ab22',1,'ez-draw++.hpp']]],
   ['greater',['greater',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f31a90b8246ac0f00abb35e86f9b644',1,'ez-draw++.hpp']]]

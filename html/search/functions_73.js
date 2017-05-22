@@ -13,6 +13,7 @@ var searchData=
   ['setheight',['setHeight',['../class_e_z_window.html#ae45be05d689d48c882bbd3a1d67e8aa4',1,'EZWindow']]],
   ['setopacity',['setOpacity',['../classfinal.html#a9d817ae0dca397d0a1315ab12b38cb11',1,'final']]],
   ['setred',['setRed',['../class_e_z_pixel.html#aafe5cf0a9796b21ea2fc061fad404356',1,'EZPixel']]],
+  ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText']]],
   ['setthick',['setThick',['../class_e_z_window.html#a31a362d21d8238b16849fa1e680b0ac9',1,'EZWindow']]],
   ['setvisible',['setVisible',['../class_e_z_window.html#a3cc6f680a1c80db6d4922dc7f0223e01',1,'EZWindow']]],
   ['setwidth',['setWidth',['../class_e_z_window.html#ab4d14a03692491c9ae222f461dd18195',1,'EZWindow']]],
