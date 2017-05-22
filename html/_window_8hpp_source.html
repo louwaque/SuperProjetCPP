@@ -136,8 +136,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00037"></a>00037     GraphicsTriangle *triangle = <span class="keyword">new</span> GraphicsTriangle(&amp;m_scene);
 <a name="l00038"></a>00038     triangle-&gt;setFill(<span class="keyword">true</span>);
 <a name="l00039"></a>00039     triangle-&gt;setAbsolute({200, 20});
-<a name="l00040"></a>00040     triangle-&gt;second()-&gt;setAnchor(<a class="code" href="class_point.html">Point</a>(-30, 30));
-<a name="l00041"></a>00041     triangle-&gt;third()-&gt;setAnchor(<a class="code" href="class_point.html">Point</a>(30, 30));
+<a name="l00040"></a>00040     triangle-&gt;second()-&gt;setAnchor(<a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a>(-30, 30));
+<a name="l00041"></a>00041     triangle-&gt;third()-&gt;setAnchor(<a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a>(30, 30));
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043     <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a> *rectangle = <span class="keyword">new</span> <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a>(&amp;m_scene);
 <a name="l00044"></a>00044     rectangle-&gt;setThick(5);
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00062"></a>00062 
 <a name="l00063"></a><a class="code" href="class_window.html#aad4f41a37910148f956cd6ec9001931b">00063</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#aad4f41a37910148f956cd6ec9001931b">buttonPress</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> button) {
 <a name="l00064"></a>00064     <span class="keywordflow">for</span> (<a class="code" href="class_graphics_item.html">GraphicsItem</a> *item : m_scene.children(GraphicsItem::PointType)) {
-<a name="l00065"></a>00065       <span class="keywordflow">if</span> (item-&gt;isOver(<a class="code" href="class_point.html">Point</a>(x, y)))
+<a name="l00065"></a>00065       <span class="keywordflow">if</span> (item-&gt;isOver(<a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a>(x, y)))
 <a name="l00066"></a>00066         currentItem = item;
 <a name="l00067"></a>00067     }
 <a name="l00068"></a>00068   }
@@ -172,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00073"></a>00073 
 <a name="l00074"></a><a class="code" href="class_window.html#ad0a8148d056f6ae1783ab85dfeba6cbd">00074</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#ad0a8148d056f6ae1783ab85dfeba6cbd">motionNotify</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> button) {
 <a name="l00075"></a>00075     <span class="keywordflow">if</span> (currentItem) {
-<a name="l00076"></a>00076       currentItem-&gt;setAbsolute(<a class="code" href="class_point.html">Point</a>(x, y));
+<a name="l00076"></a>00076       currentItem-&gt;setAbsolute(<a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a>(x, y));
 <a name="l00077"></a>00077     }
 <a name="l00078"></a>00078     <a class="code" href="class_e_z_window.html#aab29a1993f91401c24be962223652e5d">sendExpose</a>();
 <a name="l00079"></a>00079   }
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><b>Window.hpp</b>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 09:55:44 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 11:05:25 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

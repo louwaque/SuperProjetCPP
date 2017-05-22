@@ -110,6 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html">Point</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente un point (x, y)  <a href="class_point.html#details">Plus de détails...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_point_8hpp.html#a872cb140a1e5f546a31b4b3d891b765a">operator==</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafec48674e69529e52b1724bc9164052f">l</a>, const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1381d2948406a6e29d37e72937824957">r</a>)</td></tr>
@@ -129,10 +130,9 @@ Fonctions</h2></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
 <div class="textblock"><p>Classe point. </p>
-<dl class="author"><dt><b>Auteur:</b></dt><dd>Loic Escaless, Leo Sudreau </dd></dl>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Loïc Escales, Leo Sudreau </dd></dl>
 <dl class="version"><dt><b>Version:</b></dt><dd>0.1 </dd></dl>
-<dl class="date"><dt><b>Date:</b></dt><dd>22 mai 2017</dd></dl>
-<p>Classe permettant la creation de points. </p>
+<dl class="date"><dt><b>Date:</b></dt><dd>22 mai 2017 </dd></dl>
 </div><hr/><h2>Documentation des fonctions</h2>
 <a class="anchor" id="a4158330ef851082d91a82eefd03aa183"></a><!-- doxytag: member="Point.hpp::operator+" ref="a4158330ef851082d91a82eefd03aa183" args="(const Point &amp;l, const Point &amp;r)" -->
 <div class="memitem">
@@ -161,7 +161,13 @@ Fonctions</h2></td></tr>
 
 <p>Surchage de l'operateur +. </p>
 <p>Additionnes les coordonées de deux points entre eux</p>
-<p>/param l Premier point à Additionner /param r Second point à Additionner </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Premier point à Additionner </td></tr>
+    <tr><td class="paramname">r</td><td>Second point à Additionner </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -191,8 +197,14 @@ Fonctions</h2></td></tr>
 <div class="memdoc">
 
 <p>Surchage de l'operateur +. </p>
-<p><a class="el" href="class_point.html">Point</a> operator+(const Point &amp;p, const int number) Additionnes des valeurs aux coordonées d'un point</p>
-<p>/param l Premier point à Additionner /param number valeur à Additionner </p>
+<p><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> operator+(const Point &amp;p, const int number) Additionnes des valeurs aux coordonées d'un point</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Premier point à Additionner </td></tr>
+    <tr><td class="paramname">number</td><td>valeur à Additionner </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -222,8 +234,14 @@ Fonctions</h2></td></tr>
 <div class="memdoc">
 
 <p>Surchage de l'operateur -. </p>
-<p><a class="el" href="class_point.html">Point</a> <a class="el" href="_point_8hpp.html#af594655c05f043397ea0e56df21a7245" title="Surchage de l&#39;operateur -.">operator-(const Point &amp;p, const int number)</a> Soustraits les coordonées de deux points entre eux</p>
-<p>/param l <a class="el" href="class_point.html">Point</a> diminuende /param r <a class="el" href="class_point.html">Point</a> diminuteur </p>
+<p><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> <a class="el" href="_point_8hpp.html#af594655c05f043397ea0e56df21a7245" title="Surchage de l&#39;operateur -.">operator-(const Point &amp;p, const int number)</a> Soustraits les coordonées de deux points entre eux</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> diminuende </td></tr>
+    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> diminuteur </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -254,7 +272,13 @@ Fonctions</h2></td></tr>
 
 <p>Surchage de l'operateur &lt;&lt;. </p>
 <p>std::ostream &amp;<a class="el" href="_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960" title="Surchage de l&#39;operateur -.">operator&lt;&lt;(std::ostream &amp;os, const Point &amp;p)</a>; Operateur d'injection</p>
-<p>/param os Flux d'injection /param r <a class="el" href="class_point.html">Point</a> injecté dans os </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Flux d'injection </td></tr>
+    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> injecté dans os </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -284,8 +308,14 @@ Fonctions</h2></td></tr>
 <div class="memdoc">
 
 <p>Surchage de l'operateur -. </p>
-<p><a class="el" href="class_point.html">Point</a> <a class="el" href="_point_8hpp.html#af594655c05f043397ea0e56df21a7245" title="Surchage de l&#39;operateur -.">operator-(const Point &amp;p, const int number)</a> Soustraits des valeurs aux coordonée d'un point</p>
-<p>/param l <a class="el" href="class_point.html">Point</a> diminuende /param r valeur diminuteur </p>
+<p><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> <a class="el" href="_point_8hpp.html#af594655c05f043397ea0e56df21a7245" title="Surchage de l&#39;operateur -.">operator-(const Point &amp;p, const int number)</a> Soustraits des valeurs aux coordonée d'un point</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point (x, y)">Point</a> diminuende </td></tr>
+    <tr><td class="paramname">r</td><td>valeur diminuteur </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -316,7 +346,13 @@ Fonctions</h2></td></tr>
 
 <p>Surchage de l'operateur ==. </p>
 <p>Test si les coordonées du point sont identiques</p>
-<p>/param l Premier point à comparer /param r Second point à comparer </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>Premier point à comparer </td></tr>
+    <tr><td class="paramname">r</td><td>Second point à comparer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -340,7 +376,7 @@ Fonctions</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="_point_8hpp.html">Point.hpp</a>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 09:55:44 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 11:05:25 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

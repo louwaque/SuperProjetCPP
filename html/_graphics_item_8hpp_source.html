@@ -145,17 +145,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047   GraphicsItemList children(<span class="keyword">const</span> GraphicsTypes filter = UndefinedType, <span class="keyword">const</span> SearchTypes option = ChildrenRecursively) <span class="keyword">const</span>;
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049   <a class="code" href="class_point.html">Point</a> anchor()<span class="keyword"> const </span>{
+<a name="l00049"></a>00049   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> anchor()<span class="keyword"> const </span>{
 <a name="l00050"></a>00050     <span class="keywordflow">return</span> m_anchor;
 <a name="l00051"></a>00051   }
 <a name="l00052"></a>00052 
-<a name="l00053"></a>00053   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAnchor(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;anchor) {
+<a name="l00053"></a>00053   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAnchor(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;anchor) {
 <a name="l00054"></a>00054     m_anchor = anchor;
 <a name="l00055"></a>00055   }
 <a name="l00056"></a>00056 
-<a name="l00057"></a>00057   <a class="code" href="class_point.html">Point</a> absolute() <span class="keyword">const</span>;
+<a name="l00057"></a>00057   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> absolute() <span class="keyword">const</span>;
 <a name="l00058"></a>00058 
-<a name="l00059"></a>00059   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAbsolute(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos);
+<a name="l00059"></a>00059   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAbsolute(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;pos);
 <a name="l00060"></a>00060 
 <a name="l00061"></a>00061   <a class="code" href="class_color.html">Color</a> color()<span class="keyword"> const </span>{
 <a name="l00062"></a>00062     <span class="keywordflow">return</span> m_color;
@@ -191,16 +191,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00092"></a>00092 
 <a name="l00093"></a>00093   <span class="keywordtype">void</span> draw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);
 <a name="l00094"></a>00094 
-<a name="l00095"></a>00095   <span class="keywordtype">bool</span> isOver(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa188032b3e6837794e08d485d4426f1bb" title="p (minuscule)">p</a>);
+<a name="l00095"></a>00095   <span class="keywordtype">bool</span> isOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa188032b3e6837794e08d485d4426f1bb" title="p (minuscule)">p</a>);
 <a name="l00096"></a>00096 
 <a name="l00097"></a>00097 <span class="keyword">protected</span>:
 <a name="l00098"></a>00098   <span class="keyword">virtual</span> <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas) {}
-<a name="l00099"></a>00099   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;absoluteP) { <span class="keywordflow">return</span> absolute() == absoluteP; }
+<a name="l00099"></a>00099   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;absoluteP) { <span class="keywordflow">return</span> absolute() == absoluteP; }
 <a name="l00100"></a>00100 
 <a name="l00101"></a>00101 <span class="keyword">private</span>:
 <a name="l00102"></a>00102   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *m_parent;
 <a name="l00103"></a>00103   std::vector&lt;std::unique_ptr&lt;GraphicsItem&gt;&gt; m_children;
-<a name="l00104"></a>00104   <a class="code" href="class_point.html">Point</a> m_anchor;
+<a name="l00104"></a>00104   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> m_anchor;
 <a name="l00105"></a>00105   <a class="code" href="class_color.html">Color</a> m_color;
 <a name="l00106"></a>00106   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_thick;
 <a name="l00107"></a>00107   <span class="keywordtype">bool</span> m_isFill;
@@ -228,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><b>GraphicsItem.hpp</b>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 09:55:44 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 11:05:25 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
