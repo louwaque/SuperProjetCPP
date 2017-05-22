@@ -17,6 +17,7 @@
  *
  * Représente un point avec une abscisse et une ordonnée
  */
+
 class Point
 {
 private:
@@ -32,6 +33,7 @@ public:
    * \param x : abscisse
    * \param y : ordonnée
    */
+
   Point(int x = 0, int y = 0);
 
   /*!
@@ -41,7 +43,9 @@ public:
    *
    * \param src : point à copier
    */
+
   Point(const Point & src);
+  
   ~Point();
 
   /*!
