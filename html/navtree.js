@@ -13,7 +13,7 @@ var NAVTREE =
     [ "Fichiers", null, [
       [ "Liste des fichiers", "files.html", "files" ],
       [ "Membres de fichier", "globals.html", [
-        [ "Tout", "globals.html", null ],
+        [ "Tout", "globals.html", "globals_dup" ],
         [ "Fonctions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Définitions de type", "globals_type.html", null ],
