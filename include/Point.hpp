@@ -17,6 +17,7 @@
  *
  * Représente un point avec une abscisse et une ordonnée
  */
+
 class Point
 {
 private:
@@ -25,13 +26,14 @@ private:
 
 public:
   /*!
-   * \brief Constructeur
+   * \brief Constructeur par default de la classe Point.
    *
-   * Constructeur de la classe Point
+   * Crée une instance de la classe Point.
    *
    * \param x : abscisse
    * \param y : ordonnée
    */
+
   Point(int x = 0, int y = 0);
 
   /*!
@@ -41,7 +43,9 @@ public:
    *
    * \param src : point à copier
    */
+
   Point(const Point & src);
+
   ~Point();
 
   /*!
@@ -49,6 +53,7 @@ public:
    *
    *  \return  l'absisse du Point
    */
+   
   inline int x() const { return m_x; }
 
   /*!
