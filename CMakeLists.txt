@@ -5,12 +5,11 @@ project(SuperProjetCPP)
 add_definitions(-std=c++11)
 add_subdirectory(ez-lib)
 
-#include_directories(include)
+include_directories(include)
 file(
         GLOB_RECURSE
         SRC
         src/*
-        include/*
 )
 
 add_executable(app ${SRC})
