@@ -1,8 +1,16 @@
 #include "../include/Point.hpp"
 
 Point::Point(int x, int y)
-  : m_x(x), m_y(y)
-{
+  : m_x(x), m_y(y){}
+
+Point::Point( const Point & src)
+:Point(src.m_x,src.m_y){}
+
+Point::~Point(){};
+
+void Point::set(const int x, const int y) {
+  m_x = x;
+  m_y = y;
 }
 
 bool operator==(const Point &l, const Point &r) {
