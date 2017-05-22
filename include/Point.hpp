@@ -1,6 +1,8 @@
 #ifndef POINT_HPP
 #define POINT_HPP
 
+#include <iostream>
+
 class Point {
 public:
   Point(int x = 0, int y = 0);
@@ -25,5 +27,13 @@ public:
 private:
   int m_x, m_y;
 };
+
+bool operator==(const Point &l, const Point &r);
+Point operator+(const Point &l, const Point &r);
+Point operator+(const Point &p, const int number);
+Point operator-(const Point &l, const Point &r);
+Point operator-(const Point &p, const int number);
+std::ostream &operator<<(std::ostream &os, const Point &p);
+bool operator<(const Point &l, const Point &r);
 
 #endif
