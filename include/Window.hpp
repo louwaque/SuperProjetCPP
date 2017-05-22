@@ -6,14 +6,19 @@
 #include "Point.hpp"
 #include "Canvas.hpp"
 
-class Window
+class Window : private EZWindow
 {
 public:
   typedef EZKeySym Key;
 
-  enum MouseButton : int {
-    LeftButton,
-    RightButton
+  enum MouseButton : uint {
+    LeftButton = 1,
+    MiddleButton = 2,
+    RightButton = 3,
+    UpWheel = 4,
+    DownWheel = 5,
+    LeftWheel = 6,
+    RightWheel = 7
   };
 
   Window(const size_t width = 400, const size_t height = 400, const std::string &title = "");
@@ -26,35 +31,35 @@ public:
   void setDoubleBuffer(const bool active = true);
 
   size_t width() const {
-    return m_window.getWidth();
+    return EZWindow::getWidth();
   }
 
   void setWidth(const size_t width) {
-    m_window.setWidth(width);
+    EZWindow::setWidth(width);
   }
 
   size_t height() const {
-    return m_window.getHeight();
+    return EZWindow::getHeight();
   }
 
   void setHeight(const size_t height) {
-    return m_window.setHeight(height);
+    EZWindow::setHeight(height);
   }
 
   void resize(const size_t width, const size_t height) {
-    m_window.setWidthHeight(width, height);
+    EZWindow::setWidthHeight(width, height);
   }
 
   bool isVisible() const {
-    return m_window.isVisible();
+    return EZWindow::isVisible();
   }
 
   void setVisible(const bool visible) {
-    m_window.setVisible(visible);
+    EZWindow::setVisible(visible);
   }
 
   void drawRequest() {
-    m_window.sendExpose();
+    EZWindow::sendExpose();
   }
 
   Canvas &canvas() {
@@ -63,37 +68,26 @@ public:
 
 protected:
   //souri en même temps que touche clavier
-  virtual void drawEvent();
-  virtual void resizeEvent(const size_t with, const size_t height);
-  virtual void closeEvent();
-  virtual void mousePressEvent(const Point &mousePos, const MouseButton button);
-  virtual void mouseReleaseEvent(const Point &mousePos, const MouseButton button);
-  virtual void mouseMoveEvent(const Point &mousePos, const MouseButton button);
-  virtual void keyPressEvent(const Key key);
-  virtual void keyReleaseEvent(const Key key);
+  virtual void drawEvent() {}
+  virtual void resizeEvent(const size_t with, const size_t height) {}
+  virtual void closeEvent() {}
+  virtual void mousePressEvent(const Point &mousePos, const MouseButton button) {}
+  virtual void mouseReleaseEvent(const Point &mousePos, const MouseButton button) {}
+  virtual void mouseMoveEvent(const Point &mousePos, const MouseButton button) {}
+  virtual void keyPressEvent(const Key key) {}
+  virtual void keyReleaseEvent(const Key key) {}
 
 private:
-  class WindowProxy : public EZWindow
-  {
-  public:
-    explicit WindowProxy(Window &window, int width = 320, int height = 200, const char *title = "")
-    : EZWindow(width, height, title), m_window(window) {}
-
-    virtual void expose() { m_window.drawEvent(); }
-    virtual void configureNotify(int width, int height) { m_window.resizeEvent(width, height); };
-    virtual void close() { m_window.closeEvent(); }
-    virtual void buttonPress(int mouse_x, int mouse_y, int button) { m_window.mousePressEvent({mouse_x, mouse_y}, MouseButton(button)); }
-    virtual void buttonRelease(int mouse_x, int mouse_y, int button) { m_window.mouseReleaseEvent({mouse_x, mouse_y}, MouseButton(button)); };
-    virtual void motionNotify(int mouse_x, int mouse_y, int button) { m_window.mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); };
-    virtual void keyPress(EZKeySym keysym) { m_window.keyPressEvent(keysym); }
-    virtual void keyRelease(EZKeySym keysym) { m_window.keyReleaseEvent(keysym); };
-
-  private:
-    Window &m_window;
-  };
+  void expose() { drawEvent(); }
+  void configureNotify(int width, int height) { resizeEvent(width, height); }
+  void close() { closeEvent(); }
+  void buttonPress(int mouse_x, int mouse_y, int button) { mousePressEvent({mouse_x, mouse_y}, MouseButton(button)); }
+  void buttonRelease(int mouse_x, int mouse_y, int button) { mouseReleaseEvent({mouse_x, mouse_y}, MouseButton(button)); }
+  void motionNotify(int mouse_x, int mouse_y, int button) { mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); }
+  void keyPress(EZKeySym keysym) { keyPressEvent(keysym); }
+  void keyRelease(EZKeySym keysym) { keyReleaseEvent(keysym); }
 
 private:
-  WindowProxy m_window;
   bool m_doubleBuffer;
   Canvas m_canvas;
 };
