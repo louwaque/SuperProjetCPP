@@ -1,91 +1,101 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
-#include <iostream>
-#include <vector>
-#include <memory>
 #include <string>
-#include <cmath>
-#include <cstdint>
-#include <sstream>
 #include "../ez-lib/ez-draw++.hpp"
+#include "Point.hpp"
+#include "Canvas.hpp"
 
-class Window : public EZWindow
+class Window
 {
 public:
-  Window() : EZWindow(), m_canvas(*this), m_scene(), currentItem(nullptr) {
-    GraphicsPoint *point = new GraphicsPoint(&m_scene);
-    point->setAbsolute({50, 50});
-    point->setColor(Color(Color::Blue));
-    GraphicsText *text = new GraphicsText("Je suis super fort !!!", point);
-    text->setAnchor({0, 10});
-    text->setColor(Color(Color::Yellow));
-    GraphicsText *text1 = new GraphicsText("EZDraw c'est rigolo ^^", point);
-    text1->setAnchor({10, 20});
-    text1->setColor(Color(Color::Green));
+  typedef EZKeySym Key;
 
-    GraphicsPoint *point2 = new GraphicsPoint(&m_scene);
-    point2->setAbsolute({100, 50});
-    point2->setColor(Color(Color::Yellow));
-    GraphicsText *text2 = new GraphicsText("Bonjour les gens !!!!", point2);
-    text2->setColor(Color(Color::Red));
+  enum MouseButton : int {
+    LeftButton,
+    RightButton
+  };
 
-    GraphicsLine *line = new GraphicsLine(&m_scene);
-    line->setAbsolute({50, 100});
-    line->second()->setAnchor({80, 20});
+  Window(const size_t width = 400, const size_t height = 400, const std::string &title = "");
+  virtual ~Window();
 
-    GraphicsTriangle *triangle = new GraphicsTriangle(&m_scene);
-    triangle->setFill(true);
-    triangle->setAbsolute({200, 20});
-    triangle->second()->setAnchor(Point(-30, 30));
-    triangle->third()->setAnchor(Point(30, 30));
-
-    GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
-    rectangle->setThick(5);
-    rectangle->setAbsolute({100, 100});
-    rectangle->bottomRight()->setAnchor({80, 50});
-
-    GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
-    polygon->setFill(true);
-    polygon->setAbsolute({200, 100});
-    polygon->setNbPoints(10);
-    polygon->setNbPoints(5);
-
-    GraphicsCircle *circle = new GraphicsCircle(&m_scene);
-    circle->setAbsolute({100, 300});
-    circle->radius()->setAnchor({50, 50});
-
-    GraphicsEllipse *ellipse = new GraphicsEllipse(&m_scene);
-    ellipse->setAbsolute({200, 300});
-    ellipse->radius()->setAnchor({100, 50});
+  bool doubleBuffer() const {
+    return m_doubleBuffer;
   }
 
-  void buttonPress(int x, int y, int button) {
-    for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
-      if (item->isOver(Point(x, y)))
-        currentItem = item;
-    }
+  void setDoubleBuffer(const bool active = true);
+
+  size_t width() const {
+    return m_window.getWidth();
   }
 
-  void buttonRelease(int x, int y, int button) {
-    currentItem = nullptr;
+  void setWidth(const size_t width) {
+    m_window.setWidth(width);
   }
 
-  void motionNotify(int x, int y, int button) {
-    if (currentItem) {
-      currentItem->setAbsolute(Point(x, y));
-    }
-    sendExpose();
+  size_t height() const {
+    return m_window.getHeight();
   }
 
-  void expose() {
-    m_scene.draw(&m_canvas);
+  void setHeight(const size_t height) {
+    return m_window.setHeight(height);
   }
+
+  void resize(const size_t width, const size_t height) {
+    m_window.setWidthHeight(width, height);
+  }
+
+  bool isVisible() const {
+    return m_window.isVisible();
+  }
+
+  void setVisible(const bool visible) {
+    m_window.setVisible(visible);
+  }
+
+  void drawRequest() {
+    m_window.sendExpose();
+  }
+
+  Canvas &canvas() {
+    return m_canvas;
+  }
+
+protected:
+  //souri en même temps que touche clavier
+  virtual void drawEvent();
+  virtual void resizeEvent(const size_t with, const size_t height);
+  virtual void closeEvent();
+  virtual void mousePressEvent(const Point &mousePos, const MouseButton button);
+  virtual void mouseReleaseEvent(const Point &mousePos, const MouseButton button);
+  virtual void mouseMoveEvent(const Point &mousePos, const MouseButton button);
+  virtual void keyPressEvent(const Key key);
+  virtual void keyReleaseEvent(const Key key);
 
 private:
+  class WindowProxy : public EZWindow
+  {
+  public:
+    explicit WindowProxy(Window &window, int width = 320, int height = 200, const char *title = "")
+    : EZWindow(width, height, title), m_window(window) {}
+
+    virtual void expose() { m_window.drawEvent(); }
+    virtual void configureNotify(int width, int height) { m_window.resizeEvent(width, height); };
+    virtual void close() { m_window.closeEvent(); }
+    virtual void buttonPress(int mouse_x, int mouse_y, int button) { m_window.mousePressEvent({mouse_x, mouse_y}, MouseButton(button)); }
+    virtual void buttonRelease(int mouse_x, int mouse_y, int button) { m_window.mouseReleaseEvent({mouse_x, mouse_y}, MouseButton(button)); };
+    virtual void motionNotify(int mouse_x, int mouse_y, int button) { m_window.mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); };
+    virtual void keyPress(EZKeySym keysym) { m_window.keyPressEvent(keysym); }
+    virtual void keyRelease(EZKeySym keysym) { m_window.keyReleaseEvent(keysym); };
+
+  private:
+    Window &m_window;
+  };
+
+private:
+  WindowProxy m_window;
+  bool m_doubleBuffer;
   Canvas m_canvas;
-  GraphicsItem m_scene;
-  GraphicsItem *currentItem;
 };
 
 #endif
