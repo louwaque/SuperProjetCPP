@@ -17,6 +17,7 @@ env:
 addons:
   apt:
     packages:
+      - cmake
       - doxygen
       - doxygen-doc
       - doxygen-latex
@@ -25,7 +26,8 @@ addons:
 
 # Build your code e.g. by calling make
 script:
-  - make
+  - cmake .
+  - make doc
 
 # Generate and deploy documentation
 after_success:
