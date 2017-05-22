@@ -45,141 +45,123 @@ public:
   ~Point();
 
   /*!
-   *  \brief Donne l'abscisse
+   *  \brief recupere la valeur de l'absisse du Point.
    *
-   *  \return abscisse
+   *  \return  l'absisse du Point
    */
   inline int x() const { return m_x; }
 
-  /**
- * \fn inline int y() const
- * \brief Fonction recuperant le valeur de l'absisse du Point
- *
- * \return Retourne l'absisse du Point
- */
-
+  /*!
+   *  \brief  Fonction recuperant le valeur de l'ordonée.
+   *
+   *  \return  Retourne l'ordonée du Point.
+   */
 
   inline int y() const { return m_y; }
 
-  /**
- * \fn  inline int y() const
- * \brief Fonction recuperant le valeur de l'ordonée or
- *
- * \return Retourne l'ordonée du Point.
- */
+  /*!
+   *  \brief  Fonction permettant la modification de la valeur de l'absisse x.
+   *
+   *  \param x l'absisse du point
+   */
 
  inline int &x() { return m_x;}
 
- /**
- * \fn inline int &x() { return m_x;}
- * \brief Fonction permettant la modification de la valeur de l'absisse x
- *
- * \param x l'absisse du point
- */
+ /*!
+  *  \brief  Fonction permettant la modification de la valeur de l'ordonnée y.
+  *
+  *  \param y  l'ordonée du point.
+  */
 
  inline int &y() {return m_y;}
 
- /**
- * \fn inline int &y() {return m_y;}
- * \brief Fonction permettant la modification de la valeur de l'ordonnée y
- *
- * \param y  l'ordonée du point
- */
+ /*!
+  *  \brief  permet la modification des valeurs du point.
+  *
+  * \param x  l'absisse du point
+  * \param y  l'ordonée du point
+  */
 
  void set(const int x, const int y);
 
- /**
- * \fn void set(const int x, const int y)
- * \brief Fonction permettant la modification des valeurs de points
- *
- * \param x  l'absisse du point
- * \param y  l'ordonée du point
- */
-
 };
+
+/*!
+ *  \brief   Surchage de l'operateur ==
+ *
+ * Test si les coordonées du point sont identiques
+ *
+ * \param l Premier point à comparer
+ * \param r Second point à comparer
+ */
 
 bool operator==(const Point &l, const Point &r);
 
-/**
-* \fn bool operator==(const Point &l, const Point &r)
-* \brief Surchage de l'operateur ==
-*
-* Test si les coordonées du point sont identiques
-*
-* \param l Premier point à comparer
-* \param r Second point à comparer
-*/
+/*!
+ *  \brief   Surchage de l'operateur +.
+ *
+ * Additionnes les coordonées de deux points entre eux
+ *
+ * \param l Premier point à Additionner
+ * \param r Second point à Additionner
+ */
 
 Point operator+(const Point &l, const Point &r);
 
-/**
-* \fn Point operator+(const Point &l, const Point &r)
-* \brief Surchage de l'operateur +
-*
-* Additionnes les coordonées de deux points entre eux
-*
-* \param l Premier point à Additionner
-* \param r Second point à Additionner
-*/
+/*!
+ *  \brief   Surchage de l'operateur +.
+ *
+ * Additionnes des valeurs aux coordonées d'un point
+ *
+ * \param l Premier point à Additionner
+ * \param number valeur à Additionner
+ */
 
 Point operator+(const Point &p, const int number);
 
-/**
-* Point operator+(const Point &p, const int number)
-* \brief Surchage de l'operateur +
-*
-* Additionnes des valeurs aux coordonées d'un point
-*
-* \param l Premier point à Additionner
-* \param number valeur à Additionner
-*/
+/*!
+ *  \brief  Surchage de l'operateur -
+ *
+* Soustraits les coordonées de deux points entre eux
+ *
+ * \param l Point diminuende
+ * \param r Point diminuteur
+ */
 
 Point operator-(const Point &l, const Point &r);
 
-/**
-* Point operator-(const Point &p, const int number)
-* \brief Surchage de l'operateur -
-*
-* Soustraits les coordonées de deux points entre eux
-*
-* \param l Point diminuende
-* \param r Point diminuteur
-*/
+/*!
+ *  \brief  Surchage de l'operateur -
+ *
+ * Soustraits des valeurs aux coordonée d'un point
+ *
+ * \param l Point diminuende
+ * \param r valeur diminuteur
+ */
 
 Point operator-(const Point &p, const int number);
 
-/**
-* Point operator-(const Point &p, const int number)
-* \brief Surchage de l'operateur -
-*
-* Soustraits des valeurs aux coordonée d'un point
-*
-* \param l Point diminuende
-* \param r valeur diminuteur
-*/
+/*!
+ *  \brief  Surchage de l'operateur <<
+ *
+ * Operateur d'injection
+ *
+ * \param os Flux d'injection
+ * \param r Point injecté dans os
+ */
 
 std::ostream &operator<<(std::ostream &os, const Point &p);
 
-/**
-* std::ostream &operator<<(std::ostream &os, const Point &p);
-* \brief Surchage de l'operateur <<
-*
-* Operateur d'injection
-*
-* \param os Flux d'injection
-* \param r Point injecté dans os
-*/
+/*!
+ *  \brief  Surchage de l'operateur <
+ *
+ * Test si les coordonnées d'un premier point sont inferieur à un autre
+ *
+ * \param l Point comparé
+ * \param r Point comparant
+ */
 
 bool operator<(const Point &l, const Point &r);
 
-/**
-* bool operator<(const Point &l, const Point &r);
-* \brief Surchage de l'operateur <
-*
-* Test si les coordonnées d'un premier point sont inferieur à un autre
-*
-* \param l Point comparé
-* \param r Point comparant
-*/
 
 #endif
