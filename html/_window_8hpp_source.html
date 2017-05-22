@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Project c++
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_window_8hpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef WINDOW_HPP</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define WINDOW_HPP</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;memory&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;cmath&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;cstdint&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;sstream&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="class_window.html">00013</a> <span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">public</span> <a class="code" href="class_e_z_window.html">EZWindow</a>
+<a name="l00014"></a>00014 {
+<a name="l00015"></a>00015 <span class="keyword">public</span>:
+<a name="l00016"></a>00016   <a class="code" href="class_window.html">Window</a>() : <a class="code" href="class_e_z_window.html#aac81342c39c126e0ccd5d2784592b917">EZWindow</a>(), m_canvas(*<span class="keyword">this</span>), m_scene(), currentItem(<span class="keyword">nullptr</span>) {
+<a name="l00017"></a>00017     <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;m_scene);
+<a name="l00018"></a>00018     point-&gt;setAbsolute({50, 50});
+<a name="l00019"></a>00019     point-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Blue));
+<a name="l00020"></a>00020     <a class="code" href="class_graphics_text.html">GraphicsText</a> *text = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Je suis super fort !!!&quot;</span>, point);
+<a name="l00021"></a>00021     text-&gt;setAnchor({0, 10});
+<a name="l00022"></a>00022     text-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Yellow));
+<a name="l00023"></a>00023     <a class="code" href="class_graphics_text.html">GraphicsText</a> *text1 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;EZDraw c&#39;est rigolo ^^&quot;</span>, point);
+<a name="l00024"></a>00024     text1-&gt;setAnchor({10, 20});
+<a name="l00025"></a>00025     text1-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Green));
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027     <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point2 = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;m_scene);
+<a name="l00028"></a>00028     point2-&gt;setAbsolute({100, 50});
+<a name="l00029"></a>00029     point2-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Yellow));
+<a name="l00030"></a>00030     <a class="code" href="class_graphics_text.html">GraphicsText</a> *text2 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Bonjour les gens !!!!&quot;</span>, point2);
+<a name="l00031"></a>00031     text2-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Red));
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     GraphicsLine *line = <span class="keyword">new</span> GraphicsLine(&amp;m_scene);
+<a name="l00034"></a>00034     line-&gt;setAbsolute({50, 100});
+<a name="l00035"></a>00035     line-&gt;second()-&gt;setAnchor({80, 20});
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037     GraphicsTriangle *triangle = <span class="keyword">new</span> GraphicsTriangle(&amp;m_scene);
+<a name="l00038"></a>00038     triangle-&gt;setFill(<span class="keyword">true</span>);
+<a name="l00039"></a>00039     triangle-&gt;setAbsolute({200, 20});
+<a name="l00040"></a>00040     triangle-&gt;second()-&gt;setAnchor(<a class="code" href="class_point.html">Point</a>(-30, 30));
+<a name="l00041"></a>00041     triangle-&gt;third()-&gt;setAnchor(<a class="code" href="class_point.html">Point</a>(30, 30));
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a> *rectangle = <span class="keyword">new</span> <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a>(&amp;m_scene);
+<a name="l00044"></a>00044     rectangle-&gt;setThick(5);
+<a name="l00045"></a>00045     rectangle-&gt;setAbsolute({100, 100});
+<a name="l00046"></a>00046     rectangle-&gt;bottomRight()-&gt;setAnchor({80, 50});
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048     GraphicsPolygon *polygon = <span class="keyword">new</span> GraphicsPolygon(&amp;m_scene);
+<a name="l00049"></a>00049     polygon-&gt;setFill(<span class="keyword">true</span>);
+<a name="l00050"></a>00050     polygon-&gt;setAbsolute({200, 100});
+<a name="l00051"></a>00051     polygon-&gt;setNbPoints(10);
+<a name="l00052"></a>00052     polygon-&gt;setNbPoints(5);
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054     GraphicsCircle *circle = <span class="keyword">new</span> GraphicsCircle(&amp;m_scene);
+<a name="l00055"></a>00055     circle-&gt;setAbsolute({100, 300});
+<a name="l00056"></a>00056     circle-&gt;radius()-&gt;setAnchor({50, 50});
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058     GraphicsEllipse *ellipse = <span class="keyword">new</span> GraphicsEllipse(&amp;m_scene);
+<a name="l00059"></a>00059     ellipse-&gt;setAbsolute({200, 300});
+<a name="l00060"></a>00060     ellipse-&gt;radius()-&gt;setAnchor({100, 50});
+<a name="l00061"></a>00061   }
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="class_window.html#aad4f41a37910148f956cd6ec9001931b">00063</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#aad4f41a37910148f956cd6ec9001931b">buttonPress</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> button) {
+<a name="l00064"></a>00064     <span class="keywordflow">for</span> (<a class="code" href="class_graphics_item.html">GraphicsItem</a> *item : m_scene.children(GraphicsItem::PointType)) {
+<a name="l00065"></a>00065       <span class="keywordflow">if</span> (item-&gt;isOver(<a class="code" href="class_point.html">Point</a>(x, y)))
+<a name="l00066"></a>00066         currentItem = item;
+<a name="l00067"></a>00067     }
+<a name="l00068"></a>00068   }
+<a name="l00069"></a>00069 
+<a name="l00070"></a><a class="code" href="class_window.html#aeee91da75fbf74097d76c1a4a59b392e">00070</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#aeee91da75fbf74097d76c1a4a59b392e">buttonRelease</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> button) {
+<a name="l00071"></a>00071     currentItem = <span class="keyword">nullptr</span>;
+<a name="l00072"></a>00072   }
+<a name="l00073"></a>00073 
+<a name="l00074"></a><a class="code" href="class_window.html#ad0a8148d056f6ae1783ab85dfeba6cbd">00074</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#ad0a8148d056f6ae1783ab85dfeba6cbd">motionNotify</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> button) {
+<a name="l00075"></a>00075     <span class="keywordflow">if</span> (currentItem) {
+<a name="l00076"></a>00076       currentItem-&gt;setAbsolute(<a class="code" href="class_point.html">Point</a>(x, y));
+<a name="l00077"></a>00077     }
+<a name="l00078"></a>00078     <a class="code" href="class_e_z_window.html#aab29a1993f91401c24be962223652e5d">sendExpose</a>();
+<a name="l00079"></a>00079   }
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_window.html#a3524b6f0ed055b1f13a56be83ef8d5ce">00081</a>   <span class="keywordtype">void</span> <a class="code" href="class_window.html#a3524b6f0ed055b1f13a56be83ef8d5ce">expose</a>() {
+<a name="l00082"></a>00082     m_scene.draw(&amp;m_canvas);
+<a name="l00083"></a>00083   }
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="keyword">private</span>:
+<a name="l00086"></a>00086   <a class="code" href="class_canvas.html">Canvas</a> m_canvas;
+<a name="l00087"></a>00087   <a class="code" href="class_graphics_item.html">GraphicsItem</a> m_scene;
+<a name="l00088"></a>00088   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *currentItem;
+<a name="l00089"></a>00089 };
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><b>Window.hpp</b>      </li>
+
+    <li class="footer">Généré le Lundi Mai 22 2017 09:55:44 pour Project c++ par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

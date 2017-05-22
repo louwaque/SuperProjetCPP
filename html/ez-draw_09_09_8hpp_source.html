@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.hpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Project c++
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('ez-draw_09_09_8hpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">/home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ez-draw_09_09_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * ez-draw++.hpp: basic EZ-Draw++ module</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> * eric.remy@univ-amu.fr - 01/03/2014 - version 1.2</span>
+<a name="l00005"></a>00005 <span class="comment"> *</span>
+<a name="l00006"></a>00006 <span class="comment"> * This program is free software under the terms of the</span>
+<a name="l00007"></a>00007 <span class="comment"> * GNU Lesser General Public License (LGPL) version 2.1.</span>
+<a name="l00008"></a>00008 <span class="comment"> *</span>
+<a name="l00009"></a>00009 <span class="comment"> * ez-draw++ is based on ez-draw (see below)</span>
+<a name="l00010"></a>00010 <span class="comment">*/</span>
+<a name="l00011"></a>00011 
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="preprocessor">#ifndef EZDRAWPP_HPP</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">#define EZDRAWPP_HPP</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;stdexcept&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00022"></a>00022 
+<a name="l00024"></a><a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f">00024</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a>;
+<a name="l00028"></a><a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">00028</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   <a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a>;
+<a name="l00029"></a>00029 
+<a name="l00032"></a>00032 <span class="keyword">extern</span> <a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab61ffd9ef44bc9d16db69add3660becb" title="Noir.">ez_black</a>,   
+<a name="l00033"></a>00033                <a class="code" href="ez-draw_09_09_8hpp.html#a02a0bb5c19dcbae4a68132b59dd7ed02" title="Blanc.">ez_white</a>,   
+<a name="l00034"></a>00034                <a class="code" href="ez-draw_09_09_8hpp.html#a4e2760434d207edc618734e5d4bb5595" title="Gris.">ez_grey</a>,    
+<a name="l00035"></a>00035                <a class="code" href="ez-draw_09_09_8hpp.html#ab80256e411ca04ac5e02de0aeda54b8f" title="Rouge.">ez_red</a>,     
+<a name="l00036"></a>00036                <a class="code" href="ez-draw_09_09_8hpp.html#a312ca7b76259074c0b5790b73f57ca24" title="Vert.">ez_green</a>,   
+<a name="l00037"></a>00037                <a class="code" href="ez-draw_09_09_8hpp.html#a41957588e4c407cbd1a9c2151b375236" title="Bleu.">ez_blue</a>,    
+<a name="l00038"></a>00038                <a class="code" href="ez-draw_09_09_8hpp.html#a16e86f0c8e8bfecd785ecd3c7d5ac720" title="Jaune.">ez_yellow</a>,  
+<a name="l00039"></a>00039                <a class="code" href="ez-draw_09_09_8hpp.html#a4a640a01828fae63a57c9ecb8309d374" title="Cyan.">ez_cyan</a>,    
+<a name="l00040"></a>00040                <a class="code" href="ez-draw_09_09_8hpp.html#a885a650e47627abeb86e05daf2452195" title="Magenta.">ez_magenta</a>; 
+<a name="l00041"></a>00041 
+<a name="l00050"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">00050</a> <span class="keyword">enum class</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> {
+<a name="l00052"></a>00052     AA = 183200,
+<a name="l00054"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447aca301a4c4fa25b27fff84becdd631048">00054</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447aca301a4c4fa25b27fff84becdd631048">TL</a>,     
+<a name="l00055"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ae179015c05e581c38074e893dbf27840">00055</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ae179015c05e581c38074e893dbf27840" title="Top Center.">TC</a>,     
+<a name="l00056"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a1743e98464bf7bcabcf51101b49a6a3d">00056</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a1743e98464bf7bcabcf51101b49a6a3d" title="Top Right.">TR</a>,     
+<a name="l00057"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a96795f73b23b0c8607ad96746efc6540">00057</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a96795f73b23b0c8607ad96746efc6540" title="Middle Left.">ML</a>,     
+<a name="l00058"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a8e15ed3aa6ccc02e22b283c8bd0b4096">00058</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a8e15ed3aa6ccc02e22b283c8bd0b4096" title="Middle Center.">MC</a>,     
+<a name="l00059"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a72e220e7a1804705bd074f8cdd5093c4">00059</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a72e220e7a1804705bd074f8cdd5093c4" title="Middle Right.">MR</a>,     
+<a name="l00060"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447af603e0d046225e81459ffe6d8ee5ba6b">00060</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447af603e0d046225e81459ffe6d8ee5ba6b" title="Bottom Left.">BL</a>,     
+<a name="l00061"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a19089d21f7efdfcdca33d9bcbfa12776">00061</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a19089d21f7efdfcdca33d9bcbfa12776" title="Bottom Center.">BC</a>,     
+<a name="l00062"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a60a57eed407e7df8eb3bf49f61a042c1">00062</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a60a57eed407e7df8eb3bf49f61a042c1">BR</a>,     
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064     BB,
+<a name="l00066"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a9f96227b8ba4acd0d86bd0788afd723d">00066</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a9f96227b8ba4acd0d86bd0788afd723d">TLF</a>,     
+<a name="l00067"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447afee9f095f2b2e922270baa3e74eeecbf">00067</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447afee9f095f2b2e922270baa3e74eeecbf" title="Top Center with background filled.">TCF</a>,     
+<a name="l00068"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a64b85a57b48a674c6a088b162582bcd0">00068</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a64b85a57b48a674c6a088b162582bcd0" title="Top Right with background filled.">TRF</a>,     
+<a name="l00069"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a8315d2b8d5468e7eeddccc9c71fbe0ca">00069</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a8315d2b8d5468e7eeddccc9c71fbe0ca" title="Middle Left with background filled.">MLF</a>,     
+<a name="l00070"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447af15520d3536908cdeb38d61a8fccf1be">00070</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447af15520d3536908cdeb38d61a8fccf1be" title="Middle Center with background filled.">MCF</a>,     
+<a name="l00071"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447acffee54c6ccc86f02e7dc474f80f4817">00071</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447acffee54c6ccc86f02e7dc474f80f4817" title="Middle Right with background filled.">MRF</a>,     
+<a name="l00072"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a33359ade6491e59f753d24b8afae5b93">00072</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a33359ade6491e59f753d24b8afae5b93" title="Bottom Left with background filled.">BLF</a>,     
+<a name="l00073"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447adcac170f9f70b90c6eb75ebceb69d8f2">00073</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447adcac170f9f70b90c6eb75ebceb69d8f2" title="Bottom Center with background filled.">BCF</a>,     
+<a name="l00074"></a><a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a526e45947d6f88da64c9ba9737fdd2cb">00074</a>     <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a526e45947d6f88da64c9ba9737fdd2cb" title="Bottom Right with background filled.">BRF</a>,     
+<a name="l00075"></a>00075 <span class="comment">//  CC // Constante EZ-Draw supprimée parce qu&#39;elle est inutile à EZ-Draw++ et qu&#39;elle fait déconner le mécanisme d&#39;exclusion de doxygen.</span>
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00084"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">00084</a> <span class="keyword">enum class</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>
+<a name="l00085"></a>00085 {
+<a name="l00086"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae8ac20c34c3685c933fbea4575a64ea3">00086</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae8ac20c34c3685c933fbea4575a64ea3" title="le retour arrière « &lt;-- »">BackSpace</a>                    = 0xff08, 
+<a name="l00087"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa02c3b925fc688db12200d8e22af30276">00087</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa02c3b925fc688db12200d8e22af30276" title="la tabulation « --&gt;| »">Tab</a>                          = 0xff09, 
+<a name="l00088"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9fa8a5a1e10fdeafbb823a1c31fbd491">00088</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9fa8a5a1e10fdeafbb823a1c31fbd491" title="la touche Entrée">Return</a>                       = 0xff0d, 
+<a name="l00089"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadaba8aa0fcd8a87c25fec7d916c789e7">00089</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadaba8aa0fcd8a87c25fec7d916c789e7" title="la touche pause">Pause</a>                        = 0xff13, 
+<a name="l00090"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4dc97a83a71a09d9d425da6ac6aeb8ba">00090</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4dc97a83a71a09d9d425da6ac6aeb8ba" title="la touche Arrêt de défil(ement)">Scroll_Lock</a>                  = 0xff14, 
+<a name="l00091"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa71728ba590f9a1089e21dec6d5fb1c74">00091</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa71728ba590f9a1089e21dec6d5fb1c74" title="la touche Échap(pement)">Escape</a>                       = 0xff1b, 
+<a name="l00092"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf89e673477625e3afc8d736d14cd268a">00092</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf89e673477625e3afc8d736d14cd268a" title="Suppr(ession)">Delete</a>                       = 0xffff, 
+<a name="l00093"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8feb334f9ed9ddb8dbc69cfa4fd6b614">00093</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8feb334f9ed9ddb8dbc69cfa4fd6b614" title="Début « |&lt; »">Home</a>                         = 0xff50, 
+<a name="l00094"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9d4d8b0b72fc2659da772d761a3c5ecb">00094</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9d4d8b0b72fc2659da772d761a3c5ecb" title="flèche vers la gauche">Left</a>                         = 0xff51, 
+<a name="l00095"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa57a7edcbc04d6175683383cad5c3e0a2">00095</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa57a7edcbc04d6175683383cad5c3e0a2" title="flèche vers le haut">Up</a>                           = 0xff52, 
+<a name="l00096"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad48f7af8c070184f3774c8e85854eb66">00096</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad48f7af8c070184f3774c8e85854eb66" title="flèche vers la droite">Right</a>                        = 0xff53, 
+<a name="l00097"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aabcf8c79e9a5f5f9d606fb35645a0fb27">00097</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aabcf8c79e9a5f5f9d606fb35645a0fb27" title="flèche vers le bas">Down</a>                         = 0xff54, 
+<a name="l00098"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5439f2455c2ba8033b2b514a07df8798">00098</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5439f2455c2ba8033b2b514a07df8798" title="touche Page Précédente">Prior</a>                        = 0xff55, 
+<a name="l00099"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab6505f468e0e75bc3fdc7f47c22384a4">00099</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab6505f468e0e75bc3fdc7f47c22384a4" title="touche Page Suivante">Next</a>                         = 0xff56, 
+<a name="l00100"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa667876a6f108081ad524d7d29d23d506">00100</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa667876a6f108081ad524d7d29d23d506" title="Fin « &gt;| »">End</a>                          = 0xff57, 
+<a name="l00101"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0a84e3d16cff840b05790b811b0152d9">00101</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0a84e3d16cff840b05790b811b0152d9" title="Inser(tion)">Insert</a>                       = 0xff63, 
+<a name="l00102"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae0f2dbf2f226e6c1acccabc9b146e3d7">00102</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae0f2dbf2f226e6c1acccabc9b146e3d7" title="Menu.">Menu</a>                         = 0xff67, 
+<a name="l00103"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4293495b6ae65353e8239bec76ef0345">00103</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4293495b6ae65353e8239bec76ef0345" title="Ver(rouillage) Num(érique)">Num_Lock</a>                     = 0xff7f, 
+<a name="l00104"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac700e5bb96bf53de49bc8a3cde846461">00104</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac700e5bb96bf53de49bc8a3cde846461" title="touche Entrée du pavé numérique">KP_Enter</a>                     = 0xff8d, 
+<a name="l00105"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaea793779ff3dcbf8fc79f3a30b8591e4">00105</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaea793779ff3dcbf8fc79f3a30b8591e4" title="touche Début du pavé numérique">KP_Home</a>                      = 0xff95, 
+<a name="l00106"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa96d650c3a4dc5486a123ae32638d16dc">00106</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa96d650c3a4dc5486a123ae32638d16dc" title="touche Gauche du pavé numérique">KP_Left</a>                      = 0xff96, 
+<a name="l00107"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf8b01524128d248ac4a5cff98ecdf3b2">00107</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf8b01524128d248ac4a5cff98ecdf3b2" title="touche Haut du pavé numérique">KP_Up</a>                        = 0xff97, 
+<a name="l00108"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6cb8d3eb46c6e9d9087f548fba900b2e">00108</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6cb8d3eb46c6e9d9087f548fba900b2e" title="touche Droite du pavé numérique">KP_Right</a>                     = 0xff98, 
+<a name="l00109"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa09834be05e4a7b470d79c0d968f7f35d">00109</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa09834be05e4a7b470d79c0d968f7f35d" title="touche Gauche du pavé numérique">KP_Down</a>                      = 0xff99, 
+<a name="l00110"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa7328b69a4ae81c07b488672f3352127">00110</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa7328b69a4ae81c07b488672f3352127" title="touche Page Précédente du pavé numérique">KP_Prior</a>                     = 0xff9a, 
+<a name="l00111"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa573a5d5868fb8009bb831de3efe60721">00111</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa573a5d5868fb8009bb831de3efe60721" title="touche Page Suivante du pavé numérique">KP_Next</a>                      = 0xff9b, 
+<a name="l00112"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0e0c4a5903be2635bc204d73b695803b">00112</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0e0c4a5903be2635bc204d73b695803b" title="touche Fin du pavé numérique">KP_End</a>                       = 0xff9c, 
+<a name="l00113"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ee3f69364262e8c3d97bbc4ea40404d">00113</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ee3f69364262e8c3d97bbc4ea40404d" title="touche Début du pavé numérique">KP_Begin</a>                     = 0xff9d, 
+<a name="l00114"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7b7195cbd74c6fadb5ed125f4e562611">00114</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7b7195cbd74c6fadb5ed125f4e562611" title="touche « = » du pavé numérique">KP_Equal</a>                     = 0xffbd, 
+<a name="l00115"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f19fe253f0ebe2b4a529558339f72de">00115</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f19fe253f0ebe2b4a529558339f72de" title="touche « * » du pavé numérique">KP_Multiply</a>                  = 0xffaa, 
+<a name="l00116"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab4105b34f56a97f84f55b10419f957e3">00116</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab4105b34f56a97f84f55b10419f957e3" title="touche « + » du pavé numérique">KP_Add</a>                       = 0xffab, 
+<a name="l00117"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9281f984cda46c6ed20653301515dfee">00117</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9281f984cda46c6ed20653301515dfee" title="touche Separateur du pavé numérique">KP_Separator</a>                 = 0xffac, 
+<a name="l00118"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad18217d33dbf7262d8c3a8b5ada110e4">00118</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad18217d33dbf7262d8c3a8b5ada110e4" title="touche « - » du pavé numérique">KP_Subtract</a>                  = 0xffad, 
+<a name="l00119"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa80e6d1966293b60ac400ed0ca9251de9">00119</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa80e6d1966293b60ac400ed0ca9251de9" title="touche « / » du pavé numérique">KP_Divide</a>                    = 0xffaf, 
+<a name="l00120"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaca44b2ff5b17ad46f145ba6762e9187a">00120</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaca44b2ff5b17ad46f145ba6762e9187a" title="touche « 0 » du pavé numérique">KP_0</a>                         = 0xffb0, 
+<a name="l00121"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2f86521bc3f49b411e1c0f8f34f659e3">00121</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2f86521bc3f49b411e1c0f8f34f659e3" title="touche « 1 » du pavé numérique">KP_1</a>                         = 0xffb1, 
+<a name="l00122"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa736e1673887af269c2920de5bda9c6a0">00122</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa736e1673887af269c2920de5bda9c6a0" title="touche « 2 » du pavé numérique">KP_2</a>                         = 0xffb2, 
+<a name="l00123"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9304b76eb683861adfabde75da22696c">00123</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9304b76eb683861adfabde75da22696c" title="touche « 3 » du pavé numérique">KP_3</a>                         = 0xffb3, 
+<a name="l00124"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0b64cb8053000950713a91b5f6955e2b">00124</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0b64cb8053000950713a91b5f6955e2b" title="touche « 4 » du pavé numérique">KP_4</a>                         = 0xffb4, 
+<a name="l00125"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa73dc18a3ce71f87e95d7f5855c06eaba">00125</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa73dc18a3ce71f87e95d7f5855c06eaba" title="touche « 5 » du pavé numérique">KP_5</a>                         = 0xffb5, 
+<a name="l00126"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa165fc763e9badcc109652ae3d808dbcd">00126</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa165fc763e9badcc109652ae3d808dbcd" title="touche « 6 » du pavé numérique">KP_6</a>                         = 0xffb6, 
+<a name="l00127"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1dc97b60bf4dab75b1635f70dc8b630d">00127</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1dc97b60bf4dab75b1635f70dc8b630d" title="touche « 7 » du pavé numérique">KP_7</a>                         = 0xffb7, 
+<a name="l00128"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa206390b10f393e451c932810dfe20703">00128</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa206390b10f393e451c932810dfe20703" title="touche « 8 » du pavé numérique">KP_8</a>                         = 0xffb8, 
+<a name="l00129"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab963d5d2104bd7dfbd92db9c9f1540aa">00129</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab963d5d2104bd7dfbd92db9c9f1540aa" title="touche « 9 » du pavé numérique">KP_9</a>                         = 0xffb9, 
+<a name="l00130"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5afea46882b06768ac8563d462999735">00130</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5afea46882b06768ac8563d462999735" title="touche de fonction « F1 »">F1</a>                           = 0xffbe, 
+<a name="l00131"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa3c13a70de6599f4470373ec46d4f6bf">00131</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa3c13a70de6599f4470373ec46d4f6bf" title="touche de fonction « F2 »">F2</a>                           = 0xffbf, 
+<a name="l00132"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa10a5417c8e696606af65ec28c5fb2495">00132</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa10a5417c8e696606af65ec28c5fb2495" title="touche de fonction « F3 »">F3</a>                           = 0xffc0, 
+<a name="l00133"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8d311dd8454951b86e27873c49ff1ec5">00133</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8d311dd8454951b86e27873c49ff1ec5" title="touche de fonction « F4 »">F4</a>                           = 0xffc1, 
+<a name="l00134"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa265fb264db0c419e6cb73bce564cd517">00134</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa265fb264db0c419e6cb73bce564cd517" title="touche de fonction « F5 »">F5</a>                           = 0xffc2, 
+<a name="l00135"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa1e9d714a0238434a819235d4832f7d2">00135</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa1e9d714a0238434a819235d4832f7d2" title="touche de fonction « F6 »">F6</a>                           = 0xffc3, 
+<a name="l00136"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6f111feaebfe5971b1243256d6417dc7">00136</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6f111feaebfe5971b1243256d6417dc7" title="touche de fonction « F7 »">F7</a>                           = 0xffc4, 
+<a name="l00137"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacb02fa2cede46dab94694927da16433d">00137</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacb02fa2cede46dab94694927da16433d" title="touche de fonction « F8 »">F8</a>                           = 0xffc5, 
+<a name="l00138"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9e27ab13e156f0125c6d8417dbe70946">00138</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9e27ab13e156f0125c6d8417dbe70946" title="touche de fonction « F9 »">F9</a>                           = 0xffc6, 
+<a name="l00139"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadf84767d83f4a35ab9dfa119cdbc7b3b">00139</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadf84767d83f4a35ab9dfa119cdbc7b3b" title="touche de fonction « F10 »">F10</a>                          = 0xffc7, 
+<a name="l00140"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa511133ad89a0a17845508efb4d47b5e2">00140</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa511133ad89a0a17845508efb4d47b5e2" title="touche de fonction « F11 »">F11</a>                          = 0xffc8, 
+<a name="l00141"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa897dc84a58812cda1dbc2de4e74e4729">00141</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa897dc84a58812cda1dbc2de4e74e4729" title="touche de fonction « F12 »">F12</a>                          = 0xffc9, 
+<a name="l00142"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa99c9abb929d6b5a6dea4cee2d5317b9d">00142</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa99c9abb929d6b5a6dea4cee2d5317b9d" title="Majusculte (gauche)">Shift_L</a>                      = 0xffe1, 
+<a name="l00143"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab79b9a5c4d89aee99420e706f4d8b277">00143</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab79b9a5c4d89aee99420e706f4d8b277" title="Majusculte (droite)">Shift_R</a>                      = 0xffe2, 
+<a name="l00144"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa870a39c591080a70d833ee7aad5753ca">00144</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa870a39c591080a70d833ee7aad5753ca" title="trouche Contrôle (gauche)">Control_L</a>                    = 0xffe3, 
+<a name="l00145"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5c8d365d492323442ed1276027dbb8f5">00145</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5c8d365d492323442ed1276027dbb8f5" title="trouche Contrôle (droite)">Control_R</a>                    = 0xffe4, 
+<a name="l00146"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaebe31ab4cf3489394967de57e589ef32">00146</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaebe31ab4cf3489394967de57e589ef32" title="Verouillage Majusculte.">Caps_Lock</a>                    = 0xffe5, 
+<a name="l00147"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa91be91e34e4bf12f3499e2dfe4896a93">00147</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa91be91e34e4bf12f3499e2dfe4896a93" title="touche Meta (gauche)">Meta_L</a>                       = 0xffe7, 
+<a name="l00148"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadba4db9aa2dafd3d6ee94970d7c0da0b">00148</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aadba4db9aa2dafd3d6ee94970d7c0da0b" title="touche Meta (droite)">Meta_R</a>                       = 0xffe8, 
+<a name="l00149"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6a0b2ecfba5b13c4f3c5e5b231e5592c">00149</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6a0b2ecfba5b13c4f3c5e5b231e5592c" title="touche Alt (gauche)">Alt_L</a>                        = 0xffe9, 
+<a name="l00150"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad12efe9ac73d06c0f4d92557b151e58d">00150</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad12efe9ac73d06c0f4d92557b151e58d" title="touche Alt (droite)">Alt_R</a>                        = 0xffea, 
+<a name="l00151"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aada1fec8e1a3870378ee50323bf5d338b">00151</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aada1fec8e1a3870378ee50323bf5d338b" title="Espace.">space</a>                        = 0x0020, 
+<a name="l00152"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa08e72350b67f1003bb1dd1ff9f00c4ad">00152</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa08e72350b67f1003bb1dd1ff9f00c4ad" title="Point d&#39;exclamation.">exclam</a>                       = 0x0021, 
+<a name="l00153"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ae27da87598337a4d554b656bf49923">00153</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ae27da87598337a4d554b656bf49923" title="Guillemet anglaise : « " »">quotedbl</a>                     = 0x0022, 
+<a name="l00154"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa41ec810a58e0d558356b4011d4f1848e">00154</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa41ec810a58e0d558356b4011d4f1848e" title="dièse : « # »">numbersign</a>                   = 0x0023, 
+<a name="l00155"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa67681a79256744543d1360ba5616abf0">00155</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa67681a79256744543d1360ba5616abf0" title="Symbole du dollar : « $ »">dollar</a>                       = 0x0024, 
+<a name="l00156"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa47d2b8dfd8627a87eaa994d6c672dbf7">00156</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa47d2b8dfd8627a87eaa994d6c672dbf7" title="Symbole du pourcent : « % »">percent</a>                      = 0x0025, 
+<a name="l00157"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab3405fb37b2f0e0538fdd77fcc885e9f">00157</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab3405fb37b2f0e0538fdd77fcc885e9f" title="Esperluette (« Et commercial ») : « &amp; »">ampersand</a>                    = 0x0026, 
+<a name="l00158"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa533ef2442df6c758c1a1500345ae004e">00158</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa533ef2442df6c758c1a1500345ae004e" title="Apostrophe.">apostrophe</a>                   = 0x0027, 
+<a name="l00159"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa29185444f8fdd5e8bb0e0d5c648fea35">00159</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa29185444f8fdd5e8bb0e0d5c648fea35" title="Parenthèse ouvrante.">parenleft</a>                    = 0x0028, 
+<a name="l00160"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae038c0f379714c86e19f1c6e580e6b6f">00160</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae038c0f379714c86e19f1c6e580e6b6f" title="Parenthèse fermante.">parenright</a>                   = 0x0029, 
+<a name="l00161"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa976a05a5951e28f74eeb6e08fde2d720">00161</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa976a05a5951e28f74eeb6e08fde2d720" title="Astérisque.">asterisk</a>                     = 0x002a, 
+<a name="l00162"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa772311abb4290d65c05c49d38c4da6fb">00162</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa772311abb4290d65c05c49d38c4da6fb" title="Signe plus.">plus</a>                         = 0x002b, 
+<a name="l00163"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2234502c71de571a99c0ba7eeb3002bd">00163</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2234502c71de571a99c0ba7eeb3002bd" title="Virgule.">comma</a>                        = 0x002c, 
+<a name="l00164"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaba34d25d1a0e7f60052d7418d1ccf58b">00164</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaba34d25d1a0e7f60052d7418d1ccf58b" title="Signe moins.">minus</a>                        = 0x002d, 
+<a name="l00165"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa756ae1376a9e150e87eab968378fea85">00165</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa756ae1376a9e150e87eab968378fea85" title="Point.">period</a>                       = 0x002e, 
+<a name="l00166"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa77fb3b0860ec504f39f45cb59413f731">00166</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa77fb3b0860ec504f39f45cb59413f731" title="Barre oblique : « / »">slash</a>                        = 0x002f, 
+<a name="l00167"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9798124543930329095ff22f8f9b7745">00167</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9798124543930329095ff22f8f9b7745" title="Chiffre 0.">_0</a>                           = 0x0030, 
+<a name="l00168"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa946ced916ded97a6caba48e303e6b5e3">00168</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa946ced916ded97a6caba48e303e6b5e3" title="Chiffre 1.">_1</a>                           = 0x0031, 
+<a name="l00169"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4ac9fde21efe0b04d986336be5ff19ea">00169</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4ac9fde21efe0b04d986336be5ff19ea" title="Chiffre 2.">_2</a>                           = 0x0032, 
+<a name="l00170"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacd49c4f3c9ae7388eeea970748b19157">00170</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacd49c4f3c9ae7388eeea970748b19157" title="Chiffre 3.">_3</a>                           = 0x0033, 
+<a name="l00171"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa0a2cbf1b2f9a4f01c68830ebc853b96">00171</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa0a2cbf1b2f9a4f01c68830ebc853b96" title="Chiffre 4.">_4</a>                           = 0x0034, 
+<a name="l00172"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7445b1015d84d458746e7e4d85e24978">00172</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7445b1015d84d458746e7e4d85e24978" title="Chiffre 5.">_5</a>                           = 0x0035, 
+<a name="l00173"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae9b1a632ea1d223fbac515c3e91a69d4">00173</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae9b1a632ea1d223fbac515c3e91a69d4" title="Chiffre 6.">_6</a>                           = 0x0036, 
+<a name="l00174"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa36dfa49ef096ef01a69e487e5ca50968">00174</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa36dfa49ef096ef01a69e487e5ca50968" title="Chiffre 7.">_7</a>                           = 0x0037, 
+<a name="l00175"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa29bf2b556dc552c594d3f26fd88d4867">00175</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa29bf2b556dc552c594d3f26fd88d4867" title="Chiffre 8.">_8</a>                           = 0x0038, 
+<a name="l00176"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3410e7a43acae992bad8a87325a0b18a">00176</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3410e7a43acae992bad8a87325a0b18a" title="Chiffre 9.">_9</a>                           = 0x0039, 
+<a name="l00177"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab9b301517f682fad0dd6023ecc44e150">00177</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab9b301517f682fad0dd6023ecc44e150" title="Symbole deux points.">colon</a>                        = 0x003a, 
+<a name="l00178"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4986a40f028634af873a13f70135c72d">00178</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4986a40f028634af873a13f70135c72d" title="Symbole point virgule.">semicolon</a>                    = 0x003b, 
+<a name="l00179"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafd1a660b08110932048db29c595ae1fa">00179</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafd1a660b08110932048db29c595ae1fa" title="Symbole inférieur à">less</a>                         = 0x003c, 
+<a name="l00180"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab5800e866b0cfbd93e858c68a8246c27">00180</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab5800e866b0cfbd93e858c68a8246c27" title="Sumbole égual à">equal</a>                        = 0x003d, 
+<a name="l00181"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f31a90b8246ac0f00abb35e86f9b644">00181</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f31a90b8246ac0f00abb35e86f9b644" title="Symbole suppérieur à">greater</a>                      = 0x003e, 
+<a name="l00182"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2cc330e5632a3911b030b0d98c6df077">00182</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2cc330e5632a3911b030b0d98c6df077" title="Point d&#39;interogation.">question</a>                     = 0x003f, 
+<a name="l00183"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3dd0333e39c115f3e50d524cfdcff7a5">00183</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3dd0333e39c115f3e50d524cfdcff7a5" title="Arobase : « @ »">at</a>                           = 0x0040, 
+<a name="l00184"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa42a4ade1acd55a49164099104990e09f">00184</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa42a4ade1acd55a49164099104990e09f" title="A (majuscule)">A</a>                            = 0x0041, 
+<a name="l00185"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3f2a77ecd272aa6d6b5902faa5e5fc68">00185</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa3f2a77ecd272aa6d6b5902faa5e5fc68" title="B (majuscule)">B</a>                            = 0x0042, 
+<a name="l00186"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa739ce3f516592d245d16fd8a3893472c">00186</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa739ce3f516592d245d16fd8a3893472c" title="C (majuscule)">C</a>                            = 0x0043, 
+<a name="l00187"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa77a6b11f9898c052926f1d49765861e8">00187</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa77a6b11f9898c052926f1d49765861e8" title="D (majuscule)">D</a>                            = 0x0044, 
+<a name="l00188"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab199e021998d49b1f09338d8b9b18ecb">00188</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab199e021998d49b1f09338d8b9b18ecb" title="E (majuscule)">E</a>                            = 0x0045, 
+<a name="l00189"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf382a63cc3d6491bf26b59e66f46826d">00189</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf382a63cc3d6491bf26b59e66f46826d" title="F (majuscule)">F</a>                            = 0x0046, 
+<a name="l00190"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2fe993340f6abb2234e543cd427df70b">00190</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2fe993340f6abb2234e543cd427df70b" title="G (majuscule)">G</a>                            = 0x0047, 
+<a name="l00191"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5008b1179f399a2273fd3f6a7fc3b292">00191</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5008b1179f399a2273fd3f6a7fc3b292" title="H (majuscule)">H</a>                            = 0x0048, 
+<a name="l00192"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad091b8e376f7cf432dc367e1eda65e85">00192</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad091b8e376f7cf432dc367e1eda65e85" title="I (majuscule)">I</a>                            = 0x0049, 
+<a name="l00193"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa03605500b0c55f3d95874e8edfcf4e30">00193</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa03605500b0c55f3d95874e8edfcf4e30" title="J (majuscule)">J</a>                            = 0x004a, 
+<a name="l00194"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c">00194</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c" title="K (majuscule)">K</a>                            = 0x004b, 
+<a name="l00195"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaef31cc6fe9479955961311ee18ac205f">00195</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaef31cc6fe9479955961311ee18ac205f" title="L (majuscule)">L</a>                            = 0x004c, 
+<a name="l00196"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa51ca6c63d97347ee58cc7da59ab6994b">00196</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa51ca6c63d97347ee58cc7da59ab6994b" title="M (majuscule)">M</a>                            = 0x004d, 
+<a name="l00197"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2c63acbe79d9f41ba6bb7766e9c37702">00197</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2c63acbe79d9f41ba6bb7766e9c37702" title="N (majuscule)">N</a>                            = 0x004e, 
+<a name="l00198"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf4b8b7698dfedf5562a7db2bdb07010a">00198</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf4b8b7698dfedf5562a7db2bdb07010a" title="O (majuscule)">O</a>                            = 0x004f, 
+<a name="l00199"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa82f05f38f6a17b117cdd2b83227912c6">00199</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa82f05f38f6a17b117cdd2b83227912c6" title="P (majuscule)">P</a>                            = 0x0050, 
+<a name="l00200"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa53ab217f1572250a530c8c2b3c820cf">00200</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa53ab217f1572250a530c8c2b3c820cf" title="Q (majuscule)">Q</a>                            = 0x0051, 
+<a name="l00201"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1784b1a3d7cbd43c45ff82c72d05e4ae">00201</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1784b1a3d7cbd43c45ff82c72d05e4ae" title="R (majuscule)">R</a>                            = 0x0052, 
+<a name="l00202"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf1ce01387d2348f8b858721a7db81670">00202</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf1ce01387d2348f8b858721a7db81670" title="S (majuscule)">S</a>                            = 0x0053, 
+<a name="l00203"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa21f40778b7db9343a6ca75ec2c41ccce">00203</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa21f40778b7db9343a6ca75ec2c41ccce" title="T (majuscule)">T</a>                            = 0x0054, 
+<a name="l00204"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac461e84f27bbb236874e1011cd66031f">00204</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac461e84f27bbb236874e1011cd66031f" title="U (majuscule)">U</a>                            = 0x0055, 
+<a name="l00205"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa28f41f1144eee94834387e9a6a088bc1">00205</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa28f41f1144eee94834387e9a6a088bc1" title="V (majuscule)">V</a>                            = 0x0056, 
+<a name="l00206"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab722ceeb601c72cd78fbd35f3581fdf7">00206</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab722ceeb601c72cd78fbd35f3581fdf7" title="W (majuscule)">W</a>                            = 0x0057, 
+<a name="l00207"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa58833a3110c570fb05130d40c365d1e4">00207</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa58833a3110c570fb05130d40c365d1e4" title="X (majuscule)">X</a>                            = 0x0058, 
+<a name="l00208"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5596231eabd6cf29050967d5ac83ad84">00208</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5596231eabd6cf29050967d5ac83ad84" title="Y (majuscule)">Y</a>                            = 0x0059, 
+<a name="l00209"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa70478ce277ffc322f8e1e3418e07355">00209</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa70478ce277ffc322f8e1e3418e07355" title="Z (majuscule)">Z</a>                            = 0x005a, 
+<a name="l00210"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa9a14f6921e22b9611d7baaf70d85c3a">00210</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa9a14f6921e22b9611d7baaf70d85c3a" title="Crochet ouvrant : « [ »">bracketleft</a>                  = 0x005b, 
+<a name="l00211"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4d566778b8688f98494227cc373ea3ed">00211</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4d566778b8688f98494227cc373ea3ed" title="Barre oblique renversée : « \ »">backslash</a>                    = 0x005c, 
+<a name="l00212"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa98a091ec5d3145960f26ab5c6b3e64a7">00212</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa98a091ec5d3145960f26ab5c6b3e64a7" title="Crochet fermant : « ] »">bracketright</a>                 = 0x005d, 
+<a name="l00213"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8f46a626971b6771bf82042b5907ec8a">00213</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa8f46a626971b6771bf82042b5907ec8a" title="Accent circonflexe (seul) : « ^ »">asciicircum</a>                  = 0x005e, 
+<a name="l00214"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaae1456aef9f3f095548a74c6b578e5ef">00214</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaae1456aef9f3f095548a74c6b578e5ef" title="Carractère « souligné » : « _ »">underscore</a>                   = 0x005f, 
+<a name="l00215"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa76c4e7221ad9f2d4adb3067fcd80ab22">00215</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa76c4e7221ad9f2d4adb3067fcd80ab22" title="Accent grave (seul) : « ` »">grave</a>                        = 0x0060, 
+<a name="l00216"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa91fb0824da12f8bb3b74dd78fb13b63">00216</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa91fb0824da12f8bb3b74dd78fb13b63" title="a (minuscule)">a</a>                            = 0x0061, 
+<a name="l00217"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa06b03e4cd5c7c464c513a95a7fcf9bf">00217</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa06b03e4cd5c7c464c513a95a7fcf9bf" title="b (minuscule)">b</a>                            = 0x0062, 
+<a name="l00218"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa776304400122408ea717dde9234fdd2a">00218</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa776304400122408ea717dde9234fdd2a" title="c (minuscule)">c</a>                            = 0x0063, 
+<a name="l00219"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae8f0ad1953249e38043d318b8f4400d0">00219</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae8f0ad1953249e38043d318b8f4400d0" title="d (minuscule)">d</a>                            = 0x0064, 
+<a name="l00220"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5be8d0f77f0d0b6c3724e5c446737d1f">00220</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5be8d0f77f0d0b6c3724e5c446737d1f" title="e (minuscule)">e</a>                            = 0x0065, 
+<a name="l00221"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ce756344023b99e5ab27b804feb765c">00221</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7ce756344023b99e5ab27b804feb765c" title="f (minuscule)">f</a>                            = 0x0066, 
+<a name="l00222"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35c0bb7088830963c73dcf0470ab8922">00222</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35c0bb7088830963c73dcf0470ab8922" title="g (minuscule)">g</a>                            = 0x0067, 
+<a name="l00223"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83684c9789c44b5b6edca6ae4ae1eeb5">00223</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83684c9789c44b5b6edca6ae4ae1eeb5" title="h (minuscule)">h</a>                            = 0x0068, 
+<a name="l00224"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa85ae20979fb729ef19da67855aecdfd5">00224</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa85ae20979fb729ef19da67855aecdfd5" title="i (minuscule)">i</a>                            = 0x0069, 
+<a name="l00225"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa352ec7b7c59618a2a6dba5a1ea0633be">00225</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa352ec7b7c59618a2a6dba5a1ea0633be" title="j (minuscule)">j</a>                            = 0x006a, 
+<a name="l00226"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966">00226</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966" title="k (minuscule)">k</a>                            = 0x006b, 
+<a name="l00227"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafec48674e69529e52b1724bc9164052f">00227</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafec48674e69529e52b1724bc9164052f" title="l (minuscule)">l</a>                            = 0x006c, 
+<a name="l00228"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaca3cf2ca9e0e7f4e96f2bbc362b9353a">00228</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaca3cf2ca9e0e7f4e96f2bbc362b9353a" title="m (minuscule)">m</a>                            = 0x006d, 
+<a name="l00229"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafe0cb765d0bfc2535a3f5b124ec8f887">00229</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafe0cb765d0bfc2535a3f5b124ec8f887" title="n (minuscule)">n</a>                            = 0x006e, 
+<a name="l00230"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa79e8893c670f0603af48887b7ff3da1e">00230</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa79e8893c670f0603af48887b7ff3da1e" title="o (minuscule)">o</a>                            = 0x006f, 
+<a name="l00231"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa188032b3e6837794e08d485d4426f1bb">00231</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa188032b3e6837794e08d485d4426f1bb" title="p (minuscule)">p</a>                            = 0x0070, 
+<a name="l00232"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa721be5ab1d5748f1a0850f822c316094">00232</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa721be5ab1d5748f1a0850f822c316094" title="q (minuscule)">q</a>                            = 0x0071, 
+<a name="l00233"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1381d2948406a6e29d37e72937824957">00233</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1381d2948406a6e29d37e72937824957" title="r (minuscule)">r</a>                            = 0x0072, 
+<a name="l00234"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa8e9307350b1e20521f37dfe5268df55">00234</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa8e9307350b1e20521f37dfe5268df55" title="s (minuscule)">s</a>                            = 0x0073, 
+<a name="l00235"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0247320c476fffeaa81ffa7836e08dee">00235</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0247320c476fffeaa81ffa7836e08dee" title="t (minuscule)">t</a>                            = 0x0074, 
+<a name="l00236"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa63f235d4a03b00a5e43f0bfa785c853d">00236</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa63f235d4a03b00a5e43f0bfa785c853d" title="u (minuscule)">u</a>                            = 0x0075, 
+<a name="l00237"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7571419a9cfbfae012aedf01dc8883de">00237</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa7571419a9cfbfae012aedf01dc8883de" title="v (minuscule)">v</a>                            = 0x0076, 
+<a name="l00238"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac2ee9060499a346927bbe8470a68e274">00238</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac2ee9060499a346927bbe8470a68e274" title="w (minuscule)">w</a>                            = 0x0077, 
+<a name="l00239"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c">00239</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>                            = 0x0078, 
+<a name="l00240"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2">00240</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>                            = 0x0079, 
+<a name="l00241"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa766ef8aad745d24433e347150a35da61">00241</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa766ef8aad745d24433e347150a35da61" title="z (minuscule)">z</a>                            = 0x007a, 
+<a name="l00242"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa327007ceeb5ff88e96feb6922a703a88">00242</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa327007ceeb5ff88e96feb6922a703a88" title="Accolade ouvrante : « { »">braceleft</a>                    = 0x007b, 
+<a name="l00243"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa381ec4a2fa41752a7a12cde35b7f180b">00243</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa381ec4a2fa41752a7a12cde35b7f180b" title="Barre verticale : « | »">bar</a>                          = 0x007c, 
+<a name="l00244"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac899e8f5bea34d6933f25ba47ad2a419">00244</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac899e8f5bea34d6933f25ba47ad2a419" title="Accolade fermante : « } »">braceright</a>                   = 0x007d, 
+<a name="l00245"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa324a64c3a7f08abe46f5202b54ee030d">00245</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa324a64c3a7f08abe46f5202b54ee030d" title="Accent tilde (seul)">asciitilde</a>                   = 0x007e, 
+<a name="l00246"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4e43e7dec5377fcd53d37a36b8136856">00246</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4e43e7dec5377fcd53d37a36b8136856" title="Espace non-sécable.">nobreakspace</a>                 = 0x00a0, 
+<a name="l00247"></a>00247  exclamdown                   = 0x00a1,  <span class="comment">/* INVERTED EXCLAMATION MARK */</span>
+<a name="l00248"></a>00248  cent                         = 0x00a2,  <span class="comment">/* CENT SIGN */</span>
+<a name="l00249"></a>00249  sterling                     = 0x00a3,  <span class="comment">/* POUND SIGN */</span>
+<a name="l00250"></a>00250  currency                     = 0x00a4,  <span class="comment">/* CURRENCY SIGN */</span>
+<a name="l00251"></a>00251  yen                          = 0x00a5,  <span class="comment">/* YEN SIGN */</span>
+<a name="l00252"></a>00252  brokenbar                    = 0x00a6,  <span class="comment">/* BROKEN BAR */</span>
+<a name="l00253"></a>00253  section                      = 0x00a7,  <span class="comment">/* SECTION SIGN */</span>
+<a name="l00254"></a>00254  diaeresis                    = 0x00a8,  <span class="comment">/* DIAERESIS */</span>
+<a name="l00255"></a>00255  copyright                    = 0x00a9,  <span class="comment">/* COPYRIGHT SIGN */</span>
+<a name="l00256"></a>00256  ordfeminine                  = 0x00aa,  <span class="comment">/* FEMININE ORDINAL INDICATOR */</span>
+<a name="l00257"></a>00257  guillemotleft                = 0x00ab,  <span class="comment">/* LEFT-POINTING DOUBLE ANGLE QUOTATION MARK */</span>
+<a name="l00258"></a>00258  notsign                      = 0x00ac,  <span class="comment">/* NOT SIGN */</span>
+<a name="l00259"></a>00259  hyphen                       = 0x00ad,  <span class="comment">/* SOFT HYPHEN */</span>
+<a name="l00260"></a>00260  registered                   = 0x00ae,  <span class="comment">/* REGISTERED SIGN */</span>
+<a name="l00261"></a>00261  macron                       = 0x00af,  <span class="comment">/* MACRON */</span>
+<a name="l00262"></a>00262  degree                       = 0x00b0,  <span class="comment">/* DEGREE SIGN */</span>
+<a name="l00263"></a>00263  plusminus                    = 0x00b1,  <span class="comment">/* PLUS-MINUS SIGN */</span>
+<a name="l00264"></a><a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6af8b46ea04cd9e552c7627827b2a6bc">00264</a>  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6af8b46ea04cd9e552c7627827b2a6bc" title="exposant deux">twosuperior</a>                  = 0x00b2,  
+<a name="l00265"></a>00265  threesuperior                = 0x00b3,  <span class="comment">/* SUPERSCRIPT THREE */</span>
+<a name="l00266"></a>00266  acute                        = 0x00b4,  <span class="comment">/* ACUTE ACCENT */</span>
+<a name="l00267"></a>00267  mu                           = 0x00b5,  <span class="comment">/* MICRO SIGN */</span>
+<a name="l00268"></a>00268  paragraph                    = 0x00b6,  <span class="comment">/* PILCROW SIGN */</span>
+<a name="l00269"></a>00269  periodcentered               = 0x00b7,  <span class="comment">/* MIDDLE DOT */</span>
+<a name="l00270"></a>00270  cedilla                      = 0x00b8,  <span class="comment">/* CEDILLA */</span>
+<a name="l00271"></a>00271  onesuperior                  = 0x00b9,  <span class="comment">/* SUPERSCRIPT ONE */</span>
+<a name="l00272"></a>00272  masculine                    = 0x00ba,  <span class="comment">/* MASCULINE ORDINAL INDICATOR */</span>
+<a name="l00273"></a>00273  guillemotright               = 0x00bb,  <span class="comment">/* RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK */</span>
+<a name="l00274"></a>00274  onequarter                   = 0x00bc,  <span class="comment">/* VULGAR FRACTION ONE QUARTER */</span>
+<a name="l00275"></a>00275  onehalf                      = 0x00bd,  <span class="comment">/* VULGAR FRACTION ONE HALF */</span>
+<a name="l00276"></a>00276  threequarters                = 0x00be,  <span class="comment">/* VULGAR FRACTION THREE QUARTERS */</span>
+<a name="l00277"></a>00277  questiondown                 = 0x00bf,  <span class="comment">/* INVERTED QUESTION MARK */</span>
+<a name="l00278"></a>00278  Agrave                       = 0x00c0,  <span class="comment">/* CAPITAL LETTER A WITH GRAVE */</span>
+<a name="l00279"></a>00279  Aacute                       = 0x00c1,  <span class="comment">/* CAPITAL LETTER A WITH ACUTE */</span>
+<a name="l00280"></a>00280  Acircumflex                  = 0x00c2,  <span class="comment">/* CAPITAL LETTER A WITH CIRCUMFLEX */</span>
+<a name="l00281"></a>00281  Atilde                       = 0x00c3,  <span class="comment">/* CAPITAL LETTER A WITH TILDE */</span>
+<a name="l00282"></a>00282  Adiaeresis                   = 0x00c4,  <span class="comment">/* CAPITAL LETTER A WITH DIAERESIS */</span>
+<a name="l00283"></a>00283  Aring                        = 0x00c5,  <span class="comment">/* CAPITAL LETTER A WITH RING ABOVE */</span>
+<a name="l00284"></a>00284  AE                           = 0x00c6,  <span class="comment">/* CAPITAL LETTER AE */</span>
+<a name="l00285"></a>00285  Ccedilla                     = 0x00c7,  <span class="comment">/* CAPITAL LETTER C WITH CEDILLA */</span>
+<a name="l00286"></a>00286  Egrave                       = 0x00c8,  <span class="comment">/* CAPITAL LETTER E WITH GRAVE */</span>
+<a name="l00287"></a>00287  Eacute                       = 0x00c9,  <span class="comment">/* CAPITAL LETTER E WITH ACUTE */</span>
+<a name="l00288"></a>00288  Ecircumflex                  = 0x00ca,  <span class="comment">/* CAPITAL LETTER E WITH CIRCUMFLEX */</span>
+<a name="l00289"></a>00289  Ediaeresis                   = 0x00cb,  <span class="comment">/* CAPITAL LETTER E WITH DIAERESIS */</span>
+<a name="l00290"></a>00290  Igrave                       = 0x00cc,  <span class="comment">/* CAPITAL LETTER I WITH GRAVE */</span>
+<a name="l00291"></a>00291  Iacute                       = 0x00cd,  <span class="comment">/* CAPITAL LETTER I WITH ACUTE */</span>
+<a name="l00292"></a>00292  Icircumflex                  = 0x00ce,  <span class="comment">/* CAPITAL LETTER I WITH CIRCUMFLEX */</span>
+<a name="l00293"></a>00293  Idiaeresis                   = 0x00cf,  <span class="comment">/* CAPITAL LETTER I WITH DIAERESIS */</span>
+<a name="l00294"></a>00294  ETH                          = 0x00d0,  <span class="comment">/* CAPITAL LETTER ETH */</span>
+<a name="l00295"></a>00295  Ntilde                       = 0x00d1,  <span class="comment">/* CAPITAL LETTER N WITH TILDE */</span>
+<a name="l00296"></a>00296  Ograve                       = 0x00d2,  <span class="comment">/* CAPITAL LETTER O WITH GRAVE */</span>
+<a name="l00297"></a>00297  Oacute                       = 0x00d3,  <span class="comment">/* CAPITAL LETTER O WITH ACUTE */</span>
+<a name="l00298"></a>00298  Ocircumflex                  = 0x00d4,  <span class="comment">/* CAPITAL LETTER O WITH CIRCUMFLEX */</span>
+<a name="l00299"></a>00299  Otilde                       = 0x00d5,  <span class="comment">/* CAPITAL LETTER O WITH TILDE */</span>
+<a name="l00300"></a>00300  Odiaeresis                   = 0x00d6,  <span class="comment">/* CAPITAL LETTER O WITH DIAERESIS */</span>
+<a name="l00301"></a>00301  multiply                     = 0x00d7,  <span class="comment">/* MULTIPLICATION SIGN */</span>
+<a name="l00302"></a>00302  Oslash                       = 0x00d8,  <span class="comment">/* CAPITAL LETTER O WITH STROKE */</span>
+<a name="l00303"></a>00303  Ugrave                       = 0x00d9,  <span class="comment">/* CAPITAL LETTER U WITH GRAVE */</span>
+<a name="l00304"></a>00304  Uacute                       = 0x00da,  <span class="comment">/* CAPITAL LETTER U WITH ACUTE */</span>
+<a name="l00305"></a>00305  Ucircumflex                  = 0x00db,  <span class="comment">/* CAPITAL LETTER U WITH CIRCUMFLEX */</span>
+<a name="l00306"></a>00306  Udiaeresis                   = 0x00dc,  <span class="comment">/* CAPITAL LETTER U WITH DIAERESIS */</span>
+<a name="l00307"></a>00307  Yacute                       = 0x00dd,  <span class="comment">/* CAPITAL LETTER Y WITH ACUTE */</span>
+<a name="l00308"></a>00308  THORN                        = 0x00de,  <span class="comment">/* CAPITAL LETTER THORN */</span>
+<a name="l00309"></a>00309  ssharp                       = 0x00df,  <span class="comment">/* SMALL LETTER SHARP S */</span>
+<a name="l00310"></a>00310  agrave                       = 0x00e0,  <span class="comment">/* SMALL LETTER A WITH GRAVE */</span>
+<a name="l00311"></a>00311  aacute                       = 0x00e1,  <span class="comment">/* SMALL LETTER A WITH ACUTE */</span>
+<a name="l00312"></a>00312  acircumflex                  = 0x00e2,  <span class="comment">/* SMALL LETTER A WITH CIRCUMFLEX */</span>
+<a name="l00313"></a>00313  atilde                       = 0x00e3,  <span class="comment">/* SMALL LETTER A WITH TILDE */</span>
+<a name="l00314"></a>00314  adiaeresis                   = 0x00e4,  <span class="comment">/* SMALL LETTER A WITH DIAERESIS */</span>
+<a name="l00315"></a>00315  aring                        = 0x00e5,  <span class="comment">/* SMALL LETTER A WITH RING ABOVE */</span>
+<a name="l00316"></a>00316  ae                           = 0x00e6,  <span class="comment">/* SMALL LETTER AE */</span>
+<a name="l00317"></a>00317  ccedilla                     = 0x00e7,  <span class="comment">/* SMALL LETTER C WITH CEDILLA */</span>
+<a name="l00318"></a>00318  egrave                       = 0x00e8,  <span class="comment">/* SMALL LETTER E WITH GRAVE */</span>
+<a name="l00319"></a>00319  eacute                       = 0x00e9,  <span class="comment">/* SMALL LETTER E WITH ACUTE */</span>
+<a name="l00320"></a>00320  ecircumflex                  = 0x00ea,  <span class="comment">/* SMALL LETTER E WITH CIRCUMFLEX */</span>
+<a name="l00321"></a>00321  ediaeresis                   = 0x00eb,  <span class="comment">/* SMALL LETTER E WITH DIAERESIS */</span>
+<a name="l00322"></a>00322  igrave                       = 0x00ec,  <span class="comment">/* SMALL LETTER I WITH GRAVE */</span>
+<a name="l00323"></a>00323  iacute                       = 0x00ed,  <span class="comment">/* SMALL LETTER I WITH ACUTE */</span>
+<a name="l00324"></a>00324  icircumflex                  = 0x00ee,  <span class="comment">/* SMALL LETTER I WITH CIRCUMFLEX */</span>
+<a name="l00325"></a>00325  idiaeresis                   = 0x00ef,  <span class="comment">/* SMALL LETTER I WITH DIAERESIS */</span>
+<a name="l00326"></a>00326  eth                          = 0x00f0,  <span class="comment">/* SMALL LETTER ETH */</span>
+<a name="l00327"></a>00327  ntilde                       = 0x00f1,  <span class="comment">/* SMALL LETTER N WITH TILDE */</span>
+<a name="l00328"></a>00328  ograve                       = 0x00f2,  <span class="comment">/* SMALL LETTER O WITH GRAVE */</span>
+<a name="l00329"></a>00329  oacute                       = 0x00f3,  <span class="comment">/* SMALL LETTER O WITH ACUTE */</span>
+<a name="l00330"></a>00330  ocircumflex                  = 0x00f4,  <span class="comment">/* SMALL LETTER O WITH CIRCUMFLEX */</span>
+<a name="l00331"></a>00331  otilde                       = 0x00f5,  <span class="comment">/* SMALL LETTER O WITH TILDE */</span>
+<a name="l00332"></a>00332  odiaeresis                   = 0x00f6,  <span class="comment">/* SMALL LETTER O WITH DIAERESIS */</span>
+<a name="l00333"></a>00333  division                     = 0x00f7,  <span class="comment">/* DIVISION SIGN */</span>
+<a name="l00334"></a>00334  oslash                       = 0x00f8,  <span class="comment">/* SMALL LETTER O WITH STROKE */</span>
+<a name="l00335"></a>00335  ugrave                       = 0x00f9,  <span class="comment">/* SMALL LETTER U WITH GRAVE */</span>
+<a name="l00336"></a>00336  uacute                       = 0x00fa,  <span class="comment">/* SMALL LETTER U WITH ACUTE */</span>
+<a name="l00337"></a>00337  ucircumflex                  = 0x00fb,  <span class="comment">/* SMALL LETTER U WITH CIRCUMFLEX */</span>
+<a name="l00338"></a>00338  udiaeresis                   = 0x00fc,  <span class="comment">/* SMALL LETTER U WITH DIAERESIS */</span>
+<a name="l00339"></a>00339  yacute                       = 0x00fd,  <span class="comment">/* SMALL LETTER Y WITH ACUTE */</span>
+<a name="l00340"></a>00340  thorn                        = 0x00fe,  <span class="comment">/* SMALL LETTER THORN */</span>
+<a name="l00341"></a>00341  ydiaeresis                   = 0x00ff,  <span class="comment">/* SMALL LETTER Y WITH DIAERESIS */</span>
+<a name="l00342"></a>00342  EuroSign                     = 0x20ac   <span class="comment">/* EURO SIGN */</span>
+<a name="l00343"></a>00343 };
+<a name="l00344"></a>00344 
+<a name="l00347"></a>00347 std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os,<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>&amp; <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966" title="k (minuscule)">k</a>);
+<a name="l00348"></a>00348 
+<a name="l00350"></a>00350 <span class="keyword">struct </span>sEz_event;
+<a name="l00352"></a>00352 
+<a name="l00354"></a><a class="code" href="class_e_z_event.html">00354</a> <span class="keyword">class </span><a class="code" href="class_e_z_event.html">EZEvent</a> {
+<a name="l00356"></a>00356  <span class="keyword">const</span> <span class="keyword">struct </span>sEz_event* ez_event;
+<a name="l00357"></a>00357  <span class="keyword">inline</span> <span class="keywordtype">void</span> setEvent(<span class="keyword">const</span> <span class="keyword">struct</span> sEz_event *<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5be8d0f77f0d0b6c3724e5c446737d1f" title="e (minuscule)">e</a>) { ez_event = <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5be8d0f77f0d0b6c3724e5c446737d1f" title="e (minuscule)">e</a>; }
+<a name="l00358"></a>00358  <a class="code" href="class_e_z_event.html">EZEvent</a>(<span class="keyword">const</span> <span class="keyword">struct</span> sEz_event *);
+<a name="l00360"></a>00360 <span class="keyword">public</span>:
+<a name="l00362"></a>00362  <span class="keywordtype">int</span> <a class="code" href="class_e_z_event.html#ae956aa7ffe1366c7a58c5418f72dda9b">mouseX</a>() <span class="keyword">const</span>;
+<a name="l00364"></a>00364  <span class="keywordtype">int</span> <a class="code" href="class_e_z_event.html#ac975358cee07a159ea601a9365826a6a" title="Pour un événement concernant la souris, renvoie la coordonnée y de la position de la souris au moment...">mouseY</a>() <span class="keyword">const</span>;
+<a name="l00366"></a>00366  <span class="keywordtype">int</span> <a class="code" href="class_e_z_event.html#af6d6cc89229e7f69918746f8c0a073fc" title="Pour un événement concernant la souris, renvoie le numéro du bouton de la souris qui a déclenché l&#39;év...">mouseButton</a>() <span class="keyword">const</span>;
+<a name="l00368"></a>00368  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>     <a class="code" href="class_e_z_event.html#a36f9e84d1956532edf13283f6946d697" title="Renvoie l&#39;identificant de la touche du clavier qui a été appuyée/relachée sous forme d&#39;un EZKeySym...">keySym</a>() <span class="keyword">const</span>;
+<a name="l00370"></a>00370  std::string <a class="code" href="class_e_z_event.html#a0a64b69e46339cc12fa3407aa419ee5e" title="Renvoie une chaîne de caractère permettant d&#39;afficher le nom du EZKeySym.">keyName</a>() <span class="keyword">const</span>;
+<a name="l00372"></a>00372  <span class="keywordtype">size_t</span>       <a class="code" href="class_e_z_event.html#a4e99c100087603c7133e28709a27a662" title="Renvoie le nombre de caractères qui sont stockés dans la chaîne consultable par const char * EZEvent:...">keyCount</a>() <span class="keyword">const</span>;
+<a name="l00375"></a>00375  <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="class_e_z_event.html#ac2470e91036bbb69c5d4d04c9b69fb65">keyString</a>() <span class="keyword">const</span>;
+<a name="l00376"></a>00376  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_e_z_window.html">EZWindow</a>;
+<a name="l00377"></a>00377 };
+<a name="l00378"></a>00378 
+<a name="l00381"></a><a class="code" href="class_e_z_window.html">00381</a> <span class="keyword">class </span><a class="code" href="class_e_z_window.html">EZWindow</a> {
+<a name="l00383"></a>00383  <a class="code" href="class_e_z_event.html">EZEvent</a> current_event;
+<a name="l00384"></a>00384  <span class="keywordtype">bool</span> _isVisible;
+<a name="l00385"></a>00385                          <a class="code" href="class_e_z_window.html#aac81342c39c126e0ccd5d2784592b917">EZWindow</a>     (<span class="keyword">const</span> <a class="code" href="class_e_z_window.html">EZWindow</a>&amp;) = <span class="keyword">delete</span>;
+<a name="l00386"></a>00386         <span class="keyword">const</span> <a class="code" href="class_e_z_window.html">EZWindow</a>&amp;  operator=    (<span class="keyword">const</span> <a class="code" href="class_e_z_window.html">EZWindow</a>&amp;) = <span class="keyword">delete</span>;
+<a name="l00387"></a>00387  <span class="keyword">static</span> <span class="keywordtype">void</span> dispatch(<span class="keyword">struct</span> sEz_event *<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5be8d0f77f0d0b6c3724e5c446737d1f" title="e (minuscule)">e</a>);
+<a name="l00389"></a>00389 <span class="keyword">public</span>:
+<a name="l00394"></a>00394                          <a class="code" href="class_e_z_window.html#aac81342c39c126e0ccd5d2784592b917">EZWindow</a>     (<span class="keywordtype">int</span> width=320, <span class="keywordtype">int</span> height=200, <span class="keyword">const</span> <span class="keywordtype">char</span> *title=<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00395"></a>00395 
+<a name="l00397"></a>00397  <span class="keyword">virtual</span>                 <a class="code" href="class_e_z_window.html#a61da4f3418100e5e46a22097946692b6" title="Destructeur virtuel de la classe.">~EZWindow</a>    ();
+<a name="l00398"></a>00398 
+<a name="l00403"></a>00403         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a111b4c5c1093dbb608815e409abdb7f0">setDoubleBuffer</a> (<span class="keywordtype">bool</span> state=<span class="keyword">true</span>);
+<a name="l00404"></a>00404 
+<a name="l00405"></a>00405 
+<a name="l00409"></a>00409         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#ab4d14a03692491c9ae222f461dd18195">setWidth</a>     (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width);
+<a name="l00410"></a>00410 
+<a name="l00414"></a>00414         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#ae45be05d689d48c882bbd3a1d67e8aa4">setHeight</a>    (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height);
+<a name="l00415"></a>00415 
+<a name="l00420"></a>00420         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#aef3231e4ffc9d3e6436f0234116b0169">setWidthHeight</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height);
+<a name="l00421"></a>00421 
+<a name="l00423"></a>00423         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>     <a class="code" href="class_e_z_window.html#a525810a4513f492839dd52137e798ed6" title="Renvoie la largeur actuelle de la fenêtre.">getWidth</a>     () <span class="keyword">const</span>;
+<a name="l00424"></a>00424 
+<a name="l00426"></a>00426         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>     <a class="code" href="class_e_z_window.html#a39c0bb391357b06bcaf71dabe719b1dd" title="Renvoie la hauteur actuelle de la fenêtre.">getHeight</a>    () <span class="keyword">const</span>;
+<a name="l00427"></a>00427 
+<a name="l00431"></a><a class="code" href="class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94">00431</a>         <span class="keywordtype">bool</span>             <a class="code" href="class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94">isVisible</a>    ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _isVisible; }
+<a name="l00432"></a>00432 
+<a name="l00436"></a>00436         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a3cc6f680a1c80db6d4922dc7f0223e01">setVisible</a>   (<span class="keywordtype">bool</span> visible=<span class="keyword">true</span>);
+<a name="l00437"></a>00437 
+<a name="l00440"></a>00440         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a2bd6ec91ff13f2672846a13596d46c30">clear</a>        () <span class="keyword">const</span>;
+<a name="l00441"></a>00441 
+<a name="l00445"></a>00445         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a152d8f922aa89f152dac144bad171011">setColor</a>     (<a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a> color);
+<a name="l00446"></a>00446 
+<a name="l00449"></a>00449         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a31a362d21d8238b16849fa1e680b0ac9">setThick</a>     (<span class="keywordtype">int</span> thick=1);
+<a name="l00450"></a>00450 
+<a name="l00454"></a>00454  <span class="keyword">static</span> <a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a>          <a class="code" href="class_e_z_window.html#acdc2594edfbbcfb5de35931843beb529">getRGB</a>       (<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> red, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> green, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> blue);
+<a name="l00455"></a>00455 
+<a name="l00458"></a>00458  <span class="keyword">static</span> <a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a>          <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">getHSV</a>       (<span class="keywordtype">double</span> hue, <span class="keywordtype">double</span> saturation, <span class="keywordtype">double</span> value);
+<a name="l00459"></a>00459 
+<a name="l00463"></a>00463  <span class="keyword">static</span> <a class="code" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a>          <a class="code" href="class_e_z_window.html#afb46e456cbe4568048609e82cfbb3695">getGrey</a>      (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> gray);
+<a name="l00464"></a>00464 
+<a name="l00468"></a>00468  <span class="keyword">static</span> <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a7e30cd37239f6e7f551e38634aa1264a">HSVtoRGB</a> (<span class="keywordtype">double</span> hue, <span class="keywordtype">double</span> saturation, <span class="keywordtype">double</span> value, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a>&amp; red, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a>&amp; green, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a>&amp; blue);
+<a name="l00469"></a>00469 
+<a name="l00481"></a>00481         <span class="keywordtype">void</span>              <a class="code" href="class_e_z_window.html#abfb573d451e3832d078f78180dc45513">loadFont</a>     (<span class="keywordtype">int</span> num,<span class="keyword">const</span> <span class="keywordtype">char</span> *name);
+<a name="l00482"></a>00482 
+<a name="l00485"></a>00485         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a299aba6285b5fc6ed3bee1ee5d01653c">setFont</a>      (<span class="keywordtype">int</span> num);
+<a name="l00486"></a>00486 
+<a name="l00490"></a>00490         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a8160943d0d6c564abefdb88fef317d0e">drawPoint</a>    (<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>) <span class="keyword">const</span>;
+<a name="l00491"></a>00491 
+<a name="l00496"></a>00496         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#af79b9804d10e8bad1cb92545b7f8ef54">drawLine</a>     (<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2) <span class="keyword">const</span>;
+<a name="l00497"></a>00497 
+<a name="l00502"></a>00502         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a0b2f18dadc1eacec19f173411d884924">drawRectangle</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2) <span class="keyword">const</span>;
+<a name="l00503"></a>00503 
+<a name="l00508"></a>00508         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a4e4ba19215938b95eb9ea3b7364463da">fillRectangle</a>(<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2) <span class="keyword">const</span>;
+<a name="l00509"></a>00509 
+<a name="l00514"></a>00514         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a631fca1814422ad1ee0e8dda32a78f5d">drawCircle</a>   (<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2) <span class="keyword">const</span>;
+<a name="l00515"></a>00515 
+<a name="l00520"></a>00520         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a3439a0c225d586e0fdc70cfa9e5ddb69">fillCircle</a>   (<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2) <span class="keyword">const</span>;
+<a name="l00521"></a>00521 
+<a name="l00527"></a>00527         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#aa54a340579da61320dacf69bc4fc0b90">drawTriangle</a> (<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">int</span> x3, <span class="keywordtype">int</span> y3) <span class="keyword">const</span>;
+<a name="l00528"></a>00528 
+<a name="l00534"></a>00534         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a46467fde51fcc398e727c20800c19c10">fillTriangle</a> (<span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> x2, <span class="keywordtype">int</span> y2, <span class="keywordtype">int</span> x3, <span class="keywordtype">int</span> y3) <span class="keyword">const</span>;
+<a name="l00535"></a>00535 
+<a name="l00540"></a>00540         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a1a8d938dacbfb0f0fa57f4f380a18981">drawText</a>     (<a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>,<span class="keyword">const</span> std::string &amp;str) <span class="keyword">const</span>;
+<a name="l00541"></a>00541 
+<a name="l00547"></a>00547         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a1a8d938dacbfb0f0fa57f4f380a18981">drawText</a>     (<a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>,<span class="keyword">const</span> <span class="keywordtype">char</span> *str) <span class="keyword">const</span>;
+<a name="l00548"></a>00548 
+<a name="l00551"></a>00551         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#aab29a1993f91401c24be962223652e5d">sendExpose</a>   () <span class="keyword">const</span>;
+<a name="l00552"></a>00552 
+<a name="l00555"></a>00555         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a8d45b233432fffddb26c27cd44303d26">startTimer</a>   (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> delay) <span class="keyword">const</span>;
+<a name="l00556"></a>00556 
+<a name="l00559"></a>00559         <span class="keywordtype">void</span>             <a class="code" href="class_e_z_window.html#a35a6d501a092758176de5c6ec34e1570">stopTimer</a>    () <span class="keyword">const</span>;
+<a name="l00560"></a>00560 
+<a name="l00561"></a>00561  <span class="comment">// Gestion des Événements</span>
+<a name="l00563"></a><a class="code" href="class_e_z_window.html#ad343ef4f534344ae6e7aa587f60206e2">00563</a> <span class="comment"></span> <span class="keyword">inline</span>  <span class="keyword">const</span> <a class="code" href="class_e_z_event.html">EZEvent</a>&amp; <a class="code" href="class_e_z_window.html#ad343ef4f534344ae6e7aa587f60206e2" title="Accesseur pour l&#39;événement en cours d&#39;analyse sur la file des événements.">currentEvent</a> ()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> current_event; }
+<a name="l00564"></a>00564 
+<a name="l00567"></a>00567  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#ad754ff67df5249047e49e25e1f9596fa">expose</a>       ();
+<a name="l00568"></a>00568 
+<a name="l00570"></a>00570  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#ae5a5cc8a3e4f0e4dd1af42b7ba107e23" title="Cette fonction virtuelle est déclenchée lorsque l&#39;utilisateur a réclamé la fermeture de cette fenêtre...">close</a>        ();
+<a name="l00571"></a>00571 
+<a name="l00578"></a>00578  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#a2af3a09f4722fe313855fb9c19a87252">buttonPress</a>  (<span class="keywordtype">int</span> mouse_x,<span class="keywordtype">int</span> mouse_y,<span class="keywordtype">int</span> button);
+<a name="l00579"></a>00579 
+<a name="l00582"></a>00582  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#afd2f515101eb8dbc4fdf54ab8c7ede13">buttonRelease</a>(<span class="keywordtype">int</span> mouse_x,<span class="keywordtype">int</span> mouse_y,<span class="keywordtype">int</span> button);
+<a name="l00583"></a>00583 
+<a name="l00587"></a>00587  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#a4e807aaaf6ad4c1154d3e612be6b680f">motionNotify</a> (<span class="keywordtype">int</span> mouse_x,<span class="keywordtype">int</span> mouse_y,<span class="keywordtype">int</span> button);
+<a name="l00588"></a>00588 
+<a name="l00591"></a>00591  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#a8633fd4f1932074c987716fce9fa2000">keyPress</a>     (<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym);
+<a name="l00592"></a>00592 
+<a name="l00595"></a>00595  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#acc30ab8d91a1624081a1012ebe758765">keyRelease</a>   (<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym);
+<a name="l00596"></a>00596 
+<a name="l00599"></a>00599  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#ae131056fdc434b047f3436effbb56e11">configureNotify</a>(<span class="keywordtype">int</span> width,<span class="keywordtype">int</span> height);
+<a name="l00600"></a>00600 
+<a name="l00603"></a>00603  <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="class_e_z_window.html#a83b3e4b1dd4630362a8224f8b2ee6636">timerNotify</a>  ();
+<a name="l00604"></a>00604 
+<a name="l00606"></a>00606  <span class="keyword">friend</span> <span class="keyword">class </span>EZImage;
+<a name="l00607"></a>00607  <span class="keyword">friend</span> <span class="keyword">class </span>EZPixmap;
+<a name="l00609"></a>00609 };
+<a name="l00610"></a>00610 
+<a name="l00613"></a><a class="code" href="class_e_z_draw.html">00613</a> <span class="keyword">class </span><a class="code" href="class_e_z_draw.html">EZDraw</a> {
+<a name="l00615"></a>00615  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_e_z_window.html">EZWindow</a>;
+<a name="l00617"></a>00617 <span class="keyword">public</span>:
+<a name="l00622"></a>00622                       <a class="code" href="class_e_z_draw.html#a72bad23540f8a40b5f134c870ec4e4cd">EZDraw</a>();
+<a name="l00625"></a>00625  <span class="keyword">virtual</span>              <a class="code" href="class_e_z_draw.html#a5e38b03a99744e063ac0567640297c4d">~EZDraw</a>();
+<a name="l00626"></a>00626 
+<a name="l00629"></a>00629         <span class="keyword">static</span> <span class="keywordtype">void</span>   <a class="code" href="class_e_z_draw.html#a9ce9d27cee11b55735877bf0dab92c1c">quit</a>();
+<a name="l00630"></a>00630 
+<a name="l00633"></a>00633                <span class="keywordtype">void</span>   <a class="code" href="class_e_z_draw.html#add5ed0e4bcd9870dc3d0c54b07e8a2e4">setAutoQuit</a>(<span class="keywordtype">bool</span> value);
+<a name="l00634"></a>00634 
+<a name="l00637"></a>00637                <span class="keywordtype">void</span>   <a class="code" href="class_e_z_draw.html#aa259a5545051db0e85acac387f8d5c51">mainLoop</a>();
+<a name="l00638"></a>00638 
+<a name="l00642"></a>00642         <span class="keyword">static</span> <span class="keywordtype">int</span>    <a class="code" href="class_e_z_draw.html#a5a79209eed46237c73f9d406222ab7ff">random</a>(<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aafe0cb765d0bfc2535a3f5b124ec8f887" title="n (minuscule)">n</a>);
+<a name="l00643"></a>00643 
+<a name="l00646"></a>00646         <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_e_z_draw.html#a15208780a6feb8d6e55c752e629b0f8c">getTime</a>();
+<a name="l00647"></a>00647 };
+<a name="l00648"></a>00648 
+<a name="l00652"></a><a class="code" href="class_e_z_pixel.html">00652</a> <span class="keyword">class </span><a class="code" href="class_e_z_pixel.html">EZPixel</a> {
+<a name="l00653"></a>00653   <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> *p;
+<a name="l00654"></a>00654   <span class="keyword">inline</span> <a class="code" href="class_e_z_pixel.html">EZPixel</a>(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> *_p) : p(_p) {}
+<a name="l00655"></a>00655  <span class="keyword">public</span>:
+<a name="l00657"></a><a class="code" href="class_e_z_pixel.html#a2834b68f39727f3ec711c4dc24438329">00657</a>   <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="class_e_z_pixel.html#a2834b68f39727f3ec711c4dc24438329" title="Accesseur pour obtenir la valeur de la composante rouge du pixel.">getRed</a>()<span class="keyword">   const </span>{ <span class="keywordflow">return</span> p[0]; }
+<a name="l00659"></a><a class="code" href="class_e_z_pixel.html#a992b27344daffa4d34d4fa6fe052d025">00659</a>   <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="class_e_z_pixel.html#a992b27344daffa4d34d4fa6fe052d025" title="Accesseur pour obtenir la valeur de la composante verte du pixel.">getGreen</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> p[1]; }
+<a name="l00661"></a><a class="code" href="class_e_z_pixel.html#adb352f12973493bbb3f3d9f2ec664e54">00661</a>   <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="class_e_z_pixel.html#adb352f12973493bbb3f3d9f2ec664e54" title="Accesseur pour obtenir la valeur de la composante bleue du pixel.">getBlue</a>()<span class="keyword">  const </span>{ <span class="keywordflow">return</span> p[2]; }
+<a name="l00663"></a><a class="code" href="class_e_z_pixel.html#ae399c5cb45beb7ca39c558fee34351c6">00663</a>   <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="class_e_z_pixel.html#ae399c5cb45beb7ca39c558fee34351c6" title="Accesseur pour obtenir la valeur de la composante alpha du pixel.">getAlpha</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> p[3]; }
+<a name="l00665"></a><a class="code" href="class_e_z_pixel.html#aafe5cf0a9796b21ea2fc061fad404356">00665</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_e_z_pixel.html#aafe5cf0a9796b21ea2fc061fad404356" title="Accesseur pour modifier la valeur de la composante rouge du pixel.">setRed</a>(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1381d2948406a6e29d37e72937824957" title="r (minuscule)">r</a>)   { p[0] = <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1381d2948406a6e29d37e72937824957" title="r (minuscule)">r</a>; }
+<a name="l00667"></a><a class="code" href="class_e_z_pixel.html#a3fdc82de0dae8947649a19f39b8c1354">00667</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_e_z_pixel.html#a3fdc82de0dae8947649a19f39b8c1354" title="Accesseur pour modifier la valeur de la composante verte du pixel.">setGreen</a>(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35c0bb7088830963c73dcf0470ab8922" title="g (minuscule)">g</a>) { p[1] = <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35c0bb7088830963c73dcf0470ab8922" title="g (minuscule)">g</a>; }
+<a name="l00669"></a><a class="code" href="class_e_z_pixel.html#af98c59a8f7f00fff9d0fc8ce7277b2d8">00669</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_e_z_pixel.html#af98c59a8f7f00fff9d0fc8ce7277b2d8" title="Accesseur pour modifier la valeur de la composante bleue du pixel.">setBlue</a>(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa06b03e4cd5c7c464c513a95a7fcf9bf" title="b (minuscule)">b</a>)  { p[2] = <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa06b03e4cd5c7c464c513a95a7fcf9bf" title="b (minuscule)">b</a>; }
+<a name="l00671"></a><a class="code" href="class_e_z_pixel.html#a27a5f939d62f5463e445a3253ecadb18">00671</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_e_z_pixel.html#a27a5f939d62f5463e445a3253ecadb18" title="Accesseur pour modifier la valeur de la composante alpha du pixel.">setAlpha</a>(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa91fb0824da12f8bb3b74dd78fb13b63" title="a (minuscule)">a</a>) { p[3] = <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa91fb0824da12f8bb3b74dd78fb13b63" title="a (minuscule)">a</a>; }
+<a name="l00672"></a>00672  <span class="keyword">friend</span> <span class="keyword">class </span>EZImage;
+<a name="l00673"></a>00673 };
+<a name="l00674"></a>00674 
+<a name="l00675"></a>00675 <span class="keyword">struct </span>sEz_image;
+<a name="l00676"></a>00676 
+<a name="l00679"></a><a class="code" href="classfinal.html">00679</a> <span class="keyword">class </span>EZImage <a class="code" href="classfinal.html">final</a> {
+<a name="l00680"></a>00680  <span class="keyword">struct </span>sEz_image *image;
+<a name="l00681"></a>00681  EZImage(<span class="keyword">struct</span> sEz_image*);
+<a name="l00682"></a>00682  EZImage() = <span class="keyword">delete</span>;
+<a name="l00683"></a>00683 <span class="keyword">public</span>:
+<a name="l00686"></a>00686  EZImage(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);
+<a name="l00688"></a>00688  EZImage(<span class="keyword">const</span> EZImage&amp;);
+<a name="l00692"></a>00692  EZImage(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename);
+<a name="l00694"></a>00694  ~EZImage();
+<a name="l00696"></a>00696  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getWidth()  <span class="keyword">const</span>;
+<a name="l00698"></a>00698  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getHeight() <span class="keyword">const</span>;
+<a name="l00701"></a>00701  <span class="keywordtype">void</span> setAlpha(<span class="keywordtype">bool</span> has_alpha);
+<a name="l00703"></a>00703  <span class="keywordtype">bool</span>  getAlpha() <span class="keyword">const</span>;
+<a name="l00707"></a>00707  <span class="keywordtype">void</span> setOpacity(<span class="keywordtype">int</span> opacity);
+<a name="l00711"></a>00711  <span class="keywordtype">int</span>  getOpacity() <span class="keyword">const</span>;
+<a name="l00715"></a>00715  <a class="code" href="class_e_z_pixel.html">EZPixel</a> getPixel(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>);
+<a name="l00720"></a>00720  <span class="keywordtype">void</span> paint(<a class="code" href="class_e_z_window.html">EZWindow</a>&amp; win,<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y) <span class="keyword">const</span>;
+<a name="l00727"></a>00727  <span class="keywordtype">void</span> paintSubimage(<a class="code" href="class_e_z_window.html">EZWindow</a>&amp; win,<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y,<span class="keywordtype">int</span> src_x, <span class="keywordtype">int</span> src_y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">const</span>;
+<a name="l00729"></a>00729  <span class="keywordtype">void</span> print(<span class="keywordtype">int</span> src_x, <span class="keywordtype">int</span> src_y, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac2ee9060499a346927bbe8470a68e274" title="w (minuscule)">w</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83684c9789c44b5b6edca6ae4ae1eeb5" title="h (minuscule)">h</a>) <span class="keyword">const</span>;
+<a name="l00733"></a>00733  <span class="keywordtype">void</span> fillRGBA(<a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> red, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> green, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> blue, <a class="code" href="ez-draw_09_09_8hpp.html#ad1c21a8c6a39bdb445797fdbb2f5c04f" title="Type entier 8 bits non-signé permettant de représenter une valeur entre 0 et 255 inclus.">EZuint8</a> alpha);
+<a name="l00740"></a>00740  <span class="keywordtype">void</span> blend(<span class="keyword">const</span> EZImage&amp; src, <span class="keywordtype">int</span> dst_x, <span class="keywordtype">int</span> dst_y);
+<a name="l00746"></a>00746  <span class="keywordtype">void</span> blendSubimage(<span class="keyword">const</span> EZImage&amp; src, <span class="keywordtype">int</span> dst_x, <span class="keywordtype">int</span> dst_y,<span class="keywordtype">int</span> src_x, <span class="keywordtype">int</span> src_y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);
+<a name="l00751"></a>00751  EZImage *extract(<span class="keywordtype">int</span> src_x, <span class="keywordtype">int</span> src_y, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">const</span>;
+<a name="l00754"></a>00754  EZImage *verticalSymmetry() <span class="keyword">const</span>;
+<a name="l00757"></a>00757  EZImage *horizontalSymmetry() <span class="keyword">const</span>;
+<a name="l00762"></a>00762  EZImage* scale(<span class="keywordtype">double</span> factor) <span class="keyword">const</span>;
+<a name="l00771"></a>00771  EZImage* rotate(<span class="keywordtype">double</span> theta,<span class="keywordtype">int</span> quality) <span class="keyword">const</span>;
+<a name="l00778"></a>00778  <span class="keywordtype">void</span> rotatePoint(<span class="keywordtype">double</span> theta, <span class="keywordtype">int</span> src_x, <span class="keywordtype">int</span> src_y,<span class="keywordtype">int</span>&amp; dst_x, <span class="keywordtype">int</span>&amp; dst_y);
+<a name="l00779"></a>00779  <span class="keyword">friend</span> <span class="keyword">class </span>EZPixmap;
+<a name="l00780"></a>00780 };
+<a name="l00781"></a>00781 
+<a name="l00782"></a>00782 <span class="keyword">struct </span>sEz_pixmap;
+<a name="l00783"></a>00783 
+<a name="l00788"></a>00788 <span class="keyword">class </span>EZPixmap <a class="code" href="classfinal.html">final</a> {
+<a name="l00789"></a>00789  <span class="keyword">struct </span>sEz_pixmap *pixmap;
+<a name="l00790"></a>00790  EZPixmap()=<span class="keyword">delete</span>;
+<a name="l00791"></a>00791 <span class="keyword">public</span>:
+<a name="l00795"></a>00795  EZPixmap(<span class="keyword">const</span> EZImage&amp; image);
+<a name="l00797"></a>00797  ~EZPixmap();
+<a name="l00801"></a>00801  <span class="keywordtype">void</span> paint(<a class="code" href="class_e_z_window.html">EZWindow</a>&amp; win,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>) <span class="keyword">const</span>;
+<a name="l00806"></a>00806  <span class="keywordtype">void</span> tile(<a class="code" href="class_e_z_window.html">EZWindow</a>&amp; win,<span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aacab1e15e82c5976bfb476ddfe145263c" title="x (minuscule)">x</a>, <span class="keywordtype">int</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aae1f9fdb8b786c63efc4ce44eeacd17f2" title="y (minuscule)">y</a>, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) <span class="keyword">const</span>;
+<a name="l00807"></a>00807 };
+<a name="l00808"></a>00808 
+<a name="l00809"></a>00809 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="ez-draw_09_09_8hpp.html">ez-draw++.hpp</a>      </li>
+
+    <li class="footer">Généré le Lundi Mai 22 2017 09:55:44 pour Project c++ par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>
