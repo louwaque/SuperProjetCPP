@@ -10,7 +10,7 @@ GraphicsItem::GraphicsItem(GraphicsItem *parent)
 GraphicsItem::~GraphicsItem()
 {
   setParent(nullptr);
-  cerr << "GraphicsItem deleted :" << this << " of type : " << type() << endl;
+  std::cerr << "GraphicsItem deleted :" << this << " of type : " << type() << std::endl;
 }
 
 void GraphicsItem::setParent(GraphicsItem *parent)
