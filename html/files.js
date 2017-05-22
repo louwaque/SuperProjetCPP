@@ -11,7 +11,7 @@ var files =
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsRectangle.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp", "_graphics_text_8hpp.html", null ],
-    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp", "_graphics_triangle_8hpp.html", null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp", "_point_8hpp.html", "_point_8hpp" ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp", null, null ]

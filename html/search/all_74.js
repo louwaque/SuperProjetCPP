@@ -5,11 +5,13 @@ var searchData=
   ['tc',['TC',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ae179015c05e581c38074e893dbf27840',1,'ez-draw++.hpp']]],
   ['tcf',['TCF',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447afee9f095f2b2e922270baa3e74eeecbf',1,'ez-draw++.hpp']]],
   ['text',['text',['../class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352',1,'GraphicsText']]],
+  ['third',['third',['../class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6',1,'GraphicsTriangle']]],
   ['tile',['tile',['../classfinal.html#a6556cbdbad6164501ba6a116dd9a0b08',1,'final']]],
   ['timernotify',['timerNotify',['../class_e_z_window.html#a83b3e4b1dd4630362a8224f8b2ee6636',1,'EZWindow']]],
   ['tl',['TL',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447aca301a4c4fa25b27fff84becdd631048',1,'ez-draw++.hpp']]],
   ['tlf',['TLF',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a9f96227b8ba4acd0d86bd0788afd723d',1,'ez-draw++.hpp']]],
   ['tr',['TR',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a1743e98464bf7bcabcf51101b49a6a3d',1,'ez-draw++.hpp']]],
   ['trf',['TRF',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a64b85a57b48a674c6a088b162582bcd0',1,'ez-draw++.hpp']]],
-  ['twosuperior',['twosuperior',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6af8b46ea04cd9e552c7627827b2a6bc',1,'ez-draw++.hpp']]]
+  ['twosuperior',['twosuperior',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6af8b46ea04cd9e552c7627827b2a6bc',1,'ez-draw++.hpp']]],
+  ['type',['type',['../class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d',1,'GraphicsText::type()'],['../class_graphics_triangle.html#a356564e83fa9202bb2fc9f1d715f87ee',1,'GraphicsTriangle::type()']]]
 ];

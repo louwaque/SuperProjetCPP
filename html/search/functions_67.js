@@ -12,5 +12,6 @@ var searchData=
   ['getrgb',['getRGB',['../class_e_z_window.html#acdc2594edfbbcfb5de35931843beb529',1,'EZWindow']]],
   ['gettime',['getTime',['../class_e_z_draw.html#a15208780a6feb8d6e55c752e629b0f8c',1,'EZDraw']]],
   ['getwidth',['getWidth',['../class_e_z_window.html#a525810a4513f492839dd52137e798ed6',1,'EZWindow::getWidth()'],['../classfinal.html#acdfbd3621e46c42155117eaaf2ffee32',1,'final::getWidth()']]],
-  ['graphicstext',['GraphicsText',['../class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb',1,'GraphicsText::GraphicsText(GraphicsItem *parent=nullptr)'],['../class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1',1,'GraphicsText::GraphicsText(const std::string &amp;text, GraphicsItem *parent=nullptr)']]]
+  ['graphicstext',['GraphicsText',['../class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb',1,'GraphicsText::GraphicsText(GraphicsItem *parent=nullptr)'],['../class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1',1,'GraphicsText::GraphicsText(const std::string &amp;text, GraphicsItem *parent=nullptr)']]],
+  ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01',1,'GraphicsTriangle']]]
 ];

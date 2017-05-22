@@ -27,6 +27,7 @@ var NAVTREEINDEX =
 "files.html":[1,0],
 "ez-draw_09_09_8hpp.html":[1,0,0],
 "_graphics_text_8hpp.html":[1,0,10],
+"_graphics_triangle_8hpp.html":[1,0,11],
 "_point_8hpp.html":[1,0,12],
 "globals.html":[1,1,0],
 "globals.html":[1,1,0,0],

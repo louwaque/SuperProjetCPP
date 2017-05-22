@@ -1,6 +1,7 @@
 var searchData=
 [
   ['scale',['scale',['../classfinal.html#a2f4fe23e6f1a1283c38b8b5e7a93dbc6',1,'final']]],
+  ['second',['second',['../class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595',1,'GraphicsTriangle']]],
   ['sendexpose',['sendExpose',['../class_e_z_window.html#aab29a1993f91401c24be962223652e5d',1,'EZWindow']]],
   ['set',['set',['../class_point.html#a43923c490fb5439d7d8a041e86520c34',1,'Point']]],
   ['setalpha',['setAlpha',['../class_e_z_pixel.html#a27a5f939d62f5463e445a3253ecadb18',1,'EZPixel::setAlpha()'],['../classfinal.html#a2fe89de306240059536ee07dc1f8a29e',1,'final::setAlpha()']]],
