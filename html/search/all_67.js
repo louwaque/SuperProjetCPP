@@ -15,9 +15,13 @@ var searchData=
   ['getwidth',['getWidth',['../class_e_z_window.html#a525810a4513f492839dd52137e798ed6',1,'EZWindow::getWidth()'],['../classfinal.html#acdfbd3621e46c42155117eaaf2ffee32',1,'final::getWidth()']]],
   ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html',1,'']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],
+  ['graphicsline',['GraphicsLine',['../class_graphics_line.html',1,'']]],
   ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'']]],
+  ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'']]],
   ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html',1,'']]],
+  ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html',1,'']]],
   ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'']]],
+  ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]],
   ['grave',['grave',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa76c4e7221ad9f2d4adb3067fcd80ab22',1,'ez-draw++.hpp']]],
   ['greater',['greater',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa1f31a90b8246ac0f00abb35e86f9b644',1,'ez-draw++.hpp']]]
 ];

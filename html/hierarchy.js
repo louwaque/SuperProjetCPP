@@ -14,6 +14,11 @@ var hierarchy =
         [ "GraphicsAnchor", "class_graphics_anchor.html", null ]
       ] ],
       [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
+      [ "GraphicsShape", "class_graphics_shape.html", [
+        [ "GraphicsLine", "class_graphics_line.html", null ],
+        [ "GraphicsPolygon", "class_graphics_polygon.html", null ],
+        [ "GraphicsTriangle", "class_graphics_triangle.html", null ]
+      ] ],
       [ "GraphicsText", "class_graphics_text.html", null ]
     ] ],
     [ "Point", "class_point.html", null ]

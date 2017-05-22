@@ -129,11 +129,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00030"></a>00030     <a class="code" href="class_graphics_text.html">GraphicsText</a> *text2 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Bonjour les gens !!!!&quot;</span>, point2);
 <a name="l00031"></a>00031     text2-&gt;setColor(<a class="code" href="class_color.html">Color</a>(Color::Red));
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033     GraphicsLine *line = <span class="keyword">new</span> GraphicsLine(&amp;m_scene);
+<a name="l00033"></a>00033     <a class="code" href="class_graphics_line.html">GraphicsLine</a> *line = <span class="keyword">new</span> <a class="code" href="class_graphics_line.html">GraphicsLine</a>(&amp;m_scene);
 <a name="l00034"></a>00034     line-&gt;setAbsolute({50, 100});
 <a name="l00035"></a>00035     line-&gt;second()-&gt;setAnchor({80, 20});
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037     GraphicsTriangle *triangle = <span class="keyword">new</span> GraphicsTriangle(&amp;m_scene);
+<a name="l00037"></a>00037     <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a> *triangle = <span class="keyword">new</span> <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a>(&amp;m_scene);
 <a name="l00038"></a>00038     triangle-&gt;setFill(<span class="keyword">true</span>);
 <a name="l00039"></a>00039     triangle-&gt;setAbsolute({200, 20});
 <a name="l00040"></a>00040     triangle-&gt;second()-&gt;setAnchor(<a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a>(-30, 30));
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00045"></a>00045     rectangle-&gt;setAbsolute({100, 100});
 <a name="l00046"></a>00046     rectangle-&gt;bottomRight()-&gt;setAnchor({80, 50});
 <a name="l00047"></a>00047 
-<a name="l00048"></a>00048     GraphicsPolygon *polygon = <span class="keyword">new</span> GraphicsPolygon(&amp;m_scene);
+<a name="l00048"></a>00048     <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a> *polygon = <span class="keyword">new</span> <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>(&amp;m_scene);
 <a name="l00049"></a>00049     polygon-&gt;setFill(<span class="keyword">true</span>);
 <a name="l00050"></a>00050     polygon-&gt;setAbsolute({200, 100});
 <a name="l00051"></a>00051     polygon-&gt;setNbPoints(10);
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><b>Window.hpp</b>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 18:03:30 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 18:26:05 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

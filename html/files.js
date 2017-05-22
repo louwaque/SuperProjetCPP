@@ -5,9 +5,14 @@ var files =
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsPoint.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsPolygon.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsRectangle.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp", "_point_8hpp.html", "_point_8hpp" ],
-    [ "/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp", null, null ]
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp", null, null ]
 ];
