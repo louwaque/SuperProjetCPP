@@ -26,9 +26,9 @@ private:
 
 public:
   /*!
-   * \brief Constructeur
+   * \brief Constructeur par default de la classe Point.
    *
-   * Constructeur de la classe Point
+   * Crée une instance de la classe Point.
    *
    * \param x : abscisse
    * \param y : ordonnée
@@ -45,7 +45,7 @@ public:
    */
 
   Point(const Point & src);
-  
+
   ~Point();
 
   /*!
@@ -53,6 +53,7 @@ public:
    *
    *  \return  l'absisse du Point
    */
+   
   inline int x() const { return m_x; }
 
   /*!

@@ -61,6 +61,12 @@ public:
 
   inline void setAlign(const EZAlign align = EZAlign::TL) {m_align = align; }
 
+  /*!
+   *  \brief recupere le type de l'instance courrante.
+   *
+   *  \return type de GraphicsText.
+   */
+
   inline GraphicsTypes type() const { return TextType; }
 
 protected:
