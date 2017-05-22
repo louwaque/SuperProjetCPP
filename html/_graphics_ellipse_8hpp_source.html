@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp</title>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -89,51 +89,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('src_2_graphics_polygon_8hpp.html','');
+  initNavTree('_graphics_ellipse_8hpp.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">/home/travis/build/L0L022/SuperProjetCPP/src/GraphicsPolygon.hpp</div>  </div>
+<div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;../include/GraphicsPolygon.hpp&quot;</span>
-<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;../include/GraphicsPoint.hpp&quot;</span>
-<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;../include/GraphicsAnchor.hpp&quot;</span>
-<a name="l00004"></a>00004 
-<a name="l00005"></a>00005 GraphicsPolygon::GraphicsPolygon(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)
-<a name="l00006"></a>00006 : <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(parent)
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef GRAPHICSELLIPSE_HPP</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSELLIPSE_HPP</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;GraphicsShape.hpp&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="class_graphics_ellipse.html">00006</a> <span class="keyword">class </span><a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a>
 <a name="l00007"></a>00007 {
-<a name="l00008"></a>00008   <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa91fb0824da12f8bb3b74dd78fb13b63" title="a (minuscule)">a</a> = <span class="keyword">new</span> <a class="code" href="class_graphics_anchor.html">GraphicsAnchor</a>(<span class="keyword">this</span>);
-<a name="l00009"></a>00009   m_points.push_back(a);
-<a name="l00010"></a>00010 }
-<a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <a class="code" href="class_graphics_item.html">GraphicsItem</a> *GraphicsPolygon::newPoint()
-<a name="l00013"></a>00013 {
-<a name="l00014"></a>00014   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *item = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(<span class="keyword">this</span>);
-<a name="l00015"></a>00015   m_points.push_back(item);
-<a name="l00016"></a>00016   <span class="keywordflow">return</span> item;
-<a name="l00017"></a>00017 }
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="keywordtype">void</span> GraphicsPolygon::popPoint()
-<a name="l00020"></a>00020 {
-<a name="l00021"></a>00021   <span class="keywordflow">if</span> (m_points.size() &gt; 2) {
-<a name="l00022"></a>00022     <span class="keyword">delete</span> m_points.back();
-<a name="l00023"></a>00023     m_points.pop_back();
-<a name="l00024"></a>00024   }
-<a name="l00025"></a>00025 }
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keywordtype">void</span> GraphicsPolygon::setNbPoints(<span class="keyword">const</span> <span class="keywordtype">size_t</span> nb)
-<a name="l00028"></a>00028 {
-<a name="l00029"></a>00029   <span class="keywordflow">if</span> (nb &lt;= 1)
-<a name="l00030"></a>00030     <span class="keywordflow">return</span>;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032   <span class="keywordflow">while</span> (nb &gt; nbPoints())
-<a name="l00033"></a>00033     newPoint();
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035   <span class="keywordflow">while</span> (nbPoints() &gt; nb)
-<a name="l00036"></a>00036     popPoint();
-<a name="l00037"></a>00037 }
+<a name="l00008"></a>00008 <span class="keyword">public</span>:
+<a name="l00009"></a>00009   <span class="keyword">explicit</span> <a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *center() {
+<a name="l00012"></a>00012     <span class="keywordflow">return</span> m_points[0];
+<a name="l00013"></a>00013   }
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015   <span class="comment">//change the name ?</span>
+<a name="l00016"></a>00016   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *radius() {
+<a name="l00017"></a>00017     <span class="keywordflow">return</span> m_points[1];
+<a name="l00018"></a>00018   }
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020   GraphicsTypes type()<span class="keyword"> const </span>{
+<a name="l00021"></a>00021     <span class="keywordflow">return</span> EllipseType;
+<a name="l00022"></a>00022   }
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">protected</span>:
+<a name="l00025"></a>00025   <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);
+<a name="l00026"></a>00026   <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;absoluteP);
+<a name="l00027"></a>00027 };
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -152,9 +144,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>GraphicsPolygon.hpp</b>      </li>
+      <li class="navelem"><b>GraphicsEllipse.hpp</b>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 19:18:58 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 20:34:06 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

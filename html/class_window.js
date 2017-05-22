@@ -1,8 +1,26 @@
 var class_window =
 [
-    [ "Window", "class_window.html#a74e6087da23d3c24e9fac0245e5ec92c", null ],
-    [ "buttonPress", "class_window.html#aad4f41a37910148f956cd6ec9001931b", null ],
-    [ "buttonRelease", "class_window.html#aeee91da75fbf74097d76c1a4a59b392e", null ],
-    [ "expose", "class_window.html#a3524b6f0ed055b1f13a56be83ef8d5ce", null ],
-    [ "motionNotify", "class_window.html#ad0a8148d056f6ae1783ab85dfeba6cbd", null ]
+    [ "Key", "class_window.html#a63117c838cc11c681097e47a7ee10edc", null ],
+    [ "MouseButton", "class_window.html#aedffeb09dd038d6ceb5d5b7a1d5b265d", null ],
+    [ "Window", "class_window.html#a56e191f6ad242c9e12863ee79f1e9e7b", null ],
+    [ "~Window", "class_window.html#a245d821e6016fa1f6970ccbbedd635f6", null ],
+    [ "canvas", "class_window.html#a47ea2e0f003fc805b8ca14396dcbb747", null ],
+    [ "closeEvent", "class_window.html#ad8dacb2bf7959d5a616ba6719ef74824", null ],
+    [ "doubleBuffer", "class_window.html#a2bd2de5766961814421ff80b9d2e5e5b", null ],
+    [ "drawEvent", "class_window.html#afb5eda56436d60b0da65833028ccadf6", null ],
+    [ "drawRequest", "class_window.html#a63a8cd07ce1d0769adc248651ade56d7", null ],
+    [ "height", "class_window.html#ac22c92bbc9278e85a02c1dea351213e7", null ],
+    [ "isVisible", "class_window.html#ab99d21f928e805cd862cba08cf107a1b", null ],
+    [ "keyPressEvent", "class_window.html#a68291d34c54bbd5ce2666d87d65b70e9", null ],
+    [ "keyReleaseEvent", "class_window.html#ae0f7630bd4a5f877d084d9e94eda220e", null ],
+    [ "mouseMoveEvent", "class_window.html#a9f68c6332b8a5b9ee5dad4055d44b655", null ],
+    [ "mousePressEvent", "class_window.html#a96401412533dc74d783991f858d4f8e9", null ],
+    [ "mouseReleaseEvent", "class_window.html#ab0e655da2fa68abc67750d31c3236952", null ],
+    [ "resize", "class_window.html#a3e7fcfcbfaa2d273b75bf5e568088b92", null ],
+    [ "resizeEvent", "class_window.html#ad5a637cbd1de0e67c0e84b356e81bde7", null ],
+    [ "setDoubleBuffer", "class_window.html#af1f8bd54dfefaa68f58696d54b12e58b", null ],
+    [ "setHeight", "class_window.html#ab6f2fe7d5e5b9c34adca4ded6b783c5f", null ],
+    [ "setVisible", "class_window.html#a6d19e406410cae24b821775361af4b23", null ],
+    [ "setWidth", "class_window.html#a17204191d237e216538c2f90dbbf1a3f", null ],
+    [ "width", "class_window.html#a2086bdcbdf7511074ab74ec613af06dc", null ]
 ];
