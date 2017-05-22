@@ -96,7 +96,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a>  </div>
@@ -104,23 +103,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe Window</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Window" --><div class="dynheader">
+<!-- doxytag: class="Window" --><!-- doxytag: inherits="EZWindow" --><div class="dynheader">
 Graphe d'héritage de Window:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_window__inherit__graph.png" border="0" usemap="#_window_inherit__map" alt="Inheritance graph"/></div>
 <map name="_window_inherit__map" id="_window_inherit__map">
-<area shape="rect" id="node3" href="class_main_window.html" title="{MainWindow\n||+ MainWindow()\l+ drawEvent()\l+ mousePressEvent()\l+ mouseReleaseEvent()\l+ mouseMoveEvent()\l}" alt="" coords="5,485,168,640"/></map>
+<area shape="rect" id="node5" href="class_main_window.html" title="{MainWindow\n||+ MainWindow()\l+ drawEvent()\l+ mousePressEvent()\l+ mouseReleaseEvent()\l+ mouseMoveEvent()\l}" alt="" coords="11,845,173,1000"/><area shape="rect" id="node2" href="class_e_z_window.html" title="{EZWindow\n||+ EZWindow()\l+ ~EZWindow()\l+ setDoubleBuffer()\l+ setWidth()\l+ setHeight()\l+ setWidthHeight()\l+ getWidth()\l+ getHeight()\l+ isVisible()\l+ setVisible()\land 27 more...+ getRGB()\l+ getHSV()\l+ getGrey()\l+ HSVtoRGB()\l}" alt="" coords="5,6,179,317"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de Window:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_window__coll__graph.png" border="0" usemap="#_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_window_coll__map" id="_window_coll__map">
+<area shape="rect" id="node2" href="class_e_z_window.html" title="{EZWindow\n||+ EZWindow()\l+ ~EZWindow()\l+ setDoubleBuffer()\l+ setWidth()\l+ setHeight()\l+ setWidthHeight()\l+ getWidth()\l+ getHeight()\l+ isVisible()\l+ setVisible()\land 27 more...+ getRGB()\l+ getHSV()\l+ getGrey()\l+ HSVtoRGB()\l}" alt="" coords="5,6,179,317"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="class_window-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>WindowProxy</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseButton</b> { <b>LeftButton</b>, 
-<b>RightButton</b>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseButton</b> { <br/>
+&#160;&#160;<b>LeftButton</b> =  1, 
+<b>MiddleButton</b> =  2, 
+<b>RightButton</b> =  3, 
+<b>UpWheel</b> =  4, 
+<br/>
+&#160;&#160;<b>DownWheel</b> =  5, 
+<b>LeftWheel</b> =  6, 
+<b>RightWheel</b> =  7
+<br/>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63117c838cc11c681097e47a7ee10edc"></a><!-- doxytag: member="Window::Key" ref="a63117c838cc11c681097e47a7ee10edc" args="" -->
 typedef <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b></td></tr>
@@ -130,8 +141,7 @@ Fonctions membres publiques</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Window</b> (const size_t width=400, const size_t height=400, const std::string &amp;title=&quot;&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bd2de5766961814421ff80b9d2e5e5b"></a><!-- doxytag: member="Window::doubleBuffer" ref="a2bd2de5766961814421ff80b9d2e5e5b" args="() const " -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>doubleBuffer</b> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1f8bd54dfefaa68f58696d54b12e58b"></a><!-- doxytag: member="Window::setDoubleBuffer" ref="af1f8bd54dfefaa68f58696d54b12e58b" args="(const bool active=true)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDoubleBuffer</b> (const bool active=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#af1f8bd54dfefaa68f58696d54b12e58b">setDoubleBuffer</a> (const bool active=true)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2086bdcbdf7511074ab74ec613af06dc"></a><!-- doxytag: member="Window::width" ref="a2086bdcbdf7511074ab74ec613af06dc" args="() const " -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17204191d237e216538c2f90dbbf1a3f"></a><!-- doxytag: member="Window::setWidth" ref="a17204191d237e216538c2f90dbbf1a3f" args="(const size_t width)" -->
@@ -142,10 +152,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> () const
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setHeight</b> (const size_t height)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e7fcfcbfaa2d273b75bf5e568088b92"></a><!-- doxytag: member="Window::resize" ref="a3e7fcfcbfaa2d273b75bf5e568088b92" args="(const size_t width, const size_t height)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (const size_t width, const size_t height)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab99d21f928e805cd862cba08cf107a1b"></a><!-- doxytag: member="Window::isVisible" ref="ab99d21f928e805cd862cba08cf107a1b" args="() const " -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d19e406410cae24b821775361af4b23"></a><!-- doxytag: member="Window::setVisible" ref="a6d19e406410cae24b821775361af4b23" args="(const bool visible)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisible</b> (const bool visible)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#ab99d21f928e805cd862cba08cf107a1b">isVisible</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window.html#a6d19e406410cae24b821775361af4b23">setVisible</a> (const bool visible)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63a8cd07ce1d0769adc248651ade56d7"></a><!-- doxytag: member="Window::drawRequest" ref="a63a8cd07ce1d0769adc248651ade56d7" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRequest</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47ea2e0f003fc805b8ca14396dcbb747"></a><!-- doxytag: member="Window::canvas" ref="a47ea2e0f003fc805b8ca14396dcbb747" args="()" -->
@@ -169,6 +177,82 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0f7630bd4a5f877d084d9e94eda220e"></a><!-- doxytag: member="Window::keyReleaseEvent" ref="ae0f7630bd4a5f877d084d9e94eda220e" args="(const Key key)" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEvent</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> key)</td></tr>
 </table>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="ab99d21f928e805cd862cba08cf107a1b"></a><!-- doxytag: member="Window::isVisible" ref="ab99d21f928e805cd862cba08cf107a1b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_window.html#ab99d21f928e805cd862cba08cf107a1b">Window::isVisible</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Indique si la fenêtre est visible à l'écran. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Si la valeur renvoyée est true alors la fenêtre est visible à l'écran (mais elle peut être partiellement sortie au delà du bord de l'affichage). Si la valeur est false, c'est que la fenêtre existe mais n'est pas dessinée à l'écran. </dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_window.html#a6d19e406410cae24b821775361af4b23">setVisible(bool visible)</a> </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94">EZWindow</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1f8bd54dfefaa68f58696d54b12e58b"></a><!-- doxytag: member="Window::setDoubleBuffer" ref="af1f8bd54dfefaa68f58696d54b12e58b" args="(const bool active=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_window.html#af1f8bd54dfefaa68f58696d54b12e58b">Window::setDoubleBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>state</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Règle si on veut activer le « double buffer » pour éviter le scintillement de l'affichage. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>La technique de « double buffer » consiste à ne pas dessiner directement à l'écran mais dans une partie non affichée de la mémoire vidéo, puis une fois que toutes les opérations de dessin sont finies, à recopier de manière rapide la zone à l'écran. On évite ainsi de voir clignoter l'intérieur de la fenêtre pendant que le programme la trace. Par défaut, le « double buffer » n'est pas actif pour une nouvelle fenêtre. </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>ce booléen indique s'il faut activer (true) ou désactiver (false) la technique de « double buffer » pour cette fenêtre. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="class_e_z_window.html#a111b4c5c1093dbb608815e409abdb7f0">EZWindow</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d19e406410cae24b821775361af4b23"></a><!-- doxytag: member="Window::setVisible" ref="a6d19e406410cae24b821775361af4b23" args="(const bool visible)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_window.html#a6d19e406410cae24b821775361af4b23">Window::setVisible</a> </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Rend visible ou cache la fenêtre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visible</td><td>booléen indiquant si vous voulez rendre une fenêtre visible (true) ou si au contraire, vous voulez la cacher (sans la détruire) (false). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_window.html#ab99d21f928e805cd862cba08cf107a1b">isVisible</a> () const </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="class_e_z_window.html#a3cc6f680a1c80db6d4922dc7f0223e01">EZWindow</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li>/home/travis/build/L0L022/SuperProjetCPP/include/<a class="el" href="_window_8hpp_source.html">Window.hpp</a></li>
 <li>/home/travis/build/L0L022/SuperProjetCPP/src/Window.cpp</li>
@@ -193,7 +277,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEve
     <ul>
       <li class="navelem"><a class="el" href="class_window.html">Window</a>      </li>
 
-    <li class="footer">Généré le Lundi Mai 22 2017 20:34:06 pour Project c++ par
+    <li class="footer">Généré le Lundi Mai 22 2017 21:40:26 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
