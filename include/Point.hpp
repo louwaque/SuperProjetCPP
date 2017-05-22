@@ -1,32 +1,54 @@
-/**
- * \file Point.hpp
- * \brief Classe point
- * \author Loic Escaless, Leo Sudreau
- * \version 0.1
- * \date 22 mai 2017
- *
- * Classe permettant la creation de points.
- *
- */
-
 #ifndef POINT_HPP
 #define POINT_HPP
 
+/*!
+ * \file Point.hpp
+ * \brief Classe point
+ * \author Loïc Escales, Leo Sudreau
+ * \version 0.1
+ * \date 22 mai 2017
+ */
+
 #include <iostream>
 
-class Point {
-
+/*!
+ * \class Point
+ * \brief Représente un point (x, y)
+ *
+ * Représente un point avec une abscisse et une ordonnée
+ */
+class Point
+{
 private:
-  int m_x; /* Absisse du Point*/
-  int m_y; /* Ordonée du Point*/
-
+  int m_x; /*!< Abscisse du Point*/
+  int m_y; /*!< Ordonnée du Point*/
 
 public:
-
+  /*!
+   * \brief Constructeur
+   *
+   * Constructeur de la classe Point
+   *
+   * \param x : abscisse
+   * \param y : ordonnée
+   */
   Point(int x = 0, int y = 0);
+
+  /*!
+   * \brief Constructeur par copie
+   *
+   * Constructeur par copie de la classe Point
+   *
+   * \param src : point à copier
+   */
   Point(const Point & src);
   ~Point();
 
+  /*!
+   *  \brief Donne l'abscisse
+   *
+   *  \return abscisse
+   */
   inline int x() const { return m_x; }
 
   /**
@@ -52,7 +74,7 @@ public:
  * \fn inline int &x() { return m_x;}
  * \brief Fonction permettant la modification de la valeur de l'absisse x
  *
- * /param x l'absisse du point
+ * \param x l'absisse du point
  */
 
  inline int &y() {return m_y;}
@@ -61,7 +83,7 @@ public:
  * \fn inline int &y() {return m_y;}
  * \brief Fonction permettant la modification de la valeur de l'ordonnée y
  *
- * /param y  l'ordonée du point
+ * \param y  l'ordonée du point
  */
 
  void set(const int x, const int y);
@@ -70,8 +92,8 @@ public:
  * \fn void set(const int x, const int y)
  * \brief Fonction permettant la modification des valeurs de points
  *
- * /param x  l'absisse du point
- * /param y  l'ordonée du point
+ * \param x  l'absisse du point
+ * \param y  l'ordonée du point
  */
 
 };
@@ -84,8 +106,8 @@ bool operator==(const Point &l, const Point &r);
 *
 * Test si les coordonées du point sont identiques
 *
-* /param l Premier point à comparer
-* /param r Second point à comparer
+* \param l Premier point à comparer
+* \param r Second point à comparer
 */
 
 Point operator+(const Point &l, const Point &r);
@@ -96,8 +118,8 @@ Point operator+(const Point &l, const Point &r);
 *
 * Additionnes les coordonées de deux points entre eux
 *
-* /param l Premier point à Additionner
-* /param r Second point à Additionner
+* \param l Premier point à Additionner
+* \param r Second point à Additionner
 */
 
 Point operator+(const Point &p, const int number);
@@ -108,8 +130,8 @@ Point operator+(const Point &p, const int number);
 *
 * Additionnes des valeurs aux coordonées d'un point
 *
-* /param l Premier point à Additionner
-* /param number valeur à Additionner
+* \param l Premier point à Additionner
+* \param number valeur à Additionner
 */
 
 Point operator-(const Point &l, const Point &r);
@@ -120,8 +142,8 @@ Point operator-(const Point &l, const Point &r);
 *
 * Soustraits les coordonées de deux points entre eux
 *
-* /param l Point diminuende
-* /param r Point diminuteur
+* \param l Point diminuende
+* \param r Point diminuteur
 */
 
 Point operator-(const Point &p, const int number);
@@ -132,8 +154,8 @@ Point operator-(const Point &p, const int number);
 *
 * Soustraits des valeurs aux coordonée d'un point
 *
-* /param l Point diminuende
-* /param r valeur diminuteur
+* \param l Point diminuende
+* \param r valeur diminuteur
 */
 
 std::ostream &operator<<(std::ostream &os, const Point &p);
@@ -144,8 +166,8 @@ std::ostream &operator<<(std::ostream &os, const Point &p);
 *
 * Operateur d'injection
 *
-* /param os Flux d'injection
-* /param r Point injecté dans os
+* \param os Flux d'injection
+* \param r Point injecté dans os
 */
 
 bool operator<(const Point &l, const Point &r);
@@ -156,8 +178,8 @@ bool operator<(const Point &l, const Point &r);
 *
 * Test si les coordonnées d'un premier point sont inferieur à un autre
 *
-* /param l Point comparé
-* /param r Point comparant
+* \param l Point comparé
+* \param r Point comparant
 */
 
 #endif
