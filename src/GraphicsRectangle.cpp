@@ -2,6 +2,7 @@
 #include "../include/GraphicsPoint.hpp"
 #include "../include/GraphicsAnchor.hpp"
 
+
 GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
 : GraphicsItem(parent), m_topLeft(nullptr), m_bottomRight(nullptr)
 {
