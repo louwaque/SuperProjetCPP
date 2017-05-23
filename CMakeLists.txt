@@ -11,7 +11,7 @@ file(
         SRC
         src/*.cpp
 )
-list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+#list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 
 add_executable(app src/main.cpp ${SRC})
 target_link_libraries(app ez-lib)

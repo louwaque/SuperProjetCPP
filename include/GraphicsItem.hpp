@@ -3,11 +3,14 @@
 
 #include <vector>
 #include <memory>
+#include <functional>
 #include "Color.hpp"
 #include "Canvas.hpp"
 
 class GraphicsItem {
 public:
+  //typedef Point (*positionCorrector)(const Point &pos);
+  typedef std::function<Point(const Point&)> PositionCorrector;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -22,7 +25,8 @@ public:
     PolygonType = 0x14,
     AnchorType = 0x16,
     CircleType = 0x18,
-    EllipseType = 0x20
+    EllipseType = 0x20,
+    SquareType = 0x22
   };
 
   enum SearchTypes {
@@ -51,7 +55,10 @@ public:
   }
 
   virtual void setAnchor(const Point &anchor) {
-    m_anchor = anchor;
+    if (m_positionCorrector)
+      m_anchor = m_positionCorrector(anchor);
+    else
+      m_anchor = anchor;
   }
 
   Point absolute() const;
@@ -60,6 +67,15 @@ public:
 
   Color color() const {
     return m_color;
+  }
+
+  PositionCorrector positionCorrector() const {
+    return m_positionCorrector;
+  }
+
+  void setPositionCorrector(const PositionCorrector &fn) {
+    m_positionCorrector = fn;
+    setAnchor(m_anchor);
   }
 
   void setColor(const Color color) {
@@ -102,6 +118,7 @@ private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   Point m_anchor;
+  PositionCorrector m_positionCorrector;
   Color m_color;
   unsigned int m_thick;
   bool m_isFill;

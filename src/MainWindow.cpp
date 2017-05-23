@@ -7,6 +7,7 @@
 #include "../include/GraphicsPolygon.hpp"
 #include "../include/GraphicsCircle.hpp"
 #include "../include/GraphicsEllipse.hpp"
+#include "../include/GraphicsSquare.hpp"
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
@@ -55,6 +56,11 @@ MainWindow::MainWindow()
   GraphicsEllipse *ellipse = new GraphicsEllipse(&m_scene);
   ellipse->setAbsolute({200, 300});
   ellipse->radius()->setAnchor({100, 50});
+
+  GraphicsSquare *square = new GraphicsSquare(&m_scene);
+  square->setThick(5);
+  square->setAbsolute({500, 100});
+  square->bottomRight()->setAnchor({80, 50});
 }
 
 void MainWindow::drawEvent()
