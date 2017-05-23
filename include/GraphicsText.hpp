@@ -42,7 +42,7 @@ public:
   /*!
    * \brief Recupere le contenu de GraphicsText.
    *
-   * /return texte de l'instance.
+   * \return texte de l'instance.
    *
    */
 
@@ -51,7 +51,7 @@ public:
   /*!
    * \brief Modifie le contenu de GraphicsText.
    *
-   * /param text : nouveau texte de l'instance de GraphicsText.
+   * \param text: nouveau texte de l'instance de GraphicsText.
    *
    */
 
