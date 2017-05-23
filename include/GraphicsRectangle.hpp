@@ -47,11 +47,11 @@ public:
 
   inline size_t width() const { return std::abs(m_bottomRight->absolute().x() - m_topLeft->absolute().x()); }
 
-  void setWidth(const size_t width);
+  inline void setWidth(const size_t width){  m_bottomRight->absolute().x() = width;}
 
   inline size_t height() const { return std::abs(m_bottomRight->absolute().y() - m_topLeft->absolute().y()); }
 
-  void setHeight(const size_t height); 
+  inline void setHeight( const size_t height){  m_topLeft->absolute().x() = height;}
 protected:
 
   void meDraw(Canvas *canvas);
