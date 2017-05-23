@@ -1,30 +1,56 @@
 #ifndef GRAPHICSRECTANGLE_HPP
 #define GRAPHICSRECTANGLE_HPP
 
+/*!
+ * \file GraphicsTriangle.hpp
+ * \brief Classe GraphicsTriangle
+ * \author Loïc Escales, Leo Sudreau
+ * \version 0.1
+ * \date 23 mai 2017
+ */
+
 #include "GraphicsItem.hpp"
+
+/*!
+ * \class GraphicsRectangle
+ * \brief Permet la creation d'un rectangle
+ *
+ *
+ */
 
 class GraphicsRectangle : public GraphicsItem
 {
 public:
+
+  /*!
+   * \brief Constructeur par default de la classe GraphicsRectangle.
+   *
+   * Crée une instance de GraphicsRectangle.
+   *
+   */
+
   explicit GraphicsRectangle(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *topLeft() {
-    return m_topLeft;
-  }
+  /*!
+   * \brief recupere les coordonnées.
+   *
+   * Crée une instance de GraphicsRectangle.
+   *
+   */
 
-  GraphicsItem *bottomRight() {
-    return m_bottomRight;
-  }
+  inline GraphicsItem *topLeft() { return m_topLeft; }
 
-  GraphicsTypes type() const {
-    return RectangleType;
-  }
+  inline GraphicsItem *bottomRight() { return m_bottomRight; }
+
+  inline GraphicsTypes type() const { return RectangleType; }
 
 protected:
+
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);
 
 private:
+
   GraphicsItem *m_topLeft, *m_bottomRight;
 };
 
