@@ -40,8 +40,9 @@ MainWindow::MainWindow()
 
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
   rectangle->setThick(5);
-  rectangle->setAbsolute({100, 100});
+  rectangle->setAbsolute({100, 200});
   rectangle->bottomRight()->setAnchor({80, 50});
+  rectangle->setHeight(500);
 
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
