@@ -10,6 +10,7 @@ var searchData=
   ['blend',['blend',['../classfinal.html#a62fd392ac1d76972e50f3d4db7cda453',1,'final']]],
   ['blendsubimage',['blendSubimage',['../classfinal.html#aff8eb8cf7ac603075fae85a4fb7b874e',1,'final']]],
   ['blf',['BLF',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a33359ade6491e59f753d24b8afae5b93',1,'ez-draw++.hpp']]],
+  ['blue',['blue',['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color']]],
   ['br',['BR',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a60a57eed407e7df8eb3bf49f61a042c1',1,'ez-draw++.hpp']]],
   ['braceleft',['braceleft',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa327007ceeb5ff88e96feb6922a703a88',1,'ez-draw++.hpp']]],
   ['braceright',['braceright',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aac899e8f5bea34d6933f25ba47ad2a419',1,'ez-draw++.hpp']]],

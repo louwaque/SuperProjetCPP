@@ -100,24 +100,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a href="_graphics_triangle_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef GRAPHICSTRIANGLE_HPP</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSTRIANGLE_HPP</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;GraphicsShape.hpp&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="_graphics_shape_8hpp.html" title="Classe GraphicsShape.">GraphicsShape.hpp</a>&quot;</span>
 <a name="l00013"></a>00013 
-<a name="l00021"></a><a class="code" href="class_graphics_triangle.html">00021</a> <span class="keyword">class </span><a class="code" href="class_graphics_triangle.html" title="Permet la creation d&#39;un triangle.">GraphicsTriangle</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a> {
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 <span class="keyword">public</span>:
-<a name="l00024"></a>00024 
-<a name="l00032"></a>00032   <span class="keyword">explicit</span> <a class="code" href="class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01" title="Constructeur par default de la classe GraphicsTriangle.">GraphicsTriangle</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
-<a name="l00033"></a>00033 
-<a name="l00040"></a><a class="code" href="class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b">00040</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b" title="recupere les coordonées du premier point du triangle.">first</a>() { <span class="keywordflow">return</span> m_points[0]; }
-<a name="l00041"></a>00041 
-<a name="l00048"></a><a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595">00048</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595" title="recupere les coordonées du second point du triangle.">second</a>() {  <span class="keywordflow">return</span> m_points[1]; }
-<a name="l00049"></a>00049 
-<a name="l00056"></a><a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6">00056</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6" title="recupere les coordonées du troisième point du triangle.">third</a>() {  <span class="keywordflow">return</span> m_points[2]; }
-<a name="l00057"></a>00057 
-<a name="l00064"></a><a class="code" href="class_graphics_triangle.html#a356564e83fa9202bb2fc9f1d715f87ee">00064</a>   <span class="keyword">inline</span> GraphicsTypes <a class="code" href="class_graphics_triangle.html#a356564e83fa9202bb2fc9f1d715f87ee" title="recupere le type de l&#39;instance courrante.">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TriangleType; }
-<a name="l00065"></a>00065 };
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 <span class="preprocessor">#endif</span>
+<a name="l00020"></a><a class="code" href="class_graphics_triangle.html">00020</a> <span class="keyword">class </span><a class="code" href="class_graphics_triangle.html" title="Permet la creation d&#39;un triangle.">GraphicsTriangle</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a> {
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023 
+<a name="l00031"></a>00031   <span class="keyword">explicit</span> <a class="code" href="class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01" title="Constructeur par default de la classe GraphicsTriangle.">GraphicsTriangle</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
+<a name="l00032"></a>00032 
+<a name="l00039"></a><a class="code" href="class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b">00039</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b" title="recupere les coordonées du premier point du triangle.">first</a>() { <span class="keywordflow">return</span> m_points[0]; }
+<a name="l00040"></a>00040 
+<a name="l00047"></a><a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595">00047</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595" title="recupere les coordonées du second point du triangle.">second</a>() {  <span class="keywordflow">return</span> m_points[1]; }
+<a name="l00048"></a>00048 
+<a name="l00055"></a><a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6">00055</a>   <span class="keyword">inline</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6" title="recupere les coordonées du troisième point du triangle.">third</a>() {  <span class="keywordflow">return</span> m_points[2]; }
+<a name="l00056"></a>00056 
+<a name="l00063"></a><a class="code" href="class_graphics_triangle.html#a356564e83fa9202bb2fc9f1d715f87ee">00063</a>   <span class="keyword">inline</span> GraphicsTypes <a class="code" href="class_graphics_triangle.html#a356564e83fa9202bb2fc9f1d715f87ee" title="recupere le type de l&#39;instance courrante.">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TriangleType; }
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><a class="el" href="_graphics_triangle_8hpp.html">GraphicsTriangle.hpp</a>      </li>
 
-    <li class="footer">Généré le Mardi Mai 23 2017 11:53:19 pour Project c++ par
+    <li class="footer">Généré le Mardi Mai 23 2017 12:38:27 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

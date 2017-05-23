@@ -97,84 +97,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef COLOR_HPP</span>
+<a href="_color_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef COLOR_HPP</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define COLOR_HPP</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;cstdint&gt;</span>
-<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;string&gt;</span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
-<a name="l00007"></a>00007 
-<a name="l00008"></a><a class="code" href="class_color.html">00008</a> <span class="keyword">class </span><a class="code" href="class_color.html">Color</a> {
-<a name="l00009"></a>00009 <span class="keyword">public</span>:
-<a name="l00010"></a>00010   <span class="keyword">enum</span> Colors : uint32_t {
-<a name="l00011"></a>00011     Black = 0x000000,
-<a name="l00012"></a>00012     White = 0xFFFFFF,
-<a name="l00013"></a>00013     Grey = 0x969696,
-<a name="l00014"></a>00014     Red = 0xFF0000,
-<a name="l00015"></a>00015     Green = 0x00FF00,
-<a name="l00016"></a>00016     Blue = 0x0000FF,
-<a name="l00017"></a>00017     Yellow = 0xFFFF00,
-<a name="l00018"></a>00018     Cyan = 0x00FFFF,
-<a name="l00019"></a>00019     Mangenta = 0xFF00FF
-<a name="l00020"></a>00020   };
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022   <span class="comment">//pas super top</span>
-<a name="l00023"></a>00023   <span class="keyword">explicit</span> <a class="code" href="class_color.html">Color</a>(<span class="keyword">const</span> Colors color = Black);
-<a name="l00024"></a>00024   <a class="code" href="class_color.html">Color</a>(<span class="keyword">const</span> uint8_t red, <span class="keyword">const</span> uint8_t green, <span class="keyword">const</span> uint8_t blue);
-<a name="l00025"></a>00025   <a class="code" href="class_color.html">Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> hue, <span class="keyword">const</span> <span class="keywordtype">double</span> saturation, <span class="keyword">const</span> <span class="keywordtype">double</span> value);
-<a name="l00026"></a>00026   <span class="keyword">explicit</span> <a class="code" href="class_color.html">Color</a>(<span class="keyword">const</span> ulong grey);
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028   uint8_t red()<span class="keyword"> const </span>{
-<a name="l00029"></a>00029     <span class="keywordflow">return</span> (m_color &amp; Red) &gt;&gt; 16;
-<a name="l00030"></a>00030   }
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032   <span class="keywordtype">void</span> setRed(<span class="keyword">const</span> uint8_t red);
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034   uint8_t green()<span class="keyword"> const </span>{
-<a name="l00035"></a>00035     <span class="keywordflow">return</span> (m_color &amp; Green) &gt;&gt; 8;
-<a name="l00036"></a>00036   }
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <span class="keywordtype">void</span> setGreen(<span class="keyword">const</span> uint8_t green);
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040   uint8_t blue()<span class="keyword"> const </span>{
-<a name="l00041"></a>00041     <span class="keywordflow">return</span> m_color &amp; Blue;
-<a name="l00042"></a>00042   }
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <span class="keywordtype">void</span> setBlue(<span class="keyword">const</span> uint8_t blue);
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;cstdint&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00022"></a><a class="code" href="class_color.html">00022</a> <span class="keyword">class </span><a class="code" href="class_color.html" title="Permet la gestion des coulours des différentes *entitées.">Color</a> {
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025 
+<a name="l00033"></a><a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1">00033</a>   <span class="keyword">enum</span> <a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1" title="Constantes de couleurs.">Colors</a> : uint32_t {
+<a name="l00034"></a>00034     Black = 0x000000,
+<a name="l00035"></a>00035     White = 0xFFFFFF,
+<a name="l00036"></a>00036     Grey = 0x969696,
+<a name="l00037"></a>00037     Red = 0xFF0000,
+<a name="l00038"></a>00038     Green = 0x00FF00,
+<a name="l00039"></a>00039     Blue = 0x0000FF,
+<a name="l00040"></a>00040     Yellow = 0xFFFF00,
+<a name="l00041"></a>00041     Cyan = 0x00FFFF,
+<a name="l00042"></a>00042     Mangenta = 0xFF00FF
+<a name="l00043"></a>00043   };
+<a name="l00044"></a>00044 
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <span class="keywordtype">double</span> hue() <span class="keyword">const</span>;
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048   <span class="keywordtype">void</span> setHue(<span class="keyword">const</span> <span class="keywordtype">double</span> hue) {
-<a name="l00049"></a>00049     m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue, saturation(), value());
-<a name="l00050"></a>00050   }
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052   <span class="keywordtype">double</span> saturation() <span class="keyword">const</span>;
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054   <span class="keywordtype">void</span> setSaturation(<span class="keyword">const</span> <span class="keywordtype">double</span> saturation) {
-<a name="l00055"></a>00055     m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue(), saturation, value());
-<a name="l00056"></a>00056   }
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047   <span class="comment">//pas super top</span>
+<a name="l00048"></a>00048 
+<a name="l00056"></a>00056   <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> <a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1" title="Constantes de couleurs.">Colors</a> color = Black);
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058   <span class="keywordtype">double</span> value() <span class="keyword">const</span>;
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060   <span class="keywordtype">void</span> setValue(<span class="keyword">const</span> <span class="keywordtype">double</span> value) {
-<a name="l00061"></a>00061     m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue(), saturation(), value);
-<a name="l00062"></a>00062   }
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064   uint32_t hexa()<span class="keyword"> const </span>{
-<a name="l00065"></a>00065     <span class="keywordflow">return</span> m_color;
-<a name="l00066"></a>00066   }
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068   <span class="keywordtype">void</span> setHexa(<span class="keyword">const</span> uint32_t hexa) {
-<a name="l00069"></a>00069     m_color = hexa;
-<a name="l00070"></a>00070   }
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072   std::string hexaStr() <span class="keyword">const</span>;
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 <span class="keyword">private</span>:
-<a name="l00075"></a>00075   uint32_t m_color;
-<a name="l00076"></a>00076 };
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078 <span class="preprocessor">#endif</span>
+<a name="l00069"></a>00069   <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>);
+<a name="l00070"></a>00070 
+<a name="l00081"></a>00081   <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>);
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 
+<a name="l00092"></a>00092   <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> ulong grey);
+<a name="l00093"></a>00093 
+<a name="l00100"></a><a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">00100</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Red) &gt;&gt; 16; }
+<a name="l00101"></a>00101 
+<a name="l00108"></a>00108   <span class="keywordtype">void</span> <a class="code" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d" title="Modifie la valeur de la premier couleur ( systeme RGB ).">setRed</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>);
+<a name="l00109"></a>00109 
+<a name="l00116"></a><a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">00116</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Green) &gt;&gt;8; }
+<a name="l00117"></a>00117 
+<a name="l00124"></a>00124   <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d" title="Modifie la valeur de la seconde couleur ( systeme RGB ).">setGreen</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>);
+<a name="l00125"></a>00125 
+<a name="l00132"></a><a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">00132</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color &amp; Blue; }
+<a name="l00133"></a>00133 
+<a name="l00140"></a>00140   <span class="keywordtype">void</span> <a class="code" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b" title="Modifie la valeur de la troisieme couleur ( systeme RGB ).">setBlue</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>);
+<a name="l00141"></a>00141 
+<a name="l00148"></a>00148   <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>() <span class="keyword">const</span>;
+<a name="l00149"></a>00149 
+<a name="l00156"></a><a class="code" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb">00156</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb" title="Modifie la valeur de la teinte ( systeme HSV ).">setHue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue, <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>(), <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>()); }
+<a name="l00157"></a>00157 
+<a name="l00164"></a>00164   <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>() <span class="keyword">const</span>;
+<a name="l00165"></a>00165 
+<a name="l00172"></a><a class="code" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828">00172</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828" title="Modifie la valeur de la saturation ( system HSV ).">setSaturation</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>(), saturation, <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>()); }
+<a name="l00173"></a>00173 
+<a name="l00180"></a>00180   <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>() <span class="keyword">const</span>;
+<a name="l00181"></a>00181 
+<a name="l00188"></a><a class="code" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185">00188</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185" title="Modifie la valeur de la valeur ( system HSV ).">setValue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>(), <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>(), value); }
+<a name="l00189"></a>00189 
+<a name="l00196"></a><a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">00196</a>   <span class="keyword">inline</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color; }
+<a name="l00197"></a>00197 
+<a name="l00204"></a><a class="code" href="class_color.html#a075616705bfbe4802b121a343f4ed78e">00204</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a075616705bfbe4802b121a343f4ed78e" title="Modifie la couleur grâce à une valeur en exadecimal.">setHexa</a>(<span class="keyword">const</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>) { m_color = <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>; }
+<a name="l00205"></a>00205 
+<a name="l00212"></a>00212   std::string <a class="code" href="class_color.html#ab112588e12ec0e9a8118fede17078937" title="Recupere la valeur de la couleur en hexadecimal sous forme de chaine de caractere.">hexaStr</a>() <span class="keyword">const</span>;
+<a name="l00213"></a>00213 
+<a name="l00214"></a>00214 <span class="keyword">private</span>:
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216   uint32_t m_color; 
+<a name="l00218"></a>00218 };
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -193,9 +187,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>Color.hpp</b>      </li>
+      <li class="navelem"><a class="el" href="_color_8hpp.html">Color.hpp</a>      </li>
 
-    <li class="footer">Généré le Mardi Mai 23 2017 11:53:19 pour Project c++ par
+    <li class="footer">Généré le Mardi Mai 23 2017 12:38:27 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
