@@ -10,11 +10,9 @@ GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
   m_topLeft = new GraphicsAnchor(this);
   m_bottomRight = new GraphicsPoint(this);
   m_bottomRight->setPositionCorrector([this](const Point &pos) {
-    // Point distP(m_bottomRight->anchor() - m_topLeft->anchor());
-    // int dist = std::hypot(distP.x(), distP.y());
-    // std::cerr << dist << std::endl;
-    // return Point(pos.x() - dist, pos.y() + dist);
-    return pos;
+    Point diffP(pos - m_topLeft->anchor());
+    double radius = std::hypot(diffP.x(), diffP.y());
+    return Point(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
   });
 }
 
