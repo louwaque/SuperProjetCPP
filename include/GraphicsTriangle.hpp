@@ -15,7 +15,6 @@
  * \class GraphicsTriangle
  * \brief Permet la creation d'un triangle
  *
- * Représente un point avec une abscisse et une ordonnée
  */
 
 class GraphicsTriangle : public GraphicsShape {
