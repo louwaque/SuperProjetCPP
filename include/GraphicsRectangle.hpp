@@ -9,6 +9,7 @@
  * \date 23 mai 2017
  */
 
+#include <cmath>
 #include "GraphicsItem.hpp"
 
 /*!
@@ -44,6 +45,13 @@ public:
 
   inline GraphicsTypes type() const { return RectangleType; }
 
+  inline size_t width() const { return std::abs(m_bottomRight->absolute().x() - m_topLeft->absolute().x()); }
+
+  inline void setWidth(const size_t width){  m_bottomRight->absolute().x() = width;}
+
+  inline size_t height() const { return std::abs(m_bottomRight->absolute().y() - m_topLeft->anchor().y()); }
+
+  inline void setHeight( const size_t height){  m_topLeft->anchor().x() = height;}
 protected:
 
   void meDraw(Canvas *canvas);

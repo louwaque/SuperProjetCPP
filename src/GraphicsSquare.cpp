@@ -2,7 +2,6 @@
 #include "../include/GraphicsPoint.hpp"
 #include "../include/GraphicsAnchor.hpp"
 #include <cmath>
-#include <iostream>
 
 GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
 : GraphicsItem(parent), m_topLeft(nullptr), m_bottomRight(nullptr)
@@ -12,6 +11,7 @@ GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
   m_bottomRight->setPositionCorrector([this](const Point &pos) {
     Point diffP(pos - m_topLeft->anchor());
     double radius = std::hypot(diffP.x(), diffP.y());
+    if (pos < 0) radius = - radius;
     return Point(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
   });
 }
