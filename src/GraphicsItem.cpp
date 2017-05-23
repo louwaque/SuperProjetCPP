@@ -2,7 +2,7 @@
 #include <iostream>
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
-: m_parent(nullptr), m_children(), m_anchor(), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
+: m_parent(nullptr), m_children(), m_anchor(), m_positionCorrector(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
 {
   setParent(parent);
 }
@@ -19,16 +19,17 @@ void GraphicsItem::setParent(GraphicsItem *parent)
     return;
 
   if (m_parent) {
-    for (size_t i = 0; i < m_parent->m_children.size(); ++i) {
-      if (m_parent->m_children[i].get() == this) {
-        m_parent->m_children[i].release();
+    //for (size_t i = 0; i < m_parent->m_children.size(); ++i) {
+    for (auto it = m_parent->m_children.begin(); it != m_parent->m_children.end(); ++it)
+      if (it->get() == this) {
+        it->release();
         m_parent->m_children.erase(m_parent->m_children.begin()+i);
       }
     }
   }
   m_parent = parent;
   if (m_parent)
-    m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
+    m_parent->m_children.insert(std::unique_ptr<GraphicsItem>(this));
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const

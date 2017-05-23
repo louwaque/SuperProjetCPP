@@ -2,6 +2,7 @@
 #define GRAPHICSITEM_HPP
 
 #include <vector>
+#include <set>
 #include <memory>
 #include <functional>
 #include "Color.hpp"
@@ -9,7 +10,6 @@
 
 class GraphicsItem {
 public:
-  //typedef Point (*positionCorrector)(const Point &pos);
   typedef std::function<Point(const Point&)> PositionCorrector;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
@@ -78,6 +78,14 @@ public:
     setAnchor(m_anchor);
   }
 
+  int z() const {
+    return m_z;
+  }
+
+  void setZ(const int z) {
+    m_z = z;
+  }
+
   void setColor(const Color color) {
     m_color = color;
   }
@@ -116,9 +124,17 @@ protected:
 
 private:
   GraphicsItem *m_parent;
-  std::vector<std::unique_ptr<GraphicsItem>> m_children;
+
+  struct LayerCmp {
+    bool operator()(const std::unique_ptr<GraphicsItem> &l, const std::unique_ptr<GraphicsItem> &r) const {
+        return l->z() < r->z();
+    }
+  };
+  std::set<std::unique_ptr<GraphicsItem>, LayerCmp> m_children;
+
   Point m_anchor;
   PositionCorrector m_positionCorrector;
+  int m_z;
   Color m_color;
   unsigned int m_thick;
   bool m_isFill;
