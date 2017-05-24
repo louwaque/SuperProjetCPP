@@ -20,13 +20,18 @@
 
 class Point
 {
-private:
-  int m_x; /*!< Abscisse du Point*/
-  int m_y; /*!< Ordonnée du Point*/
-
 public:
+
   /*!
-   * \brief Constructeur par default de la classe Point.
+   * \brief Constructeur par défaut de la classe Point.
+   *
+   * Crée une instance de la classe Point avec les coordonnées (0, 0).
+   */
+
+  Point();
+
+  /*!
+   * \brief Constructeur de la classe Point.
    *
    * Crée une instance de la classe Point.
    *
@@ -34,7 +39,7 @@ public:
    * \param y : ordonnée
    */
 
-  Point(int x = 0, int y = 0);
+  Point(int x, int y);
 
   /*!
    * \brief Constructeur par copie
@@ -53,7 +58,7 @@ public:
    *
    *  \return  l'absisse du Point
    */
-   
+
   inline int x() const { return m_x; }
 
   /*!
@@ -89,6 +94,9 @@ public:
 
  void set(const int x, const int y);
 
+private:
+  int m_x; /*!< Abscisse du Point*/
+  int m_y; /*!< Ordonnée du Point*/
 };
 
 /*!
