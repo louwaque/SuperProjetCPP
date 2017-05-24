@@ -23,11 +23,11 @@ bool GraphicsRectangle::meIsOver(const Point &absoluteP)
 
 void GraphicsRectangle::setWidth(const size_t width)
 {
-  m_bottomRight->setAbsolute(Point(width));
+  m_bottomRight->setAbsolute(Point(width,m_bottomRight->absolute().y()));
 }
 
 
 void GraphicsRectangle::setHeight( const size_t height)
 {
-   m_topLeft->setAbsolute(Point(height));
+   m_topLeft->setAbsolute(Point(m_topLeft->absolute().x(),height));
 }

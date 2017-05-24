@@ -11,7 +11,7 @@ GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
   m_bottomRight->setPositionCorrector([this](const Point &pos) {
     Point diffP(pos - m_topLeft->anchor());
     double radius = std::hypot(diffP.x(), diffP.y());
-    if (pos < 0) radius = - radius;
+    if (pos < Point()) radius = - radius;
     return Point(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
   });
 }
