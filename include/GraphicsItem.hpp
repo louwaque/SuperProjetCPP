@@ -124,14 +124,7 @@ protected:
 
 private:
   GraphicsItem *m_parent;
-
-  struct LayerCmp {
-    bool operator()(const std::unique_ptr<GraphicsItem> &l, const std::unique_ptr<GraphicsItem> &r) const {
-        return l->z() < r->z();
-    }
-  };
-  std::set<std::unique_ptr<GraphicsItem>, LayerCmp> m_children;
-
+  std::vector<std::unique_ptr<GraphicsItem>> m_children;
   Point m_anchor;
   PositionCorrector m_positionCorrector;
   int m_z;

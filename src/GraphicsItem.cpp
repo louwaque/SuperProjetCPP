@@ -19,17 +19,16 @@ void GraphicsItem::setParent(GraphicsItem *parent)
     return;
 
   if (m_parent) {
-    //for (size_t i = 0; i < m_parent->m_children.size(); ++i) {
-    for (auto it = m_parent->m_children.begin(); it != m_parent->m_children.end(); ++it)
-      if (it->get() == this) {
-        it->release();
+    for (size_t i = 0; i < m_parent->m_children.size(); ++i) {
+      if (m_parent->m_children[i].get() == this) {
+        m_parent->m_children[i].release();
         m_parent->m_children.erase(m_parent->m_children.begin()+i);
       }
     }
   }
   m_parent = parent;
   if (m_parent)
-    m_parent->m_children.insert(std::unique_ptr<GraphicsItem>(this));
+    m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
