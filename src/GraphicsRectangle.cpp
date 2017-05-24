@@ -14,6 +14,7 @@ void GraphicsRectangle::meDraw(Canvas *canvas)
 {
   if (canvas)
     canvas->drawRectangle(topLeft()->absolute(), bottomRight()->absolute(), isFill());
+    
 }
 
 bool GraphicsRectangle::meIsOver(const Point &absoluteP)

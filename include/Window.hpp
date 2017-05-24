@@ -76,6 +76,7 @@ protected:
   virtual void mouseMoveEvent(const Point &mousePos, const MouseButton button) {}
   virtual void keyPressEvent(const Key key) {}
   virtual void keyReleaseEvent(const Key key) {}
+  //virtual void handleEvent(Event *event);
 
 private:
   void expose() { drawEvent(); }

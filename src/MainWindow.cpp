@@ -42,8 +42,7 @@ MainWindow::MainWindow()
   rectangle->setThick(5);
   rectangle->setAbsolute({100, 200});
   rectangle->bottomRight()->setAnchor({10,50});
-//  rectangle->setWidth(40);
-//  rectangle->setHeight(70);
+  
 
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
