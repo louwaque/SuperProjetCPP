@@ -1,5 +1,5 @@
 #define BOOST_TEST_MODULE COLOR
-#include "../boost/test/include/boost/test/unit_test.hpp"
+#include <boost/test/unit_test.hpp>
 
 #include "../include/Color.hpp"
 

@@ -1,4 +1,24 @@
 [submodule "boost/test"]
 	path = boost/test
 	url = https://github.com/boostorg/test.git
-	branch = boost-1.64.0
+	branch = master
+[submodule "boost/detail"]
+	path = boost/detail
+	url = https://github.com/boostorg/detail.git
+	branch = master
+[submodule "boost/config"]
+	path = boost/config
+	url = https://github.com/boostorg/config
+	branch = master
+[submodule "boost/type_traits"]
+	path = boost/type_traits
+	url = https://github.com/boostorg/type_traits
+	branch = master
+[submodule "boost/mpl"]
+	path = boost/mpl
+	url = https://github.com/boostorg/mpl
+	branch = master
+[submodule "boost/core"]
+	path = boost/core
+	url = https://github.com/boostorg/core
+	branch = master
