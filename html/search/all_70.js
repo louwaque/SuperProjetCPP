@@ -9,7 +9,7 @@ var searchData=
   ['percent',['percent',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa47d2b8dfd8627a87eaa994d6c672dbf7',1,'ez-draw++.hpp']]],
   ['period',['period',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa756ae1376a9e150e87eab968378fea85',1,'ez-draw++.hpp']]],
   ['plus',['plus',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa772311abb4290d65c05c49d38c4da6fb',1,'ez-draw++.hpp']]],
-  ['point',['Point',['../class_point.html',1,'Point'],['../class_point.html#a1c8a6881ed0f11828299033c5959d147',1,'Point::Point(int x=0, int y=0)'],['../class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1',1,'Point::Point(const Point &amp;src)']]],
+  ['point',['Point',['../class_point.html',1,'Point'],['../class_point.html#ad92f2337b839a94ce97dcdb439b4325a',1,'Point::Point()'],['../class_point.html#a001c4958c310b248f5c26037aea38a9c',1,'Point::Point(int x, int y)'],['../class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1',1,'Point::Point(const Point &amp;src)']]],
   ['point_2ehpp',['Point.hpp',['../_point_8hpp.html',1,'']]],
   ['print',['print',['../classfinal.html#ab60ff6c7afa439bb21a9d320d3794341',1,'final']]],
   ['prior',['Prior',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa5439f2455c2ba8033b2b514a07df8798',1,'ez-draw++.hpp']]]

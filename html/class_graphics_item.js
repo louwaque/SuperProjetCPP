@@ -1,6 +1,7 @@
 var class_graphics_item =
 [
     [ "GraphicsItemList", "class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b", null ],
+    [ "PositionCorrector", "class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64", null ],
     [ "GraphicsTypes", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f", null ],
     [ "SearchTypes", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc", null ],
     [ "GraphicsItem", "class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc", null ],
@@ -16,13 +17,17 @@ var class_graphics_item =
     [ "meDraw", "class_graphics_item.html#ab97734473720fa8365534448aa13733c", null ],
     [ "meIsOver", "class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc", null ],
     [ "parent", "class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392", null ],
+    [ "positionCorrector", "class_graphics_item.html#a29879be1c242b86be8fc7df42b3fbd8f", null ],
     [ "setAbsolute", "class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d", null ],
     [ "setAnchor", "class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4", null ],
     [ "setColor", "class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3", null ],
     [ "setFill", "class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7", null ],
     [ "setParent", "class_graphics_item.html#a8bcbe86ba1854edffd7fbed0b4bc8cd5", null ],
+    [ "setPositionCorrector", "class_graphics_item.html#aaa2937af237da890e836326ed882140d", null ],
     [ "setThick", "class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6", null ],
     [ "setVisible", "class_graphics_item.html#a911dbcb4786b03e21400e821e0e6d632", null ],
+    [ "setZ", "class_graphics_item.html#acc364937b5031bc99455d18638f77af3", null ],
     [ "thick", "class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d", null ],
-    [ "type", "class_graphics_item.html#aa892caff547a0fd1969898ee0740b186", null ]
+    [ "type", "class_graphics_item.html#aa892caff547a0fd1969898ee0740b186", null ],
+    [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ]
 ];

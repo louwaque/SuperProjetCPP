@@ -2,6 +2,10 @@ var hierarchy =
 [
     [ "Canvas", "class_canvas.html", null ],
     [ "Color", "class_color.html", null ],
+    [ "Event", "class_event.html", [
+      [ "KeyEvent", "class_key_event.html", null ],
+      [ "MouseEvent", "class_mouse_event.html", null ]
+    ] ],
     [ "EZDraw", "class_e_z_draw.html", null ],
     [ "EZEvent", "class_e_z_event.html", null ],
     [ "EZPixel", "class_e_z_pixel.html", null ],
@@ -23,7 +27,9 @@ var hierarchy =
         [ "GraphicsPolygon", "class_graphics_polygon.html", null ],
         [ "GraphicsTriangle", "class_graphics_triangle.html", null ]
       ] ],
-      [ "GraphicsText", "class_graphics_text.html", null ]
+      [ "GraphicsSquare", "class_graphics_square.html", null ],
+      [ "GraphicsText", "class_graphics_text.html", null ],
+      [ "ToolsWindows", "class_tools_windows.html", null ]
     ] ],
     [ "Point", "class_point.html", null ]
 ];

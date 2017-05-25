@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['k',['K',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c',1,'K():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966',1,'k():&#160;ez-draw++.hpp']]],
+  ['k',['k',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966',1,'k():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c',1,'K():&#160;ez-draw++.hpp']]],
   ['keycount',['keyCount',['../class_e_z_event.html#a4e99c100087603c7133e28709a27a662',1,'EZEvent']]],
+  ['keyevent',['KeyEvent',['../class_key_event.html',1,'']]],
+  ['keyevent_2ehpp',['KeyEvent.hpp',['../_key_event_8hpp.html',1,'']]],
   ['keyname',['keyName',['../class_e_z_event.html#a0a64b69e46339cc12fa3407aa419ee5e',1,'EZEvent']]],
   ['keypress',['keyPress',['../class_e_z_window.html#a8633fd4f1932074c987716fce9fa2000',1,'EZWindow']]],
   ['keyrelease',['keyRelease',['../class_e_z_window.html#acc30ab8d91a1624081a1012ebe758765',1,'EZWindow']]],

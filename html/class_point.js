@@ -1,6 +1,7 @@
 var class_point =
 [
-    [ "Point", "class_point.html#a1c8a6881ed0f11828299033c5959d147", null ],
+    [ "Point", "class_point.html#ad92f2337b839a94ce97dcdb439b4325a", null ],
+    [ "Point", "class_point.html#a001c4958c310b248f5c26037aea38a9c", null ],
     [ "Point", "class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1", null ],
     [ "~Point", "class_point.html#a395fa04b4ec126b66fc053f829a30cc1", null ],
     [ "set", "class_point.html#a43923c490fb5439d7d8a041e86520c34", null ],

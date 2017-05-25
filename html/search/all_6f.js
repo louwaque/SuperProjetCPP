@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['o',['o',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa79e8893c670f0603af48887b7ff3da1e',1,'o():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf4b8b7698dfedf5562a7db2bdb07010a',1,'O():&#160;ez-draw++.hpp']]],
+  ['o',['O',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf4b8b7698dfedf5562a7db2bdb07010a',1,'O():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa79e8893c670f0603af48887b7ff3da1e',1,'o():&#160;ez-draw++.hpp']]],
   ['operator_2b',['operator+',['../_point_8hpp.html#a4158330ef851082d91a82eefd03aa183',1,'operator+(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#ae44f691efaa50cc00e591b91b73c8be4',1,'operator+(const Point &amp;p, const int number):&#160;Point.cpp']]],
   ['operator_2d',['operator-',['../_point_8hpp.html#af304a4bde169f417ea02e56d3d4b7258',1,'operator-(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#af594655c05f043397ea0e56df21a7245',1,'operator-(const Point &amp;p, const int number):&#160;Point.cpp']]],
   ['operator_3c',['operator<',['../_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74',1,'Point.cpp']]],

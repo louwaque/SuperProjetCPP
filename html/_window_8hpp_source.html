@@ -175,23 +175,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00076"></a>00076   <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;mousePos, <span class="keyword">const</span> MouseButton button) {}
 <a name="l00077"></a>00077   <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(<span class="keyword">const</span> Key key) {}
 <a name="l00078"></a>00078   <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyReleaseEvent(<span class="keyword">const</span> Key key) {}
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080 <span class="keyword">private</span>:
-<a name="l00081"></a>00081   <span class="keywordtype">void</span> expose() { drawEvent(); }
-<a name="l00082"></a>00082   <span class="keywordtype">void</span> configureNotify(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) { resizeEvent(width, height); }
-<a name="l00083"></a>00083   <span class="keywordtype">void</span> close() { closeEvent(); }
-<a name="l00084"></a>00084   <span class="keywordtype">void</span> buttonPress(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mousePressEvent({mouse_x, mouse_y}, MouseButton(button)); }
-<a name="l00085"></a>00085   <span class="keywordtype">void</span> buttonRelease(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mouseReleaseEvent({mouse_x, mouse_y}, MouseButton(button)); }
-<a name="l00086"></a>00086   <span class="keywordtype">void</span> motionNotify(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); }
-<a name="l00087"></a>00087   <span class="keywordtype">void</span> keyPress(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym) { keyPressEvent(keysym); }
-<a name="l00088"></a>00088   <span class="keywordtype">void</span> keyRelease(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym) { keyReleaseEvent(keysym); }
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090 <span class="keyword">private</span>:
-<a name="l00091"></a>00091   <span class="keywordtype">bool</span> m_doubleBuffer;
-<a name="l00092"></a>00092   <a class="code" href="class_canvas.html">Canvas</a> m_canvas;
-<a name="l00093"></a>00093 };
-<a name="l00094"></a>00094 
-<a name="l00095"></a>00095 <span class="preprocessor">#endif</span>
+<a name="l00079"></a>00079   <span class="comment">//virtual void handleEvent(Event *event);</span>
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="keyword">private</span>:
+<a name="l00082"></a>00082   <span class="keywordtype">void</span> expose() { drawEvent(); }
+<a name="l00083"></a>00083   <span class="keywordtype">void</span> configureNotify(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) { resizeEvent(width, height); }
+<a name="l00084"></a>00084   <span class="keywordtype">void</span> close() { closeEvent(); }
+<a name="l00085"></a>00085   <span class="keywordtype">void</span> buttonPress(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mousePressEvent({mouse_x, mouse_y}, MouseButton(button)); }
+<a name="l00086"></a>00086   <span class="keywordtype">void</span> buttonRelease(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mouseReleaseEvent({mouse_x, mouse_y}, MouseButton(button)); }
+<a name="l00087"></a>00087   <span class="keywordtype">void</span> motionNotify(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button) { mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); }
+<a name="l00088"></a>00088   <span class="keywordtype">void</span> keyPress(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym) { keyPressEvent(keysym); }
+<a name="l00089"></a>00089   <span class="keywordtype">void</span> keyRelease(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym) { keyReleaseEvent(keysym); }
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="keyword">private</span>:
+<a name="l00092"></a>00092   <span class="keywordtype">bool</span> m_doubleBuffer;
+<a name="l00093"></a>00093   <a class="code" href="class_canvas.html">Canvas</a> m_canvas;
+<a name="l00094"></a>00094 };
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -212,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><b>Window.hpp</b>      </li>
 
-    <li class="footer">Généré le Mardi Mai 23 2017 12:38:27 pour Project c++ par
+    <li class="footer">Généré le Jeudi Mai 25 2017 09:44:38 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

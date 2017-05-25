@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['event',['Event',['../class_event.html',1,'']]],
   ['ezdraw',['EZDraw',['../class_e_z_draw.html',1,'']]],
   ['ezevent',['EZEvent',['../class_e_z_event.html',1,'']]],
   ['ezpixel',['EZPixel',['../class_e_z_pixel.html',1,'']]],

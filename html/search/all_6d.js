@@ -13,6 +13,8 @@ var searchData=
   ['mlf',['MLF',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a8315d2b8d5468e7eeddccc9c71fbe0ca',1,'ez-draw++.hpp']]],
   ['motionnotify',['motionNotify',['../class_e_z_window.html#a4e807aaaf6ad4c1154d3e612be6b680f',1,'EZWindow']]],
   ['mousebutton',['mouseButton',['../class_e_z_event.html#af6d6cc89229e7f69918746f8c0a073fc',1,'EZEvent']]],
+  ['mouseevent',['MouseEvent',['../class_mouse_event.html',1,'']]],
+  ['mouseevent_2ehpp',['MouseEvent.hpp',['../_mouse_event_8hpp.html',1,'']]],
   ['mousex',['mouseX',['../class_e_z_event.html#ae956aa7ffe1366c7a58c5418f72dda9b',1,'EZEvent']]],
   ['mousey',['mouseY',['../class_e_z_event.html#ac975358cee07a159ea601a9365826a6a',1,'EZEvent']]],
   ['mr',['MR',['../ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447a72e220e7a1804705bd074f8cdd5093c4',1,'ez-draw++.hpp']]],

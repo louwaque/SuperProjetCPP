@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i',['i',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa85ae20979fb729ef19da67855aecdfd5',1,'i():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad091b8e376f7cf432dc367e1eda65e85',1,'I():&#160;ez-draw++.hpp']]],
+  ['i',['I',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aad091b8e376f7cf432dc367e1eda65e85',1,'I():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa85ae20979fb729ef19da67855aecdfd5',1,'i():&#160;ez-draw++.hpp']]],
   ['insert',['Insert',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa0a84e3d16cff840b05790b811b0152d9',1,'ez-draw++.hpp']]],
   ['isvisible',['isVisible',['../class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94',1,'EZWindow::isVisible()'],['../class_window.html#ab99d21f928e805cd862cba08cf107a1b',1,'Window::isVisible()']]]
 ];

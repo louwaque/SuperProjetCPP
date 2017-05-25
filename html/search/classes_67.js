@@ -9,6 +9,7 @@ var searchData=
   ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'']]],
   ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html',1,'']]],
   ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html',1,'']]],
+  ['graphicssquare',['GraphicsSquare',['../class_graphics_square.html',1,'']]],
   ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'']]],
   ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]]
 ];
