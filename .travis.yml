@@ -26,9 +26,19 @@ addons:
       - doxygen-gui
       - graphviz
 
-env:
-  - CTEST_OUTPUT_ON_FAILURE=1
-script:
-  - cmake .
-  - bundle exec "make doc && cd $TRAVIS_BUILD_DIR && chmod +x generateDocumentationAndDeploy.sh && ./generateDocumentationAndDeploy.sh"
-  - bundle exec make check
+jobs:
+  include:
+    - stage: build
+      script:
+        - cmake .
+        - make doc
+        - cd $TRAVIS_BUILD_DIR
+        - chmod +x generateDocumentationAndDeploy.sh
+        - ./generateDocumentationAndDeploy.sh
+
+    - stage: build
+      env:
+        - CTEST_OUTPUT_ON_FAILURE=1
+      script:
+        - cmake .
+        - make check
