@@ -40,21 +40,33 @@ jobs:
   include:
     - stage: build
       script:
+        - echo -en 'travis_fold:start:cmake\\r'
         - cmake .
+        - echo -en 'travis_fold:end:cmake\\r'
+        - echo -en 'travis_fold:start:doc\\r'
         - make doc
+        - echo -en 'travis_fold:end:doc\\r'
+        - echo -en 'travis_fold:start:upload\\r'
         - cd $TRAVIS_BUILD_DIR
         - chmod +x generateDocumentationAndDeploy.sh
         - ./generateDocumentationAndDeploy.sh
+        - echo -en 'travis_fold:end:upload\\r'
 
     - stage: build
       env:
         - CTEST_OUTPUT_ON_FAILURE=1
       script:
+        - echo -en 'travis_fold:start:boost\\r'
         - curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2"
         - tar xf boost.tar.bz2
         - cd boost_1_64_0
         - ./bootstrap.sh
         - ./b2 --with-test
         - cd ..
+        - echo -en 'travis_fold:end:boost\\r'
+        - echo -en 'travis_fold:start:cmake\\r'
         - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$TRAVIS_BUILD_DIR/boost_1_64_0 .
+        - echo -en 'travis_fold:end:cmake\\r'
+        - echo -en 'travis_fold:start:test\\r'
         - make check
+        - echo -en 'travis_fold:start:test\\r'
