@@ -52,5 +52,14 @@ var class_graphics_item =
     [ "thick", "class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d", null ],
     [ "type", "class_graphics_item.html#aa892caff547a0fd1969898ee0740b186", null ],
     [ "update", "class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2", null ],
-    [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ]
+    [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ],
+    [ "m_anchor", "class_graphics_item.html#ad7052acba279643faeb33101d1b997eb", null ],
+    [ "m_children", "class_graphics_item.html#aafac7807306d357707fbb2fec0d81aef", null ],
+    [ "m_color", "class_graphics_item.html#affa691c49709c1a91083f248352eff91", null ],
+    [ "m_isFill", "class_graphics_item.html#a0ca6e4ef883d695d87f1a52a1e0645ef", null ],
+    [ "m_isVisible", "class_graphics_item.html#a1f21edc30cc24965948533649ddfefbe", null ],
+    [ "m_parent", "class_graphics_item.html#ab5e748e1f13ea1e83de40bb281f90307", null ],
+    [ "m_positionCorrector", "class_graphics_item.html#a031031ab2eb380c3c7600f1152e6a3d6", null ],
+    [ "m_thick", "class_graphics_item.html#acc1dc85be53a256fab79cf67e28be96e", null ],
+    [ "m_z", "class_graphics_item.html#af13cf32543812eb7fffeea6007be5610", null ]
 ];

@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['operator_2b',['operator+',['../_point_8hpp.html#a4158330ef851082d91a82eefd03aa183',1,'operator+(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#ae44f691efaa50cc00e591b91b73c8be4',1,'operator+(const Point &amp;p, const int number):&#160;Point.cpp']]],
-  ['operator_2d',['operator-',['../_point_8hpp.html#af304a4bde169f417ea02e56d3d4b7258',1,'operator-(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#af594655c05f043397ea0e56df21a7245',1,'operator-(const Point &amp;p, const int number):&#160;Point.cpp']]],
-  ['operator_3c',['operator&lt;',['../_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74',1,'Point.cpp']]],
-  ['operator_3c_3c',['operator&lt;&lt;',['../_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960',1,'Point.cpp']]],
-  ['operator_3d_3d',['operator==',['../_point_8hpp.html#a872cb140a1e5f546a31b4b3d891b765a',1,'Point.cpp']]]
+  ['handleevent',['handleEvent',['../class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2',1,'GraphicsItem::handleEvent()'],['../class_main_window.html#a0c74824ef8e6256455545f2659610b31',1,'MainWindow::handleEvent()'],['../class_window.html#a0d49ac30ebc4ec74839dedd54a4d1f1b',1,'Window::handleEvent()']]],
+  ['header',['header',['../resize_8js.html#af920c2a7d4f4b5a962fe8e11257f871d',1,'resize.js']]],
+  ['height',['height',['../class_canvas.html#a2c78dd76db49b8388c4531285cfd4aaf',1,'Canvas::height()'],['../class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70',1,'Font::height()'],['../class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429',1,'GraphicsRectangle::height()'],['../class_window.html#ac22c92bbc9278e85a02c1dea351213e7',1,'Window::height()']]],
+  ['hex',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCXXCompilerId.cpp']]],
+  ['hexa',['hexa',['../class_color.html#a651f880388f41a65d692194c3cf2b2e2',1,'Color']]],
+  ['hexastr',['hexaStr',['../class_color.html#ab112588e12ec0e9a8118fede17078937',1,'Color']]],
+  ['hierarchy',['hierarchy',['../hierarchy_8js.html#ad9447ad30669c42ccb861cbe36a18f6b',1,'hierarchy.js']]],
+  ['hierarchy_2ejs',['hierarchy.js',['../hierarchy_8js.html',1,'']]],
+  ['highlightanchor',['highlightAnchor',['../navtree_8js.html#a524fa9bfd80c70bf3a84696b2077eadb',1,'navtree.js']]],
+  ['hue',['hue',['../class_color.html#ac99b62f877393bbadfeee7170eb31ecd',1,'Color']]]
 ];

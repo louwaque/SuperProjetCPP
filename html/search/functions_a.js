@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57',1,'Color']]]
+  ['localstoragesupported',['localStorageSupported',['../navtree_8js.html#ac49af616f532f2364be9f58280469d33',1,'navtree.js']]]
 ];

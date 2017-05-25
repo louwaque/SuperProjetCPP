@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['red',['red',['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color']]]
+  ['jquery',['jQuery',['../jquery_8js.html#a2b1d6f9c448e3ce72f4e1865d6e38d2c',1,'jquery.js']]],
+  ['jquery_2ejs',['jquery.js',['../jquery_8js.html',1,'']]]
 ];

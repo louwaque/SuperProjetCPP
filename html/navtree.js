@@ -1,22 +1,28 @@
 var NAVTREE =
 [
-  [ "Project c++", "index.html", [
+  [ "Super Project c++", "index.html", [
     [ "SuperProjetCPP", "md__home_travis_build__l0_l022__super_projet_c_p_p__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Liste des classes", "annotated.html", "annotated" ],
       [ "Index des classes", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", null ],
-        [ "Fonctions", "functions_func.html", null ],
-        [ "Énumérations", "functions_enum.html", null ]
+        [ "Tout", "functions.html", "functions_dup" ],
+        [ "Fonctions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Définitions de type", "functions_type.html", null ],
+        [ "Énumérations", "functions_enum.html", null ],
+        [ "Valeurs énumérées", "functions_eval.html", null ],
+        [ "Fonctions associées", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Fichiers", null, [
       [ "Liste des fichiers", "files.html", "files" ],
       [ "Membres de fichier", "globals.html", [
-        [ "Tout", "globals.html", null ],
-        [ "Fonctions", "globals_func.html", null ]
+        [ "Tout", "globals.html", "globals_dup" ],
+        [ "Fonctions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -24,8 +30,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_canvas_8hpp_source.html",
-"class_graphics_text.html#af0ed3981eb67b4602330a7579bd5093f"
+"__c__make__c__compiler__id__8c_8js.html",
+"class_canvas.html#a817290cca06f0f43e9cf52cd980794d1",
+"class_main_window.html#a10cfd579cf686f7d35298941f7d4e25b",
+"functions__c_8js.html#a9ced60739b3014bd3803e19b1192defe",
+"search_8js.html#a9189b9f7a32b6bc78240f40348f7fe03"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
