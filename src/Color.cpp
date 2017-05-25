@@ -7,7 +7,7 @@ Color::Color(const Colors color)
 }
 
 Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue)
-: m_color(EZWindow::getRGB(red, green, blue))
+: m_color(red << 16 | green << 8 | blue)
 {
 }
 
