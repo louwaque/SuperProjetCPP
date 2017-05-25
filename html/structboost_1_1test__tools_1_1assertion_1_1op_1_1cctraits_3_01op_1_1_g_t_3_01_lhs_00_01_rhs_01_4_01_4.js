@@ -1,4 +1,0 @@
-var structboost_1_1test__tools_1_1assertion_1_1op_1_1cctraits_3_01op_1_1_g_t_3_01_lhs_00_01_rhs_01_4_01_4 =
-[
-    [ "is_specialized", "structboost_1_1test__tools_1_1assertion_1_1op_1_1cctraits_3_01op_1_1_g_t_3_01_lhs_00_01_rhs_01_4_01_4.html#aaa0c4617bfb892aa8a8badf5eb86f1fd", null ]
-];

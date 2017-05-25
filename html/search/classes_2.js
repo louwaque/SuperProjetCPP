@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['b',['B',['../struct_b.html',1,'']]],
-  ['base',['base',['../classboost_1_1unit__test_1_1decorator_1_1base.html',1,'boost::unit_test::decorator']]],
-  ['basic_5fcstring',['basic_cstring',['../classboost_1_1unit__test_1_1basic__cstring.html',1,'boost::unit_test']]],
-  ['basic_5fcstring_3c_20char_20const_20_20_3e',['basic_cstring&lt; char const  &gt;',['../classboost_1_1unit__test_1_1basic__cstring.html',1,'boost::unit_test']]],
-  ['basic_5fcstring_3c_20chart_20const_20_20_3e',['basic_cstring&lt; CharT const  &gt;',['../classboost_1_1unit__test_1_1basic__cstring.html',1,'boost::unit_test']]],
-  ['basic_5fcstring_3c_20iterator_5fvalue_3c_20iter_20_3e_3a_3atypeconst_20_3e',['basic_cstring&lt; iterator_value&lt; Iter &gt;::typeconst &gt;',['../classboost_1_1unit__test_1_1basic__cstring.html',1,'boost::unit_test']]],
-  ['basic_5fnullbuf',['basic_nullbuf',['../classboost_1_1basic__nullbuf.html',1,'boost']]],
-  ['basic_5fonullstream',['basic_onullstream',['../classboost_1_1basic__onullstream.html',1,'boost']]],
-  ['basic_5fparam',['basic_param',['../classboost_1_1runtime_1_1basic__param.html',1,'boost::runtime']]],
-  ['basic_5fstring_5ftoken_5fiterator',['basic_string_token_iterator',['../classboost_1_1unit__test_1_1utils_1_1basic__string__token__iterator.html',1,'boost::unit_test::utils']]],
-  ['basic_5fwrap_5fstringstream',['basic_wrap_stringstream',['../classboost_1_1basic__wrap__stringstream.html',1,'boost']]],
-  ['bcs_5fbase_5fchar',['bcs_base_char',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__base__char.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fbase_5fchar_3c_20char_20const_20_20_3e',['bcs_base_char&lt; char const  &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__base__char_3_01char_01const_01_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fbase_5fchar_3c_20unsigned_20char_20_3e',['bcs_base_char&lt; unsigned char &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__base__char_3_01unsigned_01char_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fbase_5fchar_3c_20unsigned_20char_20const_20_20_3e',['bcs_base_char&lt; unsigned char const  &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__base__char_3_01unsigned_01char_01const_01_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fbase_5fchar_3c_20wchar_5ft_20const_20_20_3e',['bcs_base_char&lt; wchar_t const  &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__base__char_3_01wchar__t_01const_01_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fchar_5ftraits',['bcs_char_traits',['../classboost_1_1unit__test_1_1ut__detail_1_1bcs__char__traits.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fchar_5ftraits_5fimpl',['bcs_char_traits_impl',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__char__traits__impl.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fchar_5ftraits_5fimpl_3c_20char_20_3e',['bcs_char_traits_impl&lt; char &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__char__traits__impl_3_01char_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['bcs_5fchar_5ftraits_5fimpl_3c_20wchar_5ft_20_3e',['bcs_char_traits_impl&lt; wchar_t &gt;',['../structboost_1_1unit__test_1_1ut__detail_1_1bcs__char__traits__impl_3_01wchar__t_01_4.html',1,'boost::unit_test::ut_detail']]],
-  ['begin',['begin',['../structboost_1_1unit__test_1_1log_1_1begin.html',1,'boost::unit_test::log']]],
-  ['binary_5fexpr',['binary_expr',['../classboost_1_1test__tools_1_1assertion_1_1binary__expr.html',1,'boost::test_tools::assertion']]],
-  ['bitwise',['bitwise',['../structboost_1_1test__tools_1_1bitwise.html',1,'boost::test_tools']]],
-  ['bitwise_5fequal_5fimpl',['bitwise_equal_impl',['../structboost_1_1test__tools_1_1tt__detail_1_1bitwise__equal__impl.html',1,'boost::test_tools::tt_detail']]],
-  ['bool_5fconvertible',['bool_convertible',['../classbool__convertible.html',1,'']]],
-  ['boost_5ftest_5fprint_5ftype_5fimpl',['boost_test_print_type_impl',['../structboost_1_1test__tools_1_1tt__detail_1_1impl_1_1boost__test__print__type__impl.html',1,'boost::test_tools::tt_detail::impl']]]
+  ['font',['Font',['../class_font.html',1,'']]]
 ];

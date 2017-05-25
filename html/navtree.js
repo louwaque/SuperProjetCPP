@@ -1,43 +1,22 @@
 var NAVTREE =
 [
   [ "Project c++", "index.html", [
-    [ "README", "md__home_travis_build__l0_l022__super_projet_c_p_p_boost_test_doc__r_e_a_d_m_e.html", null ],
-    [ "README", "md__home_travis_build__l0_l022__super_projet_c_p_p_boost_test__r_e_a_d_m_e.html", null ],
     [ "SuperProjetCPP", "md__home_travis_build__l0_l022__super_projet_c_p_p__r_e_a_d_m_e.html", null ],
-    [ "Liste des éléments obsolètes", "deprecated.html", null ],
-    [ "Modules", "modules.html", "modules" ],
-    [ "Espaces de nommage", null, [
-      [ "Liste des espaces de nommage", "namespaces.html", "namespaces" ],
-      [ "Membres de l'espace de nommage", "namespacemembers.html", [
-        [ "Tout", "namespacemembers.html", null ],
-        [ "Fonctions", "namespacemembers_func.html", null ],
-        [ "Définitions de type", "namespacemembers_type.html", null ],
-        [ "Énumérations", "namespacemembers_enum.html", null ],
-        [ "Valeurs énumérées", "namespacemembers_eval.html", null ]
-      ] ]
-    ] ],
     [ "Classes", null, [
       [ "Liste des classes", "annotated.html", "annotated" ],
       [ "Index des classes", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", "functions_dup" ],
-        [ "Fonctions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Énumérations", "functions_enum.html", null ],
-        [ "Valeurs énumérées", "functions_eval.html", null ]
+        [ "Tout", "functions.html", null ],
+        [ "Fonctions", "functions_func.html", null ],
+        [ "Énumérations", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "Fichiers", null, [
       [ "Liste des fichiers", "files.html", "files" ],
       [ "Membres de fichier", "globals.html", [
-        [ "Tout", "globals.html", "globals_dup" ],
-        [ "Fonctions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Définitions de type", "globals_type.html", null ],
-        [ "Énumérations", "globals_enum.html", null ],
-        [ "Valeurs énumérées", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Tout", "globals.html", null ],
+        [ "Fonctions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -45,20 +24,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"class_e_z_window.html#a631fca1814422ad1ee0e8dda32a78f5d",
-"class_tools_windows.html#a5e5b3d0c80c9247c9daf00d982208f86",
-"classboost_1_1unit__test_1_1basic__cstring.html#a3e0891d58446d81704cd4ddb5e755f7d",
-"classboost_1_1unit__test_1_1output_1_1compiler__log__formatter.html#ad55bf7ed53b18615b49783fa84172ebe",
-"classboost_1_1unit__test_1_1unit__test__log__formatter.html#ade138110acf915c5c5c7649d68c4dc85a9e3d2151c4e9f19c38e514c38505d61f",
-"collection-comparison-test_8cpp.html#ac0431efac4d7c393d1e70b86115cb93f",
-"ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa6816a980223bd400a4d7d7e1110de913",
-"functions_func_c.html",
-"namespaceboost_1_1unit__test_1_1framework.html",
-"structboost_1_1execution__exception_1_1location.html#a726d382e166ea16c75783e0493976bb9",
-"structboost_1_1unit__test_1_1data_1_1monomorphic_1_1join_1_1iterator.html#af10a9640c7470ad4ea1131548c4f7506",
-"structguard.html#a35c0ac40426378cc45cef3e627213528",
-"workaround_8hpp.html"
+"_canvas_8hpp_source.html",
+"class_graphics_text.html#af0ed3981eb67b4602330a7579bd5093f"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

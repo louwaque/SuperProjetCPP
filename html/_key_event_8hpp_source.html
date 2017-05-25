@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +93,7 @@ $(document).ready(function(){initNavTree('_key_event_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,17 +116,17 @@ $(document).ready(function(){initNavTree('_key_event_8hpp_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_key_event.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_key_event.html">KeyEvent</a> : <span class="keyword">public</span> <a class="code" href="class_event.html">Event</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">typedef</span> EZKeySym Key;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">enum</span> KeyState {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    KeyPressed,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    KeyReleased</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_key_event.html">KeyEvent</a>(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> key, <span class="keyword">const</span> KeyState state, <span class="keyword">const</span> std::string &amp;keyName, <span class="keyword">const</span> std::string &amp;keyString);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_key_event.html">KeyEvent</a>(<span class="keyword">const</span> <a class="code" href="class_e_z_event.html">EZEvent</a> &amp;event, <span class="keyword">const</span> KeyState state);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_key_event.html">KeyEvent</a>(<span class="keyword">const</span> Key key, <span class="keyword">const</span> KeyState state, <span class="keyword">const</span> std::string &amp;keyName, <span class="keyword">const</span> std::string &amp;keyString);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_key_event.html">KeyEvent</a>(<span class="keyword">const</span> EZEvent &amp;event, <span class="keyword">const</span> KeyState state);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> key()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_key; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">inline</span> Key key()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_key; }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">inline</span> KeyState state()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_state; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">inline</span> std::string keyName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_keyName; }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">inline</span> std::string keyString()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_keyString; }</div>
@@ -139,7 +137,7 @@ $(document).ready(function(){initNavTree('_key_event_8hpp_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::ostream &amp;write(std::ostream &amp;os) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> m_key;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  Key m_key;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  KeyState m_state;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string m_keyName;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  std::string m_keyString;</div>
@@ -149,15 +147,13 @@ $(document).ready(function(){initNavTree('_key_event_8hpp_source.html','');});
 <div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Permet la gestion des evenements. </div><div class="ttdef"><b>Definition:</b> Event.hpp:21</div></div>
 <div class="ttc" id="_event_8hpp_html"><div class="ttname"><a href="_event_8hpp.html">Event.hpp</a></div><div class="ttdoc">Classe Event. </div></div>
 <div class="ttc" id="class_key_event_html"><div class="ttname"><a href="class_key_event.html">KeyEvent</a></div><div class="ttdoc">Permet la gestion des evenements au clavier. </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:21</div></div>
-<div class="ttc" id="ez-draw_09_09_8hpp_html_ab4ada4f5b7011a8a08fd77572ddabc1a"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a></div><div class="ttdeci">EZKeySym</div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:84</div></div>
-<div class="ttc" id="class_e_z_event_html"><div class="ttname"><a href="class_e_z_event.html">EZEvent</a></div><div class="ttdoc">La classe EZEvent représente un événement à traiter de l&#39;interface graphique : clic de la souris...</div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:354</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_key_event_8hpp.html">KeyEvent.hpp</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:25 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:47 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

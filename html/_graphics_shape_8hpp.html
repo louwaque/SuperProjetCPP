@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +93,7 @@ $(document).ready(function(){initNavTree('_graphics_shape_8hpp.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,7 +118,7 @@ Graphe des dépendances par inclusion de GraphicsShape.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_graphics_shape_8hpp__incl.png" border="0" usemap="#_2home_2travis_2build_2_l0_l022_2_super_projet_c_p_p_2include_2_graphics_shape_8hpp" alt=""/></div>
 <map name="_2home_2travis_2build_2_l0_l022_2_super_projet_c_p_p_2include_2_graphics_shape_8hpp" id="_2home_2travis_2build_2_l0_l022_2_super_projet_c_p_p_2include_2_graphics_shape_8hpp">
-<area shape="rect" id="node2" href="_graphics_item_8hpp.html" title="Classe GraphicsItem. " alt="" coords="223,109,348,136"/><area shape="rect" id="node7" href="_color_8hpp.html" title="Classe Color. " alt="" coords="349,184,427,211"/><area shape="rect" id="node14" href="_canvas_8hpp_source.html" title="Canvas.hpp" alt="" coords="597,184,688,211"/><area shape="rect" id="node17" href="_event_8hpp.html" title="Classe Event. " alt="" coords="451,184,532,211"/><area shape="rect" id="node10" href="ez-draw_09_09_8hpp.html" title="../ez&#45;lib/ez&#45;draw++.hpp" alt="" coords="394,259,549,285"/><area shape="rect" id="node15" href="_point_8hpp.html" title="Classe point. " alt="" coords="724,259,800,285"/><area shape="rect" id="node16" href="_font_8hpp_source.html" title="Font.hpp" alt="" coords="626,259,699,285"/></map>
+<area shape="rect" id="node2" href="_graphics_item_8hpp.html" title="Classe GraphicsItem. " alt="" coords="223,109,348,136"/><area shape="rect" id="node7" href="_color_8hpp.html" title="Classe Color. " alt="" coords="349,184,427,211"/><area shape="rect" id="node11" href="_canvas_8hpp_source.html" title="Canvas.hpp" alt="" coords="451,184,543,211"/><area shape="rect" id="node15" href="_event_8hpp.html" title="Classe Event. " alt="" coords="567,184,648,211"/><area shape="rect" id="node12" href="_point_8hpp.html" title="Classe point. " alt="" coords="545,259,621,285"/><area shape="rect" id="node14" href="_font_8hpp_source.html" title="Font.hpp" alt="" coords="647,259,720,285"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
@@ -148,7 +146,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_graphics_shape_8hpp.html">GraphicsShape.hpp</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:47 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

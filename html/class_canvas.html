@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('class_canvas.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,7 +123,7 @@ Graphe de collaboration de Canvas:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a5225316a0b9bca9fbba19b0699581921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5225316a0b9bca9fbba19b0699581921"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b> (<a class="el" href="class_e_z_window.html">EZWindow</a> &amp;window)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b> (EZWindow &amp;window)</td></tr>
 <tr class="separator:a5225316a0b9bca9fbba19b0699581921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39dbe4f300c998b4850e0f253c580ae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39dbe4f300c998b4850e0f253c580ae9"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> () const </td></tr>
@@ -137,7 +135,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () const </td></tr>
 <tr class="separator:af5f2b17591e32f8aedc5ab4bb9e37e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817290cca06f0f43e9cf52cd980794d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a817290cca06f0f43e9cf52cd980794d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#a5090c901b1357e4e59a95a0bab048d97">EZColor</a> color)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const EZColor color)</td></tr>
 <tr class="separator:a817290cca06f0f43e9cf52cd980794d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef38b87f65a9d13ec8abd7073142eb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ef38b87f65a9d13ec8abd7073142eb6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setThick</b> (const unsigned int thick=1)</td></tr>
@@ -146,10 +144,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setThick</b> (const u
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setFont</b> (const <a class="el" href="class_font.html">Font</a> &amp;font)</td></tr>
 <tr class="separator:ab2904e99ad4ca470be482cf2faf8c395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1df45002e73cbbbfaa7273729133b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1df45002e73cbbbfaa7273729133b3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const int <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9dd4e461268c8034f5c8564e155c67a6">x</a>, const int <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa415290769594460e2e485922904f345d">y</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const int x, const int y)</td></tr>
 <tr class="separator:af1df45002e73cbbbfaa7273729133b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4830e2b1c25e309489c489bad59ea9e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4830e2b1c25e309489c489bad59ea9e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83878c91171338902e0fe0fb97a8c47a">p</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const <a class="el" href="class_point.html">Point</a> &amp;p)</td></tr>
 <tr class="separator:a4830e2b1c25e309489c489bad59ea9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea67ac3f6984f8a1c67edcd892af289c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea67ac3f6984f8a1c67edcd892af289c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLine</b> (const int firstX, const int firstY, const int secondX, const int secondY)</td></tr>
@@ -176,10 +174,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTriangle</b> (con
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTriangle</b> (const <a class="el" href="class_point.html">Point</a> &amp;first, const <a class="el" href="class_point.html">Point</a> &amp;second, const <a class="el" href="class_point.html">Point</a> &amp;third, const bool isFill=false)</td></tr>
 <tr class="separator:a7790d284aece3ffb4455af3846521e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1d80b9cb71f235f3b9087feb481a5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a1d80b9cb71f235f3b9087feb481a5d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align, const int <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa9dd4e461268c8034f5c8564e155c67a6">x</a>, const int <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa415290769594460e2e485922904f345d">y</a>, const std::string &amp;text)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const EZAlign align, const int x, const int y, const std::string &amp;text)</td></tr>
 <tr class="separator:a5a1d80b9cb71f235f3b9087feb481a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34af1e9202967cbb4088e18296af8296"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34af1e9202967cbb4088e18296af8296"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align, const <a class="el" href="class_point.html">Point</a> &amp;pos, const std::string &amp;text)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const EZAlign align, const <a class="el" href="class_point.html">Point</a> &amp;pos, const std::string &amp;text)</td></tr>
 <tr class="separator:a34af1e9202967cbb4088e18296af8296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
@@ -192,7 +190,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_canvas.html">Canvas</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:47 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

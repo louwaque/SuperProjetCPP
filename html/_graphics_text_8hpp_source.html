@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +93,7 @@ $(document).ready(function(){initNavTree('_graphics_text_8hpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -131,9 +129,9 @@ $(document).ready(function(){initNavTree('_graphics_text_8hpp_source.html','');}
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setFont(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font) { m_font = font; }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_align; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">inline</span> EZAlign align()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_align; }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setAlign(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align = <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209">EZAlign::TL</a>) {m_align = align; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setAlign(<span class="keyword">const</span> EZAlign align = EZAlign::TL) {m_align = align; }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">   75</a></span>&#160;  <span class="keyword">inline</span> GraphicsTypes <a class="code" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TextType; }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
@@ -147,7 +145,7 @@ $(document).ready(function(){initNavTree('_graphics_text_8hpp_source.html','');}
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::string m_text; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">//FIXME : Je veux mettre à la poubelle EZDraw</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_font.html">Font</a> m_font;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> m_align;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  EZAlign m_align;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -159,17 +157,15 @@ $(document).ready(function(){initNavTree('_graphics_text_8hpp_source.html','');}
 <div class="ttc" id="class_graphics_text_html_aeb38c8c0df9473cde331540d9904d352"><div class="ttname"><a href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">GraphicsText::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdoc">Recupere le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:50</div></div>
 <div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:12</div></div>
 <div class="ttc" id="class_graphics_text_html_ac42bb0e20251eb0dc2305be760714130"><div class="ttname"><a href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">GraphicsText::setText</a></div><div class="ttdeci">void setText(const std::string &amp;text=&quot;&quot;)</div><div class="ttdoc">Modifie le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:59</div></div>
-<div class="ttc" id="ez-draw_09_09_8hpp_html_ae20564d58f7db2e75b4584b2f0d5e447"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a></div><div class="ttdeci">EZAlign</div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:50</div></div>
 <div class="ttc" id="class_graphics_text_html_a7a9525ba068e286e6aca9e49d49fc7fb"><div class="ttname"><a href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText::GraphicsText</a></div><div class="ttdeci">GraphicsText(GraphicsItem *parent=nullptr)</div><div class="ttdoc">Constructeur de GraphicsText par default. </div><div class="ttdef"><b>Definition:</b> GraphicsText.cpp:3</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
-<div class="ttc" id="ez-draw_09_09_8hpp_html_ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209">EZAlign::TL</a></div><div class="ttdoc">Top Left. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_graphics_text_8hpp.html">GraphicsText.hpp</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:25 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:47 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

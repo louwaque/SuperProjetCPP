@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +93,7 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,7 +118,7 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mouse_event_8hpp.html">MouseEvent.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_key_event_8hpp.html">KeyEvent.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_window.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">private</span> <a class="code" href="class_e_z_window.html">EZWindow</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_window.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">private</span> EZWindow</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">typedef</span> std::chrono::high_resolution_clock Clock;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
@@ -135,35 +133,35 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> setDoubleBuffer(<span class="keyword">const</span> <span class="keywordtype">bool</span> active = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">size_t</span> width()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_e_z_window.html#a525810a4513f492839dd52137e798ed6">EZWindow::getWidth</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> EZWindow::getWidth();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> setWidth(<span class="keyword">const</span> <span class="keywordtype">size_t</span> width) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_e_z_window.html#ab4d14a03692491c9ae222f461dd18195">EZWindow::setWidth</a>(width);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    EZWindow::setWidth(width);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">size_t</span> height()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_e_z_window.html#a39c0bb391357b06bcaf71dabe719b1dd">EZWindow::getHeight</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> EZWindow::getHeight();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> setHeight(<span class="keyword">const</span> <span class="keywordtype">size_t</span> height) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_e_z_window.html#ae45be05d689d48c882bbd3a1d67e8aa4">EZWindow::setHeight</a>(height);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EZWindow::setHeight(height);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> resize(<span class="keyword">const</span> <span class="keywordtype">size_t</span> width, <span class="keyword">const</span> <span class="keywordtype">size_t</span> height) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_e_z_window.html#aef3231e4ffc9d3e6436f0234116b0169">EZWindow::setWidthHeight</a>(width, height);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    EZWindow::setWidthHeight(width, height);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> isVisible()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94">EZWindow::isVisible</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> EZWindow::isVisible();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> setVisible(<span class="keyword">const</span> <span class="keywordtype">bool</span> visible) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_e_z_window.html#a3cc6f680a1c80db6d4922dc7f0223e01">EZWindow::setVisible</a>(visible);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EZWindow::setVisible(visible);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> drawRequest() {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_e_z_window.html#aab29a1993f91401c24be962223652e5d">EZWindow::sendExpose</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    EZWindow::sendExpose();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="class_canvas.html">Canvas</a> &amp;canvas() {</div>
@@ -178,8 +176,8 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mousePressEvent(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;mousePos, <span class="keyword">const</span> MouseEvent::MouseButton button) {}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;mousePos, <span class="keyword">const</span> MouseEvent::MouseButton button) {}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;mousePos, <span class="keyword">const</span> MouseEvent::MouseButton button) {}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">KeyEvent::Key</a> key) {}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyReleaseEvent(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">KeyEvent::Key</a> key) {}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(<span class="keyword">const</span> KeyEvent::Key key) {}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyReleaseEvent(<span class="keyword">const</span> KeyEvent::Key key) {}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> handleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html">Event</a> &amp;event) {}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateEvent(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time) {}</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -190,8 +188,8 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> buttonPress(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">void</span> buttonRelease(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> motionNotify(<span class="keywordtype">int</span> mouse_x, <span class="keywordtype">int</span> mouse_y, <span class="keywordtype">int</span> button);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> keyPress(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> keyRelease(<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a> keysym);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">void</span> keyPress(EZKeySym keysym);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> keyRelease(EZKeySym keysym);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> timerNotify();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
@@ -203,22 +201,12 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_e_z_window_html_a525810a4513f492839dd52137e798ed6"><div class="ttname"><a href="class_e_z_window.html#a525810a4513f492839dd52137e798ed6">EZWindow::getWidth</a></div><div class="ttdeci">unsigned int getWidth() const </div><div class="ttdoc">Renvoie la largeur actuelle de la fenêtre. </div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3648</div></div>
 <div class="ttc" id="class_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> Window.hpp:12</div></div>
 <div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Permet la gestion des evenements. </div><div class="ttdef"><b>Definition:</b> Event.hpp:21</div></div>
 <div class="ttc" id="_mouse_event_8hpp_html"><div class="ttname"><a href="_mouse_event_8hpp.html">MouseEvent.hpp</a></div><div class="ttdoc">Classe MouseEvent. </div></div>
 <div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> Canvas.hpp:8</div></div>
-<div class="ttc" id="class_e_z_window_html"><div class="ttname"><a href="class_e_z_window.html">EZWindow</a></div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:381</div></div>
-<div class="ttc" id="class_e_z_window_html_ae45be05d689d48c882bbd3a1d67e8aa4"><div class="ttname"><a href="class_e_z_window.html#ae45be05d689d48c882bbd3a1d67e8aa4">EZWindow::setHeight</a></div><div class="ttdeci">void setHeight(unsigned int height)</div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3644</div></div>
 <div class="ttc" id="_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div><div class="ttdoc">Classe point. </div></div>
-<div class="ttc" id="class_e_z_window_html_aab29a1993f91401c24be962223652e5d"><div class="ttname"><a href="class_e_z_window.html#aab29a1993f91401c24be962223652e5d">EZWindow::sendExpose</a></div><div class="ttdeci">void sendExpose() const </div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3699</div></div>
-<div class="ttc" id="ez-draw_09_09_8hpp_html_ab4ada4f5b7011a8a08fd77572ddabc1a"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a></div><div class="ttdeci">EZKeySym</div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:84</div></div>
-<div class="ttc" id="class_e_z_window_html_a3cc6f680a1c80db6d4922dc7f0223e01"><div class="ttname"><a href="class_e_z_window.html#a3cc6f680a1c80db6d4922dc7f0223e01">EZWindow::setVisible</a></div><div class="ttdeci">void setVisible(bool visible=true)</div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3652</div></div>
 <div class="ttc" id="_key_event_8hpp_html"><div class="ttname"><a href="_key_event_8hpp.html">KeyEvent.hpp</a></div><div class="ttdoc">Classe KeyEvent. </div></div>
-<div class="ttc" id="class_e_z_window_html_ab4d14a03692491c9ae222f461dd18195"><div class="ttname"><a href="class_e_z_window.html#ab4d14a03692491c9ae222f461dd18195">EZWindow::setWidth</a></div><div class="ttdeci">void setWidth(unsigned int width)</div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3642</div></div>
-<div class="ttc" id="class_e_z_window_html_ae246ba06c02627c0d4f3ec690861de94"><div class="ttname"><a href="class_e_z_window.html#ae246ba06c02627c0d4f3ec690861de94">EZWindow::isVisible</a></div><div class="ttdeci">bool isVisible() const </div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:431</div></div>
-<div class="ttc" id="class_e_z_window_html_a39c0bb391357b06bcaf71dabe719b1dd"><div class="ttname"><a href="class_e_z_window.html#a39c0bb391357b06bcaf71dabe719b1dd">EZWindow::getHeight</a></div><div class="ttdeci">unsigned int getHeight() const </div><div class="ttdoc">Renvoie la hauteur actuelle de la fenêtre. </div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3650</div></div>
-<div class="ttc" id="class_e_z_window_html_aef3231e4ffc9d3e6436f0234116b0169"><div class="ttname"><a href="class_e_z_window.html#aef3231e4ffc9d3e6436f0234116b0169">EZWindow::setWidthHeight</a></div><div class="ttdeci">void setWidthHeight(unsigned int width, unsigned int height)</div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3646</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -226,7 +214,7 @@ $(document).ready(function(){initNavTree('_window_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>Window.hpp</b></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:25 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:47 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

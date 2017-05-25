@@ -1,26 +1,4 @@
 var searchData=
 [
-  ['ge_5fimpl',['ge_impl',['../structboost_1_1test__tools_1_1tt__detail_1_1ge__impl.html',1,'boost::test_tools::tt_detail']]],
-  ['generate_5ftest_5fcase_5f4_5ftype',['generate_test_case_4_type',['../structboost_1_1unit__test_1_1ut__detail_1_1generate__test__case__4__type.html',1,'boost::unit_test::ut_detail']]],
-  ['generated_5fby',['generated_by',['../classboost_1_1unit__test_1_1data_1_1monomorphic_1_1generated__by.html',1,'boost::unit_test::data::monomorphic']]],
-  ['global_5ffixture',['global_fixture',['../classboost_1_1unit__test_1_1global__fixture.html',1,'boost::unit_test']]],
-  ['global_5ffixture_5fimpl',['global_fixture_impl',['../structboost_1_1unit__test_1_1ut__detail_1_1global__fixture__impl.html',1,'boost::unit_test::ut_detail']]],
-  ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html',1,'']]],
-  ['graphicsanimation',['GraphicsAnimation',['../class_graphics_animation.html',1,'']]],
-  ['graphicsblinkanimation',['GraphicsBlinkAnimation',['../class_graphics_blink_animation.html',1,'']]],
-  ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html',1,'']]],
-  ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html',1,'']]],
-  ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],
-  ['graphicsline',['GraphicsLine',['../class_graphics_line.html',1,'']]],
-  ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'']]],
-  ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'']]],
-  ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html',1,'']]],
-  ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html',1,'']]],
-  ['graphicssquare',['GraphicsSquare',['../class_graphics_square.html',1,'']]],
-  ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'']]],
-  ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]],
-  ['grid',['grid',['../structboost_1_1unit__test_1_1data_1_1monomorphic_1_1result__of_1_1grid.html',1,'boost::unit_test::data::monomorphic::result_of']]],
-  ['grid',['grid',['../classboost_1_1unit__test_1_1data_1_1monomorphic_1_1grid.html',1,'boost::unit_test::data::monomorphic']]],
-  ['gt_5fimpl',['gt_impl',['../structboost_1_1test__tools_1_1tt__detail_1_1gt__impl.html',1,'boost::test_tools::tt_detail']]],
-  ['guard',['guard',['../structguard.html',1,'']]]
+  ['toolswindows',['ToolsWindows',['../class_tools_windows.html',1,'']]]
 ];

@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('class_key_event.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -143,7 +141,7 @@ Types publics</h2></td></tr>
  }</td></tr>
 <tr class="separator:a038e4f651c8a0edf48cef679d2de98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3834189523a28dbfb5f9bf14881d285a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3834189523a28dbfb5f9bf14881d285a"></a>
-typedef <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b></td></tr>
+typedef EZKeySym&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b></td></tr>
 <tr class="separator:a3834189523a28dbfb5f9bf14881d285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_event')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_event.html">Event</a></td></tr>
 <tr class="memitem:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <b>MouseType</b>, 
@@ -154,13 +152,13 @@ typedef <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572dd
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a6a45c0cffa537cf79c41140bb04d5aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a45c0cffa537cf79c41140bb04d5aaf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const Key key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)</td></tr>
 <tr class="separator:a6a45c0cffa537cf79c41140bb04d5aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552061a96df9513298e2016293f6a149"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a552061a96df9513298e2016293f6a149"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const <a class="el" href="class_e_z_event.html">EZEvent</a> &amp;event, const KeyState state)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const EZEvent &amp;event, const KeyState state)</td></tr>
 <tr class="separator:a552061a96df9513298e2016293f6a149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1516b65dbdf9635764288d7f35901eec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1516b65dbdf9635764288d7f35901eec"></a>
-<a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> () const </td></tr>
+Key&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> () const </td></tr>
 <tr class="separator:a1516b65dbdf9635764288d7f35901eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91553e020f3621736e1709d27984fdc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91553e020f3621736e1709d27984fdc0"></a>
 KeyState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const </td></tr>
@@ -193,7 +191,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_key_event.html">KeyEvent</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:48 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

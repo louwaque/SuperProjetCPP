@@ -47,8 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('class_window.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,14 +118,14 @@ Graphe d'héritage de Window:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_window__inherit__graph.png" border="0" usemap="#_window_inherit__map" alt="Inheritance graph"/></div>
 <map name="_window_inherit__map" id="_window_inherit__map">
-<area shape="rect" id="node3" href="class_main_window.html" title="{MainWindow\n||+ MainWindow()\l# drawEvent()\l# mousePressEvent()\l# mouseReleaseEvent()\l# mouseMoveEvent()\l# updateEvent()\l# handleEvent()\l}" alt="" coords="5,784,168,949"/><area shape="rect" id="node2" href="class_e_z_window.html" title="{EZWindow\n||+ EZWindow()\l+ ~EZWindow()\l+ setDoubleBuffer()\l+ setWidth()\l+ setHeight()\l+ setWidthHeight()\l+ getWidth()\l+ getHeight()\l+ isVisible()\l+ setVisible()\let 28 de plus...\l+ getRGB()\l+ getHSV()\l+ getGrey()\l+ HSVtoRGB()\l}" alt="" coords="19,5,153,288"/></map>
+<area shape="rect" id="node3" href="class_main_window.html" title="{MainWindow\n||+ MainWindow()\l# drawEvent()\l# mousePressEvent()\l# mouseReleaseEvent()\l# mouseMoveEvent()\l# updateEvent()\l# handleEvent()\l}" alt="" coords="5,579,168,744"/></map>
 </div>
 <div class="dynheader">
 Graphe de collaboration de Window:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_window__coll__graph.png" border="0" usemap="#_window_coll__map" alt="Collaboration graph"/></div>
 <map name="_window_coll__map" id="_window_coll__map">
-<area shape="rect" id="node2" href="class_e_z_window.html" title="{EZWindow\n||+ EZWindow()\l+ ~EZWindow()\l+ setDoubleBuffer()\l+ setWidth()\l+ setHeight()\l+ setWidthHeight()\l+ getWidth()\l+ getHeight()\l+ isVisible()\l+ setVisible()\let 28 de plus...\l+ getRGB()\l+ getHSV()\l+ getGrey()\l+ HSVtoRGB()\l}" alt="" coords="19,5,153,288"/></map>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -190,10 +188,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseE
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (const <a class="el" href="class_point.html">Point</a> &amp;mousePos, const MouseEvent::MouseButton button)</td></tr>
 <tr class="separator:a6d91ed483458858a51115485de565a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390edcfbf887045000141b352260eb02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a390edcfbf887045000141b352260eb02"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">KeyEvent::Key</a> key)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (const KeyEvent::Key key)</td></tr>
 <tr class="separator:a390edcfbf887045000141b352260eb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23c8f246fbeafd5b60296379203ca58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae23c8f246fbeafd5b60296379203ca58"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEvent</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">KeyEvent::Key</a> key)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEvent</b> (const KeyEvent::Key key)</td></tr>
 <tr class="separator:ae23c8f246fbeafd5b60296379203ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d49ac30ebc4ec74839dedd54a4d1f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d49ac30ebc4ec74839dedd54a4d1f1b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
@@ -212,7 +210,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateEvent</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_window.html">Window</a></li>
-    <li class="footer">Généré le Jeudi 25 Mai 2017 16:27:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi 25 Mai 2017 17:34:48 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
