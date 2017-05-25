@@ -42,7 +42,7 @@ MainWindow::MainWindow()
   rectangle->setThick(5);
   rectangle->setAbsolute({100, 200});
   rectangle->bottomRight()->setAnchor({10,50});
-  
+
 
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
@@ -88,4 +88,9 @@ void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseButton button)
     currentItem->setAbsolute(mousePos);
     drawRequest();
   }
+}
+
+void MainWindow::updateEvent(const unsigned int time)
+{
+  m_scene.update(time);
 }

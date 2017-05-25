@@ -116,10 +116,13 @@ public:
 
   void draw(Canvas *canvas);
 
+  void update(const unsigned int time);
+
   bool isOver(const Point &p);
 
 protected:
   virtual void meDraw(Canvas *canvas) {}
+  virtual void meUpdate(const unsigned int time) {}
   virtual bool meIsOver(const Point &absoluteP) { return absolute() == absoluteP; }
 
 private:

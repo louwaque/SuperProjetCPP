@@ -2,12 +2,15 @@
 #define WINDOW_HPP
 
 #include <string>
+#include <chrono>
 #include "../ez-lib/ez-draw++.hpp"
 #include "Point.hpp"
 #include "Canvas.hpp"
 
 class Window : private EZWindow
 {
+  typedef std::chrono::high_resolution_clock Clock;
+
 public:
   typedef EZKeySym Key;
 
@@ -77,6 +80,7 @@ protected:
   virtual void keyPressEvent(const Key key) {}
   virtual void keyReleaseEvent(const Key key) {}
   //virtual void handleEvent(Event *event);
+  virtual void updateEvent(const unsigned int time) {}
 
 private:
   void expose() { drawEvent(); }
@@ -87,10 +91,14 @@ private:
   void motionNotify(int mouse_x, int mouse_y, int button) { mouseMoveEvent({mouse_x, mouse_y}, MouseButton(button)); }
   void keyPress(EZKeySym keysym) { keyPressEvent(keysym); }
   void keyRelease(EZKeySym keysym) { keyReleaseEvent(keysym); }
+  void timerNotify();
 
 private:
   bool m_doubleBuffer;
   Canvas m_canvas;
+  unsigned int m_updateFrequency;
+  Clock::time_point m_lastUpdate;
+  unsigned int m_elapsedTime;
 };
 
 #endif

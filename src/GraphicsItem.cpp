@@ -75,6 +75,14 @@ void GraphicsItem::draw(Canvas *canvas)
   meDraw(canvas);
 }
 
+void GraphicsItem::update(const unsigned int time)
+{
+  for (auto &ptr : m_children)
+    ptr->update(time);
+
+  meUpdate(time);
+}
+
 bool GraphicsItem::isOver(const Point &p)
 {
   if (!m_isVisible)
