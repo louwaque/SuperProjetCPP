@@ -19,11 +19,9 @@ env:
 addons:
   apt:
     sources:
-      - sourceline: 'ppa:boost-latest/ppa'
       - 'ubuntu-toolchain-r-test'
       - 'george-edison55-precise-backports'
     packages:
-      - boost1.55
       - cmake
       - cmake-data
       - doxygen
@@ -52,5 +50,11 @@ jobs:
       env:
         - CTEST_OUTPUT_ON_FAILURE=1
       script:
-        - cmake -DCMAKE_BUILD_TYPE=Debug .
+        - curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2"
+        - tar xf boost.tar.bz2
+        - cd boost_1_64_0
+        - ./bootstrap.sh
+        - ./b2 --with-test
+        - cd ..
+        - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$TRAVIS_BUILD_DIR/boost_1_64_0 .
         - make check
