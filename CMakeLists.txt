@@ -16,11 +16,13 @@ list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 add_executable(app src/main.cpp ${SRC})
 target_link_libraries(app ez-lib)
 
+set(Boost_DEBUG 1)
 find_package(Boost 1.64.0 COMPONENTS unit_test_framework)
 if(Boost_FOUND)
   include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
-  
+
   enable_testing()
+  add_definitions(-DBOOST_TEST_DYN_LINK)
   add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
   file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp)
   foreach(testSrc ${TEST_SRCS})
