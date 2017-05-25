@@ -69,4 +69,4 @@ jobs:
         - echo -en 'travis_fold:end:cmake\\r'
         - echo -en 'travis_fold:start:test\\r'
         - make check
-        - echo -en 'travis_fold:start:test\\r'
+        - echo -en 'travis_fold:end:test\\r'
