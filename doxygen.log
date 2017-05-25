@@ -420,6 +420,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/Canvas.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/Canvas.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/Color.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/Color.cpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/Event.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/Event.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsAnchor.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsAnchor.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsAnimation.cpp...
@@ -448,10 +450,14 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsText.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsText.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsTriangle.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsTriangle.cpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/KeyEvent.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/KeyEvent.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/main.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/main.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/MainWindow.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/MainWindow.cpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/MouseEvent.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/MouseEvent.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/Point.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/Point.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/Window.cpp...
@@ -467,20 +473,9 @@ Associating documentation with classes...
 Computing nesting relations for classes...
 Building example list...
 Searching for enumerations...
-Searching for documented typedefs...
-Searching for members imported via using declarations...
-Searching for included using directives...
-Searching for documented variables...
-Building member list...
-Searching for friends...
-Searching for documented defines...
-Computing class inheritance relations...
-Computing class usage relations...
-Flushing cached template relations that have become invalid...
-Creating members for template instances...
-Computing /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsSquare.hpp:7: warning: Compound GraphicsSquare is not documented.
+Searchi/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsSquare.hpp:7: warning: Compound GraphicsSquare is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnimation.hpp:7: warning: Compound GraphicsAnimation is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:11: warning: Compound Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:13: warning: Compound Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp:7: warning: Compound GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:8: warning: Compound MainWindow is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:7: warning: Compound Canvas is not documented.
@@ -489,10 +484,9 @@ Computing /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsSquare.hpp:7:
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsBlinkAnimation.hpp:7: warning: Compound GraphicsBlinkAnimation is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsPolygon.hpp:7: warning: Compound GraphicsPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:7: warning: Compound GraphicsLine is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:21: warning: Compound KeyEvent is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsCircle.hpp:7: warning: Compound GraphicsCircle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp:7: warning: Compound GraphicsAnchor is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:11: warning: Compound GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:12: warning: Compound GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:9099: warning: no uniquely matching class member found for 
   Document_C_source Document_C_source Private_implantation EZImage::EZImage(int w, int h)
 
@@ -574,18 +568,18 @@ Computing /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsSquare.hpp:7:
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:9213: warning: no matching class member found for 
   void EZPixmap::tile(EZWindow &win, int x, int y, int w, int h) const
 
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:124: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:124: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:157: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:157: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-class relations...
+ng for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Creating members for template instances...
+Computing class relations...
 Add enum values to enums...
 Searching for member function documentation...
 Building page list...
@@ -644,13 +638,18 @@ Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/Color.
 Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp...
 Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp...
 Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsShape.hpp...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp...
-Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp...
-Generating page documentation...
-G/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member Canvas(EZWindow &window) (function) of class Canvas is not documented.
+Generating docs for file /home/travis/build/L0L022/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:124: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:124: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:146: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:157: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:157: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member Canvas(EZWindow &window) (function) of class Canvas is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:11: warning: Member width() const  (function) of class Canvas is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:15: warning: Member height() const  (function) of class Canvas is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:19: warning: Member clear() const  (function) of class Canvas is not documented.
@@ -680,8 +679,10 @@ G/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member 
 /home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp:182: warning: argument 'saturation' of command @param is not found in the argument list of Color::setValue(const double value)
 /home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp:182: warning: The following parameters of Color::setValue(const double value) are not documented:
   parameter 'value'
-/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:25: warning: Member EventType (enumeration) of class Event is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:31: warning: Member type(Event *Event)=0 (function) of class Event is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:24: warning: Member EventType (enumeration) of class Event is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:32: warning: Member type() const =0 (function) of class Event is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:35: warning: Member write(std::ostream &os) const =0 (function) of class Event is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp:37: warning: Member operator<<(std::ostream &os, const Event &event) (friend) of class Event is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:3609: warning: argument 'width' of command @param is not found in the argument list of EZWindow::EZWindow(int w=320, int h=200, const char *name="")
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:3609: warning: argument 'height' of command @param is not found in the argument list of EZWindow::EZWindow(int w=320, int h=200, const char *name="")
 /home/travis/build/L0L022/SuperProjetCPP/ez-lib/ez-draw++.cpp:3609: warning: argument 'title' of command @param is not found in the argument list of EZWindow::EZWindow(int w=320, int h=200, const char *name="")
@@ -717,37 +718,39 @@ G/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member 
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp:20: warning: Member type() const  (function) of class GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp:25: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp:26: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsEllipse is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:16: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:34: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:13: warning: Member PositionCorrector (typedef) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:14: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:39: warning: Member GraphicsItem(GraphicsItem *parent=nullptr) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:43: warning: Member parent() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:47: warning: Member setParent(GraphicsItem *parent) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:49: warning: Member type() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:53: warning: Member children(const GraphicsTypes filter=UndefinedType, const SearchTypes option=ChildrenRecursively) const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:55: warning: Member anchor() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:59: warning: Member setAnchor(const Point &anchor) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:66: warning: Member absolute() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:68: warning: Member setAbsolute(const Point &pos) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:70: warning: Member color() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:74: warning: Member positionCorrector() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:78: warning: Member setPositionCorrector(const PositionCorrector &fn) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:83: warning: Member z() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:87: warning: Member setZ(const int z) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:91: warning: Member setColor(const Color color) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:95: warning: Member thick() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:99: warning: Member setThick(unsigned int thick=1) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:103: warning: Member isFill() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:107: warning: Member setFill(const bool fill) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:111: warning: Member isVisible() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:115: warning: Member setVisible(const bool isVisible=true) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:119: warning: Member draw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:121: warning: Member update(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:123: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:126: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:127: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:128: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:17: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:35: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:14: warning: Member PositionCorrector (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:15: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:40: warning: Member GraphicsItem(GraphicsItem *parent=nullptr) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:44: warning: Member parent() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:48: warning: Member setParent(GraphicsItem *parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:50: warning: Member type() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:54: warning: Member children(const GraphicsTypes filter=UndefinedType, const SearchTypes option=ChildrenRecursively) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:56: warning: Member anchor() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:60: warning: Member setAnchor(const Point &anchor) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:67: warning: Member absolute() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:69: warning: Member setAbsolute(const Point &pos) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:71: warning: Member color() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:75: warning: Member positionCorrector() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:79: warning: Member setPositionCorrector(const PositionCorrector &fn) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:84: warning: Member z() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:88: warning: Member setZ(const int z) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:92: warning: Member setColor(const Color color) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:96: warning: Member thick() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:100: warning: Member setThick(unsigned int thick=1) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:104: warning: Member isFill() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:108: warning: Member setFill(const bool fill) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:112: warning: Member isVisible() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:116: warning: Member setVisible(const bool isVisible=true) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:120: warning: Member draw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:122: warning: Member update(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:124: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:126: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:129: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:130: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:131: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:132: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:9: warning: Member GraphicsLine(GraphicsItem *parent=nullptr) (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:11: warning: Member first() (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:15: warning: Member second() (function) of class GraphicsLine is not documented.
@@ -787,36 +790,59 @@ G/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:9: warning: Member 
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:62: warning: Member setAlign(const EZAlign align=EZAlign::TL) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:74: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:75: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:23: warning: Member type(Event *Event) (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:26: warning: Member KeyState (enumeration) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:24: warning: Member Key (typedef) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:31: warning: Member KeyEvent(const Key key, const KeyState state, const std::string &keyName, const std::string &keyString) (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:32: warning: Member KeyEvent(const EZEvent &event, const KeyState state) (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:34: warning: Member key() const  (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:35: warning: Member state() const  (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:36: warning: Member keyName() const  (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:37: warning: Member keyString() const  (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:39: warning: Member type() const  (function) of class KeyEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:42: warning: Member write(std::ostream &os) const  (function) of class KeyEvent is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:13: warning: Member drawEvent() (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:14: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:15: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:16: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:14: warning: Member mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:15: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:16: warning: Member mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class MainWindow is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:17: warning: Member updateEvent(const unsigned int time) (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:25: warning: Member type(Event *Event) (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:18: warning: Member handleEvent(const Event &event) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:24: warning: Member MouseButton (enumeration) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:34: warning: Member MouseState (enumeration) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:40: warning: Member MouseEvent(const MouseButton button, const MouseState state, const Point &position) (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:41: warning: Member MouseEvent(const EZEvent &event, const MouseState state) (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:43: warning: Member button() const  (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:44: warning: Member state() const  (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:45: warning: Member position() const  (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:47: warning: Member type() const  (function) of class MouseEvent is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:50: warning: Member write(std::ostream &os) const  (function) of class MouseEvent is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:72: warning: argument 'x' of command @param is not found in the argument list of Point::x()
 /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:80: warning: argument 'y' of command @param is not found in the argument list of Point::y()
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:17: warning: Member MouseButton (enumeration) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:15: warning: Member Key (typedef) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:27: warning: Member Window(const size_t width=400, const size_t height=400, const std::string &title="") (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:30: warning: Member doubleBuffer() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:36: warning: Member width() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:40: warning: Member setWidth(const size_t width) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:44: warning: Member height() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:48: warning: Member setHeight(const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:52: warning: Member resize(const size_t width, const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:64: warning: Member drawRequest() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:68: warning: Member canvas() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:74: warning: Member drawEvent() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:75: warning: Member resizeEvent(const size_t with, const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:76: warning: Member closeEvent() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:77: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:78: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:79: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:80: warning: Member keyPressEvent(const Key key) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:81: warning: Member keyReleaseEvent(const Key key) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:83: warning: Member updateEvent(const unsigned int time) (function) of class Window is not documented.
-enerating group documentation...
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:17: warning: Member Window(const size_t width=400, const size_t height=400, const std::string &title="") (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:20: warning: Member doubleBuffer() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:26: warning: Member width() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:30: warning: Member setWidth(const size_t width) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:34: warning: Member height() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:38: warning: Member setHeight(const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:42: warning: Member resize(const size_t width, const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:54: warning: Member drawRequest() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:58: warning: Member canvas() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:64: warning: Member drawEvent() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:65: warning: Member resizeEvent(const size_t with, const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:66: warning: Member closeEvent() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:67: warning: Member mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:68: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:69: warning: Member mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:70: warning: Member keyPressEvent(const KeyEvent::Key key) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:71: warning: Member keyReleaseEvent(const KeyEvent::Key key) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:72: warning: Member handleEvent(const Event &event) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:73: warning: Member updateEvent(const unsigned int time) (function) of class Window is not documented.
+/SuperProjetCPP/include/GraphicsText.hpp...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsTriangle.hpp...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp...
+Generating docs for file /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp...
+Generating page documentation...
+Generating group documentation...
 Generating class documentation...
 Generating docs for compound Canvas...
 Generating docs for compound Color...
@@ -863,72 +889,74 @@ Generating file member index...
 Generating example index...
 finalizing index lists...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/66
-Running dot for graph 2/66
-Running dot for graph 3/66
-Running dot for graph 4/66
-Running dot for graph 5/66
-Running dot for graph 6/66
-Running dot for graph 7/66
-Running dot for graph 8/66
-Running dot for graph 9/66
-Running dot for graph 10/66
-Running dot for graph 11/66
-Running dot for graph 12/66
-Running dot for graph 13/66
-Running dot for graph 14/66
-Running dot for graph 15/66
-Running dot for graph 16/66
-Running dot for graph 17/66
-Running dot for graph 18/66
-Running dot for graph 19/66
-Running dot for graph 20/66
-Running dot for graph 21/66
-Running dot for graph 22/66
-Running dot for graph 23/66
-Running dot for graph 24/66
-Running dot for graph 25/66
-Running dot for graph 26/66
-Running dot for graph 27/66
-Running dot for graph 28/66
-Running dot for graph 29/66
-Running dot for graph 30/66
-Running dot for graph 31/66
-Running dot for graph 32/66
-Running dot for graph 33/66
-Running dot for graph 34/66
-Running dot for graph 35/66
-Running dot for graph 36/66
-Running dot for graph 37/66
-Running dot for graph 38/66
-Running dot for graph 39/66
-Running dot for graph 40/66
-Running dot for graph 41/66
-Running dot for graph 42/66
-Running dot for graph 43/66
-Running dot for graph 44/66
-Running dot for graph 45/66
-Running dot for graph 46/66
-Running dot for graph 47/66
-Running dot for graph 48/66
-Running dot for graph 49/66
-Running dot for graph 50/66
-Running dot for graph 51/66
-Running dot for graph 52/66
-Running dot for graph 53/66
-Running dot for graph 54/66
-Running dot for graph 55/66
-Running dot for graph 56/66
-Running dot for graph 57/66
-Running dot for graph 58/66
-Running dot for graph 59/66
-Running dot for graph 60/66
-Running dot for graph 61/66
-Running dot for graph 62/66
-Running dot for graph 63/66
-Running dot for graph 64/66
-Running dot for graph 65/66
-Running dot for graph 66/66
+Running dot for graph 1/68
+Running dot for graph 2/68
+Running dot for graph 3/68
+Running dot for graph 4/68
+Running dot for graph 5/68
+Running dot for graph 6/68
+Running dot for graph 7/68
+Running dot for graph 8/68
+Running dot for graph 9/68
+Running dot for graph 10/68
+Running dot for graph 11/68
+Running dot for graph 12/68
+Running dot for graph 13/68
+Running dot for graph 14/68
+Running dot for graph 15/68
+Running dot for graph 16/68
+Running dot for graph 17/68
+Running dot for graph 18/68
+Running dot for graph 19/68
+Running dot for graph 20/68
+Running dot for graph 21/68
+Running dot for graph 22/68
+Running dot for graph 23/68
+Running dot for graph 24/68
+Running dot for graph 25/68
+Running dot for graph 26/68
+Running dot for graph 27/68
+Running dot for graph 28/68
+Running dot for graph 29/68
+Running dot for graph 30/68
+Running dot for graph 31/68
+Running dot for graph 32/68
+Running dot for graph 33/68
+Running dot for graph 34/68
+Running dot for graph 35/68
+Running dot for graph 36/68
+Running dot for graph 37/68
+Running dot for graph 38/68
+Running dot for graph 39/68
+Running dot for graph 40/68
+Running dot for graph 41/68
+Running dot for graph 42/68
+Running dot for graph 43/68
+Running dot for graph 44/68
+Running dot for graph 45/68
+Running dot for graph 46/68
+Running dot for graph 47/68
+Running dot for graph 48/68
+Running dot for graph 49/68
+Running dot for graph 50/68
+Running dot for graph 51/68
+Running dot for graph 52/68
+Running dot for graph 53/68
+Running dot for graph 54/68
+Running dot for graph 55/68
+Running dot for graph 56/68
+Running dot for graph 57/68
+Running dot for graph 58/68
+Running dot for graph 59/68
+Running dot for graph 60/68
+Running dot for graph 61/68
+Running dot for graph 62/68
+Running dot for graph 63/68
+Running dot for graph 64/68
+Running dot for graph 65/68
+Running dot for graph 66/68
+Running dot for graph 67/68
+Running dot for graph 68/68
 Patching output file 1/32
 Patching output file 2/32
 Patching output file 3/32
@@ -961,6 +989,6 @@ Patching output file 29/32
 Patching output file 30/32
 Patching output file 31/32
 Patching output file 32/32
-symbol cache used 914/65536 hits=44629 misses=914
-lookup cache used 904/65536 hits=3861 misses=922
+symbol cache used 949/65536 hits=46019 misses=949
+lookup cache used 957/65536 hits=4161 misses=976
 finished...

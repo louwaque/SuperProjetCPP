@@ -96,43 +96,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Fonctions membres publiques</a>  </div>
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe MouseEvent</div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="MouseEvent" --><!-- doxytag: inherits="Event" -->
-<p>Permet la gestion des evenements au clavier.  
+<p>Permet la gestion des evenements à la souri.  
  <a href="class_mouse_event.html#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_mouse_event_8hpp_source.html">MouseEvent.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de MouseEvent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mouse_event__inherit__graph.png" border="0" usemap="#_mouse_event_inherit__map" alt="Inheritance graph"/></div>
 <map name="_mouse_event_inherit__map" id="_mouse_event_inherit__map">
-<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="19,5,85,91"/></map>
+<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="21,6,104,143"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de MouseEvent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mouse_event__coll__graph.png" border="0" usemap="#_mouse_event_coll__map" alt="Collaboration graph"/></div>
 <map name="_mouse_event_coll__map" id="_mouse_event_coll__map">
-<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="19,5,85,91"/></map>
+<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="21,6,104,143"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="class_mouse_event-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseButton</b> { <br/>
+&#160;&#160;<b>LeftButton</b> =  1, 
+<b>MiddleButton</b> =  2, 
+<b>RightButton</b> =  3, 
+<b>UpWheel</b> =  4, 
+<br/>
+&#160;&#160;<b>DownWheel</b> =  5, 
+<b>LeftWheel</b> =  6, 
+<b>RightWheel</b> =  7
+<br/>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseState</b> { <b>ButtonPressed</b>, 
+<b>ButtonReleased</b>, 
+<b>MouseMoved</b>
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadcd26aff5d75b29e62b8da2330ca432"></a><!-- doxytag: member="MouseEvent::type" ref="aadcd26aff5d75b29e62b8da2330ca432" args="(Event *Event)" -->
-virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> (<a class="el" href="class_event.html">Event</a> *<a class="el" href="class_event.html">Event</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab0057ea7e0a43ab52e155cd8059129a"></a><!-- doxytag: member="MouseEvent::MouseEvent" ref="aab0057ea7e0a43ab52e155cd8059129a" args="(const MouseButton button, const MouseState state, const Point &amp;position)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>MouseEvent</b> (const MouseButton button, const MouseState state, const <a class="el" href="class_point.html">Point</a> &amp;position)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6ecbcf9e517c6e0e3d76c66ff40e74"></a><!-- doxytag: member="MouseEvent::MouseEvent" ref="a4c6ecbcf9e517c6e0e3d76c66ff40e74" args="(const EZEvent &amp;event, const MouseState state)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>MouseEvent</b> (const <a class="el" href="class_e_z_event.html">EZEvent</a> &amp;event, const MouseState state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e718c62022dc4296078294b5c6eb3e2"></a><!-- doxytag: member="MouseEvent::button" ref="a0e718c62022dc4296078294b5c6eb3e2" args="() const " -->
+MouseButton&#160;</td><td class="memItemRight" valign="bottom"><b>button</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0750646f0011ff65b384f108594208a3"></a><!-- doxytag: member="MouseEvent::state" ref="a0750646f0011ff65b384f108594208a3" args="() const " -->
+MouseState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99ec3c735c6e61b96d539c5638b23608"></a><!-- doxytag: member="MouseEvent::position" ref="a99ec3c735c6e61b96d539c5638b23608" args="() const " -->
+<a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafb7f34678f767028a61c45df1d58969"></a><!-- doxytag: member="MouseEvent::type" ref="aafb7f34678f767028a61c45df1d58969" args="() const " -->
+EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2ec9efda28b2bcf2326616c0022b228"></a><!-- doxytag: member="MouseEvent::write" ref="aa2ec9efda28b2bcf2326616c0022b228" args="(std::ostream &amp;os) const " -->
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;os) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
-<div class="textblock"><p>Permet la gestion des evenements au clavier. </p>
-<p>Permet la gestion des evenements à la souri. </p>
-</div><hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<div class="textblock"><p>Permet la gestion des evenements à la souri. </p>
+</div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li>/home/travis/build/L0L022/SuperProjetCPP/include/<a class="el" href="_mouse_event_8hpp_source.html">MouseEvent.hpp</a></li>
+<li>/home/travis/build/L0L022/SuperProjetCPP/src/MouseEvent.cpp</li>
 </ul>
 </div><!-- contents -->
 </div>
@@ -154,7 +187,7 @@ virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b>
     <ul>
       <li class="navelem"><a class="el" href="class_mouse_event.html">MouseEvent</a>      </li>
 
-    <li class="footer">Généré le Jeudi Mai 25 2017 10:45:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi Mai 25 2017 12:14:21 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -118,6 +118,7 @@ Liste complète des membres de <a class="el" href="class_graphics_triangle.html"
   <tr bgcolor="#f0f0f0"><td><b>GraphicsShape</b>(GraphicsItem *parent=nullptr) (défini dans <a class="el" href="class_graphics_shape.html">GraphicsShape</a>)</td><td><a class="el" href="class_graphics_shape.html">GraphicsShape</a></td><td><code> [explicit]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01">GraphicsTriangle</a>(GraphicsItem *parent=nullptr)</td><td><a class="el" href="class_graphics_triangle.html">GraphicsTriangle</a></td><td><code> [explicit]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>GraphicsTypes</b> énumération (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>handleEvent</b>(const Event &amp;event) (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>isFill</b>() const  (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>isOver</b>(const Point &amp;p) (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>isVisible</b>() const  (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline]</code></td></tr>
@@ -125,6 +126,7 @@ Liste complète des membres de <a class="el" href="class_graphics_triangle.html"
   <tr bgcolor="#f0f0f0"><td><b>LineType</b> valeur énumérée (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>m_points</b> (défini dans <a class="el" href="class_graphics_shape.html">GraphicsShape</a>)</td><td><a class="el" href="class_graphics_shape.html">GraphicsShape</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>meDraw</b>(Canvas *canvas) (défini dans <a class="el" href="class_graphics_shape.html">GraphicsShape</a>)</td><td><a class="el" href="class_graphics_shape.html">GraphicsShape</a></td><td><code> [protected, virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>meHandleEvent</b>(const Event &amp;event) (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline, protected, virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>meIsOver</b>(const Point &amp;absoluteP) (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline, protected, virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>meUpdate</b>(const unsigned int time) (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline, protected, virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>parent</b>() const  (défini dans <a class="el" href="class_graphics_item.html">GraphicsItem</a>)</td><td><a class="el" href="class_graphics_item.html">GraphicsItem</a></td><td><code> [inline]</code></td></tr>
@@ -174,7 +176,7 @@ Liste complète des membres de <a class="el" href="class_graphics_triangle.html"
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Généré le Jeudi Mai 25 2017 10:45:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi Mai 25 2017 12:14:21 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

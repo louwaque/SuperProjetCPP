@@ -100,28 +100,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a href="_event_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef EVENT_HPP</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define EVENT_HPP</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
-<a name="l00005"></a>00005 
-<a name="l00020"></a><a class="code" href="class_event.html">00020</a> <span class="keyword">class </span><a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a>
-<a name="l00021"></a>00021 {
-<a name="l00022"></a>00022 <span class="keyword">public</span>:
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <span class="keyword">enum</span> EventType : uint32_t {
-<a name="l00026"></a>00026     UndefinedType = 0x00,
-<a name="l00027"></a>00027     MouseType = 0x01,
-<a name="l00028"></a>00028     KeyType = 0x02,
-<a name="l00029"></a>00029   };
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031   <span class="keyword">virtual</span> EventType type(<a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a> *<a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a>) = 0;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033 <span class="keyword">private</span>:
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035 
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00021"></a><a class="code" href="class_event.html">00021</a> <span class="keyword">class </span><a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a>
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023 <span class="keyword">public</span>:
+<a name="l00024"></a>00024   <span class="keyword">enum</span> EventType {
+<a name="l00025"></a>00025     MouseType,
+<a name="l00026"></a>00026     KeyType
+<a name="l00027"></a>00027   };
+<a name="l00028"></a>00028   
+<a name="l00029"></a>00029   <a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a>() {};
+<a name="l00030"></a>00030   <span class="keyword">virtual</span> ~<a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a>() {};
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032   <span class="keyword">virtual</span> EventType type() <span class="keyword">const</span> = 0;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keyword">protected</span>:
+<a name="l00035"></a>00035   <span class="keyword">virtual</span> std::ostream &amp;write(std::ostream &amp;os) <span class="keyword">const</span> = 0;
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037 };
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
+<a name="l00037"></a>00037   <span class="keyword">friend</span> std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a> &amp;event);
+<a name="l00038"></a>00038 };
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -142,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul>
       <li class="navelem"><a class="el" href="_event_8hpp.html">Event.hpp</a>      </li>
 
-    <li class="footer">Généré le Jeudi Mai 25 2017 10:45:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi Mai 25 2017 12:14:21 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

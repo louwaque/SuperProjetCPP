@@ -96,35 +96,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Fonctions membres publiques</a>  </div>
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe KeyEvent</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="KeyEvent" --><!-- doxytag: inherits="Event" --><div class="dynheader">
+<!-- doxytag: class="KeyEvent" --><!-- doxytag: inherits="Event" -->
+<p>Permet la gestion des evenements au clavier.  
+ <a href="class_key_event.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de KeyEvent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_key_event__inherit__graph.png" border="0" usemap="#_key_event_inherit__map" alt="Inheritance graph"/></div>
 <map name="_key_event_inherit__map" id="_key_event_inherit__map">
-<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="11,5,77,91"/></map>
+<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="13,6,96,143"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de KeyEvent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_key_event__coll__graph.png" border="0" usemap="#_key_event_coll__map" alt="Collaboration graph"/></div>
 <map name="_key_event_coll__map" id="_key_event_coll__map">
-<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="11,5,77,91"/></map>
+<area shape="rect" id="node2" href="class_event.html" title="Permet la gestion des evenements." alt="" coords="13,6,96,143"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="class_key_event-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>KeyState</b> { <b>KeyPressed</b>, 
+<b>KeyReleased</b>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3834189523a28dbfb5f9bf14881d285a"></a><!-- doxytag: member="KeyEvent::Key" ref="a3834189523a28dbfb5f9bf14881d285a" args="" -->
+typedef <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">EZKeySym</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0de0e96f43cfc18e7522717042b1f516"></a><!-- doxytag: member="KeyEvent::type" ref="a0de0e96f43cfc18e7522717042b1f516" args="(Event *Event)" -->
-virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> (<a class="el" href="class_event.html">Event</a> *<a class="el" href="class_event.html">Event</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a45c0cffa537cf79c41140bb04d5aaf"></a><!-- doxytag: member="KeyEvent::KeyEvent" ref="a6a45c0cffa537cf79c41140bb04d5aaf" args="(const Key key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const <a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a> key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a552061a96df9513298e2016293f6a149"></a><!-- doxytag: member="KeyEvent::KeyEvent" ref="a552061a96df9513298e2016293f6a149" args="(const EZEvent &amp;event, const KeyState state)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const <a class="el" href="class_e_z_event.html">EZEvent</a> &amp;event, const KeyState state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1516b65dbdf9635764288d7f35901eec"></a><!-- doxytag: member="KeyEvent::key" ref="a1516b65dbdf9635764288d7f35901eec" args="() const " -->
+<a class="el" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1a">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91553e020f3621736e1709d27984fdc0"></a><!-- doxytag: member="KeyEvent::state" ref="a91553e020f3621736e1709d27984fdc0" args="() const " -->
+KeyState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a112ce1142e9fea04309f38817818614f"></a><!-- doxytag: member="KeyEvent::keyName" ref="a112ce1142e9fea04309f38817818614f" args="() const " -->
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>keyName</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79345d47767acbcafc7d8435b70f048a"></a><!-- doxytag: member="KeyEvent::keyString" ref="a79345d47767acbcafc7d8435b70f048a" args="() const " -->
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>keyString</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4335d1c13b1e6523ee8e3795a36218fd"></a><!-- doxytag: member="KeyEvent::type" ref="a4335d1c13b1e6523ee8e3795a36218fd" args="() const " -->
+EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e9320be7f46e57ddbefebe404a067fa"></a><!-- doxytag: member="KeyEvent::write" ref="a4e9320be7f46e57ddbefebe404a067fa" args="(std::ostream &amp;os) const " -->
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;os) const </td></tr>
 </table>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Permet la gestion des evenements au clavier. </p>
+</div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li>/home/travis/build/L0L022/SuperProjetCPP/include/<a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a></li>
+<li>/home/travis/build/L0L022/SuperProjetCPP/src/KeyEvent.cpp</li>
 </ul>
 </div><!-- contents -->
 </div>
@@ -146,7 +179,7 @@ virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b>
     <ul>
       <li class="navelem"><a class="el" href="class_key_event.html">KeyEvent</a>      </li>
 
-    <li class="footer">Généré le Jeudi Mai 25 2017 10:45:26 pour Project c++ par
+    <li class="footer">Généré le Jeudi Mai 25 2017 12:14:21 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
