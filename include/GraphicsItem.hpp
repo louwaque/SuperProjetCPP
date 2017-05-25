@@ -26,7 +26,9 @@ public:
     AnchorType = 0x16,
     CircleType = 0x18,
     EllipseType = 0x20,
-    SquareType = 0x22
+    SquareType = 0x22,
+    AnimationType = 0x24,
+    BlinkAnimationType = 0x26
   };
 
   enum SearchTypes {

@@ -8,6 +8,7 @@
 #include "../include/GraphicsCircle.hpp"
 #include "../include/GraphicsEllipse.hpp"
 #include "../include/GraphicsSquare.hpp"
+#include "../include/GraphicsBlinkAnimation.hpp"
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
@@ -54,6 +55,8 @@ MainWindow::MainWindow()
   circle->setAbsolute({100, 300});
   circle->radius()->setAnchor({50, 50});
 
+  new GraphicsBlinkAnimation(Color(Color::Blue), circle);
+
   GraphicsEllipse *ellipse = new GraphicsEllipse(&m_scene);
   ellipse->setAbsolute({200, 300});
   ellipse->radius()->setAnchor({100, 50});
@@ -62,6 +65,9 @@ MainWindow::MainWindow()
   square->setThick(5);
   square->setAbsolute({500, 100});
   square->bottomRight()->setAnchor({80, 50});
+
+  GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(square);
+  blink->setBlinkFrequency(500);
 }
 
 void MainWindow::drawEvent()
@@ -93,4 +99,5 @@ void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseButton button)
 void MainWindow::updateEvent(const unsigned int time)
 {
   m_scene.update(time);
+  drawRequest();
 }
