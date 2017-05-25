@@ -2,7 +2,7 @@
 #define MOUSEEVENT_HPP
 
 #include "Event.hpp"
-#include "../ez-lib/ez-draw++.hpp"
+#include "Point.hpp"
 
 /*!
  * \file MouseEvent.hpp
@@ -18,14 +18,41 @@
   *
   */
 
-class MouseEvent : public Event {
+class MouseEvent : public Event
+{
+public:
+  enum MouseButton : uint {
+    LeftButton = 1,
+    MiddleButton = 2,
+    RightButton = 3,
+    UpWheel = 4,
+    DownWheel = 5,
+    LeftWheel = 6,
+    RightWheel = 7
+  };
 
-  public:
+  enum MouseState {
+    ButtonPressed,
+    ButtonReleased,
+    MouseMoved
+  };
 
-    virtual EventType type(Event *Event);
+  MouseEvent(const MouseButton button, const MouseState state, const Point &position);
+  explicit MouseEvent(const EZEvent &event, const MouseState state);
 
-  private:
+  inline MouseButton button() const { return m_button; }
+  inline MouseState state() const { return m_state; }
+  inline Point position() const { return m_position; }
 
+  inline EventType type() const { return MouseType; };
+
+protected:
+  std::ostream &write(std::ostream &os) const;
+
+private:
+  MouseButton m_button;
+  MouseState m_state;
+  Point m_position;
 };
 
 #endif

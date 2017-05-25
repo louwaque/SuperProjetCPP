@@ -7,6 +7,7 @@
 #include <functional>
 #include "Color.hpp"
 #include "Canvas.hpp"
+#include "Event.hpp"
 
 class GraphicsItem {
 public:
@@ -120,11 +121,14 @@ public:
 
   void update(const unsigned int time);
 
+  void handleEvent(const Event &event);
+
   bool isOver(const Point &p);
 
 protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
+  virtual void meHandleEvent(const Event &event) {}
   virtual bool meIsOver(const Point &absoluteP) { return absolute() == absoluteP; }
 
 private:

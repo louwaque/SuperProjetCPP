@@ -75,7 +75,7 @@ void MainWindow::drawEvent()
   m_scene.draw(&canvas());
 }
 
-void MainWindow::mousePressEvent(const Point &mousePos, const MouseButton button)
+void MainWindow::mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
   for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
     if (item->isOver(mousePos))
@@ -83,12 +83,12 @@ void MainWindow::mousePressEvent(const Point &mousePos, const MouseButton button
   }
 }
 
-void MainWindow::mouseReleaseEvent(const Point &mousePos, const MouseButton button)
+void MainWindow::mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
   currentItem = nullptr;
 }
 
-void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseButton button)
+void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
   if (currentItem) {
     currentItem->setAbsolute(mousePos);
@@ -99,5 +99,11 @@ void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseButton button)
 void MainWindow::updateEvent(const unsigned int time)
 {
   m_scene.update(time);
+  drawRequest();
+}
+
+void MainWindow::handleEvent(const Event &event)
+{
+  m_scene.handleEvent(event);
   drawRequest();
 }

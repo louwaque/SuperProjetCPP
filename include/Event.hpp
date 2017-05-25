@@ -1,6 +1,7 @@
 #ifndef EVENT_HPP
 #define EVENT_HPP
 
+#include <iostream>
 #include "../ez-lib/ez-draw++.hpp"
 
 /*!
@@ -20,20 +21,20 @@
 class Event
 {
 public:
-
-
-  enum EventType : uint32_t {
-    UndefinedType = 0x00,
-    MouseType = 0x01,
-    KeyType = 0x02,
+  enum EventType {
+    MouseType,
+    KeyType
   };
+  
+  Event() {};
+  virtual ~Event() {};
 
-  virtual EventType type(Event *Event) = 0;
+  virtual EventType type() const = 0;
 
-private:
+protected:
+  virtual std::ostream &write(std::ostream &os) const = 0;
 
-
-
+  friend std::ostream &operator<<(std::ostream &os, const Event &event);
 };
 
 #endif

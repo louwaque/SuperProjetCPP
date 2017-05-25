@@ -16,6 +16,36 @@ void Window::setDoubleBuffer(const bool active) {
   EZWindow::setDoubleBuffer(m_doubleBuffer);
 }
 
+void Window::buttonPress(int mouse_x, int mouse_y, int button)
+{
+  mousePressEvent({mouse_x, mouse_y}, MouseEvent::MouseButton(button));
+  handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::ButtonPressed));
+}
+
+void Window::buttonRelease(int mouse_x, int mouse_y, int button)
+{
+  mouseReleaseEvent({mouse_x, mouse_y}, MouseEvent::MouseButton(button));
+  handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::ButtonReleased));
+}
+
+void Window::motionNotify(int mouse_x, int mouse_y, int button)
+{
+  mouseMoveEvent({mouse_x, mouse_y}, MouseEvent::MouseButton(button));
+  handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::MouseMoved));
+}
+
+void Window::keyPress(EZKeySym keysym)
+{
+  keyPressEvent(keysym);
+  handleEvent(KeyEvent(EZWindow::currentEvent(), KeyEvent::KeyPressed));
+}
+
+void Window::keyRelease(EZKeySym keysym)
+{
+  keyReleaseEvent(keysym);
+  handleEvent(KeyEvent(EZWindow::currentEvent(), KeyEvent::KeyReleased));
+}
+
 void Window::timerNotify()
 {
   auto currentTime = Clock::now();

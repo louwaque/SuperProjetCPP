@@ -11,10 +11,11 @@ public:
 
 protected:
   void drawEvent();
-  void mousePressEvent(const Point &mousePos, const MouseButton button);
-  void mouseReleaseEvent(const Point &mousePos, const MouseButton button);
-  void mouseMoveEvent(const Point &mousePos, const MouseButton button);
+  void mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button);
+  void mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button);
+  void mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button);
   void updateEvent(const unsigned int time);
+  void handleEvent(const Event &event);
 
 private:
   GraphicsItem m_scene;

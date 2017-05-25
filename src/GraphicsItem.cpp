@@ -83,6 +83,15 @@ void GraphicsItem::update(const unsigned int time)
   meUpdate(time);
 }
 
+void GraphicsItem::handleEvent(const Event &event)
+{
+  for (auto &ptr : m_children)
+    ptr->handleEvent(event);
+
+  meHandleEvent(event);
+}
+
+
 bool GraphicsItem::isOver(const Point &p)
 {
   if (!m_isVisible)
