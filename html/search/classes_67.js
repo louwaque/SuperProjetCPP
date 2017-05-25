@@ -1,6 +1,8 @@
 var searchData=
 [
   ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html',1,'']]],
+  ['graphicsanimation',['GraphicsAnimation',['../class_graphics_animation.html',1,'']]],
+  ['graphicsblinkanimation',['GraphicsBlinkAnimation',['../class_graphics_blink_animation.html',1,'']]],
   ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html',1,'']]],
   ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html',1,'']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],

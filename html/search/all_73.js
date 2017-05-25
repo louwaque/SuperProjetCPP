@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s',['s',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa8e9307350b1e20521f37dfe5268df55',1,'s():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf1ce01387d2348f8b858721a7db81670',1,'S():&#160;ez-draw++.hpp']]],
+  ['s',['S',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaf1ce01387d2348f8b858721a7db81670',1,'S():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaa8e9307350b1e20521f37dfe5268df55',1,'s():&#160;ez-draw++.hpp']]],
   ['saturation',['saturation',['../class_color.html#a9e232063ef1dfe5e98970700db822561',1,'Color']]],
   ['scale',['scale',['../classfinal.html#a2f4fe23e6f1a1283c38b8b5e7a93dbc6',1,'final']]],
   ['scroll_5flock',['Scroll_Lock',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa4dc97a83a71a09d9d425da6ac6aeb8ba',1,'ez-draw++.hpp']]],

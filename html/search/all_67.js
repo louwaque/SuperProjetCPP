@@ -14,6 +14,8 @@ var searchData=
   ['gettime',['getTime',['../class_e_z_draw.html#a15208780a6feb8d6e55c752e629b0f8c',1,'EZDraw']]],
   ['getwidth',['getWidth',['../class_e_z_window.html#a525810a4513f492839dd52137e798ed6',1,'EZWindow::getWidth()'],['../classfinal.html#acdfbd3621e46c42155117eaaf2ffee32',1,'final::getWidth()']]],
   ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html',1,'']]],
+  ['graphicsanimation',['GraphicsAnimation',['../class_graphics_animation.html',1,'']]],
+  ['graphicsblinkanimation',['GraphicsBlinkAnimation',['../class_graphics_blink_animation.html',1,'']]],
   ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html',1,'']]],
   ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html',1,'']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],

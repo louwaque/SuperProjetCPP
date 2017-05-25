@@ -5,6 +5,8 @@ var files =
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp", "_color_8hpp.html", null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp", "_event_8hpp.html", null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnimation.hpp", null, null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsBlinkAnimation.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsCircle.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp", "_graphics_item_8hpp.html", null ],

@@ -9,6 +9,8 @@ var annotated =
     [ "EZWindow", "class_e_z_window.html", "class_e_z_window" ],
     [ "final", "classfinal.html", "classfinal" ],
     [ "GraphicsAnchor", "class_graphics_anchor.html", "class_graphics_anchor" ],
+    [ "GraphicsAnimation", "class_graphics_animation.html", "class_graphics_animation" ],
+    [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", "class_graphics_blink_animation" ],
     [ "GraphicsCircle", "class_graphics_circle.html", "class_graphics_circle" ],
     [ "GraphicsEllipse", "class_graphics_ellipse.html", "class_graphics_ellipse" ],
     [ "GraphicsItem", "class_graphics_item.html", "class_graphics_item" ],
