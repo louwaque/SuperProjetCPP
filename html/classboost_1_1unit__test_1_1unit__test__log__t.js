@@ -1,0 +1,28 @@
+var classboost_1_1unit__test_1_1unit__test__log__t =
+[
+    [ "add_format", "classboost_1_1unit__test_1_1unit__test__log__t.html#a00ece0931de6b09ed89718ce2dce31d3", null ],
+    [ "add_formatter", "classboost_1_1unit__test_1_1unit__test__log__t.html#a06bfc5e5b9dde6d68d27993f260808ee", null ],
+    [ "exception_caught", "classboost_1_1unit__test_1_1unit__test__log__t.html#a84af16248250833c2b1729b20219d333", null ],
+    [ "get_formatter", "classboost_1_1unit__test_1_1unit__test__log__t.html#aa796f5ec18b502a517a0b1730397f814", null ],
+    [ "operator()", "classboost_1_1unit__test_1_1unit__test__log__t.html#a4440883e0015a9a2d516b599720eec89", null ],
+    [ "operator<<", "classboost_1_1unit__test_1_1unit__test__log__t.html#a6c368c215ae1013cadc8bd12f0f91e86", null ],
+    [ "operator<<", "classboost_1_1unit__test_1_1unit__test__log__t.html#a17bdcc551903c5bc93869b1a200f2684", null ],
+    [ "operator<<", "classboost_1_1unit__test_1_1unit__test__log__t.html#aab2236744379a2f8c4f550032aa8d855", null ],
+    [ "operator<<", "classboost_1_1unit__test_1_1unit__test__log__t.html#a588bb9620f83eec3a911b4dc5db28d93", null ],
+    [ "operator<<", "classboost_1_1unit__test_1_1unit__test__log__t.html#ae400845852b049672358fbe542f42f29", null ],
+    [ "priority", "classboost_1_1unit__test_1_1unit__test__log__t.html#a91000b3702257e1707bcc3394a65b5c7", null ],
+    [ "set_checkpoint", "classboost_1_1unit__test_1_1unit__test__log__t.html#a72336a9d5e819cfc26bd59736d43df25", null ],
+    [ "set_format", "classboost_1_1unit__test_1_1unit__test__log__t.html#a903b66706168293937d1a879cf168e43", null ],
+    [ "set_formatter", "classboost_1_1unit__test_1_1unit__test__log__t.html#a68d0b7a27ebd236c01ec31ab2ef7c77f", null ],
+    [ "set_stream", "classboost_1_1unit__test_1_1unit__test__log__t.html#ad625206a5570d2f583e6e229ff20ce30", null ],
+    [ "set_stream", "classboost_1_1unit__test_1_1unit__test__log__t.html#a5c8a5bbbaee29cd3ef3de3336aac2447", null ],
+    [ "set_threshold_level", "classboost_1_1unit__test_1_1unit__test__log__t.html#ac7da64aa9f768e0e11b2ee9d9385f2ee", null ],
+    [ "set_threshold_level", "classboost_1_1unit__test_1_1unit__test__log__t.html#a8b3c4876148d24c08298f40a170c8d07", null ],
+    [ "test_aborted", "classboost_1_1unit__test_1_1unit__test__log__t.html#ae238c338cc62299f2ef206120cfc063f", null ],
+    [ "test_finish", "classboost_1_1unit__test_1_1unit__test__log__t.html#a66723c8c999625f823c50858434c7c54", null ],
+    [ "test_start", "classboost_1_1unit__test_1_1unit__test__log__t.html#acbbf8e39d9e809a6e102986e0f5da87d", null ],
+    [ "test_unit_aborted", "classboost_1_1unit__test_1_1unit__test__log__t.html#aa19f5de867e079240a14dd69fc9f58b6", null ],
+    [ "test_unit_finish", "classboost_1_1unit__test_1_1unit__test__log__t.html#ab1e1f983dd24182a7498c0c4b8157067", null ],
+    [ "test_unit_skipped", "classboost_1_1unit__test_1_1unit__test__log__t.html#ac57bffd77012ada538d6cab04d5e2b42", null ],
+    [ "test_unit_start", "classboost_1_1unit__test_1_1unit__test__log__t.html#a46182d0a670b2eda0769283d88363fc6", null ]
+];

@@ -1,6 +1,16 @@
 var class_color =
 [
-    [ "Colors", "class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1", null ],
+    [ "Colors", "class_color.html#af1edae0ae19f7a958e091dbb85e7102f", [
+      [ "Black", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa43ff45db5a75e8116cf9f684670e73a8", null ],
+      [ "White", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa487ea6591400ccf76fcd865179d19835", null ],
+      [ "Grey", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47", null ],
+      [ "Red", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547", null ],
+      [ "Green", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea", null ],
+      [ "Blue", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb", null ],
+      [ "Yellow", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972", null ],
+      [ "Cyan", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa067f182f046f8d4b99de3ae7643fb2e3", null ],
+      [ "Mangenta", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa8efd0a78290fe9f5b119c0da933fb29f", null ]
+    ] ],
     [ "Color", "class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2", null ],
     [ "Color", "class_color.html#aa71f228de4c860d6186c1c6341ccaf3b", null ],
     [ "Color", "class_color.html#adc2dc1409a554d34d7d4d389f726ee77", null ],

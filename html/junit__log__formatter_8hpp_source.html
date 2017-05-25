@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/boost/test/include/boost/test/output/junit_log_formatter.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Project c++
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('junit__log__formatter_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">junit_log_formatter.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="junit__log__formatter_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//  (C) Copyright 2016 Raffi Enficiaud.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  Distributed under the Boost Software License, Version 1.0.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  (See accompanying file LICENSE_1_0.txt or copy at</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//  http://www.boost.org/LICENSE_1_0.txt)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  See http://www.boost.org/libs/test for the library home page.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span><span class="comment">// ***************************************************************************</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef BOOST_TEST_JUNIT_LOG_FORMATTER__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BOOST_TEST_JUNIT_LOG_FORMATTER__</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Boost.Test</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="global__typedef_8hpp.html">boost/test/detail/global_typedef.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="unit__test__log__formatter_8hpp.html">boost/test/unit_test_log_formatter.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="test__unit_8hpp.html">boost/test/tree/test_unit.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//#include &lt;boost/test/results_collector.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// STL</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span> <span class="comment">// std::size_t</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="suppress__warnings_8hpp.html">boost/test/detail/suppress_warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//____________________________________________________________________________//</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>boost {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>unit_test {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>output {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">namespace </span>junit_impl {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// helper for the JUnit logger</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">   39</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">junit_log_helper</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_1_1assertion__entry.html">   41</a></span>&#160;      <span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_1_1assertion__entry.html">assertion_entry</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">enum</span> log_entry_t {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          log_entry_info,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          log_entry_error,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          log_entry_failure</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_1_1assertion__entry.html">assertion_entry</a>() : sealed(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::string logentry_message; <span class="comment">// the message associated to the JUnit error/entry</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::string logentry_type; <span class="comment">// the one that will get expanded in the final junit (failure, error)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::string output;        <span class="comment">// additional information/message generated by the assertion</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        log_entry_t log_entry;     <span class="comment">// the type associated to the assertion (or error)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> sealed;               <span class="comment">// indicates if the entry can accept additional information</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::list&lt;std::string&gt; system_out;      <span class="comment">// sysout: additional information</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      std::list&lt;std::string&gt; system_err;      <span class="comment">// syserr: additional information</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      std::string skipping_reason;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="comment">// list of failure, errors and messages (assertions message and the full log)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      std::vector&lt; assertion_entry &gt; assertion_entries;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordtype">bool</span> skipping;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">junit_log_helper</a>(): skipping(false)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordtype">void</span> clear() {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          assertion_entries.clear();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          system_out.clear();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          system_err.clear();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          skipping_reason.clear();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          skipping = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// **************               junit_log_formatter              ************** //</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html">junit_log_formatter</a> : <span class="keyword">public</span> <a class="code" href="classboost_1_1unit__test_1_1unit__test__log__formatter.html">unit_test_log_formatter</a> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html">junit_log_formatter</a>() : m_display_build_info(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// we log everything from the logger singleton point of view</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// because we need to know about all the messages/commands going to the logger</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// we decide what we put inside the logs internally</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        this-&gt;m_log_level = log_successful_tests;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        m_log_level_internal = log_messages;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Formatter interface</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a2e21cda4c977429bb99e236cb8d70c48">log_start</a>( std::ostream&amp;, counter_t test_cases_amount );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#adb436e321a242cc655d8a8bd70486448">log_finish</a>( std::ostream&amp; );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a9f86a4cf47fe2128917bfc4e0ee741de">log_build_info</a>( std::ostream&amp; );</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ad4aa7bccf5c681c7cb5946bc8810dca7">test_unit_start</a>( std::ostream&amp;, <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; tu );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a87c8c6c91c018307f0861bd63abc12d6">test_unit_finish</a>( std::ostream&amp;, <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; tu, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> elapsed );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a58826b9d9cfb3e8668cb6636b73829e7">test_unit_skipped</a>( std::ostream&amp;, <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; tu, <a class="code" href="classboost_1_1unit__test_1_1basic__cstring.html">const_string</a> reason );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#afb99fefffba1c5dec889345898bf3ea7">test_unit_aborted</a>( std::ostream&amp; os, <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; tu );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a2b31d8a57474b5b0b7711445c801cfda">log_exception_start</a>( std::ostream&amp;, <a class="code" href="structboost_1_1unit__test_1_1log__checkpoint__data.html">log_checkpoint_data</a> <span class="keyword">const</span>&amp;, <a class="code" href="classboost_1_1execution__exception.html">execution_exception</a> <span class="keyword">const</span>&amp; ex );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#acac7b4d188957ebfc17f21e9595e24f1">log_exception_finish</a>( std::ostream&amp; );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#adac71ff6b891fb7e7709c91e03334ff5">log_entry_start</a>( std::ostream&amp;, <a class="code" href="structboost_1_1unit__test_1_1log__entry__data.html">log_entry_data</a> <span class="keyword">const</span>&amp;, <a class="code" href="classboost_1_1unit__test_1_1unit__test__log__formatter.html#ade138110acf915c5c5c7649d68c4dc85">log_entry_types</a> let );</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">using</span>   <a class="code" href="classboost_1_1unit__test_1_1unit__test__log__formatter.html#ad85bd307b329f3558f47ed7cac6e0f7f">unit_test_log_formatter::log_entry_value</a>; <span class="comment">// bring base class functions into overload set</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ad93d01eef611b73951e6b90de14cbca8">log_entry_value</a>( std::ostream&amp;, <a class="code" href="classboost_1_1unit__test_1_1basic__cstring.html">const_string</a> value );</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a42851ab0c0452c6e3135778de7080d59">log_entry_finish</a>( std::ostream&amp; );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a7983583896693fd2cb22fdf56ef54a08">entry_context_start</a>( std::ostream&amp;, log_level );</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#af18987f2103e7276c1139fcfd867c2ed">log_entry_context</a>( std::ostream&amp;, <a class="code" href="classboost_1_1unit__test_1_1basic__cstring.html">const_string</a> );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a6416284bbcdb4a3c3ee1c94d4c6d6e98">entry_context_finish</a>( std::ostream&amp; );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ab9b7df87199b265637bdebf2a714d8f2">  125</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ab9b7df87199b265637bdebf2a714d8f2">set_log_level</a>(log_level ll)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span>(ll &gt; log_successful_tests &amp;&amp; ll &lt; log_messages)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            ll = log_successful_tests;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ll &gt; log_all_errors)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            ll = log_all_errors;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        this-&gt;m_log_level_internal = ll;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">virtual</span> std::string  <a class="code" href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a4f279eb8f01967351a53c04103c0867b">get_default_stream_description</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">typedef</span> std::map&lt;test_unit_id, junit_impl::junit_log_helper&gt; map_trace_t;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    map_trace_t map_tests;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">junit_impl::junit_log_helper</a> runner_log_entry;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">junit_impl::junit_log_helper</a>&amp; get_current_log_entry() {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span>(list_path_to_root.empty())</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">return</span> runner_log_entry;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        map_trace_t::iterator it = map_tests.find(list_path_to_root.back());</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> (it == map_tests.end() ? runner_log_entry : it-&gt;second);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::list&lt;test_unit_id&gt; list_path_to_root;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">bool</span> m_display_build_info;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">bool</span> m_is_last_assertion_or_error; <span class="comment">// true if failure, false if error</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    log_level m_log_level_internal;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>junit_result_helper;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;} <span class="comment">// namespace output</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;} <span class="comment">// namespace unit_test</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;} <span class="comment">// namespace boost</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="enable__warnings_8hpp.html">boost/test/detail/enable_warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif // BOOST_TEST_JUNIT_LOG_FORMATTER__</span></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1unit__test__log__formatter_html_ade138110acf915c5c5c7649d68c4dc85"><div class="ttname"><a href="classboost_1_1unit__test_1_1unit__test__log__formatter.html#ade138110acf915c5c5c7649d68c4dc85">boost::unit_test::unit_test_log_formatter::log_entry_types</a></div><div class="ttdeci">log_entry_types</div><div class="ttdoc">Types of log entries (messages written into a log) </div><div class="ttdef"><b>Definition:</b> unit_test_log_formatter.hpp:110</div></div>
+<div class="ttc" id="global__typedef_8hpp_html"><div class="ttname"><a href="global__typedef_8hpp.html">global_typedef.hpp</a></div><div class="ttdoc">some trivial global typedefs </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_adb436e321a242cc655d8a8bd70486448"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#adb436e321a242cc655d8a8bd70486448">boost::unit_test::output::junit_log_formatter::log_finish</a></div><div class="ttdeci">void log_finish(std::ostream &amp;)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:414</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_ad93d01eef611b73951e6b90de14cbca8"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ad93d01eef611b73951e6b90de14cbca8">boost::unit_test::output::junit_log_formatter::log_entry_value</a></div><div class="ttdeci">void log_entry_value(std::ostream &amp;, const_string value)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:641</div></div>
+<div class="ttc" id="classboost_1_1execution__exception_html"><div class="ttname"><a href="classboost_1_1execution__exception.html">boost::execution_exception</a></div><div class="ttdoc">This class is used to report any kind of an failure during execution of a monitored function inside o...</div><div class="ttdef"><b>Definition:</b> execution_monitor.hpp:240</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_acac7b4d188957ebfc17f21e9595e24f1"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#acac7b4d188957ebfc17f21e9595e24f1">boost::unit_test::output::junit_log_formatter::log_exception_finish</a></div><div class="ttdeci">void log_exception_finish(std::ostream &amp;)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:558</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1unit__test__log__formatter_html_ad85bd307b329f3558f47ed7cac6e0f7f"><div class="ttname"><a href="classboost_1_1unit__test_1_1unit__test__log__formatter.html#ad85bd307b329f3558f47ed7cac6e0f7f">boost::unit_test::unit_test_log_formatter::log_entry_value</a></div><div class="ttdeci">virtual void log_entry_value(std::ostream &amp;os, const_string value)=0</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html">boost::unit_test::output::junit_log_formatter</a></div><div class="ttdoc">JUnit logger class. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.hpp:89</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a42851ab0c0452c6e3135778de7080d59"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a42851ab0c0452c6e3135778de7080d59">boost::unit_test::output::junit_log_formatter::log_entry_finish</a></div><div class="ttdeci">void log_entry_finish(std::ostream &amp;)</div><div class="ttdoc">Invoked by Unit Test Framework to finish a log entry report. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:665</div></div>
+<div class="ttc" id="enable__warnings_8hpp_html"><div class="ttname"><a href="enable__warnings_8hpp.html">enable_warnings.hpp</a></div><div class="ttdoc">enable previously suppressed warnings </div></div>
+<div class="ttc" id="test__unit_8hpp_html"><div class="ttname"><a href="test__unit_8hpp.html">test_unit.hpp</a></div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1basic__cstring_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1basic__cstring.html">boost::unit_test::basic_cstring&lt; char const  &gt;</a></div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_af18987f2103e7276c1139fcfd867c2ed"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#af18987f2103e7276c1139fcfd867c2ed">boost::unit_test::output::junit_log_formatter::log_entry_context</a></div><div class="ttdeci">void log_entry_context(std::ostream &amp;, const_string)</div><div class="ttdoc">Invoked by Unit Test Framework to report log entry context &quot;scope&quot; description. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:723</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a7983583896693fd2cb22fdf56ef54a08"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a7983583896693fd2cb22fdf56ef54a08">boost::unit_test::output::junit_log_formatter::entry_context_start</a></div><div class="ttdeci">void entry_context_start(std::ostream &amp;, log_level)</div><div class="ttdoc">Invoked by Unit Test Framework to start log entry context report. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:688</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a2b31d8a57474b5b0b7711445c801cfda"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a2b31d8a57474b5b0b7711445c801cfda">boost::unit_test::output::junit_log_formatter::log_exception_start</a></div><div class="ttdeci">void log_exception_start(std::ostream &amp;, log_checkpoint_data const &amp;, execution_exception const &amp;ex)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:490</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_ab9b7df87199b265637bdebf2a714d8f2"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ab9b7df87199b265637bdebf2a714d8f2">boost::unit_test::output::junit_log_formatter::set_log_level</a></div><div class="ttdeci">virtual void set_log_level(log_level ll)</div><div class="ttdoc">Discards changes in the log level. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.hpp:125</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper.html">boost::unit_test::output::junit_impl::junit_log_helper</a></div><div class="ttdef"><b>Definition:</b> junit_log_formatter.hpp:39</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_adac71ff6b891fb7e7709c91e03334ff5"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#adac71ff6b891fb7e7709c91e03334ff5">boost::unit_test::output::junit_log_formatter::log_entry_start</a></div><div class="ttdeci">void log_entry_start(std::ostream &amp;, log_entry_data const &amp;, log_entry_types let)</div><div class="ttdoc">Invoked by Unit Test Framework to start new log entry. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:568</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a9f86a4cf47fe2128917bfc4e0ee741de"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a9f86a4cf47fe2128917bfc4e0ee741de">boost::unit_test::output::junit_log_formatter::log_build_info</a></div><div class="ttdeci">void log_build_info(std::ostream &amp;)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:442</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_afb99fefffba1c5dec889345898bf3ea7"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#afb99fefffba1c5dec889345898bf3ea7">boost::unit_test::output::junit_log_formatter::test_unit_aborted</a></div><div class="ttdeci">void test_unit_aborted(std::ostream &amp;os, test_unit const &amp;tu)</div><div class="ttdoc">Invoked when a test unit is aborted. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:469</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1log__entry__data_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1log__entry__data.html">boost::unit_test::log_entry_data</a></div><div class="ttdoc">Collection of log entry attributes. </div><div class="ttdef"><b>Definition:</b> unit_test_log_formatter.hpp:39</div></div>
+<div class="ttc" id="suppress__warnings_8hpp_html"><div class="ttname"><a href="suppress__warnings_8hpp.html">suppress_warnings.hpp</a></div><div class="ttdoc">suppress some warnings </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a6416284bbcdb4a3c3ee1c94d4c6d6e98"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a6416284bbcdb4a3c3ee1c94d4c6d6e98">boost::unit_test::output::junit_log_formatter::entry_context_finish</a></div><div class="ttdeci">void entry_context_finish(std::ostream &amp;)</div><div class="ttdoc">Invoked by Unit Test Framework to finish log entry context report. </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:711</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a58826b9d9cfb3e8668cb6636b73829e7"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a58826b9d9cfb3e8668cb6636b73829e7">boost::unit_test::output::junit_log_formatter::test_unit_skipped</a></div><div class="ttdeci">void test_unit_skipped(std::ostream &amp;, test_unit const &amp;tu, const_string reason)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:478</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a4f279eb8f01967351a53c04103c0867b"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a4f279eb8f01967351a53c04103c0867b">boost::unit_test::output::junit_log_formatter::get_default_stream_description</a></div><div class="ttdeci">virtual std::string get_default_stream_description() const </div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:740</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1log__checkpoint__data_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1log__checkpoint__data.html">boost::unit_test::log_checkpoint_data</a></div><div class="ttdoc">Collection of log checkpoint attributes. </div><div class="ttdef"><b>Definition:</b> unit_test_log_formatter.hpp:61</div></div>
+<div class="ttc" id="unit__test__log__formatter_8hpp_html"><div class="ttname"><a href="unit__test__log__formatter_8hpp.html">unit_test_log_formatter.hpp</a></div><div class="ttdoc">Defines unit test log formatter interface. </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__unit_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__unit.html">boost::unit_test::test_unit</a></div><div class="ttdef"><b>Definition:</b> test_unit.hpp:54</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_1_1assertion__entry_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1output_1_1junit__impl_1_1junit__log__helper_1_1assertion__entry.html">boost::unit_test::output::junit_impl::junit_log_helper::assertion_entry</a></div><div class="ttdef"><b>Definition:</b> junit_log_formatter.hpp:41</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_ad4aa7bccf5c681c7cb5946bc8810dca7"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#ad4aa7bccf5c681c7cb5946bc8810dca7">boost::unit_test::output::junit_log_formatter::test_unit_start</a></div><div class="ttdeci">void test_unit_start(std::ostream &amp;, test_unit const &amp;tu)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:450</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a2e21cda4c977429bb99e236cb8d70c48"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a2e21cda4c977429bb99e236cb8d70c48">boost::unit_test::output::junit_log_formatter::log_start</a></div><div class="ttdeci">void log_start(std::ostream &amp;, counter_t test_cases_amount)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:89</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1output_1_1junit__log__formatter_html_a87c8c6c91c018307f0861bd63abc12d6"><div class="ttname"><a href="classboost_1_1unit__test_1_1output_1_1junit__log__formatter.html#a87c8c6c91c018307f0861bd63abc12d6">boost::unit_test::output::junit_log_formatter::test_unit_finish</a></div><div class="ttdeci">void test_unit_finish(std::ostream &amp;, test_unit const &amp;tu, unsigned long elapsed)</div><div class="ttdef"><b>Definition:</b> junit_log_formatter.ipp:461</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1unit__test__log__formatter_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1unit__test__log__formatter.html">boost::unit_test::unit_test_log_formatter</a></div><div class="ttdoc">Abstract Unit Test Framework log formatter interface. </div><div class="ttdef"><b>Definition:</b> unit_test_log_formatter.hpp:107</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_d05b36711d0097599a77fb982a5f2154.html">test</a></li><li class="navelem"><a class="el" href="dir_66abd0186e271d076d950b35434e717a.html">include</a></li><li class="navelem"><a class="el" href="dir_81c9430055cc944ad30943c187d349c0.html">boost</a></li><li class="navelem"><a class="el" href="dir_f5f19ec71c7e140332cdff2107507d3a.html">test</a></li><li class="navelem"><a class="el" href="dir_f4835ebec6d33946f44b19919480cba4.html">output</a></li><li class="navelem"><a class="el" href="junit__log__formatter_8hpp.html">junit_log_formatter.hpp</a></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:01 pour Project c++ par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

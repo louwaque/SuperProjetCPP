@@ -1,0 +1,4 @@
+var structboost_1_1unit__test_1_1data_1_1merge__index__sequence_3_01index__sequence_3_01_ns1_8_8_8_48de18b2b408e13c6bffd38394d9d938a =
+[
+    [ "type", "structboost_1_1unit__test_1_1data_1_1merge__index__sequence_3_01index__sequence_3_01_ns1_8_8_8_48de18b2b408e13c6bffd38394d9d938a.html#a854a1d704124bd05e3b0ec785a2a5774", null ]
+];

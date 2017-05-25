@@ -3,55 +3,52 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
+  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -78,10 +75,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-</div>
+</div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -89,64 +87,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('_graphics_text_8hpp.html','');
+$(document).ready(function(){initNavTree('_graphics_text_8hpp_source.html','');});
 </script>
 <div id="doc-content">
-<div class="header">
-  <div class="headertitle">
-<div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="_graphics_text_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef GRAPHICSTEXT_HPP</span>
-<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSTEXT_HPP</span>
-<a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="_graphics_item_8hpp.html" title="Classe GraphicsItem.">GraphicsItem.hpp</a>&quot;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;Font.hpp&quot;</span>
-<a name="l00014"></a>00014 
-<a name="l00021"></a><a class="code" href="class_graphics_text.html">00021</a> <span class="keyword">class </span><a class="code" href="class_graphics_text.html" title="Permet la creation de text.">GraphicsText</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> {
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 <span class="keyword">public</span>:
-<a name="l00024"></a>00024 
-<a name="l00032"></a>00032   <span class="keyword">explicit</span> <a class="code" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb" title="Constructeur de GraphicsText par default.">GraphicsText</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
-<a name="l00033"></a>00033 
-<a name="l00041"></a>00041   <span class="keyword">explicit</span> <a class="code" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb" title="Constructeur de GraphicsText par default.">GraphicsText</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352" title="Recupere le contenu de GraphicsText.">text</a>, <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
-<a name="l00042"></a>00042 
-<a name="l00050"></a><a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">00050</a>   <span class="keyword">inline</span> std::string <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352" title="Recupere le contenu de GraphicsText.">text</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_text; }
-<a name="l00051"></a>00051 
-<a name="l00059"></a><a class="code" href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">00059</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130" title="Modifie le contenu de GraphicsText.">setText</a>(<span class="keyword">const</span> std::string &amp;text = <span class="stringliteral">&quot;&quot;</span>) { m_text = <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352" title="Recupere le contenu de GraphicsText.">text</a>; }
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061   <span class="keyword">inline</span> <a class="code" href="class_font.html">Font</a> font()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_font; }
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063   <span class="keyword">inline</span> <span class="keywordtype">void</span> setFont(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font) { m_font = font; }
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065   <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_align; }
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067   <span class="keyword">inline</span> <span class="keywordtype">void</span> setAlign(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align = <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447aca301a4c4fa25b27fff84becdd631048">EZAlign::TL</a>) {m_align = align; }
-<a name="l00068"></a>00068 
-<a name="l00075"></a><a class="code" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">00075</a>   <span class="keyword">inline</span> GraphicsTypes <a class="code" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d" title="recupere le type de l&#39;instance courrante.">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TextType; }
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077 <span class="keyword">protected</span>:
-<a name="l00078"></a>00078 
-<a name="l00079"></a>00079   <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);
-<a name="l00080"></a>00080   <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;absoluteP);
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082 <span class="keyword">private</span>:
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   std::string m_text; 
-<a name="l00085"></a>00085   <span class="comment">//FIXME : Je veux mettre à la poubelle EZDraw</span>
-<a name="l00086"></a>00086   <a class="code" href="class_font.html">Font</a> m_font;
-<a name="l00087"></a>00087   <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> m_align;
-<a name="l00088"></a>00088 };
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090 <span class="preprocessor">#endif</span>
-</pre></div></div><!-- contents -->
-</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -155,16 +104,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="navelem"><a class="el" href="_graphics_text_8hpp.html">GraphicsText.hpp</a>      </li>
-
-    <li class="footer">Généré le Jeudi Mai 25 2017 14:18:41 pour Project c++ par
+<div class="header">
+  <div class="headertitle">
+<div class="title">GraphicsText.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graphics_text_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSTEXT_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSTEXT_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Font.hpp&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_graphics_text.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_text.html">GraphicsText</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>, <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">   50</a></span>&#160;  <span class="keyword">inline</span> std::string <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_text; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">   59</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">setText</a>(<span class="keyword">const</span> std::string &amp;text = <span class="stringliteral">&quot;&quot;</span>) { m_text = <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">inline</span> <a class="code" href="class_font.html">Font</a> font()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_font; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setFont(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font) { m_font = font; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">inline</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_align; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setAlign(<span class="keyword">const</span> <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> align = <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209">EZAlign::TL</a>) {m_align = align; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">   75</a></span>&#160;  <span class="keyword">inline</span> GraphicsTypes <a class="code" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> TextType; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;absoluteP);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::string m_text; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">//FIXME : Je veux mettre à la poubelle EZDraw</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_font.html">Font</a> m_font;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a> m_align;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_font_html"><div class="ttname"><a href="class_font.html">Font</a></div><div class="ttdef"><b>Definition:</b> Font.hpp:6</div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> Canvas.hpp:8</div></div>
+<div class="ttc" id="class_graphics_text_html"><div class="ttname"><a href="class_graphics_text.html">GraphicsText</a></div><div class="ttdoc">Permet la creation de text. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:21</div></div>
+<div class="ttc" id="_graphics_item_8hpp_html"><div class="ttname"><a href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></div><div class="ttdoc">Classe GraphicsItem. </div></div>
+<div class="ttc" id="class_graphics_text_html_aa58f7cf080bad39a8f8be2e872abe61d"><div class="ttname"><a href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">GraphicsText::type</a></div><div class="ttdeci">GraphicsTypes type() const </div><div class="ttdoc">recupere le type de l&#39;instance courrante. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:75</div></div>
+<div class="ttc" id="class_graphics_text_html_aeb38c8c0df9473cde331540d9904d352"><div class="ttname"><a href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">GraphicsText::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdoc">Recupere le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:50</div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:12</div></div>
+<div class="ttc" id="class_graphics_text_html_ac42bb0e20251eb0dc2305be760714130"><div class="ttname"><a href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">GraphicsText::setText</a></div><div class="ttdeci">void setText(const std::string &amp;text=&quot;&quot;)</div><div class="ttdoc">Modifie le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:59</div></div>
+<div class="ttc" id="ez-draw_09_09_8hpp_html_ae20564d58f7db2e75b4584b2f0d5e447"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447">EZAlign</a></div><div class="ttdeci">EZAlign</div><div class="ttdef"><b>Definition:</b> ez-draw++.hpp:50</div></div>
+<div class="ttc" id="class_graphics_text_html_a7a9525ba068e286e6aca9e49d49fc7fb"><div class="ttname"><a href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText::GraphicsText</a></div><div class="ttdeci">GraphicsText(GraphicsItem *parent=nullptr)</div><div class="ttdoc">Constructeur de GraphicsText par default. </div><div class="ttdef"><b>Definition:</b> GraphicsText.cpp:3</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
+<div class="ttc" id="ez-draw_09_09_8hpp_html_ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ae20564d58f7db2e75b4584b2f0d5e447ac4534c00ebdb14023f4f538811df5209">EZAlign::TL</a></div><div class="ttdoc">Top Left. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_graphics_text_8hpp.html">GraphicsText.hpp</a></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:02 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
-   </ul>
- </div>
-
-
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -3,55 +3,52 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
+  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -78,10 +75,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-</div>
+</div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -89,168 +87,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('_graphics_item_8hpp.html','');
+$(document).ready(function(){initNavTree('_graphics_item_8hpp_source.html','');});
 </script>
 <div id="doc-content">
-<div class="header">
-  <div class="headertitle">
-<div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="_graphics_item_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef GRAPHICSITEM_HPP</span>
-<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSITEM_HPP</span>
-<a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;vector&gt;</span>
-<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;set&gt;</span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;memory&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;functional&gt;</span>
-<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="_color_8hpp.html" title="Classe Color.">Color.hpp</a>&quot;</span>
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;Canvas.hpp&quot;</span>
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="_event_8hpp.html" title="Classe Event.">Event.hpp</a>&quot;</span>
-<a name="l00011"></a>00011 
-<a name="l00012"></a><a class="code" href="class_graphics_item.html">00012</a> <span class="keyword">class </span><a class="code" href="class_graphics_item.html">GraphicsItem</a> {
-<a name="l00013"></a>00013 <span class="keyword">public</span>:
-<a name="l00014"></a>00014   <span class="keyword">typedef</span> std::function&lt;Point(const Point&amp;)&gt; PositionCorrector;
-<a name="l00015"></a>00015   <span class="keyword">typedef</span> std::vector&lt;GraphicsItem*&gt; GraphicsItemList;
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017   <span class="keyword">enum</span> GraphicsTypes { <span class="comment">//mouse movable type ?</span>
-<a name="l00018"></a>00018     UndefinedType = 0x0,
-<a name="l00019"></a>00019     ItemType = 0x1,
-<a name="l00020"></a>00020     PointType = 0x2,
-<a name="l00021"></a>00021     TextType = 0x4,
-<a name="l00022"></a>00022     ShapeType = 0x6,
-<a name="l00023"></a>00023     LineType = 0x8,
-<a name="l00024"></a>00024     TriangleType = 0x10,
-<a name="l00025"></a>00025     RectangleType = 0x12,
-<a name="l00026"></a>00026     PolygonType = 0x14,
-<a name="l00027"></a>00027     AnchorType = 0x16,
-<a name="l00028"></a>00028     CircleType = 0x18,
-<a name="l00029"></a>00029     EllipseType = 0x20,
-<a name="l00030"></a>00030     SquareType = 0x22,
-<a name="l00031"></a>00031     AnimationType = 0x24,
-<a name="l00032"></a>00032     BlinkAnimationType = 0x26
-<a name="l00033"></a>00033   };
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035   <span class="keyword">enum</span> SearchTypes {
-<a name="l00036"></a>00036     DirectChildren,
-<a name="l00037"></a>00037     ChildrenRecursively
-<a name="l00038"></a>00038   };
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040   <span class="keyword">explicit</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <span class="keyword">virtual</span> ~<a class="code" href="class_graphics_item.html">GraphicsItem</a>();
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent()<span class="keyword"> const </span>{
-<a name="l00045"></a>00045     <span class="keywordflow">return</span> m_parent;
-<a name="l00046"></a>00046   }
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048   <span class="keywordtype">void</span> setParent(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050   <span class="keyword">virtual</span> GraphicsTypes type()<span class="keyword"> const </span>{
-<a name="l00051"></a>00051     <span class="keywordflow">return</span> ItemType;
-<a name="l00052"></a>00052   }
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054   GraphicsItemList children(<span class="keyword">const</span> GraphicsTypes filter = UndefinedType, <span class="keyword">const</span> SearchTypes option = ChildrenRecursively) <span class="keyword">const</span>;
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> anchor()<span class="keyword"> const </span>{
-<a name="l00057"></a>00057     <span class="keywordflow">return</span> m_anchor;
-<a name="l00058"></a>00058   }
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAnchor(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;anchor) {
-<a name="l00061"></a>00061     <span class="keywordflow">if</span> (m_positionCorrector)
-<a name="l00062"></a>00062       m_anchor = m_positionCorrector(anchor);
-<a name="l00063"></a>00063     <span class="keywordflow">else</span>
-<a name="l00064"></a>00064       m_anchor = anchor;
-<a name="l00065"></a>00065   }
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> absolute() <span class="keyword">const</span>;
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069   <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAbsolute(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;pos);
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071   <a class="code" href="class_color.html" title="Permet la gestion des coulours des différentes *entitées.">Color</a> color()<span class="keyword"> const </span>{
-<a name="l00072"></a>00072     <span class="keywordflow">return</span> m_color;
-<a name="l00073"></a>00073   }
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075   PositionCorrector positionCorrector()<span class="keyword"> const </span>{
-<a name="l00076"></a>00076     <span class="keywordflow">return</span> m_positionCorrector;
-<a name="l00077"></a>00077   }
-<a name="l00078"></a>00078 
-<a name="l00079"></a>00079   <span class="keywordtype">void</span> setPositionCorrector(<span class="keyword">const</span> PositionCorrector &amp;fn) {
-<a name="l00080"></a>00080     m_positionCorrector = fn;
-<a name="l00081"></a>00081     setAnchor(m_anchor);
-<a name="l00082"></a>00082   }
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   <span class="keywordtype">int</span> z()<span class="keyword"> const </span>{
-<a name="l00085"></a>00085     <span class="keywordflow">return</span> m_z;
-<a name="l00086"></a>00086   }
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088   <span class="keywordtype">void</span> setZ(<span class="keyword">const</span> <span class="keywordtype">int</span> z) {
-<a name="l00089"></a>00089     m_z = z;
-<a name="l00090"></a>00090   }
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092   <span class="keywordtype">void</span> setColor(<span class="keyword">const</span> <a class="code" href="class_color.html" title="Permet la gestion des coulours des différentes *entitées.">Color</a> color) {
-<a name="l00093"></a>00093     m_color = color;
-<a name="l00094"></a>00094   }
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> thick()<span class="keyword"> const </span>{
-<a name="l00097"></a>00097     <span class="keywordflow">return</span> m_thick;
-<a name="l00098"></a>00098   }
-<a name="l00099"></a>00099 
-<a name="l00100"></a>00100   <span class="keywordtype">void</span> setThick(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> thick = 1) {
-<a name="l00101"></a>00101     m_thick = thick;
-<a name="l00102"></a>00102   }
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104   <span class="keywordtype">bool</span> isFill()<span class="keyword"> const </span>{
-<a name="l00105"></a>00105     <span class="keywordflow">return</span> m_isFill;
-<a name="l00106"></a>00106   }
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108   <span class="keywordtype">void</span> setFill(<span class="keyword">const</span> <span class="keywordtype">bool</span> fill) {
-<a name="l00109"></a>00109     m_isFill = fill;
-<a name="l00110"></a>00110   }
-<a name="l00111"></a>00111 
-<a name="l00112"></a>00112   <span class="keywordtype">bool</span> isVisible()<span class="keyword"> const </span>{
-<a name="l00113"></a>00113     <span class="keywordflow">return</span> m_isVisible;
-<a name="l00114"></a>00114   }
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116   <span class="keywordtype">void</span> setVisible(<span class="keyword">const</span> <span class="keywordtype">bool</span> isVisible = <span class="keyword">true</span>) {
-<a name="l00117"></a>00117     m_isVisible = isVisible;
-<a name="l00118"></a>00118   }
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120   <span class="keywordtype">void</span> draw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);
-<a name="l00121"></a>00121 
-<a name="l00122"></a>00122   <span class="keywordtype">void</span> update(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time);
-<a name="l00123"></a>00123 
-<a name="l00124"></a>00124   <span class="keywordtype">void</span> handleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a> &amp;event);
-<a name="l00125"></a>00125 
-<a name="l00126"></a>00126   <span class="keywordtype">bool</span> isOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa188032b3e6837794e08d485d4426f1bb" title="p (minuscule)">p</a>);
-<a name="l00127"></a>00127 
-<a name="l00128"></a>00128 <span class="keyword">protected</span>:
-<a name="l00129"></a>00129   <span class="keyword">virtual</span> <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas) {}
-<a name="l00130"></a>00130   <span class="keyword">virtual</span> <span class="keywordtype">void</span> meUpdate(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time) {}
-<a name="l00131"></a>00131   <span class="keyword">virtual</span> <span class="keywordtype">void</span> meHandleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html" title="Permet la gestion des evenements.">Event</a> &amp;event) {}
-<a name="l00132"></a>00132   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> &amp;absoluteP) { <span class="keywordflow">return</span> absolute() == absoluteP; }
-<a name="l00133"></a>00133 
-<a name="l00134"></a>00134 <span class="keyword">private</span>:
-<a name="l00135"></a>00135   <a class="code" href="class_graphics_item.html">GraphicsItem</a> *m_parent;
-<a name="l00136"></a>00136   std::vector&lt;std::unique_ptr&lt;GraphicsItem&gt;&gt; m_children;
-<a name="l00137"></a>00137   <a class="code" href="class_point.html" title="Représente un point (x, y)">Point</a> m_anchor;
-<a name="l00138"></a>00138   PositionCorrector m_positionCorrector;
-<a name="l00139"></a>00139   <span class="keywordtype">int</span> m_z;
-<a name="l00140"></a>00140   <a class="code" href="class_color.html" title="Permet la gestion des coulours des différentes *entitées.">Color</a> m_color;
-<a name="l00141"></a>00141   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_thick;
-<a name="l00142"></a>00142   <span class="keywordtype">bool</span> m_isFill;
-<a name="l00143"></a>00143   <span class="keywordtype">bool</span> m_isVisible;
-<a name="l00144"></a>00144 };
-<a name="l00145"></a>00145 
-<a name="l00146"></a>00146 <span class="preprocessor">#endif</span>
-</pre></div></div><!-- contents -->
-</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -259,16 +104,175 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="navelem"><a class="el" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a>      </li>
-
-    <li class="footer">Généré le Jeudi Mai 25 2017 14:18:41 pour Project c++ par
+<div class="header">
+  <div class="headertitle">
+<div class="title">GraphicsItem.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graphics_item_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSITEM_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSITEM_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_color_8hpp.html">Color.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Canvas.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_event_8hpp.html">Event.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_graphics_item.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_item.html">GraphicsItem</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">typedef</span> std::function&lt;Point(const Point&amp;)&gt; PositionCorrector;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">typedef</span> std::vector&lt;GraphicsItem*&gt; GraphicsItemList;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">enum</span> GraphicsTypes { <span class="comment">//mouse movable type ?</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    UndefinedType = 0x0,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ItemType = 0x1,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    PointType = 0x2,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    TextType = 0x4,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ShapeType = 0x6,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    LineType = 0x8,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    TriangleType = 0x10,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    RectangleType = 0x12,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    PolygonType = 0x14,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    AnchorType = 0x16,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CircleType = 0x18,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    EllipseType = 0x20,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    SquareType = 0x22,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    AnimationType = 0x24,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BlinkAnimationType = 0x26</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">enum</span> SearchTypes {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    DirectChildren,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ChildrenRecursively</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_graphics_item.html">GraphicsItem</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> m_parent;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> setParent(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">virtual</span> GraphicsTypes type()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> ItemType;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  GraphicsItemList children(<span class="keyword">const</span> GraphicsTypes filter = UndefinedType, <span class="keyword">const</span> SearchTypes option = ChildrenRecursively) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_point.html">Point</a> anchor()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> m_anchor;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAnchor(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;anchor) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (m_positionCorrector)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      m_anchor = m_positionCorrector(anchor);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      m_anchor = anchor;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="class_point.html">Point</a> absolute() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAbsolute(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="class_color.html">Color</a> color()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> m_color;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  PositionCorrector positionCorrector()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> m_positionCorrector;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> setPositionCorrector(<span class="keyword">const</span> PositionCorrector &amp;fn) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_positionCorrector = fn;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    setAnchor(m_anchor);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">int</span> z()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> m_z;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> setZ(<span class="keyword">const</span> <span class="keywordtype">int</span> z) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    m_z = z;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> setColor(<span class="keyword">const</span> <a class="code" href="class_color.html">Color</a> color) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_color = color;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> thick()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> m_thick;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> setThick(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> thick = 1) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    m_thick = thick;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">bool</span> isFill()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> m_isFill;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> setFill(<span class="keyword">const</span> <span class="keywordtype">bool</span> fill) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_isFill = fill;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">bool</span> isVisible()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> m_isVisible;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> setVisible(<span class="keyword">const</span> <span class="keywordtype">bool</span> isVisible = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    m_isVisible = isVisible;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">void</span> draw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">void</span> update(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">void</span> handleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html">Event</a> &amp;event);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">bool</span> isOver(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83878c91171338902e0fe0fb97a8c47a">p</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas) {}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> meUpdate(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time) {}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> meHandleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html">Event</a> &amp;event) {}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> meIsOver(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;absoluteP) { <span class="keywordflow">return</span> absolute() == absoluteP; }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *m_parent;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  std::vector&lt;std::unique_ptr&lt;GraphicsItem&gt;&gt; m_children;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="class_point.html">Point</a> m_anchor;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  PositionCorrector m_positionCorrector;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">int</span> m_z;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="class_color.html">Color</a> m_color;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_thick;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">bool</span> m_isFill;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">bool</span> m_isVisible;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Permet la gestion des evenements. </div><div class="ttdef"><b>Definition:</b> Event.hpp:21</div></div>
+<div class="ttc" id="ez-draw_09_09_8hpp_html_ab4ada4f5b7011a8a08fd77572ddabc1aa83878c91171338902e0fe0fb97a8c47a"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa83878c91171338902e0fe0fb97a8c47a">EZKeySym::p</a></div><div class="ttdoc">p (minuscule) </div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> Canvas.hpp:8</div></div>
+<div class="ttc" id="class_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Permet la gestion des coulours des différentes *entitées. </div><div class="ttdef"><b>Definition:</b> Color.hpp:22</div></div>
+<div class="ttc" id="_event_8hpp_html"><div class="ttname"><a href="_event_8hpp.html">Event.hpp</a></div><div class="ttdoc">Classe Event. </div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:12</div></div>
+<div class="ttc" id="_color_8hpp_html"><div class="ttname"><a href="_color_8hpp.html">Color.hpp</a></div><div class="ttdoc">Classe Color. </div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:02 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
-   </ul>
- </div>
-
-
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
 </body>
 </html>

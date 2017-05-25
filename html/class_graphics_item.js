@@ -2,8 +2,27 @@ var class_graphics_item =
 [
     [ "GraphicsItemList", "class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b", null ],
     [ "PositionCorrector", "class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64", null ],
-    [ "GraphicsTypes", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f", null ],
-    [ "SearchTypes", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc", null ],
+    [ "GraphicsTypes", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f", [
+      [ "UndefinedType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc", null ],
+      [ "ItemType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabad1df9300f6f2fcc0ca5977cf77801c", null ],
+      [ "PointType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fae51e7f831f089c84eb2ce600219ce81e", null ],
+      [ "TextType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d", null ],
+      [ "ShapeType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faa952ab90c4a0e0659506d78572b850fd", null ],
+      [ "LineType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b", null ],
+      [ "TriangleType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa61dd0137f3bed682a547e54edbd38363", null ],
+      [ "RectangleType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa37c1c68bb5807d8c6c78a64bffb6cc25", null ],
+      [ "PolygonType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac", null ],
+      [ "AnchorType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa18f8d22437273b463b013d68d5fab142", null ],
+      [ "CircleType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a", null ],
+      [ "EllipseType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa2b3fdefdac8f54a1ca2824d0c57e6082", null ],
+      [ "SquareType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabd9dc1c77424e2e5ff3020d5d9ef02da", null ],
+      [ "AnimationType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fad8645ce1fa1066c18e70a1534c4ec330", null ],
+      [ "BlinkAnimationType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa26ba6ed171b0103540e9c4ff0e85bc79", null ]
+    ] ],
+    [ "SearchTypes", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc", [
+      [ "DirectChildren", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fca79162c22d42759b0afbc7c10450a7aca", null ],
+      [ "ChildrenRecursively", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665", null ]
+    ] ],
     [ "GraphicsItem", "class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc", null ],
     [ "~GraphicsItem", "class_graphics_item.html#ad76d7190cfa332054ae66d505fb37bb1", null ],
     [ "absolute", "class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7", null ],

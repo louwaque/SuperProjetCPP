@@ -3,55 +3,52 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
+  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -78,10 +75,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-</div>
+</div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
   <div id="splitbar" style="-moz-user-select:none;" 
@@ -89,94 +87,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('_color_8hpp.html','');
+$(document).ready(function(){initNavTree('_color_8hpp_source.html','');});
 </script>
 <div id="doc-content">
-<div class="header">
-  <div class="headertitle">
-<div class="title">/home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="_color_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef COLOR_HPP</span>
-<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define COLOR_HPP</span>
-<a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;cstdint&gt;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;string&gt;</span>
-<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span>
-<a name="l00015"></a>00015 
-<a name="l00022"></a><a class="code" href="class_color.html">00022</a> <span class="keyword">class </span><a class="code" href="class_color.html" title="Permet la gestion des coulours des différentes *entitées.">Color</a> {
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">public</span>:
-<a name="l00025"></a>00025 
-<a name="l00033"></a><a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1">00033</a>   <span class="keyword">enum</span> <a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1" title="Constantes de couleurs.">Colors</a> : uint32_t {
-<a name="l00034"></a>00034     Black = 0x000000,
-<a name="l00035"></a>00035     White = 0xFFFFFF,
-<a name="l00036"></a>00036     Grey = 0x969696,
-<a name="l00037"></a>00037     Red = 0xFF0000,
-<a name="l00038"></a>00038     Green = 0x00FF00,
-<a name="l00039"></a>00039     Blue = 0x0000FF,
-<a name="l00040"></a>00040     Yellow = 0xFFFF00,
-<a name="l00041"></a>00041     Cyan = 0x00FFFF,
-<a name="l00042"></a>00042     Mangenta = 0xFF00FF
-<a name="l00043"></a>00043   };
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047   <span class="comment">//pas super top</span>
-<a name="l00048"></a>00048 
-<a name="l00056"></a>00056   <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> <a class="code" href="class_color.html#a0fff3d29ee4674306b48feaf6ec1d8f1" title="Constantes de couleurs.">Colors</a> color = Black);
-<a name="l00057"></a>00057 
-<a name="l00069"></a>00069   <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>);
-<a name="l00070"></a>00070 
-<a name="l00081"></a>00081   <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>);
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083 
-<a name="l00092"></a>00092   <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2" title="Constructeur par default de la classe Colors.">Color</a>(<span class="keyword">const</span> ulong grey);
-<a name="l00093"></a>00093 
-<a name="l00100"></a><a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">00100</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Red) &gt;&gt; 16; }
-<a name="l00101"></a>00101 
-<a name="l00108"></a>00108   <span class="keywordtype">void</span> <a class="code" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d" title="Modifie la valeur de la premier couleur ( systeme RGB ).">setRed</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61" title="Recupere la valeur de la premier couleur ( systeme RGB ).">red</a>);
-<a name="l00109"></a>00109 
-<a name="l00116"></a><a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">00116</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Green) &gt;&gt;8; }
-<a name="l00117"></a>00117 
-<a name="l00124"></a>00124   <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d" title="Modifie la valeur de la seconde couleur ( systeme RGB ).">setGreen</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394" title="Recupere la valeur de la deuxieme couleur ( systeme RGB ).">green</a>);
-<a name="l00125"></a>00125 
-<a name="l00132"></a><a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">00132</a>   <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color &amp; Blue; }
-<a name="l00133"></a>00133 
-<a name="l00140"></a>00140   <span class="keywordtype">void</span> <a class="code" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b" title="Modifie la valeur de la troisieme couleur ( systeme RGB ).">setBlue</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6" title="Recupere la valeur de la troisieme couleur ( systeme RGB ).">blue</a>);
-<a name="l00141"></a>00141 
-<a name="l00148"></a>00148   <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>() <span class="keyword">const</span>;
-<a name="l00149"></a>00149 
-<a name="l00156"></a><a class="code" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb">00156</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb" title="Modifie la valeur de la teinte ( systeme HSV ).">setHue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue, <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>(), <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>()); }
-<a name="l00157"></a>00157 
-<a name="l00164"></a>00164   <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>() <span class="keyword">const</span>;
-<a name="l00165"></a>00165 
-<a name="l00172"></a><a class="code" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828">00172</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828" title="Modifie la valeur de la saturation ( system HSV ).">setSaturation</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>(), saturation, <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>()); }
-<a name="l00173"></a>00173 
-<a name="l00180"></a>00180   <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>() <span class="keyword">const</span>;
-<a name="l00181"></a>00181 
-<a name="l00188"></a><a class="code" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185">00188</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185" title="Modifie la valeur de la valeur ( system HSV ).">setValue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57" title="Recupere la valeur de la valeur ( system HSV ).">value</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd" title="Recupere la valeur de teinte ( systeme HSV ).">hue</a>(), <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561" title="Recupere la valeur de saturation ( system HSV ).">saturation</a>(), value); }
-<a name="l00189"></a>00189 
-<a name="l00196"></a><a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">00196</a>   <span class="keyword">inline</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color; }
-<a name="l00197"></a>00197 
-<a name="l00204"></a><a class="code" href="class_color.html#a075616705bfbe4802b121a343f4ed78e">00204</a>   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a075616705bfbe4802b121a343f4ed78e" title="Modifie la couleur grâce à une valeur en exadecimal.">setHexa</a>(<span class="keyword">const</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>) { m_color = <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2" title="Recupere la valeur de la couleur en hexadecimal.">hexa</a>; }
-<a name="l00205"></a>00205 
-<a name="l00212"></a>00212   std::string <a class="code" href="class_color.html#ab112588e12ec0e9a8118fede17078937" title="Recupere la valeur de la couleur en hexadecimal sous forme de chaine de caractere.">hexaStr</a>() <span class="keyword">const</span>;
-<a name="l00213"></a>00213 
-<a name="l00214"></a>00214 <span class="keyword">private</span>:
-<a name="l00215"></a>00215 
-<a name="l00216"></a>00216   uint32_t m_color; 
-<a name="l00218"></a>00218 };
-<a name="l00219"></a>00219 
-<a name="l00220"></a>00220 <span class="preprocessor">#endif</span>
-</pre></div></div><!-- contents -->
-</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -185,16 +104,112 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-  <div id="nav-path" class="navpath">
-    <ul>
-      <li class="navelem"><a class="el" href="_color_8hpp.html">Color.hpp</a>      </li>
-
-    <li class="footer">Généré le Jeudi Mai 25 2017 14:18:41 pour Project c++ par
+<div class="header">
+  <div class="headertitle">
+<div class="title">Color.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_color_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COLOR_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COLOR_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../ez-lib/ez-draw++.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_color.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_color.html">Color</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102f">   33</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102f">Colors</a> : uint32_t {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Black = 0x000000,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    White = 0xFFFFFF,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Grey = 0x969696,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Red = 0xFF0000,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Green = 0x00FF00,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Blue = 0x0000FF,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Yellow = 0xFFFF00,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Cyan = 0x00FFFF,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Mangenta = 0xFF00FF</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">//pas super top</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color</a>(<span class="keyword">const</span> <a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102f">Colors</a> color = Black);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>, <span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">hue</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">saturation</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">value</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color</a>(<span class="keyword">const</span> ulong grey);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">  100</a></span>&#160;  <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Red) &gt;&gt; 16; }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">setRed</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_color.html#abeb092c67b007163b357bd6327189394">  116</a></span>&#160;  <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (m_color &amp; Green) &gt;&gt;8; }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">setGreen</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">  132</a></span>&#160;  <span class="keyword">inline</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color &amp; Blue; }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">setBlue</a>(<span class="keyword">const</span> uint8_t <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">hue</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb">  156</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a600727550b0b99ab9c67226be5aa70cb">setHue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">hue</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(hue, <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">saturation</a>(), <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">value</a>()); }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">saturation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828">  172</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828">setSaturation</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">saturation</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">hue</a>(), saturation, <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">value</a>()); }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">value</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185">  188</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a1b673b9755fa01412ea14a2f9c040185">setValue</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">value</a>) { m_color = <a class="code" href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a>(<a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">hue</a>(), <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">saturation</a>(), value); }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">  196</a></span>&#160;  <span class="keyword">inline</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">hexa</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_color; }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_color.html#a075616705bfbe4802b121a343f4ed78e">  204</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_color.html#a075616705bfbe4802b121a343f4ed78e">setHexa</a>(<span class="keyword">const</span> uint32_t <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">hexa</a>) { m_color = <a class="code" href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">hexa</a>; }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  std::string <a class="code" href="class_color.html#ab112588e12ec0e9a8118fede17078937">hexaStr</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  uint32_t m_color; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;};</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_color_html_a651f880388f41a65d692194c3cf2b2e2"><div class="ttname"><a href="class_color.html#a651f880388f41a65d692194c3cf2b2e2">Color::hexa</a></div><div class="ttdeci">uint32_t hexa() const </div><div class="ttdoc">Recupere la valeur de la couleur en hexadecimal. </div><div class="ttdef"><b>Definition:</b> Color.hpp:196</div></div>
+<div class="ttc" id="class_color_html_ae752d55b3758a7181fd3c201ab87ca3b"><div class="ttname"><a href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">Color::setBlue</a></div><div class="ttdeci">void setBlue(const uint8_t blue)</div><div class="ttdoc">Modifie la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:35</div></div>
+<div class="ttc" id="class_color_html_a8ff299417275579e8ae4a065d8dfcf8d"><div class="ttname"><a href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">Color::setRed</a></div><div class="ttdeci">void setRed(const uint8_t red)</div><div class="ttdoc">Modifie la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:24</div></div>
+<div class="ttc" id="class_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Permet la gestion des coulours des différentes *entitées. </div><div class="ttdef"><b>Definition:</b> Color.hpp:22</div></div>
+<div class="ttc" id="class_color_html_a600727550b0b99ab9c67226be5aa70cb"><div class="ttname"><a href="class_color.html#a600727550b0b99ab9c67226be5aa70cb">Color::setHue</a></div><div class="ttdeci">void setHue(const double hue)</div><div class="ttdoc">Modifie la valeur de la teinte ( systeme HSV ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:156</div></div>
+<div class="ttc" id="class_color_html_ac99b62f877393bbadfeee7170eb31ecd"><div class="ttname"><a href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">Color::hue</a></div><div class="ttdeci">double hue() const </div><div class="ttdoc">Recupere la valeur de teinte ( systeme HSV ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:40</div></div>
+<div class="ttc" id="class_color_html_a1c17c3206b193c4a0ffabc13a6155e3d"><div class="ttname"><a href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">Color::setGreen</a></div><div class="ttdeci">void setGreen(const uint8_t green)</div><div class="ttdoc">Modifie la valeur de la seconde couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:29</div></div>
+<div class="ttc" id="class_color_html_a9e232063ef1dfe5e98970700db822561"><div class="ttname"><a href="class_color.html#a9e232063ef1dfe5e98970700db822561">Color::saturation</a></div><div class="ttdeci">double saturation() const </div><div class="ttdoc">Recupere la valeur de saturation ( system HSV ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:60</div></div>
+<div class="ttc" id="class_color_html_a075616705bfbe4802b121a343f4ed78e"><div class="ttname"><a href="class_color.html#a075616705bfbe4802b121a343f4ed78e">Color::setHexa</a></div><div class="ttdeci">void setHexa(const uint32_t hexa)</div><div class="ttdoc">Modifie la couleur grâce à une valeur en exadecimal. </div><div class="ttdef"><b>Definition:</b> Color.hpp:204</div></div>
+<div class="ttc" id="class_e_z_window_html_a986bfcf5ef714623fb3ee9480807fa16"><div class="ttname"><a href="class_e_z_window.html#a986bfcf5ef714623fb3ee9480807fa16">EZWindow::getHSV</a></div><div class="ttdeci">static EZColor getHSV(double hue, double saturation, double value)</div><div class="ttdef"><b>Definition:</b> ez-draw++.cpp:3660</div></div>
+<div class="ttc" id="class_color_html_ab112588e12ec0e9a8118fede17078937"><div class="ttname"><a href="class_color.html#ab112588e12ec0e9a8118fede17078937">Color::hexaStr</a></div><div class="ttdeci">std::string hexaStr() const </div><div class="ttdoc">Recupere la valeur de la couleur en hexadecimal sous forme de chaine de caractere. </div><div class="ttdef"><b>Definition:</b> Color.cpp:81</div></div>
+<div class="ttc" id="class_color_html_a5a3f8aa2c7079231d10fbf3c2c87bf61"><div class="ttname"><a href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">Color::red</a></div><div class="ttdeci">uint8_t red() const </div><div class="ttdoc">Recupere la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:100</div></div>
+<div class="ttc" id="class_color_html_a1b673b9755fa01412ea14a2f9c040185"><div class="ttname"><a href="class_color.html#a1b673b9755fa01412ea14a2f9c040185">Color::setValue</a></div><div class="ttdeci">void setValue(const double value)</div><div class="ttdoc">Modifie la valeur de la valeur ( system HSV ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:188</div></div>
+<div class="ttc" id="class_color_html_a0936edb38b2c1c3d2de4214aad6a7ee2"><div class="ttname"><a href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a></div><div class="ttdeci">Color(const Colors color=Black)</div><div class="ttdoc">Constructeur par default de la classe Colors. </div><div class="ttdef"><b>Definition:</b> Color.cpp:4</div></div>
+<div class="ttc" id="class_color_html_ae8cb1f2e0c1424555e2f606ba9d21e57"><div class="ttname"><a href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">Color::value</a></div><div class="ttdeci">double value() const </div><div class="ttdoc">Recupere la valeur de la valeur ( system HSV ). </div><div class="ttdef"><b>Definition:</b> Color.cpp:74</div></div>
+<div class="ttc" id="class_color_html_ab8c3999a34eecf3ee1bfaced2b458cd6"><div class="ttname"><a href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">Color::blue</a></div><div class="ttdeci">uint8_t blue() const </div><div class="ttdoc">Recupere la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:132</div></div>
+<div class="ttc" id="class_color_html_a237de6ef93ddb2985d87a6fb630a0828"><div class="ttname"><a href="class_color.html#a237de6ef93ddb2985d87a6fb630a0828">Color::setSaturation</a></div><div class="ttdeci">void setSaturation(const double saturation)</div><div class="ttdoc">Modifie la valeur de la saturation ( system HSV ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:172</div></div>
+<div class="ttc" id="class_color_html_abeb092c67b007163b357bd6327189394"><div class="ttname"><a href="class_color.html#abeb092c67b007163b357bd6327189394">Color::green</a></div><div class="ttdeci">uint8_t green() const </div><div class="ttdoc">Recupere la valeur de la deuxieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> Color.hpp:116</div></div>
+<div class="ttc" id="class_color_html_af1edae0ae19f7a958e091dbb85e7102f"><div class="ttname"><a href="class_color.html#af1edae0ae19f7a958e091dbb85e7102f">Color::Colors</a></div><div class="ttdeci">Colors</div><div class="ttdoc">Constantes de couleurs. </div><div class="ttdef"><b>Definition:</b> Color.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_color_8hpp.html">Color.hpp</a></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:02 pour Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
-   </ul>
- </div>
-
-
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
 </body>
 </html>

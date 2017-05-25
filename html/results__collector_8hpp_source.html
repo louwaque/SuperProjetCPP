@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/boost/test/include/boost/test/results_collector.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Project c++
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('results__collector_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">results_collector.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="results__collector_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//  (C) Copyright Gennadiy Rozental 2001.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  Distributed under the Boost Software License, Version 1.0.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  (See accompanying file LICENSE_1_0.txt or copy at</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//  http://www.boost.org/LICENSE_1_0.txt)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  See http://www.boost.org/libs/test for the library home page.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span><span class="comment">// ***************************************************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BOOST_TEST_RESULTS_COLLECTOR_HPP_071894GER</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BOOST_TEST_RESULTS_COLLECTOR_HPP_071894GER</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Boost.Test</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="observer_8hpp.html">boost/test/tree/observer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="global__typedef_8hpp.html">boost/test/detail/global_typedef.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fwd__decl_8hpp.html">boost/test/detail/fwd_decl.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;boost/test/utils/trivial_singleton.hpp&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;boost/test/utils/class_properties.hpp&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="suppress__warnings_8hpp.html">boost/test/detail/suppress_warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//____________________________________________________________________________//</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>boost {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>unit_test {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span><span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> first_failed_assertion() {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html">   53</a></span>&#160;<span class="keyword">class </span>BOOST_TEST_DECL <a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">typedef</span> BOOST_READONLY_PROPERTY( counter_t, (<a class="code" href="classboost_1_1unit__test_1_1results__collector__t.html">results_collector_t</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                (<a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                (<a class="code" href="classboost_1_1unit__test_1_1results__collect__helper.html">results_collect_helper</a>) ) counter_prop;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">typedef</span> BOOST_READONLY_PROPERTY( <span class="keywordtype">bool</span>,      (<a class="code" href="classboost_1_1unit__test_1_1results__collector__t.html">results_collector_t</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                (<a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                (<a class="code" href="classboost_1_1unit__test_1_1results__collect__helper.html">results_collect_helper</a>) ) bool_prop;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a26e2b8115a4abec2d452778d220ef8c2">   66</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a26e2b8115a4abec2d452778d220ef8c2">p_assertions_passed</a>;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a25f5e2adb828239e15ab54e729ad88d6">   67</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a25f5e2adb828239e15ab54e729ad88d6">p_assertions_failed</a>;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#ac23e402227048910c9f64c65bbb82fa1">   68</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#ac23e402227048910c9f64c65bbb82fa1">p_warnings_failed</a>;          </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    counter_prop    p_expected_failures;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#ac78040cd0f6a3dfc1df3d6b27262206b">   70</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#ac78040cd0f6a3dfc1df3d6b27262206b">p_test_cases_passed</a>;        </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a4a22d102203d7119d8079c51b4cf5f66">   71</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a4a22d102203d7119d8079c51b4cf5f66">p_test_cases_warned</a>;        </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a869bd0857b88e0c9671368b68ee1bdfa">   72</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a869bd0857b88e0c9671368b68ee1bdfa">p_test_cases_failed</a>;        </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a4f37027a801aa107839ef61d06dde044">   73</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a4f37027a801aa107839ef61d06dde044">p_test_cases_skipped</a>;       </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#ac6082db0ddbbb58cab1e1b739c1b3778">   74</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#ac6082db0ddbbb58cab1e1b739c1b3778">p_test_cases_aborted</a>;       </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a909adac8a602705b0f27ba64c6281788">   75</a></span>&#160;    counter_prop    <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a909adac8a602705b0f27ba64c6281788">p_duration_microseconds</a>;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a0c8010b453f5b163f278eb5ad8c4fb89">   76</a></span>&#160;    bool_prop       <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a0c8010b453f5b163f278eb5ad8c4fb89">p_aborted</a>;                  </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1test__results.html#a26ae45a8a5e0d344449ef3d5eba8b594">   77</a></span>&#160;    bool_prop       <a class="code" href="classboost_1_1unit__test_1_1test__results.html#a26ae45a8a5e0d344449ef3d5eba8b594">p_skipped</a>;                  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span>            passed() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span>             result_code() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span>            operator+=( <a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a> <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span>            <a class="code" href="namespaceboost_1_1unit__test_1_1framework.html#af7c66227261f3259303e1d7701058cbe">clear</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classboost_1_1unit__test_1_1results__collector__t.html">  109</a></span>&#160;<span class="comment"></span><span class="keyword">class </span>BOOST_TEST_DECL <a class="code" href="classboost_1_1unit__test_1_1results__collector__t.html">results_collector_t</a> : <span class="keyword">public</span> <a class="code" href="classboost_1_1unit__test_1_1test__observer.html">test_observer</a>, <span class="keyword">public</span> <a class="code" href="classboost_1_1unit__test_1_1singleton.html">singleton</a>&lt;results_collector_t&gt; {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        test_start( counter_t );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        test_unit_start( <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        test_unit_finish( <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp;, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        test_unit_skipped( <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp;, <a class="code" href="classboost_1_1unit__test_1_1basic__cstring.html">const_string</a> );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        <a class="code" href="namespaceboost_1_1unit__test_1_1framework.html#a6e9476304b65427b96a61c601c1df203">test_unit_aborted</a>( <a class="code" href="classboost_1_1unit__test_1_1test__unit.html">test_unit</a> <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        assertion_result( unit_test::assertion_result );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>        <a class="code" href="namespaceboost_1_1unit__test_1_1framework.html#a22bb04be670db141c3435f4470672577">exception_caught</a>( <a class="code" href="classboost_1_1execution__exception.html">execution_exception</a> <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>         priority() { <span class="keywordflow">return</span> 2; }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classboost_1_1unit__test_1_1test__results.html">test_results</a> <span class="keyword">const</span>&amp; results( test_unit_id tu_id ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    BOOST_TEST_SINGLETON_CONS( <a class="code" href="classboost_1_1unit__test_1_1results__collector__t.html">results_collector_t</a> )</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;BOOST_TEST_SINGLETON_INST( results_collector )</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// namespace unit_test</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace boost</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="enable__warnings_8hpp.html">boost/test/detail/enable_warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif // BOOST_TEST_RESULTS_COLLECTOR_HPP_071894GER</span></div>
+<div class="ttc" id="global__typedef_8hpp_html"><div class="ttname"><a href="global__typedef_8hpp.html">global_typedef.hpp</a></div><div class="ttdoc">some trivial global typedefs </div></div>
+<div class="ttc" id="classboost_1_1execution__exception_html"><div class="ttname"><a href="classboost_1_1execution__exception.html">boost::execution_exception</a></div><div class="ttdoc">This class is used to report any kind of an failure during execution of a monitored function inside o...</div><div class="ttdef"><b>Definition:</b> execution_monitor.hpp:240</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a26e2b8115a4abec2d452778d220ef8c2"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a26e2b8115a4abec2d452778d220ef8c2">boost::unit_test::test_results::p_assertions_passed</a></div><div class="ttdeci">counter_prop p_assertions_passed</div><div class="ttdoc">Number of successful assertions. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:66</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a26ae45a8a5e0d344449ef3d5eba8b594"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a26ae45a8a5e0d344449ef3d5eba8b594">boost::unit_test::test_results::p_skipped</a></div><div class="ttdeci">bool_prop p_skipped</div><div class="ttdoc">Indicates that the test unit execution has been skipped. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:77</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a25f5e2adb828239e15ab54e729ad88d6"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a25f5e2adb828239e15ab54e729ad88d6">boost::unit_test::test_results::p_assertions_failed</a></div><div class="ttdeci">counter_prop p_assertions_failed</div><div class="ttdoc">Number of failing assertions. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:67</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_ac78040cd0f6a3dfc1df3d6b27262206b"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#ac78040cd0f6a3dfc1df3d6b27262206b">boost::unit_test::test_results::p_test_cases_passed</a></div><div class="ttdeci">counter_prop p_test_cases_passed</div><div class="ttdoc">Number of successfull test cases. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:70</div></div>
+<div class="ttc" id="observer_8hpp_html"><div class="ttname"><a href="observer_8hpp.html">observer.hpp</a></div><div class="ttdoc">defines abstract interface for test observer </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a0c8010b453f5b163f278eb5ad8c4fb89"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a0c8010b453f5b163f278eb5ad8c4fb89">boost::unit_test::test_results::p_aborted</a></div><div class="ttdeci">bool_prop p_aborted</div><div class="ttdoc">Indicates that the test unit execution has been aborted. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:76</div></div>
+<div class="ttc" id="enable__warnings_8hpp_html"><div class="ttname"><a href="enable__warnings_8hpp.html">enable_warnings.hpp</a></div><div class="ttdoc">enable previously suppressed warnings </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1basic__cstring_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1basic__cstring.html">boost::unit_test::basic_cstring&lt; char const  &gt;</a></div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a909adac8a602705b0f27ba64c6281788"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a909adac8a602705b0f27ba64c6281788">boost::unit_test::test_results::p_duration_microseconds</a></div><div class="ttdeci">counter_prop p_duration_microseconds</div><div class="ttdoc">Duration of the test in microseconds. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:75</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_ac6082db0ddbbb58cab1e1b739c1b3778"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#ac6082db0ddbbb58cab1e1b739c1b3778">boost::unit_test::test_results::p_test_cases_aborted</a></div><div class="ttdeci">counter_prop p_test_cases_aborted</div><div class="ttdoc">Number of aborted test cases. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:74</div></div>
+<div class="ttc" id="namespaceboost_1_1unit__test_1_1framework_html_a22bb04be670db141c3435f4470672577"><div class="ttname"><a href="namespaceboost_1_1unit__test_1_1framework.html#a22bb04be670db141c3435f4470672577">boost::unit_test::framework::exception_caught</a></div><div class="ttdeci">BOOST_TEST_DECL void exception_caught(execution_exception const &amp;)</div><div class="ttdoc">Reports uncaught exception to all test observers. </div><div class="ttdef"><b>Definition:</b> framework.ipp:1506</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1results__collect__helper_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1results__collect__helper.html">boost::unit_test::results_collect_helper</a></div><div class="ttdef"><b>Definition:</b> results_collector.ipp:147</div></div>
+<div class="ttc" id="namespaceboost_1_1unit__test_1_1framework_html_af7c66227261f3259303e1d7701058cbe"><div class="ttname"><a href="namespaceboost_1_1unit__test_1_1framework.html#af7c66227261f3259303e1d7701058cbe">boost::unit_test::framework::clear</a></div><div class="ttdeci">BOOST_TEST_DECL void clear()</div><div class="ttdoc">After this call the framework can be reinitialized to perform a second test run during the same progr...</div><div class="ttdef"><b>Definition:</b> framework.ipp:1233</div></div>
+<div class="ttc" id="namespaceboost_1_1unit__test_1_1framework_html_a6e9476304b65427b96a61c601c1df203"><div class="ttname"><a href="namespaceboost_1_1unit__test_1_1framework.html#a6e9476304b65427b96a61c601c1df203">boost::unit_test::framework::test_unit_aborted</a></div><div class="ttdeci">BOOST_TEST_DECL void test_unit_aborted(test_unit const &amp;)</div><div class="ttdoc">Reports aborted test unit to all test observers. </div><div class="ttdef"><b>Definition:</b> framework.ipp:1519</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a4a22d102203d7119d8079c51b4cf5f66"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a4a22d102203d7119d8079c51b4cf5f66">boost::unit_test::test_results::p_test_cases_warned</a></div><div class="ttdeci">counter_prop p_test_cases_warned</div><div class="ttdoc">Number of warnings in test cases. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:71</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__observer_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__observer.html">boost::unit_test::test_observer</a></div><div class="ttdoc">Generic test observer interface. </div><div class="ttdef"><b>Definition:</b> observer.hpp:40</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a869bd0857b88e0c9671368b68ee1bdfa"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a869bd0857b88e0c9671368b68ee1bdfa">boost::unit_test::test_results::p_test_cases_failed</a></div><div class="ttdeci">counter_prop p_test_cases_failed</div><div class="ttdoc">Number of failing test cases. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:72</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1results__collector__t_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1results__collector__t.html">boost::unit_test::results_collector_t</a></div><div class="ttdoc">Collects and combines the test results. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:109</div></div>
+<div class="ttc" id="suppress__warnings_8hpp_html"><div class="ttname"><a href="suppress__warnings_8hpp.html">suppress_warnings.hpp</a></div><div class="ttdoc">suppress some warnings </div></div>
+<div class="ttc" id="fwd__decl_8hpp_html"><div class="ttname"><a href="fwd__decl_8hpp.html">fwd_decl.hpp</a></div><div class="ttdoc">contains forward eclarations for Boost.Test data types </div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html">boost::unit_test::test_results</a></div><div class="ttdoc">Collection of attributes constituting test unit results. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:53</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_ac23e402227048910c9f64c65bbb82fa1"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#ac23e402227048910c9f64c65bbb82fa1">boost::unit_test::test_results::p_warnings_failed</a></div><div class="ttdeci">counter_prop p_warnings_failed</div><div class="ttdoc">Number of warnings. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:68</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__unit_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__unit.html">boost::unit_test::test_unit</a></div><div class="ttdef"><b>Definition:</b> test_unit.hpp:54</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1test__results_html_a4f37027a801aa107839ef61d06dde044"><div class="ttname"><a href="classboost_1_1unit__test_1_1test__results.html#a4f37027a801aa107839ef61d06dde044">boost::unit_test::test_results::p_test_cases_skipped</a></div><div class="ttdeci">counter_prop p_test_cases_skipped</div><div class="ttdoc">Number of skipped test cases. </div><div class="ttdef"><b>Definition:</b> results_collector.hpp:73</div></div>
+<div class="ttc" id="classboost_1_1unit__test_1_1singleton_html"><div class="ttname"><a href="classboost_1_1unit__test_1_1singleton.html">boost::unit_test::singleton</a></div><div class="ttdef"><b>Definition:</b> trivial_singleton.hpp:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_d05b36711d0097599a77fb982a5f2154.html">test</a></li><li class="navelem"><a class="el" href="dir_66abd0186e271d076d950b35434e717a.html">include</a></li><li class="navelem"><a class="el" href="dir_81c9430055cc944ad30943c187d349c0.html">boost</a></li><li class="navelem"><a class="el" href="dir_f5f19ec71c7e140332cdff2107507d3a.html">test</a></li><li class="navelem"><a class="el" href="results__collector_8hpp.html">results_collector.hpp</a></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:01 pour Project c++ par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

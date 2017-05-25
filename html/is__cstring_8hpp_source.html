@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Project c++:  Fichier source de /home/travis/build/L0L022/SuperProjetCPP/boost/test/include/boost/test/utils/is_cstring.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Project c++
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet c ++ 2017 sur les formes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('is__cstring_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">is_cstring.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//  (C) Copyright Gennadiy Rozental 2001.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  Distributed under the Boost Software License, Version 1.0.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  (See accompanying file LICENSE_1_0.txt or copy at</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//  http://www.boost.org/LICENSE_1_0.txt)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  See http://www.boost.org/libs/test for the library home page.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//  File        : $RCSfile$</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  Version     : $Revision$</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Description : defines the is_cstring type trait</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// ***************************************************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BOOST_TEST_UTILS_IS_CSTRING_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BOOST_TEST_UTILS_IS_CSTRING_HPP</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Boost</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;boost/mpl/bool.hpp&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;boost/type_traits/is_same.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;boost/type_traits/decay.hpp&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;boost/type_traits/remove_pointer.hpp&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;boost/type_traits/remove_const.hpp&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;boost/type_traits/add_const.hpp&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//____________________________________________________________________________//</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>boost {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>unit_test {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// **************                  is_cstring                  ************** //</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>ut_detail {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl</a> : <span class="keyword">public</span> mpl::false_ {};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl_3_01_t_01const_01_5_01_4.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl</a>&lt;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> const*&gt; : <span class="keyword">public</span> <a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl&lt;T*&gt;</a> {};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl_3_01_t_01const_01_5const_01_01_4.html">   46</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl</a>&lt;<a class="code" href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> const* <span class="keyword">const</span>&gt; : <span class="keyword">public</span> <a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl&lt;T*&gt;</a> {};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl_3_01char_01_5_01_4.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl</a>&lt;char*&gt; : <span class="keyword">public</span> mpl::true_ {};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl_3_01wchar__t_01_5_01_4.html">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">is_cstring_impl</a>&lt;wchar_t*&gt; : <span class="keyword">public</span> mpl::true_ {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl.html">deduce_cstring_impl</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> boost::add_const&lt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">typename</span> boost::remove_pointer&lt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">typename</span> boost::decay&lt;T&gt;::type</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        &gt;::type</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    &gt;::type type;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl_3_01std_1_1basic__string_3_01_te364c115e823cbdef1a9cbfaadc8c7b9.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl.html">deduce_cstring_impl</a>&lt; std::basic_string&lt;T, std::char_traits&lt;T&gt; &gt; &gt; {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// const is required here</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> boost::add_const&lt;T&gt;::type type;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace ut_detail</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1is__cstring.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1is__cstring.html">is_cstring</a> : <span class="keyword">public</span> <a class="code" href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">ut_detail::is_cstring_impl</a>&lt;typename decay&lt;T&gt;::type&gt; {};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1is__cstring_3_01std_1_1basic__string_3_01_t_00_01std_1_1char__traits_3_01_t_01_4_01_4_01_4.html">   75</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1is__cstring.html">is_cstring</a>&lt; std::basic_string&lt;T, std::char_traits&lt;T&gt; &gt; &gt; : <span class="keyword">public</span> mpl::true_ {};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structboost_1_1unit__test_1_1deduce__cstring.html">   78</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structboost_1_1unit__test_1_1deduce__cstring.html">deduce_cstring</a> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        boost::remove_const&lt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">typename</span> boost::remove_reference&lt;T&gt;::type</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        &gt;::type U;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> ut_detail::deduce_cstring_impl&lt;U&gt;::type type;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace unit_test</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <span class="comment">// namespace boost</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // BOOST_TEST_UTILS_IS_CSTRING_HPP</span></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1ut__detail_1_1is__cstring__impl.html">boost::unit_test::ut_detail::is_cstring_impl</a></div><div class="ttdef"><b>Definition:</b> is_cstring.hpp:40</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1is__cstring_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1is__cstring.html">boost::unit_test::is_cstring</a></div><div class="ttdef"><b>Definition:</b> is_cstring.hpp:72</div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1deduce__cstring_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1deduce__cstring.html">boost::unit_test::deduce_cstring</a></div><div class="ttdef"><b>Definition:</b> is_cstring.hpp:78</div></div>
+<div class="ttc" id="ez-draw_09_09_8hpp_html_ab4ada4f5b7011a8a08fd77572ddabc1aab9ece18c950afbfa6b0fdbfa4ff731d3"><div class="ttname"><a href="ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aab9ece18c950afbfa6b0fdbfa4ff731d3">EZKeySym::T</a></div><div class="ttdoc">T (majuscule) </div></div>
+<div class="ttc" id="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl_html"><div class="ttname"><a href="structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl.html">boost::unit_test::ut_detail::deduce_cstring_impl</a></div><div class="ttdef"><b>Definition:</b> is_cstring.hpp:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_d05b36711d0097599a77fb982a5f2154.html">test</a></li><li class="navelem"><a class="el" href="dir_66abd0186e271d076d950b35434e717a.html">include</a></li><li class="navelem"><a class="el" href="dir_81c9430055cc944ad30943c187d349c0.html">boost</a></li><li class="navelem"><a class="el" href="dir_f5f19ec71c7e140332cdff2107507d3a.html">test</a></li><li class="navelem"><a class="el" href="dir_7ff1a9eaa7af31d24e72b2b0f489729a.html">utils</a></li><li class="navelem"><b>is_cstring.hpp</b></li>
+    <li class="footer">Généré le Jeudi 25 Mai 2017 15:37:02 pour Project c++ par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

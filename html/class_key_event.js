@@ -1,7 +1,10 @@
 var class_key_event =
 [
     [ "Key", "class_key_event.html#a3834189523a28dbfb5f9bf14881d285a", null ],
-    [ "KeyState", "class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc", null ],
+    [ "KeyState", "class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc", [
+      [ "KeyPressed", "class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325", null ],
+      [ "KeyReleased", "class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0", null ]
+    ] ],
     [ "KeyEvent", "class_key_event.html#a6a45c0cffa537cf79c41140bb04d5aaf", null ],
     [ "KeyEvent", "class_key_event.html#a552061a96df9513298e2016293f6a149", null ],
     [ "key", "class_key_event.html#a1516b65dbdf9635764288d7f35901eec", null ],

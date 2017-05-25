@@ -1,0 +1,4 @@
+var structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl_3_01std_1_1basic__string_3_01_te364c115e823cbdef1a9cbfaadc8c7b9 =
+[
+    [ "type", "structboost_1_1unit__test_1_1ut__detail_1_1deduce__cstring__impl_3_01std_1_1basic__string_3_01_te364c115e823cbdef1a9cbfaadc8c7b9.html#a4309c053259efcb5d75d20302c006b6e", null ]
+];
