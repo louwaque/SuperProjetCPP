@@ -15,6 +15,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "final", "classfinal.html", null ],
+    [ "Font", "class_font.html", null ],
     [ "GraphicsItem", "class_graphics_item.html", [
       [ "GraphicsAnimation", "class_graphics_animation.html", [
         [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]

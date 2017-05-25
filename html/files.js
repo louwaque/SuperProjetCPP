@@ -4,6 +4,7 @@ var files =
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Color.hpp", "_color_8hpp.html", null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp", "_event_8hpp.html", null ],
+    [ "/home/travis/build/L0L022/SuperProjetCPP/include/Font.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnimation.hpp", null, null ],
     [ "/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsBlinkAnimation.hpp", null, null ],

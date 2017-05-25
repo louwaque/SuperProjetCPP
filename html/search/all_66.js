@@ -18,5 +18,6 @@ var searchData=
   ['fillrgba',['fillRGBA',['../classfinal.html#a64cd7f6b066b7814e381391019eaee04',1,'final']]],
   ['filltriangle',['fillTriangle',['../class_e_z_window.html#a46467fde51fcc398e727c20800c19c10',1,'EZWindow']]],
   ['final',['final',['../classfinal.html',1,'']]],
-  ['first',['first',['../class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b',1,'GraphicsTriangle']]]
+  ['first',['first',['../class_graphics_triangle.html#ac35808361d51a1acd45b846862bf8a0b',1,'GraphicsTriangle']]],
+  ['font',['Font',['../class_font.html',1,'']]]
 ];

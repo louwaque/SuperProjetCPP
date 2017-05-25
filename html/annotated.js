@@ -8,6 +8,7 @@ var annotated =
     [ "EZPixel", "class_e_z_pixel.html", "class_e_z_pixel" ],
     [ "EZWindow", "class_e_z_window.html", "class_e_z_window" ],
     [ "final", "classfinal.html", "classfinal" ],
+    [ "Font", "class_font.html", "class_font" ],
     [ "GraphicsAnchor", "class_graphics_anchor.html", "class_graphics_anchor" ],
     [ "GraphicsAnimation", "class_graphics_animation.html", "class_graphics_animation" ],
     [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", "class_graphics_blink_animation" ],

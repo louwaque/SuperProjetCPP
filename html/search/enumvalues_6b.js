@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['k',['k',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966',1,'k():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c',1,'K():&#160;ez-draw++.hpp']]],
+  ['k',['K',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa660a38111995acbeb2820648e82f0d8c',1,'K():&#160;ez-draw++.hpp'],['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa35e96cc3ac62479052e84c7a9024f966',1,'k():&#160;ez-draw++.hpp']]],
   ['kp_5f0',['KP_0',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aaca44b2ff5b17ad46f145ba6762e9187a',1,'ez-draw++.hpp']]],
   ['kp_5f1',['KP_1',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa2f86521bc3f49b411e1c0f8f34f659e3',1,'ez-draw++.hpp']]],
   ['kp_5f2',['KP_2',['../ez-draw_09_09_8hpp.html#ab4ada4f5b7011a8a08fd77572ddabc1aa736e1673887af269c2920de5bda9c6a0',1,'ez-draw++.hpp']]],
