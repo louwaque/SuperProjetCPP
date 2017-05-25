@@ -4,6 +4,7 @@ project(SuperProjetCPP)
 
 add_definitions(-std=c++11)
 add_subdirectory(ez-lib)
+add_subdirectory(boost)
 
 include_directories(include)
 file(
@@ -11,21 +12,17 @@ file(
         SRC
         src/*.cpp
 )
-#list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 
 add_executable(app src/main.cpp ${SRC})
 target_link_libraries(app ez-lib)
 
 enable_testing()
-
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
-include_directories (${Boost_INCLUDE_DIRS})
-
 file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp)
 foreach(testSrc ${TEST_SRCS})
         get_filename_component(testName ${testSrc} NAME_WE)
         add_executable(${testName} ${testSrc} ${SRC})
-        target_link_libraries(${testName} ${Boost_LIBRARIES} ez-lib)
+        target_link_libraries(${testName} boost_test_framework ez-lib)
         set_target_properties(${testName} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_CURRENT_BINARY_DIR}/testBin)
         add_test(NAME ${testName}
                  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
