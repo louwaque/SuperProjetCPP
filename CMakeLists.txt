@@ -18,6 +18,7 @@ add_executable(app src/main.cpp ${SRC})
 target_link_libraries(app ez-lib)
 
 enable_testing()
+add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
 file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp)
 foreach(testSrc ${TEST_SRCS})
         get_filename_component(testName ${testSrc} NAME_WE)
@@ -27,6 +28,7 @@ foreach(testSrc ${TEST_SRCS})
         add_test(NAME ${testName}
                  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
                  COMMAND ${CMAKE_CURRENT_BINARY_DIR}/testBin/${testName})
+        add_dependencies(check ${testName})
 endforeach(testSrc)
 
 find_package(Doxygen)
