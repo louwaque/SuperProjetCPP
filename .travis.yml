@@ -23,7 +23,7 @@ addons:
       - doxygen-latex
       - doxygen-gui
       - graphviz
-      - libboost-dev
+      - libboost-all-dev
 
 # Build your code e.g. by calling make
 script:
