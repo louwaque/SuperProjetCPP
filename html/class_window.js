@@ -22,5 +22,6 @@ var class_window =
     [ "setHeight", "class_window.html#ab6f2fe7d5e5b9c34adca4ded6b783c5f", null ],
     [ "setVisible", "class_window.html#a6d19e406410cae24b821775361af4b23", null ],
     [ "setWidth", "class_window.html#a17204191d237e216538c2f90dbbf1a3f", null ],
+    [ "updateEvent", "class_window.html#a303f745cf1832be8c660d42119f804fd", null ],
     [ "width", "class_window.html#a2086bdcbdf7511074ab74ec613af06dc", null ]
 ];

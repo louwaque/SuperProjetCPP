@@ -417,7 +417,7 @@ Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsAnchor.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsCircle.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/GraphicsCircle.cpp...
 Preprocessing /home/travis/build/L0L022/Sup/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsSquare.hpp:7: warning: Compound GraphicsSquare is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:10: warning: Compound Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:11: warning: Compound Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsEllipse.hpp:7: warning: Compound GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:8: warning: Compound MainWindow is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Canvas.hpp:7: warning: Compound Canvas is not documented.
@@ -683,9 +683,11 @@ Generating code for file /home/tra/home/travis/build/L0L022/SuperProjetCPP/inclu
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:109: warning: Member isVisible() const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:113: warning: Member setVisible(const bool isVisible=true) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:117: warning: Member draw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:119: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:122: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:123: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:119: warning: Member update(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:121: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:124: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:125: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsItem.hpp:126: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:9: warning: Member GraphicsLine(GraphicsItem *parent=nullptr) (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:11: warning: Member first() (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsLine.hpp:15: warning: Member second() (function) of class GraphicsLine is not documented.
@@ -726,32 +728,34 @@ Generating code for file /home/tra/home/travis/build/L0L022/SuperProjetCPP/inclu
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:74: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsText.hpp:75: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/KeyEvent.hpp:23: warning: Member type(Event *Event) (function) of class KeyEvent is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:12: warning: Member drawEvent() (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:13: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:14: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:15: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:13: warning: Member drawEvent() (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:14: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:15: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:16: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:17: warning: Member updateEvent(const unsigned int time) (function) of class MainWindow is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MouseEvent.hpp:25: warning: Member type(Event *Event) (function) of class MouseEvent is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:72: warning: argument 'x' of command @param is not found in the argument list of Point::x()
 /home/travis/build/L0L022/SuperProjetCPP/include/Point.hpp:80: warning: argument 'y' of command @param is not found in the argument list of Point::y()
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:14: warning: Member MouseButton (enumeration) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:12: warning: Member Key (typedef) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:24: warning: Member Window(const size_t width=400, const size_t height=400, const std::string &title="") (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:27: warning: Member doubleBuffer() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:33: warning: Member width() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:37: warning: Member setWidth(const size_t width) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:41: warning: Member height() const  (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:45: warning: Member setHeight(const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:49: warning: Member resize(const size_t width, const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:61: warning: Member drawRequest() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:65: warning: Member canvas() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:71: warning: Member drawEvent() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:72: warning: Member resizeEvent(const size_t with, const size_t height) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:73: warning: Member closeEvent() (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:74: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:75: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:76: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:77: warning: Member keyPressEvent(const Key key) (function) of class Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:78: warning: Member keyReleaseEvent(const Key key) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:17: warning: Member MouseButton (enumeration) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:15: warning: Member Key (typedef) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:27: warning: Member Window(const size_t width=400, const size_t height=400, const std::string &title="") (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:30: warning: Member doubleBuffer() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:36: warning: Member width() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:40: warning: Member setWidth(const size_t width) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:44: warning: Member height() const  (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:48: warning: Member setHeight(const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:52: warning: Member resize(const size_t width, const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:64: warning: Member drawRequest() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:68: warning: Member canvas() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:74: warning: Member drawEvent() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:75: warning: Member resizeEvent(const size_t with, const size_t height) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:76: warning: Member closeEvent() (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:77: warning: Member mousePressEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:78: warning: Member mouseReleaseEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:79: warning: Member mouseMoveEvent(const Point &mousePos, const MouseButton button) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:80: warning: Member keyPressEvent(const Key key) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:81: warning: Member keyReleaseEvent(const Key key) (function) of class Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Window.hpp:83: warning: Member updateEvent(const unsigned int time) (function) of class Window is not documented.
 vis/build/L0L022/SuperProjetCPP/include/Color.hpp...
 Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/Event.hpp...
 Generating code for file /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsAnchor.hpp...
@@ -921,6 +925,6 @@ Patching output file 27/30
 Patching output file 28/30
 Patching output file 29/30
 Patching output file 30/30
-symbol cache used 883/65536 hits=42982 misses=883
-lookup cache used 862/65536 hits=3680 misses=878
+symbol cache used 892/65536 hits=43337 misses=892
+lookup cache used 871/65536 hits=3710 misses=887
 finished...

@@ -16,6 +16,7 @@ var class_graphics_item =
     [ "isVisible", "class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605", null ],
     [ "meDraw", "class_graphics_item.html#ab97734473720fa8365534448aa13733c", null ],
     [ "meIsOver", "class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc", null ],
+    [ "meUpdate", "class_graphics_item.html#a7da307cdcde806bc966d813f58643649", null ],
     [ "parent", "class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392", null ],
     [ "positionCorrector", "class_graphics_item.html#a29879be1c242b86be8fc7df42b3fbd8f", null ],
     [ "setAbsolute", "class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d", null ],
@@ -29,5 +30,6 @@ var class_graphics_item =
     [ "setZ", "class_graphics_item.html#acc364937b5031bc99455d18638f77af3", null ],
     [ "thick", "class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d", null ],
     [ "type", "class_graphics_item.html#aa892caff547a0fd1969898ee0740b186", null ],
+    [ "update", "class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2", null ],
     [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ]
 ];
