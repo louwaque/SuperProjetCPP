@@ -4,7 +4,6 @@ project(SuperProjetCPP)
 
 add_definitions(-std=c++11)
 add_subdirectory(ez-lib)
-add_subdirectory(boost)
 
 include_directories(include)
 file(
@@ -17,19 +16,24 @@ list(REMOVE_ITEM SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 add_executable(app src/main.cpp ${SRC})
 target_link_libraries(app ez-lib)
 
-enable_testing()
-add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
-file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp)
-foreach(testSrc ${TEST_SRCS})
-        get_filename_component(testName ${testSrc} NAME_WE)
-        add_executable(${testName} ${testSrc} ${SRC})
-        target_link_libraries(${testName} boost_test_framework ez-lib)
-        set_target_properties(${testName} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_CURRENT_BINARY_DIR}/testBin)
-        add_test(NAME ${testName}
-                 WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
-                 COMMAND ${CMAKE_CURRENT_BINARY_DIR}/testBin/${testName})
-        add_dependencies(check ${testName})
-endforeach(testSrc)
+find_package(Boost 1.64.0 COMPONENTS unit_test_framework)
+if(Boost_FOUND)
+  include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
+  
+  enable_testing()
+  add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
+  file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp)
+  foreach(testSrc ${TEST_SRCS})
+          get_filename_component(testName ${testSrc} NAME_WE)
+          add_executable(${testName} ${testSrc} ${SRC})
+          target_link_libraries(${testName} ${Boost_LIBRARIES} ez-lib)
+          set_target_properties(${testName} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_CURRENT_BINARY_DIR}/testBin)
+          add_test(NAME ${testName}
+                   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
+                   COMMAND ${CMAKE_CURRENT_BINARY_DIR}/testBin/${testName})
+          add_dependencies(check ${testName})
+  endforeach(testSrc)
+endif()
 
 find_package(Doxygen)
 if(DOXYGEN_FOUND)
