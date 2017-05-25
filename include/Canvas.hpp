@@ -3,6 +3,7 @@
 
 #include "../ez-lib/ez-draw++.hpp"
 #include "Point.hpp"
+#include "Font.hpp"
 
 class Canvas {
 public:
@@ -26,6 +27,10 @@ public:
 
   void setThick(const unsigned int thick = 1) {
     m_window.setThick(thick);
+  }
+
+  void setFont(const Font &font) {
+    m_window.setFont(font.id());
   }
 
   void drawPoint(const int x, const int y) {

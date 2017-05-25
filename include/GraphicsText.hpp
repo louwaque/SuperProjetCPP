@@ -10,6 +10,7 @@
  */
 
 #include "GraphicsItem.hpp"
+#include "Font.hpp"
 
 /*!
  * \class GraphicsText
@@ -57,6 +58,10 @@ public:
 
   inline void setText(const std::string &text = "") { m_text = text; }
 
+  inline Font font() const { return m_font; }
+
+  inline void setFont(const Font &font) { m_font = font; }
+
   inline EZAlign align() const { return m_align; }
 
   inline void setAlign(const EZAlign align = EZAlign::TL) {m_align = align; }
@@ -78,6 +83,7 @@ private:
 
   std::string m_text; /*!< Contenu de GraphicsText */
   //FIXME : Je veux mettre à la poubelle EZDraw
+  Font m_font;
   EZAlign m_align;
 };
 

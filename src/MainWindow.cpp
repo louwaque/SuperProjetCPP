@@ -18,7 +18,8 @@ MainWindow::MainWindow()
   point->setColor(Color(Color::Blue));
   GraphicsText *text = new GraphicsText("Je suis super fort !!!", point);
   text->setAnchor({0, 10});
-  text->setColor(Color(Color::Yellow));
+  text->setColor(Color(Color::Green));
+  text->setFont(Font::w12h24);
   GraphicsText *text1 = new GraphicsText("EZDraw c'est rigolo ^^", point);
   text1->setAnchor({10, 20});
   text1->setColor(Color(Color::Green));
@@ -40,10 +41,8 @@ MainWindow::MainWindow()
   triangle->third()->setAnchor(Point(30, 30));
 
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
-  rectangle->setThick(5);
-  rectangle->setAbsolute({100, 200});
-  rectangle->bottomRight()->setAnchor({10,50});
-
+  rectangle->setAbsolute(text->absolute());
+  rectangle->bottomRight()->setAnchor({text->font().width()*text->text().size(), text->font().height()});
 
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
