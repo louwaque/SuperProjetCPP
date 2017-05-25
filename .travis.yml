@@ -43,6 +43,7 @@ jobs:
       env:
         - CTEST_OUTPUT_ON_FAILURE=1
       script:
+        - cmake --version
         - curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2"
         - tar xf boost.tar.bz2
         - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$TRAVIS_BUILD_DIR/boost_1_64_0 .
