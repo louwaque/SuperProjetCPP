@@ -1,9 +1,9 @@
-#include <ez-lib/ez-draw++.hpp>
+#include <Application.hpp>
 #include "../include/MainWindow.hpp"
 
 int main() {
-  EZDraw d;
+  Application app;
   MainWindow w;
-  d.mainLoop();
+  app.exec();
   return 0;
 }
