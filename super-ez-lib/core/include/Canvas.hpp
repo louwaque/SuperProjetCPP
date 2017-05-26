@@ -1,7 +1,7 @@
 #ifndef CANVAS_HPP
 #define CANVAS_HPP
 
-#include "../ez-lib/ez-draw++.hpp"
+#include <ez-lib/ez-draw++.hpp>
 #include "Point.hpp"
 #include "Font.hpp"
 

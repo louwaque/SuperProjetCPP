@@ -1,4 +1,4 @@
-#include "../ez-lib/ez-draw++.hpp"
+#include <ez-lib/ez-draw++.hpp>
 #include "../include/MainWindow.hpp"
 
 int main() {

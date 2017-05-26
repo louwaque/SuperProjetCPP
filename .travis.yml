@@ -68,5 +68,7 @@ jobs:
         - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$TRAVIS_BUILD_DIR/boost_1_64_0 .
         - echo -en 'travis_fold:end:cmake\\r'
         - echo -en 'travis_fold:start:test\\r'
-        - make check
+        - make check-core
+        - make check-graphics
+        - make check-app
         - echo -en 'travis_fold:end:test\\r'

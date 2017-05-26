@@ -2,7 +2,7 @@
 #define EVENT_HPP
 
 #include <iostream>
-#include "../ez-lib/ez-draw++.hpp"
+#include <ez-lib/ez-draw++.hpp>
 
 /*!
  * \file Event.hpp
@@ -25,7 +25,7 @@ public:
     MouseType,
     KeyType
   };
-  
+
   Event() {};
   virtual ~Event() {};
 

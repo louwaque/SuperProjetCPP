@@ -10,7 +10,7 @@
  */
 
 #include "GraphicsItem.hpp"
-#include "Font.hpp"
+#include <Font.hpp>
 
 /*!
  * \class GraphicsText

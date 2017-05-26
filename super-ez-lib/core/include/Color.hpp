@@ -11,7 +11,7 @@
 
 #include <cstdint>
 #include <string>
-#include "../ez-lib/ez-draw++.hpp"
+#include <ez-lib/ez-draw++.hpp>
 
 /*!
  * \class Color

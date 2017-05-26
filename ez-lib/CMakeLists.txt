@@ -1,3 +1,5 @@
+project(EZLib)
+
 add_library(ez-lib ez-draw++.cpp)
 
 find_package(X11)

@@ -1,8 +1,8 @@
 #ifndef MAINWINDOW_HPP
 #define MAINWINDOW_HPP
 
-#include "Window.hpp"
-#include "GraphicsItem.hpp"
+#include <Window.hpp>
+#include <GraphicsItem.hpp>
 
 class MainWindow : public Window
 {

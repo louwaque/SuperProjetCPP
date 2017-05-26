@@ -5,9 +5,9 @@
 #include <set>
 #include <memory>
 #include <functional>
-#include "Color.hpp"
-#include "Canvas.hpp"
-#include "Event.hpp"
+#include <Color.hpp>
+#include <Canvas.hpp>
+#include <Event.hpp>
 
 class GraphicsItem {
 public:

@@ -9,7 +9,7 @@
  * \date 24 mai 2017
  */
 
-#include "GraphicsItem.hpp"
+#include <GraphicsItem.hpp>
 
 /*!
  * \class ToolsWindows

@@ -3,7 +3,7 @@
 
 #include <string>
 #include <chrono>
-#include "../ez-lib/ez-draw++.hpp"
+#include <ez-lib/ez-draw++.hpp>
 #include "Point.hpp"
 #include "Canvas.hpp"
 #include "MouseEvent.hpp"
