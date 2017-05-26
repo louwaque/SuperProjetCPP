@@ -11,6 +11,6 @@ var searchData=
   ['polygontype',['PolygonType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac',1,'GraphicsItem']]],
   ['poppoint',['popPoint',['../class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e',1,'GraphicsPolygon']]],
   ['position',['position',['../class_mouse_event.html#a99ec3c735c6e61b96d539c5638b23608',1,'MouseEvent']]],
-  ['positioncorrector',['PositionCorrector',['../class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64',1,'GraphicsItem::PositionCorrector()'],['../class_graphics_item.html#a29879be1c242b86be8fc7df42b3fbd8f',1,'GraphicsItem::positionCorrector() const ']]],
+  ['positioncorrector',['positionCorrector',['../class_graphics_item.html#a29879be1c242b86be8fc7df42b3fbd8f',1,'GraphicsItem::positionCorrector() const '],['../class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64',1,'GraphicsItem::PositionCorrector()']]],
   ['prototype',['prototype',['../jquery_8js.html#a27300e4442d1d6583d40af9f4aba4716',1,'jquery.js']]]
 ];

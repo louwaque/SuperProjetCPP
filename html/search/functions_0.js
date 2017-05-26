@@ -7,5 +7,7 @@ var searchData=
   ['ak',['aK',['../jquery_8js.html#a7d370833f2145fc5f6c371e98d754eb4',1,'jquery.js']]],
   ['align',['align',['../class_graphics_text.html#a553ad5e4ea55568406479f8df7636790',1,'GraphicsText']]],
   ['anchor',['anchor',['../class_graphics_item.html#a742f444cb7d1a142dec52ee777dd51c3',1,'GraphicsItem']]],
-  ['at',['at',['../jquery_8js.html#a31b1c836ab707421c59d8f31b49a8f68',1,'jquery.js']]]
+  ['application',['Application',['../class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8',1,'Application::Application()'],['../class_application.html#ad8296f5783011c3bf2f91c3fbb05ef64',1,'Application::Application(const Application &amp;src)=delete']]],
+  ['at',['at',['../jquery_8js.html#a31b1c836ab707421c59d8f31b49a8f68',1,'jquery.js']]],
+  ['autoquit',['autoQuit',['../class_application.html#afb3f586d4cd375fe146c63e57535cc8f',1,'Application']]]
 ];

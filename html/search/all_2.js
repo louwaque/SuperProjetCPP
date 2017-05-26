@@ -8,7 +8,7 @@ var searchData=
   ['black',['Black',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa43ff45db5a75e8116cf9f684670e73a8',1,'Color']]],
   ['blinkanimationtype',['BlinkAnimationType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa26ba6ed171b0103540e9c4ff0e85bc79',1,'GraphicsItem']]],
   ['blinkfrequency',['blinkFrequency',['../class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69',1,'GraphicsBlinkAnimation']]],
-  ['blue',['Blue',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb',1,'Color::Blue()'],['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color::blue() const ']]],
+  ['blue',['blue',['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color::blue() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb',1,'Color::Blue()']]],
   ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a1d46531794b6c92016cebc53d4eab9bf',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#aeda6a6d95b0089164e63400433d76e6f',1,'GraphicsSquare::bottomRight()']]],
   ['bq',['bq',['../jquery_8js.html#af6ee77c71b2c89bdb365145ac5ad1219',1,'jquery.js']]],
   ['bridge',['bridge',['../jquery_8js.html#a076eb0dcbd23c16543468b58486870f5',1,'jquery.js']]],

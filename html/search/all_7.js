@@ -53,6 +53,6 @@ var searchData=
   ['graphicstriangle_2ecpp',['GraphicsTriangle.cpp',['../_graphics_triangle_8cpp.html',1,'']]],
   ['graphicstriangle_2ehpp',['GraphicsTriangle.hpp',['../_graphics_triangle_8hpp.html',1,'']]],
   ['graphicstypes',['GraphicsTypes',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f',1,'GraphicsItem']]],
-  ['green',['Green',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea',1,'Color::Green()'],['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color::green() const ']]],
+  ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color::green() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea',1,'Color::Green()']]],
   ['grey',['Grey',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47',1,'Color']]]
 ];

@@ -1,5 +1,6 @@
 var annotated =
 [
+    [ "Application", "class_application.html", "class_application" ],
     [ "Canvas", "class_canvas.html", "class_canvas" ],
     [ "Color", "class_color.html", "class_color" ],
     [ "Event", "class_event.html", "class_event" ],

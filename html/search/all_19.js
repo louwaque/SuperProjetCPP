@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['z',['z',['../class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd',1,'GraphicsItem::z()'],['../jquery_8js.html#adc18d83abfd9f87d396e8fd6b6ac0fe1',1,'Z():&#160;jquery.js']]],
-  ['zoominfactor',['zoomInFactor',['../svgpan_8js.html#abbf7e8c3bbb1845b23b456466eced860',1,'svgpan.js']]],
-  ['zoomoutfactor',['zoomOutFactor',['../svgpan_8js.html#a27565b8081a3cb4a271adbd6643b2104',1,'svgpan.js']]],
-  ['zoomsteps',['zoomSteps',['../svgpan_8js.html#a6d80527ba73f9e48b00df893c3a2d02c',1,'svgpan.js']]]
+  ['y',['y',['../class_point.html#a2226d8a3fb283b0b3c1f69106df144ba',1,'Point::y() const '],['../class_point.html#ae0a6db47b72d0f1fd761bea4777eedf2',1,'Point::y()']]],
+  ['yellow',['Yellow',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972',1,'Color']]]
 ];

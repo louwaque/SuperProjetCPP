@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Application", "class_application.html", null ],
     [ "Canvas", "class_canvas.html", null ],
     [ "Color", "class_color.html", null ],
     [ "Event", "class_event.html", [
