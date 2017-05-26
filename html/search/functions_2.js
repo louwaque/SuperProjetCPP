@@ -2,7 +2,7 @@ var searchData=
 [
   ['c',['c',['../jquery_8js.html#a7cb128e50bb54a08588e510ed155372f',1,'jquery.js']]],
   ['cachedlink',['cachedLink',['../navtree_8js.html#aaa2d293f55e5fe3620af4f9a2836e428',1,'navtree.js']]],
-  ['canvas',['Canvas',['../class_canvas.html#a5225316a0b9bca9fbba19b0699581921',1,'Canvas::Canvas()'],['../class_window.html#a47ea2e0f003fc805b8ca14396dcbb747',1,'Window::canvas()']]],
+  ['canvas',['canvas',['../class_window.html#a47ea2e0f003fc805b8ca14396dcbb747',1,'Window::canvas()'],['../class_canvas.html#a5225316a0b9bca9fbba19b0699581921',1,'Canvas::Canvas()']]],
   ['center',['center',['../class_graphics_circle.html#a7c135c635ca0050546604d46384ebdc3',1,'GraphicsCircle::center()'],['../class_graphics_ellipse.html#a776e7226cde770d445f481e0983af7dd',1,'GraphicsEllipse::center()']]],
   ['children',['children',['../class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a',1,'GraphicsItem']]],
   ['clear',['clear',['../class_canvas.html#af5f2b17591e32f8aedc5ab4bb9e37e6c',1,'Canvas']]],
