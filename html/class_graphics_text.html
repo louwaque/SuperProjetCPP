@@ -208,6 +208,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7">isOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>)</td></tr>
 <tr class="separator:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb">hasFocus</a> () const </td></tr>
+<tr class="separator:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
@@ -265,6 +267,11 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
 &lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a></td></tr>
 <tr class="separator:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
+<tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ae17633bdf56258e2209ae335d0d1c3fa">focusItem</a> ()</td></tr>
+<tr class="separator:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a5877c4c5815eacb9876c7b99b119aef7">setFocusItem</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
+<tr class="separator:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Permet la creation de text. </p>
@@ -296,7 +303,7 @@ Membres hérités additionnels</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a>(parent), <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a>(<span class="stringliteral">&quot;&quot;</span>), <a class="code" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a>(), <a class="code" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a>(EZAlign::TL)</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
-<div class="ttc" id="class_graphics_item_html_a96c30111512bd4f198e9414b70bb3ccc"><div class="ttname"><a href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem::GraphicsItem</a></div><div class="ttdeci">GraphicsItem(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:4</div></div>
+<div class="ttc" id="class_graphics_item_html_a96c30111512bd4f198e9414b70bb3ccc"><div class="ttname"><a href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem::GraphicsItem</a></div><div class="ttdeci">GraphicsItem(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:7</div></div>
 <div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
 <div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
 <div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
@@ -415,7 +422,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aaafb8f8246e4d3b0d5dd8ac5cc8586cc_icgraph.svg" width="571" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aaafb8f8246e4d3b0d5dd8ac5cc8586cc_icgraph.svg" width="571" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -452,7 +459,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="ttc" id="class_canvas_html_a5a1d80b9cb71f235f3b9087feb481a5d"><div class="ttname"><a href="class_canvas.html#a5a1d80b9cb71f235f3b9087feb481a5d">Canvas::drawText</a></div><div class="ttdeci">void drawText(const EZAlign align, const int x, const int y, const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:70</div></div>
-<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:48</div></div>
+<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:51</div></div>
 <div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
 <div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
 <div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
@@ -616,6 +623,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </p>
 
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_ac42bb0e20251eb0dc2305be760714130_icgraph.svg" width="552" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aeb38c8c0df9473cde331540d9904d352"></a>
@@ -647,7 +662,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aeb38c8c0df9473cde331540d9904d352_icgraph.svg" width="376" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aeb38c8c0df9473cde331540d9904d352_icgraph.svg" width="100%" height="518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -756,7 +771,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_text.html">GraphicsText</a></li>
-    <li class="footer">Généré le Vendredi 26 Mai 2017 10:35:46 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 27 Mai 2017 13:09:10 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

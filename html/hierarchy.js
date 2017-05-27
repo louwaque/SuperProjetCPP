@@ -30,7 +30,10 @@ var hierarchy =
       ] ],
       [ "GraphicsSquare", "class_graphics_square.html", null ],
       [ "GraphicsText", "class_graphics_text.html", null ],
-      [ "ToolsWindows", "class_tools_windows.html", null ]
+      [ "ToolsWindows", "class_tools_windows.html", null ],
+      [ "Widget", "class_widget.html", [
+        [ "LineEdit", "class_line_edit.html", null ]
+      ] ]
     ] ],
     [ "Point", "class_point.html", null ]
 ];

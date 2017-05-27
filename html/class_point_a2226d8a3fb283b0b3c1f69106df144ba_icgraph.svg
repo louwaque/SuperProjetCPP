@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 360;
+var viewWidth = 524;
 var viewHeight = 583;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>Point::y</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-579 356,-579 356,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-579 520,-579 520,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
 <polygon fill="#bfbfbf" stroke="black" points="0,-283.5 0,-302.5 50,-302.5 50,-283.5 0,-283.5"/>
@@ -165,111 +165,155 @@ var sectionId = 'dynsection-3';
 <path fill="none" stroke="midnightblue" d="M60.3984,-293C71.118,-293 83.1901,-293 94.8415,-293"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="60.1954,-289.5 50.1953,-293 60.1953,-296.5 60.1954,-289.5"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429" target="_top" xlink:title="GraphicsRectangle::\lheight">
+<!-- Node13 -->
+<g id="node13" class="node"><title>Node13</title>
+<g id="a_node13"><a xlink:href="class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429" target="_top" xlink:title="GraphicsRectangle::\lheight">
 <polygon fill="white" stroke="black" points="95,-229 95,-259 201,-259 201,-229 95,-229"/>
 <text text-anchor="start" x="103" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsRectangle::</text>
 <text text-anchor="middle" x="148" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00">height</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node10 -->
-<g id="edge9" class="edge"><title>Node1&#45;&gt;Node10</title>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge12" class="edge"><title>Node1&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M58.921,-279.668C74.5985,-273.32 93.4193,-265.698 109.631,-259.133"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="57.5724,-276.438 49.6173,-283.436 60.1998,-282.927 57.5724,-276.438"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="permet la modification des valeurs du point. ">
+<!-- Node15 -->
+<g id="node15" class="node"><title>Node15</title>
+<g id="a_node15"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="permet la modification des valeurs du point. ">
 <polygon fill="white" stroke="black" points="118.5,-190.5 118.5,-209.5 177.5,-209.5 177.5,-190.5 118.5,-190.5"/>
 <text text-anchor="middle" x="148" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::set</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node12 -->
-<g id="edge11" class="edge"><title>Node1&#45;&gt;Node12</title>
+<!-- Node1&#45;&gt;Node15 -->
+<g id="edge15" class="edge"><title>Node1&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M36.7483,-274.735C47.333,-258.236 64.9454,-234.399 86,-220 95.6594,-213.394 107.657,-208.843 118.45,-205.771"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="33.6283,-273.126 31.3554,-283.474 39.5854,-276.802 33.6283,-273.126"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node"><title>Node13</title>
-<g id="a_node13"><a xlink:href="_point_8cpp.html#a872cb140a1e5f546a31b4b3d891b765a" target="_top" xlink:title="Surchage de l&#39;operateur ==. ">
+<!-- Node16 -->
+<g id="node16" class="node"><title>Node16</title>
+<g id="a_node16"><a xlink:href="_point_8cpp.html#a872cb140a1e5f546a31b4b3d891b765a" target="_top" xlink:title="Surchage de l&#39;operateur ==. ">
 <polygon fill="white" stroke="black" points="116,-152.5 116,-171.5 180,-171.5 180,-152.5 116,-152.5"/>
 <text text-anchor="middle" x="148" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator==</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node13 -->
-<g id="edge12" class="edge"><title>Node1&#45;&gt;Node13</title>
+<!-- Node1&#45;&gt;Node16 -->
+<g id="edge16" class="edge"><title>Node1&#45;&gt;Node16</title>
 <path fill="none" stroke="midnightblue" d="M31.3865,-273.507C39.2819,-248.51 56.372,-205.476 86,-181 94.4659,-174.006 105.507,-169.58 115.865,-166.782"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="27.9697,-272.717 28.4745,-283.3 34.6794,-274.713 27.9697,-272.717"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="_point_8cpp.html#a4158330ef851082d91a82eefd03aa183" target="_top" xlink:title="Surchage de l&#39;operateur +. ">
+<!-- Node17 -->
+<g id="node17" class="node"><title>Node17</title>
+<g id="a_node17"><a xlink:href="_point_8cpp.html#a4158330ef851082d91a82eefd03aa183" target="_top" xlink:title="Surchage de l&#39;operateur +. ">
 <polygon fill="white" stroke="black" points="119,-114.5 119,-133.5 177,-133.5 177,-114.5 119,-114.5"/>
 <text text-anchor="middle" x="148" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node14 -->
-<g id="edge13" class="edge"><title>Node1&#45;&gt;Node14</title>
+<!-- Node1&#45;&gt;Node17 -->
+<g id="edge17" class="edge"><title>Node1&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M28.4726,-273.044C33.492,-241.041 47.8455,-178.269 86,-143 94.9598,-134.718 107.482,-130.045 118.851,-127.409"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="24.9522,-272.943 27.0188,-283.334 31.8833,-273.922 24.9522,-272.943"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="_point_8cpp.html#af304a4bde169f417ea02e56d3d4b7258" target="_top" xlink:title="Surchage de l&#39;operateur &#45;. ">
+<!-- Node18 -->
+<g id="node18" class="node"><title>Node18</title>
+<g id="a_node18"><a xlink:href="_point_8cpp.html#af304a4bde169f417ea02e56d3d4b7258" target="_top" xlink:title="Surchage de l&#39;operateur &#45;. ">
 <polygon fill="white" stroke="black" points="120.5,-76.5 120.5,-95.5 175.5,-95.5 175.5,-76.5 120.5,-76.5"/>
 <text text-anchor="middle" x="148" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node15 -->
-<g id="edge14" class="edge"><title>Node1&#45;&gt;Node15</title>
+<!-- Node1&#45;&gt;Node18 -->
+<g id="edge18" class="edge"><title>Node1&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M26.5871,-272.931C28.8012,-234.814 39.0732,-151.6 86,-105 95.1299,-95.9336 108.511,-91.1825 120.415,-88.6975"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="23.0772,-273.075 26.127,-283.222 30.0702,-273.388 23.0772,-273.075"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="_point_8cpp.html#aab55cf13db83c55c46a961b2b2441960" target="_top" xlink:title="Surchage de l&#39;operateur &lt;&lt;. ">
+<!-- Node19 -->
+<g id="node19" class="node"><title>Node19</title>
+<g id="a_node19"><a xlink:href="_point_8cpp.html#aab55cf13db83c55c46a961b2b2441960" target="_top" xlink:title="Surchage de l&#39;operateur &lt;&lt;. ">
 <polygon fill="white" stroke="black" points="116,-38.5 116,-57.5 180,-57.5 180,-38.5 116,-38.5"/>
 <text text-anchor="middle" x="148" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&lt;&lt;</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node16 -->
-<g id="edge15" class="edge"><title>Node1&#45;&gt;Node16</title>
+<!-- Node1&#45;&gt;Node19 -->
+<g id="edge19" class="edge"><title>Node1&#45;&gt;Node19</title>
 <path fill="none" stroke="midnightblue" d="M25.2868,-273.182C24.8416,-229.744 30.0459,-125.381 86,-67 93.8286,-58.8318 105.103,-54.1564 115.834,-51.4871"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="21.79,-273.37 25.5093,-283.291 28.7883,-273.216 21.79,-273.37"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="_point_8cpp.html#a4e1acba0f26daf714b7816d3c1994a74" target="_top" xlink:title="Surchage de l&#39;operateur &lt;. ">
+<!-- Node20 -->
+<g id="node20" class="node"><title>Node20</title>
+<g id="a_node20"><a xlink:href="_point_8cpp.html#a4e1acba0f26daf714b7816d3c1994a74" target="_top" xlink:title="Surchage de l&#39;operateur &lt;. ">
 <polygon fill="white" stroke="black" points="119,-0.5 119,-19.5 177,-19.5 177,-0.5 119,-0.5"/>
 <text text-anchor="middle" x="148" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&lt;</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node17 -->
-<g id="edge16" class="edge"><title>Node1&#45;&gt;Node17</title>
+<!-- Node1&#45;&gt;Node20 -->
+<g id="edge20" class="edge"><title>Node1&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M27.9426,-273.317C33.7435,-218.388 52.6381,-65.0884 86,-29 94.4331,-19.8777 107.163,-15.1007 118.816,-12.6129"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="24.4402,-273.164 26.903,-283.468 31.4037,-273.877 24.4402,-273.164"/>
 </g>
+<!-- Node10 -->
+<g id="node10" class="node"><title>Node10</title>
+<g id="a_node10"><a xlink:href="class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446" target="_top" xlink:title="LineEdit::setText">
+<polygon fill="white" stroke="black" points="253.5,-281.5 253.5,-300.5 344.5,-300.5 344.5,-281.5 253.5,-281.5"/>
+<text text-anchor="middle" x="299" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">LineEdit::setText</text>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge9" class="edge"><title>Node9&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M211.211,-292.165C225.266,-291.976 239.92,-291.78 253.099,-291.603"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="211.065,-288.666 201.113,-292.3 211.159,-295.666 211.065,-288.666"/>
+</g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="class_graphics_rectangle.html#aea349ac359e4f2227f1da772c1a26ab6" target="_top" xlink:title="GraphicsRectangle::\lsetHeight">
-<polygon fill="white" stroke="black" points="246,-229 246,-259 352,-259 352,-229 246,-229"/>
-<text text-anchor="start" x="254" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsRectangle::</text>
-<text text-anchor="middle" x="299" y="-236" font-family="Helvetica,sans-Serif" font-size="10.00">setHeight</text>
+<g id="a_node11"><a xlink:href="class_line_edit.html#a04e1cd86821efe7570868ae397978186" target="_top" xlink:title="LineEdit::LineEdit">
+<polygon fill="white" stroke="black" points="405.5,-240.5 405.5,-259.5 498.5,-259.5 498.5,-240.5 405.5,-240.5"/>
+<text text-anchor="middle" x="452" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">LineEdit::LineEdit</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge10" class="edge"><title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M211.144,-244C222.712,-244 234.689,-244 245.916,-244"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="211.113,-240.5 201.113,-244 211.113,-247.5 211.113,-240.5"/>
+<path fill="none" stroke="midnightblue" d="M344.784,-278.84C367.513,-272.669 394.719,-265.282 415.907,-259.529"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="343.755,-275.493 335.022,-281.491 345.59,-282.248 343.755,-275.493"/>
+</g>
+<!-- Node12 -->
+<g id="node12" class="node"><title>Node12</title>
+<g id="a_node12"><a xlink:href="class_line_edit.html#a8d5e79e8a895901381e301d41d3d4343" target="_top" xlink:title="LineEdit::meHandleEvent">
+<polygon fill="white" stroke="black" points="388,-281.5 388,-300.5 516,-300.5 516,-281.5 388,-281.5"/>
+<text text-anchor="middle" x="452" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">LineEdit::meHandleEvent</text>
+</a>
+</g>
+</g>
+<!-- Node10&#45;&gt;Node12 -->
+<g id="edge11" class="edge"><title>Node10&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M354.931,-291C365.62,-291 376.905,-291 387.835,-291"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="354.896,-287.5 344.896,-291 354.896,-294.5 354.896,-287.5"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node"><title>Node14</title>
+<g id="a_node14"><a xlink:href="class_graphics_rectangle.html#aea349ac359e4f2227f1da772c1a26ab6" target="_top" xlink:title="GraphicsRectangle::\lsetHeight">
+<polygon fill="white" stroke="black" points="246,-231 246,-261 352,-261 352,-231 246,-231"/>
+<text text-anchor="start" x="254" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsRectangle::</text>
+<text text-anchor="middle" x="299" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">setHeight</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge13" class="edge"><title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M211.144,-244.834C222.712,-244.989 234.689,-245.15 245.916,-245.301"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="211.159,-241.334 201.113,-244.7 211.065,-248.334 211.159,-241.334"/>
+</g>
+<!-- Node14&#45;&gt;Node11 -->
+<g id="edge14" class="edge"><title>Node14&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M362.643,-247.659C376.921,-248.038 391.831,-248.433 405.248,-248.788"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="362.478,-244.154 352.389,-247.388 362.292,-251.151 362.478,-244.154"/>
 </g>
 </g>
 </svg>

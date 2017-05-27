@@ -20,9 +20,11 @@ var annotated =
     [ "GraphicsText", "class_graphics_text.html", "class_graphics_text" ],
     [ "GraphicsTriangle", "class_graphics_triangle.html", "class_graphics_triangle" ],
     [ "KeyEvent", "class_key_event.html", "class_key_event" ],
+    [ "LineEdit", "class_line_edit.html", "class_line_edit" ],
     [ "MainWindow", "class_main_window.html", "class_main_window" ],
     [ "MouseEvent", "class_mouse_event.html", "class_mouse_event" ],
     [ "Point", "class_point.html", "class_point" ],
     [ "ToolsWindows", "class_tools_windows.html", "class_tools_windows" ],
+    [ "Widget", "class_widget.html", "class_widget" ],
     [ "Window", "class_window.html", "class_window" ]
 ];
