@@ -57,8 +57,6 @@ MainWindow::MainWindow()
   rp3->relative().join(rectangle->bottomRight());
   rp3->relative().set(20, 20);
 
-  // std::cerr << rp1->relative() << '\n';
-
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
   polygon->setAbsolute({200, 100});
@@ -78,7 +76,13 @@ MainWindow::MainWindow()
   GraphicsSquare *square = new GraphicsSquare(&m_scene);
   square->setThick(5);
   square->setAbsolute({500, 100});
-  square->bottomRight()->setRelative({80, 50});
+  square->bottomRight().set(80, 50);
+
+  GraphicsPoint *sp1 = new GraphicsPoint(&m_scene);
+  sp1->relative().join(square->relative());
+
+  GraphicsPoint *sp2 = new GraphicsPoint(square);
+  sp2->relative().join(square->bottomRight());
 
   GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(square);
   blink->setBlinkFrequency(500);
