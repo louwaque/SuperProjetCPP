@@ -26,6 +26,12 @@ Point::~Point()
   beAlone();
 }
 
+Point &Point::operator=(const Point &src)
+{
+  set(src.m_x, src.m_y);
+  return *this;
+}
+
 void Point::setX(const int x)
 {
   m_x = x;

@@ -58,6 +58,8 @@ public:
 
   ~Point();
 
+  Point &operator=(const Point &src);
+
   /*!
    *  \brief recupere la valeur de l'absisse du Point.
    *
