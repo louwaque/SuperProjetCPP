@@ -61,7 +61,7 @@ jobs:
         - tar xf boost.tar.bz2
         - cd boost_1_64_0
         - ./bootstrap.sh
-        - ./b2 --with-test
+        - ./b2 --with-test --with-signals
         - cd ..
         - echo -en 'travis_fold:end:boost\\r'
         - echo -en 'travis_fold:start:cmake\\r'
