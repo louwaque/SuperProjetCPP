@@ -8,8 +8,11 @@
  * \version 0.1
  * \date 22 mai 2017
  */
-
+#include <boost/uuid/uuid.hpp>
+#include <boost/uuid/uuid_generators.hpp>
 #include <iostream>
+#include <map>
+#include <vector>
 
 /*!
  * \class Point
@@ -21,6 +24,8 @@
 class Point
 {
 public:
+  typedef boost::uuids::uuid Id;
+  typedef std::map<Id, std::vector<std::reference_wrapper<Point>>> GroupsPoints;
 
   /*!
    * \brief Constructeur par défaut de la classe Point.
@@ -49,7 +54,7 @@ public:
    * \param src : point à copier
    */
 
-  Point(const Point & src);
+  Point(const Point &src);
 
   ~Point();
 
@@ -61,6 +66,8 @@ public:
 
   inline int x() const { return m_x; }
 
+  void setX(const int x);
+
   /*!
    *  \brief  Fonction recuperant le valeur de l'ordonée.
    *
@@ -69,34 +76,26 @@ public:
 
   inline int y() const { return m_y; }
 
+  void setY(const int y);
+
   /*!
-   *  \brief  Fonction permettant la modification de la valeur de l'absisse x.
-   *
-   *  \param x l'absisse du point
-   */
-
- inline int &x() { return m_x;}
-
- /*!
-  *  \brief  Fonction permettant la modification de la valeur de l'ordonnée y.
-  *
-  *  \param y  l'ordonée du point.
-  */
-
- inline int &y() {return m_y;}
-
- /*!
   *  \brief  permet la modification des valeurs du point.
   *
   * \param x  l'absisse du point
   * \param y  l'ordonée du point
   */
 
- void set(const int x, const int y);
+  void set(const int x, const int y);
+
+  void join(Point &point);
+  void beAlone();
 
 private:
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
+
+  static GroupsPoints m_groups; //FIXME rm static
+  Id m_groupId;
 };
 
 /*!
