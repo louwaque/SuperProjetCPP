@@ -4,14 +4,12 @@
 #include <vector>
 #include <set>
 #include <memory>
-#include <functional>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
 
 class GraphicsItem {
 public:
-  typedef std::function<Point(const Point&)> PositionCorrector;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -57,7 +55,7 @@ public:
   inline Point &relative() { return m_position; }
 
   //FIXME rm virtual
-  virtual void setRelative(const Point &pos);
+  virtual void setRelative(const Point &pos) { m_position = pos; }
 
   Point absolute() const;
 
@@ -66,17 +64,6 @@ public:
 
   Color color() const {
     return m_color;
-  }
-
-  //FIXME le mettre dans la classe Point ?
-  PositionCorrector positionCorrector() const {
-    return m_positionCorrector;
-  }
-
-  //FIXME dire si c'est relative ou absolue
-  void setPositionCorrector(const PositionCorrector &fn) {
-    m_positionCorrector = fn;
-    setRelative(m_position);
   }
 
   int z() const {
@@ -138,7 +125,6 @@ private:
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
-  PositionCorrector m_positionCorrector;
   int m_z;
   Color m_color;
   unsigned int m_thick;

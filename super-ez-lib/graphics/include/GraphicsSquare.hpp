@@ -8,13 +8,9 @@ class GraphicsSquare : public GraphicsItem
 public:
   explicit GraphicsSquare(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *topLeft() {
-    return m_topLeft;
-  }
+  inline Point &topLeft() { return m_topLeft; }
 
-  GraphicsItem *bottomRight() {
-    return m_bottomRight;
-  }
+  inline Point &bottomRight() { return m_bottomRight; }
 
   GraphicsTypes type() const {
     return SquareType;
@@ -25,7 +21,7 @@ protected:
   bool meIsOver(const Point &absoluteP);
 
 private:
-  GraphicsItem *m_topLeft, *m_bottomRight;
+  Point m_topLeft, m_bottomRight;
 };
 
 #endif
