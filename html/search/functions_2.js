@@ -11,6 +11,7 @@ var searchData=
   ['color',['Color',['../class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2',1,'Color::Color(const Colors color=Black)'],['../class_color.html#aa71f228de4c860d6186c1c6341ccaf3b',1,'Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue)'],['../class_color.html#adc2dc1409a554d34d7d4d389f726ee77',1,'Color::Color(const double hue, const double saturation, const double value)'],['../class_color.html#a1c908cbcc0ba8bd7baccf5eb0a48eac2',1,'Color::Color(const ulong grey)'],['../class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2',1,'GraphicsItem::color()']]],
   ['configurenotify',['configureNotify',['../class_window.html#aac49572c9c91f8eb30d581cc94fce49d',1,'Window']]],
   ['converttoid',['convertToId',['../search_8js.html#a196a29bd5a5ee7cd5b485e0753a49e57',1,'search.js']]],
+  ['corrector',['corrector',['../class_point.html#a7d6fccf089cda7dcd4267063a3a4c94e',1,'Point']]],
   ['createindent',['createIndent',['../navtree_8js.html#a4d8f406d49520a0cede2e48347a3d7aa',1,'navtree.js']]],
   ['createresults',['createResults',['../search_8js.html#a6b2c651120de3ed1dcf0d85341d51895',1,'search.js']]]
 ];
