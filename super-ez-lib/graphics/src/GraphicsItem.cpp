@@ -1,5 +1,8 @@
 #include "../include/GraphicsItem.hpp"
+#include <MouseEvent.hpp>
 #include <iostream>
+
+GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
 : m_parent(nullptr), m_children(), m_anchor(), m_positionCorrector(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
@@ -85,6 +88,17 @@ void GraphicsItem::update(const unsigned int time)
 
 void GraphicsItem::handleEvent(const Event &event)
 {
+  if (event.type() == Event::MouseType) {
+    const MouseEvent &mouse = dynamic_cast<const MouseEvent&>(event);
+    if (mouse.button() == MouseEvent::LeftButton &&
+        mouse.state() == MouseEvent::ButtonPressed) {
+          if (isOver(mouse.position()))
+            setFocusItem(this);
+          else if (focusItem() == this)
+            setFocusItem(nullptr);
+      }
+  }
+
   for (auto &ptr : m_children)
     ptr->handleEvent(event);
 

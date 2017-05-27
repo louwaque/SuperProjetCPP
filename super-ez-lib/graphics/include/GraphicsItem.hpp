@@ -125,6 +125,10 @@ public:
 
   bool isOver(const Point &p);
 
+  inline static GraphicsItem *focusItem() { return m_focusItem; };
+  inline static void setFocusItem(GraphicsItem *item) { m_focusItem = item; }
+  inline bool hasFocus() const { return m_focusItem == this; };
+
 protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
@@ -134,6 +138,7 @@ protected:
 private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
+  static GraphicsItem *m_focusItem;
   Point m_anchor;
   PositionCorrector m_positionCorrector;
   int m_z;
