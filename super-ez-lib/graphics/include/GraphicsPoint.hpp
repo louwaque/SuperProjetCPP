@@ -25,6 +25,7 @@ public:
 
 protected:
   void meDraw(Canvas *canvas);
+  void meHandleEvent(const Event &event);
   bool meIsOver(const Point &absoluteP);
 
 private:
