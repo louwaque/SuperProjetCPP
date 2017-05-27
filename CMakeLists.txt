@@ -7,6 +7,7 @@ add_definitions(-std=c++11)
 include_directories(SYSTEM .)
 include_directories(SYSTEM super-ez-lib/core/include)
 include_directories(SYSTEM super-ez-lib/graphics/include)
+include_directories(SYSTEM super-ez-lib/widget/include)
 add_subdirectory(ez-lib)
 add_subdirectory(super-ez-lib)
 
@@ -18,7 +19,7 @@ file(
 )
 
 add_executable(app ${SRC})
-target_link_libraries(app super-ez-lib-graphics)
+target_link_libraries(app super-ez-lib-widget)
 
 find_package(Boost 1.64.0 COMPONENTS unit_test_framework)
 if(Boost_FOUND)
@@ -31,7 +32,7 @@ if(Boost_FOUND)
   foreach(testSrc ${TEST_SRCS})
           get_filename_component(testName ${testSrc} NAME_WE)
           add_executable(${testName} ${testSrc} ${SRC})
-          target_link_libraries(${testName} ${Boost_LIBRARIES} super-ez-lib-graphics)
+          target_link_libraries(${testName} ${Boost_LIBRARIES} super-ez-lib-widget)
           set_target_properties(${testName} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_CURRENT_BINARY_DIR}/testBin)
           add_test(NAME ${testName}
                    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
