@@ -70,5 +70,6 @@ jobs:
         - echo -en 'travis_fold:start:test\\r'
         - make check-core
         - make check-graphics
+        - make check-widget
         - make check-app
         - echo -en 'travis_fold:end:test\\r'
