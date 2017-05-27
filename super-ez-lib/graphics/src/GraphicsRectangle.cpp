@@ -14,7 +14,7 @@ void GraphicsRectangle::meDraw(Canvas *canvas)
 {
   if (canvas)
     canvas->drawRectangle(topLeft()->absolute(), bottomRight()->absolute(), isFill());
-    
+
 }
 
 bool GraphicsRectangle::meIsOver(const Point &absoluteP)
@@ -24,11 +24,10 @@ bool GraphicsRectangle::meIsOver(const Point &absoluteP)
 
 void GraphicsRectangle::setWidth(const size_t width)
 {
-  m_bottomRight->setAbsolute(Point(width,m_bottomRight->absolute().y()));
+  m_bottomRight->setAnchor(Point(width, m_bottomRight->anchor().y()));
 }
 
-
-void GraphicsRectangle::setHeight( const size_t height)
+void GraphicsRectangle::setHeight(const size_t height)
 {
-   m_topLeft->setAbsolute(Point(m_topLeft->absolute().x(),height));
+   m_bottomRight->setAnchor(Point(m_bottomRight->anchor().x(), height));
 }
