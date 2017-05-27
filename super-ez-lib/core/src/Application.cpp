@@ -3,7 +3,7 @@
 bool Application::m_instantiated = false;
 
 Application::Application()
-: m_ezdraw(nullptr), m_autoQuit(false)
+: m_ezdraw(nullptr), m_autoQuit(true)
 {
   if (m_instantiated)
     throw std::runtime_error("Application is already instantiated");
