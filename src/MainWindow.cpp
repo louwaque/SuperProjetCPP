@@ -9,6 +9,7 @@
 #include "../include/GraphicsEllipse.hpp"
 #include "../include/GraphicsSquare.hpp"
 #include "../include/GraphicsBlinkAnimation.hpp"
+#include <LineEdit.hpp>
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
@@ -67,6 +68,9 @@ MainWindow::MainWindow()
 
   GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(square);
   blink->setBlinkFrequency(500);
+
+  LineEdit *lineEdit = new LineEdit(&m_scene);
+  lineEdit->setAbsolute({100, 500});
 }
 
 void MainWindow::drawEvent()
@@ -76,23 +80,23 @@ void MainWindow::drawEvent()
 
 void MainWindow::mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
-  for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
-    if (item->isOver(mousePos))
-      currentItem = item;
-  }
+  // for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
+  //   if (item->isOver(mousePos))
+  //     currentItem = item;
+  // }
 }
 
 void MainWindow::mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
-  currentItem = nullptr;
+  // currentItem = nullptr;
 }
 
 void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
-  if (currentItem) {
-    currentItem->setAbsolute(mousePos);
-    drawRequest();
-  }
+  // if (currentItem) {
+  //   currentItem->setAbsolute(mousePos);
+  //   drawRequest();
+  // }
 }
 
 void MainWindow::updateEvent(const unsigned int time)
