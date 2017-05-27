@@ -4,30 +4,29 @@
 
 
 GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
-: GraphicsItem(parent), m_topLeft(nullptr), m_bottomRight(nullptr)
+: GraphicsItem(parent),
+  m_topLeft(),
+  m_bottomRight()
 {
-  m_topLeft = new GraphicsAnchor(this);
-  m_bottomRight = new GraphicsPoint(this);
 }
 
 void GraphicsRectangle::meDraw(Canvas *canvas)
 {
   if (canvas)
-    canvas->drawRectangle(topLeft()->absolute(), bottomRight()->absolute(), isFill());
-
+    canvas->drawRectangle(absolute() + m_topLeft, absolute() + m_bottomRight, isFill());
 }
 
 bool GraphicsRectangle::meIsOver(const Point &absoluteP)
 {
-  return topLeft()->absolute() < absoluteP and absoluteP < bottomRight()->absolute();
+  return absolute() + m_topLeft < absoluteP and absoluteP < absolute() + m_bottomRight;
 }
 
 void GraphicsRectangle::setWidth(const size_t width)
 {
-  m_bottomRight->setAnchor(Point(width, m_bottomRight->anchor().y()));
+  m_bottomRight.setX(width);
 }
 
 void GraphicsRectangle::setHeight(const size_t height)
 {
-   m_bottomRight->setAnchor(Point(m_bottomRight->anchor().x(), height));
+  m_bottomRight.setY(height);
 }

@@ -6,18 +6,18 @@ GraphicsAnchor::GraphicsAnchor(GraphicsItem *parent)
   setColor(Color(Color::Red));
 }
 
-void GraphicsAnchor::setAnchor(const Point &anchor)
+void GraphicsAnchor::setRelative(const Point &pos)
 {
   if(parent())
-    parent()->setAnchor(anchor);
+    parent()->setRelative(pos);
 }
 
 void GraphicsAnchor::setAbsolute(const Point &pos)
 {
   if (parent()) {
     if (parent()->parent())
-      parent()->setAnchor(pos - parent()->parent()->absolute());
+      parent()->setRelative(pos - parent()->parent()->absolute());
     else
-      parent()->setAnchor(pos);
+      parent()->setRelative(pos);
   }
 }

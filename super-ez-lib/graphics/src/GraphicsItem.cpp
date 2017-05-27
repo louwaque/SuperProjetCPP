@@ -5,7 +5,7 @@
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
-: m_parent(nullptr), m_children(), m_anchor(), m_positionCorrector(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
+: m_parent(nullptr), m_children(), m_position(), m_positionCorrector(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
 {
   setParent(parent);
 }
@@ -48,20 +48,28 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter
   return list;
 }
 
+void GraphicsItem::setRelative(const Point &pos)
+{
+  if (m_positionCorrector)
+    m_position = m_positionCorrector(pos);
+  else
+    m_position = pos;
+}
+
 Point GraphicsItem::absolute() const
 {
   if (m_parent)
-    return m_anchor + m_parent->absolute();
+    return m_position + m_parent->absolute();
   else
-    return m_anchor;
+    return m_position;
 }
 
 void GraphicsItem::setAbsolute(const Point &pos)
 {
   if (m_parent)
-    setAnchor(pos - m_parent->absolute());
+    setRelative(pos - m_parent->absolute());
   else
-    setAnchor(pos);
+    setRelative(pos);
 }
 
 void GraphicsItem::draw(Canvas *canvas)

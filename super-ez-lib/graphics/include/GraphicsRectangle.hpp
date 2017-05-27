@@ -39,26 +39,27 @@ public:
    *
    */
 
-  inline GraphicsItem *topLeft() { return m_topLeft; }
+  inline Point &topLeft() { return m_topLeft; }
 
-  inline GraphicsItem *bottomRight() { return m_bottomRight; }
+  inline Point &bottomRight() { return m_bottomRight; }
 
   inline GraphicsTypes type() const { return RectangleType; }
 
-  inline size_t width() const { return std::abs(m_bottomRight->absolute().x() - m_topLeft->absolute().x()); }
+  inline size_t width() const { return std::abs(m_bottomRight.x() - m_topLeft.x()); }
 
   void setWidth(const size_t width);
 
-  inline size_t height() const { return std::abs(m_bottomRight->absolute().y() - m_topLeft->anchor().y()); }
+  inline size_t height() const { return std::abs(m_bottomRight.y() - m_topLeft.y()); }
 
-  void setHeight( const size_t height);
+  void setHeight(const size_t height);
 
+protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);
 
 private:
-
-  GraphicsItem *m_topLeft, *m_bottomRight;
+  //FIXME topLeft vraiment utile ?
+  Point m_topLeft, m_bottomRight;
 };
 
 

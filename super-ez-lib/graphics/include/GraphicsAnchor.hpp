@@ -8,7 +8,7 @@ class GraphicsAnchor : public GraphicsPoint
 public:
   explicit GraphicsAnchor(GraphicsItem *parent = nullptr);
 
-  void setAnchor(const Point &anchor);
+  void setRelative(const Point &pos);
   void setAbsolute(const Point &pos);
 
   GraphicsTypes type() const {

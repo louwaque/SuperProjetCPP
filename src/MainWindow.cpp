@@ -18,11 +18,11 @@ MainWindow::MainWindow()
   point->setAbsolute({50, 50});
   point->setColor(Color(Color::Blue));
   GraphicsText *text = new GraphicsText("Je suis super fort !!!", point);
-  text->setAnchor({0, 10});
+  text->setRelative({0, 10});
   text->setColor(Color(Color::Green));
   text->setFont(Font::w12h24);
   GraphicsText *text1 = new GraphicsText("EZDraw c'est rigolo ^^", point);
-  text1->setAnchor({10, 20});
+  text1->setRelative({10, 20});
   text1->setColor(Color(Color::Green));
 
   GraphicsPoint *point2 = new GraphicsPoint(&m_scene);
@@ -33,17 +33,31 @@ MainWindow::MainWindow()
 
   GraphicsLine *line = new GraphicsLine(&m_scene);
   line->setAbsolute({50, 100});
-  line->second()->setAnchor({80, 20});
+  line->second()->setRelative({80, 20});
 
   GraphicsTriangle *triangle = new GraphicsTriangle(&m_scene);
   triangle->setFill(true);
   triangle->setAbsolute({200, 20});
-  triangle->second()->setAnchor(Point(-30, 30));
-  triangle->third()->setAnchor(Point(30, 30));
+  triangle->second()->setRelative(Point(-30, 30));
+  triangle->third()->setRelative(Point(30, 30));
 
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
   rectangle->setAbsolute(text->absolute());
-  rectangle->bottomRight()->setAnchor({text->font().width()*text->text().size(), text->font().height()});
+  rectangle->bottomRight().set(text->font().width()*text->text().size(), text->font().height());
+
+  GraphicsPoint *rp1 = new GraphicsPoint(&m_scene);
+  rp1->relative().join(rectangle->relative());
+  rp1->relative().set(0, 0);
+
+  GraphicsPoint *rp2 = new GraphicsPoint(rectangle);
+  rp2->relative().join(rectangle->topLeft());
+  rp2->relative().set(10, 10);
+
+  GraphicsPoint *rp3 = new GraphicsPoint(rectangle);
+  rp3->relative().join(rectangle->bottomRight());
+  rp3->relative().set(20, 20);
+
+  // std::cerr << rp1->relative() << '\n';
 
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
@@ -53,18 +67,18 @@ MainWindow::MainWindow()
 
   GraphicsCircle *circle = new GraphicsCircle(&m_scene);
   circle->setAbsolute({100, 300});
-  circle->radius()->setAnchor({50, 50});
+  circle->radius()->setRelative({50, 50});
 
   new GraphicsBlinkAnimation(Color(Color::Blue), circle);
 
   GraphicsEllipse *ellipse = new GraphicsEllipse(&m_scene);
   ellipse->setAbsolute({200, 300});
-  ellipse->radius()->setAnchor({100, 50});
+  ellipse->radius()->setRelative({100, 50});
 
   GraphicsSquare *square = new GraphicsSquare(&m_scene);
   square->setThick(5);
   square->setAbsolute({500, 100});
-  square->bottomRight()->setAnchor({80, 50});
+  square->bottomRight()->setRelative({80, 50});
 
   GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(square);
   blink->setBlinkFrequency(500);

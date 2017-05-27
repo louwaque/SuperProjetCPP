@@ -6,10 +6,10 @@ GraphicsPoint::GraphicsPoint(GraphicsItem *parent)
 {
 }
 
-GraphicsPoint::GraphicsPoint(const Point &anchor, GraphicsItem *parent)
+GraphicsPoint::GraphicsPoint(const Point &pos, GraphicsItem *parent)
 : GraphicsPoint(parent)
 {
-  setAnchor(anchor);
+  setRelative(pos);
 }
 
 void GraphicsPoint::meDraw(Canvas *canvas)

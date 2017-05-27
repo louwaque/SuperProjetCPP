@@ -53,32 +53,30 @@ public:
 
   GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
 
-  Point anchor() const {
-    return m_anchor;
-  }
+  inline Point relative() const { return m_position; }
+  inline Point &relative() { return m_position; }
 
-  virtual void setAnchor(const Point &anchor) {
-    if (m_positionCorrector)
-      m_anchor = m_positionCorrector(anchor);
-    else
-      m_anchor = anchor;
-  }
+  //FIXME rm virtual
+  virtual void setRelative(const Point &pos);
 
   Point absolute() const;
 
+  //FIXME rm virtual
   virtual void setAbsolute(const Point &pos);
 
   Color color() const {
     return m_color;
   }
 
+  //FIXME le mettre dans la classe Point ?
   PositionCorrector positionCorrector() const {
     return m_positionCorrector;
   }
 
+  //FIXME dire si c'est relative ou absolue
   void setPositionCorrector(const PositionCorrector &fn) {
     m_positionCorrector = fn;
-    setAnchor(m_anchor);
+    setRelative(m_position);
   }
 
   int z() const {
@@ -139,7 +137,7 @@ private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
-  Point m_anchor;
+  Point m_position;
   PositionCorrector m_positionCorrector;
   int m_z;
   Color m_color;
