@@ -16,7 +16,10 @@ Point::Point(int x, int y)
 {}
 
 Point::Point(const Point &src)
-: Point(src.m_x, src.m_y)
+: m_x(src.m_x),
+  m_y(src.m_y),
+  m_groupId(boost::uuids::nil_uuid()),
+  m_corrector(src.m_corrector)
 {
   //FIXME les deux sont dans le même groupe ? je ne pense pas
 }
@@ -32,37 +35,22 @@ Point &Point::operator=(const Point &src)
   return *this;
 }
 
-void Point::setX(const int x)
+void Point::set(const int x, const int y)
 {
-  m_x = x;
-
-  if (!m_groupId.is_nil())
-    for (Point &p : m_groups[m_groupId])
-      if (p.m_x != m_x)
-        p.m_x = m_x;
-}
-
-void Point::setY(const int y)
-{
-  m_y = y;
-
-  if (!m_groupId.is_nil())
-    for (Point &p : m_groups[m_groupId])
-      if (p.m_y != m_y)
-        p.m_y = m_y;
-}
-
-void Point::set(const int x, const int y) {
-  m_x = x;
-  m_y = y;
-
   if (!m_groupId.is_nil()) {
+    Point newP(x, y);
+
+    for (Point &p : m_groups[m_groupId])
+      if (p.corrector())
+        newP = p.corrector()(newP);
+
     for (Point &p : m_groups[m_groupId]) {
-      if (p.m_x != m_x || p.m_y != m_y) {
-        p.m_x = m_x;
-        p.m_y = m_y;
-      }
+      p.m_x = newP.m_x;
+      p.m_y = newP.m_y;
     }
+  } else {
+    m_x = x;
+    m_y = y;
   }
 }
 
@@ -78,7 +66,7 @@ void Point::join(Point &point)
   m_groupId = point.m_groupId;
   m_groups[m_groupId].push_back(*this);
 
-  set(point.x(), point.y());
+  *this = point;
 }
 
 void Point::beAlone()

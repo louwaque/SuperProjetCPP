@@ -13,6 +13,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <functional>
 
 /*!
  * \class Point
@@ -26,6 +27,7 @@ class Point
 public:
   typedef boost::uuids::uuid Id;
   typedef std::map<Id, std::vector<std::reference_wrapper<Point>>> GroupsPoints;
+  typedef std::function<Point(const Point&)> Corrector;
 
   /*!
    * \brief Constructeur par défaut de la classe Point.
@@ -68,7 +70,7 @@ public:
 
   inline int x() const { return m_x; }
 
-  void setX(const int x);
+  inline void setX(const int x) { set(x, m_y); }
 
   /*!
    *  \brief  Fonction recuperant le valeur de l'ordonée.
@@ -78,7 +80,7 @@ public:
 
   inline int y() const { return m_y; }
 
-  void setY(const int y);
+  inline void setY(const int y) { set(m_x, y); }
 
   /*!
   *  \brief  permet la modification des valeurs du point.
@@ -89,8 +91,13 @@ public:
 
   void set(const int x, const int y);
 
+  inline void set(const Point &point) { set(point.m_x, point.m_y); }
+
   void join(Point &point);
   void beAlone();
+
+  inline Corrector corrector() const { return m_corrector; }
+  inline void setCorrector(const Corrector &fn) { m_corrector = fn; }
 
 private:
   int m_x; /*!< Abscisse du Point*/
@@ -98,6 +105,8 @@ private:
 
   static GroupsPoints m_groups; //FIXME rm static
   Id m_groupId;
+
+  Corrector m_corrector;
 };
 
 /*!
