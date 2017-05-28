@@ -4,7 +4,7 @@ var searchData=
   ['pages_5f0_2ejs',['pages_0.js',['../pages__0_8js.html',1,'']]],
   ['parent',['parent',['../class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392',1,'GraphicsItem']]],
   ['platform_5fid',['PLATFORM_ID',['../_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp']]],
-  ['point',['Point',['../class_point.html',1,'Point'],['../class_point.html#ad92f2337b839a94ce97dcdb439b4325a',1,'Point::Point()'],['../class_point.html#a001c4958c310b248f5c26037aea38a9c',1,'Point::Point(int x, int y)'],['../class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1',1,'Point::Point(const Point &amp;src)']]],
+  ['point',['Point',['../class_point.html',1,'Point'],['../class_point.html#ad92f2337b839a94ce97dcdb439b4325a',1,'Point::Point()'],['../class_point.html#a001c4958c310b248f5c26037aea38a9c',1,'Point::Point(int x, int y)'],['../class_point.html#aa4813a55ef1c858da70d4a1f11d96859',1,'Point::Point(const CorrectorList &amp;fixed)'],['../class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1',1,'Point::Point(const Point &amp;src)']]],
   ['point_2ecpp',['Point.cpp',['../_point_8cpp.html',1,'']]],
   ['point_2ehpp',['Point.hpp',['../_point_8hpp.html',1,'']]],
   ['pointtype',['PointType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fae51e7f831f089c84eb2ce600219ce81e',1,'GraphicsItem']]],

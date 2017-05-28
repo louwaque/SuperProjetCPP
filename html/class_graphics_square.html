@@ -154,12 +154,12 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:aed0cec95681d8c30111700df153bea9f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e7a7cd02bfbfcae360998bb7469f70 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad7e7a7cd02bfbfcae360998bb7469f70">relative</a> ()</td></tr>
 <tr class="separator:ad7e7a7cd02bfbfcae360998bb7469f70 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">setRelative</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
-<tr class="separator:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a> () const </td></tr>
 <tr class="separator:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
-<tr class="separator:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">setRelative</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
+<tr class="separator:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a0964502bdc810a0684c9bb9b08f86 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a53a0964502bdc810a0684c9bb9b08f86">setAbsolute</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
+<tr class="separator:a53a0964502bdc810a0684c9bb9b08f86 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a> () const </td></tr>
 <tr class="separator:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a> () const </td></tr>
@@ -272,25 +272,21 @@ Membres hérités additionnels</h2></td></tr>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;: <a class="code" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a>(parent),</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">m_topLeft</a>(),</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>()</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>.<a class="code" href="class_point.html#a71560f97d35c805ede75a6f85944b17e">setCorrector</a>([<span class="keyword">this</span>](<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos) {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_point.html">Point</a> diffP(pos - <a class="code" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">m_topLeft</a>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">double</span> radius = std::hypot(diffP.x(), diffP.y());</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (pos &lt; <a class="code" href="class_point.html">Point</a>()) radius = - radius;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  });</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>({[<span class="keyword">this</span>](<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_point.html">Point</a> diffP(pos - <a class="code" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">m_topLeft</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">double</span> radius = std::hypot(diffP.x(), diffP.y());</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (pos &lt; <a class="code" href="class_point.html">Point</a>()) radius = - radius;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }})</div>
 <div class="ttc" id="class_graphics_item_html_a96c30111512bd4f198e9414b70bb3ccc"><div class="ttname"><a href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem::GraphicsItem</a></div><div class="ttdeci">GraphicsItem(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:7</div></div>
 <div class="ttc" id="class_graphics_square_html_ae0e176d7c28e417c9c23053617357cbe"><div class="ttname"><a href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">GraphicsSquare::m_topLeft</a></div><div class="ttdeci">Point m_topLeft</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
-<div class="ttc" id="class_point_html_a71560f97d35c805ede75a6f85944b17e"><div class="ttname"><a href="class_point.html#a71560f97d35c805ede75a6f85944b17e">Point::setCorrector</a></div><div class="ttdeci">void setCorrector(const Corrector &amp;fn)</div><div class="ttdef"><b>Definition:</b> Point.hpp:100</div></div>
 <div class="ttc" id="class_graphics_square_html_acf907b3cc8372d3cdb7dd8854b90125d"><div class="ttname"><a href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">GraphicsSquare::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:25</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_square_a14374df804233349ce8654bbe41531e7_cgraph.svg" width="368" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_square_a14374df804233349ce8654bbe41531e7_cgraph.svg" width="302" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -321,14 +317,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>; }</div>
 <div class="ttc" id="class_graphics_square_html_acf907b3cc8372d3cdb7dd8854b90125d"><div class="ttname"><a href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">GraphicsSquare::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_square_a6024f0f716cebd76ea2760b960d89740_icgraph.svg" width="435" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a82bd4ef147f786810f98337b8995cac1"></a>
@@ -354,23 +342,6 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#ab97734473720fa8365534448aa13733c">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">if</span> (canvas)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    canvas-&gt;<a class="code" href="class_canvas.html#ab97816ec3e85d72ab6125daa3a376793">drawRectangle</a>(<a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>() + <a class="code" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">m_topLeft</a>, <a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>() + <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>, <a class="code" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a>());</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="class_canvas_html_ab97816ec3e85d72ab6125daa3a376793"><div class="ttname"><a href="class_canvas.html#ab97816ec3e85d72ab6125daa3a376793">Canvas::drawRectangle</a></div><div class="ttdeci">void drawRectangle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:8</div></div>
-<div class="ttc" id="class_graphics_square_html_ae0e176d7c28e417c9c23053617357cbe"><div class="ttname"><a href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">GraphicsSquare::m_topLeft</a></div><div class="ttdeci">Point m_topLeft</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
-<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:51</div></div>
-<div class="ttc" id="class_graphics_item_html_a349439f069cfa6ade361ebdcd6f43434"><div class="ttname"><a href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">GraphicsItem::isFill</a></div><div class="ttdeci">bool isFill() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:89</div></div>
-<div class="ttc" id="class_graphics_square_html_acf907b3cc8372d3cdb7dd8854b90125d"><div class="ttname"><a href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">GraphicsSquare::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_square_a82bd4ef147f786810f98337b8995cac1_cgraph.svg" width="395" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -397,20 +368,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>() + <a class="code" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">m_topLeft</a> &lt; absoluteP and absoluteP &lt; <a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>() + <a class="code" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">m_bottomRight</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="class_graphics_square_html_ae0e176d7c28e417c9c23053617357cbe"><div class="ttname"><a href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">GraphicsSquare::m_topLeft</a></div><div class="ttdeci">Point m_topLeft</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
-<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:51</div></div>
-<div class="ttc" id="class_graphics_square_html_acf907b3cc8372d3cdb7dd8854b90125d"><div class="ttname"><a href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">GraphicsSquare::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsSquare.hpp:24</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_square_a5de4bab7d8b802d901df241db3687f5d_cgraph.svg" width="398" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -519,7 +476,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_square.html">GraphicsSquare</a></li>
-    <li class="footer">Généré le Samedi 27 Mai 2017 19:39:06 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 28 Mai 2017 14:03:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

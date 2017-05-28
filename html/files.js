@@ -5,6 +5,7 @@ var files =
     [ "_event_8cpp.js", "__event__8cpp_8js.html", "__event__8cpp_8js" ],
     [ "_font_8cpp.js", "__font__8cpp_8js.html", "__font__8cpp_8js" ],
     [ "_font_8hpp.js", "__font__8hpp_8js.html", "__font__8hpp_8js" ],
+    [ "_graphics_item_8cpp.js", "__graphics__item__8cpp_8js.html", "__graphics__item__8cpp_8js" ],
     [ "_point_8cpp.js", "__point__8cpp_8js.html", "__point__8cpp_8js" ],
     [ "_point_8hpp.js", "__point__8hpp_8js.html", "__point__8hpp_8js" ],
     [ "all_0.js", "all__0_8js.html", "all__0_8js" ],
@@ -100,6 +101,7 @@ var files =
     [ "enums_4.js", "enums__4_8js.html", "enums__4_8js" ],
     [ "enums_5.js", "enums__5_8js.html", "enums__5_8js" ],
     [ "enums_6.js", "enums__6_8js.html", "enums__6_8js" ],
+    [ "enums_7.js", "enums__7_8js.html", "enums__7_8js" ],
     [ "enumvalues_0.js", "enumvalues__0_8js.html", "enumvalues__0_8js" ],
     [ "enumvalues_1.js", "enumvalues__1_8js.html", "enumvalues__1_8js" ],
     [ "enumvalues_10.js", "enumvalues__10_8js.html", "enumvalues__10_8js" ],
@@ -189,7 +191,7 @@ var files =
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp.html", [
       [ "GraphicsEllipse", "class_graphics_ellipse.html", "class_graphics_ellipse" ]
     ] ],
-    [ "GraphicsItem.cpp", "_graphics_item_8cpp.html", null ],
+    [ "GraphicsItem.cpp", "_graphics_item_8cpp.html", "_graphics_item_8cpp" ],
     [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", [
       [ "GraphicsItem", "class_graphics_item.html", "class_graphics_item" ]
     ] ],

@@ -76,6 +76,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/_font_8cpp.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/_font_8cpp.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/_font_8hpp.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/_font_8hpp.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/_graphics_item_8cpp.js...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/_graphics_item_8cpp.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/_point_8cpp.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/_point_8cpp.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/_point_8hpp.js...
@@ -264,6 +266,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_5.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_5.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_6.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_6.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_7.js...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/enums_7.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enumvalues_0.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/enumvalues_0.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/enumvalues_1.js...
@@ -568,6 +572,7 @@ Parsing code for file _c_make_c_x_x_compiler_id_8cpp.js...
 Parsing code for file _event_8cpp.js...
 Parsing code for file _font_8cpp.js...
 Parsing code for file _font_8hpp.js...
+Parsing code for file _graphics_item_8cpp.js...
 Parsing code for file _point_8cpp.js...
 Parsing code for file _point_8hpp.js...
 Parsing code for file all_0.js...
@@ -657,6 +662,7 @@ Parsing code for file enums_3.js...
 Parsing code for file enums_4.js...
 Parsing code for file enums_5.js...
 Parsing code for file enums_6.js...
+Parsing code for file enums_7.js...
 Parsing code for file enumvalues_0.js...
 Parsing code for file enumvalues_1.js...
 Parsing code for file enumvalues_10.js...
@@ -796,6 +802,7 @@ Generating docs for file _c_make_c_x_x_compiler_id_8cpp.js...
 Generating docs for file _event_8cpp.js...
 Generating docs for file _font_8cpp.js...
 Generating docs for file _font_8hpp.js...
+Generating docs for file _graphics_item_8cpp.js...
 Generating docs for file _point_8cpp.js...
 Generating docs for file _point_8hpp.js...
 Generating docs for file all_0.js...
@@ -888,6 +895,7 @@ Generating docs for file enums_3.js...
 Generating docs for file enums_4.js...
 Generating docs for file enums_5.js...
 Generating docs for file enums_6.js...
+Generating docs for file enums_7.js...
 Generating docs for file enumvalues_0.js...
 Generating docs for file enumvalues_1.js...
 Generating docs for file enumvalues_10.js...
@@ -963,10 +971,7 @@ Generating docs for file functions_f.js...
 Generating docs for file functions_func.js...
 Generating docs for file GraphicsAnchor.cpp...
 Generating docs for file GraphicsAnchor.hpp...
-Generating docs for file GraphicsAnimation.cpp.../home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:135: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:135: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-
+Generating docs for file GraphicsAnimation.cpp...
 Generating docs for file GraphicsAnimation.hpp...
 Generating docs for file GraphicsBlinkAnimation.cpp...
 Generating docs for file GraphicsBlinkAnimation.hpp...
@@ -1045,6 +1050,28 @@ Generating caller graph for function showSyncOff
 Generating caller graph for function showSyncOn
 Generating call graph for function storeLink
 Generating caller graph for function storeLink
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:156: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:156: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:189: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:189: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:156: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:156: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:178: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:189: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:189: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
 Generating caller graph for function stripPath
 Generating caller graph for function stripPath2
 Generating call graph for function toggleSyncButton
@@ -1056,38 +1083,7 @@ Generating docs for file pages_0.js...
 Generating docs for file Point.cpp...
 Generating call graph for function operator+
 Generating call graph for function operator+
-Gen/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:168: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:168: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:135: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:135: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:157: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:168: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:168: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:135: warning: argument 'red' of command @param is not found in the argument list of Color::setBlue(const uint8_t blue)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:135: warning: The following parameters of Color::setBlue(const uint8_t blue) are not documented:
-  parameter 'blue'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:119: warning: argument 'red' of command @param is not found in the argument list of Color::setGreen(const uint8_t green)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:119: warning: The following parameters of Color::setGreen(const uint8_t green) are not documented:
-  parameter 'green'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:199: warning: argument 'saturation' of command @param is not found in the argument list of Color::setHexa(const uint32_t hexa)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:199: warning: The following parameters of Color::setHexa(const uint32_t hexa) are not documented:
-  parameter 'hexa'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:183: warning: argument 'saturation' of command @param is not found in the argument list of Color::setValue(const double value)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:183: warning: The following parameters of Color::setValue(const double value) are not documented:
-  parameter 'value'
-erating call graph for function operator-
+Generating call graph for function operator-
 Generating call graph for function operator-
 Generating call graph for function operator<
 Generating call graph for function operator<<
@@ -1164,7 +1160,19 @@ Generating caller graph for function Color::blue
 Generating caller graph for function Color::green
 Generating caller graph for function Color::hexa
 Generating call graph for function Color::hue
-Generating caller graph for function Color::hue
+Generating caller /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:135: warning: argument 'red' of command @param is not found in the argument list of Color::setBlue(const uint8_t blue)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:135: warning: The following parameters of Color::setBlue(const uint8_t blue) are not documented:
+  parameter 'blue'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:119: warning: argument 'red' of command @param is not found in the argument list of Color::setGreen(const uint8_t green)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:119: warning: The following parameters of Color::setGreen(const uint8_t green) are not documented:
+  parameter 'green'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:199: warning: argument 'saturation' of command @param is not found in the argument list of Color::setHexa(const uint32_t hexa)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:199: warning: The following parameters of Color::setHexa(const uint32_t hexa) are not documented:
+  parameter 'hexa'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:183: warning: argument 'saturation' of command @param is not found in the argument list of Color::setValue(const double value)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:183: warning: The following parameters of Color::setValue(const double value) are not documented:
+  parameter 'value'
+graph for function Color::hue
 Generating caller graph for function Color::red
 Generating call graph for function Color::saturation
 Generating caller graph for function Color::saturation
@@ -1191,7 +1199,6 @@ Generating docs for compound GraphicsAnimation...
 Generating docs for compound GraphicsBlinkAnimation...
 Generating call graph for function GraphicsBlinkAnimation::meUpdate
 Generating call graph for function GraphicsBlinkAnimation::setBecomeColor
-Generating caller graph for function GraphicsBlinkAnimation::setBlinkFrequency
 Generating docs for compound GraphicsCircle...
 Generating call graph for function GraphicsCircle::GraphicsCircle
 Generating caller graph for function GraphicsCircle::center
@@ -1229,13 +1236,12 @@ Generating call graph for function GraphicsItem::setAbsolute
 Generating caller graph for function GraphicsItem::setAbsolute
 Generating call graph for function GraphicsItem::setColor
 Generating caller graph for function GraphicsItem::setColor
-Generating caller graph for function GraphicsItem::setFill
 Generating caller graph for function GraphicsItem::setFocusItem
 Generating call graph for function GraphicsItem::setParent
 Generating caller graph for function GraphicsItem::setParent
+Generating call graph for function GraphicsItem::setRelative
 Generating caller graph for function GraphicsItem::setRelative
 Generating call graph for function GraphicsItem::setThick
-Generating caller graph for function GraphicsItem::setThick
 Generating call graph for function GraphicsItem::setVisible
 Generating caller graph for function GraphicsItem::setVisible
 Generating call graph for function GraphicsItem::setZ
@@ -1260,8 +1266,8 @@ Generating caller graph for function GraphicsPolygon::nbPoints
 Generating caller graph for function GraphicsPolygon::newPoint
 Generating caller graph for function GraphicsPolygon::popPoint
 Generating call graph for function GraphicsPolygon::setNbPoints
-Generating caller graph for function GraphicsPolygon::setNbPoints
 Generating docs for compound GraphicsRectangle...
+Generating call graph for function GraphicsRectangle::GraphicsRectangle
 Generating caller graph for function GraphicsRectangle::bottomRight
 Generating call graph for function GraphicsRectangle::height
 Generating call graph for function GraphicsRectangle::meDraw
@@ -1276,9 +1282,6 @@ Generating docs for compound GraphicsShape...
 Generating call graph for function GraphicsShape::meDraw
 Generating docs for compound GraphicsSquare...
 Generating call graph for function GraphicsSquare::GraphicsSquare
-Generating caller graph for function GraphicsSquare::bottomRight
-Generating call graph for function GraphicsSquare::meDraw
-Generating call graph for function GraphicsSquare::meIsOver
 Generating docs for compound GraphicsText...
 Generating call graph for function GraphicsText::GraphicsText
 Generating caller graph for function GraphicsText::align
@@ -1286,7 +1289,6 @@ Generating caller graph for function GraphicsText::font
 Generating call graph for function GraphicsText::meDraw
 Generating call graph for function GraphicsText::setAlign
 Generating call graph for function GraphicsText::setFont
-Generating caller graph for function GraphicsText::setFont
 Generating call graph for function GraphicsText::setText
 Generating caller graph for function GraphicsText::setText
 Generating caller graph for function GraphicsText::text
@@ -1317,6 +1319,8 @@ Generating caller graph for function MouseEvent::position
 Generating caller graph for function MouseEvent::state
 Generating docs for compound Point...
 Generating call graph for function Point::~Point
+Generating call graph for function Point::absolute
+Generating caller graph for function Point::absolute
 Generating caller graph for function Point::beAlone
 Generating call graph for function Point::join
 Generating caller graph for function Point::join
@@ -1325,7 +1329,11 @@ Generating call graph for function Point::set
 Generating caller graph for function Point::set
 Generating call graph for function Point::set
 Generating caller graph for function Point::set
-Generating caller graph for function Point::setCorrector
+Generating call graph for function Point::setAbsolute
+Generating caller graph for function Point::setAbsolute
+Generating call graph for function Point::setAbsolute
+Generating call graph for function Point::setParent
+Generating caller graph for function Point::setParent
 Generating call graph for function Point::setX
 Generating caller graph for function Point::setX
 Generating call graph for function Point::setY
@@ -2357,5 +2365,5 @@ Patching output file 532/535
 Patching output file 533/535
 Patching output file 534/535
 Patching output file 535/535
-lookup cache used 1170/65536 hits=13215 misses=1194
+lookup cache used 1162/65536 hits=13151 misses=1186
 finished...

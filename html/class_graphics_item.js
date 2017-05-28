@@ -41,7 +41,7 @@ var class_graphics_item =
     [ "parent", "class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392", null ],
     [ "relative", "class_graphics_item.html#aed0cec95681d8c30111700df153bea9f", null ],
     [ "relative", "class_graphics_item.html#ad7e7a7cd02bfbfcae360998bb7469f70", null ],
-    [ "setAbsolute", "class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d", null ],
+    [ "setAbsolute", "class_graphics_item.html#a53a0964502bdc810a0684c9bb9b08f86", null ],
     [ "setColor", "class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3", null ],
     [ "setFill", "class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7", null ],
     [ "setFocusItem", "class_graphics_item.html#a5877c4c5815eacb9876c7b99b119aef7", null ],
@@ -61,6 +61,7 @@ var class_graphics_item =
     [ "m_isVisible", "class_graphics_item.html#a1f21edc30cc24965948533649ddfefbe", null ],
     [ "m_parent", "class_graphics_item.html#ab5e748e1f13ea1e83de40bb281f90307", null ],
     [ "m_position", "class_graphics_item.html#a17dea234e03585570956c8880610a021", null ],
+    [ "m_positionAbsolute", "class_graphics_item.html#a67511df324c9babe40738b4fa29f4bbb", null ],
     [ "m_thick", "class_graphics_item.html#acc1dc85be53a256fab79cf67e28be96e", null ],
     [ "m_z", "class_graphics_item.html#af13cf32543812eb7fffeea6007be5610", null ]
 ];

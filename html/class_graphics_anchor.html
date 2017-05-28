@@ -272,7 +272,7 @@ Membres hérités additionnels</h2></td></tr>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
 <div class="ttc" id="class_color_html"><div class="ttname"><a href="class_color.html">Color</a></div><div class="ttdoc">Permet la gestion des coulours des différentes *entitées. </div><div class="ttdef"><b>Definition:</b> Color.hpp:22</div></div>
 <div class="ttc" id="class_graphics_point_html_a6ddcb4850dd928e091b2a068993a0895"><div class="ttname"><a href="class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895">GraphicsPoint::GraphicsPoint</a></div><div class="ttdeci">GraphicsPoint(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsPoint.cpp:4</div></div>
-<div class="ttc" id="class_graphics_item_html_ac2a3edbc5d5628a75918d512314f33c3"><div class="ttname"><a href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">GraphicsItem::setColor</a></div><div class="ttdeci">void setColor(const Color color)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:77</div></div>
+<div class="ttc" id="class_graphics_item_html_ac2a3edbc5d5628a75918d512314f33c3"><div class="ttname"><a href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">GraphicsItem::setColor</a></div><div class="ttdeci">void setColor(const Color color)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:80</div></div>
 <div class="ttc" id="class_color_html_af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547"><div class="ttname"><a href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547">Color::Red</a></div><div class="ttdef"><b>Definition:</b> Color.hpp:37</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -308,7 +308,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">GraphicsItem</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#a53a0964502bdc810a0684c9bb9b08f86">GraphicsItem</a>.</p>
 <div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>()) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>()-&gt;<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>())</div>
@@ -317,14 +317,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>()-&gt;<a class="code" href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">setRelative</a>(pos);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:51</div></div>
-<div class="ttc" id="class_graphics_item_html_ad48630477e3701e874e19287440a9c8f"><div class="ttname"><a href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">GraphicsItem::setRelative</a></div><div class="ttdeci">virtual void setRelative(const Point &amp;pos)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:58</div></div>
+<div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:57</div></div>
+<div class="ttc" id="class_graphics_item_html_ad48630477e3701e874e19287440a9c8f"><div class="ttname"><a href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">GraphicsItem::setRelative</a></div><div class="ttdeci">virtual void setRelative(const Point &amp;pos)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:61</div></div>
 <div class="ttc" id="class_graphics_item_html_aeaf0a8de33aa83d5fa5ac8889e7e4392"><div class="ttname"><a href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">GraphicsItem::parent</a></div><div class="ttdeci">GraphicsItem * parent() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:42</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_anchor_a1dc0e27c411d6b4b11d70bd4d8ae1699_cgraph.svg" width="427" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_anchor_a1dc0e27c411d6b4b11d70bd4d8ae1699_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -358,13 +358,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>())</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>()-&gt;<a class="code" href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">setRelative</a>(pos);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="ttc" id="class_graphics_item_html_ad48630477e3701e874e19287440a9c8f"><div class="ttname"><a href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">GraphicsItem::setRelative</a></div><div class="ttdeci">virtual void setRelative(const Point &amp;pos)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:58</div></div>
+<div class="ttc" id="class_graphics_item_html_ad48630477e3701e874e19287440a9c8f"><div class="ttname"><a href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">GraphicsItem::setRelative</a></div><div class="ttdeci">virtual void setRelative(const Point &amp;pos)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:61</div></div>
 <div class="ttc" id="class_graphics_item_html_aeaf0a8de33aa83d5fa5ac8889e7e4392"><div class="ttname"><a href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">GraphicsItem::parent</a></div><div class="ttdeci">GraphicsItem * parent() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:42</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_anchor_a902a4032ae818bbe9a0b6fdb84fe341d_cgraph.svg" width="424" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_anchor_a902a4032ae818bbe9a0b6fdb84fe341d_cgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -410,7 +410,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_anchor.html">GraphicsAnchor</a></li>
-    <li class="footer">Généré le Samedi 27 Mai 2017 19:39:06 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 28 Mai 2017 14:03:55 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
