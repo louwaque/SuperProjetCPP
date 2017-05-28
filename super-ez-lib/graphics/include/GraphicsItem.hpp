@@ -54,13 +54,16 @@ public:
   inline Point relative() const { return m_position; }
   inline Point &relative() { return m_position; }
 
-  //FIXME rm virtual
-  virtual void setRelative(const Point &pos) { m_position = pos; }
+  inline Point absolute() const { return m_position.absolute(); }
+  //inline Point &absolute() { return m_position; }
 
-  Point absolute() const;
-
-  //FIXME rm virtual
-  virtual void setAbsolute(const Point &pos);
+  // //FIXME rm virtual
+  virtual void setRelative(const Point &pos) { m_position.set(pos); }
+  //
+  // Point absolute() const;
+  //
+  // //FIXME rm virtual
+  virtual void setAbsolute(const Point &pos) { m_position.setAbsolute(pos); };
 
   Color color() const {
     return m_color;
@@ -125,6 +128,7 @@ private:
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
+  Point m_positionAbsolute;
   int m_z;
   Color m_color;
   unsigned int m_thick;

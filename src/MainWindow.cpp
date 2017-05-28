@@ -13,7 +13,7 @@
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
-{
+{/*
   GraphicsPoint *point = new GraphicsPoint(&m_scene);
   point->setAbsolute({50, 50});
   point->setColor(Color(Color::Blue));
@@ -40,23 +40,33 @@ MainWindow::MainWindow()
   triangle->setAbsolute({200, 20});
   triangle->second()->setRelative(Point(-30, 30));
   triangle->third()->setRelative(Point(30, 30));
-
+*/
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
-  rectangle->setAbsolute(text->absolute());
-  rectangle->bottomRight().set(text->font().width()*text->text().size(), text->font().height());
+  rectangle->relative().set(50, 50);
+  rectangle->topLeft().set(-20, -20);
+  rectangle->bottomRight().set(20, 20);
+  //rectangle->setAbsolute(text->absolute());
+  //rectangle->bottomRight().set(text->font().width()*text->text().size(), text->font().height());
 
-  GraphicsPoint *rp1 = new GraphicsPoint(&m_scene);
+  GraphicsPoint *rp1 = new GraphicsPoint(rectangle);
   rp1->relative().join(rectangle->relative());
-  rp1->relative().set(0, 0);
 
   GraphicsPoint *rp2 = new GraphicsPoint(rectangle);
   rp2->relative().join(rectangle->topLeft());
-  rp2->relative().set(10, 10);
 
   GraphicsPoint *rp3 = new GraphicsPoint(rectangle);
   rp3->relative().join(rectangle->bottomRight());
-  rp3->relative().set(20, 20);
 
+  std::cerr << rectangle->relative() << " " << rectangle->relative().absolute() << '\n';
+  std::cerr << rectangle->topLeft() << " " << rectangle->topLeft().absolute() << '\n';
+  std::cerr << rectangle->bottomRight() << " " << rectangle->bottomRight().absolute() << '\n';
+/*
+  GraphicsRectangle *r2 = new GraphicsRectangle(&m_scene);
+  r2->relative().set(50, 10);
+  r2->topLeft().set(-20, -20);
+  r2->bottomRight().set(20, 20);
+  r2->topLeft().join(rectangle->bottomRight());*/
+/*
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
   polygon->setAbsolute({200, 100});
@@ -88,7 +98,7 @@ MainWindow::MainWindow()
   blink->setBlinkFrequency(500);
 
   LineEdit *lineEdit = new LineEdit(&m_scene);
-  lineEdit->setAbsolute({100, 500});
+  lineEdit->setAbsolute({100, 500});*/
 }
 
 void MainWindow::drawEvent()

@@ -6,14 +6,13 @@
 GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_topLeft(),
-  m_bottomRight()
-{
-  m_bottomRight.setCorrector([this](const Point &pos) {
+  m_bottomRight({[this](const Point &pos) {
     Point diffP(pos - m_topLeft);
     double radius = std::hypot(diffP.x(), diffP.y());
     if (pos < Point()) radius = - radius;
     return Point(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
-  });
+  }})
+{
 }
 
 void GraphicsSquare::meDraw(Canvas *canvas)

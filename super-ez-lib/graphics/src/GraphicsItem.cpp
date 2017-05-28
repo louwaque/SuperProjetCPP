@@ -5,7 +5,27 @@
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
-: m_parent(nullptr), m_children(), m_position(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
+: m_parent(nullptr),
+  m_children(),
+  m_position({[this](const Point &p){
+    // if (m_parent && !(m_positionAbsolute == m_parent->absolute() + p))
+    //   m_positionAbsolute.set(m_parent->absolute() + p);
+    // else if (!(m_positionAbsolute == p))
+    //   m_positionAbsolute.set(p);
+    return p;
+  }}),
+  m_positionAbsolute({[this](const Point &p){
+    // if (m_parent && !(m_position == p - m_parent->absolute()))
+    //   m_position.set(p - m_parent->absolute());
+    // else if (!(m_position == p))
+    //   m_position.set(p);
+    return p;
+  }}),
+  m_z(0),
+  m_color(Color(Color::Black)),
+  m_thick(1),
+  m_isFill(false),
+  m_isVisible(true)
 {
   setParent(parent);
 }
@@ -30,8 +50,12 @@ void GraphicsItem::setParent(GraphicsItem *parent)
     }
   }
   m_parent = parent;
-  if (m_parent)
+  if (m_parent) {
     m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
+    m_position.setParent(&m_parent->relative());
+  } else {
+    m_position.setParent(nullptr);
+  }
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
@@ -47,22 +71,22 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter
   }
   return list;
 }
-
-Point GraphicsItem::absolute() const
-{
-  if (m_parent)
-    return m_position + m_parent->absolute();
-  else
-    return m_position;
-}
-
-void GraphicsItem::setAbsolute(const Point &pos)
-{
-  if (m_parent)
-    setRelative(pos - m_parent->absolute());
-  else
-    setRelative(pos);
-}
+//
+// Point GraphicsItem::absolute() const
+// {
+//   if (m_parent)
+//     return m_position + m_parent->absolute();
+//   else
+//     return m_position;
+// }
+//
+// void GraphicsItem::setAbsolute(const Point &pos)
+// {
+//   if (m_parent)
+//     setRelative(pos - m_parent->absolute());
+//   else
+//     setRelative(pos);
+// }
 
 void GraphicsItem::draw(Canvas *canvas)
 {

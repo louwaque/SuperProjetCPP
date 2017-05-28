@@ -8,12 +8,14 @@ GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
   m_topLeft(),
   m_bottomRight()
 {
+  m_topLeft.setParent(&relative());
+  m_bottomRight.setParent(&relative());
 }
 
 void GraphicsRectangle::meDraw(Canvas *canvas)
 {
   if (canvas)
-    canvas->drawRectangle(absolute() + m_topLeft, absolute() + m_bottomRight, isFill());
+    canvas->drawRectangle(m_topLeft.absolute(), m_bottomRight.absolute(), isFill());
 }
 
 bool GraphicsRectangle::meIsOver(const Point &absoluteP)

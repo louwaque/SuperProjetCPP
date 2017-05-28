@@ -28,6 +28,12 @@ public:
   typedef boost::uuids::uuid Id;
   typedef std::map<Id, std::vector<std::reference_wrapper<Point>>> GroupsPoints;
   typedef std::function<Point(const Point&)> Corrector;
+  typedef std::vector<Corrector> CorrectorList;
+
+  enum JoinType {
+    Relative,
+    Absolute
+  };
 
   /*!
    * \brief Constructeur par défaut de la classe Point.
@@ -48,6 +54,8 @@ public:
 
   Point(int x, int y);
 
+  Point(const CorrectorList &fixed);
+
   /*!
    * \brief Constructeur par copie
    *
@@ -61,6 +69,16 @@ public:
   ~Point();
 
   Point &operator=(const Point &src);
+
+  //quand le parent est modifié, la position absolu de l'objet est recalculer pour GARDER la même qu'avant
+  void setParent(const Point *parent) {
+    Point old = absolute();
+    m_parent = parent;
+    setAbsolute(old); }
+
+  Point absolute() const;
+  void setAbsolute(const Point &point);
+  void setAbsolute(const int x, const int y);
 
   /*!
    *  \brief recupere la valeur de l'absisse du Point.
@@ -93,20 +111,23 @@ public:
 
   inline void set(const Point &point) { set(point.m_x, point.m_y); }
 
-  void join(Point &point);
+  void join(Point &point, const JoinType type = Absolute);
   void beAlone();
 
-  inline Corrector corrector() const { return m_corrector; }
-  inline void setCorrector(const Corrector &fn) { m_corrector = fn; }
+  inline CorrectorList correctors() const { return m_correctorsVariable; }
+  inline CorrectorList &correctors() { return m_correctorsVariable; }
 
 private:
+  const Point *m_parent;
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
 
   static GroupsPoints m_groups; //FIXME rm static
   Id m_groupId;
+  JoinType m_joinType;
 
-  Corrector m_corrector;
+  CorrectorList m_correctorsFixed;
+  CorrectorList m_correctorsVariable;
 };
 
 /*!
