@@ -31,7 +31,7 @@ var searchData=
   ['graphicsline',['GraphicsLine',['../class_graphics_line.html',1,'GraphicsLine'],['../class_graphics_line.html#a23cc57510dd6e5a58891deb16b79b3fe',1,'GraphicsLine::GraphicsLine()']]],
   ['graphicsline_2ecpp',['GraphicsLine.cpp',['../_graphics_line_8cpp.html',1,'']]],
   ['graphicsline_2ehpp',['GraphicsLine.hpp',['../_graphics_line_8hpp.html',1,'']]],
-  ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'GraphicsPoint'],['../class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895',1,'GraphicsPoint::GraphicsPoint(GraphicsItem *parent=nullptr)'],['../class_graphics_point.html#ac1242633c38521d881c9aa3548676dd4',1,'GraphicsPoint::GraphicsPoint(const Point &amp;pos, GraphicsItem *parent=nullptr)']]],
+  ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'GraphicsPoint'],['../class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895',1,'GraphicsPoint::GraphicsPoint(GraphicsItem *parent=nullptr)'],['../class_graphics_point.html#a8a4fca2ba81721420e4bdf318cc73c26',1,'GraphicsPoint::GraphicsPoint(const Point &amp;anchor, GraphicsItem *parent=nullptr)']]],
   ['graphicspoint_2ecpp',['GraphicsPoint.cpp',['../_graphics_point_8cpp.html',1,'']]],
   ['graphicspoint_2ehpp',['GraphicsPoint.hpp',['../_graphics_point_8hpp.html',1,'']]],
   ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'GraphicsPolygon'],['../class_graphics_polygon.html#a29e95f90707fed27e17b74060a6d0623',1,'GraphicsPolygon::GraphicsPolygon()']]],
@@ -54,6 +54,5 @@ var searchData=
   ['graphicstriangle_2ehpp',['GraphicsTriangle.hpp',['../_graphics_triangle_8hpp.html',1,'']]],
   ['graphicstypes',['GraphicsTypes',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f',1,'GraphicsItem']]],
   ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color::green() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea',1,'Color::Green()']]],
-  ['grey',['Grey',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47',1,'Color']]],
-  ['groupspoints',['GroupsPoints',['../class_point.html#aaac4c06164f0564df1cca8555f3711dd',1,'Point']]]
+  ['grey',['Grey',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47',1,'Color']]]
 ];

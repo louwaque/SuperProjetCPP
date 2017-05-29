@@ -1,7 +1,7 @@
 var class_graphics_point =
 [
     [ "GraphicsPoint", "class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895", null ],
-    [ "GraphicsPoint", "class_graphics_point.html#ac1242633c38521d881c9aa3548676dd4", null ],
+    [ "GraphicsPoint", "class_graphics_point.html#a8a4fca2ba81721420e4bdf318cc73c26", null ],
     [ "meDraw", "class_graphics_point.html#a7c4ac7621b7bed96a192fa77d299a2cb", null ],
     [ "meHandleEvent", "class_graphics_point.html#aaceb83d2bd068629dccfde4aee9c60f5", null ],
     [ "meIsOver", "class_graphics_point.html#af3b01336f2559f13ddfdedd249203965", null ],

@@ -31,10 +31,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__c__make__c__compiler__id__8c_8js.html",
-"class__line__edit_8js.html",
-"class_graphics_square.html#af912d64e29112404aa6c1dd6e832b5c2",
-"enumvalues__7_8js.html#ad01a7523f103d6242ef9b0451861231e",
-"jquery_8js.html#a42cbfadee2b4749e8f699ea8d745a0e4"
+"class__mouse__event_8js.html#a85b795b5fc2ceedd8bf3fd9bdd3c6a0c",
+"class_graphics_square.html#a14374df804233349ce8654bbe41531e7",
+"feature__tests_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627",
+"jquery_8js.html#acae2c5defb0389d44f79f42a558b24a0"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

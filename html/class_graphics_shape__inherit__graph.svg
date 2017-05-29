@@ -175,38 +175,38 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="class_graphics_item.html" target="_top" xlink:title="{GraphicsItem\n|&#45; m_parent\l&#45; m_children\l&#45; m_position\l&#45; m_positionAbsolute\l&#45; m_z\l&#45; m_color\l&#45; m_thick\l&#45; m_isFill\l&#45; m_isVisible\l&#45; m_focusItem\l|+ GraphicsItem()\l+ ~GraphicsItem()\l+ parent()\l+ setParent()\l+ type()\l+ children()\l+ relative()\l+ relative()\l+ absolute()\l+ setRelative()\let 16 de plus...\l+ focusItem()\l+ setFocusItem()\l# meDraw()\l# meUpdate()\l# meHandleEvent()\l# meIsOver()\l}">
-<polygon fill="white" stroke="black" points="223,-267 223,-599 331,-599 331,-267 223,-267"/>
+<g id="a_node2"><a xlink:href="class_graphics_item.html" target="_top" xlink:title="{GraphicsItem\n|&#45; m_parent\l&#45; m_children\l&#45; m_anchor\l&#45; m_positionCorrector\l&#45; m_z\l&#45; m_color\l&#45; m_thick\l&#45; m_isFill\l&#45; m_isVisible\l&#45; m_focusItem\l|+ GraphicsItem()\l+ ~GraphicsItem()\l+ parent()\l+ setParent()\l+ type()\l+ children()\l+ anchor()\l+ setAnchor()\l+ absolute()\l+ setAbsolute()\let 17 de plus...\l+ focusItem()\l+ setFocusItem()\l# meDraw()\l# meUpdate()\l# meHandleEvent()\l# meIsOver()\l}">
+<polygon fill="white" stroke="black" points="222,-267 222,-599 332,-599 332,-267 222,-267"/>
 <text text-anchor="middle" x="277" y="-587" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsItem</text>
-<polyline fill="none" stroke="black" points="223,-580 331,-580 "/>
-<text text-anchor="start" x="231" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_parent</text>
-<text text-anchor="start" x="231" y="-557" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_children</text>
-<text text-anchor="start" x="231" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_position</text>
-<text text-anchor="start" x="231" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_positionAbsolute</text>
-<text text-anchor="start" x="231" y="-524" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_z</text>
-<text text-anchor="start" x="231" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_color</text>
-<text text-anchor="start" x="231" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_thick</text>
-<text text-anchor="start" x="231" y="-491" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isFill</text>
-<text text-anchor="start" x="231" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isVisible</text>
-<text text-anchor="start" x="231" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_focusItem</text>
-<polyline fill="none" stroke="black" points="223,-462 331,-462 "/>
-<text text-anchor="start" x="231" y="-450" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsItem()</text>
-<text text-anchor="start" x="231" y="-439" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~GraphicsItem()</text>
-<text text-anchor="start" x="231" y="-428" font-family="Helvetica,sans-Serif" font-size="10.00">+ parent()</text>
-<text text-anchor="start" x="231" y="-417" font-family="Helvetica,sans-Serif" font-size="10.00">+ setParent()</text>
-<text text-anchor="start" x="231" y="-406" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="231" y="-395" font-family="Helvetica,sans-Serif" font-size="10.00">+ children()</text>
-<text text-anchor="start" x="231" y="-384" font-family="Helvetica,sans-Serif" font-size="10.00">+ relative()</text>
-<text text-anchor="start" x="231" y="-373" font-family="Helvetica,sans-Serif" font-size="10.00">+ relative()</text>
-<text text-anchor="start" x="231" y="-362" font-family="Helvetica,sans-Serif" font-size="10.00">+ absolute()</text>
-<text text-anchor="start" x="231" y="-351" font-family="Helvetica,sans-Serif" font-size="10.00">+ setRelative()</text>
-<text text-anchor="start" x="231" y="-340" font-family="Helvetica,sans-Serif" font-size="10.00">et 16 de plus...</text>
-<text text-anchor="start" x="231" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
-<text text-anchor="start" x="231" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
-<text text-anchor="start" x="231" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="231" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
-<text text-anchor="start" x="231" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
-<text text-anchor="start" x="231" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polyline fill="none" stroke="black" points="222,-580 332,-580 "/>
+<text text-anchor="start" x="230" y="-568" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_parent</text>
+<text text-anchor="start" x="230" y="-557" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_children</text>
+<text text-anchor="start" x="230" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_anchor</text>
+<text text-anchor="start" x="230" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_positionCorrector</text>
+<text text-anchor="start" x="230" y="-524" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_z</text>
+<text text-anchor="start" x="230" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_color</text>
+<text text-anchor="start" x="230" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_thick</text>
+<text text-anchor="start" x="230" y="-491" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isFill</text>
+<text text-anchor="start" x="230" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isVisible</text>
+<text text-anchor="start" x="230" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_focusItem</text>
+<polyline fill="none" stroke="black" points="222,-462 332,-462 "/>
+<text text-anchor="start" x="230" y="-450" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsItem()</text>
+<text text-anchor="start" x="230" y="-439" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~GraphicsItem()</text>
+<text text-anchor="start" x="230" y="-428" font-family="Helvetica,sans-Serif" font-size="10.00">+ parent()</text>
+<text text-anchor="start" x="230" y="-417" font-family="Helvetica,sans-Serif" font-size="10.00">+ setParent()</text>
+<text text-anchor="start" x="230" y="-406" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
+<text text-anchor="start" x="230" y="-395" font-family="Helvetica,sans-Serif" font-size="10.00">+ children()</text>
+<text text-anchor="start" x="230" y="-384" font-family="Helvetica,sans-Serif" font-size="10.00">+ anchor()</text>
+<text text-anchor="start" x="230" y="-373" font-family="Helvetica,sans-Serif" font-size="10.00">+ setAnchor()</text>
+<text text-anchor="start" x="230" y="-362" font-family="Helvetica,sans-Serif" font-size="10.00">+ absolute()</text>
+<text text-anchor="start" x="230" y="-351" font-family="Helvetica,sans-Serif" font-size="10.00">+ setAbsolute()</text>
+<text text-anchor="start" x="230" y="-340" font-family="Helvetica,sans-Serif" font-size="10.00">et 17 de plus...</text>
+<text text-anchor="start" x="230" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
+<text text-anchor="start" x="230" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
+<text text-anchor="start" x="230" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="230" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
+<text text-anchor="start" x="230" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
+<text text-anchor="start" x="230" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
