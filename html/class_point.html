@@ -106,8 +106,11 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
 <a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="#pri-static-attribs">Attributs privés statiques</a> &#124;
 <a href="class_point-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Point</div>  </div>
@@ -121,10 +124,37 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 <div class="dynheader">
 Graphe de collaboration de Point:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_point__coll__graph.svg" width="88" height="222"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point__coll__graph.svg" width="244" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a880b5d1791a3994762723060c945235d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a> { <a class="el" href="class_point.html#a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565">Relative</a>, 
+<a class="el" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a>
+ }</td></tr>
+<tr class="separator:a880b5d1791a3994762723060c945235d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e58f6167f880cdcec3a6928d288a6a"><td class="memItemLeft" align="right" valign="top">typedef boost::uuids::uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Id</a></td></tr>
+<tr class="separator:af0e58f6167f880cdcec3a6928d288a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de2beb8acee0d9edea0d029ba7d26e5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+boost::signals2::signal&lt; void(const <br class="typebreak"/>
+<a class="el" href="class_point.html">Point</a> &amp;point)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4de2beb8acee0d9edea0d029ba7d26e5">signal_t</a></td></tr>
+<tr class="separator:a4de2beb8acee0d9edea0d029ba7d26e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab19783791f65fe102952cd7480f86bb"><td class="memItemLeft" align="right" valign="top">typedef signal_t::slot_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aab19783791f65fe102952cd7480f86bb">slot_t</a></td></tr>
+<tr class="separator:aab19783791f65fe102952cd7480f86bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973da5473f27b119e468de99e8cbe593"><td class="memItemLeft" align="right" valign="top">typedef boost::signals2::connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a></td></tr>
+<tr class="separator:a973da5473f27b119e468de99e8cbe593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac4c06164f0564df1cca8555f3711dd"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Id</a>, <br class="typebreak"/>
+std::vector<br class="typebreak"/>
+&lt; std::reference_wrapper<br class="typebreak"/>
+&lt; <a class="el" href="class_point.html">Point</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aaac4c06164f0564df1cca8555f3711dd">GroupsPoints</a></td></tr>
+<tr class="separator:aaac4c06164f0564df1cca8555f3711dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1b70a5a7df86700db3b2aecd3dba41"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="class_point.html">Point</a>(const <br class="typebreak"/>
+<a class="el" href="class_point.html">Point</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Corrector</a></td></tr>
+<tr class="separator:a4c1b70a5a7df86700db3b2aecd3dba41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42108245ceb7c99343bcccb347babbc8"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Corrector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a></td></tr>
+<tr class="separator:a42108245ceb7c99343bcccb347babbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad92f2337b839a94ce97dcdb439b4325a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a> ()</td></tr>
@@ -133,38 +163,202 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a001c4958c310b248f5c26037aea38a9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a001c4958c310b248f5c26037aea38a9c">Point</a> (int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
 <tr class="memdesc:a001c4958c310b248f5c26037aea38a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.  <a href="#a001c4958c310b248f5c26037aea38a9c">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a001c4958c310b248f5c26037aea38a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4813a55ef1c858da70d4a1f11d96859"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aa4813a55ef1c858da70d4a1f11d96859">Point</a> (const <a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> &amp;fixed)</td></tr>
+<tr class="separator:aa4813a55ef1c858da70d4a1f11d96859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7485d0952c4bf845fc02bb1a75cbdcc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1">Point</a> (const <a class="el" href="class_point.html">Point</a> &amp;src)</td></tr>
 <tr class="memdesc:a7485d0952c4bf845fc02bb1a75cbdcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par copie.  <a href="#a7485d0952c4bf845fc02bb1a75cbdcc1">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7485d0952c4bf845fc02bb1a75cbdcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395fa04b4ec126b66fc053f829a30cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1">~Point</a> ()</td></tr>
 <tr class="separator:a395fa04b4ec126b66fc053f829a30cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a77e4f4e0521de921e7066052530763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2a77e4f4e0521de921e7066052530763">operator=</a> (const <a class="el" href="class_point.html">Point</a> &amp;src)</td></tr>
+<tr class="separator:a2a77e4f4e0521de921e7066052530763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7d33502738b0b3df186a91e11ff2a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a> () const </td></tr>
+<tr class="separator:afa7d33502738b0b3df186a91e11ff2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc78333ec50c2cfb63b19db436064820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#afc78333ec50c2cfb63b19db436064820">setOrigin</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>)</td></tr>
+<tr class="separator:afc78333ec50c2cfb63b19db436064820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124214ff8c077246f7d6d58b07dc063b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a124214ff8c077246f7d6d58b07dc063b">setOrigin</a> (<a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>)</td></tr>
+<tr class="separator:a124214ff8c077246f7d6d58b07dc063b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ce786cebfd535bc380833a71405930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a04ce786cebfd535bc380833a71405930">absolute</a> () const </td></tr>
+<tr class="separator:a04ce786cebfd535bc380833a71405930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab536377f38dbf8fd36875838648a1825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ab536377f38dbf8fd36875838648a1825">setAbsolute</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="separator:ab536377f38dbf8fd36875838648a1825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f7b13934e6e617bd656b8bcf17c3cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ac5f7b13934e6e617bd656b8bcf17c3cf">setAbsolute</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="separator:ac5f7b13934e6e617bd656b8bcf17c3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a> () const </td></tr>
 <tr class="memdesc:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">recupere la valeur de l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.  <a href="#a2aa897aa68c2f3e6df3a46738f27a0ac">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fd0fb2c699d6d4699d3be73762ffa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2">setX</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>)</td></tr>
+<tr class="separator:a62fd0fb2c699d6d4699d3be73762ffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2226d8a3fb283b0b3c1f69106df144ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a> () const </td></tr>
 <tr class="memdesc:a2226d8a3fb283b0b3c1f69106df144ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction recuperant le valeur de l'ordonée.  <a href="#a2226d8a3fb283b0b3c1f69106df144ba">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a2226d8a3fb283b0b3c1f69106df144ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f79029a24245316463dd4e8dcd117a"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a55f79029a24245316463dd4e8dcd117a">x</a> ()</td></tr>
-<tr class="memdesc:a55f79029a24245316463dd4e8dcd117a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant la modification de la valeur de l'absisse x.  <a href="#a55f79029a24245316463dd4e8dcd117a">Plus de détails...</a><br/></td></tr>
-<tr class="separator:a55f79029a24245316463dd4e8dcd117a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a6db47b72d0f1fd761bea4777eedf2"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ae0a6db47b72d0f1fd761bea4777eedf2">y</a> ()</td></tr>
-<tr class="memdesc:ae0a6db47b72d0f1fd761bea4777eedf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant la modification de la valeur de l'ordonnée y.  <a href="#ae0a6db47b72d0f1fd761bea4777eedf2">Plus de détails...</a><br/></td></tr>
-<tr class="separator:ae0a6db47b72d0f1fd761bea4777eedf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdf750fa08f24c2aaaf7ada42df5ad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8">setY</a> (const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="separator:a3cdf750fa08f24c2aaaf7ada42df5ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43923c490fb5439d7d8a041e86520c34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
 <tr class="memdesc:a43923c490fb5439d7d8a041e86520c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet la modification des valeurs du point.  <a href="#a43923c490fb5439d7d8a041e86520c34">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a43923c490fb5439d7d8a041e86520c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb9a5f8efd5d11e6fa8e2af19250410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410">set</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="separator:a7eb9a5f8efd5d11e6fa8e2af19250410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa7ffadfb6c9de033bfef5decdaa66e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e">join</a> (<a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="separator:a4fa7ffadfb6c9de033bfef5decdaa66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498f108de0c0351dfb3177c681a7a1f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a> ()</td></tr>
+<tr class="separator:a498f108de0c0351dfb3177c681a7a1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b2f1d54c0e85baa20abaf5b02621a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ae4b2f1d54c0e85baa20abaf5b02621a4">joinType</a> () const </td></tr>
+<tr class="separator:ae4b2f1d54c0e85baa20abaf5b02621a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e635d3208009820bd128aa0194b2329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a9e635d3208009820bd128aa0194b2329">setJoinType</a> (const <a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a> type)</td></tr>
+<tr class="separator:a9e635d3208009820bd128aa0194b2329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd48f7546776ab3d245ba3ecaea1112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a6cd48f7546776ab3d245ba3ecaea1112">changed</a> (const <a class="el" href="class_point.html#aab19783791f65fe102952cd7480f86bb">slot_t</a> &amp;subscriber)</td></tr>
+<tr class="separator:a6cd48f7546776ab3d245ba3ecaea1112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ed58bf76b877634ca15d5e639143af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a78ed58bf76b877634ca15d5e639143af">correctors</a> () const </td></tr>
+<tr class="separator:a78ed58bf76b877634ca15d5e639143af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4623b05110d10da4507b2cefef72a2b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4623b05110d10da4507b2cefef72a2b6">correctors</a> ()</td></tr>
+<tr class="separator:a4623b05110d10da4507b2cefef72a2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:aa346b22aa03d377bfc90b5b1e11f074c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aa346b22aa03d377bfc90b5b1e11f074c">friendChanged</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="separator:aa346b22aa03d377bfc90b5b1e11f074c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
+<tr class="memitem:a34e4cdced872f14c55a500fec40fba44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a></td></tr>
+<tr class="separator:a34e4cdced872f14c55a500fec40fba44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885daee8c5064cd51f6a4c3888091fc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a></td></tr>
 <tr class="separator:a885daee8c5064cd51f6a4c3888091fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e243381d01e186dc2fcc5d24b4d3be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a></td></tr>
 <tr class="separator:a00e243381d01e186dc2fcc5d24b4d3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fce2cc5966331a7bcb1775394028b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a></td></tr>
+<tr class="separator:a37fce2cc5966331a7bcb1775394028b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f04bf266197ac689de249429917537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a></td></tr>
+<tr class="separator:a63f04bf266197ac689de249429917537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7d78940e24d7b47ff506fd0366360a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a4de2beb8acee0d9edea0d029ba7d26e5">signal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">m_changed</a></td></tr>
+<tr class="separator:afb7d78940e24d7b47ff506fd0366360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad192e2226414285cf27ab310dba8355"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a></td></tr>
+<tr class="separator:aad192e2226414285cf27ab310dba8355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88162a666a8b3c19e9429a9edabfe5ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a></td></tr>
+<tr class="separator:a88162a666a8b3c19e9429a9edabfe5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7258432def19adc6f8f1312bd7a206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a></td></tr>
+<tr class="separator:a0c7258432def19adc6f8f1312bd7a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Attributs privés statiques</h2></td></tr>
+<tr class="memitem:a7571926ccd42c49e005ff2b6555a24b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_point.html#aaac4c06164f0564df1cca8555f3711dd">GroupsPoints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a></td></tr>
+<tr class="separator:a7571926ccd42c49e005ff2b6555a24b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Représente un point (x, y) </p>
 <p>Représente un point avec une abscisse et une ordonnée </p>
-</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a class="anchor" id="a973da5473f27b119e468de99e8cbe593"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::signals2::connection <a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">Point::co_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c1b70a5a7df86700db3b2aecd3dba41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;<a class="el" href="class_point.html">Point</a>(const <a class="el" href="class_point.html">Point</a>&amp;)&gt; <a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Point::Corrector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42108245ceb7c99343bcccb347babbc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Corrector</a>&gt; <a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">Point::CorrectorList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaac4c06164f0564df1cca8555f3711dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Id</a>, std::vector&lt;std::reference_wrapper&lt;<a class="el" href="class_point.html">Point</a>&gt; &gt; &gt; <a class="el" href="class_point.html#aaac4c06164f0564df1cca8555f3711dd">Point::GroupsPoints</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0e58f6167f880cdcec3a6928d288a6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::uuids::uuid <a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Point::Id</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4de2beb8acee0d9edea0d029ba7d26e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::signals2::signal&lt;void (const <a class="el" href="class_point.html">Point</a> &amp;point)&gt; <a class="el" href="class_point.html#a4de2beb8acee0d9edea0d029ba7d26e5">Point::signal_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab19783791f65fe102952cd7480f86bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signal_t::slot_type <a class="el" href="class_point.html#aab19783791f65fe102952cd7480f86bb">Point::slot_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="a880b5d1791a3994762723060c945235d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">Point::JoinType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565"></a>Relative</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"></a>Absolute</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565">Relative</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  };</div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565">Point::Relative</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:38</div></div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Point::Absolute</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ad92f2337b839a94ce97dcdb439b4325a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -180,10 +374,28 @@ Attributs privés</h2></td></tr>
 
 <p>Constructeur par défaut de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
 <p>Crée une instance de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> avec les coordonnées (0, 0). </p>
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  : <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(0), <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(0){}</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  : <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(0),</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(0),</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>(<a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a>)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Point::Absolute</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:39</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:148</div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_ad92f2337b839a94ce97dcdb439b4325a_icgraph.svg" width="262" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a001c4958c310b248f5c26037aea38a9c"></a>
@@ -219,11 +431,52 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  : <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>), <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>){}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  : <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>),</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>(<a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:102</div></div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Point::Absolute</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:39</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:112</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:148</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa4813a55ef1c858da70d4a1f11d96859"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Point::Point </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;: <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(0),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(0),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a>(fixed),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>(<a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:154</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Point::Absolute</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:39</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:148</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,11 +502,35 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;:<a class="code" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>(src.<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>,src.<a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>){}</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
-<div class="ttc" id="class_point_html_ad92f2337b839a94ce97dcdb439b4325a"><div class="ttname"><a href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point::Point</a></div><div class="ttdeci">Point()</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:3</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;: <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(src.<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(src.<a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a>(src.<a class="code" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a>),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>(src.<a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>(src.<a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (src.<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a> = <span class="keyword">new</span> <a class="code" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>({<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>});</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">//FIXME les deux sont dans le même groupe ? je ne pense pas</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:154</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:155</div></div>
+<div class="ttc" id="class_point_html_ad92f2337b839a94ce97dcdb439b4325a"><div class="ttname"><a href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point::Point</a></div><div class="ttdeci">Point()</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:7</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:148</div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a7485d0952c4bf845fc02bb1a75cbdcc1_cgraph.svg" width="240" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a395fa04b4ec126b66fc053f829a30cc1"></a>
@@ -268,11 +545,372 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{};</div>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">delete</span> <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:112</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a395fa04b4ec126b66fc053f829a30cc1_cgraph.svg" width="264" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a04ce786cebfd535bc380833a71405930"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> Point::absolute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a04ce786cebfd535bc380833a71405930">absolute</a>() + *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a04ce786cebfd535bc380833a71405930"><div class="ttname"><a href="class_point.html#a04ce786cebfd535bc380833a71405930">Point::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:61</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a04ce786cebfd535bc380833a71405930_cgraph.svg" width="120" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a04ce786cebfd535bc380833a71405930_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a498f108de0c0351dfb3177c681a7a1f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::beAlone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code" href="jquery_8js.html#ad9d1ac02e33c4aed62ad517a7cb8b3fb">c</a> : <a class="code" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="jquery_8js.html#ad9d1ac02e33c4aed62ad517a7cb8b3fb">c</a>.disconnect();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  m_friends.clear();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">//les co des autres points ?</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="ttc" id="class_point_html_aad192e2226414285cf27ab310dba8355"><div class="ttname"><a href="class_point.html#aad192e2226414285cf27ab310dba8355">Point::m_friends</a></div><div class="ttdeci">std::vector&lt; co_t &gt; m_friends</div><div class="ttdef"><b>Definition:</b> Point.hpp:152</div></div>
+<div class="ttc" id="jquery_8js_html_ad9d1ac02e33c4aed62ad517a7cb8b3fb"><div class="ttname"><a href="jquery_8js.html#ad9d1ac02e33c4aed62ad517a7cb8b3fb">c</a></div><div class="ttdeci">var c</div><div class="ttdef"><b>Definition:</b> jquery.js:29</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a498f108de0c0351dfb3177c681a7a1f2_icgraph.svg" width="507" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cd48f7546776ab3d245ba3ecaea1112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a> Point::changed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html#aab19783791f65fe102952cd7480f86bb">slot_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>subscriber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">m_changed</a>.connect(subscriber); }</div>
+<div class="ttc" id="class_point_html_afb7d78940e24d7b47ff506fd0366360a"><div class="ttname"><a href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">Point::m_changed</a></div><div class="ttdeci">signal_t m_changed</div><div class="ttdef"><b>Definition:</b> Point.hpp:151</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a6cd48f7546776ab3d245ba3ecaea1112_icgraph.svg" width="478" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a78ed58bf76b877634ca15d5e639143af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> Point::correctors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:155</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4623b05110d10da4507b2cefef72a2b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a>&amp; Point::correctors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:155</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa346b22aa03d377bfc90b5b1e11f074c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::friendChanged </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a> == <a class="code" href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Absolute</a>)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="class_point.html#ab536377f38dbf8fd36875838648a1825">setAbsolute</a>(point);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_ab536377f38dbf8fd36875838648a1825"><div class="ttname"><a href="class_point.html#ab536377f38dbf8fd36875838648a1825">Point::setAbsolute</a></div><div class="ttdeci">void setAbsolute(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
+<div class="ttc" id="class_point_html_a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe"><div class="ttname"><a href="class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe">Point::Absolute</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:39</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_aa346b22aa03d377bfc90b5b1e11f074c_cgraph.svg" width="606" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_aa346b22aa03d377bfc90b5b1e11f074c_icgraph.svg" width="512" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fa7ffadfb6c9de033bfef5decdaa66e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::join </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a> hisCo = point.<a class="code" href="class_point.html#a6cd48f7546776ab3d245ba3ecaea1112">changed</a>(boost::bind(&amp;<a class="code" href="class_point.html#aa346b22aa03d377bfc90b5b1e11f074c">Point::friendChanged</a>, <span class="keyword">this</span>, _1));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a> myCo = <a class="code" href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">m_changed</a>.connect(boost::bind(&amp;<a class="code" href="class_point.html#aa346b22aa03d377bfc90b5b1e11f074c">Point::friendChanged</a>, &amp;point, _1));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  point.<a class="code" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a>.push_back(hisCo);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  point.<a class="code" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a>.push_back(myCo);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a>.push_back(hisCo);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="class_point.html#aad192e2226414285cf27ab310dba8355">m_friends</a>.push_back(myCo);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  *<span class="keyword">this</span> = point.<a class="code" href="class_point.html#a04ce786cebfd535bc380833a71405930">absolute</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="ttc" id="class_point_html_aad192e2226414285cf27ab310dba8355"><div class="ttname"><a href="class_point.html#aad192e2226414285cf27ab310dba8355">Point::m_friends</a></div><div class="ttdeci">std::vector&lt; co_t &gt; m_friends</div><div class="ttdef"><b>Definition:</b> Point.hpp:152</div></div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:112</div></div>
+<div class="ttc" id="class_point_html_aa346b22aa03d377bfc90b5b1e11f074c"><div class="ttname"><a href="class_point.html#aa346b22aa03d377bfc90b5b1e11f074c">Point::friendChanged</a></div><div class="ttdeci">void friendChanged(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:122</div></div>
+<div class="ttc" id="class_point_html_a973da5473f27b119e468de99e8cbe593"><div class="ttname"><a href="class_point.html#a973da5473f27b119e468de99e8cbe593">Point::co_t</a></div><div class="ttdeci">boost::signals2::connection co_t</div><div class="ttdef"><b>Definition:</b> Point.hpp:32</div></div>
+<div class="ttc" id="class_point_html_afb7d78940e24d7b47ff506fd0366360a"><div class="ttname"><a href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">Point::m_changed</a></div><div class="ttdeci">signal_t m_changed</div><div class="ttdef"><b>Definition:</b> Point.hpp:151</div></div>
+<div class="ttc" id="class_point_html_a6cd48f7546776ab3d245ba3ecaea1112"><div class="ttname"><a href="class_point.html#a6cd48f7546776ab3d245ba3ecaea1112">Point::changed</a></div><div class="ttdeci">co_t changed(const slot_t &amp;subscriber)</div><div class="ttdef"><b>Definition:</b> Point.hpp:134</div></div>
+<div class="ttc" id="class_point_html_a04ce786cebfd535bc380833a71405930"><div class="ttname"><a href="class_point.html#a04ce786cebfd535bc380833a71405930">Point::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:61</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a4fa7ffadfb6c9de033bfef5decdaa66e_cgraph.svg" width="100%" height="433"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a4fa7ffadfb6c9de033bfef5decdaa66e_icgraph.svg" width="320" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4b2f1d54c0e85baa20abaf5b02621a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a> Point::joinType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a>; }</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2a77e4f4e0521de921e7066052530763"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> &amp; Point::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(src.<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, src.<a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a2a77e4f4e0521de921e7066052530763_cgraph.svg" width="368" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa7d33502738b0b3df186a91e11ff2a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> Point::origin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a> ? *<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a> : <a class="code" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>(0, 0); }</div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_ad92f2337b839a94ce97dcdb439b4325a"><div class="ttname"><a href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point::Point</a></div><div class="ttdeci">Point()</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:7</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_afa7d33502738b0b3df186a91e11ff2a8_cgraph.svg" width="240" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a43923c490fb5439d7d8a041e86520c34"></a>
 <div class="memitem">
 <div class="memproto">
@@ -305,19 +943,358 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                        {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> = <a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> = <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> != <a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a> || <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> != <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> = <a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> = <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">m_changed</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// for (auto c : m_correctorsFixed)</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//   if (c)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// for (auto c : m_correctorsVariable)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//   if (c)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:102</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_afb7d78940e24d7b47ff506fd0366360a"><div class="ttname"><a href="class_point.html#afb7d78940e24d7b47ff506fd0366360a">Point::m_changed</a></div><div class="ttdeci">signal_t m_changed</div><div class="ttdef"><b>Definition:</b> Point.hpp:151</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:112</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a43923c490fb5439d7d8a041e86520c34_cgraph.svg" width="206" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a43923c490fb5439d7d8a041e86520c34_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7eb9a5f8efd5d11e6fa8e2af19250410"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point.<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, point.<a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>); }</div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a7eb9a5f8efd5d11e6fa8e2af19250410_cgraph.svg" width="91" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a7eb9a5f8efd5d11e6fa8e2af19250410_icgraph.svg" width="91" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab536377f38dbf8fd36875838648a1825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point - <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a04ce786cebfd535bc380833a71405930">absolute</a>());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_a04ce786cebfd535bc380833a71405930"><div class="ttname"><a href="class_point.html#a04ce786cebfd535bc380833a71405930">Point::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:61</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_ab536377f38dbf8fd36875838648a1825_cgraph.svg" width="414" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_ab536377f38dbf8fd36875838648a1825_icgraph.svg" width="100%" height="423"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5f7b13934e6e617bd656b8bcf17c3cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_point.html#ab536377f38dbf8fd36875838648a1825">setAbsolute</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>});</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:102</div></div>
+<div class="ttc" id="class_point_html_ab536377f38dbf8fd36875838648a1825"><div class="ttname"><a href="class_point.html#ab536377f38dbf8fd36875838648a1825">Point::setAbsolute</a></div><div class="ttdeci">void setAbsolute(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:112</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_ac5f7b13934e6e617bd656b8bcf17c3cf_cgraph.svg" width="592" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e635d3208009820bd128aa0194b2329"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setJoinType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{ <a class="code" href="class_point.html#a63f04bf266197ac689de249429917537">m_joinType</a> = type; }</div>
+<div class="ttc" id="class_point_html_a63f04bf266197ac689de249429917537"><div class="ttname"><a href="class_point.html#a63f04bf266197ac689de249429917537">Point::m_joinType</a></div><div class="ttdeci">JoinType m_joinType</div><div class="ttdef"><b>Definition:</b> Point.hpp:149</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afc78333ec50c2cfb63b19db436064820"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setOrigin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                             {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a> = <span class="keyword">new</span> <a class="code" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(origin);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:112</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_ad92f2337b839a94ce97dcdb439b4325a"><div class="ttname"><a href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point::Point</a></div><div class="ttdeci">Point()</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:7</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_afc78333ec50c2cfb63b19db436064820_cgraph.svg" width="392" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a124214ff8c077246f7d6d58b07dc063b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setOrigin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                       {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a> = <span class="keyword">new</span> <a class="code" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_point.html#a34e4cdced872f14c55a500fec40fba44">m_origin</a>-&gt;<a class="code" href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e">join</a>(origin);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a34e4cdced872f14c55a500fec40fba44"><div class="ttname"><a href="class_point.html#a34e4cdced872f14c55a500fec40fba44">Point::m_origin</a></div><div class="ttdeci">Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:143</div></div>
+<div class="ttc" id="class_point_html_ad92f2337b839a94ce97dcdb439b4325a"><div class="ttname"><a href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point::Point</a></div><div class="ttdeci">Point()</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:7</div></div>
+<div class="ttc" id="class_point_html_a4fa7ffadfb6c9de033bfef5decdaa66e"><div class="ttname"><a href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e">Point::join</a></div><div class="ttdeci">void join(Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a124214ff8c077246f7d6d58b07dc063b_cgraph.svg" width="100%" height="433"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a62fd0fb2c699d6d4699d3be73762ffa2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setX </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:102</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a62fd0fb2c699d6d4699d3be73762ffa2_cgraph.svg" width="342" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a62fd0fb2c699d6d4699d3be73762ffa2_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cdf750fa08f24c2aaaf7ada42df5ad8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setY </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>); }</div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:82</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:112</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a3cdf750fa08f24c2aaaf7ada42df5ad8_cgraph.svg" width="342" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a3cdf750fa08f24c2aaaf7ada42df5ad8_icgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -347,8 +1324,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>recupere la valeur de l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>; }</div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>; }</div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -358,39 +1335,6 @@ Voici le graphe des appelants de cette fonction :</div>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a55f79029a24245316463dd4e8dcd117a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int&amp; Point::x </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Fonction permettant la modification de la valeur de l'absisse x. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>l'absisse du point </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;}</div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:98</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a2226d8a3fb283b0b3c1f69106df144ba"></a>
@@ -416,8 +1360,8 @@ Voici le graphe des appelants de cette fonction :</div>
 
 <p>Fonction recuperant le valeur de l'ordonée. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>Retourne l'ordonée du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>; }</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>; }</div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -429,7 +1373,8 @@ Voici le graphe des appelants de cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="ae0a6db47b72d0f1fd761bea4777eedf2"></a>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="afb7d78940e24d7b47ff506fd0366360a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -437,32 +1382,158 @@ Voici le graphe des appelants de cette fonction :</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int&amp; Point::y </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="class_point.html#a4de2beb8acee0d9edea0d029ba7d26e5">signal_t</a> Point::m_changed</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fonction permettant la modification de la valeur de l'ordonnée y. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">y</td><td>l'ordonée du point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;}</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:99</div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a88162a666a8b3c19e9429a9edabfe5ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> Point::m_correctorsFixed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c7258432def19adc6f8f1312bd7a206"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> Point::m_correctorsVariable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad192e2226414285cf27ab310dba8355"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_point.html#a973da5473f27b119e468de99e8cbe593">co_t</a>&gt; Point::m_friends</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37fce2cc5966331a7bcb1775394028b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#af0e58f6167f880cdcec3a6928d288a6a">Id</a> Point::m_groupId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7571926ccd42c49e005ff2b6555a24b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#aaac4c06164f0564df1cca8555f3711dd">Point::GroupsPoints</a> Point::m_groups</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63f04bf266197ac689de249429917537"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html#a880b5d1791a3994762723060c945235d">JoinType</a> Point::m_joinType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34e4cdced872f14c55a500fec40fba44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a>* Point::m_origin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a885daee8c5064cd51f6a4c3888091fc9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -515,7 +1586,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_point.html">Point</a></li>
-    <li class="footer">Généré le Lundi 29 Mai 2017 09:58:06 pour Super Project c++ par
+    <li class="footer">Généré le Lundi 29 Mai 2017 10:01:04 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
