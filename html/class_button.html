@@ -289,29 +289,20 @@ boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign
 
 <p>Constructeur de la classe <a class="el" href="class_button.html" title="Permet la creation d&#39;un boutton. ">Button</a>. </p>
 <p>Creer un bouton avec le text donnée en paramètre </p>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;:<a class="code" href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget</a>(parent), m_text(<span class="keyword">nullptr</span>),m_rectagle(<span class="keyword">nullptr</span>)</div>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;:<a class="code" href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget</a>(parent), m_text(<span class="keyword">nullptr</span>),<a class="code" href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">m_rectangle</a>(<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  m_text = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">m_rectangle</a> = <span class="keyword">new</span> <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">m_rectangle</a> -&gt; setHeight(m_text-&gt;font().height());</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_button.html#ac9c672b02b6bd7ae75f0b8acd971578c">setText</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  m_text-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="ttc" id="class_button_html_acd3ffaa8fb9bff0db6549c2a094a203c"><div class="ttname"><a href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">Button::m_rectangle</a></div><div class="ttdeci">void meHandleEvent(const Event &amp;event) private GraphicsRectangle * m_rectangle</div><div class="ttdef"><b>Definition:</b> Button.hpp:46</div></div>
-<div class="ttc" id="class_button_html_ac9c672b02b6bd7ae75f0b8acd971578c"><div class="ttname"><a href="class_button.html#ac9c672b02b6bd7ae75f0b8acd971578c">Button::setText</a></div><div class="ttdeci">void setText(const std_string &amp;text)</div><div class="ttdef"><b>Definition:</b> Button.cpp:28</div></div>
 <div class="ttc" id="class_graphics_text_html"><div class="ttname"><a href="class_graphics_text.html">GraphicsText</a></div><div class="ttdoc">Permet la creation de text. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:21</div></div>
 <div class="ttc" id="class_widget_html_a819c625f51b8a0467f3ceb5056c721d5"><div class="ttname"><a href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget::Widget</a></div><div class="ttdeci">Widget(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:3</div></div>
 <div class="ttc" id="class_graphics_rectangle_html"><div class="ttname"><a href="class_graphics_rectangle.html">GraphicsRectangle</a></div><div class="ttdoc">Permet la creation d&#39;un rectangle. </div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:22</div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_button_a533e3a3815061a3cbf7ae2539af4b206_cgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a63ff0b65a0a1268155bc54bb682a7194"></a>
@@ -354,27 +345,17 @@ Voici le graphe d'appel pour cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                            :<span class="keywordtype">string</span> &amp;<a class="code" href="class_button.html#ad9fb8858260a4e8ace09e98fdf4db736">text</a>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  m_text -&gt; <a class="code" href="class_button.html#ac9c672b02b6bd7ae75f0b8acd971578c">setText</a>(<a class="code" href="class_button.html#ad9fb8858260a4e8ace09e98fdf4db736">text</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">m_rectangle</a>-&gt;setWidth(m_text-&gt;font().width()*<a class="code" href="jquery_8js.html#aa311b14a617c7d99a07b814cbaf880ef">std::max</a>(<span class="keywordtype">int</span>(m_text-&gt;text().size() + 1), 40));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="class_button.html#a0cd67c144e09906ec2e1612e3630e5d5">m_textChanged</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  m_text-&gt;setText(<a class="code" href="class_button.html#ad9fb8858260a4e8ace09e98fdf4db736">text</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">m_rectangle</a>-&gt;setWidth(m_text-&gt;font().width()*<a class="code" href="jquery_8js.html#aa311b14a617c7d99a07b814cbaf880ef">std::max</a>(<span class="keywordtype">int</span>(m_text-&gt;text().size() + 1), 40));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="class_button.html#a0cd67c144e09906ec2e1612e3630e5d5">m_textChanged</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="ttc" id="class_button_html_acd3ffaa8fb9bff0db6549c2a094a203c"><div class="ttname"><a href="class_button.html#acd3ffaa8fb9bff0db6549c2a094a203c">Button::m_rectangle</a></div><div class="ttdeci">void meHandleEvent(const Event &amp;event) private GraphicsRectangle * m_rectangle</div><div class="ttdef"><b>Definition:</b> Button.hpp:46</div></div>
-<div class="ttc" id="class_button_html_ac9c672b02b6bd7ae75f0b8acd971578c"><div class="ttname"><a href="class_button.html#ac9c672b02b6bd7ae75f0b8acd971578c">Button::setText</a></div><div class="ttdeci">void setText(const std_string &amp;text)</div><div class="ttdef"><b>Definition:</b> Button.cpp:28</div></div>
 <div class="ttc" id="class_button_html_ad9fb8858260a4e8ace09e98fdf4db736"><div class="ttname"><a href="class_button.html#ad9fb8858260a4e8ace09e98fdf4db736">Button::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdef"><b>Definition:</b> Button.hpp:37</div></div>
 <div class="ttc" id="class_button_html_a0cd67c144e09906ec2e1612e3630e5d5"><div class="ttname"><a href="class_button.html#a0cd67c144e09906ec2e1612e3630e5d5">Button::m_textChanged</a></div><div class="ttdeci">signal_t m_textChanged</div><div class="ttdef"><b>Definition:</b> Button.hpp:52</div></div>
 <div class="ttc" id="jquery_8js_html_aa311b14a617c7d99a07b814cbaf880ef"><div class="ttname"><a href="jquery_8js.html#aa311b14a617c7d99a07b814cbaf880ef">max</a></div><div class="ttdeci">a max</div><div class="ttdef"><b>Definition:</b> jquery.js:72</div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_button_ac9c672b02b6bd7ae75f0b8acd971578c_icgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad9fb8858260a4e8ace09e98fdf4db736"></a>
@@ -477,7 +458,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_button.html">Button</a></li>
-    <li class="footer">Généré le Lundi 29 Mai 2017 09:02:47 pour Super Project c++ par
+    <li class="footer">Généré le Lundi 29 Mai 2017 09:58:06 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
