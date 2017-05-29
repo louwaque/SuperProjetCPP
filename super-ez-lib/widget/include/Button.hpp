@@ -49,7 +49,7 @@ private:
   GraphicsText *m_text;
   GraphicsRectangle *m_rectangle;
   signal_t m_textChanged;
-
+  signal_t m_clicked;
 };
 
 

@@ -10,6 +10,7 @@
 #include "../include/GraphicsSquare.hpp"
 #include "../include/GraphicsBlinkAnimation.hpp"
 #include <LineEdit.hpp>
+#include <Button.hpp>
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
@@ -71,6 +72,12 @@ MainWindow::MainWindow()
 
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->setAbsolute({100, 500});
+
+  Button *button = new Button("BON GROS BOUTON SA MERE",&m_scene);
+  button->setAbsolute({50,150});
+
+  Button *button2 = new Button("CTB",&m_scene);
+  button2->setAbsolute({75,175});
 }
 
 void MainWindow::drawEvent()
