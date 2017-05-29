@@ -3,7 +3,6 @@ var searchData=
   ['radius',['radius',['../class_graphics_circle.html#a68eefbca26010f1a10193eebd3c0d32b',1,'GraphicsCircle::radius()'],['../class_graphics_ellipse.html#a41e99099077a8f85317152bd1429494b',1,'GraphicsEllipse::radius()'],['../class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882',1,'GraphicsPoint::radius()']]],
   ['readcookie',['readCookie',['../resize_8js.html#a578d54a5ebd9224fad0213048e7a49a7',1,'resize.js']]],
   ['red',['red',['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color']]],
-  ['relative',['relative',['../class_graphics_item.html#aed0cec95681d8c30111700df153bea9f',1,'GraphicsItem::relative() const '],['../class_graphics_item.html#ad7e7a7cd02bfbfcae360998bb7469f70',1,'GraphicsItem::relative()']]],
   ['removetoinsertlater',['removeToInsertLater',['../navtree_8js.html#aa78016020f40c28356aefd325cd4df74',1,'navtree.js']]],
   ['resize',['resize',['../class_window.html#a3e7fcfcbfaa2d273b75bf5e568088b92',1,'Window']]],
   ['resizeevent',['resizeEvent',['../class_window.html#ad5a637cbd1de0e67c0e84b356e81bde7',1,'Window']]],

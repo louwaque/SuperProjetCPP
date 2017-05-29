@@ -2,7 +2,7 @@ var searchData=
 [
   ['a',['a',['../jquery_8js.html#aa4d4888597588a84fd5b1184d00c91f3',1,'a():&#160;jquery.js'],['../jquery_8js.html#add6333c8a3d7626fd8031231a6d9b905',1,'a(function(){var e=document.body, f=e.appendChild(f=document.createElement(&quot;div&quot;));f.offsetHeight;a.extend(f.style,{minHeight:&quot;100px&quot;, height:&quot;auto&quot;, padding:0, borderWidth:0});a.support.minHeight=f.offsetHeight===100;a.support.selectstart=&quot;onselectstart&quot;in f;e.removeChild(f).style.display=&quot;none&quot;}):&#160;jquery.js']]],
   ['a0',['a0',['../jquery_8js.html#ab5b2b69c05d6a629ddd1deebef38735e',1,'jquery.js']]],
-  ['absolute',['Absolute',['../class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe',1,'Point::Absolute()'],['../class_point.html#a04ce786cebfd535bc380833a71405930',1,'Point::absolute() const '],['../class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7',1,'GraphicsItem::absolute()']]],
+  ['absolute',['Absolute',['../class_point.html#a880b5d1791a3994762723060c945235da981b391fa360bf8645ef018d9ba7d5fe',1,'Point::Absolute()'],['../class_point.html#a04ce786cebfd535bc380833a71405930',1,'Point::absolute() const ']]],
   ['ad',['ad',['../jquery_8js.html#a96709ee617c39629621377849b5e0a7f',1,'ad():&#160;jquery.js'],['../jquery_8js.html#ad223f5fba68c41c1236671ac5c5b0fcb',1,'aD():&#160;jquery.js']]],
   ['add',['add',['../jquery_8js.html#acae2c5defb0389d44f79f42a558b24a0',1,'jquery.js']]],
   ['ak',['aK',['../jquery_8js.html#a7d370833f2145fc5f6c371e98d754eb4',1,'jquery.js']]],
