@@ -31,19 +31,18 @@ public:
    *
    */
 
-  Button(GraphicsItem *parent= nullptr);
-  Button(GraphicsItem *parent= nullptr, std::string text);
+  Button(GraphicsItem *parent = nullptr);
+  Button(const std::string &text, GraphicsItem *parent = nullptr);
 
-  inline std::string text() const {return m_text->text();}
+  inline std::string text() const { return m_text->text(); }
+  void setText(const std::string &text);
 
-  void setText(const std_string &text);
-
-  inline textChanged(const slot_t &subscriber){m_textChanger.connect(subscriber);}
+  inline co_t textChanged(const slot_t &subscriber) { return m_textChanged.connect(subscriber); }
 
 
 protected:
 
-  void meHandleEvent(const Event &event)
+  void meHandleEvent(const Event &event);
 
 private:
 

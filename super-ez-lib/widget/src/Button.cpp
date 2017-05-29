@@ -4,18 +4,22 @@
 #include <GraphicsBlinkAnimation.hpp>
 
 Button::Button(GraphicsItem *parent)
-:Widget(parent), m_text(nullptr),m_rectangle(nullptr)
+: Widget(parent),
+  m_text(nullptr),
+  m_rectangle(nullptr)
 {
   m_text = new GraphicsText(this);
 
   m_rectangle = new GraphicsRectangle(this);
-  m_rectangle -> setHeight(m_text->font().height());
+  m_rectangle->setHeight(m_text->font().height());
 
   m_text->setText("");
 }
 
-Button::Button(std::string &text,GraphicsItem *parent)
-:Widget(parent),m_text(nullptr),m_rectangle(nullptr)
+Button::Button(const std::string &text, GraphicsItem *parent)
+: Widget(parent),
+  m_text(nullptr),
+  m_rectangle(nullptr)
 {
   m_text = new GraphicsText(this);
   m_rectangle = new GraphicsRectangle(this);
@@ -24,14 +28,15 @@ Button::Button(std::string &text,GraphicsItem *parent)
   m_text->setText(text);
 }
 
-Button::~Button(){
-}
-
-
 void Button::setText(const std::string &text)
 {
   m_text->setText(text);
   m_rectangle->setWidth(m_text->font().width()*std::max(int(m_text->text().size() + 1), 40));
 
   m_textChanged();
+}
+
+void Button::meHandleEvent(const Event &event)
+{
+
 }
