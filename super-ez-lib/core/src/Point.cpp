@@ -1,5 +1,6 @@
 #include "../include/Point.hpp"
 #include <boost/uuid/uuid_generators.hpp>
+#include <boost/bind.hpp>
 
 Point::GroupsPoints Point::m_groups;
 
@@ -7,23 +8,29 @@ Point::Point()
   : m_x(0),
     m_y(0),
     m_groupId(boost::uuids::nil_uuid()),
-    m_parent(nullptr)
-{}
+    m_origin(nullptr),
+    m_joinType(Absolute)
+{
+}
 
 Point::Point(int x, int y)
   : m_x(x),
     m_y(y),
     m_groupId(boost::uuids::nil_uuid()),
-    m_parent(nullptr)
-{}
+    m_origin(nullptr),
+    m_joinType(Absolute)
+{
+}
 
 Point::Point(const CorrectorList &fixed)
 : m_x(0),
   m_y(0),
   m_groupId(boost::uuids::nil_uuid()),
   m_correctorsFixed(fixed),
-  m_parent(nullptr)
-{}
+  m_origin(nullptr),
+  m_joinType(Absolute)
+{
+}
 
 Point::Point(const Point &src)
 : m_x(src.m_x),
@@ -31,14 +38,18 @@ Point::Point(const Point &src)
   m_groupId(boost::uuids::nil_uuid()),
   m_correctorsFixed(src.m_correctorsFixed),
   m_correctorsVariable(src.m_correctorsVariable),
-  m_parent(src.m_parent)
+  m_origin(nullptr),
+  m_joinType(src.m_joinType)
 {
+  if (src.m_origin)
+    m_origin = new Point({m_origin->m_x, m_origin->m_y});
   //FIXME les deux sont dans le même groupe ? je ne pense pas
 }
 
 Point::~Point()
 {
   beAlone();
+  delete m_origin;
 }
 
 Point &Point::operator=(const Point &src)
@@ -49,16 +60,16 @@ Point &Point::operator=(const Point &src)
 
 Point Point::absolute() const
 {
-  if (m_parent)
-    return m_parent->absolute() + *this;
+  if (m_origin)
+    return m_origin->absolute() + *this;
   else
     return *this;
 }
 
 void Point::setAbsolute(const Point &point)
 {
-  if (m_parent)
-    set(point - m_parent->absolute());
+  if (m_origin)
+    set(point - m_origin->absolute());
   else
     set(point);
 }
@@ -70,81 +81,50 @@ void Point::setAbsolute(const int x, const int y)
 
 void Point::set(const int x, const int y)
 {
-  Point newP(x, y);
-  if (!m_groupId.is_nil()) {
-
-    // for (Point &p : m_groups[m_groupId]) {
-    //   for (auto c : p.m_correctorsFixed)
-    //     if (c)
-    //       newP = c(newP);
-    //   for (auto c : p.m_correctorsVariable)
-    //     if (c)
-    //       newP = c(newP);
-    // }
-
-    m_x = newP.m_x;
-    m_y = newP.m_y;
-
-    // std::cerr << "Moi: " << this << '\n';
-    // std::cerr << "Point à mettre : " << newP << '\n';
-    for (Point &p : m_groups[m_groupId]) {
-      // std::cerr << "Boucle pour: " << p << " " << &p<< '\n';
-      if (&p != this) {
-        Point ownP(absolute());
-        if (p.m_joinType == Absolute && p.m_parent) {
-          ownP = ownP - p.m_parent->absolute();
-        }
-        // std::cerr << "Point mis: " << ownP << '\n';
-        p.m_x = ownP.m_x;
-        p.m_y = ownP.m_y;
-      }
-      // std::cerr << "fin" << '\n' << '\n';
-    }
-    // std::cerr << "\n" << '\n';
-  } else {
+  if (m_x != x || m_y != y) {
+    m_x = x;
+    m_y = y;
+    m_changed(*this);
+  }
     // for (auto c : m_correctorsFixed)
     //   if (c)
     //     newP = c(newP);
     // for (auto c : m_correctorsVariable)
     //   if (c)
     //     newP = c(newP);
-
-    m_x = newP.m_x;
-    m_y = newP.m_y;
-  }
 }
 
-void Point::join(Point &point, const JoinType type)
+void Point::join(Point &point)
 {
   beAlone();
-  m_joinType = type;
-  point.m_joinType = type;
 
-  if (point.m_groupId.is_nil()) {
-    point.m_groupId = boost::uuids::random_generator()();
-    m_groups[point.m_groupId].push_back(point);
-  }
+  co_t hisCo = point.changed(boost::bind(&Point::friendChanged, this, _1));
+  co_t myCo = m_changed.connect(boost::bind(&Point::friendChanged, &point, _1));
 
-  m_groupId = point.m_groupId;
-  m_groups[m_groupId].push_back(*this);
+  point.m_friends.push_back(hisCo);
+  point.m_friends.push_back(myCo);
+  m_friends.push_back(hisCo);
+  m_friends.push_back(myCo);
 
   *this = point.absolute();
 }
 
 void Point::beAlone()
 {
-  if (m_groupId.is_nil())
-    return;
+  for (auto &c : m_friends)
+    c.disconnect();
 
-  auto &group = m_groups[m_groupId];
-  for (size_t i = 0; i < group.size(); ++i)
-    if (&(group[i].get()) == this)
-      group.erase(group.begin()+i);
+  m_friends.clear();
 
-  if (group.empty())
-    m_groups.erase(m_groupId);
+  //les co des autres points ?
+}
 
-  m_groupId = boost::uuids::nil_uuid();
+void Point::friendChanged(const Point &point)
+{
+  if (m_joinType == Absolute)
+    setAbsolute(point);
+  else
+    set(point);
 }
 
 bool operator==(const Point &l, const Point &r) {
