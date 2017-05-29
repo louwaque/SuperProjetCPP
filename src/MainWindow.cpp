@@ -42,22 +42,34 @@ MainWindow::MainWindow()
   triangle->third()->setRelative(Point(30, 30));
 */
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
-  rectangle->relative().set(50, 50);
+  rectangle->position().set(50, 50);
   rectangle->topLeft().set(-20, -20);
   rectangle->bottomRight().set(20, 20);
   //rectangle->setAbsolute(text->absolute());
   //rectangle->bottomRight().set(text->font().width()*text->text().size(), text->font().height());
 
+  // GraphicsPoint *rp1 = new GraphicsPoint(rectangle); fait tout exploser, un point lié à lui même ?
+  // GraphicsPoint *rp1 = new GraphicsPoint(&m_scene); // mieux mais bizare !
+  // rp1->position().join(rectangle->position());
   GraphicsPoint *rp1 = new GraphicsPoint(rectangle);
-  rp1->relative().join(rectangle->relative());
+  rp1->position().setOriginDynamic(m_scene.position()); //evite l'explosion ?
+  rp1->position().join(rectangle->position());
+  rp1->position().setAbsolute(100, 100);
+  //rectangle->position().setOriginDynamic(rp1->position());
+  //
+  //GraphicsPoint *rp2 = new GraphicsPoint(&m_scene); //marche
+  GraphicsPoint *rp2 = new GraphicsPoint(rectangle); //marche aussi
+  rp2->position().setOriginDynamic(m_scene.position()); // mais pourquoi je dois refaire l'origine ??? ça vient de set parent???
+  rp2->position().join(rectangle->topLeft());
 
-  GraphicsPoint *rp2 = new GraphicsPoint(rectangle);
-  rp2->relative().join(rectangle->topLeft());
-
+  // GraphicsPoint *rp3 = new GraphicsPoint(rectangle); normalement je voudrais ça...
+  // rp3->position().join(rectangle->bottomRight());
+  // mais c'est ça qui marche !!!
   GraphicsPoint *rp3 = new GraphicsPoint(rectangle);
-  rp3->relative().join(rectangle->bottomRight());
+  rp3->position().setOriginDynamic(m_scene.position()); // mais pourquoi je dois refaire l'origine ??? ça vient de set parent???
+  rp3->position().join(rectangle->bottomRight());
 
-  std::cerr << rectangle->relative() << " " << rectangle->relative().absolute() << '\n';
+  std::cerr << rectangle->position() << " " << rectangle->position().absolute() << '\n';
   std::cerr << rectangle->topLeft() << " " << rectangle->topLeft().absolute() << '\n';
   std::cerr << rectangle->bottomRight() << " " << rectangle->bottomRight().absolute() << '\n';
 /*

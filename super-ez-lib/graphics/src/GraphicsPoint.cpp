@@ -9,13 +9,13 @@ GraphicsPoint::GraphicsPoint(GraphicsItem *parent)
 GraphicsPoint::GraphicsPoint(const Point &pos, GraphicsItem *parent)
 : GraphicsPoint(parent)
 {
-  setRelative(pos);
+  setPosition(pos);
 }
 
 void GraphicsPoint::meDraw(Canvas *canvas)
 {
   if (canvas)
-    canvas->drawCircle(absolute() - m_radius, absolute() + m_radius, hasFocus());
+    canvas->drawCircle(position().absolute() - m_radius, position().absolute() + m_radius, hasFocus());
 }
 
 void GraphicsPoint::meHandleEvent(const Event &event)
@@ -25,11 +25,11 @@ void GraphicsPoint::meHandleEvent(const Event &event)
     if (mouse.button() == MouseEvent::LeftButton &&
         mouse.state() == MouseEvent::MouseMoved &&
         hasFocus())
-        setAbsolute(mouse.position());
+        position().setAbsolute(mouse.position());
   }
 }
 
 bool GraphicsPoint::meIsOver(const Point &absoluteP)
 {
-  return absolute() - m_radius < absoluteP and absoluteP < absolute() + m_radius;
+  return position().absolute() - m_radius < absoluteP and absoluteP < position().absolute() + m_radius;
 }

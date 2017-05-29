@@ -51,19 +51,9 @@ public:
 
   GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
 
-  inline Point relative() const { return m_position; }
-  inline Point &relative() { return m_position; }
-
-  inline Point absolute() const { return m_position.absolute(); }
-  //inline Point &absolute() { return m_position; }
-
-  // //FIXME rm virtual
-  virtual void setRelative(const Point &pos) { m_position.set(pos); }
-  //
-  // Point absolute() const;
-  //
-  // //FIXME rm virtual
-  virtual void setAbsolute(const Point &pos) { m_position.setAbsolute(pos); };
+  inline Point position() const { return m_position; }
+  inline Point &position() { return m_position; }
+  inline void setPosition(const Point &pos) { m_position.set(pos); }
 
   Color color() const {
     return m_color;
@@ -121,14 +111,13 @@ protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
   virtual void meHandleEvent(const Event &event) {}
-  virtual bool meIsOver(const Point &absoluteP) { return absolute() == absoluteP; }
+  virtual bool meIsOver(const Point &absoluteP) { return m_position.absolute() == absoluteP; }
 
 private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
-  Point m_positionAbsolute;
   int m_z;
   Color m_color;
   unsigned int m_thick;

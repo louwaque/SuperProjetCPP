@@ -15,7 +15,7 @@ void GraphicsText::meDraw(Canvas *canvas)
 {
   if (canvas) {
     canvas->setFont(m_font);
-    canvas->drawText(m_align, absolute(), m_text);
+    canvas->drawText(m_align, position().absolute(), m_text);
   }
 }
 
