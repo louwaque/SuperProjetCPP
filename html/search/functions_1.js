@@ -7,7 +7,7 @@ var searchData=
   ['blinkfrequency',['blinkFrequency',['../class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69',1,'GraphicsBlinkAnimation']]],
   ['blue',['blue',['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color']]],
   ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a1d46531794b6c92016cebc53d4eab9bf',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#aeda6a6d95b0089164e63400433d76e6f',1,'GraphicsSquare::bottomRight()']]],
-  ['button',['button',['../class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2',1,'MouseEvent']]],
+  ['button',['Button',['../class_button.html#a533e3a3815061a3cbf7ae2539af4b206',1,'Button::Button(GraphicsItem *parent=nullptr)'],['../class_button.html#a63ff0b65a0a1268155bc54bb682a7194',1,'Button::Button(GraphicsItem *parent=nullptr, std::string text)'],['../class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2',1,'MouseEvent::button()']]],
   ['buttonpress',['buttonPress',['../class_window.html#a8b32a8bb726af1575498353515677cbb',1,'Window']]],
   ['buttonrelease',['buttonRelease',['../class_window.html#a458ae9685d66631b4e4300dbea528783',1,'Window']]]
 ];

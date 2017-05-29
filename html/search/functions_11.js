@@ -31,7 +31,7 @@ var searchData=
   ['setradius',['setRadius',['../class_graphics_point.html#ae4314b809d5fad0ac5473b459e63cb12',1,'GraphicsPoint']]],
   ['setred',['setRed',['../class_color.html#a8ff299417275579e8ae4a065d8dfcf8d',1,'Color']]],
   ['setsaturation',['setSaturation',['../class_color.html#a237de6ef93ddb2985d87a6fb630a0828',1,'Color']]],
-  ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText::setText()'],['../class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446',1,'LineEdit::setText()']]],
+  ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText::setText()'],['../class_button.html#ac9c672b02b6bd7ae75f0b8acd971578c',1,'Button::setText()'],['../class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446',1,'LineEdit::setText()']]],
   ['setthick',['setThick',['../class_canvas.html#a3ef38b87f65a9d13ec8abd7073142eb6',1,'Canvas::setThick()'],['../class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6',1,'GraphicsItem::setThick()']]],
   ['setvalue',['setValue',['../class_color.html#a1b673b9755fa01412ea14a2f9c040185',1,'Color']]],
   ['setvisible',['setVisible',['../class_window.html#a6d19e406410cae24b821775361af4b23',1,'Window::setVisible()'],['../class_graphics_item.html#a911dbcb4786b03e21400e821e0e6d632',1,'GraphicsItem::setVisible()']]],

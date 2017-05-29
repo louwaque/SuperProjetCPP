@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lineedit_2ecpp',['LineEdit.cpp',['../_line_edit_8cpp.html',1,'']]],
-  ['lineedit_2ehpp',['LineEdit.hpp',['../_line_edit_8hpp.html',1,'']]]
+  ['keyevent_2ecpp',['KeyEvent.cpp',['../_key_event_8cpp.html',1,'']]],
+  ['keyevent_2ehpp',['KeyEvent.hpp',['../_key_event_8hpp.html',1,'']]]
 ];

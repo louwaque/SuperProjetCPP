@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['text',['text',['../class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352',1,'GraphicsText::text()'],['../class_line_edit.html#a8677c9516beb229fdb289e48c9b8dd15',1,'LineEdit::text()']]],
-  ['textchanged',['textChanged',['../class_line_edit.html#ad5448963aa1a4dc3a9d25729a7fbf996',1,'LineEdit']]],
+  ['text',['text',['../class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352',1,'GraphicsText::text()'],['../class_button.html#ad9fb8858260a4e8ace09e98fdf4db736',1,'Button::text()'],['../class_line_edit.html#a8677c9516beb229fdb289e48c9b8dd15',1,'LineEdit::text()']]],
+  ['textchanged',['textChanged',['../class_button.html#a65348c647e77f29af7f39251104a2141',1,'Button::textChanged()'],['../class_line_edit.html#ad5448963aa1a4dc3a9d25729a7fbf996',1,'LineEdit::textChanged()']]],
   ['thick',['thick',['../class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d',1,'GraphicsItem']]],
   ['third',['third',['../class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6',1,'GraphicsTriangle']]],
   ['timernotify',['timerNotify',['../class_window.html#ae24d3b90e39a27e8a21f13d172b54828',1,'Window']]],
