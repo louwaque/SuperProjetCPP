@@ -424,25 +424,26 @@ var sectionId = 'dynsection-0';
 <!-- Node17 -->
 <g id="node17" class="node"><title>Node17</title>
 <g id="a_node17"><a xlink:href="class_button.html" target="_top" xlink:title="Permet la creation d&#39;un boutton. ">
-<polygon fill="white" stroke="black" points="860.5,-39 860.5,-173 961.5,-173 961.5,-39 860.5,-39"/>
-<text text-anchor="middle" x="911" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
-<polyline fill="none" stroke="black" points="860.5,-154 961.5,-154 "/>
-<text text-anchor="start" x="868.5" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_text</text>
-<text text-anchor="start" x="868.5" y="-131" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_rectangle</text>
-<text text-anchor="start" x="868.5" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_textChanged</text>
-<polyline fill="none" stroke="black" points="860.5,-113 961.5,-113 "/>
-<text text-anchor="start" x="868.5" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">+ Button()</text>
-<text text-anchor="start" x="868.5" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">+ Button()</text>
-<text text-anchor="start" x="868.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
-<text text-anchor="start" x="868.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
-<text text-anchor="start" x="868.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ textChanged()</text>
-<text text-anchor="start" x="868.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
+<polygon fill="white" stroke="black" points="860.5,-33.5 860.5,-178.5 961.5,-178.5 961.5,-33.5 860.5,-33.5"/>
+<text text-anchor="middle" x="911" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
+<polyline fill="none" stroke="black" points="860.5,-159.5 961.5,-159.5 "/>
+<text text-anchor="start" x="868.5" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_text</text>
+<text text-anchor="start" x="868.5" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_rectangle</text>
+<text text-anchor="start" x="868.5" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_textChanged</text>
+<text text-anchor="start" x="868.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_clicked</text>
+<polyline fill="none" stroke="black" points="860.5,-107.5 961.5,-107.5 "/>
+<text text-anchor="start" x="868.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Button()</text>
+<text text-anchor="start" x="868.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Button()</text>
+<text text-anchor="start" x="868.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
+<text text-anchor="start" x="868.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
+<text text-anchor="start" x="868.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ textChanged()</text>
+<text text-anchor="start" x="868.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge16" class="edge"><title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M911,-303.77C911,-268.468 911,-215.278 911,-173.096"/>
+<path fill="none" stroke="midnightblue" d="M911,-303.756C911,-269.963 911,-219.786 911,-178.562"/>
 <polygon fill="none" stroke="midnightblue" points="907.5,-304.12 911,-314.12 914.5,-304.12 907.5,-304.12"/>
 </g>
 <!-- Node18 -->

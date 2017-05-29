@@ -205,66 +205,72 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;: <a class="code" href="class_window.html#a56e191f6ad242c9e12863ee79f1e9e7b">Window</a>(400, 400, <span class="stringliteral">&quot;SuperProjetCPP&quot;</span>), <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>(), <a class="code" href="class_main_window.html#a3fab493eef29cbfedd74962e8df0ceeb">currentItem</a>(<span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  point-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({50, 50});</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  point-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb">Color::Blue</a>));</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Je suis super fort !!!&quot;</span>, point);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  text-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({0, 10});</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  text-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea">Color::Green</a>));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  text-&gt;<a class="code" href="class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9">setFont</a>(<a class="code" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732abc43f3fd3ab1f0102de3b976a483c448">Font::w12h24</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text1 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;EZDraw c&#39;est rigolo ^^&quot;</span>, point);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  text1-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({10, 20});</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  text1-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea">Color::Green</a>));</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point2 = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  point2-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 50});</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  point2-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972">Color::Yellow</a>));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text2 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Bonjour les gens !!!!&quot;</span>, point2);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  text2-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547">Color::Red</a>));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_graphics_line.html">GraphicsLine</a> *line = <span class="keyword">new</span> <a class="code" href="class_graphics_line.html">GraphicsLine</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  line-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({50, 100});</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  line-&gt;<a class="code" href="class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2">second</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({80, 20});</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a> *triangle = <span class="keyword">new</span> <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 20});</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595">second</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>(<a class="code" href="class_point.html">Point</a>(-30, 30));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6">third</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>(<a class="code" href="class_point.html">Point</a>(30, 30));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a> *rectangle = <span class="keyword">new</span> <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  rectangle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>(text-&gt;<a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  rectangle-&gt;<a class="code" href="class_graphics_rectangle.html#a1d46531794b6c92016cebc53d4eab9bf">bottomRight</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({text-&gt;<a class="code" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>().<a class="code" href="class_font.html#ad96d9cd6356edf670103542dbe4336c3">width</a>()*text-&gt;<a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>().size(), text-&gt;<a class="code" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>().<a class="code" href="class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70">height</a>()});</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a> *polygon = <span class="keyword">new</span> <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 100});</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376">setNbPoints</a>(10);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376">setNbPoints</a>(5);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="class_graphics_circle.html">GraphicsCircle</a> *circle = <span class="keyword">new</span> <a class="code" href="class_graphics_circle.html">GraphicsCircle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  circle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 300});</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  circle-&gt;<a class="code" href="class_graphics_circle.html#a68eefbca26010f1a10193eebd3c0d32b">radius</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({50, 50});</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">new</span> <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb">Color::Blue</a>), circle);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a> *ellipse = <span class="keyword">new</span> <a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  ellipse-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 300});</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ellipse-&gt;<a class="code" href="class_graphics_ellipse.html#a41e99099077a8f85317152bd1429494b">radius</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({100, 50});</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="class_graphics_square.html">GraphicsSquare</a> *square = <span class="keyword">new</span> <a class="code" href="class_graphics_square.html">GraphicsSquare</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  square-&gt;<a class="code" href="class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6">setThick</a>(5);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  square-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({500, 100});</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  square-&gt;<a class="code" href="class_graphics_square.html#aeda6a6d95b0089164e63400433d76e6f">bottomRight</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({80, 50});</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a> *blink = <span class="keyword">new</span> <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a>(square);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  blink-&gt;<a class="code" href="class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa">setBlinkFrequency</a>(500);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="class_line_edit.html">LineEdit</a> *lineEdit = <span class="keyword">new</span> <a class="code" href="class_line_edit.html">LineEdit</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  lineEdit-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 500});</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;: <a class="code" href="class_window.html#a56e191f6ad242c9e12863ee79f1e9e7b">Window</a>(400, 400, <span class="stringliteral">&quot;SuperProjetCPP&quot;</span>), <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>(), <a class="code" href="class_main_window.html#a3fab493eef29cbfedd74962e8df0ceeb">currentItem</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  point-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({50, 50});</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  point-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb">Color::Blue</a>));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Je suis super fort !!!&quot;</span>, point);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  text-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({0, 10});</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  text-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea">Color::Green</a>));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  text-&gt;<a class="code" href="class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9">setFont</a>(<a class="code" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732abc43f3fd3ab1f0102de3b976a483c448">Font::w12h24</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text1 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;EZDraw c&#39;est rigolo ^^&quot;</span>, point);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  text1-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({10, 20});</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  text1-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea">Color::Green</a>));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *point2 = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  point2-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 50});</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  point2-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972">Color::Yellow</a>));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *text2 = <span class="keyword">new</span> <a class="code" href="class_graphics_text.html">GraphicsText</a>(<span class="stringliteral">&quot;Bonjour les gens !!!!&quot;</span>, point2);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  text2-&gt;<a class="code" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547">Color::Red</a>));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_graphics_line.html">GraphicsLine</a> *line = <span class="keyword">new</span> <a class="code" href="class_graphics_line.html">GraphicsLine</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  line-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({50, 100});</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  line-&gt;<a class="code" href="class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2">second</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({80, 20});</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a> *triangle = <span class="keyword">new</span> <a class="code" href="class_graphics_triangle.html">GraphicsTriangle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 20});</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595">second</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>(<a class="code" href="class_point.html">Point</a>(-30, 30));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  triangle-&gt;<a class="code" href="class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6">third</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>(<a class="code" href="class_point.html">Point</a>(30, 30));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a> *rectangle = <span class="keyword">new</span> <a class="code" href="class_graphics_rectangle.html">GraphicsRectangle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  rectangle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>(text-&gt;<a class="code" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a>());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  rectangle-&gt;<a class="code" href="class_graphics_rectangle.html#a1d46531794b6c92016cebc53d4eab9bf">bottomRight</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({text-&gt;<a class="code" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>().<a class="code" href="class_font.html#ad96d9cd6356edf670103542dbe4336c3">width</a>()*text-&gt;<a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>().size(), text-&gt;<a class="code" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>().<a class="code" href="class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70">height</a>()});</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a> *polygon = <span class="keyword">new</span> <a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 100});</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376">setNbPoints</a>(10);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  polygon-&gt;<a class="code" href="class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376">setNbPoints</a>(5);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_graphics_circle.html">GraphicsCircle</a> *circle = <span class="keyword">new</span> <a class="code" href="class_graphics_circle.html">GraphicsCircle</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  circle-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 300});</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  circle-&gt;<a class="code" href="class_graphics_circle.html#a68eefbca26010f1a10193eebd3c0d32b">radius</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({50, 50});</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">new</span> <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a>(<a class="code" href="class_color.html">Color</a>(<a class="code" href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb">Color::Blue</a>), circle);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a> *ellipse = <span class="keyword">new</span> <a class="code" href="class_graphics_ellipse.html">GraphicsEllipse</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ellipse-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({200, 300});</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  ellipse-&gt;<a class="code" href="class_graphics_ellipse.html#a41e99099077a8f85317152bd1429494b">radius</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({100, 50});</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_graphics_square.html">GraphicsSquare</a> *square = <span class="keyword">new</span> <a class="code" href="class_graphics_square.html">GraphicsSquare</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  square-&gt;<a class="code" href="class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6">setThick</a>(5);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  square-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({500, 100});</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  square-&gt;<a class="code" href="class_graphics_square.html#aeda6a6d95b0089164e63400433d76e6f">bottomRight</a>()-&gt;<a class="code" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a>({80, 50});</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a> *blink = <span class="keyword">new</span> <a class="code" href="class_graphics_blink_animation.html">GraphicsBlinkAnimation</a>(square);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  blink-&gt;<a class="code" href="class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa">setBlinkFrequency</a>(500);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="class_line_edit.html">LineEdit</a> *lineEdit = <span class="keyword">new</span> <a class="code" href="class_line_edit.html">LineEdit</a>(&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  lineEdit-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({100, 500});</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="class_button.html">Button</a> *button = <span class="keyword">new</span> <a class="code" href="class_button.html">Button</a>(<span class="stringliteral">&quot;BON GROS BOUTON SA MERE&quot;</span>,&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  button-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({50,150});</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_button.html">Button</a> *button2 = <span class="keyword">new</span> <a class="code" href="class_button.html">Button</a>(<span class="stringliteral">&quot;CTB&quot;</span>,&amp;<a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  button2-&gt;<a class="code" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a>({75,175});</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="ttc" id="class_main_window_html_ab38e4c74b2505657e142cae2d779ae25"><div class="ttname"><a href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">MainWindow::m_scene</a></div><div class="ttdeci">GraphicsItem m_scene</div><div class="ttdef"><b>Definition:</b> MainWindow.hpp:21</div></div>
 <div class="ttc" id="class_graphics_blink_animation_html_ab968632932b3564a9a6791165224d5fa"><div class="ttname"><a href="class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa">GraphicsBlinkAnimation::setBlinkFrequency</a></div><div class="ttdeci">void setBlinkFrequency(const unsigned int frequency)</div><div class="ttdef"><b>Definition:</b> GraphicsBlinkAnimation.hpp:13</div></div>
 <div class="ttc" id="class_graphics_item_html_acddeaf58963ddb0de93b7c1b27512af7"><div class="ttname"><a href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">GraphicsItem::absolute</a></div><div class="ttdeci">Point absolute() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:51</div></div>
@@ -299,6 +305,7 @@ Attributs privés</h2></td></tr>
 <div class="ttc" id="class_graphics_text_html_aaafb8f8246e4d3b0d5dd8ac5cc8586cc"><div class="ttname"><a href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">GraphicsText::font</a></div><div class="ttdeci">Font font() const </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:61</div></div>
 <div class="ttc" id="class_graphics_text_html_adc96243d9e35d7cbf3e0b8abbd1be5a9"><div class="ttname"><a href="class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9">GraphicsText::setFont</a></div><div class="ttdeci">void setFont(const Font &amp;font)</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:63</div></div>
 <div class="ttc" id="class_graphics_polygon_html"><div class="ttname"><a href="class_graphics_polygon.html">GraphicsPolygon</a></div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.hpp:6</div></div>
+<div class="ttc" id="class_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">Permet la creation d&#39;un boutton. </div><div class="ttdef"><b>Definition:</b> Button.hpp:23</div></div>
 <div class="ttc" id="class_color_html_af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972"><div class="ttname"><a href="class_color.html#af1edae0ae19f7a958e091dbb85e7102fa2d18528e48b10b9a5c268c5e47a1b972">Color::Yellow</a></div><div class="ttdef"><b>Definition:</b> Color.hpp:40</div></div>
 <div class="ttc" id="class_graphics_item_html_ac2a3edbc5d5628a75918d512314f33c3"><div class="ttname"><a href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">GraphicsItem::setColor</a></div><div class="ttdeci">void setColor(const Color color)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:92</div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
@@ -340,9 +347,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#afb5eda56436d60b0da65833028ccadf6">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689">draw</a>(&amp;<a class="code" href="class_window.html#a47ea2e0f003fc805b8ca14396dcbb747">canvas</a>());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689">draw</a>(&amp;<a class="code" href="class_window.html#a47ea2e0f003fc805b8ca14396dcbb747">canvas</a>());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="ttc" id="class_main_window_html_ab38e4c74b2505657e142cae2d779ae25"><div class="ttname"><a href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">MainWindow::m_scene</a></div><div class="ttdeci">GraphicsItem m_scene</div><div class="ttdef"><b>Definition:</b> MainWindow.hpp:21</div></div>
 <div class="ttc" id="class_window_html_a47ea2e0f003fc805b8ca14396dcbb747"><div class="ttname"><a href="class_window.html#a47ea2e0f003fc805b8ca14396dcbb747">Window::canvas</a></div><div class="ttdeci">Canvas &amp; canvas()</div><div class="ttdef"><b>Definition:</b> Window.hpp:58</div></div>
 <div class="ttc" id="class_graphics_item_html_af4f2af374b066e17a5e0e1dd1565c689"><div class="ttname"><a href="class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689">GraphicsItem::draw</a></div><div class="ttdeci">void draw(Canvas *canvas)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:67</div></div>
@@ -380,10 +387,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#a0d49ac30ebc4ec74839dedd54a4d1f1b">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2">handleEvent</a>(event);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">drawRequest</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2">handleEvent</a>(event);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">drawRequest</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 <div class="ttc" id="class_main_window_html_ab38e4c74b2505657e142cae2d779ae25"><div class="ttname"><a href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">MainWindow::m_scene</a></div><div class="ttdeci">GraphicsItem m_scene</div><div class="ttdef"><b>Definition:</b> MainWindow.hpp:21</div></div>
 <div class="ttc" id="class_graphics_item_html_ad6c62fa07246bc1d7b9eae6340a246e2"><div class="ttname"><a href="class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2">GraphicsItem::handleEvent</a></div><div class="ttdeci">void handleEvent(const Event &amp;event)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:89</div></div>
 <div class="ttc" id="class_window_html_a63a8cd07ce1d0769adc248651ade56d7"><div class="ttname"><a href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">Window::drawRequest</a></div><div class="ttdeci">void drawRequest()</div><div class="ttdef"><b>Definition:</b> Window.hpp:54</div></div>
@@ -431,12 +438,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#a6d91ed483458858a51115485de565a8d">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">// if (currentItem) {</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">//   currentItem-&gt;setAbsolute(mousePos);</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">//   drawRequest();</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// }</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// if (currentItem) {</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">//   currentItem-&gt;setAbsolute(mousePos);</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">//   drawRequest();</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// }</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,12 +480,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#ab5e597c294cd58775bf21fad128e07f4">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">//   if (item-&gt;isOver(mousePos))</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">//     currentItem = item;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">// }</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">//   if (item-&gt;isOver(mousePos))</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">//     currentItem = item;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// }</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -515,9 +522,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#a5cf46a5ded20537706ca7aef22d0ee3d">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// currentItem = nullptr;</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// currentItem = nullptr;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,10 +551,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_window.html#a303f745cf1832be8c660d42119f804fd">Window</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2">update</a>(time);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">drawRequest</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">m_scene</a>.<a class="code" href="class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2">update</a>(time);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">drawRequest</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="ttc" id="class_main_window_html_ab38e4c74b2505657e142cae2d779ae25"><div class="ttname"><a href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">MainWindow::m_scene</a></div><div class="ttdeci">GraphicsItem m_scene</div><div class="ttdef"><b>Definition:</b> MainWindow.hpp:21</div></div>
 <div class="ttc" id="class_graphics_item_html_a48a21dd602b80a38515905ce1f668ed2"><div class="ttname"><a href="class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2">GraphicsItem::update</a></div><div class="ttdeci">void update(const unsigned int time)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:81</div></div>
 <div class="ttc" id="class_window_html_a63a8cd07ce1d0769adc248651ade56d7"><div class="ttname"><a href="class_window.html#a63a8cd07ce1d0769adc248651ade56d7">Window::drawRequest</a></div><div class="ttdeci">void drawRequest()</div><div class="ttdef"><b>Definition:</b> Window.hpp:54</div></div>
@@ -613,7 +620,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
-    <li class="footer">Généré le Lundi 29 Mai 2017 11:53:27 pour Super Project c++ par
+    <li class="footer">Généré le Lundi 29 Mai 2017 12:41:13 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
