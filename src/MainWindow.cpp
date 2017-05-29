@@ -12,9 +12,23 @@
 #include <LineEdit.hpp>
 #include <Button.hpp>
 
+// test connect boost
+
+/*struct createRectangle
+{
+  void operator()()
+  {
+    m_rectangle = new GraphicsRectangle(this);
+    m_rectangle->setAbsolute(200;200);
+    m_rectangle->setHeight(50);
+    m_rectangle->setWidth(70);
+  }
+}*/
+
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
 {
+
   GraphicsPoint *point = new GraphicsPoint(&m_scene);
   point->setAbsolute({50, 50});
   point->setColor(Color(Color::Blue));
@@ -73,11 +87,11 @@ MainWindow::MainWindow()
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->setAbsolute({100, 500});
 
-  Button *button = new Button("BON GROS BOUTON SA MERE",&m_scene);
-  button->setAbsolute({50,150});
 
-  Button *button2 = new Button("CTB",&m_scene);
-  button2->setAbsolute({75,175});
+//  Button *button = new Button("Ajouter un rectangle",&m_scene);
+//  button->setAbsolute({50,150});
+//  co_t c = sig.connect(button);
+
 }
 
 void MainWindow::drawEvent()
