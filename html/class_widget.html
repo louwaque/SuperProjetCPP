@@ -133,10 +133,6 @@ Types publics</h2></td></tr>
 <tr class="memitem:a722503332a7264088569b8f3fb7b3441"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a722503332a7264088569b8f3fb7b3441">signal_t</a></td></tr>
 <tr class="separator:a722503332a7264088569b8f3fb7b3441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea8845fc9833daf17e001fb5f04b949"><td class="memItemLeft" align="right" valign="top">typedef signal_t::slot_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a3ea8845fc9833daf17e001fb5f04b949">slot_t</a></td></tr>
-<tr class="separator:a3ea8845fc9833daf17e001fb5f04b949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d0e18de80c67e7988517ec66ef1c46"><td class="memItemLeft" align="right" valign="top">typedef boost::signals2::connection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_widget.html#a65d0e18de80c67e7988517ec66ef1c46">co_t</a></td></tr>
-<tr class="separator:a65d0e18de80c67e7988517ec66ef1c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
 <tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> { <br/>
 &#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a> = 0x0, 
@@ -164,9 +160,6 @@ boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign
 <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea25e13b10ed64d5e7268e8fe8902a64 inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; <a class="el" href="class_point.html">Point</a>(const <br class="typebreak"/>
-<a class="el" href="class_point.html">Point</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64">PositionCorrector</a></td></tr>
-<tr class="separator:aea25e13b10ed64d5e7268e8fe8902a64 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
 &lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a></td></tr>
 <tr class="separator:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,20 +181,18 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:aa892caff547a0fd1969898ee0740b186 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a">children</a> (const <a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> filter=<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a>, const <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc">SearchTypes</a> option=<a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>) const </td></tr>
 <tr class="separator:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742f444cb7d1a142dec52ee777dd51c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a742f444cb7d1a142dec52ee777dd51c3">anchor</a> () const </td></tr>
-<tr class="separator:a742f444cb7d1a142dec52ee777dd51c3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1266d26ff6aa338959c0796ef915fc4 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4">setAnchor</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="class_graphics_item.html#a742f444cb7d1a142dec52ee777dd51c3">anchor</a>)</td></tr>
-<tr class="separator:ab1266d26ff6aa338959c0796ef915fc4 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0cec95681d8c30111700df153bea9f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aed0cec95681d8c30111700df153bea9f">relative</a> () const </td></tr>
+<tr class="separator:aed0cec95681d8c30111700df153bea9f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e7a7cd02bfbfcae360998bb7469f70 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad7e7a7cd02bfbfcae360998bb7469f70">relative</a> ()</td></tr>
+<tr class="separator:ad7e7a7cd02bfbfcae360998bb7469f70 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7">absolute</a> () const </td></tr>
 <tr class="separator:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d">setAbsolute</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
-<tr class="separator:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad48630477e3701e874e19287440a9c8f">setRelative</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
+<tr class="separator:ad48630477e3701e874e19287440a9c8f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a0964502bdc810a0684c9bb9b08f86 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a53a0964502bdc810a0684c9bb9b08f86">setAbsolute</a> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
+<tr class="separator:a53a0964502bdc810a0684c9bb9b08f86 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a> () const </td></tr>
 <tr class="separator:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29879be1c242b86be8fc7df42b3fbd8f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64">PositionCorrector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a29879be1c242b86be8fc7df42b3fbd8f">positionCorrector</a> () const </td></tr>
-<tr class="separator:a29879be1c242b86be8fc7df42b3fbd8f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2937af237da890e836326ed882140d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aaa2937af237da890e836326ed882140d">setPositionCorrector</a> (const <a class="el" href="class_graphics_item.html#aea25e13b10ed64d5e7268e8fe8902a64">PositionCorrector</a> &amp;<a class="el" href="jquery_8js.html#ab1b8e707a24dead9e28f92f38ba10dd5">fn</a>)</td></tr>
-<tr class="separator:aaa2937af237da890e836326ed882140d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a> () const </td></tr>
 <tr class="separator:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#acc364937b5031bc99455d18638f77af3">setZ</a> (const int <a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a>)</td></tr>
@@ -249,36 +240,12 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:a6616ded9057686f175bdbaa4c62218dc inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des définitions de type membres</h2>
-<a class="anchor" id="a65d0e18de80c67e7988517ec66ef1c46"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::signals2::connection <a class="el" href="class_widget.html#a65d0e18de80c67e7988517ec66ef1c46">Widget::co_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a722503332a7264088569b8f3fb7b3441"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">typedef boost::signals2::signal&lt;void ()&gt; <a class="el" href="class_widget.html#a722503332a7264088569b8f3fb7b3441">Widget::signal_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3ea8845fc9833daf17e001fb5f04b949"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef signal_t::slot_type <a class="el" href="class_widget.html#a3ea8845fc9833daf17e001fb5f04b949">Widget::slot_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -323,7 +290,7 @@ Membres hérités additionnels</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_widget.html">Widget</a></li>
-    <li class="footer">Généré le Lundi 29 Mai 2017 13:28:19 pour Super Project c++ par
+    <li class="footer">Généré le Lundi 29 Mai 2017 13:32:32 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

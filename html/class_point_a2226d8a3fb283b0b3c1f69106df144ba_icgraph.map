@@ -1,24 +1,38 @@
 <map id="Point::y" name="Point::y">
-<area shape="rect" id="node2" href="$class_canvas.html#a4830e2b1c25e309489c489bad59ea9e1" title="Canvas::drawPoint" alt="" coords="136,5,269,32"/>
-<area shape="rect" id="node3" href="$class_canvas.html#aa379d9765fc40e770309001da99832c3" title="Canvas::drawLine" alt="" coords="139,56,266,83"/>
-<area shape="rect" id="node4" href="$class_canvas.html#a347a381b7cd7381a84f49a8bdd77244c" title="Canvas::drawRectangle" alt="" coords="121,107,284,133"/>
-<area shape="rect" id="node5" href="$class_canvas.html#a02f659c0cb7809f6dbb18746eb547778" title="Canvas::drawCircle" alt="" coords="134,157,271,184"/>
-<area shape="rect" id="node6" href="$class_canvas.html#a7790d284aece3ffb4455af3846521e5b" title="Canvas::drawTriangle" alt="" coords="128,208,277,235"/>
-<area shape="rect" id="node7" href="$class_canvas.html#a34af1e9202967cbb4088e18296af8296" title="Canvas::drawText" alt="" coords="138,259,267,285"/>
-<area shape="rect" id="node8" href="$class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16" title="GraphicsCircle::meDraw" alt="" coords="120,309,285,336"/>
-<area shape="rect" id="node9" href="$class_graphics_rectangle.html#a3efd2295cd742f75de829851bf7ca3dd" title="GraphicsRectangle::\lsetWidth" alt="" coords="132,361,273,402"/>
-<area shape="rect" id="node15" href="$class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429" title="GraphicsRectangle::\lheight" alt="" coords="132,426,273,467"/>
-<area shape="rect" id="node18" href="$class_point.html#a43923c490fb5439d7d8a041e86520c34" title="permet la modification des valeurs du point. " alt="" coords="163,492,242,519"/>
-<area shape="rect" id="node19" href="$_point_8cpp.html#a872cb140a1e5f546a31b4b3d891b765a" title="Surchage de l&#39;operateur ==. " alt="" coords="160,543,245,569"/>
-<area shape="rect" id="node20" href="$_point_8cpp.html#a4158330ef851082d91a82eefd03aa183" title="Surchage de l&#39;operateur +. " alt="" coords="164,593,241,620"/>
-<area shape="rect" id="node21" href="$_point_8cpp.html#af304a4bde169f417ea02e56d3d4b7258" title="Surchage de l&#39;operateur &#45;. " alt="" coords="166,644,239,671"/>
-<area shape="rect" id="node22" href="$_point_8cpp.html#aab55cf13db83c55c46a961b2b2441960" title="Surchage de l&#39;operateur &lt;&lt;. " alt="" coords="160,695,245,721"/>
-<area shape="rect" id="node23" href="$_point_8cpp.html#a4e1acba0f26daf714b7816d3c1994a74" title="Surchage de l&#39;operateur &lt;. " alt="" coords="164,745,241,772"/>
-<area shape="rect" id="node10" href="$class_button.html#a2cfe02cc2981d9878f6c4660e5680388" title="Button::Button" alt="" coords="351,296,457,323"/>
-<area shape="rect" id="node11" href="$class_button.html#ac6a233c876164a52d54ef7f1b3fb78d1" title="Button::setText" alt="" coords="348,347,460,373"/>
-<area shape="rect" id="node12" href="$class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446" title="LineEdit::setText" alt="" coords="343,397,465,424"/>
-<area shape="rect" id="node13" href="$class_line_edit.html#a04e1cd86821efe7570868ae397978186" title="LineEdit::LineEdit" alt="" coords="546,427,670,453"/>
-<area shape="rect" id="node14" href="$class_line_edit.html#a8d5e79e8a895901381e301d41d3d4343" title="LineEdit::meHandleEvent" alt="" coords="523,376,693,403"/>
-<area shape="rect" id="node16" href="$class_graphics_rectangle.html#aea349ac359e4f2227f1da772c1a26ab6" title="GraphicsRectangle::\lsetHeight" alt="" coords="333,449,475,490"/>
-<area shape="rect" id="node17" href="$class_button.html#a533e3a3815061a3cbf7ae2539af4b206" title="Constructeur de la classe Button. " alt="" coords="555,477,661,504"/>
+<area shape="rect" id="node2" href="$class_canvas.html#a4830e2b1c25e309489c489bad59ea9e1" title="Canvas::drawPoint" alt="" coords="141,5,275,32"/>
+<area shape="rect" id="node3" href="$class_canvas.html#aa379d9765fc40e770309001da99832c3" title="Canvas::drawLine" alt="" coords="145,56,271,83"/>
+<area shape="rect" id="node4" href="$class_canvas.html#a347a381b7cd7381a84f49a8bdd77244c" title="Canvas::drawRectangle" alt="" coords="127,107,289,133"/>
+<area shape="rect" id="node5" href="$class_canvas.html#a02f659c0cb7809f6dbb18746eb547778" title="Canvas::drawCircle" alt="" coords="139,157,277,184"/>
+<area shape="rect" id="node6" href="$class_canvas.html#a7790d284aece3ffb4455af3846521e5b" title="Canvas::drawTriangle" alt="" coords="133,208,283,235"/>
+<area shape="rect" id="node7" href="$class_canvas.html#a34af1e9202967cbb4088e18296af8296" title="Canvas::drawText" alt="" coords="143,259,273,285"/>
+<area shape="rect" id="node8" href="$class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16" title="GraphicsCircle::meDraw" alt="" coords="125,309,291,336"/>
+<area shape="rect" id="node9" href="$class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429" title="GraphicsRectangle::\lheight" alt="" coords="137,361,279,402"/>
+<area shape="rect" id="node10" href="$class_graphics_square.html#a14374df804233349ce8654bbe41531e7" title="GraphicsSquare::Graphics\lSquare" alt="" coords="121,426,295,467"/>
+<area shape="rect" id="node11" href="$class_point.html#a43923c490fb5439d7d8a041e86520c34" title="permet la modification des valeurs du point. " alt="" coords="169,492,247,519"/>
+<area shape="rect" id="node33" href="$_point_8cpp.html#a872cb140a1e5f546a31b4b3d891b765a" title="Surchage de l&#39;operateur ==. " alt="" coords="165,543,251,569"/>
+<area shape="rect" id="node34" href="$_point_8cpp.html#a4158330ef851082d91a82eefd03aa183" title="Surchage de l&#39;operateur +. " alt="" coords="169,593,247,620"/>
+<area shape="rect" id="node35" href="$_point_8cpp.html#af304a4bde169f417ea02e56d3d4b7258" title="Surchage de l&#39;operateur &#45;. " alt="" coords="171,644,245,671"/>
+<area shape="rect" id="node36" href="$_point_8cpp.html#aab55cf13db83c55c46a961b2b2441960" title="Surchage de l&#39;operateur &lt;&lt;. " alt="" coords="165,695,251,721"/>
+<area shape="rect" id="node37" href="$_point_8cpp.html#a4e1acba0f26daf714b7816d3c1994a74" title="Surchage de l&#39;operateur &lt;. " alt="" coords="169,745,247,772"/>
+<area shape="rect" id="node12" href="$class_graphics_item.html#ad48630477e3701e874e19287440a9c8f" title="GraphicsItem::setRelative" alt="" coords="345,248,519,275"/>
+<area shape="rect" id="node19" href="$class_main_window.html#a34c4b4207b46d11a4100c9b19f0e81bb" title="MainWindow::MainWindow" alt="" coords="1065,492,1245,519"/>
+<area shape="rect" id="node20" href="$class_point.html#a2a77e4f4e0521de921e7066052530763" title="Point::operator=" alt="" coords="375,619,489,645"/>
+<area shape="rect" id="node21" href="$class_point.html#ab536377f38dbf8fd36875838648a1825" title="Point::setAbsolute" alt="" coords="367,568,497,595"/>
+<area shape="rect" id="node25" href="$class_point.html#aa346b22aa03d377bfc90b5b1e11f074c" title="Point::friendChanged" alt="" coords="593,517,737,544"/>
+<area shape="rect" id="node27" href="$class_point.html#a4342967313bdfb5a0120d00399ad7cc0" title="Point::originChanged" alt="" coords="361,669,503,696"/>
+<area shape="rect" id="node29" href="$class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2" title="Point::setX" alt="" coords="389,361,475,388"/>
+<area shape="rect" id="node31" href="$class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8" title="Point::setY" alt="" coords="389,416,475,443"/>
+<area shape="rect" id="node13" href="$class_graphics_anchor.html#a902a4032ae818bbe9a0b6fdb84fe341d" title="GraphicsAnchor::setRelative" alt="" coords="571,147,760,173"/>
+<area shape="rect" id="node14" href="$class_graphics_anchor.html#a1dc0e27c411d6b4b11d70bd4d8ae1699" title="GraphicsAnchor::setAbsolute" alt="" coords="569,197,761,224"/>
+<area shape="rect" id="node15" href="$class_graphics_point.html#ac1242633c38521d881c9aa3548676dd4" title="GraphicsPoint::GraphicsPoint" alt="" coords="568,248,763,275"/>
+<area shape="rect" id="node16" href="$class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446" title="LineEdit::setText" alt="" coords="853,349,974,376"/>
+<area shape="rect" id="node17" href="$class_line_edit.html#a04e1cd86821efe7570868ae397978186" title="LineEdit::LineEdit" alt="" coords="1093,404,1217,431"/>
+<area shape="rect" id="node18" href="$class_line_edit.html#a8d5e79e8a895901381e301d41d3d4343" title="LineEdit::meHandleEvent" alt="" coords="1069,349,1240,376"/>
+<area shape="rect" id="node22" href="$class_graphics_item.html#a53a0964502bdc810a0684c9bb9b08f86" title="GraphicsItem::setAbsolute" alt="" coords="577,568,754,595"/>
+<area shape="rect" id="node24" href="$class_point.html#ac5f7b13934e6e617bd656b8bcf17c3cf" title="Point::setAbsolute" alt="" coords="601,619,730,645"/>
+<area shape="rect" id="node23" href="$class_graphics_point.html#aaceb83d2bd068629dccfde4aee9c60f5" title="GraphicsPoint::meHandleEvent" alt="" coords="811,568,1016,595"/>
+<area shape="rect" id="node26" href="$class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" title="Point::join" alt="" coords="873,517,953,544"/>
+<area shape="rect" id="node28" href="$class_point.html#afc78333ec50c2cfb63b19db436064820" title="Point::setOrigin" alt="" coords="609,669,721,696"/>
+<area shape="rect" id="node30" href="$class_graphics_rectangle.html#a3efd2295cd742f75de829851bf7ca3dd" title="GraphicsRectangle::\lsetWidth" alt="" coords="595,350,736,391"/>
+<area shape="rect" id="node32" href="$class_graphics_rectangle.html#aea349ac359e4f2227f1da772c1a26ab6" title="GraphicsRectangle::\lsetHeight" alt="" coords="843,401,984,442"/>
 </map>

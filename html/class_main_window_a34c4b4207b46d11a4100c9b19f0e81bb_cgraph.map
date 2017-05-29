@@ -1,28 +1,15 @@
 <map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
-<area shape="rect" id="node2" href="$class_graphics_item.html#a3c84a47a2ccceebf2a2c8f5c4d5d609d" title="GraphicsItem::setAbsolute" alt="" coords="247,65,425,92"/>
-<area shape="rect" id="node3" href="$class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4" title="GraphicsItem::setAnchor" alt="" coords="494,21,661,48"/>
-<area shape="rect" id="node5" href="$class_graphics_item.html#acddeaf58963ddb0de93b7c1b27512af7" title="GraphicsItem::absolute" alt="" coords="499,109,656,136"/>
-<area shape="rect" id="node6" href="$class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3" title="GraphicsItem::setColor" alt="" coords="257,167,415,193"/>
-<area shape="rect" id="node8" href="$class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9" title="GraphicsText::setFont" alt="" coords="260,217,412,244"/>
-<area shape="rect" id="node9" href="$class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc" title="GraphicsText::font" alt="" coords="512,243,643,269"/>
-<area shape="rect" id="node10" href="$class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2" title="GraphicsLine::second" alt="" coords="262,319,410,345"/>
-<area shape="rect" id="node11" href="$class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7" title="GraphicsItem::setFill" alt="" coords="265,369,407,396"/>
-<area shape="rect" id="node12" href="$class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595" title="recupere les coordonées du second point du triangle. " alt="" coords="251,420,421,447"/>
-<area shape="rect" id="node13" href="$class_graphics_triangle.html#afbb316f8c1587cd7ab6cf5b1f58c9fd6" title="recupere les coordonées du troisième point du triangle. " alt="" coords="259,471,413,497"/>
-<area shape="rect" id="node14" href="$class_graphics_rectangle.html#a1d46531794b6c92016cebc53d4eab9bf" title="GraphicsRectangle::\lbottomRight" alt="" coords="265,522,407,563"/>
-<area shape="rect" id="node15" href="$class_font.html#ad96d9cd6356edf670103542dbe4336c3" title="Font::width" alt="" coords="293,588,379,615"/>
-<area shape="rect" id="node16" href="$class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352" title="Recupere le contenu de GraphicsText. " alt="" coords="271,639,401,665"/>
-<area shape="rect" id="node17" href="$class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70" title="Font::height" alt="" coords="291,689,381,716"/>
-<area shape="rect" id="node18" href="$class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376" title="GraphicsPolygon::setNbPoints" alt="" coords="235,740,437,767"/>
-<area shape="rect" id="node22" href="$class_graphics_circle.html#a68eefbca26010f1a10193eebd3c0d32b" title="GraphicsCircle::radius" alt="" coords="261,791,411,817"/>
-<area shape="rect" id="node23" href="$class_graphics_ellipse.html#a41e99099077a8f85317152bd1429494b" title="GraphicsEllipse::radius" alt="" coords="258,841,414,868"/>
-<area shape="rect" id="node24" href="$class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6" title="GraphicsItem::setThick" alt="" coords="257,892,415,919"/>
-<area shape="rect" id="node26" href="$class_graphics_square.html#aeda6a6d95b0089164e63400433d76e6f" title="GraphicsSquare::bottomRight" alt="" coords="239,943,433,969"/>
-<area shape="rect" id="node27" href="$class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa" title="GraphicsBlinkAnimation\l::setBlinkFrequency" alt="" coords="255,994,417,1035"/>
-<area shape="rect" id="node4" href="$class_graphics_item.html#a742f444cb7d1a142dec52ee777dd51c3" title="GraphicsItem::anchor" alt="" coords="717,21,864,48"/>
-<area shape="rect" id="node7" href="$class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2" title="GraphicsItem::color" alt="" coords="509,167,645,193"/>
-<area shape="rect" id="node19" href="$class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f" title="GraphicsPolygon::nbPoints" alt="" coords="487,689,667,716"/>
-<area shape="rect" id="node20" href="$class_graphics_polygon.html#a0b4b5c6f2cfb03f89a7161e87e6feba5" title="GraphicsPolygon::newPoint" alt="" coords="486,740,669,767"/>
-<area shape="rect" id="node21" href="$class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e" title="GraphicsPolygon::popPoint" alt="" coords="487,791,667,817"/>
-<area shape="rect" id="node25" href="$class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d" title="GraphicsItem::thick" alt="" coords="509,892,645,919"/>
+<area shape="rect" id="node2" href="$class_graphics_item.html#aed0cec95681d8c30111700df153bea9f" title="GraphicsItem::relative" alt="" coords="235,5,386,32"/>
+<area shape="rect" id="node3" href="$class_point.html#a43923c490fb5439d7d8a041e86520c34" title="permet la modification des valeurs du point. " alt="" coords="811,172,890,199"/>
+<area shape="rect" id="node6" href="$class_graphics_rectangle.html#adae2b3c26a2d3ae81e98cbb525b14753" title="recupere les coordonnées. " alt="" coords="240,107,381,149"/>
+<area shape="rect" id="node7" href="$class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676" title="GraphicsRectangle::\lbottomRight" alt="" coords="240,173,381,214"/>
+<area shape="rect" id="node8" href="$class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" title="Point::join" alt="" coords="271,239,351,265"/>
+<area shape="rect" id="node14" href="$class_point.html#a04ce786cebfd535bc380833a71405930" title="Point::absolute" alt="" coords="637,273,747,300"/>
+<area shape="rect" id="node4" href="$class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" title="recupere la valeur de l&#39;absisse du Point. " alt="" coords="944,147,1011,173"/>
+<area shape="rect" id="node5" href="$class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" title="Fonction recuperant le valeur de l&#39;ordonée. " alt="" coords="944,197,1011,224"/>
+<area shape="rect" id="node9" href="$class_point.html#a498f108de0c0351dfb3177c681a7a1f2" title="Point::beAlone" alt="" coords="453,121,560,148"/>
+<area shape="rect" id="node10" href="$class_point.html#a6cd48f7546776ab3d245ba3ecaea1112" title="Point::changed" alt="" coords="452,172,561,199"/>
+<area shape="rect" id="node11" href="$class_point.html#aa346b22aa03d377bfc90b5b1e11f074c" title="Point::friendChanged" alt="" coords="435,223,579,249"/>
+<area shape="rect" id="node12" href="$class_point.html#ab536377f38dbf8fd36875838648a1825" title="Point::setAbsolute" alt="" coords="627,223,757,249"/>
+<area shape="rect" id="node13" href="$class_point.html#ad92f2337b839a94ce97dcdb439b4325a" title="Constructeur par défaut de la classe Point. " alt="" coords="805,248,896,275"/>
 </map>

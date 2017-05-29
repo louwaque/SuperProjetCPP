@@ -32,7 +32,6 @@ var hierarchy =
       [ "GraphicsText", "class_graphics_text.html", null ],
       [ "ToolsWindows", "class_tools_windows.html", null ],
       [ "Widget", "class_widget.html", [
-        [ "Button", "class_button.html", null ],
         [ "LineEdit", "class_line_edit.html", null ]
       ] ]
     ] ],
