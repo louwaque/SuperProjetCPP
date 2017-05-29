@@ -1050,27 +1050,27 @@ Generating caller graph for function showSyncOff
 Generating caller graph for function showSyncOn
 Generating call graph for function storeLink
 Generating caller graph for function storeLink
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:187: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:187: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:190: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:190: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
   parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:220: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:220: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:187: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:187: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:209: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
   parameter 'p'
   parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:220: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:220: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:223: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:223: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:190: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:190: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:212: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:223: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:223: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
   parameter 'p'
 Generating caller graph for function stripPath
 Generating caller graph for function stripPath2
@@ -1339,8 +1339,8 @@ Generating caller graph for function Point::set
 Generating call graph for function Point::setAbsolute
 Generating caller graph for function Point::setAbsolute
 Generating call graph for function Point::setAbsolute
-Generating call graph for function Point::setOrigin
-Generating call graph for function Point::setOrigin
+Generating call graph for function Point::setOriginDynamic
+Generating call graph for function Point::setOriginStatic
 Generating call graph for function Point::setX
 Generating caller graph for function Point::setX
 Generating call graph for function Point::setY
@@ -2386,5 +2386,5 @@ Patching output file 539/542
 Patching output file 540/542
 Patching output file 541/542
 Patching output file 542/542
-lookup cache used 1189/65536 hits=13232 misses=1213
+lookup cache used 1190/65536 hits=13242 misses=1214
 finished...
