@@ -74,19 +74,22 @@ public:
 
   Point &operator=(const Point &src);
 
-  inline Point origin() const { return m_origin ? *m_origin : Point(0, 0); }
+  inline Point origin() const { return Point(m_originX, m_originY); }
   //quand le parent est modifié, la position absolu de l'objet est recalculer pour GARDER la même qu'avant
   // finalement NON !
   inline void setOrigin(const Point &origin) {
-    if (!m_origin)
-      m_origin = new Point();
-    m_origin->beAlone();
-    m_origin->set(origin);
+    m_originConnection.disconnect();
+    // m_x = origin.m_x;
+    // m_y = origin.m_y;
+    originChanged(origin);
   }
+
   inline void setOrigin(Point &origin) {
-    if (!m_origin)
-      m_origin = new Point();
-    m_origin->join(origin);
+    m_originConnection.disconnect();
+    // m_x = origin.m_x;
+    // m_y = origin.m_y;
+    originChanged(origin);
+    m_originConnection = origin.changed(boost::bind(&Point::originChanged, this, _1));
   }
 
   Point absolute() const;
@@ -137,10 +140,13 @@ public:
   inline CorrectorList &correctors() { return m_correctorsVariable; }
 
 private:
+  void originChanged(const Point &point);
   void friendChanged(const Point &point);
 
 private:
-  Point *m_origin;
+  int m_originX;
+  int m_originY;
+  co_t m_originConnection;
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
 

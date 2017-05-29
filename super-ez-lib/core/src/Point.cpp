@@ -7,8 +7,9 @@ Point::GroupsPoints Point::m_groups;
 Point::Point()
   : m_x(0),
     m_y(0),
+    m_originX(0),
+    m_originY(0),
     m_groupId(boost::uuids::nil_uuid()),
-    m_origin(nullptr),
     m_joinType(Absolute)
 {
 }
@@ -16,8 +17,9 @@ Point::Point()
 Point::Point(int x, int y)
   : m_x(x),
     m_y(y),
+    m_originX(0),
+    m_originY(0),
     m_groupId(boost::uuids::nil_uuid()),
-    m_origin(nullptr),
     m_joinType(Absolute)
 {
 }
@@ -25,9 +27,10 @@ Point::Point(int x, int y)
 Point::Point(const CorrectorList &fixed)
 : m_x(0),
   m_y(0),
+  m_originX(0),
+  m_originY(0),
   m_groupId(boost::uuids::nil_uuid()),
   m_correctorsFixed(fixed),
-  m_origin(nullptr),
   m_joinType(Absolute)
 {
 }
@@ -35,43 +38,40 @@ Point::Point(const CorrectorList &fixed)
 Point::Point(const Point &src)
 : m_x(src.m_x),
   m_y(src.m_y),
+  m_originX(src.m_originX),
+  m_originY(src.m_originY),
   m_groupId(boost::uuids::nil_uuid()),
   m_correctorsFixed(src.m_correctorsFixed),
   m_correctorsVariable(src.m_correctorsVariable),
-  m_origin(nullptr),
   m_joinType(src.m_joinType)
 {
-  if (src.m_origin)
-    m_origin = new Point({m_origin->m_x, m_origin->m_y});
+  // if (src.m_origin)
+  //   m_origin = new Point(m_origin->m_x, m_origin->m_y);
   //FIXME les deux sont dans le même groupe ? je ne pense pas
 }
 
 Point::~Point()
 {
   beAlone();
-  delete m_origin;
 }
 
 Point &Point::operator=(const Point &src)
 {
+  m_originX = src.m_originX;
+  m_originY = src.m_originY;
   set(src.m_x, src.m_y);
   return *this;
 }
 
 Point Point::absolute() const
 {
-  if (m_origin)
-    return m_origin->absolute() + *this;
-  else
-    return *this;
+  return Point(m_originX, m_originY) + *this;
 }
 
 void Point::setAbsolute(const Point &point)
 {
-  if (m_origin)
-    set(point - m_origin->absolute());
-  else
-    set(point);
+  // std::cerr << "set absolute " << point << '\n';
+  set(point - Point(m_originX, m_originY));
 }
 
 void Point::setAbsolute(const int x, const int y)
@@ -81,9 +81,11 @@ void Point::setAbsolute(const int x, const int y)
 
 void Point::set(const int x, const int y)
 {
+  // std::cerr << "SET " << this << " from " << *this << " to "<< x << " " << y << '\n';
   if (m_x != x || m_y != y) {
     m_x = x;
     m_y = y;
+    // std::cerr << "mon nouveau moi " << *this << '\n';
     m_changed(*this);
   }
     // for (auto c : m_correctorsFixed)
@@ -97,6 +99,7 @@ void Point::set(const int x, const int y)
 void Point::join(Point &point)
 {
   beAlone();
+  // std::cerr << "JOIN " << *this << " " << this <<" join " << point << " "<< &point << '\n';
 
   co_t hisCo = point.changed(boost::bind(&Point::friendChanged, this, _1));
   co_t myCo = m_changed.connect(boost::bind(&Point::friendChanged, &point, _1));
@@ -119,10 +122,23 @@ void Point::beAlone()
   //les co des autres points ?
 }
 
+void Point::originChanged(const Point &point)
+{
+  //point à bien l'origin ?
+  Point abs = point.absolute();
+  m_originX = abs.m_x;
+  m_originY = abs.m_y;
+  // std::cerr << "originChanged " << m_originX << " " << m_originY << '\n';
+  set(m_x, m_y);
+  // std::cerr << "SET DANS ORIGIN " << *this << '\n';
+  // std::cerr << "nouvel origin " << m_originX << " " << m_originY  << " absolute " << absolute() << '\n';
+}
+
 void Point::friendChanged(const Point &point)
 {
+  // std::cerr << "BONJOUR " << point << std::endl;
   if (m_joinType == Absolute)
-    setAbsolute(point);
+    setAbsolute(point.absolute());
   else
     set(point);
 }
