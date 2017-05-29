@@ -120,6 +120,7 @@ void Point::beAlone()
   m_friends.clear();
 
   //les co des autres points ?
+  //avec un signal be alone ?
 }
 
 void Point::originChanged(const Point &point)
@@ -129,9 +130,11 @@ void Point::originChanged(const Point &point)
   m_originX = abs.m_x;
   m_originY = abs.m_y;
   // std::cerr << "originChanged " << m_originX << " " << m_originY << '\n';
-  set(m_x, m_y);
+  //set(m_x, m_y); fait rien comme c'est l'origin qui change
+  //envoi le signal si on est origin mais je ne sais pas si c'est cool par rapport à nos amis
+  m_changed(*this);
   // std::cerr << "SET DANS ORIGIN " << *this << '\n';
-  // std::cerr << "nouvel origin " << m_originX << " " << m_originY  << " absolute " << absolute() << '\n';
+  std::cerr << "nouvel origin pour " << *this << " : " << m_originX << " " << m_originY  << " absolute " << absolute() << '\n';
 }
 
 void Point::friendChanged(const Point &point)

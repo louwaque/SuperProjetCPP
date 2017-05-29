@@ -77,14 +77,16 @@ public:
   inline Point origin() const { return Point(m_originX, m_originY); }
   //quand le parent est modifié, la position absolu de l'objet est recalculer pour GARDER la même qu'avant
   // finalement NON !
-  inline void setOrigin(const Point &origin) {
+
+  //prend l'absolute du point passé en parametre !!!!!!!!!
+  inline void setOriginStatic(const Point &origin) {
     m_originConnection.disconnect();
     // m_x = origin.m_x;
     // m_y = origin.m_y;
     originChanged(origin);
   }
 
-  inline void setOrigin(Point &origin) {
+  inline void setOriginDynamic(Point &origin) {
     m_originConnection.disconnect();
     // m_x = origin.m_x;
     // m_y = origin.m_y;
@@ -155,6 +157,7 @@ private:
   JoinType m_joinType;
 
   signal_t m_changed;
+  // signal_t m_originChanged;
   std::vector<co_t> m_friends;
 
   CorrectorList m_correctorsFixed;
