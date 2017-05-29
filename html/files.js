@@ -5,7 +5,6 @@ var files =
     [ "_event_8cpp.js", "__event__8cpp_8js.html", "__event__8cpp_8js" ],
     [ "_font_8cpp.js", "__font__8cpp_8js.html", "__font__8cpp_8js" ],
     [ "_font_8hpp.js", "__font__8hpp_8js.html", "__font__8hpp_8js" ],
-    [ "_graphics_item_8cpp.js", "__graphics__item__8cpp_8js.html", "__graphics__item__8cpp_8js" ],
     [ "_point_8cpp.js", "__point__8cpp_8js.html", "__point__8cpp_8js" ],
     [ "_point_8hpp.js", "__point__8hpp_8js.html", "__point__8hpp_8js" ],
     [ "all_0.js", "all__0_8js.html", "all__0_8js" ],
@@ -20,7 +19,6 @@ var files =
     [ "all_17.js", "all__17_8js.html", "all__17_8js" ],
     [ "all_18.js", "all__18_8js.html", "all__18_8js" ],
     [ "all_19.js", "all__19_8js.html", "all__19_8js" ],
-    [ "all_1a.js", "all__1a_8js.html", "all__1a_8js" ],
     [ "all_2.js", "all__2_8js.html", "all__2_8js" ],
     [ "all_3.js", "all__3_8js.html", "all__3_8js" ],
     [ "all_4.js", "all__4_8js.html", "all__4_8js" ],
@@ -101,7 +99,6 @@ var files =
     [ "enums_4.js", "enums__4_8js.html", "enums__4_8js" ],
     [ "enums_5.js", "enums__5_8js.html", "enums__5_8js" ],
     [ "enums_6.js", "enums__6_8js.html", "enums__6_8js" ],
-    [ "enums_7.js", "enums__7_8js.html", "enums__7_8js" ],
     [ "enumvalues_0.js", "enumvalues__0_8js.html", "enumvalues__0_8js" ],
     [ "enumvalues_1.js", "enumvalues__1_8js.html", "enumvalues__1_8js" ],
     [ "enumvalues_10.js", "enumvalues__10_8js.html", "enumvalues__10_8js" ],
@@ -154,7 +151,6 @@ var files =
     [ "functions_17.js", "functions__17_8js.html", "functions__17_8js" ],
     [ "functions_18.js", "functions__18_8js.html", "functions__18_8js" ],
     [ "functions_19.js", "functions__19_8js.html", "functions__19_8js" ],
-    [ "functions_1a.js", "functions__1a_8js.html", "functions__1a_8js" ],
     [ "functions_2.js", "functions__2_8js.html", "functions__2_8js" ],
     [ "functions_3.js", "functions__3_8js.html", "functions__3_8js" ],
     [ "functions_4.js", "functions__4_8js.html", "functions__4_8js" ],
@@ -191,7 +187,7 @@ var files =
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp.html", [
       [ "GraphicsEllipse", "class_graphics_ellipse.html", "class_graphics_ellipse" ]
     ] ],
-    [ "GraphicsItem.cpp", "_graphics_item_8cpp.html", "_graphics_item_8cpp" ],
+    [ "GraphicsItem.cpp", "_graphics_item_8cpp.html", null ],
     [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", [
       [ "GraphicsItem", "class_graphics_item.html", "class_graphics_item" ]
     ] ],
