@@ -51,9 +51,7 @@ public:
 
   GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
 
-  inline Point position() const { return m_position; }
-  inline Point &position() { return m_position; }
-  inline void setPosition(const Point &pos) { m_position.set(pos); }
+  inline Point::Ptr &position() { return m_position; }
 
   Color color() const {
     return m_color;
@@ -111,13 +109,13 @@ protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
   virtual void meHandleEvent(const Event &event) {}
-  virtual bool meIsOver(const Point &absoluteP) { return m_position.absolute() == absoluteP; }
+  virtual bool meIsOver(const Point &absoluteP) { return *m_position == absoluteP; }
 
 private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
-  Point m_position;
+  Point::Ptr m_position;
   int m_z;
   Color m_color;
   unsigned int m_thick;

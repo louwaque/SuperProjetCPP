@@ -8,13 +8,11 @@
  * \version 0.1
  * \date 22 mai 2017
  */
-#include <boost/uuid/uuid.hpp>
-#include <boost/uuid/uuid_generators.hpp>
-#include <boost/signals2/signal.hpp>
+
 #include <iostream>
-#include <map>
 #include <vector>
 #include <functional>
+#include <memory>
 
 /*!
  * \class Point
@@ -26,18 +24,9 @@
 class Point
 {
 public:
-  typedef boost::uuids::uuid Id;
-  typedef boost::signals2::signal<void (const Point &point)>  signal_t;
-  typedef signal_t::slot_type slot_t;
-  typedef boost::signals2::connection co_t;
-  typedef std::map<Id, std::vector<std::reference_wrapper<Point>>> GroupsPoints;
+  typedef std::shared_ptr<Point> Ptr;
   typedef std::function<Point(const Point&)> Corrector;
   typedef std::vector<Corrector> CorrectorList;
-
-  enum JoinType {
-    Relative,
-    Absolute
-  };
 
   /*!
    * \brief Constructeur par défaut de la classe Point.
@@ -70,33 +59,9 @@ public:
 
   Point(const Point &src);
 
-  ~Point();
+  virtual ~Point();
 
   Point &operator=(const Point &src);
-
-  inline Point origin() const { return Point(m_originX, m_originY); }
-  //quand le parent est modifié, la position absolu de l'objet est recalculer pour GARDER la même qu'avant
-  // finalement NON !
-
-  //prend l'absolute du point passé en parametre !!!!!!!!!
-  inline void setOriginStatic(const Point &origin) {
-    m_originConnection.disconnect();
-    // m_x = origin.m_x;
-    // m_y = origin.m_y;
-    originChanged(origin);
-  }
-
-  inline void setOriginDynamic(Point &origin) {
-    m_originConnection.disconnect();
-    // m_x = origin.m_x;
-    // m_y = origin.m_y;
-    originChanged(origin);
-    m_originConnection = origin.changed(boost::bind(&Point::originChanged, this, _1));
-  }
-
-  Point absolute() const;
-  void setAbsolute(const Point &point);
-  void setAbsolute(const int x, const int y);
 
   /*!
    *  \brief recupere la valeur de l'absisse du Point.
@@ -125,40 +90,39 @@ public:
   * \param y  l'ordonée du point
   */
 
-  void set(const int x, const int y);
-
-  inline void set(const Point &point) { set(point.m_x, point.m_y); }
-
-  void join(Point &point);
-  void beAlone();
-
-  inline JoinType joinType() const { return m_joinType; }
-  inline void setJoinType(const JoinType type) { m_joinType = type; }
-
-  //private ?
-  inline co_t changed(const slot_t &subscriber) { return m_changed.connect(subscriber); }
+  void set(const Point &point);
+  inline void set(const int x, const int y) { set(Point(x, y)); };
 
   inline CorrectorList correctors() const { return m_correctorsVariable; }
   inline CorrectorList &correctors() { return m_correctorsVariable; }
 
-private:
-  void originChanged(const Point &point);
-  void friendChanged(const Point &point);
+  // /*!
+  // *  \brief Fusionne les deux points
+  // *
+  // * Les deux pointeurs pointeront vers le même point, avec les coordonnées du premier
+  // *
+  // * \param first le premier point
+  // * \param second le deuxième point
+  // */
+  //
+  // static void merge(PointPtr &first, PointPtr &second);
+  //
+  // /*!
+  // *  \brief Sépare les deux points
+  // *
+  // * Les deux pointeurs pointeront vers des points différents
+  // *
+  // * \param first le premier point
+  // * \param second le deuxième point
+  // */
+  //
+  // static PointPtr divide(PointPtr &src);
+
+  inline static Ptr make(const Point &src = Point()) { return std::make_shared<Point>(src); }
 
 private:
-  int m_originX;
-  int m_originY;
-  co_t m_originConnection;
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
-
-  static GroupsPoints m_groups; //FIXME rm static
-  Id m_groupId;
-  JoinType m_joinType;
-
-  signal_t m_changed;
-  // signal_t m_originChanged;
-  std::vector<co_t> m_friends;
 
   CorrectorList m_correctorsFixed;
   CorrectorList m_correctorsVariable;
@@ -174,6 +138,8 @@ private:
  */
 
 bool operator==(const Point &l, const Point &r);
+
+bool operator!=(const Point &l, const Point &r);
 
 /*!
  *  \brief   Surchage de l'operateur +.
