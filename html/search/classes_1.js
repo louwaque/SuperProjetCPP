@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['button',['Button',['../class_button.html',1,'']]]
+  ['canvas',['Canvas',['../class_canvas.html',1,'']]],
+  ['color',['Color',['../class_color.html',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var _point_8hpp =
 [
     [ "Point", "class_point.html", "class_point" ],
+    [ "operator!=", "_point_8hpp.html#aff03106c33247833f125dd69b311ad89", null ],
     [ "operator+", "_point_8hpp.html#a4158330ef851082d91a82eefd03aa183", null ],
     [ "operator+", "_point_8hpp.html#ae44f691efaa50cc00e591b91b73c8be4", null ],
     [ "operator-", "_point_8hpp.html#af304a4bde169f417ea02e56d3d4b7258", null ],

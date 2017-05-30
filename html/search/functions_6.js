@@ -15,7 +15,7 @@ var searchData=
   ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html#a9e53dcd151f13db599712784951083a3',1,'GraphicsEllipse']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc',1,'GraphicsItem']]],
   ['graphicsline',['GraphicsLine',['../class_graphics_line.html#a23cc57510dd6e5a58891deb16b79b3fe',1,'GraphicsLine']]],
-  ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895',1,'GraphicsPoint::GraphicsPoint(GraphicsItem *parent=nullptr)'],['../class_graphics_point.html#a8a4fca2ba81721420e4bdf318cc73c26',1,'GraphicsPoint::GraphicsPoint(const Point &amp;anchor, GraphicsItem *parent=nullptr)']]],
+  ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895',1,'GraphicsPoint::GraphicsPoint(GraphicsItem *parent=nullptr)'],['../class_graphics_point.html#ac1242633c38521d881c9aa3548676dd4',1,'GraphicsPoint::GraphicsPoint(const Point &amp;pos, GraphicsItem *parent=nullptr)']]],
   ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html#a29e95f90707fed27e17b74060a6d0623',1,'GraphicsPolygon']]],
   ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html#a4a5a09ece70c878e36694e3d07ed513f',1,'GraphicsRectangle']]],
   ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11',1,'GraphicsShape']]],
