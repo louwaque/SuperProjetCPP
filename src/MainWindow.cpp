@@ -11,19 +11,8 @@
 #include "../include/GraphicsBlinkAnimation.hpp"
 #include <LineEdit.hpp>
 #include <Button.hpp>
+#include <iostream>
 
-// test connect boost
-
-/*struct createRectangle
-{
-  void operator()()
-  {
-    m_rectangle = new GraphicsRectangle(this);
-    m_rectangle->setAbsolute(200;200);
-    m_rectangle->setHeight(50);
-    m_rectangle->setWidth(70);
-  }
-}*/
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
@@ -76,6 +65,22 @@ MainWindow::MainWindow()
   ellipse->setAbsolute({200, 300});
   ellipse->radius()->setAnchor({100, 50});
 
+  GraphicsEllipse *ellipse2 = new GraphicsEllipse(&m_scene);
+  ellipse2->setAbsolute({200, 300});
+  ellipse2->radius()->setAnchor({100, 50});
+
+  GraphicsEllipse *ellipse3 = new GraphicsEllipse(&m_scene);
+  ellipse3->setAbsolute({200, 300});
+  ellipse3->radius()->setAnchor({100, 50});
+
+  GraphicsEllipse *ellipse4 = new GraphicsEllipse(&m_scene);
+  ellipse4->setAbsolute({200, 300});
+  ellipse4->radius()->setAnchor({100, 50});
+
+  GraphicsEllipse *ellipse5 = new GraphicsEllipse(&m_scene);
+  ellipse5->setAbsolute({200, 300});
+  ellipse5->radius()->setAnchor({100, 50});
+
   GraphicsSquare *square = new GraphicsSquare(&m_scene);
   square->setThick(5);
   square->setAbsolute({500, 100});
@@ -87,11 +92,27 @@ MainWindow::MainWindow()
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->setAbsolute({100, 500});
 
+  Button *button = new Button("Ajouter une forme",&m_scene);
+  button->setAbsolute({50,150});
+  button->clicked_left([this](){
+    std::cout << "SA MARCHE A GAUCHE" << std::endl;
+    GraphicsRectangle *b_rectangle = new GraphicsRectangle(&m_scene);
+    b_rectangle->setAbsolute({200,150});
+    b_rectangle->setHeight(50);
+    b_rectangle->setWidth(70);
+  });
+  button->clicked_right([this](){
+    std::cout << "SA MARCHE A DROITE" << std::endl;
+    GraphicsCircle *b_circle = new GraphicsCircle(&m_scene);
+    b_circle->setAbsolute({300,250});
+    b_circle->radius()->setAnchor({50, 50});
+  });
 
-//  Button *button = new Button("Ajouter un rectangle",&m_scene);
-//  button->setAbsolute({50,150});
-//  co_t c = sig.connect(button);
 
+  //Button *button_agrandir = new Button("Agrandir le rectangle",&m_scene);
+  //button_agrandir->setAbsolute({75,150});
+  //button_agrandir->clicked_left([this](){
+  //});
 }
 
 void MainWindow::drawEvent()

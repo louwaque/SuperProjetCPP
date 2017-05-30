@@ -41,7 +41,12 @@ void Button::meHandleEvent(const Event &event)
     const MouseEvent &mouse = dynamic_cast<const MouseEvent&>(event);
     if (mouse.button() == MouseEvent::LeftButton && mouse.state() == MouseEvent::ButtonPressed){
       if (isOver(mouse.position()))
-          m_clicked();
+          m_clicked_left();
+
     }
+    if (mouse.button() == MouseEvent::RightButton && mouse.state() == MouseEvent::ButtonPressed){
+      if (isOver(mouse.position()))
+          m_clicked_right();
   }
+}
 }

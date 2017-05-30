@@ -38,6 +38,9 @@ public:
   void setText(const std::string &text);
 
   inline co_t textChanged(const slot_t &subscriber) { return m_textChanged.connect(subscriber); }
+  inline co_t clicked_left(const slot_t &subscriber) { return m_clicked_left.connect(subscriber); }
+  inline co_t clicked_right(const slot_t &subscriber) { return m_clicked_right.connect(subscriber); }
+
 
 
 protected:
@@ -49,7 +52,8 @@ private:
   GraphicsText *m_text;
   GraphicsRectangle *m_rectangle;
   signal_t m_textChanged;
-  signal_t m_clicked;
+  signal_t m_clicked_left;
+  signal_t m_clicked_right;
 };
 
 
