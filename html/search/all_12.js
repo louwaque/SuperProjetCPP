@@ -6,7 +6,6 @@ var searchData=
   ['rectangletype',['RectangleType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa37c1c68bb5807d8c6c78a64bffb6cc25',1,'GraphicsItem']]],
   ['red',['Red',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547',1,'Color::Red()'],['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color::red() const ']]],
   ['related_5f0_2ejs',['related_0.js',['../related__0_8js.html',1,'']]],
-  ['relative',['Relative',['../class_point.html#a880b5d1791a3994762723060c945235da65973c9b04e96a9537b9a77007529565',1,'Point']]],
   ['removetoinsertlater',['removeToInsertLater',['../navtree_8js.html#aa78016020f40c28356aefd325cd4df74',1,'navtree.js']]],
   ['resize',['resize',['../class_window.html#a3e7fcfcbfaa2d273b75bf5e568088b92',1,'Window']]],
   ['resize_2ejs',['resize.js',['../resize_8js.html',1,'']]],
