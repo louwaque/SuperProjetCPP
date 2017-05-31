@@ -18,10 +18,10 @@ GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
 void GraphicsSquare::meDraw(Canvas *canvas)
 {
   // if (canvas)
-  //   canvas->drawRectangle(position().absolute() + m_topLeft, position().absolute() + m_bottomRight, isFill());
+  //   canvas->drawRectangle(absolute() + m_topLeft, absolute() + m_bottomRight, isFill());
 }
 
 bool GraphicsSquare::meIsOver(const Point &absoluteP)
 {
-  // return position().absolute() + m_topLeft < absoluteP and absoluteP < position().absolute() + m_bottomRight;
+  // return absolute() + m_topLeft < absoluteP and absoluteP < absolute() + m_bottomRight;
 }

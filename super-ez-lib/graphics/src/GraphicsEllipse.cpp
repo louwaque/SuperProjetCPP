@@ -14,7 +14,7 @@ GraphicsEllipse::GraphicsEllipse(GraphicsItem *parent)
 void GraphicsEllipse::meDraw(Canvas *canvas)
 {
   // if (canvas)
-    // canvas->drawCircle(center()->absolute(), radius()->absolute(), isFill());
+  //   canvas->drawCircle(center()->absolute(), radius()->absolute(), isFill());
 }
 
 bool GraphicsEllipse::meIsOver(const Point &absoluteP)

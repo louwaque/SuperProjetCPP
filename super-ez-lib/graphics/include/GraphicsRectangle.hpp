@@ -39,17 +39,17 @@ public:
    *
    */
 
-  inline Point::Ptr &topLeft() { return m_topLeft; }
+  inline Point &topLeft() { return m_topLeft; }
 
-  inline Point::Ptr &bottomRight() { return m_bottomRight; }
+  inline Point &bottomRight() { return m_bottomRight; }
 
   inline GraphicsTypes type() const { return RectangleType; }
 
-  inline size_t width() const { return std::abs(m_bottomRight->x() - m_topLeft->x()); }
+  inline size_t width() const { return std::abs(m_bottomRight.x() - m_topLeft.x()); }
 
   void setWidth(const size_t width);
 
-  inline size_t height() const { return std::abs(m_bottomRight->y() - m_topLeft->y()); }
+  inline size_t height() const { return std::abs(m_bottomRight.y() - m_topLeft.y()); }
 
   void setHeight(const size_t height);
 
@@ -59,7 +59,7 @@ protected:
 
 private:
   //FIXME topLeft vraiment utile ?
-  Point::Ptr m_topLeft, m_bottomRight;
+  Point m_topLeft, m_bottomRight;
 };
 
 

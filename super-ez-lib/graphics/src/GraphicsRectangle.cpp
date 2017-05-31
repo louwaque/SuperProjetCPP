@@ -5,31 +5,28 @@
 
 GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
 : GraphicsItem(parent),
-  m_topLeft(Point::make()),
-  m_bottomRight(Point::make())
+  m_topLeft(&position()),
+  m_bottomRight(&position())
 {
-  //FIXME PointRelative ?
-  // m_topLeft.setOriginDynamic(position());
-  // m_bottomRight.setOriginDynamic(position());
 }
 
 void GraphicsRectangle::meDraw(Canvas *canvas)
 {
   if (canvas)
-    canvas->drawRectangle(*m_topLeft, *m_bottomRight, isFill());
+    canvas->drawRectangle(m_topLeft, m_bottomRight, isFill());
 }
 
 bool GraphicsRectangle::meIsOver(const Point &absoluteP)
 {
-  return *position() + *m_topLeft < absoluteP and absoluteP < *position() + *m_bottomRight;
+  return m_topLeft < absoluteP and absoluteP < m_bottomRight;
 }
 
 void GraphicsRectangle::setWidth(const size_t width)
 {
-  m_bottomRight->setX(width);
+  m_bottomRight.setX(width);
 }
 
 void GraphicsRectangle::setHeight(const size_t height)
 {
-  m_bottomRight->setY(height);
+  m_bottomRight.setY(height);
 }

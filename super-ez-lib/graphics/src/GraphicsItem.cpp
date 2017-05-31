@@ -7,7 +7,7 @@ GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
 : m_parent(nullptr),
   m_children(),
-  m_position(std::make_shared<Point>()),
+  m_position(),
   m_z(0),
   m_color(Color(Color::Black)),
   m_thick(1),
@@ -39,11 +39,10 @@ void GraphicsItem::setParent(GraphicsItem *parent)
   m_parent = parent;
   if (m_parent) {
     m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
-    //m_position.setOriginDynamic(m_parent->position());
+    m_position.setOrigin(&m_parent->position());
   } else {
-    //m_position.setOriginStatic({0, 0});
+    m_position.setOrigin(nullptr);
   }
-  //FIXME PointRelative !
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const

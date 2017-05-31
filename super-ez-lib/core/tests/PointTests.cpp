@@ -97,84 +97,58 @@ BOOST_AUTO_TEST_CASE(absolute)
 {
   Point p1, p2, p3;
 
-  p2.setOriginDynamic(p1);
+  p2.setParent(&p1);
   BOOST_REQUIRE_EQUAL(p1, Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2, Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(0, 0));
 
   p2.set(10, 10);
   BOOST_REQUIRE_EQUAL(p1, Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(10, 10));
 
   p1.set(10, 10);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
 
-  p3.set(0, 0);
-  p3.setOriginDynamic(p2);
+  p3.setParent(&p2);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p3, Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
+  BOOST_REQUIRE_EQUAL(p3, Point(-20, -20));
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
-  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(20, 20));
+  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(0, 0));
 
   p3.set(10, 10);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p3, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
   BOOST_REQUIRE_EQUAL(p3.absolute(), Point(30, 30));
 
-  p2.setOriginStatic(Point(0, 0));
+  p2.setParent(nullptr);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
+  BOOST_REQUIRE_EQUAL(p2, Point(20, 20));
   BOOST_REQUIRE_EQUAL(p3, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(20, 20));
+  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
+  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(30, 30));
 
-  p3.setOriginStatic(Point(0, 0));
+  p3.setParent(nullptr);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p3, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p3.origin(), Point(0, 0));
+  BOOST_REQUIRE_EQUAL(p2, Point(20, 20));
+  BOOST_REQUIRE_EQUAL(p3, Point(30, 30));
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(10, 10));
+  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
+  BOOST_REQUIRE_EQUAL(p3.absolute(), Point(30, 30));
 
-  p2.setOriginDynamic(p1);
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), Point(0, 0));
-
-  p3.setOriginDynamic(p2);
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
+  p2.setParent(&p1);
+  p3.setParent(&p2);
 
   p1.setAbsolute(0, 0);
   p2.setAbsolute(0, 0);
@@ -182,9 +156,6 @@ BOOST_AUTO_TEST_CASE(absolute)
   BOOST_REQUIRE_EQUAL(p1, Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2, Point(0, 0));
   BOOST_REQUIRE_EQUAL(p3, Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(0, 0));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(0, 0));
   BOOST_REQUIRE_EQUAL(p3.absolute(), Point(0, 0));
@@ -195,9 +166,6 @@ BOOST_AUTO_TEST_CASE(absolute)
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2, Point(10, 10));
   BOOST_REQUIRE_EQUAL(p3, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p1.origin(), Point(0, 0));
-  BOOST_REQUIRE_EQUAL(p2.origin(), p1.absolute());
-  BOOST_REQUIRE_EQUAL(p3.origin(), p2.absolute());
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
   BOOST_REQUIRE_EQUAL(p2.absolute(), Point(20, 20));
   BOOST_REQUIRE_EQUAL(p3.absolute(), Point(30, 30));
@@ -224,7 +192,7 @@ BOOST_AUTO_TEST_CASE(group_and_absolute)
   Point p1, p2, p3;
 
   p1.set(10, 10);
-  p2.setOriginDynamic(p1);
+  p2.setParent(&p1);
   p2.set(10, 10);
   p3.join(p2);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
@@ -267,13 +235,13 @@ BOOST_AUTO_TEST_CASE(group_and_absolute)
   BOOST_REQUIRE_EQUAL(p3.absolute(), p2.absolute());
 
   Point p4(20, 0);
-  p3.setOriginDynamic(p4);
+  p3.setParent(&p4);
   BOOST_REQUIRE_EQUAL(p1, Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2, Point(0, -20));
-  BOOST_REQUIRE_EQUAL(p3, Point(-10, -10));
+  BOOST_REQUIRE_EQUAL(p2, Point(-20, -20));
+  BOOST_REQUIRE_EQUAL(p3, Point(-30, -10));
   BOOST_REQUIRE_EQUAL(p4, Point(20, 0));
   BOOST_REQUIRE_EQUAL(p1.absolute(), Point(10, 10));
-  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(10, -10));
+  BOOST_REQUIRE_EQUAL(p2.absolute(), Point(-10, -10));
   BOOST_REQUIRE_EQUAL(p3.absolute(), p2.absolute());
   BOOST_REQUIRE_EQUAL(p4.absolute(), Point(20, 0));
 }

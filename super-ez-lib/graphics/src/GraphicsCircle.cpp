@@ -14,11 +14,11 @@ GraphicsCircle::GraphicsCircle(GraphicsItem *parent)
 
 void GraphicsCircle::meDraw(Canvas *canvas)
 {
-  if (canvas) {
-    // Point distP = radius()->absolute() - center()->absolute();
-    // int dist = hypot(distP.x(), distP.y());
-    // canvas->drawCircle(center()->absolute() - dist, center()->absolute() + dist, isFill());
-  }
+  // if (canvas) {
+  //   Point distP = radius()->absolute() - center()->absolute();
+  //   int dist = hypot(distP.x(), distP.y());
+  //   canvas->drawCircle(center()->absolute() - dist, center()->absolute() + dist, isFill());
+  // }
 }
 
 bool GraphicsCircle::meIsOver(const Point &absoluteP)

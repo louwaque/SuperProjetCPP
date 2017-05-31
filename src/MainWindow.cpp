@@ -42,19 +42,18 @@ MainWindow::MainWindow()
   triangle->third()->setRelative(Point(30, 30));
 */
   GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
-  rectangle->position()->set(100, 100);
-  rectangle->topLeft()->set(20, 20);
-  rectangle->bottomRight()->set(30, 30);
-  rectangle->setThick(4);
+  rectangle->position().set(50, 50);
+  rectangle->topLeft().setRelative(-20, -20);
+  rectangle->bottomRight().setRelative(20, 20);
 
   GraphicsPoint *rp1 = new GraphicsPoint(rectangle);
-  rp1->position() = rectangle->position();
+  rp1->position().join(rectangle->position());
 
   GraphicsPoint *rp2 = new GraphicsPoint(rectangle);
-  rp2->position() = rectangle->topLeft();
+  rp2->position().join(rectangle->topLeft());
 
   GraphicsPoint *rp3 = new GraphicsPoint(rectangle);
-  rp3->position() = rectangle->bottomRight();
+  rp3->position().join(rectangle->bottomRight());
 
 /*
   GraphicsRectangle *r2 = new GraphicsRectangle(&m_scene);
