@@ -9,6 +9,7 @@
 #include "../include/GraphicsEllipse.hpp"
 #include "../include/GraphicsSquare.hpp"
 #include "../include/GraphicsBlinkAnimation.hpp"
+#include "../include/GraphicsItem.hpp"
 #include <LineEdit.hpp>
 #include <Button.hpp>
 #include <iostream>
@@ -65,22 +66,6 @@ MainWindow::MainWindow()
   ellipse->setAbsolute({200, 300});
   ellipse->radius()->setAnchor({100, 50});
 
-  GraphicsEllipse *ellipse2 = new GraphicsEllipse(&m_scene);
-  ellipse2->setAbsolute({200, 300});
-  ellipse2->radius()->setAnchor({100, 50});
-
-  GraphicsEllipse *ellipse3 = new GraphicsEllipse(&m_scene);
-  ellipse3->setAbsolute({200, 300});
-  ellipse3->radius()->setAnchor({100, 50});
-
-  GraphicsEllipse *ellipse4 = new GraphicsEllipse(&m_scene);
-  ellipse4->setAbsolute({200, 300});
-  ellipse4->radius()->setAnchor({100, 50});
-
-  GraphicsEllipse *ellipse5 = new GraphicsEllipse(&m_scene);
-  ellipse5->setAbsolute({200, 300});
-  ellipse5->radius()->setAnchor({100, 50});
-
   GraphicsSquare *square = new GraphicsSquare(&m_scene);
   square->setThick(5);
   square->setAbsolute({500, 100});
@@ -108,11 +93,13 @@ MainWindow::MainWindow()
     b_circle->radius()->setAnchor({50, 50});
   });
 
-
-  //Button *button_agrandir = new Button("Agrandir le rectangle",&m_scene);
-  //button_agrandir->setAbsolute({75,150});
-  //button_agrandir->clicked_left([this](){
-  //});
+  Button *button_agrandir = new Button("Agrandir le rectangle",&m_scene);
+  button_agrandir->setAbsolute({100,175});
+  button_agrandir->clicked_left([this](){
+    if(m_scene.focusItem().GraphicsTypes="RectangleType"){
+      m_scene.focusItem()->setWidth(50);
+    }
+  });
 }
 
 void MainWindow::drawEvent()
@@ -122,10 +109,10 @@ void MainWindow::drawEvent()
 
 void MainWindow::mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
-  // for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
-  //   if (item->isOver(mousePos))
-  //     currentItem = item;
-  // }
+    // for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
+    // if (item->isOver(mousePos))
+    //   currentItem = item;
+    //}
 }
 
 void MainWindow::mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button)
