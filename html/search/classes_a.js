@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['toolswindows',['ToolsWindows',['../class_tools_windows.html',1,'']]]
+  ['widget',['Widget',['../class_widget.html',1,'']]],
+  ['window',['Window',['../class_window.html',1,'']]]
 ];

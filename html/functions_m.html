@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="functions_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_j.html#index_j"><span>j</span></a></li>
       <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li class="current"><a href="functions_m.html#index_m"><span>m</span></a></li>
@@ -152,9 +153,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_align
 : <a class="el" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText</a>
 </li>
-<li>m_anchor
-: <a class="el" href="class_graphics_item.html#ad7052acba279643faeb33101d1b997eb">GraphicsItem</a>
-</li>
 <li>m_autoQuit
 : <a class="el" href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">Application</a>
 </li>
@@ -168,8 +166,8 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="class_graphics_blink_animation.html#a54c4853485cf7319cb96d2560322568e">GraphicsBlinkAnimation</a>
 </li>
 <li>m_bottomRight
-: <a class="el" href="class_graphics_rectangle.html#a87df5004873ee8f6645db02843289a67">GraphicsRectangle</a>
-, <a class="el" href="class_graphics_square.html#a7d1d326fc4ccd9afdd45d9fed16e84de">GraphicsSquare</a>
+: <a class="el" href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">GraphicsRectangle</a>
+, <a class="el" href="class_graphics_square.html#acf907b3cc8372d3cdb7dd8854b90125d">GraphicsSquare</a>
 </li>
 <li>m_button
 : <a class="el" href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">MouseEvent</a>
@@ -180,18 +178,18 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_children
 : <a class="el" href="class_graphics_item.html#aafac7807306d357707fbb2fec0d81aef">GraphicsItem</a>
 </li>
-<li>m_clicked_left
-: <a class="el" href="class_button.html#ae70b7150990ec5a0057d57d1b409e6ba">Button</a>
-</li>
-<li>m_clicked_right
-: <a class="el" href="class_button.html#a93ac9f789ac2ada97002b2f55d78830e">Button</a>
-</li>
 <li>m_color
 : <a class="el" href="class_color.html#aba2e3627f1e3d5ce0b7db938f7717f34">Color</a>
 , <a class="el" href="class_graphics_item.html#affa691c49709c1a91083f248352eff91">GraphicsItem</a>
 </li>
 <li>m_colorApplied
 : <a class="el" href="class_graphics_blink_animation.html#af4e810f5b85424bff83f0fad8d191e0b">GraphicsBlinkAnimation</a>
+</li>
+<li>m_correctorsFixed
+: <a class="el" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point</a>
+</li>
+<li>m_correctorsVariable
+: <a class="el" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point</a>
 </li>
 <li>m_doubleBuffer
 : <a class="el" href="class_window.html#a1b9c80a54cfac4ffc3528059814c2490">Window</a>
@@ -208,6 +206,12 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_font
 : <a class="el" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText</a>
+</li>
+<li>m_groupId
+: <a class="el" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point</a>
+</li>
+<li>m_groups
+: <a class="el" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point</a>
 </li>
 <li>m_height
 : <a class="el" href="class_font.html#a936036493a9f33bdc5f1db302481706e">Font</a>
@@ -239,6 +243,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_line
 : <a class="el" href="class_line_edit.html#af5abf2404853f8e80934008698fb4d0b">LineEdit</a>
 </li>
+<li>m_origin
+: <a class="el" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point</a>
+</li>
 <li>m_parent
 : <a class="el" href="class_graphics_item.html#ab5e748e1f13ea1e83de40bb281f90307">GraphicsItem</a>
 </li>
@@ -249,17 +256,14 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape</a>
 </li>
 <li>m_position
-: <a class="el" href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">MouseEvent</a>
-</li>
-<li>m_positionCorrector
-: <a class="el" href="class_graphics_item.html#a031031ab2eb380c3c7600f1152e6a3d6">GraphicsItem</a>
+: <a class="el" href="class_graphics_item.html#a17dea234e03585570956c8880610a021">GraphicsItem</a>
+, <a class="el" href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">MouseEvent</a>
 </li>
 <li>m_radius
 : <a class="el" href="class_graphics_point.html#ab4d035c736784ceee67f6181b931478b">GraphicsPoint</a>
 </li>
 <li>m_rectangle
-: <a class="el" href="class_button.html#a32f2727b75133ea03814a8c142617cc9">Button</a>
-, <a class="el" href="class_line_edit.html#a64ee93fc8261028f8088da6ba88bbfa3">LineEdit</a>
+: <a class="el" href="class_line_edit.html#a64ee93fc8261028f8088da6ba88bbfa3">LineEdit</a>
 </li>
 <li>m_scene
 : <a class="el" href="class_main_window.html#ab38e4c74b2505657e142cae2d779ae25">MainWindow</a>
@@ -269,20 +273,18 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">MouseEvent</a>
 </li>
 <li>m_text
-: <a class="el" href="class_button.html#a19660257d41f5ac624dba1daafccbee1">Button</a>
-, <a class="el" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText</a>
+: <a class="el" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText</a>
 , <a class="el" href="class_line_edit.html#aa06e3a96f9c7cf6ec14735e868b2686f">LineEdit</a>
 </li>
 <li>m_textChanged
-: <a class="el" href="class_button.html#a0cd67c144e09906ec2e1612e3630e5d5">Button</a>
-, <a class="el" href="class_line_edit.html#a7e13c765a07e202a8aba3cab4e0714cd">LineEdit</a>
+: <a class="el" href="class_line_edit.html#a7e13c765a07e202a8aba3cab4e0714cd">LineEdit</a>
 </li>
 <li>m_thick
 : <a class="el" href="class_graphics_item.html#acc1dc85be53a256fab79cf67e28be96e">GraphicsItem</a>
 </li>
 <li>m_topLeft
-: <a class="el" href="class_graphics_rectangle.html#ac9b819101b52e98f702f115055c50d69">GraphicsRectangle</a>
-, <a class="el" href="class_graphics_square.html#a71637339933226ebe456e65bd1303969">GraphicsSquare</a>
+: <a class="el" href="class_graphics_rectangle.html#afe14a73de2abd862aa11eef26d48bfb5">GraphicsRectangle</a>
+, <a class="el" href="class_graphics_square.html#ae0e176d7c28e417c9c23053617357cbe">GraphicsSquare</a>
 </li>
 <li>m_updateFrequency
 : <a class="el" href="class_window.html#ac0212693f7b3665cb3f2ed5c22d6fdfb">Window</a>
@@ -319,8 +321,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="class_graphics_text.html#a7b6432edbdd3b02d5c76761ac069aa57">GraphicsText</a>
 </li>
 <li>meHandleEvent()
-: <a class="el" href="class_button.html#ac8d84bc467ce5a7ac5791df121fe32dd">Button</a>
-, <a class="el" href="class_graphics_item.html#ad6009d75c16ccc9559a4b2ffad69045c">GraphicsItem</a>
+: <a class="el" href="class_graphics_item.html#ad6009d75c16ccc9559a4b2ffad69045c">GraphicsItem</a>
 , <a class="el" href="class_graphics_point.html#aaceb83d2bd068629dccfde4aee9c60f5">GraphicsPoint</a>
 , <a class="el" href="class_line_edit.html#a8d5e79e8a895901381e301d41d3d4343">LineEdit</a>
 </li>
@@ -347,7 +348,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseEvent</a>
 </li>
 <li>MouseEvent()
-: <a class="el" href="class_mouse_event.html#aab0057ea7e0a43ab52e155cd8059129a">MouseEvent</a>
+: <a class="el" href="class_mouse_event.html#a4c6ecbcf9e517c6e0e3d76c66ff40e74">MouseEvent</a>
 </li>
 <li>MouseMoved
 : <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145">MouseEvent</a>
@@ -376,7 +377,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 31 Mai 2017 07:50:49 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 31 Mai 2017 18:33:18 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,19 +1,18 @@
 <map id="GraphicsItem" name="GraphicsItem">
-<area shape="rect" id="node2" href="$class_graphics_animation.html" title="{GraphicsAnimation\n||+ GraphicsAnimation()\l+ type()\l}" alt="" coords="27,579,179,671"/>
-<area shape="rect" id="node4" href="$class_graphics_point.html" title="{GraphicsPoint\n|&#45; m_radius\l|+ GraphicsPoint()\l+ GraphicsPoint()\l+ radius()\l+ setRadius()\l+ type()\l# meDraw()\l# meHandleEvent()\l# meIsOver()\l}" alt="" coords="217,535,351,715"/>
-<area shape="rect" id="node6" href="$class_graphics_rectangle.html" title="Permet la creation d&#39;un rectangle. " alt="" coords="386,513,539,737"/>
-<area shape="rect" id="node7" href="$class_graphics_shape.html" title="{GraphicsShape\n|# m_points\l|+ GraphicsShape()\l+ type()\l# meDraw()\l}" alt="" coords="563,572,692,679"/>
-<area shape="rect" id="node13" href="$class_graphics_square.html" title="{GraphicsSquare\n|&#45; m_topLeft\l&#45; m_bottomRight\l|+ GraphicsSquare()\l+ topLeft()\l+ bottomRight()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="718,543,852,708"/>
-<area shape="rect" id="node14" href="$class_graphics_text.html" title="Permet la creation de text. " alt="" coords="877,499,997,752"/>
-<area shape="rect" id="node15" href="$class_tools_windows.html" title="Permet la creation d&#39;un fenetre d&#39;édition des formes. " alt="" coords="1021,587,1149,664"/>
-<area shape="rect" id="node16" href="$class_widget.html" title="{Widget\n||+ Widget()\l}" alt="" coords="1179,587,1260,664"/>
-<area shape="rect" id="node3" href="$class_graphics_blink_animation.html" title="{GraphicsBlinkAnimation\n|&#45; m_blinkFrequency\l&#45; m_elapsedTime\l&#45; m_becomeColor\l&#45; m_parentColor\l&#45; m_colorApplied\l&#45; m_becomeInvisible\l|+ GraphicsBlinkAnimation()\l+ GraphicsBlinkAnimation()\l+ blinkFrequency()\l+ setBlinkFrequency()\l+ becomeColor()\l+ setBecomeColor()\l+ becomeInvisible()\l+ setBecomeInvisible()\l+ type()\l# meUpdate()\l}" alt="" coords="5,800,187,1083"/>
-<area shape="rect" id="node5" href="$class_graphics_anchor.html" title="{GraphicsAnchor\n||+ GraphicsAnchor()\l+ setAnchor()\l+ setAbsolute()\l+ type()\l}" alt="" coords="211,881,345,1002"/>
-<area shape="rect" id="node8" href="$class_graphics_circle.html" title="{GraphicsCircle\n||+ GraphicsCircle()\l+ center()\l+ radius()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="371,866,499,1017"/>
-<area shape="rect" id="node9" href="$class_graphics_ellipse.html" title="{GraphicsEllipse\n||+ GraphicsEllipse()\l+ center()\l+ radius()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="523,866,656,1017"/>
-<area shape="rect" id="node10" href="$class_graphics_line.html" title="{GraphicsLine\n||+ GraphicsLine()\l+ first()\l+ second()\l+ type()\l}" alt="" coords="681,881,799,1002"/>
-<area shape="rect" id="node11" href="$class_graphics_polygon.html" title="{GraphicsPolygon\n||+ GraphicsPolygon()\l+ newPoint()\l+ popPoint()\l+ nbPoints()\l+ setNbPoints()\l+ type()\l}" alt="" coords="823,866,963,1017"/>
-<area shape="rect" id="node12" href="$class_graphics_triangle.html" title="Permet la creation d&#39;un triangle. " alt="" coords="989,873,1128,1009"/>
-<area shape="rect" id="node17" href="$class_button.html" title="Permet la creation d&#39;un boutton. " alt="" coords="1153,822,1287,1061"/>
-<area shape="rect" id="node18" href="$class_line_edit.html" title="{LineEdit\n|&#45; m_text\l&#45; m_rectangle\l&#45; m_line\l&#45; m_textChanged\l|+ LineEdit()\l+ text()\l+ setText()\l+ textChanged()\l# meHandleEvent()\l}" alt="" coords="1311,851,1445,1031"/>
+<area shape="rect" id="node2" href="$class_graphics_animation.html" title="{GraphicsAnimation\n||+ GraphicsAnimation()\l+ type()\l}" alt="" coords="27,563,179,655"/>
+<area shape="rect" id="node4" href="$class_graphics_point.html" title="{GraphicsPoint\n|&#45; m_radius\l|+ GraphicsPoint()\l+ GraphicsPoint()\l+ radius()\l+ setRadius()\l+ type()\l# meDraw()\l# meHandleEvent()\l# meIsOver()\l}" alt="" coords="214,519,348,699"/>
+<area shape="rect" id="node6" href="$class_graphics_rectangle.html" title="Permet la creation d&#39;un rectangle. " alt="" coords="378,497,531,721"/>
+<area shape="rect" id="node7" href="$class_graphics_shape.html" title="{GraphicsShape\n|# m_points\l|+ GraphicsShape()\l+ type()\l# meDraw()\l}" alt="" coords="555,556,684,663"/>
+<area shape="rect" id="node13" href="$class_graphics_square.html" title="{GraphicsSquare\n|&#45; m_topLeft\l&#45; m_bottomRight\l|+ GraphicsSquare()\l+ topLeft()\l+ bottomRight()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="710,527,844,692"/>
+<area shape="rect" id="node14" href="$class_graphics_text.html" title="Permet la creation de text. " alt="" coords="869,483,989,736"/>
+<area shape="rect" id="node15" href="$class_tools_windows.html" title="Permet la creation d&#39;un fenetre d&#39;édition des formes. " alt="" coords="1013,571,1141,648"/>
+<area shape="rect" id="node16" href="$class_widget.html" title="{Widget\n||+ Widget()\l}" alt="" coords="1176,571,1257,648"/>
+<area shape="rect" id="node3" href="$class_graphics_blink_animation.html" title="{GraphicsBlinkAnimation\n|&#45; m_blinkFrequency\l&#45; m_elapsedTime\l&#45; m_becomeColor\l&#45; m_parentColor\l&#45; m_colorApplied\l&#45; m_becomeInvisible\l|+ GraphicsBlinkAnimation()\l+ GraphicsBlinkAnimation()\l+ blinkFrequency()\l+ setBlinkFrequency()\l+ becomeColor()\l+ setBecomeColor()\l+ becomeInvisible()\l+ setBecomeInvisible()\l+ type()\l# meUpdate()\l}" alt="" coords="5,784,187,1067"/>
+<area shape="rect" id="node5" href="$class_graphics_anchor.html" title="{GraphicsAnchor\n||+ GraphicsAnchor()\l+ type()\l}" alt="" coords="211,879,345,971"/>
+<area shape="rect" id="node8" href="$class_graphics_circle.html" title="{GraphicsCircle\n||+ GraphicsCircle()\l+ center()\l+ radius()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="371,850,499,1001"/>
+<area shape="rect" id="node9" href="$class_graphics_ellipse.html" title="{GraphicsEllipse\n||+ GraphicsEllipse()\l+ center()\l+ radius()\l+ type()\l# meDraw()\l# meIsOver()\l}" alt="" coords="523,850,656,1001"/>
+<area shape="rect" id="node10" href="$class_graphics_line.html" title="{GraphicsLine\n||+ GraphicsLine()\l+ first()\l+ second()\l+ type()\l}" alt="" coords="681,865,799,986"/>
+<area shape="rect" id="node11" href="$class_graphics_polygon.html" title="{GraphicsPolygon\n||+ GraphicsPolygon()\l+ newPoint()\l+ popPoint()\l+ nbPoints()\l+ setNbPoints()\l+ type()\l}" alt="" coords="823,850,963,1001"/>
+<area shape="rect" id="node12" href="$class_graphics_triangle.html" title="Permet la creation d&#39;un triangle. " alt="" coords="989,857,1128,993"/>
+<area shape="rect" id="node17" href="$class_line_edit.html" title="{LineEdit\n|&#45; m_text\l&#45; m_rectangle\l&#45; m_line\l&#45; m_textChanged\l|+ LineEdit()\l+ text()\l+ setText()\l+ textChanged()\l# meHandleEvent()\l}" alt="" coords="1153,835,1287,1015"/>
 </map>
