@@ -38,11 +38,16 @@ var files =
     [ "Application.hpp", "_application_8hpp.html", [
       [ "Application", "class_application.html", "class_application" ]
     ] ],
+    [ "Button.cpp", "_button_8cpp.html", null ],
+    [ "Button.hpp", "_button_8hpp.html", [
+      [ "Button", "class_button.html", "class_button" ]
+    ] ],
     [ "Canvas.cpp", "_canvas_8cpp.html", null ],
     [ "Canvas.hpp", "_canvas_8hpp.html", [
       [ "Canvas", "class_canvas.html", "class_canvas" ]
     ] ],
     [ "class_application.js", "class__application_8js.html", "class__application_8js" ],
+    [ "class_button.js", "class__button_8js.html", "class__button_8js" ],
     [ "class_canvas.js", "class__canvas_8js.html", "class__canvas_8js" ],
     [ "class_color.js", "class__color_8js.html", "class__color_8js" ],
     [ "class_event.js", "class__event_8js.html", "class__event_8js" ],
@@ -80,6 +85,7 @@ var files =
     [ "classes_8.js", "classes__8_8js.html", "classes__8_8js" ],
     [ "classes_9.js", "classes__9_8js.html", "classes__9_8js" ],
     [ "classes_a.js", "classes__a_8js.html", "classes__a_8js" ],
+    [ "classes_b.js", "classes__b_8js.html", "classes__b_8js" ],
     [ "CMakeCCompilerId.c", "_c_make_c_compiler_id_8c.html", "_c_make_c_compiler_id_8c" ],
     [ "CMakeCXXCompilerId.cpp", "_c_make_c_x_x_compiler_id_8cpp.html", "_c_make_c_x_x_compiler_id_8cpp" ],
     [ "Color.cpp", "_color_8cpp.html", null ],
@@ -137,6 +143,7 @@ var files =
     [ "files_9.js", "files__9_8js.html", "files__9_8js" ],
     [ "files_a.js", "files__a_8js.html", "files__a_8js" ],
     [ "files_b.js", "files__b_8js.html", "files__b_8js" ],
+    [ "files_c.js", "files__c_8js.html", "files__c_8js" ],
     [ "Font.cpp", "_font_8cpp.html", "_font_8cpp" ],
     [ "Font.hpp", "_font_8hpp.html", "_font_8hpp" ],
     [ "functions_0.js", "functions__0_8js.html", "functions__0_8js" ],

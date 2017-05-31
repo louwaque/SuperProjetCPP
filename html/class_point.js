@@ -1,25 +1,14 @@
 var class_point =
 [
-    [ "Corrector", "class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41", null ],
-    [ "CorrectorList", "class_point.html#a42108245ceb7c99343bcccb347babbc8", null ],
-    [ "Ptr", "class_point.html#a2ca5fc1222ae08860721d22915a317df", null ],
     [ "Point", "class_point.html#ad92f2337b839a94ce97dcdb439b4325a", null ],
     [ "Point", "class_point.html#a001c4958c310b248f5c26037aea38a9c", null ],
-    [ "Point", "class_point.html#aa4813a55ef1c858da70d4a1f11d96859", null ],
     [ "Point", "class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1", null ],
     [ "~Point", "class_point.html#a395fa04b4ec126b66fc053f829a30cc1", null ],
-    [ "correctors", "class_point.html#a78ed58bf76b877634ca15d5e639143af", null ],
-    [ "correctors", "class_point.html#a4623b05110d10da4507b2cefef72a2b6", null ],
-    [ "make", "class_point.html#ae17edb44bca3f710d8596fb19ee9e3c8", null ],
-    [ "operator=", "class_point.html#a2a77e4f4e0521de921e7066052530763", null ],
-    [ "set", "class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410", null ],
     [ "set", "class_point.html#a43923c490fb5439d7d8a041e86520c34", null ],
-    [ "setX", "class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2", null ],
-    [ "setY", "class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8", null ],
     [ "x", "class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac", null ],
+    [ "x", "class_point.html#a55f79029a24245316463dd4e8dcd117a", null ],
     [ "y", "class_point.html#a2226d8a3fb283b0b3c1f69106df144ba", null ],
-    [ "m_correctorsFixed", "class_point.html#a88162a666a8b3c19e9429a9edabfe5ad", null ],
-    [ "m_correctorsVariable", "class_point.html#a0c7258432def19adc6f8f1312bd7a206", null ],
+    [ "y", "class_point.html#ae0a6db47b72d0f1fd761bea4777eedf2", null ],
     [ "m_x", "class_point.html#a885daee8c5064cd51f6a4c3888091fc9", null ],
     [ "m_y", "class_point.html#a00e243381d01e186dc2fcc5d24b4d3be", null ]
 ];

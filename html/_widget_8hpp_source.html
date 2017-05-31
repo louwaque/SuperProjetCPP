@@ -118,24 +118,28 @@ $(document).ready(function(){initNavTree('_widget_8hpp_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_widget.html#a722503332a7264088569b8f3fb7b3441">   11</a></span>&#160;  <span class="keyword">typedef</span> boost::signals2::signal&lt;void ()&gt;  <a class="code" href="class_widget.html#a722503332a7264088569b8f3fb7b3441">signal_t</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a> = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_widget.html#a3ea8845fc9833daf17e001fb5f04b949">   12</a></span>&#160;  <span class="keyword">typedef</span> signal_t::slot_type <a class="code" href="class_widget.html#a3ea8845fc9833daf17e001fb5f04b949">slot_t</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_widget.html#a65d0e18de80c67e7988517ec66ef1c46">   13</a></span>&#160;  <span class="keyword">typedef</span> boost::signals2::connection <a class="code" href="class_widget.html#a65d0e18de80c67e7988517ec66ef1c46">co_t</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a> = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_widget_html_a722503332a7264088569b8f3fb7b3441"><div class="ttname"><a href="class_widget.html#a722503332a7264088569b8f3fb7b3441">Widget::signal_t</a></div><div class="ttdeci">boost::signals2::signal&lt; void()&gt; signal_t</div><div class="ttdef"><b>Definition:</b> Widget.hpp:11</div></div>
 <div class="ttc" id="_graphics_item_8hpp_html"><div class="ttname"><a href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></div><div class="ttdoc">Classe GraphicsItem. </div></div>
 <div class="ttc" id="class_widget_html_a819c625f51b8a0467f3ceb5056c721d5"><div class="ttname"><a href="class_widget.html#a819c625f51b8a0467f3ceb5056c721d5">Widget::Widget</a></div><div class="ttdeci">Widget(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:3</div></div>
 <div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdef"><b>Definition:</b> Widget.hpp:8</div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:11</div></div>
-<div class="ttc" id="class_graphics_item_html_aeaf0a8de33aa83d5fa5ac8889e7e4392"><div class="ttname"><a href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">GraphicsItem::parent</a></div><div class="ttdeci">GraphicsItem * parent() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:42</div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:12</div></div>
+<div class="ttc" id="class_graphics_item_html_aeaf0a8de33aa83d5fa5ac8889e7e4392"><div class="ttname"><a href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">GraphicsItem::parent</a></div><div class="ttdeci">GraphicsItem * parent() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:44</div></div>
+<div class="ttc" id="class_widget_html_a65d0e18de80c67e7988517ec66ef1c46"><div class="ttname"><a href="class_widget.html#a65d0e18de80c67e7988517ec66ef1c46">Widget::co_t</a></div><div class="ttdeci">boost::signals2::connection co_t</div><div class="ttdef"><b>Definition:</b> Widget.hpp:13</div></div>
+<div class="ttc" id="class_widget_html_a3ea8845fc9833daf17e001fb5f04b949"><div class="ttname"><a href="class_widget.html#a3ea8845fc9833daf17e001fb5f04b949">Widget::slot_t</a></div><div class="ttdeci">signal_t::slot_type slot_t</div><div class="ttdef"><b>Definition:</b> Widget.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_21d6cd99624d45f807de4337bcc2f4c1.html">widget</a></li><li class="navelem"><a class="el" href="dir_413cf50c4457cdd0fe9b5375cd6b4ea3.html">include</a></li><li class="navelem"><a class="el" href="_widget_8hpp.html">Widget.hpp</a></li>
-    <li class="footer">Généré le Mardi 30 Mai 2017 13:33:41 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 31 Mai 2017 07:50:48 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
