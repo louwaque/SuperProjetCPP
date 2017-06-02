@@ -162,8 +162,16 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:a0b2ea5baf36174499da121e666931e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e6b58931d20892b3f5c4fadf45340b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aa4e6b58931d20892b3f5c4fadf45340b">relative</a> () const </td></tr>
 <tr class="separator:aa4e6b58931d20892b3f5c4fadf45340b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af1612ff97e961cdd93d3e46d68b796"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a> () const </td></tr>
+<tr class="separator:a4af1612ff97e961cdd93d3e46d68b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df1f1705c57a0089ee2956315b214ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a> () const </td></tr>
+<tr class="separator:a2df1f1705c57a0089ee2956315b214ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abe56cf3f067305623a1d805460a84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
 <tr class="separator:a9abe56cf3f067305623a1d805460a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5e36e2e1bd0fa1564c1e4d5d74355c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c">setRelativeX</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>)</td></tr>
+<tr class="separator:a7f5e36e2e1bd0fa1564c1e4d5d74355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb67fd238634ebc25e4bdb3ab4cca9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">setRelativeY</a> (const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="separator:abb67fd238634ebc25e4bdb3ab4cca9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61727372965e26cbd7e661157d959ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a61727372965e26cbd7e661157d959ae9">setRelative</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
 <tr class="separator:a61727372965e26cbd7e661157d959ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a> () const </td></tr>
@@ -286,10 +294,10 @@ Attributs privés statiques</h2></td></tr>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(0),</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid())</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -339,12 +347,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid())</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,11 +375,11 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a>(fixed)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -406,12 +414,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">//FIXME les deux sont dans le même groupe ? je ne pense pas</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -430,7 +438,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:144</div></div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -455,29 +463,29 @@ Voici le graphe d'appel pour cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">auto</span> &amp;group = <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; group.size(); ++i)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span> (&amp;(group[i].<span class="keyword">get</span>()) == <span class="keyword">this</span>)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      group.erase(group.begin()+i);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> (group.empty())</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>.erase(<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="class_point.html">Point</a> oldMe(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = boost::uuids::nil_uuid();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(oldMe);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:85</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:141</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:28</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keyword">auto</span> &amp;group = <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; group.size(); ++i)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span> (&amp;(group[i].<span class="keyword">get</span>()) == <span class="keyword">this</span>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      group.erase(group.begin()+i);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">if</span> (group.empty())</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>.erase(<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="class_point.html">Point</a> oldMe(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = boost::uuids::nil_uuid();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(oldMe);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:27</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -517,8 +525,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -542,8 +550,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -567,8 +575,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>.is_nil(); }</div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>.is_nil(); }</div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -593,30 +601,24 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">if</span> (point.<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    point.<a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>(point);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = boost::uuids::random_generator()();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points().push_back(point);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points().push_back(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordflow">if</span> (point.<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> == <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>)</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].setOrigin(point.<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:144</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:85</div></div>
-<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.hpp:87</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:141</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">if</span> (point.<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = boost::uuids::random_generator()();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points().push_back(point);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = point.<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].points().push_back(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -659,12 +661,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:144</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:145</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -681,14 +683,20 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() ? <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> ? *<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> : <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(0, 0) : <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].<a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:141</div></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(0, 0);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].origin();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
 <div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -728,20 +736,81 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//if (isAlone())</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//else</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//  throw std::runtime_error(&quot;Relative operation on point can&#39;t be done when point is not alone&quot;);</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>); }</div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
 <div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_point_aa4e6b58931d20892b3f5c4fadf45340b_cgraph.svg" width="254" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4af1612ff97e961cdd93d3e46d68b796"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Point::relativeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>; }</div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a4af1612ff97e961cdd93d3e46d68b796_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2df1f1705c57a0089ee2956315b214ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Point::relativeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>; }</div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a2df1f1705c57a0089ee2956315b214ba_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -780,56 +849,46 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="class_point.html">Point</a> newP(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// for (auto c : m_correctorsFixed)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//   if (c)</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// for (auto c : m_correctorsVariable)</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//   if (c)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> = newP.x() - <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> = newP.y() - <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="class_point.html">Point</a> newP(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// for (Point &amp;p : m_groups[m_groupId]) {</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//   for (auto c : p.m_correctorsFixed)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//     if (c)</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">//       newP = c(newP);</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">//   for (auto c : p.m_correctorsVariable)</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">//     if (c)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">//       newP = c(newP);</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// }</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// std::cerr &lt;&lt; &quot;Moi: &quot; &lt;&lt; this &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">// std::cerr &lt;&lt; &quot;Point à mettre : &quot; &lt;&lt; newP &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="class_group_points.html">GroupPoints</a> &amp;gp = <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>];</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_point.html">Point</a> &amp;<a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a> : gp.<a class="code" href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">points</a>()) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          <span class="comment">// std::cerr &lt;&lt; &quot;Boucle pour: &quot; &lt;&lt; p &lt;&lt; &quot; &quot; &lt;&lt; &amp;p&lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          <span class="comment">// p.m_x = newP.x();</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="comment">// p.m_y = newP.y();</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.m_x = newP.x() - <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.origin().x();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.m_y = newP.y() - <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.origin().y();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          <span class="comment">// std::cerr &lt;&lt; &quot;fin&quot; &lt;&lt; &#39;\n&#39; &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// std::cerr &lt;&lt; &quot;\n&quot; &lt;&lt; &#39;\n&#39;;</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// for (auto c : m_correctorsFixed)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//   if (c)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// for (auto c : m_correctorsVariable)</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//   if (c)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//     newP = c(newP);</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> = newP.x() - <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> = newP.y() - <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// for (Point &amp;p : m_groups[m_groupId]) {</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//   for (auto c : p.m_correctorsFixed)</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">//     if (c)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//       newP = c(newP);</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//   for (auto c : p.m_correctorsVariable)</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//     if (c)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//       newP = c(newP);</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// }</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="class_group_points.html">GroupPoints</a> &amp;gp = <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_point.html">Point</a> &amp;<a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a> : gp.<a class="code" href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">points</a>()) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.m_x = newP.x() - <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.origin().x();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.m_y = newP.y() - <a class="code" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>.origin().y();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
 <div class="ttc" id="jquery_8js_html_a2335e57f79b6acfb6de59c235dc8a83e"><div class="ttname"><a href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a></div><div class="ttdeci">function p(by, bw, bv)</div><div class="ttdef"><b>Definition:</b> jquery.js:28</div></div>
-<div class="ttc" id="class_group_points_html"><div class="ttname"><a href="class_group_points.html">GroupPoints</a></div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:9</div></div>
+<div class="ttc" id="class_group_points_html"><div class="ttname"><a href="class_group_points.html">GroupPoints</a></div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:11</div></div>
 <div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_group_points_html_a5d0d00417a192136922c27c8ce8ff98f"><div class="ttname"><a href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">GroupPoints::points</a></div><div class="ttdeci">Points points() const </div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:17</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:141</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:28</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_group_points_html_a5d0d00417a192136922c27c8ce8ff98f"><div class="ttname"><a href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">GroupPoints::points</a></div><div class="ttdeci">Points points() const </div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:18</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:27</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -842,7 +901,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a43923c490fb5439d7d8a041e86520c34_icgraph.svg" width="100%" height="573"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a43923c490fb5439d7d8a041e86520c34_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -870,10 +929,10 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), point.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:85</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), point.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -906,17 +965,17 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> = <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].setOrigin(origin);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> = <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].setOrigin(origin);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:141</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:142</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -939,9 +998,6 @@ Voici le graphe des appelants de cette fonction :</div>
 <a class="anchor" id="a9abe56cf3f067305623a1d805460a84f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Point::setRelative </td>
@@ -951,21 +1007,17 @@ Voici le graphe des appelants de cette fonction :</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>(point.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), point.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.hpp:87</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>() + point);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a9abe56cf3f067305623a1d805460a84f_cgraph.svg" width="544" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a9abe56cf3f067305623a1d805460a84f_cgraph.svg" width="100%" height="568"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -973,7 +1025,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a9abe56cf3f067305623a1d805460a84f_icgraph.svg" width="496" height="87"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a9abe56cf3f067305623a1d805460a84f_icgraph.svg" width="100%" height="413"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1011,23 +1063,111 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                    {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// if (isAlone()) {</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a> = <a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a> = <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// } else {</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//   throw std::runtime_error(&quot;Relative operation on point can&#39;t be done when point is not alone&quot;);</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// }</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a61727372965e26cbd7e661157d959ae9_cgraph.svg" width="544" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a61727372965e26cbd7e661157d959ae9_cgraph.svg" width="544" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a61727372965e26cbd7e661157d959ae9_icgraph.svg" width="139" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f5e36e2e1bd0fa1564c1e4d5d74355c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setRelativeX </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a>()}); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a2df1f1705c57a0089ee2956315b214ba"><div class="ttname"><a href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">Point::relativeY</a></div><div class="ttdeci">int relativeY() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:75</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a7f5e36e2e1bd0fa1564c1e4d5d74355c_cgraph.svg" width="100%" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a7f5e36e2e1bd0fa1564c1e4d5d74355c_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb67fd238634ebc25e4bdb3ab4cca9b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Point::setRelativeY </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
+<div class="ttc" id="class_point_html_a4af1612ff97e961cdd93d3e46d68b796"><div class="ttname"><a href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">Point::relativeX</a></div><div class="ttdeci">int relativeX() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:74</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_abb67fd238634ebc25e4bdb3ab4cca9b6_cgraph.svg" width="100%" height="562"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_abb67fd238634ebc25e4bdb3ab4cca9b6_icgraph.svg" width="510" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1055,23 +1195,15 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:85</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a62fd0fb2c699d6d4699d3be73762ffa2_cgraph.svg" width="100%" height="539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a62fd0fb2c699d6d4699d3be73762ffa2_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -1099,23 +1231,15 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:85</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_point_a3cdf750fa08f24c2aaaf7ada42df5ad8_cgraph.svg" width="100%" height="554"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_point_a3cdf750fa08f24c2aaaf7ada42df5ad8_icgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1137,17 +1261,17 @@ Voici le graphe des appelants de cette fonction :</div>
 
 <p>recupere la valeur de l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> </dd></dl>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() + <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:69</div></div>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() + <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
 <div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:138</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1182,17 +1306,17 @@ Voici le graphe des appelants de cette fonction :</div>
 
 <p>Fonction recuperant le valeur de l'ordonée. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>Retourne l'ordonée du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() + <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() + <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:139</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:137</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:77</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:131</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1365,7 +1489,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_point.html">Point</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 09:48:11 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

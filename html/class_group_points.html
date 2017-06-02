@@ -168,8 +168,8 @@ Amis</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a>(<span class="keyword">nullptr</span>),</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  <a class="code" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a>()</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{}</div>
-<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
-<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:23</div></div>
+<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:25</div></div>
+<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -186,9 +186,11 @@ Amis</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> ? *<a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> : <a class="code" href="class_group_points.html#aa238d52f825b8ea8da6a5c4ae1b8d482">Point</a>(0, 0); }</div>
-<div class="ttc" id="class_group_points_html_aa238d52f825b8ea8da6a5c4ae1b8d482"><div class="ttname"><a href="class_group_points.html#aa238d52f825b8ea8da6a5c4ae1b8d482">GroupPoints::Point</a></div><div class="ttdeci">friend class Point</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:26</div></div>
-<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:23</div></div>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> ? *<a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> : <a class="code" href="class_group_points.html#aa238d52f825b8ea8da6a5c4ae1b8d482">Point</a>(0, 0);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="ttc" id="class_group_points_html_aa238d52f825b8ea8da6a5c4ae1b8d482"><div class="ttname"><a href="class_group_points.html#aa238d52f825b8ea8da6a5c4ae1b8d482">GroupPoints::Point</a></div><div class="ttdeci">friend class Point</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:27</div></div>
+<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -220,13 +222,13 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a>; }</div>
-<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a>; }</div>
+<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:25</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_group_points_a5d0d00417a192136922c27c8ce8ff98f_icgraph.svg" width="100%" height="573"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_group_points_a5d0d00417a192136922c27c8ce8ff98f_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -253,8 +255,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a>; }</div>
-<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a>; }</div>
+<div class="ttc" id="class_group_points_html_a8ba11c38c9bb66140c20d4a1332f4b9a"><div class="ttname"><a href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">GroupPoints::m_points</a></div><div class="ttdeci">Points m_points</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:25</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,9 +273,11 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{ <a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> = <a class="code" href="class_group_points.html#a9c23ec98ecabaf694b5b16030213096f">origin</a>; }</div>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a> = <a class="code" href="class_group_points.html#a9c23ec98ecabaf694b5b16030213096f">origin</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="ttc" id="class_group_points_html_a9c23ec98ecabaf694b5b16030213096f"><div class="ttname"><a href="class_group_points.html#a9c23ec98ecabaf694b5b16030213096f">GroupPoints::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> GroupPoints.cpp:8</div></div>
-<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:23</div></div>
+<div class="ttc" id="class_group_points_html_ada135a7d9f454071f8812082a92d90fc"><div class="ttname"><a href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">GroupPoints::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:24</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -357,7 +361,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_group_points.html">GroupPoints</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 09:48:11 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

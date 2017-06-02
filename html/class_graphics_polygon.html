@@ -131,8 +131,8 @@ Graphe de collaboration de GraphicsPolygon:</div>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a29e95f90707fed27e17b74060a6d0623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_polygon.html#a29e95f90707fed27e17b74060a6d0623">GraphicsPolygon</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
 <tr class="separator:a29e95f90707fed27e17b74060a6d0623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b4b5c6f2cfb03f89a7161e87e6feba5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_polygon.html#a0b4b5c6f2cfb03f89a7161e87e6feba5">newPoint</a> ()</td></tr>
-<tr class="separator:a0b4b5c6f2cfb03f89a7161e87e6feba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382da20738e4c38cd865cd02755e9ee6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_polygon.html#a382da20738e4c38cd865cd02755e9ee6">newPoint</a> ()</td></tr>
+<tr class="separator:a382da20738e4c38cd865cd02755e9ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdf8adf1ef849fecc7b22e16b828a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e">popPoint</a> ()</td></tr>
 <tr class="separator:a2cdf8adf1ef849fecc7b22e16b828a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3ca707d0dcd1b8cc734651687f366f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">nbPoints</a> () const </td></tr>
@@ -240,8 +240,8 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:a6616ded9057686f175bdbaa4c62218dc inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc">meIsOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;absoluteP)</td></tr>
 <tr class="separator:a6616ded9057686f175bdbaa4c62218dc inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_graphics_shape"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graphics_shape')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_graphics_shape.html">GraphicsShape</a></td></tr>
-<tr class="memitem:a0bd7d1e35a198ca74ddf66820a1c7a61 inherit pro_attribs_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a></td></tr>
-<tr class="separator:a0bd7d1e35a198ca74ddf66820a1c7a61 inherit pro_attribs_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6333c05e35fbbd0550ab7fe0ac3e44 inherit pro_attribs_class_graphics_shape"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a></td></tr>
+<tr class="separator:a1e6333c05e35fbbd0550ab7fe0ac3e44 inherit pro_attribs_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a29e95f90707fed27e17b74060a6d0623"></a>
@@ -266,15 +266,8 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;: <a class="code" href="class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11">GraphicsShape</a>(parent)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="class_graphics_point.html">GraphicsPoint</a> *<a class="code" href="jquery_8js.html#aa4d4888597588a84fd5b1184d00c91f3">a</a> = <span class="keyword">new</span> <a class="code" href="class_graphics_anchor.html">GraphicsAnchor</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.push_back(a);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{}</div>
 <div class="ttc" id="class_graphics_shape_html_ad416945628f3374abd7d0b55c40e6c11"><div class="ttname"><a href="class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11">GraphicsShape::GraphicsShape</a></div><div class="ttdeci">GraphicsShape(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsShape.cpp:3</div></div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
-<div class="ttc" id="class_graphics_point_html"><div class="ttname"><a href="class_graphics_point.html">GraphicsPoint</a></div><div class="ttdef"><b>Definition:</b> GraphicsPoint.hpp:6</div></div>
-<div class="ttc" id="jquery_8js_html_aa4d4888597588a84fd5b1184d00c91f3"><div class="ttname"><a href="jquery_8js.html#aa4d4888597588a84fd5b1184d00c91f3">a</a></div><div class="ttdeci">function a</div><div class="ttdef"><b>Definition:</b> jquery.js:41</div></div>
-<div class="ttc" id="class_graphics_anchor_html"><div class="ttname"><a href="class_graphics_anchor.html">GraphicsAnchor</a></div><div class="ttdef"><b>Definition:</b> GraphicsAnchor.hpp:6</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,10 +292,8 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                          {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.size();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  }</div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size(); }</div>
+<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -314,31 +305,28 @@ Voici le graphe des appelants de cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a0b4b5c6f2cfb03f89a7161e87e6feba5"></a>
+<a class="anchor" id="a382da20738e4c38cd865cd02755e9ee6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_graphics_item.html">GraphicsItem</a> * GraphicsPolygon::newPoint </td>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> &amp; GraphicsPolygon::newPoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *item = <span class="keyword">new</span> <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.push_back(item);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> item;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
-<div class="ttc" id="class_graphics_point_html"><div class="ttname"><a href="class_graphics_point.html">GraphicsPoint</a></div><div class="ttdef"><b>Definition:</b> GraphicsPoint.hpp:6</div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:11</div></div>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.emplace_back();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.back();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_polygon_a0b4b5c6f2cfb03f89a7161e87e6feba5_icgraph.svg" width="446" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_polygon_a382da20738e4c38cd865cd02755e9ee6_icgraph.svg" width="446" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -357,13 +345,11 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.size() &gt; 2) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.back();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>.pop_back();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size() &gt; 2)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.pop_back();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -388,19 +374,19 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (nb &lt;= 1)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">while</span> (nb &gt; <a class="code" href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">nbPoints</a>())</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_graphics_polygon.html#a0b4b5c6f2cfb03f89a7161e87e6feba5">newPoint</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">nbPoints</a>() &gt; nb)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e">popPoint</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">if</span> (nb &lt;= 1)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">while</span> (nb &gt; <a class="code" href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">nbPoints</a>())</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_graphics_polygon.html#a382da20738e4c38cd865cd02755e9ee6">newPoint</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">nbPoints</a>() &gt; nb)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e">popPoint</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="class_graphics_polygon_html_a382da20738e4c38cd865cd02755e9ee6"><div class="ttname"><a href="class_graphics_polygon.html#a382da20738e4c38cd865cd02755e9ee6">GraphicsPolygon::newPoint</a></div><div class="ttdeci">Point &amp; newPoint()</div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.cpp:9</div></div>
 <div class="ttc" id="class_graphics_polygon_html_a6d3ca707d0dcd1b8cc734651687f366f"><div class="ttname"><a href="class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f">GraphicsPolygon::nbPoints</a></div><div class="ttdeci">size_t nbPoints() const </div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.hpp:14</div></div>
-<div class="ttc" id="class_graphics_polygon_html_a2cdf8adf1ef849fecc7b22e16b828a7e"><div class="ttname"><a href="class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e">GraphicsPolygon::popPoint</a></div><div class="ttdeci">void popPoint()</div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.cpp:19</div></div>
-<div class="ttc" id="class_graphics_polygon_html_a0b4b5c6f2cfb03f89a7161e87e6feba5"><div class="ttname"><a href="class_graphics_polygon.html#a0b4b5c6f2cfb03f89a7161e87e6feba5">GraphicsPolygon::newPoint</a></div><div class="ttdeci">GraphicsItem * newPoint()</div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.cpp:12</div></div>
+<div class="ttc" id="class_graphics_polygon_html_a2cdf8adf1ef849fecc7b22e16b828a7e"><div class="ttname"><a href="class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e">GraphicsPolygon::popPoint</a></div><div class="ttdeci">void popPoint()</div><div class="ttdef"><b>Definition:</b> GraphicsPolygon.cpp:15</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -434,9 +420,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#aa892caff547a0fd1969898ee0740b186">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                             {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac">PolygonType</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                             {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac">PolygonType</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
 <div class="ttc" id="class_graphics_item_html_aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac"><div class="ttname"><a href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac">GraphicsItem::PolygonType</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:24</div></div>
 </div><!-- fragment -->
 </div>
@@ -451,7 +437,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_polygon.html">GraphicsPolygon</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 09:48:11 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

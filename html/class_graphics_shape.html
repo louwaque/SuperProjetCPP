@@ -195,8 +195,8 @@ Fonctions membres protégées</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Attributs protégés</h2></td></tr>
-<tr class="memitem:a0bd7d1e35a198ca74ddf66820a1c7a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a></td></tr>
-<tr class="separator:a0bd7d1e35a198ca74ddf66820a1c7a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6333c05e35fbbd0550ab7fe0ac3e44"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a></td></tr>
+<tr class="separator:a1e6333c05e35fbbd0550ab7fe0ac3e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
@@ -258,11 +258,11 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a>(parent), <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>()</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a>(parent),</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>()</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{}</div>
 <div class="ttc" id="class_graphics_item_html_a96c30111512bd4f198e9414b70bb3ccc"><div class="ttname"><a href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem::GraphicsItem</a></div><div class="ttdeci">GraphicsItem(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:7</div></div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
+<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,16 +291,28 @@ Membres hérités additionnels</h2></td></tr>
 
 <p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#ab97734473720fa8365534448aa13733c">GraphicsItem</a>.</p>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="comment">// if (canvas) {</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="comment">//   if (isFill() &amp;&amp; m_points.size() &gt;= 3)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="comment">//     for (size_t i = 2; i &lt; m_points.size(); ++i)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="comment">//       canvas-&gt;drawTriangle(m_points[0]-&gt;absolute(), m_points[i-1]-&gt;absolute(), m_points[i]-&gt;absolute(), true);</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="comment">//   else</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="comment">//     for (size_t i = 0; i &lt; m_points.size(); ++i)</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment">//       canvas-&gt;drawLine(m_points[i]-&gt;absolute(), m_points[(i+1)%m_points.size()]-&gt;absolute());</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// }</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">if</span> (canvas) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a>() &amp;&amp; <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size() &gt;= 3)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 2; i &lt; <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size(); ++i)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        canvas-&gt;<a class="code" href="class_canvas.html#ac42421486032c41210f676db45ce622c">drawTriangle</a>(<a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[0], <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[i-1], <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[i], <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size(); ++i)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        canvas-&gt;<a class="code" href="class_canvas.html#aea67ac3f6984f8a1c67edcd892af289c">drawLine</a>(<a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[i], <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[(i+1)%<a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.size()]);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="ttc" id="class_graphics_item_html_a349439f069cfa6ade361ebdcd6f43434"><div class="ttname"><a href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">GraphicsItem::isFill</a></div><div class="ttdeci">bool isFill() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:81</div></div>
+<div class="ttc" id="class_canvas_html_aea67ac3f6984f8a1c67edcd892af289c"><div class="ttname"><a href="class_canvas.html#aea67ac3f6984f8a1c67edcd892af289c">Canvas::drawLine</a></div><div class="ttdeci">void drawLine(const int firstX, const int firstY, const int secondX, const int secondY)</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:44</div></div>
+<div class="ttc" id="class_canvas_html_ac42421486032c41210f676db45ce622c"><div class="ttname"><a href="class_canvas.html#ac42421486032c41210f676db45ce622c">Canvas::drawTriangle</a></div><div class="ttdeci">void drawTriangle(const int firstX, const int firstY, const int secondX, const int secondY, const int thirdX, const int thirdY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:24</div></div>
+<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_shape_ad04e367a19e41326ab7b0f30207b66b5_cgraph.svg" width="376" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ac29030eed5d6e98479eace34262328cb"></a>
@@ -333,7 +345,7 @@ Membres hérités additionnels</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des données membres</h2>
-<a class="anchor" id="a0bd7d1e35a198ca74ddf66820a1c7a61"></a>
+<a class="anchor" id="a1e6333c05e35fbbd0550ab7fe0ac3e44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -341,7 +353,7 @@ Membres hérités additionnels</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a> GraphicsShape::m_points</td>
+          <td class="memname">std::vector&lt;<a class="el" href="class_point.html">Point</a>&gt; GraphicsShape::m_points</td>
         </tr>
       </table>
   </td>
@@ -363,7 +375,7 @@ Membres hérités additionnels</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_shape.html">GraphicsShape</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 09:48:11 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

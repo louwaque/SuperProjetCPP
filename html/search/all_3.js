@@ -5,7 +5,7 @@ var searchData=
   ['canvas',['Canvas',['../class_canvas.html',1,'Canvas'],['../class_window.html#a47ea2e0f003fc805b8ca14396dcbb747',1,'Window::canvas()'],['../class_canvas.html#a5225316a0b9bca9fbba19b0699581921',1,'Canvas::Canvas()']]],
   ['canvas_2ecpp',['Canvas.cpp',['../_canvas_8cpp.html',1,'']]],
   ['canvas_2ehpp',['Canvas.hpp',['../_canvas_8hpp.html',1,'']]],
-  ['center',['center',['../class_graphics_circle.html#a7c135c635ca0050546604d46384ebdc3',1,'GraphicsCircle::center()'],['../class_graphics_ellipse.html#a776e7226cde770d445f481e0983af7dd',1,'GraphicsEllipse::center()']]],
+  ['center',['center',['../class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c',1,'GraphicsCircle::center()'],['../class_graphics_ellipse.html#a358d42fda0b368a620aca1f9f2b0ce1f',1,'GraphicsEllipse::center()']]],
   ['children',['children',['../class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a',1,'GraphicsItem']]],
   ['childrenrecursively',['ChildrenRecursively',['../class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665',1,'GraphicsItem']]],
   ['circletype',['CircleType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a',1,'GraphicsItem']]],

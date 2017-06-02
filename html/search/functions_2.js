@@ -3,7 +3,7 @@ var searchData=
   ['c',['c',['../jquery_8js.html#a7cb128e50bb54a08588e510ed155372f',1,'jquery.js']]],
   ['cachedlink',['cachedLink',['../navtree_8js.html#aaa2d293f55e5fe3620af4f9a2836e428',1,'navtree.js']]],
   ['canvas',['canvas',['../class_window.html#a47ea2e0f003fc805b8ca14396dcbb747',1,'Window::canvas()'],['../class_canvas.html#a5225316a0b9bca9fbba19b0699581921',1,'Canvas::Canvas()']]],
-  ['center',['center',['../class_graphics_circle.html#a7c135c635ca0050546604d46384ebdc3',1,'GraphicsCircle::center()'],['../class_graphics_ellipse.html#a776e7226cde770d445f481e0983af7dd',1,'GraphicsEllipse::center()']]],
+  ['center',['center',['../class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c',1,'GraphicsCircle::center()'],['../class_graphics_ellipse.html#a358d42fda0b368a620aca1f9f2b0ce1f',1,'GraphicsEllipse::center()']]],
   ['children',['children',['../class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a',1,'GraphicsItem']]],
   ['clear',['clear',['../class_canvas.html#af5f2b17591e32f8aedc5ab4bb9e37e6c',1,'Canvas']]],
   ['close',['close',['../class_window.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
