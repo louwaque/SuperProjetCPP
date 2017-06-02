@@ -71,7 +71,12 @@ public:
   void setOrigin(const Point *origin = nullptr);
 
   inline Point relative() const { return Point(m_x, m_y); }
+  inline int relativeX() const { return m_x; }
+  inline int relativeY() const { return m_y; }
+  
   void setRelative(const Point &point);
+  inline void setRelativeX(const int x) { setRelative({x, relativeY()}); }
+  inline void setRelativeY(const int y) { setRelative({relativeX(), y}); }
   inline void setRelative(const int x, const int y) { setRelative({x, y}); }
 
   /*!
