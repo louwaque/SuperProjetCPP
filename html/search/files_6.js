@@ -27,5 +27,7 @@ var searchData=
   ['graphicstext_2ecpp',['GraphicsText.cpp',['../_graphics_text_8cpp.html',1,'']]],
   ['graphicstext_2ehpp',['GraphicsText.hpp',['../_graphics_text_8hpp.html',1,'']]],
   ['graphicstriangle_2ecpp',['GraphicsTriangle.cpp',['../_graphics_triangle_8cpp.html',1,'']]],
-  ['graphicstriangle_2ehpp',['GraphicsTriangle.hpp',['../_graphics_triangle_8hpp.html',1,'']]]
+  ['graphicstriangle_2ehpp',['GraphicsTriangle.hpp',['../_graphics_triangle_8hpp.html',1,'']]],
+  ['grouppoints_2ecpp',['GroupPoints.cpp',['../_group_points_8cpp.html',1,'']]],
+  ['grouppoints_2ehpp',['GroupPoints.hpp',['../_group_points_8hpp.html',1,'']]]
 ];

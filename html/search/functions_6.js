@@ -22,5 +22,6 @@ var searchData=
   ['graphicssquare',['GraphicsSquare',['../class_graphics_square.html#a14374df804233349ce8654bbe41531e7',1,'GraphicsSquare']]],
   ['graphicstext',['GraphicsText',['../class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb',1,'GraphicsText::GraphicsText(GraphicsItem *parent=nullptr)'],['../class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1',1,'GraphicsText::GraphicsText(const std::string &amp;text, GraphicsItem *parent=nullptr)']]],
   ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01',1,'GraphicsTriangle']]],
-  ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color']]]
+  ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color']]],
+  ['grouppoints',['GroupPoints',['../class_group_points.html#ae976ab1712456edebc5f9d3ebc46f293',1,'GroupPoints']]]
 ];

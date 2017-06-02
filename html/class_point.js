@@ -2,7 +2,7 @@ var class_point =
 [
     [ "Corrector", "class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41", null ],
     [ "CorrectorList", "class_point.html#a42108245ceb7c99343bcccb347babbc8", null ],
-    [ "GroupsPoints", "class_point.html#aaac4c06164f0564df1cca8555f3711dd", null ],
+    [ "GroupsPoints", "class_point.html#ae2f7fa1c87ee4b9431fa7c5325735268", null ],
     [ "Id", "class_point.html#af0e58f6167f880cdcec3a6928d288a6a", null ],
     [ "Point", "class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15", null ],
     [ "Point", "class_point.html#a001c4958c310b248f5c26037aea38a9c", null ],

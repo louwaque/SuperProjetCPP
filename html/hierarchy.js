@@ -35,5 +35,6 @@ var hierarchy =
         [ "LineEdit", "class_line_edit.html", null ]
       ] ]
     ] ],
+    [ "GroupPoints", "class_group_points.html", null ],
     [ "Point", "class_point.html", null ]
 ];

@@ -19,6 +19,7 @@ var annotated =
     [ "GraphicsSquare", "class_graphics_square.html", "class_graphics_square" ],
     [ "GraphicsText", "class_graphics_text.html", "class_graphics_text" ],
     [ "GraphicsTriangle", "class_graphics_triangle.html", "class_graphics_triangle" ],
+    [ "GroupPoints", "class_group_points.html", "class_group_points" ],
     [ "KeyEvent", "class_key_event.html", "class_key_event" ],
     [ "LineEdit", "class_line_edit.html", "class_line_edit" ],
     [ "MainWindow", "class_main_window.html", "class_main_window" ],

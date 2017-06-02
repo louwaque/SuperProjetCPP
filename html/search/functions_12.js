@@ -24,7 +24,7 @@ var searchData=
   ['sethue',['setHue',['../class_color.html#a600727550b0b99ab9c67226be5aa70cb',1,'Color']]],
   ['setkeyactions',['setKeyActions',['../search_8js.html#a98192fa2929bb8e4b0a890a4909ab9b2',1,'search.js']]],
   ['setnbpoints',['setNbPoints',['../class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376',1,'GraphicsPolygon']]],
-  ['setorigin',['setOrigin',['../class_point.html#a0b2ea5baf36174499da121e666931e10',1,'Point']]],
+  ['setorigin',['setOrigin',['../class_group_points.html#a05e55c3660ad11749c1552f212e12d26',1,'GroupPoints::setOrigin()'],['../class_point.html#a0b2ea5baf36174499da121e666931e10',1,'Point::setOrigin()']]],
   ['setparent',['setParent',['../class_graphics_item.html#a8bcbe86ba1854edffd7fbed0b4bc8cd5',1,'GraphicsItem']]],
   ['setradius',['setRadius',['../class_graphics_point.html#ae4314b809d5fad0ac5473b459e63cb12',1,'GraphicsPoint']]],
   ['setred',['setRed',['../class_color.html#a8ff299417275579e8ae4a065d8dfcf8d',1,'Color']]],

@@ -55,5 +55,8 @@ var searchData=
   ['graphicstypes',['GraphicsTypes',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f',1,'GraphicsItem']]],
   ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color::green() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa35bff40dde9ce70db3132c55f8c53bea',1,'Color::Green()']]],
   ['grey',['Grey',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47',1,'Color']]],
-  ['groupspoints',['GroupsPoints',['../class_point.html#aaac4c06164f0564df1cca8555f3711dd',1,'Point']]]
+  ['grouppoints',['GroupPoints',['../class_group_points.html',1,'GroupPoints'],['../class_group_points.html#ae976ab1712456edebc5f9d3ebc46f293',1,'GroupPoints::GroupPoints()']]],
+  ['grouppoints_2ecpp',['GroupPoints.cpp',['../_group_points_8cpp.html',1,'']]],
+  ['grouppoints_2ehpp',['GroupPoints.hpp',['../_group_points_8hpp.html',1,'']]],
+  ['groupspoints',['GroupsPoints',['../class_point.html#ae2f7fa1c87ee4b9431fa7c5325735268',1,'Point']]]
 ];

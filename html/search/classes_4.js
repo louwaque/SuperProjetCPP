@@ -13,5 +13,6 @@ var searchData=
   ['graphicsshape',['GraphicsShape',['../class_graphics_shape.html',1,'']]],
   ['graphicssquare',['GraphicsSquare',['../class_graphics_square.html',1,'']]],
   ['graphicstext',['GraphicsText',['../class_graphics_text.html',1,'']]],
-  ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]]
+  ['graphicstriangle',['GraphicsTriangle',['../class_graphics_triangle.html',1,'']]],
+  ['grouppoints',['GroupPoints',['../class_group_points.html',1,'']]]
 ];
