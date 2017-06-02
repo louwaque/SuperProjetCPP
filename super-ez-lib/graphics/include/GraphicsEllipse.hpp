@@ -8,12 +8,12 @@ class GraphicsEllipse : public GraphicsShape
 public:
   explicit GraphicsEllipse(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *center() {
+  Point &center() {
     return m_points[0];
   }
 
-  //change the name ?
-  GraphicsItem *radius() {
+  //FIXME change the name ?
+  Point &radius() {
     return m_points[1];
   }
 

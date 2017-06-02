@@ -5,19 +5,18 @@
 GraphicsEllipse::GraphicsEllipse(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
-  GraphicsItem *center = new GraphicsAnchor(this);
-  GraphicsItem *radius = new GraphicsPoint(this);
-  m_points.push_back(center);
-  m_points.push_back(radius);
+  m_points.emplace_back();
+  m_points.emplace_back();
 }
 
 void GraphicsEllipse::meDraw(Canvas *canvas)
 {
-  // if (canvas)
-  //   canvas->drawCircle(center()->absolute(), radius()->absolute(), isFill());
+  if (canvas)
+    canvas->drawCircle(center(), radius(), isFill());
 }
 
 bool GraphicsEllipse::meIsOver(const Point &absoluteP)
 {
+  //FIXME hardcore
   return false;
 }
