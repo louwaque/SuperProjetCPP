@@ -7,8 +7,7 @@ GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_topLeft(&position()),
   m_bottomRight(&position())
-{
-}
+{}
 
 void GraphicsRectangle::meDraw(Canvas *canvas)
 {
@@ -23,10 +22,10 @@ bool GraphicsRectangle::meIsOver(const Point &absoluteP)
 
 void GraphicsRectangle::setWidth(const size_t width)
 {
-  m_bottomRight.setX(width);
+  m_bottomRight.setRelativeX(width);
 }
 
 void GraphicsRectangle::setHeight(const size_t height)
 {
-  m_bottomRight.setY(height);
+  m_bottomRight.setRelativeY(height);
 }
