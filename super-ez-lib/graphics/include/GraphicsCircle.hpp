@@ -8,11 +8,13 @@ class GraphicsCircle : public GraphicsShape
 public:
   explicit GraphicsCircle(GraphicsItem *parent);
 
-  GraphicsItem *center() {
+  Point &center() {
     return m_points[0];
   }
 
-  GraphicsItem *radius() {
+  //FIXME utilise un point ou on fait un propriété radius
+  //      et pour modifier la taille on laisse MainWindow se débrouiller ?
+  Point &radius() {
     return m_points[1];
   }
 

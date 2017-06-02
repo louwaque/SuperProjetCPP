@@ -6,22 +6,21 @@
 GraphicsCircle::GraphicsCircle(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
-  GraphicsItem *center = new GraphicsAnchor(this);
-  GraphicsItem *radius = new GraphicsPoint(this);
-  m_points.push_back(center);
-  m_points.push_back(radius);
+  m_points.emplace_back();
+  m_points.emplace_back();
 }
 
 void GraphicsCircle::meDraw(Canvas *canvas)
 {
-  // if (canvas) {
-  //   Point distP = radius()->absolute() - center()->absolute();
-  //   int dist = hypot(distP.x(), distP.y());
-  //   canvas->drawCircle(center()->absolute() - dist, center()->absolute() + dist, isFill());
-  // }
+  if (canvas) {
+    Point distP = radius() - center();
+    int dist = hypot(distP.x(), distP.y());
+    canvas->drawCircle(center() - dist, center() + dist, isFill());
+  }
 }
 
 bool GraphicsCircle::meIsOver(const Point &absoluteP)
 {
+  //FIXME pas trop compliqué donc faut le faire !
   return false;
 }
