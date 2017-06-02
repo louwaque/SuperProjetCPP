@@ -15,6 +15,9 @@
 #include <vector>
 #include <functional>
 
+#include "GroupPoints.hpp"
+class GroupPoints;
+
 /*!
  * \class Point
  * \brief Représente un point (x, y)
@@ -26,7 +29,7 @@ class Point
 {
 public:
   typedef boost::uuids::uuid Id;
-  typedef std::map<Id, std::vector<std::reference_wrapper<Point>>> GroupsPoints;
+  typedef std::map<Id, GroupPoints> GroupsPoints;
   typedef std::function<Point(const Point&)> Corrector;
   typedef std::vector<Corrector> CorrectorList;
 
@@ -55,7 +58,7 @@ public:
    * \brief Constructeur par copie
    *
    * Constructeur par copie de la classe Point
-   *
+   *o
    * \param src : point à copier
    */
 
@@ -65,25 +68,31 @@ public:
 
   Point &operator=(const Point &src);
 
-  inline Point origin() const { return m_origin ? *m_origin : Point(); }
-  inline void setOrigin(const Point *origin = nullptr) { m_origin = origin; }
+  Point origin() const;
+  void setOrigin(const Point *origin = nullptr);
+  // inline void setOrigin(const Point &origin) {
+  //   if (isAlone())
+  //     m_origin = std::make_shared<Point>(origin);
+  //   else
+  //     m_groups[m_groupId].setOrigin(origin);
+  // }
 
   inline Point relative() const {
-    if (isAlone())
-      return Point(m_x, m_y);
-    else
-      throw std::runtime_error("Relative operation on point can't be done when point is not alone");
+    //if (isAlone())
+    return Point(m_x, m_y);
+    //else
+    //  throw std::runtime_error("Relative operation on point can't be done when point is not alone");
   }
 
   inline void setRelative(const Point &point) { setRelative(point.x(), point.y()); }
 
   inline void setRelative(const int x, const int y) {
-    if (isAlone()) {
+    // if (isAlone()) {
       m_x = x;
       m_y = y;
-    } else {
-      throw std::runtime_error("Relative operation on point can't be done when point is not alone");
-    }
+    // } else {
+    //   throw std::runtime_error("Relative operation on point can't be done when point is not alone");
+    // }
   }
 
   /*!
@@ -92,7 +101,7 @@ public:
    *  \return  l'absisse du Point
    */
 
-  inline int x() const { return isAlone() && m_origin ? m_origin->x() + m_x : m_x; }
+  int x() const;
 
   inline void setX(const int x) { set(x, y()); }
 
@@ -102,7 +111,7 @@ public:
    *  \return  Retourne l'ordonée du Point.
    */
 
-  inline int y() const { return isAlone() && m_origin ? m_origin->y() + m_y : m_y; }
+  int y() const;
 
   inline void setY(const int y) { set(x(), y); }
 

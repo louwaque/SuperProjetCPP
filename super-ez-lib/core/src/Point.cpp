@@ -53,6 +53,35 @@ Point &Point::operator=(const Point &src)
   return *this;
 }
 
+Point Point::origin() const
+{
+  return isAlone() ? m_origin ? *m_origin : Point(0, 0) : m_groups[m_groupId].origin();
+}
+
+void Point::setOrigin(const Point *origin)
+{
+  if (isAlone())
+    m_origin = origin;
+  else
+    m_groups[m_groupId].setOrigin(origin);
+}
+
+int Point::x() const
+{
+  if ((isAlone() && m_origin) || !isAlone())
+    return origin().x() + m_x;
+  else
+    return m_x;
+}
+
+int Point::y() const
+{
+  if ((isAlone() && m_origin) || !isAlone())
+    return origin().y() + m_y;
+  else
+    return m_y;
+}
+
 void Point::set(const int x, const int y)
 {
   Point newP(x, y);
@@ -64,8 +93,8 @@ void Point::set(const int x, const int y)
     //   if (c)
     //     newP = c(newP);
 
-    m_x = m_origin ? newP.x() - m_origin->x() : newP.x();
-    m_y = m_origin ? newP.y() - m_origin->y() : newP.y();
+    m_x = newP.x() - origin().x();
+    m_y = newP.y() - origin().y();
 
   } else {
 
@@ -80,10 +109,13 @@ void Point::set(const int x, const int y)
 
         // std::cerr << "Moi: " << this << '\n';
         // std::cerr << "Point à mettre : " << newP << '\n';
-        for (Point &p : m_groups[m_groupId]) {
+        GroupPoints &gp = m_groups[m_groupId];
+        for (Point &p : gp.points()) {
           // std::cerr << "Boucle pour: " << p << " " << &p<< '\n';
-          p.m_x = newP.x();
-          p.m_y = newP.y();
+          // p.m_x = newP.x();
+          // p.m_y = newP.y();
+          p.m_x = newP.x() - p.origin().x();
+          p.m_y = newP.y() - p.origin().y();
           // std::cerr << "fin" << '\n' << '\n';
         }
         // std::cerr << "\n" << '\n';
@@ -97,11 +129,14 @@ void Point::join(Point &point)
   if (point.isAlone()) {
     point.setRelative(point);
     point.m_groupId = boost::uuids::random_generator()();
-    m_groups[point.m_groupId].push_back(point);
+    m_groups[point.m_groupId].points().push_back(point);
   }
 
   m_groupId = point.m_groupId;
-  m_groups[m_groupId].push_back(*this);
+  m_groups[m_groupId].points().push_back(*this);
+
+  if (point.m_origin == m_origin)
+    m_groups[m_groupId].setOrigin(point.m_origin);
 
   set(point);
 }
@@ -111,7 +146,7 @@ void Point::beAlone()
   if (isAlone())
     return;
 
-  auto &group = m_groups[m_groupId];
+  auto &group = m_groups[m_groupId].points();
   for (size_t i = 0; i < group.size(); ++i)
     if (&(group[i].get()) == this)
       group.erase(group.begin()+i);
