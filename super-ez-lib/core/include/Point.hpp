@@ -8,12 +8,11 @@
  * \version 0.1
  * \date 22 mai 2017
  */
+
 #include <boost/uuid/uuid.hpp>
-#include <boost/uuid/uuid_generators.hpp>
 #include <iostream>
 #include <map>
 #include <vector>
-#include <functional>
 
 #include "GroupPoints.hpp"
 class GroupPoints;
@@ -70,30 +69,10 @@ public:
 
   Point origin() const;
   void setOrigin(const Point *origin = nullptr);
-  // inline void setOrigin(const Point &origin) {
-  //   if (isAlone())
-  //     m_origin = std::make_shared<Point>(origin);
-  //   else
-  //     m_groups[m_groupId].setOrigin(origin);
-  // }
 
-  inline Point relative() const {
-    //if (isAlone())
-    return Point(m_x, m_y);
-    //else
-    //  throw std::runtime_error("Relative operation on point can't be done when point is not alone");
-  }
-
-  inline void setRelative(const Point &point) { setRelative(point.x(), point.y()); }
-
-  inline void setRelative(const int x, const int y) {
-    // if (isAlone()) {
-      m_x = x;
-      m_y = y;
-    // } else {
-    //   throw std::runtime_error("Relative operation on point can't be done when point is not alone");
-    // }
-  }
+  inline Point relative() const { return Point(m_x, m_y); }
+  void setRelative(const Point &point);
+  inline void setRelative(const int x, const int y) { setRelative({x, y}); }
 
   /*!
    *  \brief recupere la valeur de l'absisse du Point.

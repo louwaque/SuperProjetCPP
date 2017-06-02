@@ -12,7 +12,6 @@ public:
 
   Point origin() const;
   void setOrigin(const Point *origin = nullptr);
-  // inline void setOrigin(const Point &origin) { m_origin = std::make_shared<Point>(origin); }
 
   inline Points points() const { return m_points; }
 

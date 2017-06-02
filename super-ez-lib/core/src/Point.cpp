@@ -55,7 +55,14 @@ Point &Point::operator=(const Point &src)
 
 Point Point::origin() const
 {
-  return isAlone() ? m_origin ? *m_origin : Point(0, 0) : m_groups[m_groupId].origin();
+  if (isAlone()) {
+    if (m_origin)
+      return *m_origin;
+    else
+      return Point(0, 0);
+  } else {
+    return m_groups[m_groupId].origin();
+  }
 }
 
 void Point::setOrigin(const Point *origin)
@@ -64,6 +71,11 @@ void Point::setOrigin(const Point *origin)
     m_origin = origin;
   else
     m_groups[m_groupId].setOrigin(origin);
+}
+
+void Point::setRelative(const Point &point)
+{
+  set(origin() + point);
 }
 
 int Point::x() const
@@ -85,6 +97,7 @@ int Point::y() const
 void Point::set(const int x, const int y)
 {
   Point newP(x, y);
+
   if (isAlone()) {
     // for (auto c : m_correctorsFixed)
     //   if (c)
@@ -92,33 +105,22 @@ void Point::set(const int x, const int y)
     // for (auto c : m_correctorsVariable)
     //   if (c)
     //     newP = c(newP);
-
     m_x = newP.x() - origin().x();
     m_y = newP.y() - origin().y();
-
   } else {
-
-        // for (Point &p : m_groups[m_groupId]) {
-        //   for (auto c : p.m_correctorsFixed)
-        //     if (c)
-        //       newP = c(newP);
-        //   for (auto c : p.m_correctorsVariable)
-        //     if (c)
-        //       newP = c(newP);
-        // }
-
-        // std::cerr << "Moi: " << this << '\n';
-        // std::cerr << "Point à mettre : " << newP << '\n';
-        GroupPoints &gp = m_groups[m_groupId];
-        for (Point &p : gp.points()) {
-          // std::cerr << "Boucle pour: " << p << " " << &p<< '\n';
-          // p.m_x = newP.x();
-          // p.m_y = newP.y();
-          p.m_x = newP.x() - p.origin().x();
-          p.m_y = newP.y() - p.origin().y();
-          // std::cerr << "fin" << '\n' << '\n';
-        }
-        // std::cerr << "\n" << '\n';
+    // for (Point &p : m_groups[m_groupId]) {
+    //   for (auto c : p.m_correctorsFixed)
+    //     if (c)
+    //       newP = c(newP);
+    //   for (auto c : p.m_correctorsVariable)
+    //     if (c)
+    //       newP = c(newP);
+    // }
+    GroupPoints &gp = m_groups[m_groupId];
+    for (Point &p : gp.points()) {
+      p.m_x = newP.x() - p.origin().x();
+      p.m_y = newP.y() - p.origin().y();
+    }
   }
 }
 
@@ -127,16 +129,12 @@ void Point::join(Point &point)
   beAlone();
 
   if (point.isAlone()) {
-    point.setRelative(point);
     point.m_groupId = boost::uuids::random_generator()();
     m_groups[point.m_groupId].points().push_back(point);
   }
 
   m_groupId = point.m_groupId;
   m_groups[m_groupId].points().push_back(*this);
-
-  if (point.m_origin == m_origin)
-    m_groups[m_groupId].setOrigin(point.m_origin);
 
   set(point);
 }
