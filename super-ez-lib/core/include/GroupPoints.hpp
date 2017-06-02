@@ -1,6 +1,8 @@
 #ifndef GROUPPOINTS_HPP
 #define GROUPPOINTS_HPP
 
+#include <functional>
+
 #include "Point.hpp"
 class Point;
 
