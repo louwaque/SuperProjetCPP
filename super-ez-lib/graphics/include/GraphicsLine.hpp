@@ -8,11 +8,11 @@ class GraphicsLine : public GraphicsShape
 public:
   explicit GraphicsLine(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *first() {
+  Point &first() {
     return m_points[0];
   }
 
-  GraphicsItem *second() {
+  Point &second() {
     return m_points[1];
   }
 

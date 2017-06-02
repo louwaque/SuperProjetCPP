@@ -5,8 +5,6 @@
 GraphicsLine::GraphicsLine(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
-  GraphicsPoint *first = new GraphicsAnchor(this);
-  GraphicsPoint *second = new GraphicsPoint(this);
-  m_points.push_back(first);
-  m_points.push_back(second);
+  m_points.emplace_back();
+  m_points.emplace_back();
 }
