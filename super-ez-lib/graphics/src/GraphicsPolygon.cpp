@@ -4,24 +4,18 @@
 
 GraphicsPolygon::GraphicsPolygon(GraphicsItem *parent)
 : GraphicsShape(parent)
-{
-  GraphicsPoint *a = new GraphicsAnchor(this);
-  m_points.push_back(a);
-}
+{}
 
-GraphicsItem *GraphicsPolygon::newPoint()
+Point &GraphicsPolygon::newPoint()
 {
-  GraphicsItem *item = new GraphicsPoint(this);
-  m_points.push_back(item);
-  return item;
+  m_points.emplace_back();
+  return m_points.back();
 }
 
 void GraphicsPolygon::popPoint()
 {
-  if (m_points.size() > 2) {
-    delete m_points.back();
+  if (m_points.size() > 2)
     m_points.pop_back();
-  }
 }
 
 void GraphicsPolygon::setNbPoints(const size_t nb)
