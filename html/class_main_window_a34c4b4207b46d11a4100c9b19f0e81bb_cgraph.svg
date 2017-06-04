@@ -75,7 +75,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="permet la modification des valeurs du point. ">
+<g id="a_node3"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="Modifie les coordonnées du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="456.5,-178.5 456.5,-197.5 515.5,-197.5 515.5,-178.5 456.5,-178.5"/>
 <text text-anchor="middle" x="486" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::set</text>
 </a>
@@ -102,7 +102,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="class_point.html#a9abe56cf3f067305623a1d805460a84f" target="_top" xlink:title="Point::setRelative">
+<g id="a_node12"><a xlink:href="class_point.html#a9abe56cf3f067305623a1d805460a84f" target="_top" xlink:title="Modifie les coordonnées du point indépendamment de son origine. ">
 <polygon fill="white" stroke="black" points="324.5,-216.5 324.5,-235.5 419.5,-235.5 419.5,-216.5 324.5,-216.5"/>
 <text text-anchor="middle" x="372" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setRelative</text>
 </a>
@@ -129,7 +129,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" target="_top" xlink:title="Point::join">
+<g id="a_node14"><a xlink:href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" target="_top" xlink:title="Rejoint le groupe d&#39;un point. ">
 <polygon fill="white" stroke="black" points="200,-140.5 200,-159.5 260,-159.5 260,-140.5 200,-140.5"/>
 <text text-anchor="middle" x="230" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::join</text>
 </a>
@@ -142,7 +142,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" target="_top" xlink:title="Point::isAlone">
+<g id="a_node4"><a xlink:href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" target="_top" xlink:title="Indique si le point n&#39;appartient pas à un groupe. ">
 <polygon fill="white" stroke="black" points="796.5,-94.5 796.5,-113.5 873.5,-113.5 873.5,-94.5 796.5,-94.5"/>
 <text text-anchor="middle" x="835" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::isAlone</text>
 </a>
@@ -155,7 +155,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" target="_top" xlink:title="recupere la valeur de l&#39;absisse du Point. ">
+<g id="a_node5"><a xlink:href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" target="_top" xlink:title="Donne l&#39;abscisse du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="579,-66.5 579,-85.5 629,-85.5 629,-66.5 579,-66.5"/>
 <text text-anchor="middle" x="604" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::x</text>
 </a>
@@ -168,7 +168,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8" target="_top" xlink:title="Point::origin">
+<g id="a_node6"><a xlink:href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8" target="_top" xlink:title="Donne l&#39;origine du point. ">
 <polygon fill="white" stroke="black" points="692,-216.5 692,-235.5 760,-235.5 760,-216.5 692,-216.5"/>
 <text text-anchor="middle" x="726" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::origin</text>
 </a>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" target="_top" xlink:title="Fonction recuperant le valeur de l&#39;ordonée. ">
+<g id="a_node8"><a xlink:href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" target="_top" xlink:title="Donne l&#39;ordonnée du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="579,-122.5 579,-141.5 629,-141.5 629,-122.5 579,-122.5"/>
 <text text-anchor="middle" x="604" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::y</text>
 </a>
@@ -240,7 +240,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" target="_top" xlink:title="Constructeur par défaut de la classe Point. ">
+<g id="a_node7"><a xlink:href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" target="_top" xlink:title="Construit un point avec les coordonnées nulles. ">
 <polygon fill="white" stroke="black" points="801,-216.5 801,-235.5 869,-235.5 869,-216.5 801,-216.5"/>
 <text text-anchor="middle" x="835" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::Point</text>
 </a>
@@ -288,7 +288,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2" target="_top" xlink:title="Point::beAlone">
+<g id="a_node15"><a xlink:href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2" target="_top" xlink:title="Quitte le groupe auquel le point appartient. ">
 <polygon fill="white" stroke="black" points="332,-102.5 332,-121.5 412,-121.5 412,-102.5 332,-102.5"/>
 <text text-anchor="middle" x="372" y="-109.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::beAlone</text>
 </a>

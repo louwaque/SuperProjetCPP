@@ -81,7 +81,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="permet la modification des valeurs du point. ">
+<g id="a_node7"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="Modifie les coordonnées du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="222.5,-95.5 222.5,-114.5 281.5,-114.5 281.5,-95.5 222.5,-95.5"/>
 <text text-anchor="middle" x="252" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::set</text>
 </a>
@@ -107,7 +107,7 @@
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" target="_top" xlink:title="Point::isAlone">
+<g id="a_node8"><a xlink:href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" target="_top" xlink:title="Indique si le point n&#39;appartient pas à un groupe. ">
 <polygon fill="white" stroke="black" points="594.5,-160.5 594.5,-179.5 671.5,-179.5 671.5,-160.5 594.5,-160.5"/>
 <text text-anchor="middle" x="633" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::isAlone</text>
 </a>
@@ -120,7 +120,7 @@
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" target="_top" xlink:title="recupere la valeur de l&#39;absisse du Point. ">
+<g id="a_node9"><a xlink:href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" target="_top" xlink:title="Donne l&#39;abscisse du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="377,-114.5 377,-133.5 427,-133.5 427,-114.5 377,-114.5"/>
 <text text-anchor="middle" x="402" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::x</text>
 </a>
@@ -133,7 +133,7 @@
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
-<g id="a_node10"><a xlink:href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8" target="_top" xlink:title="Point::origin">
+<g id="a_node10"><a xlink:href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8" target="_top" xlink:title="Donne l&#39;origine du point. ">
 <polygon fill="white" stroke="black" points="490,-103.5 490,-122.5 558,-122.5 558,-103.5 490,-103.5"/>
 <text text-anchor="middle" x="524" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::origin</text>
 </a>
@@ -146,7 +146,7 @@
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" target="_top" xlink:title="Fonction recuperant le valeur de l&#39;ordonée. ">
+<g id="a_node12"><a xlink:href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" target="_top" xlink:title="Donne l&#39;ordonnée du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="377,-170.5 377,-189.5 427,-189.5 427,-170.5 377,-170.5"/>
 <text text-anchor="middle" x="402" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::y</text>
 </a>
@@ -205,7 +205,7 @@
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" target="_top" xlink:title="Constructeur par défaut de la classe Point. ">
+<g id="a_node11"><a xlink:href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" target="_top" xlink:title="Construit un point avec les coordonnées nulles. ">
 <polygon fill="white" stroke="black" points="599,-103.5 599,-122.5 667,-122.5 667,-103.5 599,-103.5"/>
 <text text-anchor="middle" x="633" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::Point</text>
 </a>

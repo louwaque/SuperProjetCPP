@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Représente un point (x, y)  
+<p>Représente un point avec une abscisse, une ordonnée et une origine.  
  <a href="class_point.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_point_8hpp_source.html">Point.hpp</a>&gt;</code></p>
@@ -142,10 +142,10 @@ Types publics</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a97edc6e6415d6ccc6efcff5fcbc97f15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a> (const <a class="el" href="class_point.html">Point</a> *<a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>=nullptr)</td></tr>
-<tr class="memdesc:a97edc6e6415d6ccc6efcff5fcbc97f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.  <a href="#a97edc6e6415d6ccc6efcff5fcbc97f15">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:a97edc6e6415d6ccc6efcff5fcbc97f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit un point avec les coordonnées nulles.  <a href="#a97edc6e6415d6ccc6efcff5fcbc97f15">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a97edc6e6415d6ccc6efcff5fcbc97f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a001c4958c310b248f5c26037aea38a9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a001c4958c310b248f5c26037aea38a9c">Point</a> (int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
-<tr class="memdesc:a001c4958c310b248f5c26037aea38a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.  <a href="#a001c4958c310b248f5c26037aea38a9c">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:a001c4958c310b248f5c26037aea38a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construit un point avec une abscisse et une ordonnée spécifiées.  <a href="#a001c4958c310b248f5c26037aea38a9c">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a001c4958c310b248f5c26037aea38a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4813a55ef1c858da70d4a1f11d96859"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aa4813a55ef1c858da70d4a1f11d96859">Point</a> (const <a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> &amp;fixed)</td></tr>
 <tr class="separator:aa4813a55ef1c858da70d4a1f11d96859"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,47 +153,63 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a7485d0952c4bf845fc02bb1a75cbdcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par copie.  <a href="#a7485d0952c4bf845fc02bb1a75cbdcc1">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7485d0952c4bf845fc02bb1a75cbdcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395fa04b4ec126b66fc053f829a30cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1">~Point</a> ()</td></tr>
+<tr class="memdesc:a395fa04b4ec126b66fc053f829a30cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <a href="#a395fa04b4ec126b66fc053f829a30cc1">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a395fa04b4ec126b66fc053f829a30cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a77e4f4e0521de921e7066052530763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2a77e4f4e0521de921e7066052530763">operator=</a> (const <a class="el" href="class_point.html">Point</a> &amp;src)</td></tr>
 <tr class="separator:a2a77e4f4e0521de921e7066052530763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa7d33502738b0b3df186a91e11ff2a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a> () const </td></tr>
+<tr class="memdesc:afa7d33502738b0b3df186a91e11ff2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'origine du point.  <a href="#afa7d33502738b0b3df186a91e11ff2a8">Plus de détails...</a><br/></td></tr>
 <tr class="separator:afa7d33502738b0b3df186a91e11ff2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b2ea5baf36174499da121e666931e10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a0b2ea5baf36174499da121e666931e10">setOrigin</a> (const <a class="el" href="class_point.html">Point</a> *<a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>=nullptr)</td></tr>
+<tr class="memdesc:a0b2ea5baf36174499da121e666931e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'origine du point.  <a href="#a0b2ea5baf36174499da121e666931e10">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a0b2ea5baf36174499da121e666931e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e6b58931d20892b3f5c4fadf45340b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#aa4e6b58931d20892b3f5c4fadf45340b">relative</a> () const </td></tr>
+<tr class="memdesc:aa4e6b58931d20892b3f5c4fadf45340b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne les coordonnées du point indépendamment de son origine.  <a href="#aa4e6b58931d20892b3f5c4fadf45340b">Plus de détails...</a><br/></td></tr>
 <tr class="separator:aa4e6b58931d20892b3f5c4fadf45340b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4af1612ff97e961cdd93d3e46d68b796"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a> () const </td></tr>
+<tr class="memdesc:a4af1612ff97e961cdd93d3e46d68b796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'abscisse du point indépendamment de son origine.  <a href="#a4af1612ff97e961cdd93d3e46d68b796">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a4af1612ff97e961cdd93d3e46d68b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df1f1705c57a0089ee2956315b214ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a> () const </td></tr>
+<tr class="memdesc:a2df1f1705c57a0089ee2956315b214ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'ordonnée du point indépendamment de son origine.  <a href="#a2df1f1705c57a0089ee2956315b214ba">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a2df1f1705c57a0089ee2956315b214ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abe56cf3f067305623a1d805460a84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="memdesc:a9abe56cf3f067305623a1d805460a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie les coordonnées du point indépendamment de son origine.  <a href="#a9abe56cf3f067305623a1d805460a84f">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a9abe56cf3f067305623a1d805460a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5e36e2e1bd0fa1564c1e4d5d74355c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c">setRelativeX</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>)</td></tr>
+<tr class="memdesc:a7f5e36e2e1bd0fa1564c1e4d5d74355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'abscisse du point indépendamment de son origine.  <a href="#a7f5e36e2e1bd0fa1564c1e4d5d74355c">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7f5e36e2e1bd0fa1564c1e4d5d74355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb67fd238634ebc25e4bdb3ab4cca9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">setRelativeY</a> (const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="memdesc:abb67fd238634ebc25e4bdb3ab4cca9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'ordonnée du point indépendamment de son origine.  <a href="#abb67fd238634ebc25e4bdb3ab4cca9b6">Plus de détails...</a><br/></td></tr>
 <tr class="separator:abb67fd238634ebc25e4bdb3ab4cca9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61727372965e26cbd7e661157d959ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a61727372965e26cbd7e661157d959ae9">setRelative</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="memdesc:a61727372965e26cbd7e661157d959ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie les coordonnées du point indépendamment de son origine.  <a href="#a61727372965e26cbd7e661157d959ae9">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a61727372965e26cbd7e661157d959ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a> () const </td></tr>
-<tr class="memdesc:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">recupere la valeur de l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.  <a href="#a2aa897aa68c2f3e6df3a46738f27a0ac">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'abscisse du point par rapport à son origine.  <a href="#a2aa897aa68c2f3e6df3a46738f27a0ac">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a2aa897aa68c2f3e6df3a46738f27a0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62fd0fb2c699d6d4699d3be73762ffa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2">setX</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>)</td></tr>
+<tr class="memdesc:a62fd0fb2c699d6d4699d3be73762ffa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'abscisse du point par rapport à son origine.  <a href="#a62fd0fb2c699d6d4699d3be73762ffa2">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a62fd0fb2c699d6d4699d3be73762ffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2226d8a3fb283b0b3c1f69106df144ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a> () const </td></tr>
-<tr class="memdesc:a2226d8a3fb283b0b3c1f69106df144ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction recuperant le valeur de l'ordonée.  <a href="#a2226d8a3fb283b0b3c1f69106df144ba">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:a2226d8a3fb283b0b3c1f69106df144ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'ordonnée du point par rapport à son origine.  <a href="#a2226d8a3fb283b0b3c1f69106df144ba">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a2226d8a3fb283b0b3c1f69106df144ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdf750fa08f24c2aaaf7ada42df5ad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8">setY</a> (const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
+<tr class="memdesc:a3cdf750fa08f24c2aaaf7ada42df5ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie l'ordonnée du point par rapport à son origine.  <a href="#a3cdf750fa08f24c2aaaf7ada42df5ad8">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a3cdf750fa08f24c2aaaf7ada42df5ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43923c490fb5439d7d8a041e86520c34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a> (const int <a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, const int <a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>)</td></tr>
-<tr class="memdesc:a43923c490fb5439d7d8a041e86520c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet la modification des valeurs du point.  <a href="#a43923c490fb5439d7d8a041e86520c34">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:a43923c490fb5439d7d8a041e86520c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie les coordonnées du point par rapport à son origine.  <a href="#a43923c490fb5439d7d8a041e86520c34">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a43923c490fb5439d7d8a041e86520c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb9a5f8efd5d11e6fa8e2af19250410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410">set</a> (const <a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="memdesc:a7eb9a5f8efd5d11e6fa8e2af19250410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie les coordonnées du point par rapport à son origine.  <a href="#a7eb9a5f8efd5d11e6fa8e2af19250410">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7eb9a5f8efd5d11e6fa8e2af19250410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa7ffadfb6c9de033bfef5decdaa66e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e">join</a> (<a class="el" href="class_point.html">Point</a> &amp;point)</td></tr>
+<tr class="memdesc:a4fa7ffadfb6c9de033bfef5decdaa66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rejoint le groupe d'un point.  <a href="#a4fa7ffadfb6c9de033bfef5decdaa66e">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a4fa7ffadfb6c9de033bfef5decdaa66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498f108de0c0351dfb3177c681a7a1f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a> ()</td></tr>
+<tr class="memdesc:a498f108de0c0351dfb3177c681a7a1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quitte le groupe auquel le point appartient.  <a href="#a498f108de0c0351dfb3177c681a7a1f2">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a498f108de0c0351dfb3177c681a7a1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a5fe8c9b1d1a1543aaa64031537380"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a> () const </td></tr>
+<tr class="memdesc:a64a5fe8c9b1d1a1543aaa64031537380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si le point n'appartient pas à un groupe.  <a href="#a64a5fe8c9b1d1a1543aaa64031537380">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a64a5fe8c9b1d1a1543aaa64031537380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ed58bf76b877634ca15d5e639143af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a78ed58bf76b877634ca15d5e639143af">correctors</a> () const </td></tr>
 <tr class="separator:a78ed58bf76b877634ca15d5e639143af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,8 +237,9 @@ Attributs privés statiques</h2></td></tr>
 <tr class="separator:a7571926ccd42c49e005ff2b6555a24b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Représente un point (x, y) </p>
-<p>Représente un point avec une abscisse et une ordonnée </p>
+<div class="textblock"><p>Représente un point avec une abscisse, une ordonnée et une origine. </p>
+<p>Un point peut avoir un autre point comme origine. Ainsi ses coordonnées x et y sont relatives par rapport à l'origine. Les méthodes relatives permettent de faire abstraction de l'origine.</p>
+<p>Un point peut rejoindre un autre point ce qui forme un groupe de points. Ainsi tous les points de groupe partagent les mêmes coordonnées. Un groupe de points peut avoir un point comme origine. </p>
 </div><h2 class="groupheader">Documentation des définitions de type membres</h2>
 <a class="anchor" id="a4c1b70a5a7df86700db3b2aecd3dba41"></a>
 <div class="memitem">
@@ -287,17 +304,22 @@ Attributs privés statiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructeur par défaut de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
-<p>Crée une instance de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> avec les coordonnées (0, 0). </p>
+<p>Construit un point avec les coordonnées nulles. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>Origine du point </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  : <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>(origin),</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>(0),</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(0),</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid())</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -333,12 +355,11 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Constructeur de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
-<p>Crée une instance de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>.</p>
+<p>Construit un point avec une abscisse et une ordonnée spécifiées. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>: abscisse </td></tr>
-    <tr><td class="paramname">y</td><td>: ordonnée </td></tr>
+    <tr><td class="paramname">x</td><td>Abscisse </td></tr>
+    <tr><td class="paramname">y</td><td>Ordonnée </td></tr>
   </table>
   </dd>
 </dl>
@@ -347,12 +368,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>(<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid())</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,11 +396,11 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>(boost::uuids::nil_uuid()),</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">m_correctorsFixed</a>(fixed)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:212</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,10 +419,9 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><div class="memdoc">
 
 <p>Constructeur par copie. </p>
-<p>Constructeur par copie de la classe <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> o </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">src</td><td>: point à copier </td></tr>
+    <tr><td class="paramname">src</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> à copier </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,12 +434,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">//FIXME les deux sont dans le même groupe ? je ne pense pas</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:212</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:213</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -435,10 +455,13 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructeur. </p>
+<p>Quitte le groupe avec <a class="el" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2" title="Quitte le groupe auquel le point appartient. ">beAlone()</a> avant d'être détruit </p>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdoc">Quitte le groupe auquel le point appartient. </div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -463,6 +486,8 @@ Voici le graphe d'appel pour cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Quitte le groupe auquel le point appartient. </p>
 <div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span>;</div>
@@ -479,13 +504,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a> = boost::uuids::nil_uuid();</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(oldMe);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:27</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:209</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:33</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -525,8 +550,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:213</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -550,8 +575,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a>; }</div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:213</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -575,8 +600,10 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>.is_nil(); }</div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+
+<p>Indique si le point n'appartient pas à un groupe. </p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>.is_nil(); }</div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -601,6 +628,16 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Rejoint le groupe d'un point. </p>
+<p>Quand un point rejoint un autre point ils créent un groupe de points. Si un point rejoint un autre point qui appartient déjà à un groupe alors le premiet point est ajouté à ce groupe. Le point qui rejoint reçoit les coordonnées du point qu'il rejoint.</p>
+<p>Un groupe de points partage les mêmes coordonnées et un même <a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> d'origine.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> à rejoindre </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
@@ -614,11 +651,11 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a498f108de0c0351dfb3177c681a7a1f2"><div class="ttname"><a href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">Point::beAlone</a></div><div class="ttdeci">void beAlone()</div><div class="ttdoc">Quitte le groupe auquel le point appartient. </div><div class="ttdef"><b>Definition:</b> Point.cpp:142</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:209</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -661,12 +698,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:129</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a88162a666a8b3c19e9429a9edabfe5ad"><div class="ttname"><a href="class_point.html#a88162a666a8b3c19e9429a9edabfe5ad">Point::m_correctorsFixed</a></div><div class="ttdeci">CorrectorList m_correctorsFixed</div><div class="ttdef"><b>Definition:</b> Point.hpp:212</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a0c7258432def19adc6f8f1312bd7a206"><div class="ttname"><a href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">Point::m_correctorsVariable</a></div><div class="ttdeci">CorrectorList m_correctorsVariable</div><div class="ttdef"><b>Definition:</b> Point.hpp:213</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -682,6 +719,9 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Donne l'origine du point. </p>
+<p>Renvoie l'origine du point ou du groupe auquel il appartient. </p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>()) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>)</div>
@@ -692,11 +732,11 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].origin();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
-<div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:209</div></div>
+<div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Construit un point avec les coordonnées nulles. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -736,10 +776,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>); }</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Constructeur par défaut de la classe Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+
+<p>Donne les coordonnées du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(<a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>, <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>); }</div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a97edc6e6415d6ccc6efcff5fcbc97f15"><div class="ttname"><a href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point::Point</a></div><div class="ttdeci">Point(const Point *origin=nullptr)</div><div class="ttdoc">Construit un point avec les coordonnées nulles. </div><div class="ttdef"><b>Definition:</b> Point.cpp:6</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -771,8 +813,10 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>; }</div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+
+<p>Donne l'abscisse du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>; }</div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -804,8 +848,10 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>; }</div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+
+<p>Donne l'ordonnée du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>; }</div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -841,11 +887,11 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>permet la modification des valeurs du point. </p>
+<p>Modifie les coordonnées du point par rapport à son origine. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>l'absisse du point </td></tr>
-    <tr><td class="paramname">y</td><td>l'ordonée du point </td></tr>
+    <tr><td class="paramname">x</td><td>Abscisse </td></tr>
+    <tr><td class="paramname">y</td><td>Ordonnée </td></tr>
   </table>
   </dd>
 </dl>
@@ -877,18 +923,18 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
 <div class="ttc" id="jquery_8js_html_a2335e57f79b6acfb6de59c235dc8a83e"><div class="ttname"><a href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a></div><div class="ttdeci">function p(by, bw, bv)</div><div class="ttdef"><b>Definition:</b> jquery.js:28</div></div>
 <div class="ttc" id="class_group_points_html"><div class="ttname"><a href="class_group_points.html">GroupPoints</a></div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:11</div></div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdoc">Donne l&#39;origine du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
 <div class="ttc" id="class_group_points_html_a5d0d00417a192136922c27c8ce8ff98f"><div class="ttname"><a href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">GroupPoints::points</a></div><div class="ttdeci">Points points() const </div><div class="ttdef"><b>Definition:</b> GroupPoints.hpp:18</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:27</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:209</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:33</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -929,10 +975,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), point.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+
+<p>Modifie les coordonnées du point par rapport à son origine. </p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(point.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), point.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -965,17 +1013,20 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Modifie l'origine du point. </p>
+<p>Modifie l'origine du point ou du groupe auquel il appartient. </p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a> = <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">m_groups</a>[<a class="code" href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">m_groupId</a>].setOrigin(origin);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:125</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:126</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdoc">Donne l&#39;origine du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a7571926ccd42c49e005ff2b6555a24b4"><div class="ttname"><a href="class_point.html#a7571926ccd42c49e005ff2b6555a24b4">Point::m_groups</a></div><div class="ttdeci">static GroupsPoints m_groups</div><div class="ttdef"><b>Definition:</b> Point.hpp:209</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html_a37fce2cc5966331a7bcb1775394028b8"><div class="ttname"><a href="class_point.html#a37fce2cc5966331a7bcb1775394028b8">Point::m_groupId</a></div><div class="ttdeci">Id m_groupId</div><div class="ttdef"><b>Definition:</b> Point.hpp:210</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1008,11 +1059,13 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Modifie les coordonnées du point indépendamment de son origine. </p>
 <div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>() + point);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdoc">Donne l&#39;origine du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1063,10 +1116,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+
+<p>Modifie les coordonnées du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdoc">Modifie les coordonnées du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1107,10 +1162,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a>()}); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a2df1f1705c57a0089ee2956315b214ba"><div class="ttname"><a href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">Point::relativeY</a></div><div class="ttdeci">int relativeY() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:75</div></div>
-<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+
+<p>Modifie l'abscisse du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a>()}); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a2df1f1705c57a0089ee2956315b214ba"><div class="ttname"><a href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">Point::relativeY</a></div><div class="ttdeci">int relativeY() const </div><div class="ttdoc">Donne l&#39;ordonnée du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:110</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdoc">Modifie les coordonnées du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1151,10 +1208,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
-<div class="ttc" id="class_point_html_a4af1612ff97e961cdd93d3e46d68b796"><div class="ttname"><a href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">Point::relativeX</a></div><div class="ttdeci">int relativeX() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:74</div></div>
-<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+
+<p>Modifie l'ordonnée du point indépendamment de son origine. </p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{ <a class="code" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>({<a class="code" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>}); }</div>
+<div class="ttc" id="class_point_html_a4af1612ff97e961cdd93d3e46d68b796"><div class="ttname"><a href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">Point::relativeX</a></div><div class="ttdeci">int relativeX() const </div><div class="ttdoc">Donne l&#39;abscisse du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:104</div></div>
+<div class="ttc" id="class_point_html_a9abe56cf3f067305623a1d805460a84f"><div class="ttname"><a href="class_point.html#a9abe56cf3f067305623a1d805460a84f">Point::setRelative</a></div><div class="ttdeci">void setRelative(const Point &amp;point)</div><div class="ttdoc">Modifie les coordonnées du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:76</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1195,10 +1254,12 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+
+<p>Modifie l'abscisse du point par rapport à son origine. </p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>, <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1231,10 +1292,12 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">permet la modification des valeurs du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+
+<p>Modifie l'ordonnée du point par rapport à son origine. </p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{ <a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), <a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>); }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:97</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1259,19 +1322,18 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>recupere la valeur de l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </p>
-<dl class="section return"><dt>Renvoie</dt><dd>l'absisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> </dd></dl>
+<p>Donne l'abscisse du point par rapport à son origine. </p>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() + <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
-<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdoc">Donne l&#39;origine du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
+<div class="ttc" id="class_point_html_a885daee8c5064cd51f6a4c3888091fc9"><div class="ttname"><a href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">Point::m_x</a></div><div class="ttdeci">int m_x</div><div class="ttdef"><b>Definition:</b> Point.hpp:206</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1304,19 +1366,18 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Fonction recuperant le valeur de l'ordonée. </p>
-<dl class="section return"><dt>Renvoie</dt><dd>Retourne l'ordonée du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a>. </dd></dl>
+<p>Donne l'ordonnée du point par rapport à son origine. </p>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> ((<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() &amp;&amp; <a class="code" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a>) || !<a class="code" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>())</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>().<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() + <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
-<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:123</div></div>
-<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:121</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
-<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdef"><b>Definition:</b> Point.hpp:115</div></div>
+<div class="ttc" id="class_point_html_afa7d33502738b0b3df186a91e11ff2a8"><div class="ttname"><a href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">Point::origin</a></div><div class="ttdeci">Point origin() const </div><div class="ttdoc">Donne l&#39;origine du point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:56</div></div>
+<div class="ttc" id="class_point_html_a00e243381d01e186dc2fcc5d24b4d3be"><div class="ttname"><a href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">Point::m_y</a></div><div class="ttdeci">int m_y</div><div class="ttdef"><b>Definition:</b> Point.hpp:207</div></div>
+<div class="ttc" id="class_point_html_a98ca534cce8976038d485e9c5dffc429"><div class="ttname"><a href="class_point.html#a98ca534cce8976038d485e9c5dffc429">Point::m_origin</a></div><div class="ttdeci">const Point * m_origin</div><div class="ttdef"><b>Definition:</b> Point.hpp:205</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a64a5fe8c9b1d1a1543aaa64031537380"><div class="ttname"><a href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">Point::isAlone</a></div><div class="ttdeci">bool isAlone() const </div><div class="ttdoc">Indique si le point n&#39;appartient pas à un groupe. </div><div class="ttdef"><b>Definition:</b> Point.hpp:199</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1434,6 +1495,7 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Origine du <a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> </p>
 
 </div>
 </div>
@@ -1454,7 +1516,7 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Abscisse du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> </p>
+<p>Abscisse du <a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> </p>
 
 </div>
 </div>
@@ -1475,7 +1537,7 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Ordonnée du <a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> </p>
+<p>Ordonnée du <a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> </p>
 
 </div>
 </div>
@@ -1489,7 +1551,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_point.html">Point</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 4 Juin 2017 18:35:41 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

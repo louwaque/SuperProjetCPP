@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="permet la modification des valeurs du point. ">
+<g id="a_node2"><a xlink:href="class_point.html#a43923c490fb5439d7d8a041e86520c34" target="_top" xlink:title="Modifie les coordonnées du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="140.5,-142.5 140.5,-161.5 199.5,-161.5 199.5,-142.5 140.5,-142.5"/>
 <text text-anchor="middle" x="170" y="-149.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::set</text>
 </a>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="class_point.html#a9abe56cf3f067305623a1d805460a84f" target="_top" xlink:title="Point::setRelative">
+<g id="a_node6"><a xlink:href="class_point.html#a9abe56cf3f067305623a1d805460a84f" target="_top" xlink:title="Modifie les coordonnées du point indépendamment de son origine. ">
 <polygon fill="white" stroke="black" points="265.5,-85.5 265.5,-104.5 360.5,-104.5 360.5,-85.5 265.5,-85.5"/>
 <text text-anchor="middle" x="313" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setRelative</text>
 </a>
@@ -81,7 +81,7 @@
 </g>
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
-<g id="a_node14"><a xlink:href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" target="_top" xlink:title="Point::join">
+<g id="a_node14"><a xlink:href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" target="_top" xlink:title="Rejoint le groupe d&#39;un point. ">
 <polygon fill="white" stroke="black" points="447,-161.5 447,-180.5 507,-180.5 507,-161.5 447,-161.5"/>
 <text text-anchor="middle" x="477" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::join</text>
 </a>
@@ -94,7 +94,7 @@
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
-<g id="a_node15"><a xlink:href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2" target="_top" xlink:title="Point::beAlone">
+<g id="a_node15"><a xlink:href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2" target="_top" xlink:title="Quitte le groupe auquel le point appartient. ">
 <polygon fill="white" stroke="black" points="273,-123.5 273,-142.5 353,-142.5 353,-123.5 273,-123.5"/>
 <text text-anchor="middle" x="313" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::beAlone</text>
 </a>
@@ -107,7 +107,7 @@
 </g>
 <!-- Node17 -->
 <g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2" target="_top" xlink:title="Point::setX">
+<g id="a_node17"><a xlink:href="class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2" target="_top" xlink:title="Modifie l&#39;abscisse du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="280.5,-47.5 280.5,-66.5 345.5,-66.5 345.5,-47.5 280.5,-47.5"/>
 <text text-anchor="middle" x="313" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setX</text>
 </a>
@@ -120,7 +120,7 @@
 </g>
 <!-- Node18 -->
 <g id="node18" class="node"><title>Node18</title>
-<g id="a_node18"><a xlink:href="class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8" target="_top" xlink:title="Point::setY">
+<g id="a_node18"><a xlink:href="class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8" target="_top" xlink:title="Modifie l&#39;ordonnée du point par rapport à son origine. ">
 <polygon fill="white" stroke="black" points="280.5,-9.5 280.5,-28.5 345.5,-28.5 345.5,-9.5 280.5,-9.5"/>
 <text text-anchor="middle" x="313" y="-16.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setY</text>
 </a>
@@ -138,7 +138,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c" target="_top" xlink:title="Point::setRelativeX">
+<g id="a_node7"><a xlink:href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c" target="_top" xlink:title="Modifie l&#39;abscisse du point indépendamment de son origine. ">
 <polygon fill="white" stroke="black" points="426.5,-47.5 426.5,-66.5 527.5,-66.5 527.5,-47.5 426.5,-47.5"/>
 <text text-anchor="middle" x="477" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setRelativeX</text>
 </a>
@@ -151,7 +151,7 @@
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6" target="_top" xlink:title="Point::setRelativeY">
+<g id="a_node12"><a xlink:href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6" target="_top" xlink:title="Modifie l&#39;ordonnée du point indépendamment de son origine. ">
 <polygon fill="white" stroke="black" points="581.5,-5.5 581.5,-24.5 682.5,-24.5 682.5,-5.5 581.5,-5.5"/>
 <text text-anchor="middle" x="632" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::setRelativeY</text>
 </a>
@@ -246,7 +246,7 @@
 </g>
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
-<g id="a_node16"><a xlink:href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1" target="_top" xlink:title="Point::~Point">
+<g id="a_node16"><a xlink:href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1" target="_top" xlink:title="Destructeur. ">
 <polygon fill="white" stroke="black" points="440,-123.5 440,-142.5 514,-142.5 514,-123.5 440,-123.5"/>
 <text text-anchor="middle" x="477" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point::~Point</text>
 </a>

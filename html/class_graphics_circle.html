@@ -343,12 +343,12 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    canvas-&gt;<a class="code" href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">drawCircle</a>(<a class="code" href="class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c">center</a>() - dist, <a class="code" href="class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c">center</a>() + dist, <a class="code" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a>());</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
 <div class="ttc" id="class_graphics_item_html_a349439f069cfa6ade361ebdcd6f43434"><div class="ttname"><a href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">GraphicsItem::isFill</a></div><div class="ttdeci">bool isFill() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:81</div></div>
 <div class="ttc" id="class_graphics_circle_html_a805e9ead71e10e70de27eb3afcc22244"><div class="ttname"><a href="class_graphics_circle.html#a805e9ead71e10e70de27eb3afcc22244">GraphicsCircle::radius</a></div><div class="ttdeci">Point &amp; radius()</div><div class="ttdef"><b>Definition:</b> GraphicsCircle.hpp:17</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 <div class="ttc" id="class_graphics_circle_html_a0c332daff27b4a2eec0d8e07814b8a5c"><div class="ttname"><a href="class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c">GraphicsCircle::center</a></div><div class="ttdeci">Point &amp; center()</div><div class="ttdef"><b>Definition:</b> GraphicsCircle.hpp:11</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:27</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:33</div></div>
 <div class="ttc" id="class_canvas_html_a5d6c1ffe1d0279d24d13fb7956cc99a9"><div class="ttname"><a href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">Canvas::drawCircle</a></div><div class="ttdeci">void drawCircle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:16</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -465,7 +465,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_circle.html">GraphicsCircle</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 4 Juin 2017 18:35:41 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

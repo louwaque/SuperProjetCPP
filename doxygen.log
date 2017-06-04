@@ -1043,27 +1043,27 @@ Generating caller graph for function getNode
 Generating call graph for function getScript
 Generating caller graph for function getScript
 Generating caller graph for function glowEffect
-Generating cal/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:155: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:155: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+Generating cal/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:239: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:239: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
   parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:188: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:188: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:155: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:155: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:177: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
   parameter 'p'
   parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:188: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:188: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:272: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:272: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:239: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:239: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:261: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:272: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:272: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
   parameter 'p'
 ler graph for function gotoAnchor
 Generating call graph for function gotoNode
@@ -2386,5 +2386,5 @@ Patching output file 537/540
 Patching output file 538/540
 Patching output file 539/540
 Patching output file 540/540
-lookup cache used 1144/65536 hits=12871 misses=1168
+lookup cache used 1144/65536 hits=12872 misses=1168
 finished...

@@ -350,7 +350,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{ <span class="keywordflow">return</span> std::abs(<a class="code" href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">m_bottomRight</a>.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() - <a class="code" href="class_graphics_rectangle.html#afe14a73de2abd862aa11eef26d48bfb5">m_topLeft</a>.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()); }</div>
 <div class="ttc" id="class_graphics_rectangle_html_afe14a73de2abd862aa11eef26d48bfb5"><div class="ttname"><a href="class_graphics_rectangle.html#afe14a73de2abd862aa11eef26d48bfb5">GraphicsRectangle::m_topLeft</a></div><div class="ttdeci">Point m_topLeft</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_aa1ae71aa3518400784641ed7f9c8d3c4"><div class="ttname"><a href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">GraphicsRectangle::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:89</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -451,7 +451,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">m_bottomRight</a>.<a class="code" href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">setRelativeY</a>(<a class="code" href="class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429">height</a>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="class_point_html_abb67fd238634ebc25e4bdb3ab4cca9b6"><div class="ttname"><a href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">Point::setRelativeY</a></div><div class="ttdeci">void setRelativeY(const int y)</div><div class="ttdef"><b>Definition:</b> Point.hpp:79</div></div>
+<div class="ttc" id="class_point_html_abb67fd238634ebc25e4bdb3ab4cca9b6"><div class="ttname"><a href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">Point::setRelativeY</a></div><div class="ttdeci">void setRelativeY(const int y)</div><div class="ttdoc">Modifie l&#39;ordonnée du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:128</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_ab1a0b1219fdc7694c6f5902c19f9e429"><div class="ttname"><a href="class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429">GraphicsRectangle::height</a></div><div class="ttdeci">size_t height() const </div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:52</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_aa1ae71aa3518400784641ed7f9c8d3c4"><div class="ttname"><a href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">GraphicsRectangle::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
 </div><!-- fragment -->
@@ -491,7 +491,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="ttc" id="class_graphics_rectangle_html_ab7b6075e46e61d99dc9569219f1079bd"><div class="ttname"><a href="class_graphics_rectangle.html#ab7b6075e46e61d99dc9569219f1079bd">GraphicsRectangle::width</a></div><div class="ttdeci">size_t width() const </div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:48</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_aa1ae71aa3518400784641ed7f9c8d3c4"><div class="ttname"><a href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">GraphicsRectangle::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
-<div class="ttc" id="class_point_html_a7f5e36e2e1bd0fa1564c1e4d5d74355c"><div class="ttname"><a href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c">Point::setRelativeX</a></div><div class="ttdeci">void setRelativeX(const int x)</div><div class="ttdef"><b>Definition:</b> Point.hpp:78</div></div>
+<div class="ttc" id="class_point_html_a7f5e36e2e1bd0fa1564c1e4d5d74355c"><div class="ttname"><a href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c">Point::setRelativeX</a></div><div class="ttdeci">void setRelativeX(const int x)</div><div class="ttdoc">Modifie l&#39;abscisse du point indépendamment de son origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:122</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -595,7 +595,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> std::abs(<a class="code" href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">m_bottomRight</a>.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() - <a class="code" href="class_graphics_rectangle.html#afe14a73de2abd862aa11eef26d48bfb5">m_topLeft</a>.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()); }</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_afe14a73de2abd862aa11eef26d48bfb5"><div class="ttname"><a href="class_graphics_rectangle.html#afe14a73de2abd862aa11eef26d48bfb5">GraphicsRectangle::m_topLeft</a></div><div class="ttdeci">Point m_topLeft</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
 <div class="ttc" id="class_graphics_rectangle_html_aa1ae71aa3518400784641ed7f9c8d3c4"><div class="ttname"><a href="class_graphics_rectangle.html#aa1ae71aa3518400784641ed7f9c8d3c4">GraphicsRectangle::m_bottomRight</a></div><div class="ttdeci">Point m_bottomRight</div><div class="ttdef"><b>Definition:</b> GraphicsRectangle.hpp:62</div></div>
 </div><!-- fragment -->
@@ -660,7 +660,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_rectangle.html">GraphicsRectangle</a></li>
-    <li class="footer">Généré le Vendredi 2 Juin 2017 15:10:25 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 4 Juin 2017 18:35:41 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
