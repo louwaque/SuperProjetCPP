@@ -6,6 +6,17 @@
 #include <boost/bind.hpp>
 #include <GraphicsRectangle.hpp>
 
+/**
+ * \defgroup widget Widget
+ * \brief Classes pour créer des IHM
+ */
+
+/*!
+ * \class Widget
+ * \brief Classe de base
+ * \ingroup widget
+ */
+
 class Widget : public GraphicsItem
 {
 public:
@@ -27,8 +38,13 @@ public:
 
   virtual size_t minimumHeight() const { return 0; }
 
+  /*!
+   * \name Signaux
+   */
+  ///@{
   inline co_t widthChanged(const slot_t &subscriber) { return m_widthChanged.connect(subscriber); }
   inline co_t heightChanged(const slot_t &subscriber) { return m_heightChanged.connect(subscriber); }
+  ///@}
 
 private:
   size_t m_width;

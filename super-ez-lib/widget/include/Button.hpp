@@ -13,8 +13,8 @@
 
 /*!
  * \class Button
- * \brief Permet la creation d'un boutton
- *
+ * \brief Faire une action après un clic
+ * \ingroup widget
  */
 
 class Button : public Widget
@@ -37,7 +37,12 @@ public:
   size_t minimumWidth() const { return m_label->minimumWidth(); }
   size_t minimumHeight() const { return m_label->minimumHeight(); }
 
+  /*!
+   * \name Signaux
+   */
+  ///@{
   inline co_t clicked(const slot_t &subscriber) { return m_clicked.connect(subscriber); }
+  ///@}
 
 protected:
   void meHandleEvent(const Event &event);
