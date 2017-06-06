@@ -48,11 +48,12 @@ public:
    *
    * \param x Abscisse
    * \param y Ordonnée
+   * \param origin Origine du point
    */
 
-  Point(int x, int y);
+  Point(int x, int y, const Point *origin = nullptr);
 
-  Point(const CorrectorList &fixed);
+  Point(const CorrectorList &fixed, const Point *origin = nullptr);
 
   /*!
    * \brief Constructeur par copie
@@ -173,10 +174,12 @@ public:
   *  \brief Rejoint le groupe d'un point
   *
   * Quand un point rejoint un autre point ils créent un groupe de points.
-  * Si un point rejoint un autre point qui appartient déjà à un groupe alors le premiet point est ajouté à ce groupe.
+  * Si un point rejoint un autre point qui appartient déjà à un groupe alors le premier point est ajouté à ce groupe.
   * Le point qui rejoint reçoit les coordonnées du point qu'il rejoint.
   *
   * Un groupe de points partage les mêmes coordonnées et un même Point d'origine.
+  *
+  * Si lors de la création du groupe les deux points ont la même origine alors le groupe aura cette origine.
   *
   * \param point Point à rejoindre
   */

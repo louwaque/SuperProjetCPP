@@ -1,5 +1,4 @@
 #include "../include/Point.hpp"
-#include <boost/uuid/uuid_generators.hpp>
 
 Point::Point(const Point *origin)
   : m_origin(origin),
@@ -7,14 +6,14 @@ Point::Point(const Point *origin)
     m_y(0)
 {}
 
-Point::Point(int x, int y)
-  : m_origin(nullptr),
+Point::Point(int x, int y, const Point *origin)
+  : m_origin(origin),
     m_x(x),
     m_y(y)
 {}
 
-Point::Point(const CorrectorList &fixed)
-: m_origin(nullptr),
+Point::Point(const CorrectorList &fixed, const Point *origin)
+: m_origin(origin),
   m_x(0),
   m_y(0),
   m_correctorsFixed(fixed)
@@ -92,26 +91,29 @@ void Point::set(const int x, const int y)
   Point newP(x, y);
 
   if (isAlone()) {
-    // for (auto c : m_correctorsFixed)
-    //   if (c)
-    //     newP = c(newP);
-    // for (auto c : m_correctorsVariable)
-    //   if (c)
-    //     newP = c(newP);
-    m_x = newP.x() - origin().x();
-    m_y = newP.y() - origin().y();
+    for (auto c : m_correctorsFixed)
+      if (c)
+        newP = c(newP);
+    for (auto c : m_correctorsVariable)
+      if (c)
+        newP = c(newP);
+
+    newP = newP - origin();
+    m_x = newP.x();
+    m_y = newP.y();
   } else {
-    // for (Point &p : m_groups[m_groupId]) {
-    //   for (auto c : p.m_correctorsFixed)
-    //     if (c)
-    //       newP = c(newP);
-    //   for (auto c : p.m_correctorsVariable)
-    //     if (c)
-    //       newP = c(newP);
-    // }
     for (Point &p : m_group->points()) {
-      p.m_x = newP.x() - p.origin().x();
-      p.m_y = newP.y() - p.origin().y();
+      for (auto c : p.m_correctorsFixed)
+        if (c)
+          newP = c(newP);
+      for (auto c : p.m_correctorsVariable)
+        if (c)
+          newP = c(newP);
+    }
+    newP = newP - m_group->origin();
+    for (Point &p : m_group->points()) {
+      p.m_x = newP.x();
+      p.m_y = newP.y();
     }
   }
 }
@@ -123,6 +125,9 @@ void Point::join(Point &point)
   if (point.isAlone()) {
     point.m_group = std::make_shared<GroupPoints>();
     point.m_group->points().push_back(point);
+
+    if (m_origin == point.m_origin)
+      point.m_group->setOrigin(m_origin);
   }
 
   m_group = point.m_group;
