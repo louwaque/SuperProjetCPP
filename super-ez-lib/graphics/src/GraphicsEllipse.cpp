@@ -1,12 +1,10 @@
 #include "../include/GraphicsEllipse.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
 
 GraphicsEllipse::GraphicsEllipse(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
-  m_points.emplace_back();
-  m_points.emplace_back();
+  m_points.emplace_back(&position());
+  m_points.emplace_back(&position());
 }
 
 void GraphicsEllipse::meDraw(Canvas *canvas)
