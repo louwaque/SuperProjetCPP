@@ -3,6 +3,12 @@
 
 #include "GraphicsItem.hpp"
 
+/*!
+ * \class GraphicsAnimation
+ * \brief Classe de base pour les animations
+ * \ingroup graphics
+ */
+
 class GraphicsAnimation : public GraphicsItem
 {
 public:

@@ -3,6 +3,12 @@
 
 #include "GraphicsShape.hpp"
 
+/*!
+ * \class GraphicsEllipse
+ * \brief Une ellipse
+ * \ingroup graphics
+ */
+
 class GraphicsEllipse : public GraphicsShape
 {
 public:

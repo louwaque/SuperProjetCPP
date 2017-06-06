@@ -3,6 +3,12 @@
 
 #include "GraphicsShape.hpp"
 
+/*!
+ * \class GraphicsPolygon
+ * \brief Un polygone
+ * \ingroup graphics
+ */
+
 class GraphicsPolygon : public GraphicsShape
 {
 public:

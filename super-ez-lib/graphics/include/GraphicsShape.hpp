@@ -11,6 +11,12 @@
 
 #include "GraphicsItem.hpp"
 
+/*!
+ * \class GraphicsShape
+ * \brief Une forme
+ * \ingroup graphics
+ */
+
 class GraphicsShape : public GraphicsItem
 {
 public:

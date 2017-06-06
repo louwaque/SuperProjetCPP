@@ -3,6 +3,12 @@
 
 #include "GraphicsAnimation.hpp"
 
+/*!
+ * \class GraphicsBlinkAnimation
+ * \brief Faire clignoter sont parent
+ * \ingroup graphics
+ */
+
 class GraphicsBlinkAnimation : public GraphicsAnimation
 {
 public:

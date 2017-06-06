@@ -9,6 +9,17 @@
 #include <Canvas.hpp>
 #include <Event.hpp>
 
+/**
+ * \defgroup graphics Graphics
+ * \brief Classes pour dessiner
+ */
+
+/*!
+ * \class GraphicsItem
+ * \brief Classe de base
+ * \ingroup graphics
+ */
+
 class GraphicsItem {
 public:
   typedef std::function<Point(const Point&)> PositionCorrector;

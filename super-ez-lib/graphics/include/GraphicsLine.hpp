@@ -3,6 +3,12 @@
 
 #include "GraphicsShape.hpp"
 
+/*!
+ * \class GraphicsLine
+ * \brief Une ligne
+ * \ingroup graphics
+ */
+
 class GraphicsLine : public GraphicsShape
 {
 public:

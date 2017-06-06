@@ -14,8 +14,8 @@
 
 /*!
  * \class GraphicsText
- * \brief Permet la creation de text
- *
+ * \brief Du texte
+ * \ingroup graphics
  */
 
 class GraphicsText : public GraphicsItem {

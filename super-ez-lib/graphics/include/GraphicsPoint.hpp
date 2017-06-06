@@ -3,6 +3,12 @@
 
 #include "GraphicsItem.hpp"
 
+/*!
+ * \class GraphicsPoint
+ * \brief Un point
+ * \ingroup graphics
+ */
+
 class GraphicsPoint : public GraphicsItem
 {
 public:

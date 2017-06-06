@@ -3,6 +3,12 @@
 
 #include "GraphicsPoint.hpp"
 
+/*!
+ * \class GraphicsAnchor
+ * \brief Une ancre
+ * \ingroup graphics
+ */
+
 class GraphicsAnchor : public GraphicsPoint
 {
 public:

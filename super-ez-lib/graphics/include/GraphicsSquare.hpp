@@ -3,6 +3,12 @@
 
 #include "GraphicsItem.hpp"
 
+/*!
+ * \class GraphicsSquare
+ * \brief Un carré
+ * \ingroup graphics
+ */
+
 class GraphicsSquare : public GraphicsItem
 {
 public:

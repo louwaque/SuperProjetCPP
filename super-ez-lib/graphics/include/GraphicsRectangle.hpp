@@ -14,9 +14,8 @@
 
 /*!
  * \class GraphicsRectangle
- * \brief Permet la creation d'un rectangle
- *
- *
+ * \brief Un rectangle
+ * \ingroup graphics
  */
 
 class GraphicsRectangle : public GraphicsItem

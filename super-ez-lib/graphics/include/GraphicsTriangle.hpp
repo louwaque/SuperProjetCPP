@@ -13,8 +13,8 @@
 
 /*!
  * \class GraphicsTriangle
- * \brief Permet la creation d'un triangle
- *
+ * \brief Un triangle
+ * \ingroup graphics
  */
 
 class GraphicsTriangle : public GraphicsShape {

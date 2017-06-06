@@ -3,6 +3,12 @@
 
 #include "GraphicsShape.hpp"
 
+/*!
+ * \class GraphicsCircle
+ * \brief Un cercle
+ * \ingroup graphics
+ */
+
 class GraphicsCircle : public GraphicsShape
 {
 public:
