@@ -21,6 +21,9 @@ protected:
   bool meIsOver(const Point &absoluteP);
 
 private:
+  static Point corrector(const Point &pos, const Point &corner);
+
+private:
   Point m_topLeft, m_bottomRight;
 };
 
