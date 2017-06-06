@@ -9,10 +9,9 @@
  * \date 22 mai 2017
  */
 
-#include <boost/uuid/uuid.hpp>
 #include <iostream>
-#include <map>
 #include <vector>
+#include <memory>
 
 #include "GroupPoints.hpp"
 class GroupPoints;
@@ -33,8 +32,6 @@ class GroupPoints;
 class Point
 {
 public:
-  typedef boost::uuids::uuid Id;
-  typedef std::map<Id, GroupPoints> GroupsPoints;
   typedef std::function<Point(const Point&)> Corrector;
   typedef std::vector<Corrector> CorrectorList;
 
@@ -108,7 +105,7 @@ public:
    */
 
   inline int relativeY() const { return m_y; }
-  
+
   /*!
    * \brief Modifie les coordonnées du point indépendamment de son origine
    */
@@ -196,7 +193,7 @@ public:
   *  \brief Indique si le point n'appartient pas à un groupe.
   */
 
-  inline bool isAlone() const { return m_groupId.is_nil(); }
+  inline bool isAlone() const { return m_group == nullptr; }
 
   inline CorrectorList correctors() const { return m_correctorsVariable; }
   inline CorrectorList &correctors() { return m_correctorsVariable; }
@@ -206,8 +203,7 @@ private:
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
 
-  static GroupsPoints m_groups; //FIXME rm static
-  Id m_groupId;
+  std::shared_ptr<GroupPoints> m_group;
 
   CorrectorList m_correctorsFixed;
   CorrectorList m_correctorsVariable;
