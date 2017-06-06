@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['graphicsanchor_2ecpp',['GraphicsAnchor.cpp',['../_graphics_anchor_8cpp.html',1,'']]],
-  ['graphicsanchor_2ehpp',['GraphicsAnchor.hpp',['../_graphics_anchor_8hpp.html',1,'']]],
   ['graphicsanimation_2ecpp',['GraphicsAnimation.cpp',['../_graphics_animation_8cpp.html',1,'']]],
   ['graphicsanimation_2ehpp',['GraphicsAnimation.hpp',['../_graphics_animation_8hpp.html',1,'']]],
   ['graphicsblinkanimation_2ecpp',['GraphicsBlinkAnimation.cpp',['../_graphics_blink_animation_8cpp.html',1,'']]],

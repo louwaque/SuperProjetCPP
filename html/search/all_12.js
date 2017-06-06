@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['radius',['radius',['../class_graphics_circle.html#a805e9ead71e10e70de27eb3afcc22244',1,'GraphicsCircle::radius()'],['../class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e',1,'GraphicsEllipse::radius()'],['../class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882',1,'GraphicsPoint::radius()']]],
+  ['radius',['radius',['../class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa',1,'GraphicsCircle::radius()'],['../class_graphics_ellipse.html#ad04234267bde2f53934eb6329bab545a',1,'GraphicsEllipse::radius() const '],['../class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e',1,'GraphicsEllipse::radius()'],['../class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882',1,'GraphicsPoint::radius()']]],
+  ['radiuspt',['radiusPt',['../class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed',1,'GraphicsCircle::radiusPt() const '],['../class_graphics_circle.html#a60591e8f8e2cea0fb23f7b25ba1f49cb',1,'GraphicsCircle::radiusPt()']]],
   ['readcookie',['readCookie',['../resize_8js.html#a578d54a5ebd9224fad0213048e7a49a7',1,'resize.js']]],
   ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['rectangletype',['RectangleType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa37c1c68bb5807d8c6c78a64bffb6cc25',1,'GraphicsItem']]],
-  ['red',['red',['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color::red() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547',1,'Color::Red()']]],
+  ['red',['Red',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fafdb9abe97342a18d8622783aa5f9a547',1,'Color::Red()'],['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color::red() const ']]],
   ['related_5f0_2ejs',['related_0.js',['../related__0_8js.html',1,'']]],
   ['related_5f1_2ejs',['related_1.js',['../related__1_8js.html',1,'']]],
   ['relative',['relative',['../class_point.html#aa4e6b58931d20892b3f5c4fadf45340b',1,'Point']]],

@@ -1,16 +1,40 @@
 <map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
-<area shape="rect" id="node2" href="$class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6" title="GraphicsItem::position" alt="" coords="235,85,389,112"/>
-<area shape="rect" id="node3" href="$class_point.html#a43923c490fb5439d7d8a041e86520c34" title="Modifie les coordonnées du point par rapport à son origine. " alt="" coords="614,186,693,213"/>
-<area shape="rect" id="node11" href="$class_graphics_rectangle.html#adae2b3c26a2d3ae81e98cbb525b14753" title="recupere les coordonnées. " alt="" coords="241,288,383,330"/>
-<area shape="rect" id="node12" href="$class_point.html#a9abe56cf3f067305623a1d805460a84f" title="Modifie les coordonnées du point indépendamment de son origine. " alt="" coords="438,136,565,162"/>
-<area shape="rect" id="node13" href="$class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676" title="GraphicsRectangle::\lbottomRight" alt="" coords="241,354,383,395"/>
-<area shape="rect" id="node14" href="$class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" title="Rejoint le groupe d&#39;un point. " alt="" coords="272,237,352,264"/>
-<area shape="rect" id="node4" href="$class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" title="Indique si le point n&#39;appartient pas à un groupe. " alt="" coords="1067,298,1170,325"/>
-<area shape="rect" id="node5" href="$class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" title="Donne l&#39;abscisse du point par rapport à son origine. " alt="" coords="777,336,844,362"/>
-<area shape="rect" id="node6" href="$class_point.html#afa7d33502738b0b3df186a91e11ff2a8" title="Donne l&#39;origine du point. " alt="" coords="928,136,1019,162"/>
-<area shape="rect" id="node8" href="$class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" title="Donne l&#39;ordonnée du point par rapport à son origine. " alt="" coords="777,261,844,288"/>
-<area shape="rect" id="node9" href="$jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e" title="p" alt="" coords="791,34,830,61"/>
-<area shape="rect" id="node10" href="$class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f" title="GroupPoints::points" alt="" coords="742,136,879,162"/>
-<area shape="rect" id="node7" href="$class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" title="Construit un point avec les coordonnées nulles. " alt="" coords="1073,136,1164,162"/>
-<area shape="rect" id="node15" href="$class_point.html#a498f108de0c0351dfb3177c681a7a1f2" title="Quitte le groupe auquel le point appartient. " alt="" coords="448,288,555,314"/>
+<area shape="rect" id="node2" href="$class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6" title="GraphicsItem::position" alt="" coords="718,26,871,53"/>
+<area shape="rect" id="node3" href="$class_point.html#a43923c490fb5439d7d8a041e86520c34" title="Modifie les coordonnées du point par rapport à son origine. " alt="" coords="921,371,999,398"/>
+<area shape="rect" id="node10" href="$class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3" title="GraphicsItem::setColor" alt="" coords="257,473,415,499"/>
+<area shape="rect" id="node12" href="$class_point.html#a9abe56cf3f067305623a1d805460a84f" title="Modifie les coordonnées du point indépendamment de son origine. " alt="" coords="731,219,858,246"/>
+<area shape="rect" id="node13" href="$class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9" title="GraphicsText::setFont" alt="" coords="260,523,412,550"/>
+<area shape="rect" id="node15" href="$class_graphics_rectangle.html#ac70a5125161b6c09abd387edd9a83597" title="recupere les coordonnées. " alt="" coords="265,575,407,616"/>
+<area shape="rect" id="node16" href="$class_graphics_rectangle.html#a9f8b62b6c66b0489f016fae094091248" title="GraphicsRectangle::\lbottomRight" alt="" coords="265,640,407,681"/>
+<area shape="rect" id="node17" href="$class_graphics_rectangle.html#aea349ac359e4f2227f1da772c1a26ab6" title="GraphicsRectangle::\lsetHeight" alt="" coords="265,188,407,229"/>
+<area shape="rect" id="node20" href="$class_graphics_rectangle.html#a3efd2295cd742f75de829851bf7ca3dd" title="GraphicsRectangle::\lsetWidth" alt="" coords="265,305,407,347"/>
+<area shape="rect" id="node23" href="$class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e" title="Rejoint le groupe d&#39;un point. " alt="" coords="537,422,617,449"/>
+<area shape="rect" id="node25" href="$class_graphics_triangle.html#a147180c3b819de53f00ce67f41c12bb4" title="Donne le premier point du triangle. " alt="" coords="261,706,411,733"/>
+<area shape="rect" id="node26" href="$class_graphics_triangle.html#a0e102372963019779b658b153eb48389" title="Donne le second point du triangle. " alt="" coords="251,757,421,783"/>
+<area shape="rect" id="node27" href="$class_graphics_triangle.html#a11e015d2c442ebab1344b4ca9021a2de" title="Donne le troisième point du triangle. " alt="" coords="259,807,413,834"/>
+<area shape="rect" id="node28" href="$class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7" title="GraphicsItem::setFill" alt="" coords="265,858,407,885"/>
+<area shape="rect" id="node29" href="$class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376" title="GraphicsPolygon::setNbPoints" alt="" coords="235,119,437,146"/>
+<area shape="rect" id="node33" href="$class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed" title="GraphicsCircle::radiusPt" alt="" coords="254,909,418,935"/>
+<area shape="rect" id="node34" href="$class_graphics_ellipse.html#ad04234267bde2f53934eb6329bab545a" title="GraphicsEllipse::radius" alt="" coords="258,959,414,986"/>
+<area shape="rect" id="node35" href="$class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa" title="GraphicsBlinkAnimation\l::setBlinkFrequency" alt="" coords="255,1011,417,1052"/>
+<area shape="rect" id="node36" href="$class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6" title="GraphicsItem::setThick" alt="" coords="257,1077,415,1103"/>
+<area shape="rect" id="node38" href="$class_graphics_square.html#a82b1f6c71dcf2f9b73cc62ec9a69ff9b" title="GraphicsSquare::topLeft" alt="" coords="255,1127,417,1154"/>
+<area shape="rect" id="node39" href="$class_graphics_square.html#a163d3fa975f6c1a82bc632f508bfae3e" title="GraphicsSquare::bottomRight" alt="" coords="239,1178,433,1205"/>
+<area shape="rect" id="node4" href="$class_point.html#a64a5fe8c9b1d1a1543aaa64031537380" title="Indique si le point n&#39;appartient pas à un groupe. " alt="" coords="1302,430,1405,457"/>
+<area shape="rect" id="node5" href="$class_point.html#afa7d33502738b0b3df186a91e11ff2a8" title="Donne l&#39;origine du point. " alt="" coords="1163,297,1253,323"/>
+<area shape="rect" id="node7" href="$class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac" title="Donne l&#39;abscisse du point par rapport à son origine. " alt="" coords="1048,297,1115,323"/>
+<area shape="rect" id="node8" href="$class_point.html#a2226d8a3fb283b0b3c1f69106df144ba" title="Donne l&#39;ordonnée du point par rapport à son origine. " alt="" coords="1048,473,1115,499"/>
+<area shape="rect" id="node9" href="$jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e" title="p" alt="" coords="1062,347,1101,374"/>
+<area shape="rect" id="node6" href="$class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15" title="Construit un point avec les coordonnées nulles. " alt="" coords="1308,297,1399,323"/>
+<area shape="rect" id="node11" href="$class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2" title="GraphicsItem::color" alt="" coords="509,473,645,499"/>
+<area shape="rect" id="node14" href="$class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc" title="GraphicsText::font" alt="" coords="512,523,643,550"/>
+<area shape="rect" id="node18" href="$class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6" title="Modifie l&#39;ordonnée du point indépendamment de son origine. " alt="" coords="510,203,645,230"/>
+<area shape="rect" id="node19" href="$class_point.html#a4af1612ff97e961cdd93d3e46d68b796" title="Donne l&#39;abscisse du point indépendamment de son origine. " alt="" coords="739,169,850,195"/>
+<area shape="rect" id="node21" href="$class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c" title="Modifie l&#39;abscisse du point indépendamment de son origine. " alt="" coords="510,309,645,335"/>
+<area shape="rect" id="node22" href="$class_point.html#a2df1f1705c57a0089ee2956315b214ba" title="Donne l&#39;ordonnée du point indépendamment de son origine. " alt="" coords="739,321,850,347"/>
+<area shape="rect" id="node24" href="$class_point.html#a498f108de0c0351dfb3177c681a7a1f2" title="Quitte le groupe auquel le point appartient. " alt="" coords="741,473,848,499"/>
+<area shape="rect" id="node30" href="$class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f" title="GraphicsPolygon::nbPoints" alt="" coords="487,102,667,129"/>
+<area shape="rect" id="node31" href="$class_graphics_polygon.html#a382da20738e4c38cd865cd02755e9ee6" title="GraphicsPolygon::newPoint" alt="" coords="486,51,669,78"/>
+<area shape="rect" id="node32" href="$class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e" title="GraphicsPolygon::popPoint" alt="" coords="487,153,667,179"/>
+<area shape="rect" id="node37" href="$class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d" title="GraphicsItem::thick" alt="" coords="509,1077,645,1103"/>
 </map>

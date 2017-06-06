@@ -2,11 +2,9 @@ var class_point =
 [
     [ "Corrector", "class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41", null ],
     [ "CorrectorList", "class_point.html#a42108245ceb7c99343bcccb347babbc8", null ],
-    [ "GroupsPoints", "class_point.html#ae2f7fa1c87ee4b9431fa7c5325735268", null ],
-    [ "Id", "class_point.html#af0e58f6167f880cdcec3a6928d288a6a", null ],
     [ "Point", "class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15", null ],
-    [ "Point", "class_point.html#a001c4958c310b248f5c26037aea38a9c", null ],
-    [ "Point", "class_point.html#aa4813a55ef1c858da70d4a1f11d96859", null ],
+    [ "Point", "class_point.html#a89bad78a572d1d51871c5cd4493a38b1", null ],
+    [ "Point", "class_point.html#a32f300d1eba25728bec929ce65071677", null ],
     [ "Point", "class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1", null ],
     [ "~Point", "class_point.html#a395fa04b4ec126b66fc053f829a30cc1", null ],
     [ "beAlone", "class_point.html#a498f108de0c0351dfb3177c681a7a1f2", null ],
@@ -32,8 +30,7 @@ var class_point =
     [ "y", "class_point.html#a2226d8a3fb283b0b3c1f69106df144ba", null ],
     [ "m_correctorsFixed", "class_point.html#a88162a666a8b3c19e9429a9edabfe5ad", null ],
     [ "m_correctorsVariable", "class_point.html#a0c7258432def19adc6f8f1312bd7a206", null ],
-    [ "m_groupId", "class_point.html#a37fce2cc5966331a7bcb1775394028b8", null ],
-    [ "m_groups", "class_point.html#a7571926ccd42c49e005ff2b6555a24b4", null ],
+    [ "m_group", "class_point.html#a387b286dabe0b8a32ac0e19e3488587c", null ],
     [ "m_origin", "class_point.html#a98ca534cce8976038d485e9c5dffc429", null ],
     [ "m_x", "class_point.html#a885daee8c5064cd51f6a4c3888091fc9", null ],
     [ "m_y", "class_point.html#a00e243381d01e186dc2fcc5d24b4d3be", null ]

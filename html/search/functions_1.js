@@ -7,7 +7,7 @@ var searchData=
   ['bh',['bh',['../jquery_8js.html#a6fc9115e5c9c910cae480abf0a8c7ae3',1,'jquery.js']]],
   ['blinkfrequency',['blinkFrequency',['../class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69',1,'GraphicsBlinkAnimation']]],
   ['blue',['blue',['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color']]],
-  ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#a6024f0f716cebd76ea2760b960d89740',1,'GraphicsSquare::bottomRight()']]],
+  ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a9f8b62b6c66b0489f016fae094091248',1,'GraphicsRectangle::bottomRight() const '],['../class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#a163d3fa975f6c1a82bc632f508bfae3e',1,'GraphicsSquare::bottomRight() const '],['../class_graphics_square.html#a6024f0f716cebd76ea2760b960d89740',1,'GraphicsSquare::bottomRight()']]],
   ['button',['button',['../class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2',1,'MouseEvent']]],
   ['buttonpress',['buttonPress',['../class_window.html#a8b32a8bb726af1575498353515677cbb',1,'Window']]],
   ['buttonrelease',['buttonRelease',['../class_window.html#a458ae9685d66631b4e4300dbea528783',1,'Window']]]

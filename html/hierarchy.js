@@ -17,9 +17,7 @@ var hierarchy =
       [ "GraphicsAnimation", "class_graphics_animation.html", [
         [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
       ] ],
-      [ "GraphicsPoint", "class_graphics_point.html", [
-        [ "GraphicsAnchor", "class_graphics_anchor.html", null ]
-      ] ],
+      [ "GraphicsPoint", "class_graphics_point.html", null ],
       [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
       [ "GraphicsShape", "class_graphics_shape.html", [
         [ "GraphicsCircle", "class_graphics_circle.html", null ],

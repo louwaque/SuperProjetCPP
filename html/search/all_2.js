@@ -10,7 +10,7 @@ var searchData=
   ['blinkanimationtype',['BlinkAnimationType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa26ba6ed171b0103540e9c4ff0e85bc79',1,'GraphicsItem']]],
   ['blinkfrequency',['blinkFrequency',['../class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69',1,'GraphicsBlinkAnimation']]],
   ['blue',['blue',['../class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6',1,'Color::blue() const '],['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fac8305d1af78f9bc998f69555c9e171bb',1,'Color::Blue()']]],
-  ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#a6024f0f716cebd76ea2760b960d89740',1,'GraphicsSquare::bottomRight()']]],
+  ['bottomright',['bottomRight',['../class_graphics_rectangle.html#a9f8b62b6c66b0489f016fae094091248',1,'GraphicsRectangle::bottomRight() const '],['../class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676',1,'GraphicsRectangle::bottomRight()'],['../class_graphics_square.html#a163d3fa975f6c1a82bc632f508bfae3e',1,'GraphicsSquare::bottomRight() const '],['../class_graphics_square.html#a6024f0f716cebd76ea2760b960d89740',1,'GraphicsSquare::bottomRight()']]],
   ['bq',['bq',['../jquery_8js.html#af6ee77c71b2c89bdb365145ac5ad1219',1,'jquery.js']]],
   ['bridge',['bridge',['../jquery_8js.html#a076eb0dcbd23c16543468b58486870f5',1,'jquery.js']]],
   ['bs',['bs',['../jquery_8js.html#ae77642f8ef73fb9c20c2a737d956acda',1,'jquery.js']]],

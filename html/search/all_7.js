@@ -9,9 +9,6 @@ var searchData=
   ['gloweffect',['glowEffect',['../navtree_8js.html#a23b68d2deb28f9c2678f546e2d60e5ee',1,'navtree.js']]],
   ['gotoanchor',['gotoAnchor',['../navtree_8js.html#aee1fc3771eeb15da54962a03da1f3c11',1,'navtree.js']]],
   ['gotonode',['gotoNode',['../navtree_8js.html#a0e6a2d65190a43246d668bba554243e5',1,'navtree.js']]],
-  ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html',1,'GraphicsAnchor'],['../class_graphics_anchor.html#a84d9e284c053de2b861898e3586b0911',1,'GraphicsAnchor::GraphicsAnchor()']]],
-  ['graphicsanchor_2ecpp',['GraphicsAnchor.cpp',['../_graphics_anchor_8cpp.html',1,'']]],
-  ['graphicsanchor_2ehpp',['GraphicsAnchor.hpp',['../_graphics_anchor_8hpp.html',1,'']]],
   ['graphicsanimation',['GraphicsAnimation',['../class_graphics_animation.html',1,'GraphicsAnimation'],['../class_graphics_animation.html#a932a6494cc2ccc472ce17084453187d6',1,'GraphicsAnimation::GraphicsAnimation()']]],
   ['graphicsanimation_2ecpp',['GraphicsAnimation.cpp',['../_graphics_animation_8cpp.html',1,'']]],
   ['graphicsanimation_2ehpp',['GraphicsAnimation.hpp',['../_graphics_animation_8hpp.html',1,'']]],
@@ -57,6 +54,5 @@ var searchData=
   ['grey',['Grey',['../class_color.html#af1edae0ae19f7a958e091dbb85e7102fa7397d03be320ef0674be99b59e0abd47',1,'Color']]],
   ['grouppoints',['GroupPoints',['../class_group_points.html',1,'GroupPoints'],['../class_group_points.html#ae976ab1712456edebc5f9d3ebc46f293',1,'GroupPoints::GroupPoints()']]],
   ['grouppoints_2ecpp',['GroupPoints.cpp',['../_group_points_8cpp.html',1,'']]],
-  ['grouppoints_2ehpp',['GroupPoints.hpp',['../_group_points_8hpp.html',1,'']]],
-  ['groupspoints',['GroupsPoints',['../class_point.html#ae2f7fa1c87ee4b9431fa7c5325735268',1,'Point']]]
+  ['grouppoints_2ehpp',['GroupPoints.hpp',['../_group_points_8hpp.html',1,'']]]
 ];

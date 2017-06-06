@@ -8,7 +8,6 @@ var searchData=
   ['gloweffect',['glowEffect',['../navtree_8js.html#a23b68d2deb28f9c2678f546e2d60e5ee',1,'navtree.js']]],
   ['gotoanchor',['gotoAnchor',['../navtree_8js.html#aee1fc3771eeb15da54962a03da1f3c11',1,'navtree.js']]],
   ['gotonode',['gotoNode',['../navtree_8js.html#a0e6a2d65190a43246d668bba554243e5',1,'navtree.js']]],
-  ['graphicsanchor',['GraphicsAnchor',['../class_graphics_anchor.html#a84d9e284c053de2b861898e3586b0911',1,'GraphicsAnchor']]],
   ['graphicsanimation',['GraphicsAnimation',['../class_graphics_animation.html#a932a6494cc2ccc472ce17084453187d6',1,'GraphicsAnimation']]],
   ['graphicsblinkanimation',['GraphicsBlinkAnimation',['../class_graphics_blink_animation.html#a799b84ec5f97948d821bd5bb75c0d4de',1,'GraphicsBlinkAnimation::GraphicsBlinkAnimation(GraphicsItem *parent=nullptr)'],['../class_graphics_blink_animation.html#aff098fcde779f37d4dd541723f351567',1,'GraphicsBlinkAnimation::GraphicsBlinkAnimation(const Color &amp;color, GraphicsItem *parent=nullptr)']]],
   ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html#a0891443aab157c94f76ad425b7327b84',1,'GraphicsCircle']]],

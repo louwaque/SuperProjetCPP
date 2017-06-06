@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['radius',['radius',['../class_graphics_circle.html#a805e9ead71e10e70de27eb3afcc22244',1,'GraphicsCircle::radius()'],['../class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e',1,'GraphicsEllipse::radius()'],['../class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882',1,'GraphicsPoint::radius()']]],
+  ['radius',['radius',['../class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa',1,'GraphicsCircle::radius()'],['../class_graphics_ellipse.html#ad04234267bde2f53934eb6329bab545a',1,'GraphicsEllipse::radius() const '],['../class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e',1,'GraphicsEllipse::radius()'],['../class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882',1,'GraphicsPoint::radius()']]],
+  ['radiuspt',['radiusPt',['../class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed',1,'GraphicsCircle::radiusPt() const '],['../class_graphics_circle.html#a60591e8f8e2cea0fb23f7b25ba1f49cb',1,'GraphicsCircle::radiusPt()']]],
   ['readcookie',['readCookie',['../resize_8js.html#a578d54a5ebd9224fad0213048e7a49a7',1,'resize.js']]],
   ['red',['red',['../class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61',1,'Color']]],
   ['relative',['relative',['../class_point.html#aa4e6b58931d20892b3f5c4fadf45340b',1,'Point']]],

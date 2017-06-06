@@ -7,7 +7,6 @@ var searchData=
   ['class_5fcolor_2ejs',['class_color.js',['../class__color_8js.html',1,'']]],
   ['class_5fevent_2ejs',['class_event.js',['../class__event_8js.html',1,'']]],
   ['class_5ffont_2ejs',['class_font.js',['../class__font_8js.html',1,'']]],
-  ['class_5fgraphics_5fanchor_2ejs',['class_graphics_anchor.js',['../class__graphics__anchor_8js.html',1,'']]],
   ['class_5fgraphics_5fanimation_2ejs',['class_graphics_animation.js',['../class__graphics__animation_8js.html',1,'']]],
   ['class_5fgraphics_5fblink_5fanimation_2ejs',['class_graphics_blink_animation.js',['../class__graphics__blink__animation_8js.html',1,'']]],
   ['class_5fgraphics_5fcircle_2ejs',['class_graphics_circle.js',['../class__graphics__circle_8js.html',1,'']]],
