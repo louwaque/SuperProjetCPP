@@ -1,7 +1,4 @@
 #include "../include/GraphicsRectangle.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
-
 
 GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
 : GraphicsItem(parent),

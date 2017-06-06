@@ -19,6 +19,7 @@
  *
  */
 
+//FIXME utiliser GraphicsShape ?
 class GraphicsRectangle : public GraphicsItem
 {
 public:
@@ -39,11 +40,11 @@ public:
    *
    */
 
+  inline const Point &topLeft() const { return m_topLeft; }
   inline Point &topLeft() { return m_topLeft; }
 
+  inline const Point &bottomRight() const { return m_bottomRight; }
   inline Point &bottomRight() { return m_bottomRight; }
-
-  inline GraphicsTypes type() const { return RectangleType; }
 
   inline size_t width() const { return std::abs(m_bottomRight.x() - m_topLeft.x()); }
 
@@ -53,12 +54,13 @@ public:
 
   void setHeight(const size_t height);
 
+  inline GraphicsTypes type() const { return RectangleType; }
+
 protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);
 
 private:
-  //FIXME topLeft vraiment utile ?
   Point m_topLeft, m_bottomRight;
 };
 
