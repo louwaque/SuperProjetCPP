@@ -9,10 +9,7 @@
  * \date 29 mai 2017
  */
 
-#include "Widget.hpp"
-#include <GraphicsRectangle.hpp>
-#include <GraphicsText.hpp>
-#include <string>
+#include "Label.hpp"
 
 /*!
  * \class Button
@@ -20,8 +17,8 @@
  *
  */
 
-class Button : public Widget {
-
+class Button : public Widget
+{
 public:
 
   /*!
@@ -34,26 +31,21 @@ public:
   Button(GraphicsItem *parent = nullptr);
   Button(const std::string &text, GraphicsItem *parent = nullptr);
 
-  inline std::string text() const { return m_text->text(); }
-  void setText(const std::string &text);
+  inline const Label &label() const { return *m_label; }
+  inline Label &label() { return *m_label; }
 
-  inline co_t textChanged(const slot_t &subscriber) { return m_textChanged.connect(subscriber); }
-  inline co_t clicked_left(const slot_t &subscriber) { return m_clicked_left.connect(subscriber); }
-  inline co_t clicked_right(const slot_t &subscriber) { return m_clicked_right.connect(subscriber); }
+  size_t minimumWidth() const { return m_label->minimumWidth(); }
+  size_t minimumHeight() const { return m_label->minimumHeight(); }
 
-
+  inline co_t clicked(const slot_t &subscriber) { return m_clicked.connect(subscriber); }
 
 protected:
-
   void meHandleEvent(const Event &event);
 
 private:
+  Label *m_label;
 
-  GraphicsText *m_text;
-  GraphicsRectangle *m_rectangle;
-  signal_t m_textChanged;
-  signal_t m_clicked_left;
-  signal_t m_clicked_right;
+  signal_t m_clicked;
 };
 
 
