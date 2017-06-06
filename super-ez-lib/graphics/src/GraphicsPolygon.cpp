@@ -1,6 +1,4 @@
 #include "../include/GraphicsPolygon.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
 
 GraphicsPolygon::GraphicsPolygon(GraphicsItem *parent)
 : GraphicsShape(parent)
@@ -8,7 +6,7 @@ GraphicsPolygon::GraphicsPolygon(GraphicsItem *parent)
 
 Point &GraphicsPolygon::newPoint()
 {
-  m_points.emplace_back();
+  m_points.emplace_back(&position());
   return m_points.back();
 }
 
