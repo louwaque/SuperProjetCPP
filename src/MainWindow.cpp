@@ -77,27 +77,20 @@ MainWindow::MainWindow()
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->setAbsolute({100, 500});
 
-  Button *button = new Button("Ajouter une forme",&m_scene);
+  Button *button = new Button("Ajouter une forme", &m_scene);
   button->setAbsolute({50,150});
-  button->clicked_left([this](){
-    std::cout << "SA MARCHE A GAUCHE" << std::endl;
+  button->clicked([this](){
     GraphicsRectangle *b_rectangle = new GraphicsRectangle(&m_scene);
     b_rectangle->setAbsolute({200,150});
     b_rectangle->setHeight(50);
     b_rectangle->setWidth(70);
   });
-  button->clicked_right([this](){
-    std::cout << "SA MARCHE A DROITE" << std::endl;
-    GraphicsCircle *b_circle = new GraphicsCircle(&m_scene);
-    b_circle->setAbsolute({300,250});
-    b_circle->radius()->setAnchor({50, 50});
-  });
 
-  Button *button_agrandir = new Button("Agrandir le rectangle",&m_scene);
+  Button *button_agrandir = new Button("Grossir le trait", &m_scene);
   button_agrandir->setAbsolute({100,175});
-  button_agrandir->clicked_left([this](){
-    if(m_scene.focusItem().GraphicsTypes="RectangleType"){
-      m_scene.focusItem()->setWidth(50);
+  button_agrandir->clicked([this](){
+    if (GraphicsItem::focusItem()) {
+      GraphicsItem::focusItem()->setThick(5);
     }
   });
 }
