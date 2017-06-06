@@ -7,6 +7,5 @@ var class_graphics_point =
     [ "meIsOver", "class_graphics_point.html#af3b01336f2559f13ddfdedd249203965", null ],
     [ "radius", "class_graphics_point.html#ae068eb8b33ce16680f0092ab8699f882", null ],
     [ "setRadius", "class_graphics_point.html#ae4314b809d5fad0ac5473b459e63cb12", null ],
-    [ "type", "class_graphics_point.html#ac0ffd9c4a6e93a2015568d97296d0046", null ],
-    [ "m_radius", "class_graphics_point.html#ab4d035c736784ceee67f6181b931478b", null ]
+    [ "type", "class_graphics_point.html#ac0ffd9c4a6e93a2015568d97296d0046", null ]
 ];

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_application.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,22 +113,19 @@ $(document).ready(function(){initNavTree('class_application.html','');});
 
 <p>Liste complète des membres de <a class="el" href="class_application.html">Application</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application</a>()</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_application.html#ad8296f5783011c3bf2f91c3fbb05ef64">Application</a>(const Application &amp;src)=delete</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_application.html#afb3f586d4cd375fe146c63e57535cc8f">autoQuit</a>() const </td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_application.html#a543e628c50f9199ae557f39d01294c2e">exec</a>()</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">m_autoQuit</a></td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_application.html#ab900c1c4adab2b6c3585537901ee17d9">m_ezdraw</a></td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_application.html#a8c08012c99e69117ff5e1a7280662e09">m_instantiated</a></td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3">quit</a>()</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_application.html#afbe6f0f4265f301996a3bc4939d4f800">setAutoQuit</a>(const bool enable)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_application.html#a748bca84fefb9c12661cfaa2f623748d">~Application</a>()</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Application</b>() (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Application</b>(const Application &amp;src)=delete (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>autoQuit</b>() const  (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>exec</b>() (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>quit</b>() (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setAutoQuit</b>(const bool enable) (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Application</b>() (défini dans <a class="el" href="class_application.html">Application</a>)</td><td class="entry"><a class="el" href="class_application.html">Application</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:14 pour Super Project c++ par
+    <li class="footer">Généré le Mardi 6 Juin 2017 22:05:20 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

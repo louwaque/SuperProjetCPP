@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('_graphics_line_8hpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,49 +108,41 @@ $(document).ready(function(){initNavTree('_graphics_line_8hpp_source.html','');}
 <div class="title">GraphicsLine.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_graphics_line_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSLINE_HPP</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSLINE_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSLINE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_shape_8hpp.html">GraphicsShape.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_graphics_line.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_line.html">GraphicsLine</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_line.html#a23cc57510dd6e5a58891deb16b79b3fe">GraphicsLine</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a> = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_graphics_line.html#acf2f14c815ca5b10567cc73e97a925d2">   11</a></span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_line.html#acf2f14c815ca5b10567cc73e97a925d2">first</a>() {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>[0];</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  }</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2">   15</a></span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *<a class="code" href="class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2">second</a>() {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">m_points</a>[1];</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_graphics_line.html#add159ec92f8185d9a0358fefb521ddba">   19</a></span>&#160;  <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> <a class="code" href="class_graphics_line.html#add159ec92f8185d9a0358fefb521ddba">type</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b">LineType</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_graphics_line_html_acf2f14c815ca5b10567cc73e97a925d2"><div class="ttname"><a href="class_graphics_line.html#acf2f14c815ca5b10567cc73e97a925d2">GraphicsLine::first</a></div><div class="ttdeci">GraphicsItem * first()</div><div class="ttdef"><b>Definition:</b> GraphicsLine.hpp:11</div></div>
-<div class="ttc" id="class_graphics_shape_html"><div class="ttname"><a href="class_graphics_shape.html">GraphicsShape</a></div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:14</div></div>
-<div class="ttc" id="class_graphics_shape_html_a0bd7d1e35a198ca74ddf66820a1c7a61"><div class="ttname"><a href="class_graphics_shape.html#a0bd7d1e35a198ca74ddf66820a1c7a61">GraphicsShape::m_points</a></div><div class="ttdeci">GraphicsItemList m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:28</div></div>
-<div class="ttc" id="class_graphics_line_html_adcb8718946ae9b3478d56efd70e1d2c2"><div class="ttname"><a href="class_graphics_line.html#adcb8718946ae9b3478d56efd70e1d2c2">GraphicsLine::second</a></div><div class="ttdeci">GraphicsItem * second()</div><div class="ttdef"><b>Definition:</b> GraphicsLine.hpp:15</div></div>
-<div class="ttc" id="class_graphics_line_html_add159ec92f8185d9a0358fefb521ddba"><div class="ttname"><a href="class_graphics_line.html#add159ec92f8185d9a0358fefb521ddba">GraphicsLine::type</a></div><div class="ttdeci">GraphicsTypes type() const </div><div class="ttdef"><b>Definition:</b> GraphicsLine.hpp:19</div></div>
-<div class="ttc" id="class_graphics_line_html"><div class="ttname"><a href="class_graphics_line.html">GraphicsLine</a></div><div class="ttdef"><b>Definition:</b> GraphicsLine.hpp:6</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_graphics_line.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_line.html">GraphicsLine</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_line.html">GraphicsLine</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *first() {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> m_points[0];</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_graphics_item.html">GraphicsItem</a> *second() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> m_points[1];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  GraphicsTypes type()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> LineType;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_graphics_shape_html"><div class="ttname"><a href="class_graphics_shape.html">GraphicsShape</a></div><div class="ttdoc">Une forme. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_shape_8hpp_source.html#l00020">GraphicsShape.hpp:20</a></div></div>
+<div class="ttc" id="class_graphics_line_html"><div class="ttname"><a href="class_graphics_line.html">GraphicsLine</a></div><div class="ttdoc">Une ligne. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_line_8hpp_source.html#l00012">GraphicsLine.hpp:12</a></div></div>
 <div class="ttc" id="_graphics_shape_8hpp_html"><div class="ttname"><a href="_graphics_shape_8hpp.html">GraphicsShape.hpp</a></div><div class="ttdoc">Classe GraphicsShape. </div></div>
-<div class="ttc" id="class_graphics_item_html_aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b"><div class="ttname"><a href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b">GraphicsItem::LineType</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:23</div></div>
-<div class="ttc" id="class_graphics_line_html_a23cc57510dd6e5a58891deb16b79b3fe"><div class="ttname"><a href="class_graphics_line.html#a23cc57510dd6e5a58891deb16b79b3fe">GraphicsLine::GraphicsLine</a></div><div class="ttdeci">GraphicsLine(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsLine.cpp:5</div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:12</div></div>
-<div class="ttc" id="class_graphics_item_html_aedab0ae8727a1abc4ecb776e062c764f"><div class="ttname"><a href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsItem::GraphicsTypes</a></div><div class="ttdeci">GraphicsTypes</div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:17</div></div>
-<div class="ttc" id="class_graphics_item_html_aeaf0a8de33aa83d5fa5ac8889e7e4392"><div class="ttname"><a href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">GraphicsItem::parent</a></div><div class="ttdeci">GraphicsItem * parent() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:44</div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00023">GraphicsItem.hpp:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li><li class="navelem"><a class="el" href="_graphics_line_8hpp.html">GraphicsLine.hpp</a></li>
-    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:13 pour Super Project c++ par
+    <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li><li class="navelem"><b>GraphicsLine.hpp</b></li>
+    <li class="footer">Généré le Mardi 6 Juin 2017 22:05:19 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

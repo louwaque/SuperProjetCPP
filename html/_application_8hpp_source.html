@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('_application_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,7 +108,7 @@ $(document).ready(function(){initNavTree('_application_8hpp_source.html','');});
 <div class="title">Application.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_application_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPLICATION_HPP</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APPLICATION_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPLICATION_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ez-lib/ez-draw++.hpp&gt;</span></div>
@@ -115,40 +116,31 @@ $(document).ready(function(){initNavTree('_application_8hpp_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_application.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_application.html">Application</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_application.html#a748bca84fefb9c12661cfaa2f623748d">~Application</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application</a>(<span class="keyword">const</span> <a class="code" href="class_application.html">Application</a> &amp;src) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="class_application.html">Application</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  ~<a class="code" href="class_application.html">Application</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_application.html">Application</a>(<span class="keyword">const</span> <a class="code" href="class_application.html">Application</a> &amp;src) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_application.html#a543e628c50f9199ae557f39d01294c2e">   13</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_application.html#a543e628c50f9199ae557f39d01294c2e">exec</a>() { <a class="code" href="class_application.html#ab900c1c4adab2b6c3585537901ee17d9">m_ezdraw</a>-&gt;mainLoop(); }</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3">   14</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3">quit</a>() { EZDraw::quit(); }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> exec() { m_ezdraw-&gt;mainLoop(); }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> quit() { EZDraw::quit(); }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_application.html#afb3f586d4cd375fe146c63e57535cc8f">   16</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_application.html#afb3f586d4cd375fe146c63e57535cc8f">autoQuit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">m_autoQuit</a>; }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_application.html#afbe6f0f4265f301996a3bc4939d4f800">setAutoQuit</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> autoQuit()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_autoQuit; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> setAutoQuit(<span class="keyword">const</span> <span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_application.html#a8c08012c99e69117ff5e1a7280662e09">   20</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_application.html#a8c08012c99e69117ff5e1a7280662e09">m_instantiated</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_application.html#ab900c1c4adab2b6c3585537901ee17d9">   21</a></span>&#160;  EZDraw *<a class="code" href="class_application.html#ab900c1c4adab2b6c3585537901ee17d9">m_ezdraw</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">   22</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">m_autoQuit</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> m_instantiated;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  EZDraw *m_ezdraw;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">bool</span> m_autoQuit;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_application_html_afb3f586d4cd375fe146c63e57535cc8f"><div class="ttname"><a href="class_application.html#afb3f586d4cd375fe146c63e57535cc8f">Application::autoQuit</a></div><div class="ttdeci">bool autoQuit() const </div><div class="ttdef"><b>Definition:</b> Application.hpp:16</div></div>
-<div class="ttc" id="class_application_html_afa8cc05ce6b6092be5ecdfdae44e05f8"><div class="ttname"><a href="class_application.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application::Application</a></div><div class="ttdeci">Application()</div><div class="ttdef"><b>Definition:</b> Application.cpp:5</div></div>
-<div class="ttc" id="class_application_html_a748bca84fefb9c12661cfaa2f623748d"><div class="ttname"><a href="class_application.html#a748bca84fefb9c12661cfaa2f623748d">Application::~Application</a></div><div class="ttdeci">~Application()</div><div class="ttdef"><b>Definition:</b> Application.cpp:17</div></div>
-<div class="ttc" id="class_application_html_afbe6f0f4265f301996a3bc4939d4f800"><div class="ttname"><a href="class_application.html#afbe6f0f4265f301996a3bc4939d4f800">Application::setAutoQuit</a></div><div class="ttdeci">void setAutoQuit(const bool enable)</div><div class="ttdef"><b>Definition:</b> Application.cpp:22</div></div>
-<div class="ttc" id="class_application_html_a8c08012c99e69117ff5e1a7280662e09"><div class="ttname"><a href="class_application.html#a8c08012c99e69117ff5e1a7280662e09">Application::m_instantiated</a></div><div class="ttdeci">static bool m_instantiated</div><div class="ttdef"><b>Definition:</b> Application.hpp:20</div></div>
-<div class="ttc" id="class_application_html_a543e628c50f9199ae557f39d01294c2e"><div class="ttname"><a href="class_application.html#a543e628c50f9199ae557f39d01294c2e">Application::exec</a></div><div class="ttdeci">void exec()</div><div class="ttdef"><b>Definition:</b> Application.hpp:13</div></div>
-<div class="ttc" id="class_application_html_ab900c1c4adab2b6c3585537901ee17d9"><div class="ttname"><a href="class_application.html#ab900c1c4adab2b6c3585537901ee17d9">Application::m_ezdraw</a></div><div class="ttdeci">EZDraw * m_ezdraw</div><div class="ttdef"><b>Definition:</b> Application.hpp:21</div></div>
-<div class="ttc" id="class_application_html_a5174a3e65c18e8b1e9cdbd8364cad3a3"><div class="ttname"><a href="class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3">Application::quit</a></div><div class="ttdeci">static void quit()</div><div class="ttdef"><b>Definition:</b> Application.hpp:14</div></div>
-<div class="ttc" id="class_application_html"><div class="ttname"><a href="class_application.html">Application</a></div><div class="ttdef"><b>Definition:</b> Application.hpp:6</div></div>
-<div class="ttc" id="class_application_html_a7ac9a60832181a8b516e8d0d2257d800"><div class="ttname"><a href="class_application.html#a7ac9a60832181a8b516e8d0d2257d800">Application::m_autoQuit</a></div><div class="ttdeci">bool m_autoQuit</div><div class="ttdef"><b>Definition:</b> Application.hpp:22</div></div>
+<div class="ttc" id="class_application_html"><div class="ttname"><a href="class_application.html">Application</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_8hpp_source.html#l00006">Application.hpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_29886abfd05d10f353d5e88e3822275c.html">include</a></li><li class="navelem"><a class="el" href="_application_8hpp.html">Application.hpp</a></li>
-    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:13 pour Super Project c++ par
+    <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_29886abfd05d10f353d5e88e3822275c.html">include</a></li><li class="navelem"><b>Application.hpp</b></li>
+    <li class="footer">Généré le Mardi 6 Juin 2017 22:05:18 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

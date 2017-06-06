@@ -30,7 +30,6 @@ var class_graphics_item =
     [ "children", "class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a", null ],
     [ "color", "class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2", null ],
     [ "draw", "class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689", null ],
-    [ "focusItem", "class_graphics_item.html#ae17633bdf56258e2209ae335d0d1c3fa", null ],
     [ "handleEvent", "class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2", null ],
     [ "hasFocus", "class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb", null ],
     [ "isFill", "class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434", null ],
@@ -46,7 +45,6 @@ var class_graphics_item =
     [ "setAnchor", "class_graphics_item.html#ab1266d26ff6aa338959c0796ef915fc4", null ],
     [ "setColor", "class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3", null ],
     [ "setFill", "class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7", null ],
-    [ "setFocusItem", "class_graphics_item.html#a5877c4c5815eacb9876c7b99b119aef7", null ],
     [ "setParent", "class_graphics_item.html#a8bcbe86ba1854edffd7fbed0b4bc8cd5", null ],
     [ "setPositionCorrector", "class_graphics_item.html#aaa2937af237da890e836326ed882140d", null ],
     [ "setThick", "class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6", null ],
@@ -55,15 +53,5 @@ var class_graphics_item =
     [ "thick", "class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d", null ],
     [ "type", "class_graphics_item.html#aa892caff547a0fd1969898ee0740b186", null ],
     [ "update", "class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2", null ],
-    [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ],
-    [ "m_anchor", "class_graphics_item.html#ad7052acba279643faeb33101d1b997eb", null ],
-    [ "m_children", "class_graphics_item.html#aafac7807306d357707fbb2fec0d81aef", null ],
-    [ "m_color", "class_graphics_item.html#affa691c49709c1a91083f248352eff91", null ],
-    [ "m_focusItem", "class_graphics_item.html#a01115e9eb616d70eb7589645f81478aa", null ],
-    [ "m_isFill", "class_graphics_item.html#a0ca6e4ef883d695d87f1a52a1e0645ef", null ],
-    [ "m_isVisible", "class_graphics_item.html#a1f21edc30cc24965948533649ddfefbe", null ],
-    [ "m_parent", "class_graphics_item.html#ab5e748e1f13ea1e83de40bb281f90307", null ],
-    [ "m_positionCorrector", "class_graphics_item.html#a031031ab2eb380c3c7600f1152e6a3d6", null ],
-    [ "m_thick", "class_graphics_item.html#acc1dc85be53a256fab79cf67e28be96e", null ],
-    [ "m_z", "class_graphics_item.html#af13cf32543812eb7fffeea6007be5610", null ]
+    [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ]
 ];

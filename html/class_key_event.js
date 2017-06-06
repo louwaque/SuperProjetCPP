@@ -12,9 +12,5 @@ var class_key_event =
     [ "keyString", "class_key_event.html#a79345d47767acbcafc7d8435b70f048a", null ],
     [ "state", "class_key_event.html#a91553e020f3621736e1709d27984fdc0", null ],
     [ "type", "class_key_event.html#a4335d1c13b1e6523ee8e3795a36218fd", null ],
-    [ "write", "class_key_event.html#a4e9320be7f46e57ddbefebe404a067fa", null ],
-    [ "m_key", "class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26", null ],
-    [ "m_keyName", "class_key_event.html#aca4840f821913402a8e3e260c7333356", null ],
-    [ "m_keyString", "class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33", null ],
-    [ "m_state", "class_key_event.html#a0590b2d81c8850354c5536deb41d1674", null ]
+    [ "write", "class_key_event.html#a4e9320be7f46e57ddbefebe404a067fa", null ]
 ];

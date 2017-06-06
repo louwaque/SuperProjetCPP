@@ -20,8 +20,5 @@ var class_mouse_event =
     [ "position", "class_mouse_event.html#a99ec3c735c6e61b96d539c5638b23608", null ],
     [ "state", "class_mouse_event.html#a0750646f0011ff65b384f108594208a3", null ],
     [ "type", "class_mouse_event.html#aafb7f34678f767028a61c45df1d58969", null ],
-    [ "write", "class_mouse_event.html#aa2ec9efda28b2bcf2326616c0022b228", null ],
-    [ "m_button", "class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9", null ],
-    [ "m_position", "class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d", null ],
-    [ "m_state", "class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b", null ]
+    [ "write", "class_mouse_event.html#aa2ec9efda28b2bcf2326616c0022b228", null ]
 ];

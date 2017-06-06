@@ -9,11 +9,5 @@ var class_graphics_blink_animation =
     [ "setBecomeColor", "class_graphics_blink_animation.html#a5936a96b0f666c4405ac1c6ae16a3275", null ],
     [ "setBecomeInvisible", "class_graphics_blink_animation.html#a80baced0f895d671d52d55528f0bacb6", null ],
     [ "setBlinkFrequency", "class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa", null ],
-    [ "type", "class_graphics_blink_animation.html#a92c69ed38e842f0143c4dcb47b44b7ef", null ],
-    [ "m_becomeColor", "class_graphics_blink_animation.html#a1e17c0a33826d32d30b3267c515edad2", null ],
-    [ "m_becomeInvisible", "class_graphics_blink_animation.html#aa8a804942cd0b803474526d9a92304f6", null ],
-    [ "m_blinkFrequency", "class_graphics_blink_animation.html#a54c4853485cf7319cb96d2560322568e", null ],
-    [ "m_colorApplied", "class_graphics_blink_animation.html#af4e810f5b85424bff83f0fad8d191e0b", null ],
-    [ "m_elapsedTime", "class_graphics_blink_animation.html#a7a978327c171cf8915e68399f4859e44", null ],
-    [ "m_parentColor", "class_graphics_blink_animation.html#ae002140aea5e767eda9b67c2159e2cea", null ]
+    [ "type", "class_graphics_blink_animation.html#a92c69ed38e842f0143c4dcb47b44b7ef", null ]
 ];

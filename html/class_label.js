@@ -6,7 +6,5 @@ var class_label =
     [ "minimumWidth", "class_label.html#abd832d1488ddb8c4c66aee954722d07c", null ],
     [ "setText", "class_label.html#a2bd65842919bc965ff8482407b34f097", null ],
     [ "text", "class_label.html#a4411eb587fb2c0a019579ae8c3390043", null ],
-    [ "textChanged", "class_label.html#ac05b048246232571ffbe11ef4e1f480a", null ],
-    [ "m_text", "class_label.html#af1180badef0137fd67be285f1d6c2fe5", null ],
-    [ "m_textChanged", "class_label.html#a4b2dc1809c6f2e3cc8542a71cb2d3af7", null ]
+    [ "textChanged", "class_label.html#ac05b048246232571ffbe11ef4e1f480a", null ]
 ];

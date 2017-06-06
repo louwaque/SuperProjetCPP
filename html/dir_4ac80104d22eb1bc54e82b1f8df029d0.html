@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -87,7 +88,7 @@ $(document).ready(function(){initNavTree('dir_4ac80104d22eb1bc54e82b1f8df029d0.h
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,46 +102,48 @@ $(document).ready(function(){initNavTree('dir_4ac80104d22eb1bc54e82b1f8df029d0.h
 <div class="title">Répertoire de référence de include</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Graphe des dépendances de répertoires pour include:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances de répertoires pour include:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="dir_4ac80104d22eb1bc54e82b1f8df029d0_dep.svg" width="126" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Fichiers</h2></td></tr>
-<tr class="memitem:_graphics_anchor_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_anchor_8hpp.html">GraphicsAnchor.hpp</a> <a href="_graphics_anchor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_anchor_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsAnchor.hpp</b> <a href="_graphics_anchor_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_animation_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_animation_8hpp.html">GraphicsAnimation.hpp</a> <a href="_graphics_animation_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_animation_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsAnimation.hpp</b> <a href="_graphics_animation_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_blink_animation_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_blink_animation_8hpp.html">GraphicsBlinkAnimation.hpp</a> <a href="_graphics_blink_animation_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_blink_animation_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsBlinkAnimation.hpp</b> <a href="_graphics_blink_animation_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_circle_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_circle_8hpp.html">GraphicsCircle.hpp</a> <a href="_graphics_circle_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_circle_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsCircle.hpp</b> <a href="_graphics_circle_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_ellipse_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_ellipse_8hpp.html">GraphicsEllipse.hpp</a> <a href="_graphics_ellipse_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_ellipse_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsEllipse.hpp</b> <a href="_graphics_ellipse_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_graphics_item_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a> <a href="_graphics_item_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_graphics_item_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_item.html">GraphicsItem</a>. <br/></td></tr>
+<tr class="memdesc:_graphics_item_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_item.html" title="Classe de base. ">GraphicsItem</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_line_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_line_8hpp.html">GraphicsLine.hpp</a> <a href="_graphics_line_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_line_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsLine.hpp</b> <a href="_graphics_line_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_point_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_point_8hpp.html">GraphicsPoint.hpp</a> <a href="_graphics_point_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_point_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsPoint.hpp</b> <a href="_graphics_point_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_polygon_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_polygon_8hpp.html">GraphicsPolygon.hpp</a> <a href="_graphics_polygon_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_polygon_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsPolygon.hpp</b> <a href="_graphics_polygon_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_rectangle_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_rectangle_8hpp.html">GraphicsRectangle.hpp</a> <a href="_graphics_rectangle_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_rectangle_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsRectangle.hpp</b> <a href="_graphics_rectangle_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_graphics_shape_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_shape_8hpp.html">GraphicsShape.hpp</a> <a href="_graphics_shape_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_graphics_shape_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_shape.html">GraphicsShape</a>. <br/></td></tr>
+<tr class="memdesc:_graphics_shape_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_shape.html" title="Une forme. ">GraphicsShape</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_graphics_square_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_square_8hpp.html">GraphicsSquare.hpp</a> <a href="_graphics_square_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:_graphics_square_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsSquare.hpp</b> <a href="_graphics_square_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_graphics_text_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_text_8hpp.html">GraphicsText.hpp</a> <a href="_graphics_text_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_graphics_text_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>. <br/></td></tr>
+<tr class="memdesc:_graphics_text_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_graphics_triangle_8hpp"><td class="memItemLeft" align="right" valign="top">fichier &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_graphics_triangle_8hpp.html">GraphicsTriangle.hpp</a> <a href="_graphics_triangle_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_graphics_triangle_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_triangle.html" title="Permet la creation d&#39;un triangle. ">GraphicsTriangle</a>. <br/></td></tr>
+<tr class="memdesc:_graphics_triangle_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_graphics_triangle.html" title="Un triangle. ">GraphicsTriangle</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -149,7 +152,7 @@ Fichiers</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li>
-    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:14 pour Super Project c++ par
+    <li class="footer">Généré le Mardi 6 Juin 2017 22:05:21 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

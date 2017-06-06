@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_event.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,220 +121,53 @@ $(document).ready(function(){initNavTree('class_event.html','');});
  <a href="class_event.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_event_8hpp_source.html">Event.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Graphe d'héritage de Event:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_event__inherit__graph.svg" width="254" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de Event:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_event__inherit__graph.svg" width="248" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div class="dynheader">
-Graphe de collaboration de Event:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de Event:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_event__coll__graph.svg" width="94" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> { <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a>, 
-<a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a>
+<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <b>MouseType</b>, 
+<b>KeyType</b>
  }</td></tr>
 <tr class="separator:aa306292f6e9bf31a622e79dfc54321de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a5a40dd4708297f7031e29b39e039ae10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a5a40dd4708297f7031e29b39e039ae10">Event</a> ()</td></tr>
-<tr class="separator:a5a40dd4708297f7031e29b39e039ae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab864fd85c758006c42cd7a1b3369b483"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#ab864fd85c758006c42cd7a1b3369b483">~Event</a> ()</td></tr>
-<tr class="separator:ab864fd85c758006c42cd7a1b3369b483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c720ee042e454bc655288e00ed1e49"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#af0c720ee042e454bc655288e00ed1e49">type</a> () const =0</td></tr>
+<tr class="memitem:af0c720ee042e454bc655288e00ed1e49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0c720ee042e454bc655288e00ed1e49"></a>
+virtual EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const =0</td></tr>
 <tr class="separator:af0c720ee042e454bc655288e00ed1e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
-<tr class="memitem:a4917ed8f309f5f3ab18b52482a1f137d"><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a4917ed8f309f5f3ab18b52482a1f137d">write</a> (std::ostream &amp;os) const =0</td></tr>
+<tr class="memitem:a4917ed8f309f5f3ab18b52482a1f137d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4917ed8f309f5f3ab18b52482a1f137d"></a>
+virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;os) const =0</td></tr>
 <tr class="separator:a4917ed8f309f5f3ab18b52482a1f137d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Amis</h2></td></tr>
-<tr class="memitem:a8593a1bcdda00faa8a86e0eaaeba0446"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a8593a1bcdda00faa8a86e0eaaeba0446">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
+<tr class="memitem:a8593a1bcdda00faa8a86e0eaaeba0446"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8593a1bcdda00faa8a86e0eaaeba0446"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:a8593a1bcdda00faa8a86e0eaaeba0446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Permet la gestion des evenements. </p>
-</div><h2 class="groupheader">Documentation des énumérations membres</h2>
-<a class="anchor" id="aa306292f6e9bf31a622e79dfc54321de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">Event::EventType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef"></a>MouseType</em>&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b"></a>KeyType</em>&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
-<div class="ttc" id="class_event_html_aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b"><div class="ttname"><a href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">Event::KeyType</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:26</div></div>
-<div class="ttc" id="class_event_html_aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef"><div class="ttname"><a href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">Event::MouseType</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:25</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a5a40dd4708297f7031e29b39e039ae10"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Event::Event </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{};</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ab864fd85c758006c42cd7a1b3369b483"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Event::~Event </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{};</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Documentation des fonctions membres</h2>
-<a class="anchor" id="af0c720ee042e454bc655288e00ed1e49"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> Event::type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
-<p>Implémenté dans <a class="el" href="class_mouse_event.html#aafb7f34678f767028a61c45df1d58969">MouseEvent</a>, et <a class="el" href="class_key_event.html#a4335d1c13b1e6523ee8e3795a36218fd">KeyEvent</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_event_af0c720ee042e454bc655288e00ed1e49_icgraph.svg" width="582" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a4917ed8f309f5f3ab18b52482a1f137d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::ostream&amp; Event::write </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implémenté dans <a class="el" href="class_mouse_event.html#aa2ec9efda28b2bcf2326616c0022b228">MouseEvent</a>, et <a class="el" href="class_key_event.html#a4e9320be7f46e57ddbefebe404a067fa">KeyEvent</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Documentation des fonctions amies et associées</h2>
-<a class="anchor" id="a8593a1bcdda00faa8a86e0eaaeba0446"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_event.html">Event</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">event</span>.write(os);</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<p>Définition à la ligne <a class="el" href="_event_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="_event_8hpp_source.html">Event.hpp</a>.</p>
+</div><hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li><a class="el" href="_event_8hpp_source.html">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -342,7 +176,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_event.html">Event</a></li>
-    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:14 pour Super Project c++ par
+    <li class="footer">Généré le Mardi 6 Juin 2017 22:05:20 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

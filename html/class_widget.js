@@ -11,10 +11,5 @@ var class_widget =
     [ "setHeight", "class_widget.html#a596592adeb0032ab07347c68ebd39639", null ],
     [ "setWidth", "class_widget.html#a5c2eba0b8b25042bec8898435798c67e", null ],
     [ "width", "class_widget.html#a285c18a864b1e9c982b10d5a7cc6113c", null ],
-    [ "widthChanged", "class_widget.html#a8dce9d5665f68ca9cf374de4f5dce4be", null ],
-    [ "m_background", "class_widget.html#a23c86a9d7ee9ebc8822be733815ea2a0", null ],
-    [ "m_height", "class_widget.html#a640926dabe22000dcb70fd905d3a7401", null ],
-    [ "m_heightChanged", "class_widget.html#a20a4bf00c19f2d3762a8faac245ed45b", null ],
-    [ "m_width", "class_widget.html#a02dbfda7a9dc62eef4b37a3ced76e902", null ],
-    [ "m_widthChanged", "class_widget.html#ac0f295e263f294c3b4f22a7ab392407f", null ]
+    [ "widthChanged", "class_widget.html#a8dce9d5665f68ca9cf374de4f5dce4be", null ]
 ];
