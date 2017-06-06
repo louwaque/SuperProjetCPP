@@ -24,6 +24,8 @@ void LineEdit::setText(const std::string &text)
 
   m_line->first()->setAnchor(Point(m_text->font().width()*std::max(int(m_text->text().size()), 0), 0));
   m_line->second()->setAnchor(Point(0, int(m_text->font().height())));
+
+  m_textChanged();
 }
 
 void LineEdit::meHandleEvent(const Event &event)

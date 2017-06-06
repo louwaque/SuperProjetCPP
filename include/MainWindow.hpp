@@ -16,6 +16,7 @@ protected:
   void mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button);
   void updateEvent(const unsigned int time);
   void handleEvent(const Event &event);
+  void createRectangle();
 
 private:
   GraphicsItem m_scene;

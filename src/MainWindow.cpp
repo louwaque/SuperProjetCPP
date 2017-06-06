@@ -9,11 +9,16 @@
 #include "../include/GraphicsEllipse.hpp"
 #include "../include/GraphicsSquare.hpp"
 #include "../include/GraphicsBlinkAnimation.hpp"
+#include "../include/GraphicsItem.hpp"
 #include <LineEdit.hpp>
+#include <Button.hpp>
+#include <iostream>
+
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
 {
+
   GraphicsPoint *point = new GraphicsPoint(&m_scene);
   point->setAbsolute({50, 50});
   point->setColor(Color(Color::Blue));
@@ -71,6 +76,30 @@ MainWindow::MainWindow()
 
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->setAbsolute({100, 500});
+
+  Button *button = new Button("Ajouter une forme",&m_scene);
+  button->setAbsolute({50,150});
+  button->clicked_left([this](){
+    std::cout << "SA MARCHE A GAUCHE" << std::endl;
+    GraphicsRectangle *b_rectangle = new GraphicsRectangle(&m_scene);
+    b_rectangle->setAbsolute({200,150});
+    b_rectangle->setHeight(50);
+    b_rectangle->setWidth(70);
+  });
+  button->clicked_right([this](){
+    std::cout << "SA MARCHE A DROITE" << std::endl;
+    GraphicsCircle *b_circle = new GraphicsCircle(&m_scene);
+    b_circle->setAbsolute({300,250});
+    b_circle->radius()->setAnchor({50, 50});
+  });
+
+  Button *button_agrandir = new Button("Agrandir le rectangle",&m_scene);
+  button_agrandir->setAbsolute({100,175});
+  button_agrandir->clicked_left([this](){
+    if(m_scene.focusItem().GraphicsTypes="RectangleType"){
+      m_scene.focusItem()->setWidth(50);
+    }
+  });
 }
 
 void MainWindow::drawEvent()
@@ -80,10 +109,10 @@ void MainWindow::drawEvent()
 
 void MainWindow::mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button)
 {
-  // for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
-  //   if (item->isOver(mousePos))
-  //     currentItem = item;
-  // }
+    // for (GraphicsItem *item : m_scene.children(GraphicsItem::PointType)) {
+    // if (item->isOver(mousePos))
+    //   currentItem = item;
+    //}
 }
 
 void MainWindow::mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button)
