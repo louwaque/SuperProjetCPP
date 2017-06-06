@@ -1,11 +1,11 @@
 <map id="LineEdit" name="LineEdit">
-<area shape="rect" id="node2" href="$class_widget.html" title="{Widget\n||+ Widget()\l}" alt="" coords="5,1051,87,1128"/>
-<area shape="rect" id="node3" href="$class_graphics_item.html" title="{GraphicsItem\n|&#45; m_children\l&#45; m_z\l&#45; m_thick\l&#45; m_isFill\l&#45; m_isVisible\l|+ GraphicsItem()\l+ ~GraphicsItem()\l+ parent()\l+ setParent()\l+ type()\l+ children()\l+ position()\l+ position()\l+ color()\l+ z()\let 13 de plus...\l+ focusItem()\l+ setFocusItem()\l# meDraw()\l# meUpdate()\l# meHandleEvent()\l# meIsOver()\l}" alt="" coords="177,352,311,723"/>
-<area shape="rect" id="node7" href="$class_graphics_shape.html" title="{GraphicsShape\n|# m_points\l|+ GraphicsShape()\l+ type()\l# meDraw()\l}" alt="" coords="217,853,347,960"/>
-<area shape="rect" id="node8" href="$class_graphics_text.html" title="Permet la creation de text. " alt="" coords="73,787,193,1026"/>
-<area shape="rect" id="node10" href="$class_graphics_rectangle.html" title="Permet la creation d&#39;un rectangle. " alt="" coords="371,787,524,1026"/>
-<area shape="rect" id="node4" href="$class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. " alt="" coords="355,5,508,288"/>
-<area shape="rect" id="node5" href="$class_color.html" title="Permet la gestion des coulours des différentes *entitées. " alt="" coords="193,35,295,259"/>
-<area shape="rect" id="node6" href="$class_graphics_line.html" title="{GraphicsLine\n||+ GraphicsLine()\l+ first()\l+ first()\l+ second()\l+ second()\l+ type()\l}" alt="" coords="213,1153,331,1303"/>
-<area shape="rect" id="node9" href="$class_font.html" title="{Font\n|&#45; m_id\l&#45; m_width\l&#45; m_height\l|+ Font()\l+ set()\l+ id()\l+ width()\l+ height()\l}" alt="" coords="69,455,151,620"/>
+<area shape="rect" id="node2" href="$class_widget.html" title="{Widget\n|&#45; m_width\l&#45; m_height\l&#45; m_widthChanged\l&#45; m_heightChanged\l|+ Widget()\l+ width()\l+ setWidth()\l+ height()\l+ setHeight()\l+ minimumWidth()\l+ minimumHeight()\l+ widthChanged()\l+ heightChanged()\l}" alt="" coords="139,1062,273,1301"/>
+<area shape="rect" id="node3" href="$class_graphics_item.html" title="{GraphicsItem\n|&#45; m_children\l&#45; m_positionCorrector\l&#45; m_z\l&#45; m_thick\l&#45; m_isFill\l&#45; m_isVisible\l|+ GraphicsItem()\l+ ~GraphicsItem()\l+ parent()\l+ setParent()\l+ type()\l+ children()\l+ anchor()\l+ setAnchor()\l+ absolute()\l+ setAbsolute()\let 17 de plus...\l+ focusItem()\l+ setFocusItem()\l# meDraw()\l# meUpdate()\l# meHandleEvent()\l# meIsOver()\l}" alt="" coords="163,294,309,679"/>
+<area shape="rect" id="node6" href="$class_graphics_rectangle.html" title="Permet la creation d&#39;un rectangle. " alt="" coords="203,773,356,982"/>
+<area shape="rect" id="node8" href="$class_graphics_shape.html" title="{GraphicsShape\n|# m_points\l|+ GraphicsShape()\l+ type()\l# meDraw()\l}" alt="" coords="400,824,529,931"/>
+<area shape="rect" id="node9" href="$class_graphics_text.html" title="Permet la creation de text. " alt="" coords="5,758,125,997"/>
+<area shape="rect" id="node4" href="$class_point.html" title="Représente un point (x, y) " alt="" coords="137,13,216,222"/>
+<area shape="rect" id="node5" href="$class_color.html" title="Permet la gestion des coulours des différentes *entitées. " alt="" coords="242,5,344,229"/>
+<area shape="rect" id="node7" href="$class_graphics_line.html" title="{GraphicsLine\n||+ GraphicsLine()\l+ first()\l+ second()\l+ type()\l}" alt="" coords="427,1121,545,1242"/>
+<area shape="rect" id="node10" href="$class_font.html" title="{Font\n|&#45; m_id\l&#45; m_width\l&#45; m_height\l|+ Font()\l+ set()\l+ id()\l+ width()\l+ height()\l}" alt="" coords="21,404,103,569"/>
 </map>

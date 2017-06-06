@@ -5,7 +5,6 @@ var searchData=
   ['init',['init',['../svgpan_8js.html#a898016c74bec720a57cce798a2ed4ee2',1,'svgpan.js']]],
   ['initnavtree',['initNavTree',['../navtree_8js.html#aa7b3067e7ef0044572ba86240b1e58ce',1,'navtree.js']]],
   ['initresizable',['initResizable',['../resize_8js.html#a4d56aa7aa73d0ddf385565075fdfe271',1,'resize.js']]],
-  ['isalone',['isAlone',['../class_point.html#a64a5fe8c9b1d1a1543aaa64031537380',1,'Point']]],
   ['isfill',['isFill',['../class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434',1,'GraphicsItem']]],
   ['isover',['isOver',['../class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7',1,'GraphicsItem']]],
   ['isvisible',['isVisible',['../class_window.html#ab99d21f928e805cd862cba08cf107a1b',1,'Window::isVisible()'],['../class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605',1,'GraphicsItem::isVisible()']]]

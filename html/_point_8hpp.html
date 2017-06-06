@@ -114,13 +114,10 @@ $(document).ready(function(){initNavTree('_point_8hpp.html','');});
 <p>Classe point.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;memory&gt;</code><br/>
-<code>#include &quot;<a class="el" href="_group_points_8hpp_source.html">GroupPoints.hpp</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de Point.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp__incl.svg" width="402" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp__incl.svg" width="86" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -135,7 +132,7 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html">Point</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente un point avec une abscisse, une ordonnée et une origine.  <a href="class_point.html#details">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représente un point (x, y)  <a href="class_point.html#details">Plus de détails...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -201,17 +198,17 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                                {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()+r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()+r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:32</div></div>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()+r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()+r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a4158330ef851082d91a82eefd03aa183_cgraph.svg" width="494" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a4158330ef851082d91a82eefd03aa183_cgraph.svg" width="203" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -251,17 +248,17 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                                  {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()+number, p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()+number);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:32</div></div>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()+number, p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()+number);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_ae44f691efaa50cc00e591b91b73c8be4_cgraph.svg" width="494" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_ae44f691efaa50cc00e591b91b73c8be4_cgraph.svg" width="203" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -296,22 +293,22 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Soustraits les coordonées de deux points entre eux</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> diminuende </td></tr>
-    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> diminuteur </td></tr>
+    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> diminuende </td></tr>
+    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> diminuteur </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()-r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()-r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:32</div></div>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()-r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()-r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_af304a4bde169f417ea02e56d3d4b7258_cgraph.svg" width="491" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_af304a4bde169f417ea02e56d3d4b7258_cgraph.svg" width="200" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -346,22 +343,22 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Soustraits des valeurs aux coordonée d'un point</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> diminuende </td></tr>
+    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> diminuende </td></tr>
     <tr><td class="paramname">r</td><td>valeur diminuteur </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                  {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()-number, p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()-number);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:32</div></div>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                  {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_point.html">Point</a>(p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>()-number, p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>()-number);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point (x, y) </div><div class="ttdef"><b>Definition:</b> Point.hpp:21</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_af594655c05f043397ea0e56df21a7245_cgraph.svg" width="491" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_af594655c05f043397ea0e56df21a7245_cgraph.svg" width="200" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -396,21 +393,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Test si les coordonnées d'un premier point sont inferieur à un autre</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> comparé </td></tr>
-    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> comparant </td></tr>
+    <tr><td class="paramname">l</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> comparé </td></tr>
+    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> comparant </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                               {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">return</span> l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() &lt; r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() and l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() &lt; r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                               {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() &lt; r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() and l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() &lt; r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a4e1acba0f26daf714b7816d3c1994a74_cgraph.svg" width="494" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a4e1acba0f26daf714b7816d3c1994a74_cgraph.svg" width="203" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -446,20 +443,20 @@ Voici le graphe d'appel pour cette fonction :</div>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>Flux d'injection </td></tr>
-    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point avec une abscisse, une ordonnée et une origine. ">Point</a> injecté dans os </td></tr>
+    <tr><td class="paramname">r</td><td><a class="el" href="class_point.html" title="Représente un point (x, y) ">Point</a> injecté dans os </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                       {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">return</span> os &lt;&lt; p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                       {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> os &lt;&lt; p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_aab55cf13db83c55c46a961b2b2441960_cgraph.svg" width="502" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_aab55cf13db83c55c46a961b2b2441960_cgraph.svg" width="211" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -499,16 +496,16 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">return</span> l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() == r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() and l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() == r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:73</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:81</div></div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">return</span> l.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() == r.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() and l.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() == r.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">recupere la valeur de l&#39;absisse du Point. </div><div class="ttdef"><b>Definition:</b> Point.hpp:62</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Fonction recuperant le valeur de l&#39;ordonée. </div><div class="ttdef"><b>Definition:</b> Point.hpp:70</div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a872cb140a1e5f546a31b4b3d891b765a_cgraph.svg" width="502" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_point_8hpp_a872cb140a1e5f546a31b4b3d891b765a_cgraph.svg" width="211" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -521,7 +518,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_29886abfd05d10f353d5e88e3822275c.html">include</a></li><li class="navelem"><a class="el" href="_point_8hpp.html">Point.hpp</a></li>
-    <li class="footer">Généré le Mardi 6 Juin 2017 19:56:08 pour Super Project c++ par
+    <li class="footer">Généré le Mardi 6 Juin 2017 20:58:14 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

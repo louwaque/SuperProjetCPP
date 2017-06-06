@@ -5,8 +5,6 @@ var files =
     [ "_event_8cpp.js", "__event__8cpp_8js.html", "__event__8cpp_8js" ],
     [ "_font_8cpp.js", "__font__8cpp_8js.html", "__font__8cpp_8js" ],
     [ "_font_8hpp.js", "__font__8hpp_8js.html", "__font__8hpp_8js" ],
-    [ "_graphics_square_8cpp.js", "__graphics__square__8cpp_8js.html", "__graphics__square__8cpp_8js" ],
-    [ "_group_points_8hpp.js", "__group__points__8hpp_8js.html", "__group__points__8hpp_8js" ],
     [ "_point_8cpp.js", "__point__8cpp_8js.html", "__point__8cpp_8js" ],
     [ "_point_8hpp.js", "__point__8hpp_8js.html", "__point__8hpp_8js" ],
     [ "all_0.js", "all__0_8js.html", "all__0_8js" ],
@@ -21,7 +19,6 @@ var files =
     [ "all_17.js", "all__17_8js.html", "all__17_8js" ],
     [ "all_18.js", "all__18_8js.html", "all__18_8js" ],
     [ "all_19.js", "all__19_8js.html", "all__19_8js" ],
-    [ "all_1a.js", "all__1a_8js.html", "all__1a_8js" ],
     [ "all_2.js", "all__2_8js.html", "all__2_8js" ],
     [ "all_3.js", "all__3_8js.html", "all__3_8js" ],
     [ "all_4.js", "all__4_8js.html", "all__4_8js" ],
@@ -41,15 +38,21 @@ var files =
     [ "Application.hpp", "_application_8hpp.html", [
       [ "Application", "class_application.html", "class_application" ]
     ] ],
+    [ "Button.cpp", "_button_8cpp.html", null ],
+    [ "Button.hpp", "_button_8hpp.html", [
+      [ "Button", "class_button.html", "class_button" ]
+    ] ],
     [ "Canvas.cpp", "_canvas_8cpp.html", null ],
     [ "Canvas.hpp", "_canvas_8hpp.html", [
       [ "Canvas", "class_canvas.html", "class_canvas" ]
     ] ],
     [ "class_application.js", "class__application_8js.html", "class__application_8js" ],
+    [ "class_button.js", "class__button_8js.html", "class__button_8js" ],
     [ "class_canvas.js", "class__canvas_8js.html", "class__canvas_8js" ],
     [ "class_color.js", "class__color_8js.html", "class__color_8js" ],
     [ "class_event.js", "class__event_8js.html", "class__event_8js" ],
     [ "class_font.js", "class__font_8js.html", "class__font_8js" ],
+    [ "class_graphics_anchor.js", "class__graphics__anchor_8js.html", "class__graphics__anchor_8js" ],
     [ "class_graphics_animation.js", "class__graphics__animation_8js.html", "class__graphics__animation_8js" ],
     [ "class_graphics_blink_animation.js", "class__graphics__blink__animation_8js.html", "class__graphics__blink__animation_8js" ],
     [ "class_graphics_circle.js", "class__graphics__circle_8js.html", "class__graphics__circle_8js" ],
@@ -63,8 +66,8 @@ var files =
     [ "class_graphics_square.js", "class__graphics__square_8js.html", "class__graphics__square_8js" ],
     [ "class_graphics_text.js", "class__graphics__text_8js.html", "class__graphics__text_8js" ],
     [ "class_graphics_triangle.js", "class__graphics__triangle_8js.html", "class__graphics__triangle_8js" ],
-    [ "class_group_points.js", "class__group__points_8js.html", "class__group__points_8js" ],
     [ "class_key_event.js", "class__key__event_8js.html", "class__key__event_8js" ],
+    [ "class_label.js", "class__label_8js.html", "class__label_8js" ],
     [ "class_line_edit.js", "class__line__edit_8js.html", "class__line__edit_8js" ],
     [ "class_main_window.js", "class__main__window_8js.html", "class__main__window_8js" ],
     [ "class_mouse_event.js", "class__mouse__event_8js.html", "class__mouse__event_8js" ],
@@ -83,6 +86,7 @@ var files =
     [ "classes_8.js", "classes__8_8js.html", "classes__8_8js" ],
     [ "classes_9.js", "classes__9_8js.html", "classes__9_8js" ],
     [ "classes_a.js", "classes__a_8js.html", "classes__a_8js" ],
+    [ "classes_b.js", "classes__b_8js.html", "classes__b_8js" ],
     [ "CMakeCCompilerId.c", "_c_make_c_compiler_id_8c.html", "_c_make_c_compiler_id_8c" ],
     [ "CMakeCXXCompilerId.cpp", "_c_make_c_x_x_compiler_id_8cpp.html", "_c_make_c_x_x_compiler_id_8cpp" ],
     [ "Color.cpp", "_color_8cpp.html", null ],
@@ -140,6 +144,7 @@ var files =
     [ "files_9.js", "files__9_8js.html", "files__9_8js" ],
     [ "files_a.js", "files__a_8js.html", "files__a_8js" ],
     [ "files_b.js", "files__b_8js.html", "files__b_8js" ],
+    [ "files_c.js", "files__c_8js.html", "files__c_8js" ],
     [ "Font.cpp", "_font_8cpp.html", "_font_8cpp" ],
     [ "Font.hpp", "_font_8hpp.html", "_font_8hpp" ],
     [ "functions_0.js", "functions__0_8js.html", "functions__0_8js" ],
@@ -154,7 +159,6 @@ var files =
     [ "functions_17.js", "functions__17_8js.html", "functions__17_8js" ],
     [ "functions_18.js", "functions__18_8js.html", "functions__18_8js" ],
     [ "functions_19.js", "functions__19_8js.html", "functions__19_8js" ],
-    [ "functions_1a.js", "functions__1a_8js.html", "functions__1a_8js" ],
     [ "functions_2.js", "functions__2_8js.html", "functions__2_8js" ],
     [ "functions_3.js", "functions__3_8js.html", "functions__3_8js" ],
     [ "functions_4.js", "functions__4_8js.html", "functions__4_8js" ],
@@ -171,6 +175,10 @@ var files =
     [ "functions_e.js", "functions__e_8js.html", "functions__e_8js" ],
     [ "functions_f.js", "functions__f_8js.html", "functions__f_8js" ],
     [ "functions_func.js", "functions__func_8js.html", "functions__func_8js" ],
+    [ "GraphicsAnchor.cpp", "_graphics_anchor_8cpp.html", null ],
+    [ "GraphicsAnchor.hpp", "_graphics_anchor_8hpp.html", [
+      [ "GraphicsAnchor", "class_graphics_anchor.html", "class_graphics_anchor" ]
+    ] ],
     [ "GraphicsAnimation.cpp", "_graphics_animation_8cpp.html", null ],
     [ "GraphicsAnimation.hpp", "_graphics_animation_8hpp.html", [
       [ "GraphicsAnimation", "class_graphics_animation.html", "class_graphics_animation" ]
@@ -211,7 +219,7 @@ var files =
     [ "GraphicsShape.hpp", "_graphics_shape_8hpp.html", [
       [ "GraphicsShape", "class_graphics_shape.html", "class_graphics_shape" ]
     ] ],
-    [ "GraphicsSquare.cpp", "_graphics_square_8cpp.html", "_graphics_square_8cpp" ],
+    [ "GraphicsSquare.cpp", "_graphics_square_8cpp.html", null ],
     [ "GraphicsSquare.hpp", "_graphics_square_8hpp.html", [
       [ "GraphicsSquare", "class_graphics_square.html", "class_graphics_square" ]
     ] ],
@@ -223,13 +231,15 @@ var files =
     [ "GraphicsTriangle.hpp", "_graphics_triangle_8hpp.html", [
       [ "GraphicsTriangle", "class_graphics_triangle.html", "class_graphics_triangle" ]
     ] ],
-    [ "GroupPoints.cpp", "_group_points_8cpp.html", null ],
-    [ "GroupPoints.hpp", "_group_points_8hpp.html", "_group_points_8hpp" ],
     [ "hierarchy.js", "hierarchy_8js.html", "hierarchy_8js" ],
     [ "jquery.js", "jquery_8js.html", "jquery_8js" ],
     [ "KeyEvent.cpp", "_key_event_8cpp.html", null ],
     [ "KeyEvent.hpp", "_key_event_8hpp.html", [
       [ "KeyEvent", "class_key_event.html", "class_key_event" ]
+    ] ],
+    [ "Label.cpp", "_label_8cpp.html", null ],
+    [ "Label.hpp", "_label_8hpp.html", [
+      [ "Label", "class_label.html", "class_label" ]
     ] ],
     [ "LineEdit.cpp", "_line_edit_8cpp.html", null ],
     [ "LineEdit.hpp", "_line_edit_8hpp.html", [
@@ -253,7 +263,6 @@ var files =
     [ "Point.cpp", "_point_8cpp.html", "_point_8cpp" ],
     [ "Point.hpp", "_point_8hpp.html", "_point_8hpp" ],
     [ "related_0.js", "related__0_8js.html", "related__0_8js" ],
-    [ "related_1.js", "related__1_8js.html", "related__1_8js" ],
     [ "resize.js", "resize_8js.html", "resize_8js" ],
     [ "search.js", "search_8js.html", "search_8js" ],
     [ "svgpan.js", "svgpan_8js.html", "svgpan_8js" ],

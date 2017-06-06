@@ -17,7 +17,9 @@ var hierarchy =
       [ "GraphicsAnimation", "class_graphics_animation.html", [
         [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
       ] ],
-      [ "GraphicsPoint", "class_graphics_point.html", null ],
+      [ "GraphicsPoint", "class_graphics_point.html", [
+        [ "GraphicsAnchor", "class_graphics_anchor.html", null ]
+      ] ],
       [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
       [ "GraphicsShape", "class_graphics_shape.html", [
         [ "GraphicsCircle", "class_graphics_circle.html", null ],
@@ -30,9 +32,10 @@ var hierarchy =
       [ "GraphicsText", "class_graphics_text.html", null ],
       [ "ToolsWindows", "class_tools_windows.html", null ],
       [ "Widget", "class_widget.html", [
+        [ "Button", "class_button.html", null ],
+        [ "Label", "class_label.html", null ],
         [ "LineEdit", "class_line_edit.html", null ]
       ] ]
     ] ],
-    [ "GroupPoints", "class_group_points.html", null ],
     [ "Point", "class_point.html", null ]
 ];
