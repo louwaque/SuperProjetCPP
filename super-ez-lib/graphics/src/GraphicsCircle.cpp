@@ -1,22 +1,28 @@
 #include "../include/GraphicsCircle.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
 #include <cmath>
 
 GraphicsCircle::GraphicsCircle(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
-  m_points.emplace_back();
-  m_points.emplace_back();
+  m_points.emplace_back(&position());
+  m_points.emplace_back(&position());
+}
+
+int GraphicsCircle::radius() const
+{
+  Point distP = radiusPt() - center();
+  return hypot(distP.x(), distP.y());
+}
+
+void GraphicsCircle::setRadius(const int radius)
+{
+  //FIXME faire des maths
 }
 
 void GraphicsCircle::meDraw(Canvas *canvas)
 {
-  if (canvas) {
-    Point distP = radius() - center();
-    int dist = hypot(distP.x(), distP.y());
-    canvas->drawCircle(center() - dist, center() + dist, isFill());
-  }
+  if (canvas)
+    canvas->drawCircle(center() - radius(), center() + radius(), isFill());
 }
 
 bool GraphicsCircle::meIsOver(const Point &absoluteP)
