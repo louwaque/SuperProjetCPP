@@ -1,6 +1,4 @@
 #include "../include/GraphicsSquare.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
 #include <boost/bind.hpp>
 #include <cmath>
 

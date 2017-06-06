@@ -3,13 +3,16 @@
 
 #include "GraphicsItem.hpp"
 
+//FIXME utiliser GraphicsShape ?
 class GraphicsSquare : public GraphicsItem
 {
 public:
   explicit GraphicsSquare(GraphicsItem *parent = nullptr);
 
+  inline const Point &topLeft() const { return m_topLeft; }
   inline Point &topLeft() { return m_topLeft; }
 
+  inline const Point &bottomRight() const { return m_bottomRight; }
   inline Point &bottomRight() { return m_bottomRight; }
 
   GraphicsTypes type() const {
