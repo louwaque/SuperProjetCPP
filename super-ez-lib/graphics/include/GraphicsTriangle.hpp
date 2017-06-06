@@ -13,52 +13,31 @@
 
 /*!
  * \class GraphicsTriangle
- * \brief Permet la creation d'un triangle
- *
+ * \brief Représente un triangle quelconque
  */
 
-class GraphicsTriangle : public GraphicsShape {
-
+class GraphicsTriangle : public GraphicsShape
+{
 public:
-
-  /*!
-   * \brief Constructeur par default de la classe GraphicsTriangle.
-   *
-   * Crée une instance de GraphicsTriangle.
-   *
-   */
-
   explicit GraphicsTriangle(GraphicsItem *parent = nullptr);
 
   /*!
-   *  \brief recupere les coordonées du premier point du triangle.
-   *
-   *  \return coordonées d'un point
+   *  \brief Donne le premier point du triangle.
    */
 
-  inline GraphicsItem *first() { return m_points[0]; }
+  inline Point &first() { return m_points[0]; }
 
   /*!
-   *  \brief recupere les coordonées du second point du triangle.
-   *
-   *  \return coordonées d'un point
+   *  \brief Donne le second point du triangle.
    */
 
-  inline GraphicsItem *second() {  return m_points[1]; }
+  inline Point &second() {  return m_points[1]; }
 
   /*!
-   *  \brief recupere les coordonées du troisième point du triangle.
-   *
-   *  \return coordonées d'un point
+   *  \brief Donne le troisième point du triangle.
    */
 
-  inline GraphicsItem *third() {  return m_points[2]; }
-
-  /*!
-   *  \brief recupere le type de l'instance courrante.
-   *
-   *  \return type de GraphicsTriangle.
-   */
+  inline Point &third() {  return m_points[2]; }
 
   inline GraphicsTypes type() const { return TriangleType; }
 };
