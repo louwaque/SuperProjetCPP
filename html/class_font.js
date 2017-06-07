@@ -10,5 +10,8 @@ var class_font =
     [ "height", "class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70", null ],
     [ "id", "class_font.html#a725886ab08bf4a47298a399bce7fc0fb", null ],
     [ "set", "class_font.html#a1c1e07adf3c8de1a86bbed0954cb97c9", null ],
-    [ "width", "class_font.html#ad96d9cd6356edf670103542dbe4336c3", null ]
+    [ "width", "class_font.html#ad96d9cd6356edf670103542dbe4336c3", null ],
+    [ "m_height", "class_font.html#a936036493a9f33bdc5f1db302481706e", null ],
+    [ "m_id", "class_font.html#a7647e629c303920e0196efab6740205c", null ],
+    [ "m_width", "class_font.html#a0a4152df9ca9966f3e52c98247696c26", null ]
 ];

@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_font.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,22 +112,25 @@ $(document).ready(function(){initNavTree('class_font.html','');});
 
 <p>Liste complète des membres de <a class="el" href="class_font.html">Font</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>AvailableFont</b> énumération (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Font</b>(const AvailableFont font=w6h13) (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>height</b>() const  (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>id</b>() const  (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set</b>(const AvailableFont font) (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>w10h20</b> valeur énumérée (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>w12h24</b> valeur énumérée (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>w6h13</b> valeur énumérée (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>w8h16</b> valeur énumérée (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>width</b>() const  (défini dans <a class="el" href="class_font.html">Font</a>)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732">AvailableFont</a> énumération</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a7bbf9495ba646ebff6339684696c418e">Font</a>(const AvailableFont font=w6h13)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a9f5b8e83d5efd7d4df3c905864cf9c70">height</a>() const </td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a725886ab08bf4a47298a399bce7fc0fb">id</a>() const </td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a936036493a9f33bdc5f1db302481706e">m_height</a></td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a7647e629c303920e0196efab6740205c">m_id</a></td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a0a4152df9ca9966f3e52c98247696c26">m_width</a></td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a1c1e07adf3c8de1a86bbed0954cb97c9">set</a>(const AvailableFont font)</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732ab92b0bde8270f588058f56b960e58cf7">w10h20</a> valeur énumérée</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732abc43f3fd3ab1f0102de3b976a483c448">w12h24</a> valeur énumérée</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732a9fcacfdd9ba2c04d64eba0f3d33901e6">w6h13</a> valeur énumérée</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_font.html#a43105a4e0a56e22420dee1fd2f984732a209fe5f61020f9873db5ac1e2c24bc5f">w8h16</a> valeur énumérée</td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_font.html#ad96d9cd6356edf670103542dbe4336c3">width</a>() const </td><td class="entry"><a class="el" href="class_font.html">Font</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

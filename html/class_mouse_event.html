@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_mouse_event.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,6 +109,7 @@ $(document).ready(function(){initNavTree('class_mouse_event.html','');});
 <a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_mouse_event-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe MouseEvent</div>  </div>
@@ -120,82 +120,448 @@ $(document).ready(function(){initNavTree('class_mouse_event.html','');});
  <a href="class_mouse_event.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_mouse_event_8hpp_source.html">MouseEvent.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de MouseEvent:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event__inherit__graph.svg" width="126" height="347"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe d'héritage de MouseEvent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event__inherit__graph.svg" width="126" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de MouseEvent:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event__coll__graph.svg" width="126" height="347"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe de collaboration de MouseEvent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event__coll__graph.svg" width="352" height="539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:aa9b4e97077d24cac35e47a04807aca4f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseButton</b> : uint { <br/>
-&#160;&#160;<b>LeftButton</b> = 1, 
-<b>MiddleButton</b> = 2, 
-<b>RightButton</b> = 3, 
-<b>UpWheel</b> = 4, 
+<tr class="memitem:aa9b4e97077d24cac35e47a04807aca4f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a> : uint { <br/>
+&#160;&#160;<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268">LeftButton</a> = 1, 
+<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa4c7aa263d24eb0888a85efbdb5a38d7a">MiddleButton</a> = 2, 
+<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fad494180e77a6c97dc92752fe0c45376d">RightButton</a> = 3, 
+<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fae34771b0f6c7aba68978b83530687189">UpWheel</a> = 4, 
 <br/>
-&#160;&#160;<b>DownWheel</b> = 5, 
-<b>LeftWheel</b> = 6, 
-<b>RightWheel</b> = 7
+&#160;&#160;<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4faade281154fd1abc228085c80107f4030">DownWheel</a> = 5, 
+<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf">LeftWheel</a> = 6, 
+<a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa1dd9cb226f89db382eee39cde2c1b453">RightWheel</a> = 7
 <br/>
  }</td></tr>
 <tr class="separator:aa9b4e97077d24cac35e47a04807aca4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dcc45966a65644eaa69d99227d38ace"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>MouseState</b> { <b>ButtonPressed</b>, 
-<b>ButtonReleased</b>, 
-<b>MouseMoved</b>
+<tr class="memitem:a1dcc45966a65644eaa69d99227d38ace"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a> { <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38acea6c43ea43d17b8b05b0df088c9d215f5d">ButtonPressed</a>, 
+<a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceae6d912e9d3495171b5e7f1458f49317f">ButtonReleased</a>, 
+<a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145">MouseMoved</a>
  }</td></tr>
 <tr class="separator:a1dcc45966a65644eaa69d99227d38ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_event')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_event.html">Event</a></td></tr>
-<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <b>MouseType</b>, 
-<b>KeyType</b>
+<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> { <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a>, 
+<a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a>
  }</td></tr>
 <tr class="separator:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:aab0057ea7e0a43ab52e155cd8059129a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab0057ea7e0a43ab52e155cd8059129a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MouseEvent</b> (const MouseButton button, const MouseState state, const <a class="el" href="class_point.html">Point</a> &amp;position)</td></tr>
+<tr class="memitem:aab0057ea7e0a43ab52e155cd8059129a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#aab0057ea7e0a43ab52e155cd8059129a">MouseEvent</a> (const <a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a> <a class="el" href="class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2">button</a>, const <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a> <a class="el" href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">state</a>, const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="class_mouse_event.html#a99ec3c735c6e61b96d539c5638b23608">position</a>)</td></tr>
 <tr class="separator:aab0057ea7e0a43ab52e155cd8059129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6ecbcf9e517c6e0e3d76c66ff40e74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6ecbcf9e517c6e0e3d76c66ff40e74"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MouseEvent</b> (const EZEvent &amp;event, const MouseState state)</td></tr>
+<tr class="memitem:a4c6ecbcf9e517c6e0e3d76c66ff40e74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a4c6ecbcf9e517c6e0e3d76c66ff40e74">MouseEvent</a> (const EZEvent &amp;event, const <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a> <a class="el" href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">state</a>)</td></tr>
 <tr class="separator:a4c6ecbcf9e517c6e0e3d76c66ff40e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e718c62022dc4296078294b5c6eb3e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e718c62022dc4296078294b5c6eb3e2"></a>
-MouseButton&#160;</td><td class="memItemRight" valign="bottom"><b>button</b> () const </td></tr>
+<tr class="memitem:a0e718c62022dc4296078294b5c6eb3e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2">button</a> () const </td></tr>
 <tr class="separator:a0e718c62022dc4296078294b5c6eb3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0750646f0011ff65b384f108594208a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0750646f0011ff65b384f108594208a3"></a>
-MouseState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const </td></tr>
+<tr class="memitem:a0750646f0011ff65b384f108594208a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">state</a> () const </td></tr>
 <tr class="separator:a0750646f0011ff65b384f108594208a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ec3c735c6e61b96d539c5638b23608"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99ec3c735c6e61b96d539c5638b23608"></a>
-<a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () const </td></tr>
+<tr class="memitem:a99ec3c735c6e61b96d539c5638b23608"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a99ec3c735c6e61b96d539c5638b23608">position</a> () const </td></tr>
 <tr class="separator:a99ec3c735c6e61b96d539c5638b23608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb7f34678f767028a61c45df1d58969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafb7f34678f767028a61c45df1d58969"></a>
-EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr class="memitem:aafb7f34678f767028a61c45df1d58969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#aafb7f34678f767028a61c45df1d58969">type</a> () const </td></tr>
 <tr class="separator:aafb7f34678f767028a61c45df1d58969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_event')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_event.html">Event</a></td></tr>
+<tr class="memitem:a5a40dd4708297f7031e29b39e039ae10 inherit pub_methods_class_event"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a5a40dd4708297f7031e29b39e039ae10">Event</a> ()</td></tr>
+<tr class="separator:a5a40dd4708297f7031e29b39e039ae10 inherit pub_methods_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab864fd85c758006c42cd7a1b3369b483 inherit pub_methods_class_event"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#ab864fd85c758006c42cd7a1b3369b483">~Event</a> ()</td></tr>
+<tr class="separator:ab864fd85c758006c42cd7a1b3369b483 inherit pub_methods_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
-<tr class="memitem:aa2ec9efda28b2bcf2326616c0022b228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2ec9efda28b2bcf2326616c0022b228"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;os) const </td></tr>
+<tr class="memitem:aa2ec9efda28b2bcf2326616c0022b228"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#aa2ec9efda28b2bcf2326616c0022b228">write</a> (std::ostream &amp;os) const </td></tr>
 <tr class="separator:aa2ec9efda28b2bcf2326616c0022b228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a35bb89d9ad4f48f7f8ee6dc95bd14ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">m_button</a></td></tr>
+<tr class="separator:a35bb89d9ad4f48f7f8ee6dc95bd14ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68e178b7ad6ab86120598a81534f13b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">m_state</a></td></tr>
+<tr class="separator:aa68e178b7ad6ab86120598a81534f13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415ad58ed04e7a8047e1e5d16c46063d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">m_position</a></td></tr>
+<tr class="separator:a415ad58ed04e7a8047e1e5d16c46063d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Permet la gestion des evenements à la souri. </p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseEvent::MouseButton</a> : uint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268"></a>LeftButton</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fa4c7aa263d24eb0888a85efbdb5a38d7a"></a>MiddleButton</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fad494180e77a6c97dc92752fe0c45376d"></a>RightButton</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fae34771b0f6c7aba68978b83530687189"></a>UpWheel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4faade281154fd1abc228085c80107f4030"></a>DownWheel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf"></a>LeftWheel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aa9b4e97077d24cac35e47a04807aca4fa1dd9cb226f89db382eee39cde2c1b453"></a>RightWheel</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                   : uint {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268">LeftButton</a> = 1,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa4c7aa263d24eb0888a85efbdb5a38d7a">MiddleButton</a> = 2,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fad494180e77a6c97dc92752fe0c45376d">RightButton</a> = 3,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fae34771b0f6c7aba68978b83530687189">UpWheel</a> = 4,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4faade281154fd1abc228085c80107f4030">DownWheel</a> = 5,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf">LeftWheel</a> = 6,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa1dd9cb226f89db382eee39cde2c1b453">RightWheel</a> = 7</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  };</div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268">MouseEvent::LeftButton</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:25</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fae34771b0f6c7aba68978b83530687189"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fae34771b0f6c7aba68978b83530687189">MouseEvent::UpWheel</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:28</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4faade281154fd1abc228085c80107f4030"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4faade281154fd1abc228085c80107f4030">MouseEvent::DownWheel</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:29</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf">MouseEvent::LeftWheel</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:30</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fa1dd9cb226f89db382eee39cde2c1b453"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa1dd9cb226f89db382eee39cde2c1b453">MouseEvent::RightWheel</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:31</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fad494180e77a6c97dc92752fe0c45376d"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fad494180e77a6c97dc92752fe0c45376d">MouseEvent::RightButton</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:27</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4fa4c7aa263d24eb0888a85efbdb5a38d7a"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa4c7aa263d24eb0888a85efbdb5a38d7a">MouseEvent::MiddleButton</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:26</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1dcc45966a65644eaa69d99227d38ace"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseEvent::MouseState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a1dcc45966a65644eaa69d99227d38acea6c43ea43d17b8b05b0df088c9d215f5d"></a>ButtonPressed</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1dcc45966a65644eaa69d99227d38aceae6d912e9d3495171b5e7f1458f49317f"></a>ButtonReleased</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145"></a>MouseMoved</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                  {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38acea6c43ea43d17b8b05b0df088c9d215f5d">ButtonPressed</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceae6d912e9d3495171b5e7f1458f49317f">ButtonReleased</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145">MouseMoved</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
+<div class="ttc" id="class_mouse_event_html_a1dcc45966a65644eaa69d99227d38aceae6d912e9d3495171b5e7f1458f49317f"><div class="ttname"><a href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceae6d912e9d3495171b5e7f1458f49317f">MouseEvent::ButtonReleased</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:36</div></div>
+<div class="ttc" id="class_mouse_event_html_a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145"><div class="ttname"><a href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145">MouseEvent::MouseMoved</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:37</div></div>
+<div class="ttc" id="class_mouse_event_html_a1dcc45966a65644eaa69d99227d38acea6c43ea43d17b8b05b0df088c9d215f5d"><div class="ttname"><a href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38acea6c43ea43d17b8b05b0df088c9d215f5d">MouseEvent::ButtonPressed</a></div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:35</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="aab0057ea7e0a43ab52e155cd8059129a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MouseEvent::MouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a>&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">m_button</a>(<a class="code" href="class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2">button</a>), <a class="code" href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">m_state</a>(<a class="code" href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">state</a>), <a class="code" href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">m_position</a>(position)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{}</div>
+<div class="ttc" id="class_mouse_event_html_a0750646f0011ff65b384f108594208a3"><div class="ttname"><a href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">MouseEvent::state</a></div><div class="ttdeci">MouseState state() const </div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:44</div></div>
+<div class="ttc" id="class_mouse_event_html_a0e718c62022dc4296078294b5c6eb3e2"><div class="ttname"><a href="class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2">MouseEvent::button</a></div><div class="ttdeci">MouseButton button() const </div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:43</div></div>
+<div class="ttc" id="class_mouse_event_html_aa68e178b7ad6ab86120598a81534f13b"><div class="ttname"><a href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">MouseEvent::m_state</a></div><div class="ttdeci">MouseState m_state</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:54</div></div>
+<div class="ttc" id="class_mouse_event_html_a35bb89d9ad4f48f7f8ee6dc95bd14ee9"><div class="ttname"><a href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">MouseEvent::m_button</a></div><div class="ttdeci">MouseButton m_button</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:53</div></div>
+<div class="ttc" id="class_mouse_event_html_a415ad58ed04e7a8047e1e5d16c46063d"><div class="ttname"><a href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">MouseEvent::m_position</a></div><div class="ttdeci">Point m_position</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4c6ecbcf9e517c6e0e3d76c66ff40e74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MouseEvent::MouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">const EZEvent &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;: <a class="code" href="class_mouse_event.html#aab0057ea7e0a43ab52e155cd8059129a">MouseEvent</a>(<a class="code" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a>(event.mouseButton()), <a class="code" href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">state</a>, {<span class="keyword">event</span>.mouseX(), <span class="keyword">event</span>.mouseY()})</div>
+<div class="ttc" id="class_mouse_event_html_a0750646f0011ff65b384f108594208a3"><div class="ttname"><a href="class_mouse_event.html#a0750646f0011ff65b384f108594208a3">MouseEvent::state</a></div><div class="ttdeci">MouseState state() const </div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:44</div></div>
+<div class="ttc" id="class_mouse_event_html_aab0057ea7e0a43ab52e155cd8059129a"><div class="ttname"><a href="class_mouse_event.html#aab0057ea7e0a43ab52e155cd8059129a">MouseEvent::MouseEvent</a></div><div class="ttdeci">MouseEvent(const MouseButton button, const MouseState state, const Point &amp;position)</div><div class="ttdef"><b>Definition:</b> MouseEvent.cpp:3</div></div>
+<div class="ttc" id="class_mouse_event_html_aa9b4e97077d24cac35e47a04807aca4f"><div class="ttname"><a href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseEvent::MouseButton</a></div><div class="ttdeci">MouseButton</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a0e718c62022dc4296078294b5c6eb3e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a> MouseEvent::button </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">m_button</a>; }</div>
+<div class="ttc" id="class_mouse_event_html_a35bb89d9ad4f48f7f8ee6dc95bd14ee9"><div class="ttname"><a href="class_mouse_event.html#a35bb89d9ad4f48f7f8ee6dc95bd14ee9">MouseEvent::m_button</a></div><div class="ttdeci">MouseButton m_button</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:53</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event_a0e718c62022dc4296078294b5c6eb3e2_icgraph.svg" width="630" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
-<p>Définition à la ligne <a class="el" href="_mouse_event_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="_mouse_event_8hpp_source.html">MouseEvent.hpp</a>.</p>
-</div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+</div>
+</div>
+<a class="anchor" id="a99ec3c735c6e61b96d539c5638b23608"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> MouseEvent::position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">m_position</a>; }</div>
+<div class="ttc" id="class_mouse_event_html_a415ad58ed04e7a8047e1e5d16c46063d"><div class="ttname"><a href="class_mouse_event.html#a415ad58ed04e7a8047e1e5d16c46063d">MouseEvent::m_position</a></div><div class="ttdeci">Point m_position</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:55</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event_a99ec3c735c6e61b96d539c5638b23608_icgraph.svg" width="640" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0750646f0011ff65b384f108594208a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a> MouseEvent::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">m_state</a>; }</div>
+<div class="ttc" id="class_mouse_event_html_aa68e178b7ad6ab86120598a81534f13b"><div class="ttname"><a href="class_mouse_event.html#aa68e178b7ad6ab86120598a81534f13b">MouseEvent::m_state</a></div><div class="ttdeci">MouseState m_state</div><div class="ttdef"><b>Definition:</b> MouseEvent.hpp:54</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mouse_event_a0750646f0011ff65b384f108594208a3_icgraph.svg" width="624" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aafb7f34678f767028a61c45df1d58969"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> MouseEvent::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_event.html#af0c720ee042e454bc655288e00ed1e49">Event</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a>; };</div>
+<div class="ttc" id="class_event_html_aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef"><div class="ttname"><a href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">Event::MouseType</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:25</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa2ec9efda28b2bcf2326616c0022b228"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; MouseEvent::write </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_event.html#a4917ed8f309f5f3ab18b52482a1f137d">Event</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a35bb89d9ad4f48f7f8ee6dc95bd14ee9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4f">MouseButton</a> MouseEvent::m_button</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a415ad58ed04e7a8047e1e5d16c46063d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> MouseEvent::m_position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa68e178b7ad6ab86120598a81534f13b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse_event.html#a1dcc45966a65644eaa69d99227d38ace">MouseState</a> MouseEvent::m_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_mouse_event_8hpp_source.html">MouseEvent.hpp</a></li>
-<li><a class="el" href="_mouse_event_8cpp_source.html">MouseEvent.cpp</a></li>
+<li><a class="el" href="_mouse_event_8cpp.html">MouseEvent.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -203,7 +569,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_mouse_event.html">MouseEvent</a></li>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

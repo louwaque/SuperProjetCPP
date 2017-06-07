@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['saturation',['saturation',['../class_color.html#a9e232063ef1dfe5e98970700db822561',1,'Color']]],
-  ['second',['second',['../class_graphics_triangle.html#aa04937e81f3d2f232077c6c1f5e9d595',1,'GraphicsTriangle']]],
-  ['set',['set',['../class_point.html#a43923c490fb5439d7d8a041e86520c34',1,'Point']]],
-  ['setblue',['setBlue',['../class_color.html#ae752d55b3758a7181fd3c201ab87ca3b',1,'Color']]],
-  ['setgreen',['setGreen',['../class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d',1,'Color']]],
-  ['sethexa',['setHexa',['../class_color.html#a075616705bfbe4802b121a343f4ed78e',1,'Color']]],
-  ['sethue',['setHue',['../class_color.html#a600727550b0b99ab9c67226be5aa70cb',1,'Color']]],
-  ['setred',['setRed',['../class_color.html#a8ff299417275579e8ae4a065d8dfcf8d',1,'Color']]],
-  ['setsaturation',['setSaturation',['../class_color.html#a237de6ef93ddb2985d87a6fb630a0828',1,'Color']]],
-  ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText::setText()'],['../class_label.html#a2bd65842919bc965ff8482407b34f097',1,'Label::setText()']]],
-  ['setvalue',['setValue',['../class_color.html#a1b673b9755fa01412ea14a2f9c040185',1,'Color']]]
+  ['id',['id',['../class_font.html#a725886ab08bf4a47298a399bce7fc0fb',1,'Font']]],
+  ['if',['if',['../jquery_8js.html#a9db6d45a025ad692282fe23e69eeba43',1,'if(!b.support.opacity):&#160;jquery.js'],['../jquery_8js.html#a30d3d2cd5b567c9f31b2aa30b9cb3bb8',1,'if(av.defaultView &amp;&amp;av.defaultView.getComputedStyle):&#160;jquery.js'],['../jquery_8js.html#a2c54bd8ed7482e89d19331ba61fe221c',1,'if(av.documentElement.currentStyle):&#160;jquery.js'],['../jquery_8js.html#a42cbfadee2b4749e8f699ea8d745a0e4',1,'if(b.expr &amp;&amp;b.expr.filters):&#160;jquery.js'],['../jquery_8js.html#ad9fda9e3432e66926c2578b06f13525f',1,'if(&quot;getBoundingClientRect&quot;in av.documentElement):&#160;jquery.js'],['../jquery_8js.html#ab5582cce20b35070b73869356a852365',1,'if(typeof define===&quot;function&quot;&amp;&amp;define.amd &amp;&amp;define.amd.jQuery):&#160;jquery.js'],['../jquery_8js.html#a20b87efb5990c4ac1b55f46683843e47',1,'if(a.ui.version):&#160;jquery.js'],['../svgpan_8js.html#af5ea8bd8b0e968d48c903e56d0e3afd4',1,'if(!window) window:&#160;svgpan.js']]],
+  ['init',['init',['../svgpan_8js.html#a898016c74bec720a57cce798a2ed4ee2',1,'svgpan.js']]],
+  ['initnavtree',['initNavTree',['../navtree_8js.html#aa7b3067e7ef0044572ba86240b1e58ce',1,'navtree.js']]],
+  ['initresizable',['initResizable',['../resize_8js.html#a4d56aa7aa73d0ddf385565075fdfe271',1,'resize.js']]],
+  ['isalone',['isAlone',['../class_point.html#a64a5fe8c9b1d1a1543aaa64031537380',1,'Point']]],
+  ['isfill',['isFill',['../class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434',1,'GraphicsItem']]],
+  ['isover',['isOver',['../class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7',1,'GraphicsItem']]],
+  ['isvisible',['isVisible',['../class_window.html#ab99d21f928e805cd862cba08cf107a1b',1,'Window::isVisible()'],['../class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605',1,'GraphicsItem::isVisible()']]]
 ];

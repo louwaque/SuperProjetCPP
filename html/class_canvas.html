@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_canvas.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,86 +107,973 @@ $(document).ready(function(){initNavTree('class_canvas.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_canvas-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Canvas</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe de collaboration de Canvas:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+
+<p><code>#include &lt;<a class="el" href="_canvas_8hpp_source.html">Canvas.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Canvas:</div>
+<div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas__coll__graph.svg" width="112" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a5225316a0b9bca9fbba19b0699581921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5225316a0b9bca9fbba19b0699581921"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Canvas</b> (EZWindow &amp;window)</td></tr>
+<tr class="memitem:a5225316a0b9bca9fbba19b0699581921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a5225316a0b9bca9fbba19b0699581921">Canvas</a> (EZWindow &amp;<a class="el" href="jquery_8js.html#a3a1b34e910bfab09201cf4cd802439ea">window</a>)</td></tr>
 <tr class="separator:a5225316a0b9bca9fbba19b0699581921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39dbe4f300c998b4850e0f253c580ae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39dbe4f300c998b4850e0f253c580ae9"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> () const </td></tr>
+<tr class="memitem:a39dbe4f300c998b4850e0f253c580ae9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a39dbe4f300c998b4850e0f253c580ae9">width</a> () const </td></tr>
 <tr class="separator:a39dbe4f300c998b4850e0f253c580ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c78dd76db49b8388c4531285cfd4aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c78dd76db49b8388c4531285cfd4aaf"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> () const </td></tr>
+<tr class="memitem:a2c78dd76db49b8388c4531285cfd4aaf"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a2c78dd76db49b8388c4531285cfd4aaf">height</a> () const </td></tr>
 <tr class="separator:a2c78dd76db49b8388c4531285cfd4aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f2b17591e32f8aedc5ab4bb9e37e6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5f2b17591e32f8aedc5ab4bb9e37e6c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () const </td></tr>
+<tr class="memitem:af5f2b17591e32f8aedc5ab4bb9e37e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#af5f2b17591e32f8aedc5ab4bb9e37e6c">clear</a> () const </td></tr>
 <tr class="separator:af5f2b17591e32f8aedc5ab4bb9e37e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817290cca06f0f43e9cf52cd980794d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a817290cca06f0f43e9cf52cd980794d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const EZColor color)</td></tr>
+<tr class="memitem:a817290cca06f0f43e9cf52cd980794d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a817290cca06f0f43e9cf52cd980794d1">setColor</a> (const EZColor color)</td></tr>
 <tr class="separator:a817290cca06f0f43e9cf52cd980794d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ef38b87f65a9d13ec8abd7073142eb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ef38b87f65a9d13ec8abd7073142eb6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setThick</b> (const unsigned int thick=1)</td></tr>
+<tr class="memitem:a3ef38b87f65a9d13ec8abd7073142eb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a3ef38b87f65a9d13ec8abd7073142eb6">setThick</a> (const unsigned int thick=1)</td></tr>
 <tr class="separator:a3ef38b87f65a9d13ec8abd7073142eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2904e99ad4ca470be482cf2faf8c395"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2904e99ad4ca470be482cf2faf8c395"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFont</b> (const <a class="el" href="class_font.html">Font</a> &amp;font)</td></tr>
+<tr class="memitem:ab2904e99ad4ca470be482cf2faf8c395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#ab2904e99ad4ca470be482cf2faf8c395">setFont</a> (const <a class="el" href="class_font.html">Font</a> &amp;font)</td></tr>
 <tr class="separator:ab2904e99ad4ca470be482cf2faf8c395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1df45002e73cbbbfaa7273729133b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1df45002e73cbbbfaa7273729133b3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const int x, const int y)</td></tr>
+<tr class="memitem:af1df45002e73cbbbfaa7273729133b3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#af1df45002e73cbbbfaa7273729133b3b">drawPoint</a> (const int <a class="el" href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a>, const int y)</td></tr>
 <tr class="separator:af1df45002e73cbbbfaa7273729133b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4830e2b1c25e309489c489bad59ea9e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4830e2b1c25e309489c489bad59ea9e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawPoint</b> (const <a class="el" href="class_point.html">Point</a> &amp;p)</td></tr>
+<tr class="memitem:a4830e2b1c25e309489c489bad59ea9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a4830e2b1c25e309489c489bad59ea9e1">drawPoint</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>)</td></tr>
 <tr class="separator:a4830e2b1c25e309489c489bad59ea9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea67ac3f6984f8a1c67edcd892af289c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea67ac3f6984f8a1c67edcd892af289c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLine</b> (const int firstX, const int firstY, const int secondX, const int secondY)</td></tr>
+<tr class="memitem:aea67ac3f6984f8a1c67edcd892af289c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#aea67ac3f6984f8a1c67edcd892af289c">drawLine</a> (const int firstX, const int firstY, const int secondX, const int secondY)</td></tr>
 <tr class="separator:aea67ac3f6984f8a1c67edcd892af289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa379d9765fc40e770309001da99832c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa379d9765fc40e770309001da99832c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawLine</b> (const <a class="el" href="class_point.html">Point</a> &amp;first, const <a class="el" href="class_point.html">Point</a> &amp;second)</td></tr>
+<tr class="memitem:aa379d9765fc40e770309001da99832c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#aa379d9765fc40e770309001da99832c3">drawLine</a> (const <a class="el" href="class_point.html">Point</a> &amp;first, const <a class="el" href="class_point.html">Point</a> &amp;second)</td></tr>
 <tr class="separator:aa379d9765fc40e770309001da99832c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97816ec3e85d72ab6125daa3a376793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab97816ec3e85d72ab6125daa3a376793"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRectangle</b> (const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</td></tr>
+<tr class="memitem:ab97816ec3e85d72ab6125daa3a376793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#ab97816ec3e85d72ab6125daa3a376793">drawRectangle</a> (const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</td></tr>
 <tr class="separator:ab97816ec3e85d72ab6125daa3a376793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a347a381b7cd7381a84f49a8bdd77244c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347a381b7cd7381a84f49a8bdd77244c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRectangle</b> (const <a class="el" href="class_point.html">Point</a> &amp;topLeft, const <a class="el" href="class_point.html">Point</a> &amp;bottomRight, const bool isFill=false)</td></tr>
+<tr class="memitem:a347a381b7cd7381a84f49a8bdd77244c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a347a381b7cd7381a84f49a8bdd77244c">drawRectangle</a> (const <a class="el" href="class_point.html">Point</a> &amp;topLeft, const <a class="el" href="class_point.html">Point</a> &amp;bottomRight, const bool isFill=false)</td></tr>
 <tr class="separator:a347a381b7cd7381a84f49a8bdd77244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6c1ffe1d0279d24d13fb7956cc99a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d6c1ffe1d0279d24d13fb7956cc99a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawCircle</b> (const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</td></tr>
+<tr class="memitem:a5d6c1ffe1d0279d24d13fb7956cc99a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">drawCircle</a> (const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</td></tr>
 <tr class="separator:a5d6c1ffe1d0279d24d13fb7956cc99a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f659c0cb7809f6dbb18746eb547778"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02f659c0cb7809f6dbb18746eb547778"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawCircle</b> (const <a class="el" href="class_point.html">Point</a> &amp;topLeft, const <a class="el" href="class_point.html">Point</a> &amp;bottomRight, const bool isFill=false)</td></tr>
+<tr class="memitem:a02f659c0cb7809f6dbb18746eb547778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a02f659c0cb7809f6dbb18746eb547778">drawCircle</a> (const <a class="el" href="class_point.html">Point</a> &amp;topLeft, const <a class="el" href="class_point.html">Point</a> &amp;bottomRight, const bool isFill=false)</td></tr>
 <tr class="separator:a02f659c0cb7809f6dbb18746eb547778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42421486032c41210f676db45ce622c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac42421486032c41210f676db45ce622c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTriangle</b> (const int firstX, const int firstY, const int secondX, const int secondY, const int thirdX, const int thirdY, const bool isFill=false)</td></tr>
+<tr class="memitem:ac42421486032c41210f676db45ce622c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#ac42421486032c41210f676db45ce622c">drawTriangle</a> (const int firstX, const int firstY, const int secondX, const int secondY, const int thirdX, const int thirdY, const bool isFill=false)</td></tr>
 <tr class="separator:ac42421486032c41210f676db45ce622c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7790d284aece3ffb4455af3846521e5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7790d284aece3ffb4455af3846521e5b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawTriangle</b> (const <a class="el" href="class_point.html">Point</a> &amp;first, const <a class="el" href="class_point.html">Point</a> &amp;second, const <a class="el" href="class_point.html">Point</a> &amp;third, const bool isFill=false)</td></tr>
+<tr class="memitem:a7790d284aece3ffb4455af3846521e5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a7790d284aece3ffb4455af3846521e5b">drawTriangle</a> (const <a class="el" href="class_point.html">Point</a> &amp;first, const <a class="el" href="class_point.html">Point</a> &amp;second, const <a class="el" href="class_point.html">Point</a> &amp;third, const bool isFill=false)</td></tr>
 <tr class="separator:a7790d284aece3ffb4455af3846521e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1d80b9cb71f235f3b9087feb481a5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a1d80b9cb71f235f3b9087feb481a5d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const EZAlign align, const int x, const int y, const std::string &amp;text)</td></tr>
+<tr class="memitem:a5a1d80b9cb71f235f3b9087feb481a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a5a1d80b9cb71f235f3b9087feb481a5d">drawText</a> (const EZAlign align, const int <a class="el" href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a>, const int y, const std::string &amp;text)</td></tr>
 <tr class="separator:a5a1d80b9cb71f235f3b9087feb481a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34af1e9202967cbb4088e18296af8296"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34af1e9202967cbb4088e18296af8296"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const EZAlign align, const <a class="el" href="class_point.html">Point</a> &amp;pos, const std::string &amp;text)</td></tr>
+<tr class="memitem:a34af1e9202967cbb4088e18296af8296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a34af1e9202967cbb4088e18296af8296">drawText</a> (const EZAlign align, const <a class="el" href="class_point.html">Point</a> &amp;pos, const std::string &amp;text)</td></tr>
 <tr class="separator:a34af1e9202967cbb4088e18296af8296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a632a6686001b5f1e8f68537db086871d"><td class="memItemLeft" align="right" valign="top">EZWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a></td></tr>
+<tr class="separator:a632a6686001b5f1e8f68537db086871d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock">
-<p>Définition à la ligne <a class="el" href="_canvas_8hpp_source.html#l00008">8</a> du fichier <a class="el" href="_canvas_8hpp_source.html">Canvas.hpp</a>.</p>
-</div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a5225316a0b9bca9fbba19b0699581921"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Canvas::Canvas </td>
+          <td>(</td>
+          <td class="paramtype">EZWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>(<a class="code" href="jquery_8js.html#a3a1b34e910bfab09201cf4cd802439ea">window</a>)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+<div class="ttc" id="jquery_8js_html_a3a1b34e910bfab09201cf4cd802439ea"><div class="ttname"><a href="jquery_8js.html#a3a1b34e910bfab09201cf4cd802439ea">window</a></div><div class="ttdeci">window</div><div class="ttdef"><b>Definition:</b> jquery.js:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="af5f2b17591e32f8aedc5ab4bb9e37e6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                     {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.clear();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5d6c1ffe1d0279d24d13fb7956cc99a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>topLeftX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>topLeftY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bottomRightX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bottomRightY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">if</span> (isFill)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.fillCircle(topLeftX, topLeftY, bottomRightX, bottomRightY);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawCircle(topLeftX, topLeftY, bottomRightX, bottomRightY);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a5d6c1ffe1d0279d24d13fb7956cc99a9_icgraph.svg" width="368" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a02f659c0cb7809f6dbb18746eb547778"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>topLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>bottomRight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                             {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">drawCircle</a>(topLeft.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), topLeft.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), bottomRight.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), bottomRight.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), isFill);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+<div class="ttc" id="class_canvas_html_a5d6c1ffe1d0279d24d13fb7956cc99a9"><div class="ttname"><a href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">Canvas::drawCircle</a></div><div class="ttdeci">void drawCircle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:16</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a02f659c0cb7809f6dbb18746eb547778_cgraph.svg" width="627" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aea67ac3f6984f8a1c67edcd892af289c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>firstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>firstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>secondX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>secondY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                          {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawLine(firstX, firstY, secondX, secondY);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_aea67ac3f6984f8a1c67edcd892af289c_icgraph.svg" width="355" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa379d9765fc40e770309001da99832c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                         {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawLine(first.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), first.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), second.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), second.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_aa379d9765fc40e770309001da99832c3_cgraph.svg" width="544" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af1df45002e73cbbbfaa7273729133b3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawPoint </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                           {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawPoint(<a class="code" href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a>, y);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="ttc" id="jquery_8js_html_a4c3eadaa5164016d2c340d495fc6e55e"><div class="ttname"><a href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a></div><div class="ttdeci">function x(bx)</div><div class="ttdef"><b>Definition:</b> jquery.js:30</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4830e2b1c25e309489c489bad59ea9e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                 {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawPoint(p.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), p.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a4830e2b1c25e309489c489bad59ea9e1_cgraph.svg" width="550" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab97816ec3e85d72ab6125daa3a376793"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawRectangle </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>topLeftX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>topLeftY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bottomRightX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bottomRightY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">if</span> (isFill)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.fillRectangle(topLeftX, topLeftY, bottomRightX, bottomRightY);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawRectangle(topLeftX, topLeftY, bottomRightX, bottomRightY);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_ab97816ec3e85d72ab6125daa3a376793_icgraph.svg" width="395" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a347a381b7cd7381a84f49a8bdd77244c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawRectangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>topLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>bottomRight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                                                {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_canvas.html#ab97816ec3e85d72ab6125daa3a376793">drawRectangle</a>(topLeft.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), topLeft.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), bottomRight.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), bottomRight.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), isFill);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_ab97816ec3e85d72ab6125daa3a376793"><div class="ttname"><a href="class_canvas.html#ab97816ec3e85d72ab6125daa3a376793">Canvas::drawRectangle</a></div><div class="ttdeci">void drawRectangle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:8</div></div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_canvas_a347a381b7cd7381a84f49a8bdd77244c_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a1d80b9cb71f235f3b9087feb481a5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const EZAlign&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                                      {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawText(align, <a class="code" href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a>, y, text);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="ttc" id="jquery_8js_html_a4c3eadaa5164016d2c340d495fc6e55e"><div class="ttname"><a href="jquery_8js.html#a4c3eadaa5164016d2c340d495fc6e55e">x</a></div><div class="ttdeci">function x(bx)</div><div class="ttdef"><b>Definition:</b> jquery.js:30</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a5a1d80b9cb71f235f3b9087feb481a5d_icgraph.svg" width="347" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34af1e9202967cbb4088e18296af8296"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const EZAlign&#160;</td>
+          <td class="paramname"><em>align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawText(align, pos.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), pos.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), text);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a34af1e9202967cbb4088e18296af8296_cgraph.svg" width="547" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac42421486032c41210f676db45ce622c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawTriangle </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>firstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>firstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>secondX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>secondY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>thirdX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>thirdY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">if</span> (isFill)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.fillTriangle(firstX, firstY, secondX, secondY, thirdX, thirdY);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.drawTriangle(firstX, firstY, secondX, secondY, thirdX, thirdY);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_ac42421486032c41210f676db45ce622c_icgraph.svg" width="376" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7790d284aece3ffb4455af3846521e5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::drawTriangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>third</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isFill</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                                                            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_canvas.html#ac42421486032c41210f676db45ce622c">drawTriangle</a>(first.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), first.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), second.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), second.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), third.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), third.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>(), isFill);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
+<div class="ttc" id="class_canvas_html_ac42421486032c41210f676db45ce622c"><div class="ttname"><a href="class_canvas.html#ac42421486032c41210f676db45ce622c">Canvas::drawTriangle</a></div><div class="ttdeci">void drawTriangle(const int firstX, const int firstY, const int secondX, const int secondY, const int thirdX, const int thirdY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:24</div></div>
+<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a7790d284aece3ffb4455af3846521e5b_cgraph.svg" width="648" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c78dd76db49b8388c4531285cfd4aaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Canvas::height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                              {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.getHeight();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a817290cca06f0f43e9cf52cd980794d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::setColor </td>
+          <td>(</td>
+          <td class="paramtype">const EZColor&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                     {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.setColor(color);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a817290cca06f0f43e9cf52cd980794d1_icgraph.svg" width="536" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2904e99ad4ca470be482cf2faf8c395"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::setFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_font.html">Font</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                 {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.setFont(font.<a class="code" href="class_font.html#a725886ab08bf4a47298a399bce7fc0fb">id</a>());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
+<div class="ttc" id="class_font_html_a725886ab08bf4a47298a399bce7fc0fb"><div class="ttname"><a href="class_font.html#a725886ab08bf4a47298a399bce7fc0fb">Font::id</a></div><div class="ttdeci">uint id() const </div><div class="ttdef"><b>Definition:</b> Font.hpp:20</div></div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_ab2904e99ad4ca470be482cf2faf8c395_cgraph.svg" width="246" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_ab2904e99ad4ca470be482cf2faf8c395_icgraph.svg" width="336" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ef38b87f65a9d13ec8abd7073142eb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Canvas::setThick </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>thick</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                              {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.setThick(thick);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_canvas_a3ef38b87f65a9d13ec8abd7073142eb6_icgraph.svg" width="536" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a39dbe4f300c998b4850e0f253c580ae9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Canvas::width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                             {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">m_window</a>.getWidth();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  }</div>
+<div class="ttc" id="class_canvas_html_a632a6686001b5f1e8f68537db086871d"><div class="ttname"><a href="class_canvas.html#a632a6686001b5f1e8f68537db086871d">Canvas::m_window</a></div><div class="ttdeci">EZWindow &amp; m_window</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a632a6686001b5f1e8f68537db086871d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EZWindow&amp; Canvas::m_window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_canvas_8hpp_source.html">Canvas.hpp</a></li>
-<li><a class="el" href="_canvas_8cpp_source.html">Canvas.cpp</a></li>
+<li><a class="el" href="_canvas_8cpp.html">Canvas.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -195,7 +1081,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawText</b> (const E
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_canvas.html">Canvas</a></li>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

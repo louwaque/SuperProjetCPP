@@ -10,5 +10,8 @@ var class_graphics_text =
     [ "setFont", "class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9", null ],
     [ "setText", "class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130", null ],
     [ "text", "class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352", null ],
-    [ "type", "class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d", null ]
+    [ "type", "class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d", null ],
+    [ "m_align", "class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8", null ],
+    [ "m_font", "class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81", null ],
+    [ "m_text", "class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e", null ]
 ];

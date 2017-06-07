@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_graphics_text.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,204 +108,162 @@ $(document).ready(function(){initNavTree('class_graphics_text.html','');});
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_graphics_text-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
-<div class="title">Référence de la classe GraphicsText<div class="ingroups"><a class="el" href="group__graphics.html">Graphics</a></div></div>  </div>
+<div class="title">Référence de la classe GraphicsText</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Du texte.  
+<p>Permet la creation de text.  
  <a href="class_graphics_text.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de GraphicsText:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text__inherit__graph.svg" width="144" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe d'héritage de GraphicsText:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_text__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de GraphicsText:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text__coll__graph.svg" width="144" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe de collaboration de GraphicsText:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_text__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a7a9525ba068e286e6aca9e49d49fc7fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
-<tr class="memdesc:a7a9525ba068e286e6aca9e49d49fc7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> par default.  <a href="#a7a9525ba068e286e6aca9e49d49fc7fb">Plus de détails...</a><br/></td></tr>
+<tr class="memitem:a7a9525ba068e286e6aca9e49d49fc7fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:a7a9525ba068e286e6aca9e49d49fc7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> par default.  <a href="#a7a9525ba068e286e6aca9e49d49fc7fb">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7a9525ba068e286e6aca9e49d49fc7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7c2225af9e3e29383835416c56f5e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1">GraphicsText</a> (const std::string &amp;<a class="el" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>, <a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
-<tr class="memdesc:a6c7c2225af9e3e29383835416c56f5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> avec un texte en paramètre.  <a href="#a6c7c2225af9e3e29383835416c56f5e1">Plus de détails...</a><br/></td></tr>
+<tr class="memitem:a6c7c2225af9e3e29383835416c56f5e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1">GraphicsText</a> (const std::string &amp;<a class="el" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>, <a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:a6c7c2225af9e3e29383835416c56f5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> avec un texte en paramètre.  <a href="#a6c7c2225af9e3e29383835416c56f5e1">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a6c7c2225af9e3e29383835416c56f5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb38c8c0df9473cde331540d9904d352"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a> () const </td></tr>
-<tr class="memdesc:aeb38c8c0df9473cde331540d9904d352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le contenu de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>.  <a href="#aeb38c8c0df9473cde331540d9904d352">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:aeb38c8c0df9473cde331540d9904d352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le contenu de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>.  <a href="#aeb38c8c0df9473cde331540d9904d352">Plus de détails...</a><br/></td></tr>
 <tr class="separator:aeb38c8c0df9473cde331540d9904d352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42bb0e20251eb0dc2305be760714130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130">setText</a> (const std::string &amp;<a class="el" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>=&quot;&quot;)</td></tr>
-<tr class="memdesc:ac42bb0e20251eb0dc2305be760714130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le contenu de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>.  <a href="#ac42bb0e20251eb0dc2305be760714130">Plus de détails...</a><br/></td></tr>
+<tr class="memdesc:ac42bb0e20251eb0dc2305be760714130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie le contenu de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>.  <a href="#ac42bb0e20251eb0dc2305be760714130">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ac42bb0e20251eb0dc2305be760714130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaafb8f8246e4d3b0d5dd8ac5cc8586cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaafb8f8246e4d3b0d5dd8ac5cc8586cc"></a>
-<a class="el" href="class_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><b>font</b> () const </td></tr>
+<tr class="memitem:aaafb8f8246e4d3b0d5dd8ac5cc8586cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a> () const </td></tr>
 <tr class="separator:aaafb8f8246e4d3b0d5dd8ac5cc8586cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc96243d9e35d7cbf3e0b8abbd1be5a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc96243d9e35d7cbf3e0b8abbd1be5a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFont</b> (const <a class="el" href="class_font.html">Font</a> &amp;font)</td></tr>
+<tr class="memitem:adc96243d9e35d7cbf3e0b8abbd1be5a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9">setFont</a> (const <a class="el" href="class_font.html">Font</a> &amp;<a class="el" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>)</td></tr>
 <tr class="separator:adc96243d9e35d7cbf3e0b8abbd1be5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553ad5e4ea55568406479f8df7636790"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a553ad5e4ea55568406479f8df7636790"></a>
-EZAlign&#160;</td><td class="memItemRight" valign="bottom"><b>align</b> () const </td></tr>
+<tr class="memitem:a553ad5e4ea55568406479f8df7636790"><td class="memItemLeft" align="right" valign="top">EZAlign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a553ad5e4ea55568406479f8df7636790">align</a> () const </td></tr>
 <tr class="separator:a553ad5e4ea55568406479f8df7636790"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ed3981eb67b4602330a7579bd5093f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ed3981eb67b4602330a7579bd5093f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlign</b> (const EZAlign align=EZAlign::TL)</td></tr>
+<tr class="memitem:af0ed3981eb67b4602330a7579bd5093f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#af0ed3981eb67b4602330a7579bd5093f">setAlign</a> (const EZAlign <a class="el" href="class_graphics_text.html#a553ad5e4ea55568406479f8df7636790">align</a>=EZAlign::TL)</td></tr>
 <tr class="separator:af0ed3981eb67b4602330a7579bd5093f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58f7cf080bad39a8f8be2e872abe61d"><td class="memItemLeft" align="right" valign="top">GraphicsTypes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">type</a> () const </td></tr>
+<tr class="memitem:aa58f7cf080bad39a8f8be2e872abe61d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d">type</a> () const </td></tr>
 <tr class="memdesc:aa58f7cf080bad39a8f8be2e872abe61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">recupere le type de l'instance courrante.  <a href="#aa58f7cf080bad39a8f8be2e872abe61d">Plus de détails...</a><br/></td></tr>
 <tr class="separator:aa58f7cf080bad39a8f8be2e872abe61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c30111512bd4f198e9414b70bb3ccc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
+<tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
 <tr class="separator:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf0a8de33aa83d5fa5ac8889e7e4392"></a>
-<a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const </td></tr>
+<tr class="memitem:ad76d7190cfa332054ae66d505fb37bb1 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad76d7190cfa332054ae66d505fb37bb1">~GraphicsItem</a> ()</td></tr>
+<tr class="separator:ad76d7190cfa332054ae66d505fb37bb1 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a> () const </td></tr>
 <tr class="separator:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bcbe86ba1854edffd7fbed0b4bc8cd5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
+<tr class="memitem:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a8bcbe86ba1854edffd7fbed0b4bc8cd5">setParent</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>)</td></tr>
 <tr class="separator:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d0bc3ef9247fde5bf28597b0488bb2a"></a>
-GraphicsItemList&#160;</td><td class="memItemRight" valign="bottom"><b>children</b> (const GraphicsTypes filter=UndefinedType, const SearchTypes option=ChildrenRecursively) const </td></tr>
+<tr class="memitem:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a">children</a> (const <a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> filter=<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a>, const <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc">SearchTypes</a> option=<a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>) const </td></tr>
 <tr class="separator:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742f444cb7d1a142dec52ee777dd51c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a742f444cb7d1a142dec52ee777dd51c3"></a>
-<a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>anchor</b> () const </td></tr>
-<tr class="separator:a742f444cb7d1a142dec52ee777dd51c3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1266d26ff6aa338959c0796ef915fc4 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1266d26ff6aa338959c0796ef915fc4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnchor</b> (const <a class="el" href="class_point.html">Point</a> &amp;anchor)</td></tr>
-<tr class="separator:ab1266d26ff6aa338959c0796ef915fc4 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acddeaf58963ddb0de93b7c1b27512af7"></a>
-<a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>absolute</b> () const </td></tr>
-<tr class="separator:acddeaf58963ddb0de93b7c1b27512af7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c84a47a2ccceebf2a2c8f5c4d5d609d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAbsolute</b> (const <a class="el" href="class_point.html">Point</a> &amp;pos)</td></tr>
-<tr class="separator:a3c84a47a2ccceebf2a2c8f5c4d5d609d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29aeb3047cd596ecedf48f565293dbc2"></a>
-<a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> () const </td></tr>
+<tr class="memitem:a01a34e70b5ac17f7c6f50bcfe4301ed6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">position</a> () const </td></tr>
+<tr class="separator:a01a34e70b5ac17f7c6f50bcfe4301ed6 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8802f819c79ab12ed3b719af2b8afcbd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a8802f819c79ab12ed3b719af2b8afcbd">position</a> ()</td></tr>
+<tr class="separator:a8802f819c79ab12ed3b719af2b8afcbd inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a> () const </td></tr>
 <tr class="separator:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29879be1c242b86be8fc7df42b3fbd8f inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29879be1c242b86be8fc7df42b3fbd8f"></a>
-PositionCorrector&#160;</td><td class="memItemRight" valign="bottom"><b>positionCorrector</b> () const </td></tr>
-<tr class="separator:a29879be1c242b86be8fc7df42b3fbd8f inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2937af237da890e836326ed882140d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa2937af237da890e836326ed882140d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPositionCorrector</b> (const PositionCorrector &amp;fn)</td></tr>
-<tr class="separator:aaa2937af237da890e836326ed882140d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab496f7642dc720844ff8dcb848acb7bd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>z</b> () const </td></tr>
+<tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a> () const </td></tr>
 <tr class="separator:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc364937b5031bc99455d18638f77af3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setZ</b> (const int z)</td></tr>
+<tr class="memitem:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#acc364937b5031bc99455d18638f77af3">setZ</a> (const int <a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a>)</td></tr>
 <tr class="separator:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a3edbc5d5628a75918d512314f33c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <a class="el" href="class_color.html">Color</a> color)</td></tr>
+<tr class="memitem:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a> (const <a class="el" href="class_color.html">Color</a> <a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a>)</td></tr>
 <tr class="separator:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f6437c601f4c07f37a72f3a4ac4319d"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>thick</b> () const </td></tr>
+<tr class="memitem:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d">thick</a> () const </td></tr>
 <tr class="separator:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d7d6b9604728b7ad154e79731d1e8e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setThick</b> (unsigned int thick=1)</td></tr>
+<tr class="memitem:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6">setThick</a> (unsigned int <a class="el" href="class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d">thick</a>=1)</td></tr>
 <tr class="separator:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349439f069cfa6ade361ebdcd6f43434"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFill</b> () const </td></tr>
+<tr class="memitem:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a> () const </td></tr>
 <tr class="separator:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68ff48ffc002e83cea62ea094c5d6b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFill</b> (const bool fill)</td></tr>
+<tr class="memitem:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a> (const bool fill)</td></tr>
 <tr class="separator:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f5c21a12db9f875fffe77b491aa1605"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b> () const </td></tr>
+<tr class="memitem:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605">isVisible</a> () const </td></tr>
 <tr class="separator:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a911dbcb4786b03e21400e821e0e6d632"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisible</b> (const bool isVisible=true)</td></tr>
+<tr class="memitem:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a911dbcb4786b03e21400e821e0e6d632">setVisible</a> (const bool <a class="el" href="class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605">isVisible</a>=true)</td></tr>
 <tr class="separator:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4f2af374b066e17a5e0e1dd1565c689"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
+<tr class="memitem:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689">draw</a> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48a21dd602b80a38515905ce1f668ed2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const unsigned int time)</td></tr>
+<tr class="memitem:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2">update</a> (const unsigned int time)</td></tr>
 <tr class="separator:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c62fa07246bc1d7b9eae6340a246e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
+<tr class="memitem:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2">handleEvent</a> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a853ecc7b1940b8bce18600a3f3d6cda7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOver</b> (const <a class="el" href="class_point.html">Point</a> &amp;p)</td></tr>
+<tr class="memitem:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7">isOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>)</td></tr>
 <tr class="separator:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f3b7de02ad675cd54aa46feec7de2eb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasFocus</b> () const </td></tr>
+<tr class="memitem:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb">hasFocus</a> () const </td></tr>
 <tr class="separator:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
-<tr class="memitem:a7b6432edbdd3b02d5c76761ac069aa57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b6432edbdd3b02d5c76761ac069aa57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>meDraw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
+<tr class="memitem:a7b6432edbdd3b02d5c76761ac069aa57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a7b6432edbdd3b02d5c76761ac069aa57">meDraw</a> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:a7b6432edbdd3b02d5c76761ac069aa57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9804084f93ae6b4cd7f8493b3e94f19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9804084f93ae6b4cd7f8493b3e94f19"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>meIsOver</b> (const <a class="el" href="class_point.html">Point</a> &amp;absoluteP)</td></tr>
+<tr class="memitem:ae9804084f93ae6b4cd7f8493b3e94f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#ae9804084f93ae6b4cd7f8493b3e94f19">meIsOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;absoluteP)</td></tr>
 <tr class="separator:ae9804084f93ae6b4cd7f8493b3e94f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7da307cdcde806bc966d813f58643649"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meUpdate</b> (const unsigned int time)</td></tr>
+<tr class="memitem:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a7da307cdcde806bc966d813f58643649">meUpdate</a> (const unsigned int time)</td></tr>
 <tr class="separator:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6009d75c16ccc9559a4b2ffad69045c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meHandleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
+<tr class="memitem:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad6009d75c16ccc9559a4b2ffad69045c">meHandleEvent</a> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ad92fb460b3a317bdc78a10c88e9b974e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a></td></tr>
+<tr class="separator:ad92fb460b3a317bdc78a10c88e9b974e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b865429d9b9f2a3e53f72a67b67cd81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a></td></tr>
+<tr class="separator:a9b865429d9b9f2a3e53f72a67b67cd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5d7e914b42d14ebaa0cfcb3c0007f8"><td class="memItemLeft" align="right" valign="top">EZAlign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a></td></tr>
+<tr class="separator:a8c5d7e914b42d14ebaa0cfcb3c0007f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
 <tr class="inherit_header pub_types_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsTypes</b> { <br/>
-&#160;&#160;<b>UndefinedType</b> = 0x0, 
-<b>ItemType</b> = 0x1, 
-<b>PointType</b> = 0x2, 
-<b>TextType</b> = 0x4, 
+<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> { <br/>
+&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a> = 0x0, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabad1df9300f6f2fcc0ca5977cf77801c">ItemType</a> = 0x1, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fae51e7f831f089c84eb2ce600219ce81e">PointType</a> = 0x2, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d">TextType</a> = 0x4, 
 <br/>
-&#160;&#160;<b>ShapeType</b> = 0x6, 
-<b>LineType</b> = 0x8, 
-<b>TriangleType</b> = 0x10, 
-<b>RectangleType</b> = 0x12, 
+&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faa952ab90c4a0e0659506d78572b850fd">ShapeType</a> = 0x6, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b">LineType</a> = 0x8, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa61dd0137f3bed682a547e54edbd38363">TriangleType</a> = 0x10, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa37c1c68bb5807d8c6c78a64bffb6cc25">RectangleType</a> = 0x12, 
 <br/>
-&#160;&#160;<b>PolygonType</b> = 0x14, 
-<b>AnchorType</b> = 0x16, 
-<b>CircleType</b> = 0x18, 
-<b>EllipseType</b> = 0x20, 
+&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac">PolygonType</a> = 0x14, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa18f8d22437273b463b013d68d5fab142">AnchorType</a> = 0x16, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a">CircleType</a> = 0x18, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa2b3fdefdac8f54a1ca2824d0c57e6082">EllipseType</a> = 0x20, 
 <br/>
-&#160;&#160;<b>SquareType</b> = 0x22, 
-<b>AnimationType</b> = 0x24, 
-<b>BlinkAnimationType</b> = 0x26
+&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabd9dc1c77424e2e5ff3020d5d9ef02da">SquareType</a> = 0x22, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fad8645ce1fa1066c18e70a1534c4ec330">AnimationType</a> = 0x24, 
+<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa26ba6ed171b0103540e9c4ff0e85bc79">BlinkAnimationType</a> = 0x26
 <br/>
  }</td></tr>
 <tr class="separator:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SearchTypes</b> { <b>DirectChildren</b>, 
-<b>ChildrenRecursively</b>
+<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc">SearchTypes</a> { <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fca79162c22d42759b0afbc7c10450a7aca">DirectChildren</a>, 
+<a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea25e13b10ed64d5e7268e8fe8902a64 inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea25e13b10ed64d5e7268e8fe8902a64"></a>
-typedef std::function&lt; <a class="el" href="class_point.html">Point</a>(const <br class="typebreak"/>
-<a class="el" href="class_point.html">Point</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PositionCorrector</b></td></tr>
-<tr class="separator:aea25e13b10ed64d5e7268e8fe8902a64 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa643e574b9c2b6713b1b8def690f0c6b"></a>
-typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
+<tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a></td></tr>
 <tr class="separator:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae17633bdf56258e2209ae335d0d1c3fa"></a>
-static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>focusItem</b> ()</td></tr>
+<tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ae17633bdf56258e2209ae335d0d1c3fa">focusItem</a> ()</td></tr>
 <tr class="separator:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5877c4c5815eacb9876c7b99b119aef7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
+<tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a5877c4c5815eacb9876c7b99b119aef7">setFocusItem</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
 <tr class="separator:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Du texte. </p>
-
-<p>Définition à la ligne <a class="el" href="_graphics_text_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a>.</p>
+<div class="textblock"><p>Permet la creation de text. </p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a7a9525ba068e286e6aca9e49d49fc7fb"></a>
 <div class="memitem">
@@ -330,11 +287,18 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </table>
 </div><div class="memdoc">
 
-<p>Constructeur de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> par default. </p>
-<p>Crée une instance de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> sans texte. </p>
-
-<p>Définition à la ligne <a class="el" href="_graphics_text_8cpp_source.html#l00003">3</a> du fichier <a class="el" href="_graphics_text_8cpp_source.html">GraphicsText.cpp</a>.</p>
-
+<p>Constructeur de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> par default. </p>
+<p>Crée une instance de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> sans texte. </p>
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a>(parent),</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a>(<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <a class="code" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a>(),</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <a class="code" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a>(EZAlign::TL)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{}</div>
+<div class="ttc" id="class_graphics_item_html_a96c30111512bd4f198e9414b70bb3ccc"><div class="ttname"><a href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem::GraphicsItem</a></div><div class="ttdeci">GraphicsItem(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsItem.cpp:7</div></div>
+<div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
+<div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
+<div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6c7c2225af9e3e29383835416c56f5e1"></a>
@@ -369,16 +333,19 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </table>
 </div><div class="memdoc">
 
-<p>Constructeur de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> avec un texte en paramètre. </p>
-<p>Crée une instance de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a> avec un texte. </p>
-
-<p>Définition à la ligne <a class="el" href="_graphics_text_8cpp_source.html#l00008">8</a> du fichier <a class="el" href="_graphics_text_8cpp_source.html">GraphicsText.cpp</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<p>Constructeur de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> avec un texte en paramètre. </p>
+<p>Crée une instance de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> avec un texte. </p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;: <a class="code" href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText</a>(parent)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a> = <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
+<div class="ttc" id="class_graphics_text_html_aeb38c8c0df9473cde331540d9904d352"><div class="ttname"><a href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">GraphicsText::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdoc">Recupere le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:50</div></div>
+<div class="ttc" id="class_graphics_text_html_a7a9525ba068e286e6aca9e49d49fc7fb"><div class="ttname"><a href="class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb">GraphicsText::GraphicsText</a></div><div class="ttdeci">GraphicsText(GraphicsItem *parent=nullptr)</div><div class="ttdoc">Constructeur de GraphicsText par default. </div><div class="ttdef"><b>Definition:</b> GraphicsText.cpp:3</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_a6c7c2225af9e3e29383835416c56f5e1_cgraph.svg" width="376" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -387,6 +354,226 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a553ad5e4ea55568406479f8df7636790"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EZAlign GraphicsText::align </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_a553ad5e4ea55568406479f8df7636790_icgraph.svg" width="350" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaafb8f8246e4d3b0d5dd8ac5cc8586cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_font.html">Font</a> GraphicsText::font </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aaafb8f8246e4d3b0d5dd8ac5cc8586cc_icgraph.svg" width="571" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b6432edbdd3b02d5c76761ac069aa57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphicsText::meDraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_canvas.html">Canvas</a> *&#160;</td>
+          <td class="paramname"><em>canvas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#ab97734473720fa8365534448aa13733c">GraphicsItem</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">if</span> (canvas) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    canvas-&gt;<a class="code" href="class_canvas.html#ab2904e99ad4ca470be482cf2faf8c395">setFont</a>(<a class="code" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    canvas-&gt;<a class="code" href="class_canvas.html#a5a1d80b9cb71f235f3b9087feb481a5d">drawText</a>(<a class="code" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a>, <a class="code" href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">position</a>(), <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="class_canvas_html_a5a1d80b9cb71f235f3b9087feb481a5d"><div class="ttname"><a href="class_canvas.html#a5a1d80b9cb71f235f3b9087feb481a5d">Canvas::drawText</a></div><div class="ttdeci">void drawText(const EZAlign align, const int x, const int y, const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:70</div></div>
+<div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
+<div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
+<div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
+<div class="ttc" id="class_canvas_html_ab2904e99ad4ca470be482cf2faf8c395"><div class="ttname"><a href="class_canvas.html#ab2904e99ad4ca470be482cf2faf8c395">Canvas::setFont</a></div><div class="ttdeci">void setFont(const Font &amp;font)</div><div class="ttdef"><b>Definition:</b> Canvas.hpp:32</div></div>
+<div class="ttc" id="class_graphics_item_html_a01a34e70b5ac17f7c6f50bcfe4301ed6"><div class="ttname"><a href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">GraphicsItem::position</a></div><div class="ttdeci">Point position() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:54</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_a7b6432edbdd3b02d5c76761ac069aa57_cgraph.svg" width="486" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9804084f93ae6b4cd7f8493b3e94f19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GraphicsText::meIsOver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>absoluteP</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc">GraphicsItem</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">//FIXME compliqué mais faisable; dépend de align</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af0ed3981eb67b4602330a7579bd5093f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphicsText::setAlign </td>
+          <td>(</td>
+          <td class="paramtype">const EZAlign&#160;</td>
+          <td class="paramname"><em>align</em> = <code>EZAlign::TL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{<a class="code" href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">m_align</a> = <a class="code" href="class_graphics_text.html#a553ad5e4ea55568406479f8df7636790">align</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_a553ad5e4ea55568406479f8df7636790"><div class="ttname"><a href="class_graphics_text.html#a553ad5e4ea55568406479f8df7636790">GraphicsText::align</a></div><div class="ttdeci">EZAlign align() const </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:65</div></div>
+<div class="ttc" id="class_graphics_text_html_a8c5d7e914b42d14ebaa0cfcb3c0007f8"><div class="ttname"><a href="class_graphics_text.html#a8c5d7e914b42d14ebaa0cfcb3c0007f8">GraphicsText::m_align</a></div><div class="ttdeci">EZAlign m_align</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:87</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_af0ed3981eb67b4602330a7579bd5093f_cgraph.svg" width="350" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adc96243d9e35d7cbf3e0b8abbd1be5a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphicsText::setFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_font.html">Font</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{ <a class="code" href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">m_font</a> = <a class="code" href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">font</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_a9b865429d9b9f2a3e53f72a67b67cd81"><div class="ttname"><a href="class_graphics_text.html#a9b865429d9b9f2a3e53f72a67b67cd81">GraphicsText::m_font</a></div><div class="ttdeci">Font m_font</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:86</div></div>
+<div class="ttc" id="class_graphics_text_html_aaafb8f8246e4d3b0d5dd8ac5cc8586cc"><div class="ttname"><a href="class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc">GraphicsText::font</a></div><div class="ttdeci">Font font() const </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:61</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_adc96243d9e35d7cbf3e0b8abbd1be5a9_cgraph.svg" width="342" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_adc96243d9e35d7cbf3e0b8abbd1be5a9_icgraph.svg" width="392" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ac42bb0e20251eb0dc2305be760714130"></a>
 <div class="memitem">
 <div class="memproto">
@@ -409,32 +596,29 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </table>
 </div><div class="memdoc">
 
-<p>Modifie le contenu de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>. </p>
+<p>Modifie le contenu de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>nouveau texte de l'instance de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>. </td></tr>
+    <tr><td class="paramname">text</td><td>nouveau texte de l'instance de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Définition à la ligne <a class="el" href="_graphics_text_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Voici le graphe d'appel pour cette fonction :</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{ <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a> = <a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
+<div class="ttc" id="class_graphics_text_html_aeb38c8c0df9473cde331540d9904d352"><div class="ttname"><a href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">GraphicsText::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdoc">Recupere le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:50</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_ac42bb0e20251eb0dc2305be760714130_cgraph.svg" width="342" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_ac42bb0e20251eb0dc2305be760714130_icgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_ac42bb0e20251eb0dc2305be760714130_icgraph.svg" width="552" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -462,17 +646,15 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </table>
 </div><div class="memdoc">
 
-<p>Recupere le contenu de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>. </p>
+<p>Recupere le contenu de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>texte de l'instance. </dd></dl>
-
-<p>Définition à la ligne <a class="el" href="_graphics_text_8hpp_source.html#l00050">50</a> du fichier <a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Voici le graphe des appelants de cette fonction :</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aeb38c8c0df9473cde331540d9904d352_icgraph.svg" width="531" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">m_text</a>; }</div>
+<div class="ttc" id="class_graphics_text_html_ad92fb460b3a317bdc78a10c88e9b974e"><div class="ttname"><a href="class_graphics_text.html#ad92fb460b3a317bdc78a10c88e9b974e">GraphicsText::m_text</a></div><div class="ttdeci">std::string m_text</div><div class="ttdef"><b>Definition:</b> GraphicsText.hpp:84</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_text_aeb38c8c0df9473cde331540d9904d352_icgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -487,7 +669,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GraphicsTypes GraphicsText::type </td>
+          <td class="memname"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> GraphicsText::type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -501,17 +683,79 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 </div><div class="memdoc">
 
 <p>recupere le type de l'instance courrante. </p>
-<dl class="section return"><dt>Renvoie</dt><dd>type de <a class="el" href="class_graphics_text.html" title="Du texte. ">GraphicsText</a>. </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>type de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a>. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html">GraphicsItem</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#aa892caff547a0fd1969898ee0740b186">GraphicsItem</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d">TextType</a>; }</div>
+<div class="ttc" id="class_graphics_item_html_aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d"><div class="ttname"><a href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d">GraphicsItem::TextType</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a8c5d7e914b42d14ebaa0cfcb3c0007f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EZAlign GraphicsText::m_align</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_graphics_text_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a9b865429d9b9f2a3e53f72a67b67cd81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_font.html">Font</a> GraphicsText::m_font</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad92fb460b3a317bdc78a10c88e9b974e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GraphicsText::m_text</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Contenu de <a class="el" href="class_graphics_text.html" title="Permet la creation de text. ">GraphicsText</a> </p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_graphics_text_8hpp_source.html">GraphicsText.hpp</a></li>
-<li><a class="el" href="_graphics_text_8cpp_source.html">GraphicsText.cpp</a></li>
+<li><a class="el" href="_graphics_text_8cpp.html">GraphicsText.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -519,7 +763,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_text.html">GraphicsText</a></li>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

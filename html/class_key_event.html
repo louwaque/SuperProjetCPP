@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_key_event.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,6 +109,7 @@ $(document).ready(function(){initNavTree('class_key_event.html','');});
 <a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_key_event-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe KeyEvent</div>  </div>
@@ -120,75 +120,467 @@ $(document).ready(function(){initNavTree('class_key_event.html','');});
  <a href="class_key_event.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de KeyEvent:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event__inherit__graph.svg" width="110" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe d'héritage de KeyEvent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event__inherit__graph.svg" width="115" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de KeyEvent:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event__coll__graph.svg" width="110" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="dynheader">
+Graphe de collaboration de KeyEvent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event__coll__graph.svg" width="115" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:a038e4f651c8a0edf48cef679d2de98fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>KeyState</b> { <b>KeyPressed</b>, 
-<b>KeyReleased</b>
+<tr class="memitem:a038e4f651c8a0edf48cef679d2de98fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a> { <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325">KeyPressed</a>, 
+<a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0">KeyReleased</a>
  }</td></tr>
 <tr class="separator:a038e4f651c8a0edf48cef679d2de98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3834189523a28dbfb5f9bf14881d285a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3834189523a28dbfb5f9bf14881d285a"></a>
-typedef EZKeySym&#160;</td><td class="memItemRight" valign="bottom"><b>Key</b></td></tr>
+<tr class="memitem:a3834189523a28dbfb5f9bf14881d285a"><td class="memItemLeft" align="right" valign="top">typedef EZKeySym&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a></td></tr>
 <tr class="separator:a3834189523a28dbfb5f9bf14881d285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_event')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_event.html">Event</a></td></tr>
-<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>EventType</b> { <b>MouseType</b>, 
-<b>KeyType</b>
+<tr class="memitem:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> { <a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a>, 
+<a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a>
  }</td></tr>
 <tr class="separator:aa306292f6e9bf31a622e79dfc54321de inherit pub_types_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a6a45c0cffa537cf79c41140bb04d5aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a45c0cffa537cf79c41140bb04d5aaf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const Key key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)</td></tr>
+<tr class="memitem:a6a45c0cffa537cf79c41140bb04d5aaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a6a45c0cffa537cf79c41140bb04d5aaf">KeyEvent</a> (const <a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a> <a class="el" href="class_key_event.html#a1516b65dbdf9635764288d7f35901eec">key</a>, const <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a> <a class="el" href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">state</a>, const std::string &amp;<a class="el" href="class_key_event.html#a112ce1142e9fea04309f38817818614f">keyName</a>, const std::string &amp;<a class="el" href="class_key_event.html#a79345d47767acbcafc7d8435b70f048a">keyString</a>)</td></tr>
 <tr class="separator:a6a45c0cffa537cf79c41140bb04d5aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552061a96df9513298e2016293f6a149"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a552061a96df9513298e2016293f6a149"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>KeyEvent</b> (const EZEvent &amp;event, const KeyState state)</td></tr>
+<tr class="memitem:a552061a96df9513298e2016293f6a149"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a552061a96df9513298e2016293f6a149">KeyEvent</a> (const EZEvent &amp;event, const <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a> <a class="el" href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">state</a>)</td></tr>
 <tr class="separator:a552061a96df9513298e2016293f6a149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1516b65dbdf9635764288d7f35901eec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1516b65dbdf9635764288d7f35901eec"></a>
-Key&#160;</td><td class="memItemRight" valign="bottom"><b>key</b> () const </td></tr>
+<tr class="memitem:a1516b65dbdf9635764288d7f35901eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a1516b65dbdf9635764288d7f35901eec">key</a> () const </td></tr>
 <tr class="separator:a1516b65dbdf9635764288d7f35901eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91553e020f3621736e1709d27984fdc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91553e020f3621736e1709d27984fdc0"></a>
-KeyState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b> () const </td></tr>
+<tr class="memitem:a91553e020f3621736e1709d27984fdc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">state</a> () const </td></tr>
 <tr class="separator:a91553e020f3621736e1709d27984fdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112ce1142e9fea04309f38817818614f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a112ce1142e9fea04309f38817818614f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>keyName</b> () const </td></tr>
+<tr class="memitem:a112ce1142e9fea04309f38817818614f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a112ce1142e9fea04309f38817818614f">keyName</a> () const </td></tr>
 <tr class="separator:a112ce1142e9fea04309f38817818614f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79345d47767acbcafc7d8435b70f048a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79345d47767acbcafc7d8435b70f048a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>keyString</b> () const </td></tr>
+<tr class="memitem:a79345d47767acbcafc7d8435b70f048a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a79345d47767acbcafc7d8435b70f048a">keyString</a> () const </td></tr>
 <tr class="separator:a79345d47767acbcafc7d8435b70f048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4335d1c13b1e6523ee8e3795a36218fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4335d1c13b1e6523ee8e3795a36218fd"></a>
-EventType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr class="memitem:a4335d1c13b1e6523ee8e3795a36218fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a4335d1c13b1e6523ee8e3795a36218fd">type</a> () const </td></tr>
 <tr class="separator:a4335d1c13b1e6523ee8e3795a36218fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_event')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_event.html">Event</a></td></tr>
+<tr class="memitem:a5a40dd4708297f7031e29b39e039ae10 inherit pub_methods_class_event"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a5a40dd4708297f7031e29b39e039ae10">Event</a> ()</td></tr>
+<tr class="separator:a5a40dd4708297f7031e29b39e039ae10 inherit pub_methods_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab864fd85c758006c42cd7a1b3369b483 inherit pub_methods_class_event"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#ab864fd85c758006c42cd7a1b3369b483">~Event</a> ()</td></tr>
+<tr class="separator:ab864fd85c758006c42cd7a1b3369b483 inherit pub_methods_class_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
-<tr class="memitem:a4e9320be7f46e57ddbefebe404a067fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e9320be7f46e57ddbefebe404a067fa"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;os) const </td></tr>
+<tr class="memitem:a4e9320be7f46e57ddbefebe404a067fa"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a4e9320be7f46e57ddbefebe404a067fa">write</a> (std::ostream &amp;os) const </td></tr>
 <tr class="separator:a4e9320be7f46e57ddbefebe404a067fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ada1a017cf1dd71628e052499c0bb3f26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">m_key</a></td></tr>
+<tr class="separator:ada1a017cf1dd71628e052499c0bb3f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0590b2d81c8850354c5536deb41d1674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">m_state</a></td></tr>
+<tr class="separator:a0590b2d81c8850354c5536deb41d1674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4840f821913402a8e3e260c7333356"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#aca4840f821913402a8e3e260c7333356">m_keyName</a></td></tr>
+<tr class="separator:aca4840f821913402a8e3e260c7333356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab13cd02a6a7b2903f9e00a5dc93c33"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">m_keyString</a></td></tr>
+<tr class="separator:adab13cd02a6a7b2903f9e00a5dc93c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Permet la gestion des evenements au clavier. </p>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a class="anchor" id="a3834189523a28dbfb5f9bf14881d285a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef EZKeySym <a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">KeyEvent::Key</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_key_event_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a>.</p>
-</div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+</div>
+</div>
+<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="a038e4f651c8a0edf48cef679d2de98fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyEvent::KeyState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325"></a>KeyPressed</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0"></a>KeyReleased</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325">KeyPressed</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0">KeyReleased</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
+<div class="ttc" id="class_key_event_html_a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325"><div class="ttname"><a href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca5b84495a615c1af9bd1714747dfe1325">KeyEvent::KeyPressed</a></div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:27</div></div>
+<div class="ttc" id="class_key_event_html_a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0"><div class="ttname"><a href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0">KeyEvent::KeyReleased</a></div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a6a45c0cffa537cf79c41140bb04d5aaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KeyEvent::KeyEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>keyString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;: <a class="code" href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">m_key</a>(<a class="code" href="class_key_event.html#a1516b65dbdf9635764288d7f35901eec">key</a>), <a class="code" href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">m_state</a>(<a class="code" href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">state</a>), <a class="code" href="class_key_event.html#aca4840f821913402a8e3e260c7333356">m_keyName</a>(<a class="code" href="class_key_event.html#a112ce1142e9fea04309f38817818614f">keyName</a>), <a class="code" href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">m_keyString</a>(<a class="code" href="class_key_event.html#a79345d47767acbcafc7d8435b70f048a">keyString</a>)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{}</div>
+<div class="ttc" id="class_key_event_html_aca4840f821913402a8e3e260c7333356"><div class="ttname"><a href="class_key_event.html#aca4840f821913402a8e3e260c7333356">KeyEvent::m_keyName</a></div><div class="ttdeci">std::string m_keyName</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:47</div></div>
+<div class="ttc" id="class_key_event_html_a1516b65dbdf9635764288d7f35901eec"><div class="ttname"><a href="class_key_event.html#a1516b65dbdf9635764288d7f35901eec">KeyEvent::key</a></div><div class="ttdeci">Key key() const </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:34</div></div>
+<div class="ttc" id="class_key_event_html_a79345d47767acbcafc7d8435b70f048a"><div class="ttname"><a href="class_key_event.html#a79345d47767acbcafc7d8435b70f048a">KeyEvent::keyString</a></div><div class="ttdeci">std::string keyString() const </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:37</div></div>
+<div class="ttc" id="class_key_event_html_adab13cd02a6a7b2903f9e00a5dc93c33"><div class="ttname"><a href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">KeyEvent::m_keyString</a></div><div class="ttdeci">std::string m_keyString</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:48</div></div>
+<div class="ttc" id="class_key_event_html_a91553e020f3621736e1709d27984fdc0"><div class="ttname"><a href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">KeyEvent::state</a></div><div class="ttdeci">KeyState state() const </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:35</div></div>
+<div class="ttc" id="class_key_event_html_ada1a017cf1dd71628e052499c0bb3f26"><div class="ttname"><a href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">KeyEvent::m_key</a></div><div class="ttdeci">Key m_key</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:45</div></div>
+<div class="ttc" id="class_key_event_html_a112ce1142e9fea04309f38817818614f"><div class="ttname"><a href="class_key_event.html#a112ce1142e9fea04309f38817818614f">KeyEvent::keyName</a></div><div class="ttdeci">std::string keyName() const </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:36</div></div>
+<div class="ttc" id="class_key_event_html_a0590b2d81c8850354c5536deb41d1674"><div class="ttname"><a href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">KeyEvent::m_state</a></div><div class="ttdeci">KeyState m_state</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a552061a96df9513298e2016293f6a149"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KeyEvent::KeyEvent </td>
+          <td>(</td>
+          <td class="paramtype">const EZEvent &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a>&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;: <a class="code" href="class_key_event.html#a6a45c0cffa537cf79c41140bb04d5aaf">KeyEvent</a>(event.keySym(), <a class="code" href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">state</a>, <span class="keyword">event</span>.keyName(), std::string(event.keyString(), <span class="keyword">event</span>.keyCount()))</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{}</div>
+<div class="ttc" id="class_key_event_html_a91553e020f3621736e1709d27984fdc0"><div class="ttname"><a href="class_key_event.html#a91553e020f3621736e1709d27984fdc0">KeyEvent::state</a></div><div class="ttdeci">KeyState state() const </div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:35</div></div>
+<div class="ttc" id="class_key_event_html_a6a45c0cffa537cf79c41140bb04d5aaf"><div class="ttname"><a href="class_key_event.html#a6a45c0cffa537cf79c41140bb04d5aaf">KeyEvent::KeyEvent</a></div><div class="ttdeci">KeyEvent(const Key key, const KeyState state, const std::string &amp;keyName, const std::string &amp;keyString)</div><div class="ttdef"><b>Definition:</b> KeyEvent.cpp:3</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a1516b65dbdf9635764288d7f35901eec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a> KeyEvent::key </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">m_key</a>; }</div>
+<div class="ttc" id="class_key_event_html_ada1a017cf1dd71628e052499c0bb3f26"><div class="ttname"><a href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">KeyEvent::m_key</a></div><div class="ttdeci">Key m_key</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:45</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event_a1516b65dbdf9635764288d7f35901eec_icgraph.svg" width="339" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a112ce1142e9fea04309f38817818614f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string KeyEvent::keyName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_key_event.html#aca4840f821913402a8e3e260c7333356">m_keyName</a>; }</div>
+<div class="ttc" id="class_key_event_html_aca4840f821913402a8e3e260c7333356"><div class="ttname"><a href="class_key_event.html#aca4840f821913402a8e3e260c7333356">KeyEvent::m_keyName</a></div><div class="ttdeci">std::string m_keyName</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a79345d47767acbcafc7d8435b70f048a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string KeyEvent::keyString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">m_keyString</a>; }</div>
+<div class="ttc" id="class_key_event_html_adab13cd02a6a7b2903f9e00a5dc93c33"><div class="ttname"><a href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">KeyEvent::m_keyString</a></div><div class="ttdeci">std::string m_keyString</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:48</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event_a79345d47767acbcafc7d8435b70f048a_icgraph.svg" width="374" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a91553e020f3621736e1709d27984fdc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a> KeyEvent::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">m_state</a>; }</div>
+<div class="ttc" id="class_key_event_html_a0590b2d81c8850354c5536deb41d1674"><div class="ttname"><a href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">KeyEvent::m_state</a></div><div class="ttdeci">KeyState m_state</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:46</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_key_event_a91553e020f3621736e1709d27984fdc0_icgraph.svg" width="347" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4335d1c13b1e6523ee8e3795a36218fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> KeyEvent::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_event.html#af0c720ee042e454bc655288e00ed1e49">Event</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a>; }</div>
+<div class="ttc" id="class_event_html_aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b"><div class="ttname"><a href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">Event::KeyType</a></div><div class="ttdef"><b>Definition:</b> Event.hpp:26</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4e9320be7f46e57ddbefebe404a067fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; KeyEvent::write </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_event.html#a4917ed8f309f5f3ab18b52482a1f137d">Event</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;key &quot;</span> &lt;&lt; <a class="code" href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">m_key</a> &lt;&lt; <span class="stringliteral">&quot; state &quot;</span> &lt;&lt; <a class="code" href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">m_state</a> &lt;&lt; <span class="stringliteral">&quot; name &quot;</span> &lt;&lt; <a class="code" href="class_key_event.html#aca4840f821913402a8e3e260c7333356">m_keyName</a> &lt;&lt; <span class="stringliteral">&quot; string &quot;</span> &lt;&lt; <a class="code" href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">m_keyString</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_key_event_html_aca4840f821913402a8e3e260c7333356"><div class="ttname"><a href="class_key_event.html#aca4840f821913402a8e3e260c7333356">KeyEvent::m_keyName</a></div><div class="ttdeci">std::string m_keyName</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:47</div></div>
+<div class="ttc" id="class_key_event_html_adab13cd02a6a7b2903f9e00a5dc93c33"><div class="ttname"><a href="class_key_event.html#adab13cd02a6a7b2903f9e00a5dc93c33">KeyEvent::m_keyString</a></div><div class="ttdeci">std::string m_keyString</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:48</div></div>
+<div class="ttc" id="class_key_event_html_ada1a017cf1dd71628e052499c0bb3f26"><div class="ttname"><a href="class_key_event.html#ada1a017cf1dd71628e052499c0bb3f26">KeyEvent::m_key</a></div><div class="ttdeci">Key m_key</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:45</div></div>
+<div class="ttc" id="class_key_event_html_a0590b2d81c8850354c5536deb41d1674"><div class="ttname"><a href="class_key_event.html#a0590b2d81c8850354c5536deb41d1674">KeyEvent::m_state</a></div><div class="ttdeci">KeyState m_state</div><div class="ttdef"><b>Definition:</b> KeyEvent.hpp:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="ada1a017cf1dd71628e052499c0bb3f26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">Key</a> KeyEvent::m_key</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca4840f821913402a8e3e260c7333356"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string KeyEvent::m_keyName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adab13cd02a6a7b2903f9e00a5dc93c33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string KeyEvent::m_keyString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0590b2d81c8850354c5536deb41d1674"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_key_event.html#a038e4f651c8a0edf48cef679d2de98fc">KeyState</a> KeyEvent::m_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_key_event_8hpp_source.html">KeyEvent.hpp</a></li>
-<li><a class="el" href="_key_event_8cpp_source.html">KeyEvent.cpp</a></li>
+<li><a class="el" href="_key_event_8cpp.html">KeyEvent.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -196,7 +588,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_key_event.html">KeyEvent</a></li>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

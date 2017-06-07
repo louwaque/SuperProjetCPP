@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -96,7 +95,7 @@ $(document).ready(function(){initNavTree('class_point.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,21 +112,46 @@ $(document).ready(function(){initNavTree('class_point.html','');});
 
 <p>Liste complète des membres de <a class="el" href="class_point.html">Point</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_point.html#ad92f2337b839a94ce97dcdb439b4325a">Point</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_point.html#a001c4958c310b248f5c26037aea38a9c">Point</a>(int x, int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a498f108de0c0351dfb3177c681a7a1f2">beAlone</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Corrector</a> typedef</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">CorrectorList</a> typedef</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a78ed58bf76b877634ca15d5e639143af">correctors</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a4623b05110d10da4507b2cefef72a2b6">correctors</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a64a5fe8c9b1d1a1543aaa64031537380">isAlone</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e">join</a>(Point &amp;point)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#ab7c8070a39a2d691783b21e1a89b5f93">m_correctorsFixed</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a0c7258432def19adc6f8f1312bd7a206">m_correctorsVariable</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a387b286dabe0b8a32ac0e19e3488587c">m_group</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a98ca534cce8976038d485e9c5dffc429">m_origin</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a885daee8c5064cd51f6a4c3888091fc9">m_x</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a00e243381d01e186dc2fcc5d24b4d3be">m_y</a></td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a2a77e4f4e0521de921e7066052530763">operator=</a>(const Point &amp;src)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#afa7d33502738b0b3df186a91e11ff2a8">origin</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a97edc6e6415d6ccc6efcff5fcbc97f15">Point</a>(const Point *origin=nullptr)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a89bad78a572d1d51871c5cd4493a38b1">Point</a>(int x, int y, const Point *origin=nullptr)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a32f300d1eba25728bec929ce65071677">Point</a>(const CorrectorList &amp;fixed, const Point *origin=nullptr)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_point.html#a7485d0952c4bf845fc02bb1a75cbdcc1">Point</a>(const Point &amp;src)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(const int x, const int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_point.html#a55f79029a24245316463dd4e8dcd117a">x</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_point.html#ae0a6db47b72d0f1fd761bea4777eedf2">y</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Point</b>() (défini dans <a class="el" href="class_point.html">Point</a>)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#aa4e6b58931d20892b3f5c4fadf45340b">relative</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a4af1612ff97e961cdd93d3e46d68b796">relativeX</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a2df1f1705c57a0089ee2956315b214ba">relativeY</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(const int x, const int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410">set</a>(const Point &amp;point)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a0b2ea5baf36174499da121e666931e10">setOrigin</a>(const Point *origin=nullptr)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a9abe56cf3f067305623a1d805460a84f">setRelative</a>(const Point &amp;point)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a61727372965e26cbd7e661157d959ae9">setRelative</a>(const int x, const int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c">setRelativeX</a>(const int x)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6">setRelativeY</a>(const int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2">setX</a>(const int x)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8">setY</a>(const int y)</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>() const </td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_point.html#a395fa04b4ec126b66fc053f829a30cc1">~Point</a>()</td><td class="entry"><a class="el" href="class_point.html">Point</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 11:33:14 pour Super Project c++ par
+    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
