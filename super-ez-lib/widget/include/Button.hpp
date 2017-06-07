@@ -31,11 +31,11 @@ public:
   Button(GraphicsItem *parent = nullptr);
   Button(const std::string &text, GraphicsItem *parent = nullptr);
 
-  inline const Label &label() const { return *m_label; }
-  inline Label &label() { return *m_label; }
+  inline std::string text() const { return m_label->text(); }
+  inline void setText(const std::string &text) { m_label->setText(text); }
 
-  size_t minimumWidth() const { return m_label->minimumWidth(); }
-  size_t minimumHeight() const { return m_label->minimumHeight(); }
+  size_t minimumWidth() const { return std::max(50ul, m_label->minimumWidth()); }
+  size_t minimumHeight() const { return std::max(20ul, m_label->minimumHeight()); }
 
   /*!
    * \name Signaux
@@ -48,6 +48,7 @@ protected:
   void meHandleEvent(const Event &event);
 
 private:
+  GraphicsRectangle *m_background;
   Label *m_label;
 
   signal_t m_clicked;
