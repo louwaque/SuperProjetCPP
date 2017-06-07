@@ -23,10 +23,12 @@ Point::Point(const Point &src)
 : m_origin(src.m_origin),
   m_x(src.m_x),
   m_y(src.m_y),
+  m_group(src.m_group),
   m_correctorsFixed(src.m_correctorsFixed),
   m_correctorsVariable(src.m_correctorsVariable)
 {
-  //FIXME les deux sont dans le même groupe ? je ne pense pas
+  if (m_group)
+    m_group->points().push_back(*this);
 }
 
 Point::~Point()
@@ -36,11 +38,16 @@ Point::~Point()
 
 Point &Point::operator=(const Point &src)
 {
+  beAlone();
+
   m_origin = src.m_origin;
   m_x = src.m_x;
   m_y = src.m_y;
-  m_correctorsFixed = src.m_correctorsFixed;
+  m_group = src.m_group;
   m_correctorsVariable = src.m_correctorsVariable;
+
+  if (m_group)
+    m_group->points().push_back(*this);
 
   return *this;
 }

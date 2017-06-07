@@ -27,12 +27,30 @@ class GroupPoints;
  * Un point peut rejoindre un autre point ce qui forme un groupe de points.
  * Ainsi tous les points de groupe partagent les mêmes coordonnées.
  * Un groupe de points peut avoir un point comme origine.
+ *
+ * Un Corrector est une fonction qui corrige la position du point.
+ *
+ * Un point possède deux listes de Corrector.
+ * La première est figée à la construction et ne peux plus être modifié.
+ * La deuxième est variable.
+ * Quand un point doit changer de coordonnée, tous les Corrector
+ * (du point et des points de son groupe) sont appliqués sur les nouvelles coordonnées.
  */
 
 class Point
 {
 public:
+
+  /*!
+   * \brief Une fonction qui corrige les coordonnées du Point
+   */
+
   typedef std::function<Point(const Point&)> Corrector;
+
+  /*!
+   * \brief Une liste de Corrector
+   */
+
   typedef std::vector<Corrector> CorrectorList;
 
   /*!
@@ -44,7 +62,7 @@ public:
   Point(const Point *origin = nullptr);
 
   /*!
-   * \brief Construit un point avec une abscisse et une ordonnée spécifiées
+   * \brief Construit un point à l'aide d'une abscisse et d'une ordonnée
    *
    * \param x Abscisse
    * \param y Ordonnée
@@ -53,10 +71,21 @@ public:
 
   Point(int x, int y, const Point *origin = nullptr);
 
+  /*!
+   * \brief Construit un point avec une liste de Corrector fixée
+   *
+   * Les Corrector ne pouront plus être modifié par la suite.
+   *
+   * \param fixed Lise de Corrector
+   * \param origin Origine du point
+   */
+
   Point(const CorrectorList &fixed, const Point *origin = nullptr);
 
   /*!
    * \brief Constructeur par copie
+   *
+   * Si le point copié appartient à un groupe alors la copie rejoindra ce groupe
    *
    * \param src Point à copier
    */
@@ -70,6 +99,15 @@ public:
    */
 
   ~Point();
+
+  /*!
+   * \brief Opérateur d'affectation
+   *
+   * Si le point copié appartient à un groupe alors la copie rejoindra ce groupe
+   * La liste des Corrector figés n'est pas modifiée.
+   *
+   * \param src Point à copier
+   */
 
   Point &operator=(const Point &src);
 
@@ -208,7 +246,7 @@ private:
 
   std::shared_ptr<GroupPoints> m_group;
 
-  CorrectorList m_correctorsFixed;
+  const CorrectorList m_correctorsFixed;
   CorrectorList m_correctorsVariable;
 };
 
