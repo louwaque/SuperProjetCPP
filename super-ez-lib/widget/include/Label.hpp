@@ -30,6 +30,9 @@ public:
   ///@}
 
 private:
+  void alignText();
+
+private:
   GraphicsText *m_text;
 
   signal_t m_textChanged;
