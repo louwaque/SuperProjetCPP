@@ -3,18 +3,8 @@
 Widget::Widget(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_width(0),
-  m_height(0),
-  m_background(nullptr)
-{
-  m_background = new GraphicsRectangle(this);
-
-  widthChanged([this]() {
-    m_background->setWidth(width());
-  });
-  heightChanged([this]() {
-    m_background->setHeight(height());
-  });
-}
+  m_height(0)
+{}
 
 void Widget::setWidth(const size_t width)
 {

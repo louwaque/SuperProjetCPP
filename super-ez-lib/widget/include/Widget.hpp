@@ -50,10 +50,10 @@ private:
   size_t m_width;
   size_t m_height;
 
+  //FIXME ajouter margin et padding ?
+
   signal_t m_widthChanged;
   signal_t m_heightChanged;
-
-  GraphicsRectangle *m_background;
 };
 
 #endif
