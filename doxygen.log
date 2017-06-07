@@ -614,8 +614,8 @@ Generating code for file/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/co
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:17: warning: Member setAutoQuit(const bool enable) (function) of class Application is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:14: warning: Member quit() (function) of class Application is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:32: warning: Member Button(const std::string &text, GraphicsItem *parent=nullptr) (function) of class Button is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:34: warning: Member label() const  (function) of class Button is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:35: warning: Member label() (function) of class Button is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:34: warning: Member text() const  (function) of class Button is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:35: warning: Member setText(const std::string &text) (function) of class Button is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:37: warning: Member minimumWidth() const  (function) of class Button is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:38: warning: Member minimumHeight() const  (function) of class Button is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:27: warning: Member Widget(GraphicsItem *parent=nullptr) (function) of class Widget is not documented.
@@ -1964,5 +1964,5 @@ Patching output file 189/192
 Patching output file 190/192
 Patching output file 191/192
 Patching output file 192/192
-lookup cache used 1073/65536 hits=12715 misses=1099
+lookup cache used 1090/65536 hits=12968 misses=1116
 finished...
