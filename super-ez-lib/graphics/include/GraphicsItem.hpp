@@ -7,6 +7,8 @@
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
+#include <boost/uuid/uuid.hpp>
+#include <boost/core/noncopyable.hpp>
 
 /**
  * \defgroup graphics Graphics
@@ -19,8 +21,9 @@
  * \ingroup graphics
  */
 
-class GraphicsItem {
+class GraphicsItem : private boost::noncopyable {
 public:
+  typedef boost::uuids::uuid Id;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -49,6 +52,8 @@ public:
   explicit GraphicsItem(GraphicsItem *parent = nullptr);
 
   virtual ~GraphicsItem();
+
+  inline Id id() const { return m_id; }
 
   GraphicsItem *parent() const {
     return m_parent;
@@ -124,8 +129,9 @@ protected:
   virtual bool meIsOver(const Point &absoluteP) { return m_position == absoluteP; }
 
 private:
+  Id m_id;
   GraphicsItem *m_parent;
-  std::vector<std::unique_ptr<GraphicsItem>> m_children;
+  std::vector<std::shared_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
   int m_z;
@@ -134,5 +140,8 @@ private:
   bool m_isFill;
   bool m_isVisible;
 };
+
+bool operator==(const GraphicsItem &l, const GraphicsItem &r);
+bool operator!=(const GraphicsItem &l, const GraphicsItem &r);
 
 #endif

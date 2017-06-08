@@ -1,11 +1,14 @@
 #include "../include/GraphicsItem.hpp"
 #include <MouseEvent.hpp>
+#include <boost/uuid/uuid_generators.hpp>
 #include <iostream>
+#include <algorithm>
 
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
-: m_parent(nullptr),
+: m_id(boost::uuids::random_generator()()),
+  m_parent(nullptr),
   m_children(),
   m_position(),
   m_z(0),
@@ -29,16 +32,13 @@ void GraphicsItem::setParent(GraphicsItem *parent)
     return;
 
   if (m_parent) {
-    for (size_t i = 0; i < m_parent->m_children.size(); ++i) {
-      if (m_parent->m_children[i].get() == this) {
-        m_parent->m_children[i].release();
-        m_parent->m_children.erase(m_parent->m_children.begin()+i);
-      }
-    }
+    m_parent->m_children.erase(std::remove_if(m_parent->m_children.begin(), m_parent->m_children.end(), [this](const std::shared_ptr<GraphicsItem> &ptr){
+      return *ptr == *this;
+    }), m_parent->m_children.end());
   }
   m_parent = parent;
   if (m_parent) {
-    m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
+    m_parent->m_children.push_back(std::shared_ptr<GraphicsItem>(this));
     m_position.setOrigin(&m_parent->position());
   } else {
     m_position.setOrigin(nullptr);
@@ -49,12 +49,14 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter
 {
   GraphicsItemList list;
   for (auto &ptr : m_children) {
-    if (option == ChildrenRecursively) {
-      GraphicsItemList sublist = ptr->children(filter, option);
-      list.insert(list.end(), sublist.begin(), sublist.end());
+    if (ptr) {
+      if (option == ChildrenRecursively) {
+        GraphicsItemList sublist = ptr->children(filter, option);
+        list.insert(list.end(), sublist.begin(), sublist.end());
+      }
+      if (filter == UndefinedType or ptr->type() == filter)
+        list.push_back(ptr.get());
     }
-    if (filter == UndefinedType or ptr->type() == filter)
-      list.push_back(ptr.get());
   }
   return list;
 }
@@ -65,7 +67,8 @@ void GraphicsItem::draw(Canvas *canvas)
     return;
 
   for (auto &ptr : m_children)
-    ptr->draw(canvas);
+    if (ptr)
+      ptr->draw(canvas);
   if(canvas) {
     canvas->setColor(m_color.hexa());
     canvas->setThick(m_thick);
@@ -76,7 +79,8 @@ void GraphicsItem::draw(Canvas *canvas)
 void GraphicsItem::update(const unsigned int time)
 {
   for (auto &ptr : m_children)
-    ptr->update(time);
+    if (ptr)
+      ptr->update(time);
 
   meUpdate(time);
 }
@@ -95,7 +99,8 @@ void GraphicsItem::handleEvent(const Event &event)
   }
 
   for (auto &ptr : m_children)
-    ptr->handleEvent(event);
+    if (ptr)
+      ptr->handleEvent(event);
 
   meHandleEvent(event);
 }
@@ -108,6 +113,17 @@ bool GraphicsItem::isOver(const Point &p)
 
   bool result = false;
   for (auto &ptr : m_children)
-    result |= ptr->isOver(p);
+    if (ptr)
+      result |= ptr->isOver(p);
   return result || meIsOver(p);
+}
+
+bool operator==(const GraphicsItem &l, const GraphicsItem &r)
+{
+  return l.id() == r.id();
+}
+
+bool operator!=(const GraphicsItem &l, const GraphicsItem &r)
+{
+  return l.id() != r.id();
 }
