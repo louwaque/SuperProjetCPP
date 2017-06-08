@@ -14,13 +14,10 @@ class GraphicsPolygon : public GraphicsShape
 public:
   explicit GraphicsPolygon(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *newPoint();
+  Point &newPoint();
   void popPoint();
 
-  size_t nbPoints() const {
-    return m_points.size();
-  }
-
+  inline size_t nbPoints() const { return m_points.size(); }
   void setNbPoints(const size_t nb);
 
   GraphicsTypes type() const {

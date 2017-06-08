@@ -9,18 +9,17 @@
  * \ingroup graphics
  */
 
+//FIXME utiliser GraphicsShape
 class GraphicsSquare : public GraphicsItem
 {
 public:
   explicit GraphicsSquare(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *topLeft() {
-    return m_topLeft;
-  }
+  inline const Point &topLeft() const { return m_topLeft; }
+  inline Point &topLeft() { return m_topLeft; }
 
-  GraphicsItem *bottomRight() {
-    return m_bottomRight;
-  }
+  inline const Point &bottomRight() const { return m_bottomRight; }
+  inline Point &bottomRight() { return m_bottomRight; }
 
   GraphicsTypes type() const {
     return SquareType;
@@ -31,7 +30,10 @@ protected:
   bool meIsOver(const Point &absoluteP);
 
 private:
-  GraphicsItem *m_topLeft, *m_bottomRight;
+  static Point corrector(const Point &pos, const Point &corner);
+
+private:
+  Point m_topLeft, m_bottomRight;
 };
 
 #endif

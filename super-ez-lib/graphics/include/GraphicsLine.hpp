@@ -14,13 +14,11 @@ class GraphicsLine : public GraphicsShape
 public:
   explicit GraphicsLine(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *first() {
-    return m_points[0];
-  }
+  inline const Point &first() const { return m_points[0]; }
+  inline Point &first() { return m_points[0]; }
 
-  GraphicsItem *second() {
-    return m_points[1];
-  }
+  inline const Point &second() const { return m_points[1]; }
+  inline Point &second() { return m_points[1]; }
 
   GraphicsTypes type() const {
     return LineType;

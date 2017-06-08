@@ -4,7 +4,6 @@
 #include <vector>
 #include <set>
 #include <memory>
-#include <functional>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
@@ -22,7 +21,6 @@
 
 class GraphicsItem {
 public:
-  typedef std::function<Point(const Point&)> PositionCorrector;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -64,32 +62,11 @@ public:
 
   GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
 
-  Point anchor() const {
-    return m_anchor;
-  }
-
-  virtual void setAnchor(const Point &anchor) {
-    if (m_positionCorrector)
-      m_anchor = m_positionCorrector(anchor);
-    else
-      m_anchor = anchor;
-  }
-
-  Point absolute() const;
-
-  virtual void setAbsolute(const Point &pos);
+  inline Point position() const { return m_position; }
+  inline Point &position() { return m_position; }
 
   Color color() const {
     return m_color;
-  }
-
-  PositionCorrector positionCorrector() const {
-    return m_positionCorrector;
-  }
-
-  void setPositionCorrector(const PositionCorrector &fn) {
-    m_positionCorrector = fn;
-    setAnchor(m_anchor);
   }
 
   int z() const {
@@ -144,14 +121,13 @@ protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
   virtual void meHandleEvent(const Event &event) {}
-  virtual bool meIsOver(const Point &absoluteP) { return absolute() == absoluteP; }
+  virtual bool meIsOver(const Point &absoluteP) { return m_position == absoluteP; }
 
 private:
   GraphicsItem *m_parent;
   std::vector<std::unique_ptr<GraphicsItem>> m_children;
   static GraphicsItem *m_focusItem;
-  Point m_anchor;
-  PositionCorrector m_positionCorrector;
+  Point m_position;
   int m_z;
   Color m_color;
   unsigned int m_thick;

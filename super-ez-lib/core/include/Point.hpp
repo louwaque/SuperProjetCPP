@@ -10,12 +10,31 @@
  */
 
 #include <iostream>
+#include <vector>
+#include <memory>
+
+#include "GroupPoints.hpp"
+class GroupPoints;
 
 /*!
  * \class Point
- * \brief Représente un point (x, y)
+ * \brief Représente un point avec une abscisse, une ordonnée et une origine
  *
- * Représente un point avec une abscisse et une ordonnée
+ * Un point peut avoir un autre point comme origine.
+ * Ainsi ses coordonnées x et y sont relatives par rapport à l'origine.
+ * Les méthodes relatives permettent de faire abstraction de l'origine.
+ *
+ * Un point peut rejoindre un autre point ce qui forme un groupe de points.
+ * Ainsi tous les points de groupe partagent les mêmes coordonnées.
+ * Un groupe de points peut avoir un point comme origine.
+ *
+ * Un Corrector est une fonction qui corrige la position du point.
+ *
+ * Un point possède deux listes de Corrector.
+ * La première est figée à la construction et ne peux plus être modifié.
+ * La deuxième est variable.
+ * Quand un point doit changer de coordonnée, tous les Corrector
+ * (du point et des points de son groupe) sont appliqués sur les nouvelles coordonnées.
  */
 
 class Point
@@ -23,80 +42,212 @@ class Point
 public:
 
   /*!
-   * \brief Constructeur par défaut de la classe Point.
-   *
-   * Crée une instance de la classe Point avec les coordonnées (0, 0).
+   * \brief Une fonction qui corrige les coordonnées du Point
    */
 
-  Point();
+  typedef std::function<Point(const Point&)> Corrector;
 
   /*!
-   * \brief Constructeur de la classe Point.
-   *
-   * Crée une instance de la classe Point.
-   *
-   * \param x : abscisse
-   * \param y : ordonnée
+   * \brief Une liste de Corrector
    */
 
-  Point(int x, int y);
+  typedef std::vector<Corrector> CorrectorList;
+
+  /*!
+   * \brief Construit un point avec les coordonnées nulles.
+   *
+   * \param origin Origine du point
+   */
+
+  Point(const Point *origin = nullptr);
+
+  /*!
+   * \brief Construit un point à l'aide d'une abscisse et d'une ordonnée
+   *
+   * \param x Abscisse
+   * \param y Ordonnée
+   * \param origin Origine du point
+   */
+
+  Point(int x, int y, const Point *origin = nullptr);
+
+  /*!
+   * \brief Construit un point avec une liste de Corrector fixée
+   *
+   * Les Corrector ne pouront plus être modifié par la suite.
+   *
+   * \param fixed Lise de Corrector
+   * \param origin Origine du point
+   */
+
+  Point(const CorrectorList &fixed, const Point *origin = nullptr);
 
   /*!
    * \brief Constructeur par copie
    *
-   * Constructeur par copie de la classe Point
+   * Si le point copié appartient à un groupe alors la copie rejoindra ce groupe
    *
-   * \param src : point à copier
+   * \param src Point à copier
    */
 
-  Point(const Point & src);
+  Point(const Point &src);
+
+  /*!
+   * \brief Destructeur
+   *
+   * Quitte le groupe avec beAlone() avant d'être détruit
+   */
 
   ~Point();
 
   /*!
-   *  \brief recupere la valeur de l'absisse du Point.
+   * \brief Opérateur d'affectation
    *
-   *  \return  l'absisse du Point
+   * Si le point copié appartient à un groupe alors la copie rejoindra ce groupe
+   * La liste des Corrector figés n'est pas modifiée.
+   *
+   * \param src Point à copier
    */
 
-  inline int x() const { return m_x; }
+  Point &operator=(const Point &src);
 
   /*!
-   *  \brief  Fonction recuperant le valeur de l'ordonée.
+   * \brief Donne l'origine du point
    *
-   *  \return  Retourne l'ordonée du Point.
+   * Renvoie l'origine du point ou du groupe auquel il appartient.
    */
 
-  inline int y() const { return m_y; }
+  Point origin() const;
 
   /*!
-   *  \brief  Fonction permettant la modification de la valeur de l'absisse x.
+   * \brief Modifie l'origine du point
    *
-   *  \param x l'absisse du point
+   * Modifie l'origine du point ou du groupe auquel il appartient.
    */
 
- inline int &x() { return m_x;}
+  void setOrigin(const Point *origin = nullptr);
 
- /*!
-  *  \brief  Fonction permettant la modification de la valeur de l'ordonnée y.
+  /*!
+   * \brief Donne les coordonnées du point indépendamment de son origine
+   */
+
+  inline Point relative() const { return Point(m_x, m_y); }
+
+  /*!
+   * \brief Donne l'abscisse du point indépendamment de son origine
+   */
+
+  inline int relativeX() const { return m_x; }
+
+  /*!
+   * \brief Donne l'ordonnée du point indépendamment de son origine
+   */
+
+  inline int relativeY() const { return m_y; }
+
+  /*!
+   * \brief Modifie les coordonnées du point indépendamment de son origine
+   */
+
+  void setRelative(const Point &point);
+
+  /*!
+   * \brief Modifie l'abscisse du point indépendamment de son origine
+   */
+
+  inline void setRelativeX(const int x) { setRelative({x, relativeY()}); }
+
+  /*!
+   * \brief Modifie l'ordonnée du point indépendamment de son origine
+   */
+
+  inline void setRelativeY(const int y) { setRelative({relativeX(), y}); }
+
+  /*!
+   * \brief Modifie les coordonnées du point indépendamment de son origine
+   */
+
+  inline void setRelative(const int x, const int y) { setRelative({x, y}); }
+
+  /*!
+   *  \brief Donne l'abscisse du point par rapport à son origine
+   */
+
+  int x() const;
+
+  /*!
+   *  \brief Modifie l'abscisse du point par rapport à son origine
+   */
+
+  inline void setX(const int x) { set(x, y()); }
+
+  /*!
+   *  \brief Donne l'ordonnée du point par rapport à son origine
+   */
+
+  int y() const;
+
+  /*!
+   *  \brief Modifie l'ordonnée du point par rapport à son origine
+   */
+
+  inline void setY(const int y) { set(x(), y); }
+
+  /*!
+  *  \brief Modifie les coordonnées du point par rapport à son origine.
   *
-  *  \param y  l'ordonée du point.
+  * \param x Abscisse
+  * \param y Ordonnée
   */
 
- inline int &y() {return m_y;}
+  void set(const int x, const int y);
 
- /*!
-  *  \brief  permet la modification des valeurs du point.
-  *
-  * \param x  l'absisse du point
-  * \param y  l'ordonée du point
+  /*!
+  *  \brief Modifie les coordonnées du point par rapport à son origine.
   */
 
- void set(const int x, const int y);
+  inline void set(const Point &point) { set(point.x(), point.y()); }
+
+  /*!
+  *  \brief Rejoint le groupe d'un point
+  *
+  * Quand un point rejoint un autre point ils créent un groupe de points.
+  * Si un point rejoint un autre point qui appartient déjà à un groupe alors le premier point est ajouté à ce groupe.
+  * Le point qui rejoint reçoit les coordonnées du point qu'il rejoint.
+  *
+  * Un groupe de points partage les mêmes coordonnées et un même Point d'origine.
+  *
+  * Si lors de la création du groupe les deux points ont la même origine alors le groupe aura cette origine.
+  *
+  * \param point Point à rejoindre
+  */
+
+  void join(Point &point);
+
+  /*!
+  *  \brief Quitte le groupe auquel le point appartient
+  */
+
+  void beAlone();
+
+  /*!
+  *  \brief Indique si le point n'appartient pas à un groupe.
+  */
+
+  inline bool isAlone() const { return m_group == nullptr; }
+
+  inline CorrectorList correctors() const { return m_correctorsVariable; }
+  inline CorrectorList &correctors() { return m_correctorsVariable; }
 
 private:
+  const Point *m_origin; /*!< Origine du Point*/
   int m_x; /*!< Abscisse du Point*/
   int m_y; /*!< Ordonnée du Point*/
+
+  std::shared_ptr<GroupPoints> m_group;
+
+  const CorrectorList m_correctorsFixed;
+  CorrectorList m_correctorsVariable;
 };
 
 /*!

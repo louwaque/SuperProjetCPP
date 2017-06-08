@@ -9,6 +9,7 @@
  * \date 23 mai 2017
  */
 
+#include <vector>
 #include "GraphicsItem.hpp"
 
 /*!
@@ -20,18 +21,15 @@
 class GraphicsShape : public GraphicsItem
 {
 public:
-
   explicit GraphicsShape(GraphicsItem *parent = nullptr);
 
   inline GraphicsTypes type() const { return ShapeType; }
 
 protected:
-
   void meDraw(Canvas *canvas);
 
 protected:
-
-  GraphicsItemList m_points;
+  std::vector<Point> m_points;
 };
 
 #endif

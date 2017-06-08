@@ -14,13 +14,16 @@ class GraphicsCircle : public GraphicsShape
 public:
   explicit GraphicsCircle(GraphicsItem *parent);
 
-  GraphicsItem *center() {
-    return m_points[0];
-  }
+  inline const Point &center() const { return m_points[0]; }
+  inline Point &center() { return m_points[0]; }
 
-  GraphicsItem *radius() {
-    return m_points[1];
-  }
+  //FIXME utilise un point ou on fait un propriété radius
+  //      et pour modifier la taille on laisse MainWindow se débrouiller ?
+  inline const Point &radiusPt() const { return m_points[1]; }
+  inline Point &radiusPt() { return m_points[1]; }
+
+  int radius() const;
+  void setRadius(const int radius);
 
   GraphicsTypes type() const {
     return CircleType;

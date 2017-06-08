@@ -5,7 +5,14 @@
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
-: m_parent(nullptr), m_children(), m_anchor(), m_positionCorrector(), m_z(0), m_color(Color(Color::Black)), m_thick(1), m_isFill(false), m_isVisible(true)
+: m_parent(nullptr),
+  m_children(),
+  m_position(),
+  m_z(0),
+  m_color(Color(Color::Black)),
+  m_thick(1),
+  m_isFill(false),
+  m_isVisible(true)
 {
   setParent(parent);
 }
@@ -30,8 +37,12 @@ void GraphicsItem::setParent(GraphicsItem *parent)
     }
   }
   m_parent = parent;
-  if (m_parent)
+  if (m_parent) {
     m_parent->m_children.push_back(std::unique_ptr<GraphicsItem>(this));
+    m_position.setOrigin(&m_parent->position());
+  } else {
+    m_position.setOrigin(nullptr);
+  }
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
@@ -46,22 +57,6 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter
       list.push_back(ptr.get());
   }
   return list;
-}
-
-Point GraphicsItem::absolute() const
-{
-  if (m_parent)
-    return m_anchor + m_parent->absolute();
-  else
-    return m_anchor;
-}
-
-void GraphicsItem::setAbsolute(const Point &pos)
-{
-  if (m_parent)
-    setAnchor(pos - m_parent->absolute());
-  else
-    setAnchor(pos);
 }
 
 void GraphicsItem::draw(Canvas *canvas)

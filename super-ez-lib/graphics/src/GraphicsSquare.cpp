@@ -1,28 +1,36 @@
 #include "../include/GraphicsSquare.hpp"
-#include "../include/GraphicsPoint.hpp"
-#include "../include/GraphicsAnchor.hpp"
+#include <boost/bind.hpp>
 #include <cmath>
 
 GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
-: GraphicsItem(parent), m_topLeft(nullptr), m_bottomRight(nullptr)
-{
-  m_topLeft = new GraphicsAnchor(this);
-  m_bottomRight = new GraphicsPoint(this);
-  m_bottomRight->setPositionCorrector([this](const Point &pos) {
-    Point diffP(pos - m_topLeft->anchor());
-    double radius = std::hypot(diffP.x(), diffP.y());
-    if (pos < Point()) radius = - radius;
-    return Point(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
-  });
-}
+: GraphicsItem(parent),
+  m_topLeft({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_bottomRight))}, &position()),
+  m_bottomRight({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_topLeft))}, &position())
+{}
 
 void GraphicsSquare::meDraw(Canvas *canvas)
 {
   if (canvas)
-    canvas->drawRectangle(topLeft()->absolute(), bottomRight()->absolute(), isFill());
+    canvas->drawRectangle(topLeft(), bottomRight(), isFill());
 }
 
 bool GraphicsSquare::meIsOver(const Point &absoluteP)
 {
-  return topLeft()->absolute() < absoluteP and absoluteP < bottomRight()->absolute();
+  return topLeft() < absoluteP and absoluteP < bottomRight();
+}
+
+Point GraphicsSquare::corrector(const Point &pos, const Point &corner)
+{
+  Point diffP(pos - corner);
+  double radius = std::hypot(diffP.x(), diffP.y());
+
+  Point res(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
+
+  if (diffP.x() < 0)
+    res.setX(-res.x());
+
+  if (diffP.y() < 0)
+    res.setY(-res.y());
+
+  return corner + res;
 }

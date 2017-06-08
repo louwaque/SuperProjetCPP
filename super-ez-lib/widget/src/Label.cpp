@@ -43,5 +43,5 @@ size_t Label::minimumHeight() const
 void Label::alignText()
 {
   m_text->setAlign(EZAlign::MC);
-  m_text->setAbsolute(Point(absolute().x()+width()/2.0, absolute().y()+height()/2.0));
+  m_text->position().set(position().x()+width()/2.0, position().y()+height()/2.0);
 }
