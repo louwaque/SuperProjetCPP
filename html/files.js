@@ -1,5 +1,6 @@
 var files =
 [
+    [ "_graphics_item_8hpp.js", "__graphics__item__8hpp_8js_source.html", null ],
     [ "_point_8hpp.js", "__point__8hpp_8js_source.html", null ],
     [ "all_0.js", "all__0_8js_source.html", null ],
     [ "all_1.js", "all__1_8js_source.html", null ],
@@ -121,7 +122,7 @@ var files =
     [ "GraphicsEllipse.cpp", "_graphics_ellipse_8cpp_source.html", null ],
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp_source.html", null ],
     [ "GraphicsItem.cpp", "_graphics_item_8cpp_source.html", null ],
-    [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", null ],
+    [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", "_graphics_item_8hpp" ],
     [ "GraphicsLine.cpp", "_graphics_line_8cpp_source.html", null ],
     [ "GraphicsLine.hpp", "_graphics_line_8hpp_source.html", null ],
     [ "GraphicsPoint.cpp", "_graphics_point_8cpp_source.html", null ],
