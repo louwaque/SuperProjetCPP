@@ -27,11 +27,5 @@ var class_point =
     [ "setX", "class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2", null ],
     [ "setY", "class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8", null ],
     [ "x", "class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac", null ],
-    [ "y", "class_point.html#a2226d8a3fb283b0b3c1f69106df144ba", null ],
-    [ "m_correctorsFixed", "class_point.html#ab7c8070a39a2d691783b21e1a89b5f93", null ],
-    [ "m_correctorsVariable", "class_point.html#a0c7258432def19adc6f8f1312bd7a206", null ],
-    [ "m_group", "class_point.html#a387b286dabe0b8a32ac0e19e3488587c", null ],
-    [ "m_origin", "class_point.html#a98ca534cce8976038d485e9c5dffc429", null ],
-    [ "m_x", "class_point.html#a885daee8c5064cd51f6a4c3888091fc9", null ],
-    [ "m_y", "class_point.html#a00e243381d01e186dc2fcc5d24b4d3be", null ]
+    [ "y", "class_point.html#a2226d8a3fb283b0b3c1f69106df144ba", null ]
 ];

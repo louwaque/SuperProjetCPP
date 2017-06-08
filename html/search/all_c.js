@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['l',['L',['../jquery_8js.html#a38ee4c0b5f4fe2a18d0c783af540d253',1,'jquery.js']]],
-  ['leftbutton',['LeftButton',['../class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fa85f758ba4c5c98f0e5acc106bb1e8268',1,'MouseEvent']]],
-  ['leftwheel',['LeftWheel',['../class_mouse_event.html#aa9b4e97077d24cac35e47a04807aca4fac89713a60aaa1ba5d86675edd2fcc0bf',1,'MouseEvent']]],
-  ['lineedit',['LineEdit',['../class_line_edit.html',1,'LineEdit'],['../class_line_edit.html#a04e1cd86821efe7570868ae397978186',1,'LineEdit::LineEdit()']]],
-  ['lineedit_2ecpp',['LineEdit.cpp',['../_line_edit_8cpp.html',1,'']]],
-  ['lineedit_2ehpp',['LineEdit.hpp',['../_line_edit_8hpp.html',1,'']]],
-  ['linetype',['LineType',['../class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b',1,'GraphicsItem']]],
-  ['localstoragesupported',['localStorageSupported',['../navtree_8js.html#ac49af616f532f2364be9f58280469d33',1,'navtree.js']]],
-  ['lt',['lt',['../related__0_8js.html#a857c8c8ca640fb2283d751a715bd1ee9',1,'related_0.js']]]
+  ['operator_2b',['operator+',['../_point_8hpp.html#a4158330ef851082d91a82eefd03aa183',1,'operator+(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#ae44f691efaa50cc00e591b91b73c8be4',1,'operator+(const Point &amp;p, const int number):&#160;Point.cpp']]],
+  ['operator_2d',['operator-',['../_point_8hpp.html#af304a4bde169f417ea02e56d3d4b7258',1,'operator-(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#af594655c05f043397ea0e56df21a7245',1,'operator-(const Point &amp;p, const int number):&#160;Point.cpp']]],
+  ['operator_3c',['operator&lt;',['../_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74',1,'Point.cpp']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960',1,'Point.cpp']]],
+  ['operator_3d',['operator=',['../class_point.html#a2a77e4f4e0521de921e7066052530763',1,'Point']]],
+  ['operator_3d_3d',['operator==',['../_point_8hpp.html#a872cb140a1e5f546a31b4b3d891b765a',1,'Point.cpp']]],
+  ['origin',['origin',['../class_point.html#afa7d33502738b0b3df186a91e11ff2a8',1,'Point']]]
 ];

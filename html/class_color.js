@@ -29,6 +29,5 @@ var class_color =
     [ "setRed", "class_color.html#a8ff299417275579e8ae4a065d8dfcf8d", null ],
     [ "setSaturation", "class_color.html#a237de6ef93ddb2985d87a6fb630a0828", null ],
     [ "setValue", "class_color.html#a1b673b9755fa01412ea14a2f9c040185", null ],
-    [ "value", "class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57", null ],
-    [ "m_color", "class_color.html#aba2e3627f1e3d5ce0b7db938f7717f34", null ]
+    [ "value", "class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57", null ]
 ];

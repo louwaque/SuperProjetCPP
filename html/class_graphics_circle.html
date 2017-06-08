@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_graphics_circle.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,291 +111,196 @@ $(document).ready(function(){initNavTree('class_graphics_circle.html','');});
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
 <a href="class_graphics_circle-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
-<div class="title">Référence de la classe GraphicsCircle</div>  </div>
+<div class="title">Référence de la classe GraphicsCircle<div class="ingroups"><a class="el" href="group__graphics.html">Graphics</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Un cercle.  
+ <a href="class_graphics_circle.html#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_graphics_circle_8hpp_source.html">GraphicsCircle.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Graphe d'héritage de GraphicsCircle:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de GraphicsCircle:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_circle__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div class="dynheader">
-Graphe de collaboration de GraphicsCircle:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de GraphicsCircle:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_circle__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a0891443aab157c94f76ad425b7327b84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a0891443aab157c94f76ad425b7327b84">GraphicsCircle</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>)</td></tr>
+<tr class="memitem:a0891443aab157c94f76ad425b7327b84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0891443aab157c94f76ad425b7327b84"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsCircle</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
 <tr class="separator:a0891443aab157c94f76ad425b7327b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5219f160f58c91aeb67922cf9ae3e487"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">center</a> () const </td></tr>
+<tr class="memitem:a5219f160f58c91aeb67922cf9ae3e487"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5219f160f58c91aeb67922cf9ae3e487"></a>
+const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>center</b> () const </td></tr>
 <tr class="separator:a5219f160f58c91aeb67922cf9ae3e487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c332daff27b4a2eec0d8e07814b8a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c">center</a> ()</td></tr>
+<tr class="memitem:a0c332daff27b4a2eec0d8e07814b8a5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c332daff27b4a2eec0d8e07814b8a5c"></a>
+<a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>center</b> ()</td></tr>
 <tr class="separator:a0c332daff27b4a2eec0d8e07814b8a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b702bcf7260035d3344ded956ceebed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">radiusPt</a> () const </td></tr>
 <tr class="separator:a3b702bcf7260035d3344ded956ceebed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60591e8f8e2cea0fb23f7b25ba1f49cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a60591e8f8e2cea0fb23f7b25ba1f49cb">radiusPt</a> ()</td></tr>
+<tr class="memitem:a60591e8f8e2cea0fb23f7b25ba1f49cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60591e8f8e2cea0fb23f7b25ba1f49cb"></a>
+<a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>radiusPt</b> ()</td></tr>
 <tr class="separator:a60591e8f8e2cea0fb23f7b25ba1f49cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf19074ff1c6b75b0be7becee5746aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa">radius</a> () const </td></tr>
+<tr class="memitem:a8cf19074ff1c6b75b0be7becee5746aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cf19074ff1c6b75b0be7becee5746aa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b> () const </td></tr>
 <tr class="separator:a8cf19074ff1c6b75b0be7becee5746aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a6b7c69ebd3b69a7be96230618a64bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">setRadius</a> (const int <a class="el" href="class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa">radius</a>)</td></tr>
+<tr class="memitem:a3a6b7c69ebd3b69a7be96230618a64bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">setRadius</a> (const int radius)</td></tr>
 <tr class="separator:a3a6b7c69ebd3b69a7be96230618a64bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8abd3846ad2d4b0f4dd8248118d64f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a3b8abd3846ad2d4b0f4dd8248118d64f">type</a> () const </td></tr>
+<tr class="memitem:a3b8abd3846ad2d4b0f4dd8248118d64f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b8abd3846ad2d4b0f4dd8248118d64f"></a>
+GraphicsTypes&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
 <tr class="separator:a3b8abd3846ad2d4b0f4dd8248118d64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_graphics_shape"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_graphics_shape')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_graphics_shape.html">GraphicsShape</a></td></tr>
-<tr class="memitem:ad416945628f3374abd7d0b55c40e6c11 inherit pub_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11">GraphicsShape</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
+<tr class="memitem:ad416945628f3374abd7d0b55c40e6c11 inherit pub_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad416945628f3374abd7d0b55c40e6c11"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsShape</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
 <tr class="separator:ad416945628f3374abd7d0b55c40e6c11 inherit pub_methods_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29030eed5d6e98479eace34262328cb inherit pub_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#ac29030eed5d6e98479eace34262328cb">type</a> () const </td></tr>
+<tr class="memitem:ac29030eed5d6e98479eace34262328cb inherit pub_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac29030eed5d6e98479eace34262328cb"></a>
+GraphicsTypes&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
 <tr class="separator:ac29030eed5d6e98479eace34262328cb inherit pub_methods_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc">GraphicsItem</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>=nullptr)</td></tr>
+<tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c30111512bd4f198e9414b70bb3ccc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
 <tr class="separator:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76d7190cfa332054ae66d505fb37bb1 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad76d7190cfa332054ae66d505fb37bb1">~GraphicsItem</a> ()</td></tr>
-<tr class="separator:ad76d7190cfa332054ae66d505fb37bb1 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a> () const </td></tr>
+<tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf0a8de33aa83d5fa5ac8889e7e4392"></a>
+<a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const </td></tr>
 <tr class="separator:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a8bcbe86ba1854edffd7fbed0b4bc8cd5">setParent</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *<a class="el" href="class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392">parent</a>)</td></tr>
+<tr class="memitem:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bcbe86ba1854edffd7fbed0b4bc8cd5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
 <tr class="separator:a8bcbe86ba1854edffd7fbed0b4bc8cd5 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a2d0bc3ef9247fde5bf28597b0488bb2a">children</a> (const <a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> filter=<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a>, const <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc">SearchTypes</a> option=<a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>) const </td></tr>
+<tr class="memitem:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d0bc3ef9247fde5bf28597b0488bb2a"></a>
+GraphicsItemList&#160;</td><td class="memItemRight" valign="bottom"><b>children</b> (const GraphicsTypes filter=UndefinedType, const SearchTypes option=ChildrenRecursively) const </td></tr>
 <tr class="separator:a2d0bc3ef9247fde5bf28597b0488bb2a inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01a34e70b5ac17f7c6f50bcfe4301ed6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">position</a> () const </td></tr>
+<tr class="memitem:a01a34e70b5ac17f7c6f50bcfe4301ed6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01a34e70b5ac17f7c6f50bcfe4301ed6"></a>
+<a class="el" href="class_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () const </td></tr>
 <tr class="separator:a01a34e70b5ac17f7c6f50bcfe4301ed6 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8802f819c79ab12ed3b719af2b8afcbd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a8802f819c79ab12ed3b719af2b8afcbd">position</a> ()</td></tr>
+<tr class="memitem:a8802f819c79ab12ed3b719af2b8afcbd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8802f819c79ab12ed3b719af2b8afcbd"></a>
+<a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> ()</td></tr>
 <tr class="separator:a8802f819c79ab12ed3b719af2b8afcbd inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a> () const </td></tr>
+<tr class="memitem:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29aeb3047cd596ecedf48f565293dbc2"></a>
+<a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> () const </td></tr>
 <tr class="separator:a29aeb3047cd596ecedf48f565293dbc2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a> () const </td></tr>
+<tr class="memitem:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab496f7642dc720844ff8dcb848acb7bd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>z</b> () const </td></tr>
 <tr class="separator:ab496f7642dc720844ff8dcb848acb7bd inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#acc364937b5031bc99455d18638f77af3">setZ</a> (const int <a class="el" href="class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd">z</a>)</td></tr>
+<tr class="memitem:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc364937b5031bc99455d18638f77af3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setZ</b> (const int z)</td></tr>
 <tr class="separator:acc364937b5031bc99455d18638f77af3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3">setColor</a> (const <a class="el" href="class_color.html">Color</a> <a class="el" href="class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2">color</a>)</td></tr>
+<tr class="memitem:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a3edbc5d5628a75918d512314f33c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <a class="el" href="class_color.html">Color</a> color)</td></tr>
 <tr class="separator:ac2a3edbc5d5628a75918d512314f33c3 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d">thick</a> () const </td></tr>
+<tr class="memitem:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f6437c601f4c07f37a72f3a4ac4319d"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>thick</b> () const </td></tr>
 <tr class="separator:a6f6437c601f4c07f37a72f3a4ac4319d inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6">setThick</a> (unsigned int <a class="el" href="class_graphics_item.html#a6f6437c601f4c07f37a72f3a4ac4319d">thick</a>=1)</td></tr>
+<tr class="memitem:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d7d6b9604728b7ad154e79731d1e8e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setThick</b> (unsigned int thick=1)</td></tr>
 <tr class="separator:a4d7d6b9604728b7ad154e79731d1e8e6 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a> () const </td></tr>
+<tr class="memitem:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349439f069cfa6ade361ebdcd6f43434"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFill</b> () const </td></tr>
 <tr class="separator:a349439f069cfa6ade361ebdcd6f43434 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7">setFill</a> (const bool fill)</td></tr>
+<tr class="memitem:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68ff48ffc002e83cea62ea094c5d6b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFill</b> (const bool fill)</td></tr>
 <tr class="separator:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605">isVisible</a> () const </td></tr>
+<tr class="memitem:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f5c21a12db9f875fffe77b491aa1605"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b> () const </td></tr>
 <tr class="separator:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a911dbcb4786b03e21400e821e0e6d632">setVisible</a> (const bool <a class="el" href="class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605">isVisible</a>=true)</td></tr>
+<tr class="memitem:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a911dbcb4786b03e21400e821e0e6d632"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVisible</b> (const bool isVisible=true)</td></tr>
 <tr class="separator:a911dbcb4786b03e21400e821e0e6d632 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689">draw</a> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
+<tr class="memitem:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4f2af374b066e17a5e0e1dd1565c689"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:af4f2af374b066e17a5e0e1dd1565c689 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a48a21dd602b80a38515905ce1f668ed2">update</a> (const unsigned int time)</td></tr>
+<tr class="memitem:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48a21dd602b80a38515905ce1f668ed2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const unsigned int time)</td></tr>
 <tr class="separator:a48a21dd602b80a38515905ce1f668ed2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2">handleEvent</a> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
+<tr class="memitem:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c62fa07246bc1d7b9eae6340a246e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:ad6c62fa07246bc1d7b9eae6340a246e2 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7">isOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;<a class="el" href="jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e">p</a>)</td></tr>
+<tr class="memitem:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a853ecc7b1940b8bce18600a3f3d6cda7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOver</b> (const <a class="el" href="class_point.html">Point</a> &amp;p)</td></tr>
 <tr class="separator:a853ecc7b1940b8bce18600a3f3d6cda7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb">hasFocus</a> () const </td></tr>
+<tr class="memitem:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f3b7de02ad675cd54aa46feec7de2eb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasFocus</b> () const </td></tr>
 <tr class="separator:a1f3b7de02ad675cd54aa46feec7de2eb inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
-<tr class="memitem:a8533b7a4eb72f0063e98d8ad94210f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16">meDraw</a> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
+<tr class="memitem:a8533b7a4eb72f0063e98d8ad94210f16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8533b7a4eb72f0063e98d8ad94210f16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>meDraw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:a8533b7a4eb72f0063e98d8ad94210f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf0874f0e62be9e88361d799975c99bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">meIsOver</a> (const <a class="el" href="class_point.html">Point</a> &amp;absoluteP)</td></tr>
 <tr class="separator:adf0874f0e62be9e88361d799975c99bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_graphics_shape"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graphics_shape')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_graphics_shape.html">GraphicsShape</a></td></tr>
-<tr class="memitem:ad04e367a19e41326ab7b0f30207b66b5 inherit pro_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#ad04e367a19e41326ab7b0f30207b66b5">meDraw</a> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
+<tr class="memitem:ad04e367a19e41326ab7b0f30207b66b5 inherit pro_methods_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad04e367a19e41326ab7b0f30207b66b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>meDraw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:ad04e367a19e41326ab7b0f30207b66b5 inherit pro_methods_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a7da307cdcde806bc966d813f58643649">meUpdate</a> (const unsigned int time)</td></tr>
+<tr class="memitem:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7da307cdcde806bc966d813f58643649"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meUpdate</b> (const unsigned int time)</td></tr>
 <tr class="separator:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ad6009d75c16ccc9559a4b2ffad69045c">meHandleEvent</a> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
+<tr class="memitem:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6009d75c16ccc9559a4b2ffad69045c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meHandleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:ad6009d75c16ccc9559a4b2ffad69045c inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
 <tr class="inherit_header pub_types_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> { <br/>
-&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc">UndefinedType</a> = 0x0, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabad1df9300f6f2fcc0ca5977cf77801c">ItemType</a> = 0x1, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fae51e7f831f089c84eb2ce600219ce81e">PointType</a> = 0x2, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa0a50374ea5b385f3a31f55663e45588d">TextType</a> = 0x4, 
+<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsTypes</b> { <br/>
+&#160;&#160;<b>UndefinedType</b> = 0x0, 
+<b>ItemType</b> = 0x1, 
+<b>PointType</b> = 0x2, 
+<b>TextType</b> = 0x4, 
 <br/>
-&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faa952ab90c4a0e0659506d78572b850fd">ShapeType</a> = 0x6, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa7628745983f7758fd3c5e8619b1b645b">LineType</a> = 0x8, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa61dd0137f3bed682a547e54edbd38363">TriangleType</a> = 0x10, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa37c1c68bb5807d8c6c78a64bffb6cc25">RectangleType</a> = 0x12, 
+&#160;&#160;<b>ShapeType</b> = 0x6, 
+<b>LineType</b> = 0x8, 
+<b>TriangleType</b> = 0x10, 
+<b>RectangleType</b> = 0x12, 
 <br/>
-&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabada3626679b8bb9210862f20cf265ac">PolygonType</a> = 0x14, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa18f8d22437273b463b013d68d5fab142">AnchorType</a> = 0x16, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a">CircleType</a> = 0x18, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa2b3fdefdac8f54a1ca2824d0c57e6082">EllipseType</a> = 0x20, 
+&#160;&#160;<b>PolygonType</b> = 0x14, 
+<b>AnchorType</b> = 0x16, 
+<b>CircleType</b> = 0x18, 
+<b>EllipseType</b> = 0x20, 
 <br/>
-&#160;&#160;<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabd9dc1c77424e2e5ff3020d5d9ef02da">SquareType</a> = 0x22, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fad8645ce1fa1066c18e70a1534c4ec330">AnimationType</a> = 0x24, 
-<a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fa26ba6ed171b0103540e9c4ff0e85bc79">BlinkAnimationType</a> = 0x26
+&#160;&#160;<b>SquareType</b> = 0x22, 
+<b>AnimationType</b> = 0x24, 
+<b>BlinkAnimationType</b> = 0x26
 <br/>
  }</td></tr>
 <tr class="separator:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fc">SearchTypes</a> { <a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fca79162c22d42759b0afbc7c10450a7aca">DirectChildren</a>, 
-<a class="el" href="class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665">ChildrenRecursively</a>
+<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SearchTypes</b> { <b>DirectChildren</b>, 
+<b>ChildrenRecursively</b>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItemList</a></td></tr>
+<tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa643e574b9c2b6713b1b8def690f0c6b"></a>
+typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
 <tr class="separator:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#ae17633bdf56258e2209ae335d0d1c3fa">focusItem</a> ()</td></tr>
+<tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae17633bdf56258e2209ae335d0d1c3fa"></a>
+static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>focusItem</b> ()</td></tr>
 <tr class="separator:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_item.html#a5877c4c5815eacb9876c7b99b119aef7">setFocusItem</a> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
+<tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5877c4c5815eacb9876c7b99b119aef7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
 <tr class="separator:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_graphics_shape"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graphics_shape')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_graphics_shape.html">GraphicsShape</a></td></tr>
-<tr class="memitem:a1e6333c05e35fbbd0550ab7fe0ac3e44 inherit pro_attribs_class_graphics_shape"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a></td></tr>
+<tr class="memitem:a1e6333c05e35fbbd0550ab7fe0ac3e44 inherit pro_attribs_class_graphics_shape"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6333c05e35fbbd0550ab7fe0ac3e44"></a>
+std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_points</b></td></tr>
 <tr class="separator:a1e6333c05e35fbbd0550ab7fe0ac3e44 inherit pro_attribs_class_graphics_shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a0891443aab157c94f76ad425b7327b84"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GraphicsCircle::GraphicsCircle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td>
-          <td class="paramname"><em>parent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;: <a class="code" href="class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11">GraphicsShape</a>(parent)</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.emplace_back(&amp;<a class="code" href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">position</a>());</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>.emplace_back(&amp;<a class="code" href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">position</a>());</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="class_graphics_shape_html_ad416945628f3374abd7d0b55c40e6c11"><div class="ttname"><a href="class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11">GraphicsShape::GraphicsShape</a></div><div class="ttdeci">GraphicsShape(GraphicsItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> GraphicsShape.cpp:3</div></div>
-<div class="ttc" id="class_graphics_item_html_a01a34e70b5ac17f7c6f50bcfe4301ed6"><div class="ttname"><a href="class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6">GraphicsItem::position</a></div><div class="ttdeci">Point position() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:54</div></div>
-<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a0891443aab157c94f76ad425b7327b84_cgraph.svg" width="382" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Un cercle. </p>
 
-</div>
-</div>
-<h2 class="groupheader">Documentation des fonctions membres</h2>
-<a class="anchor" id="a5219f160f58c91aeb67922cf9ae3e487"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_point.html">Point</a>&amp; GraphicsCircle::center </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[0]; }</div>
-<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a5219f160f58c91aeb67922cf9ae3e487_icgraph.svg" width="576" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0c332daff27b4a2eec0d8e07814b8a5c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_point.html">Point</a>&amp; GraphicsCircle::center </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[0]; }</div>
-<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a8533b7a4eb72f0063e98d8ad94210f16"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GraphicsCircle::meDraw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_canvas.html">Canvas</a> *&#160;</td>
-          <td class="paramname"><em>canvas</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#ab97734473720fa8365534448aa13733c">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">if</span> (canvas)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    canvas-&gt;<a class="code" href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">drawCircle</a>(<a class="code" href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">center</a>() - <a class="code" href="class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa">radius</a>(), <a class="code" href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">center</a>() + <a class="code" href="class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa">radius</a>(), <a class="code" href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">isFill</a>());</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="class_graphics_circle_html_a5219f160f58c91aeb67922cf9ae3e487"><div class="ttname"><a href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">GraphicsCircle::center</a></div><div class="ttdeci">const Point &amp; center() const </div><div class="ttdef"><b>Definition:</b> GraphicsCircle.hpp:11</div></div>
-<div class="ttc" id="class_graphics_item_html_a349439f069cfa6ade361ebdcd6f43434"><div class="ttname"><a href="class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434">GraphicsItem::isFill</a></div><div class="ttdeci">bool isFill() const </div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:81</div></div>
-<div class="ttc" id="class_graphics_circle_html_a8cf19074ff1c6b75b0be7becee5746aa"><div class="ttname"><a href="class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa">GraphicsCircle::radius</a></div><div class="ttdeci">int radius() const </div><div class="ttdef"><b>Definition:</b> GraphicsCircle.cpp:11</div></div>
-<div class="ttc" id="class_canvas_html_a5d6c1ffe1d0279d24d13fb7956cc99a9"><div class="ttname"><a href="class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9">Canvas::drawCircle</a></div><div class="ttdeci">void drawCircle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill=false)</div><div class="ttdef"><b>Definition:</b> Canvas.cpp:16</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a8533b7a4eb72f0063e98d8ad94210f16_cgraph.svg" width="100%" height="516"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</p>
-
-</div>
-</div>
+<p>Définition à la ligne <a class="el" href="_graphics_circle_8hpp_source.html#l00012">12</a> du fichier <a class="el" href="_graphics_circle_8hpp_source.html">GraphicsCircle.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
 <a class="anchor" id="adf0874f0e62be9e88361d799975c99bc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -416,52 +322,11 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">A faire:</a></b></dt><dd>pas trop compliqué donc faut le faire ! </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">//FIXME pas trop compliqué donc faut le faire !</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a8cf19074ff1c6b75b0be7becee5746aa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GraphicsCircle::radius </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="class_point.html">Point</a> distP = <a class="code" href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">radiusPt</a>() - <a class="code" href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">center</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> hypot(distP.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), distP.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:80</div></div>
-<div class="ttc" id="class_graphics_circle_html_a5219f160f58c91aeb67922cf9ae3e487"><div class="ttname"><a href="class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487">GraphicsCircle::center</a></div><div class="ttdeci">const Point &amp; center() const </div><div class="ttdef"><b>Definition:</b> GraphicsCircle.hpp:11</div></div>
-<div class="ttc" id="class_graphics_circle_html_a3b702bcf7260035d3344ded956ceebed"><div class="ttname"><a href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">GraphicsCircle::radiusPt</a></div><div class="ttdeci">const Point &amp; radiusPt() const </div><div class="ttdef"><b>Definition:</b> GraphicsCircle.hpp:16</div></div>
-<div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> Point.cpp:88</div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> Point.hpp:40</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a8cf19074ff1c6b75b0be7becee5746aa_cgraph.svg" width="667" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html">GraphicsItem</a>.</p>
 
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a8cf19074ff1c6b75b0be7becee5746aa_icgraph.svg" width="376" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Définition à la ligne <a class="el" href="_graphics_circle_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="_graphics_circle_8cpp_source.html">GraphicsCircle.cpp</a>.</p>
 
 </div>
 </div>
@@ -485,42 +350,10 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[1]; }</div>
-<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_circle_a3b702bcf7260035d3344ded956ceebed_icgraph.svg" width="619" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">A faire:</a></b></dt><dd>utilise un point ou on fait un propriété radius </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="a60591e8f8e2cea0fb23f7b25ba1f49cb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_point.html">Point</a>&amp; GraphicsCircle::radiusPt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">m_points</a>[1]; }</div>
-<div class="ttc" id="class_graphics_shape_html_a1e6333c05e35fbbd0550ab7fe0ac3e44"><div class="ttname"><a href="class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44">GraphicsShape::m_points</a></div><div class="ttdeci">std::vector&lt; Point &gt; m_points</div><div class="ttdef"><b>Definition:</b> GraphicsShape.hpp:26</div></div>
-</div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_graphics_circle_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="_graphics_circle_8hpp_source.html">GraphicsCircle.hpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3a6b7c69ebd3b69a7be96230618a64bb"></a>
@@ -536,44 +369,15 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">//FIXME faire des maths</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a3b8abd3846ad2d4b0f4dd8248118d64f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f">GraphicsTypes</a> GraphicsCircle::type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">A faire:</a></b></dt><dd>faire des maths </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="class_graphics_item.html#aa892caff547a0fd1969898ee0740b186">GraphicsItem</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                             {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a">CircleType</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="ttc" id="class_graphics_item_html_aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a"><div class="ttname"><a href="class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764faee03734275b599ac12780209db05264a">GraphicsItem::CircleType</a></div><div class="ttdef"><b>Definition:</b> GraphicsItem.hpp:26</div></div>
-</div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_graphics_circle_8cpp_source.html#l00017">17</a> du fichier <a class="el" href="_graphics_circle_8cpp_source.html">GraphicsCircle.cpp</a>.</p>
+
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_graphics_circle_8hpp_source.html">GraphicsCircle.hpp</a></li>
-<li><a class="el" href="_graphics_circle_8cpp.html">GraphicsCircle.cpp</a></li>
+<li><a class="el" href="_graphics_circle_8cpp_source.html">GraphicsCircle.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -581,7 +385,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_circle.html">GraphicsCircle</a></li>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
+    <li class="footer">Généré le Jeudi 8 Juin 2017 13:51:22 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

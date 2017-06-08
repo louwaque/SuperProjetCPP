@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['join',['join',['../class_point.html#a4fa7ffadfb6c9de033bfef5decdaa66e',1,'Point']]],
-  ['jquery',['jQuery',['../jquery_8js.html#a2b1d6f9c448e3ce72f4e1865d6e38d2c',1,'jquery.js']]],
-  ['jquery_2ejs',['jquery.js',['../jquery_8js.html',1,'']]]
+  ['label',['Label',['../class_label.html',1,'']]],
+  ['lineedit',['LineEdit',['../class_line_edit.html',1,'']]],
+  ['liste_20des_20choses_20à_20faire',['Liste des choses à faire',['../todo.html',1,'']]]
 ];

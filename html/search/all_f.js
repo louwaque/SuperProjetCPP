@@ -1,10 +1,22 @@
 var searchData=
 [
-  ['operator_2b',['operator+',['../_point_8hpp.html#a4158330ef851082d91a82eefd03aa183',1,'operator+(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#ae44f691efaa50cc00e591b91b73c8be4',1,'operator+(const Point &amp;p, const int number):&#160;Point.cpp'],['../_point_8cpp.html#a4158330ef851082d91a82eefd03aa183',1,'operator+(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8cpp.html#ae44f691efaa50cc00e591b91b73c8be4',1,'operator+(const Point &amp;p, const int number):&#160;Point.cpp']]],
-  ['operator_2d',['operator-',['../_point_8hpp.html#af304a4bde169f417ea02e56d3d4b7258',1,'operator-(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8hpp.html#af594655c05f043397ea0e56df21a7245',1,'operator-(const Point &amp;p, const int number):&#160;Point.cpp'],['../_point_8cpp.html#af304a4bde169f417ea02e56d3d4b7258',1,'operator-(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_point_8cpp.html#af594655c05f043397ea0e56df21a7245',1,'operator-(const Point &amp;p, const int number):&#160;Point.cpp']]],
-  ['operator_3c',['operator&lt;',['../_font_8hpp.html#a8aa556366c5bc0be00a769f4d2a827dc',1,'operator&lt;(const Font &amp;l, const Font &amp;r):&#160;Font.cpp'],['../_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74',1,'operator&lt;(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_font_8cpp.html#a8aa556366c5bc0be00a769f4d2a827dc',1,'operator&lt;(const Font &amp;l, const Font &amp;r):&#160;Font.cpp'],['../_point_8cpp.html#a4e1acba0f26daf714b7816d3c1994a74',1,'operator&lt;(const Point &amp;l, const Point &amp;r):&#160;Point.cpp']]],
-  ['operator_3c_3c',['operator&lt;&lt;',['../class_event.html#a8593a1bcdda00faa8a86e0eaaeba0446',1,'Event::operator&lt;&lt;()'],['../_font_8hpp.html#a88257f2b84beb9d13afc1148c12987dc',1,'operator&lt;&lt;(std::ostream &amp;os, const Font &amp;font):&#160;Font.cpp'],['../_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960',1,'operator&lt;&lt;(std::ostream &amp;os, const Point &amp;p):&#160;Point.cpp'],['../_event_8cpp.html#a8593a1bcdda00faa8a86e0eaaeba0446',1,'operator&lt;&lt;(std::ostream &amp;os, const Event &amp;event):&#160;Event.cpp'],['../_font_8cpp.html#a88257f2b84beb9d13afc1148c12987dc',1,'operator&lt;&lt;(std::ostream &amp;os, const Font &amp;font):&#160;Font.cpp'],['../_point_8cpp.html#aab55cf13db83c55c46a961b2b2441960',1,'operator&lt;&lt;(std::ostream &amp;os, const Point &amp;p):&#160;Point.cpp']]],
-  ['operator_3d',['operator=',['../class_point.html#a2a77e4f4e0521de921e7066052530763',1,'Point']]],
-  ['operator_3d_3d',['operator==',['../_font_8hpp.html#a5df2ecbf2536a0edf168f66e12dd374b',1,'operator==(const Font &amp;l, const Font &amp;r):&#160;Font.cpp'],['../_point_8hpp.html#a872cb140a1e5f546a31b4b3d891b765a',1,'operator==(const Point &amp;l, const Point &amp;r):&#160;Point.cpp'],['../_font_8cpp.html#a5df2ecbf2536a0edf168f66e12dd374b',1,'operator==(const Font &amp;l, const Font &amp;r):&#160;Font.cpp'],['../_point_8cpp.html#a872cb140a1e5f546a31b4b3d891b765a',1,'operator==(const Point &amp;l, const Point &amp;r):&#160;Point.cpp']]],
-  ['origin',['origin',['../class_group_points.html#a9c23ec98ecabaf694b5b16030213096f',1,'GroupPoints::origin()'],['../class_point.html#afa7d33502738b0b3df186a91e11ff2a8',1,'Point::origin()']]]
+  ['superprojetcpp',['SuperProjetCPP',['../md__home_travis_build__l0_l022__super_projet_c_p_p__r_e_a_d_m_e.html',1,'']]],
+  ['saturation',['saturation',['../class_color.html#a9e232063ef1dfe5e98970700db822561',1,'Color']]],
+  ['second',['second',['../class_graphics_triangle.html#a0e102372963019779b658b153eb48389',1,'GraphicsTriangle']]],
+  ['set',['set',['../class_point.html#a43923c490fb5439d7d8a041e86520c34',1,'Point::set(const int x, const int y)'],['../class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410',1,'Point::set(const Point &amp;point)']]],
+  ['setblue',['setBlue',['../class_color.html#ae752d55b3758a7181fd3c201ab87ca3b',1,'Color']]],
+  ['setgreen',['setGreen',['../class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d',1,'Color']]],
+  ['sethexa',['setHexa',['../class_color.html#a075616705bfbe4802b121a343f4ed78e',1,'Color']]],
+  ['sethue',['setHue',['../class_color.html#a600727550b0b99ab9c67226be5aa70cb',1,'Color']]],
+  ['setorigin',['setOrigin',['../class_point.html#a0b2ea5baf36174499da121e666931e10',1,'Point']]],
+  ['setradius',['setRadius',['../class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb',1,'GraphicsCircle']]],
+  ['setred',['setRed',['../class_color.html#a8ff299417275579e8ae4a065d8dfcf8d',1,'Color']]],
+  ['setrelative',['setRelative',['../class_point.html#a9abe56cf3f067305623a1d805460a84f',1,'Point::setRelative(const Point &amp;point)'],['../class_point.html#a61727372965e26cbd7e661157d959ae9',1,'Point::setRelative(const int x, const int y)']]],
+  ['setrelativex',['setRelativeX',['../class_point.html#a7f5e36e2e1bd0fa1564c1e4d5d74355c',1,'Point']]],
+  ['setrelativey',['setRelativeY',['../class_point.html#abb67fd238634ebc25e4bdb3ab4cca9b6',1,'Point']]],
+  ['setsaturation',['setSaturation',['../class_color.html#a237de6ef93ddb2985d87a6fb630a0828',1,'Color']]],
+  ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText::setText()'],['../class_label.html#a2bd65842919bc965ff8482407b34f097',1,'Label::setText()']]],
+  ['setvalue',['setValue',['../class_color.html#a1b673b9755fa01412ea14a2f9c040185',1,'Color']]],
+  ['setx',['setX',['../class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2',1,'Point']]],
+  ['sety',['setY',['../class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8',1,'Point']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quit',['quit',['../class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3',1,'Application']]]
+  ['_7epoint',['~Point',['../class_point.html#a395fa04b4ec126b66fc053f829a30cc1',1,'Point']]]
 ];

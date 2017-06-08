@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -79,11 +80,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="functions.html"><span>Tout</span></a></li>
       <li><a href="functions_func.html"><span>Fonctions</span></a></li>
-      <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li class="current"><a href="functions_type.html"><span>Définitions&#160;de&#160;type</span></a></li>
       <li><a href="functions_enum.html"><span>Énumérations</span></a></li>
-      <li><a href="functions_eval.html"><span>Valeurs&#160;énumérées</span></a></li>
-      <li><a href="functions_rela.html"><span>Fonctions&#160;associées</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -106,7 +104,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,23 +115,11 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 
 <div class="contents">
 &#160;<ul>
-<li>Clock
-: <a class="el" href="class_window.html#abe3416e5f47b73184f631446fe1ea6e1">Window</a>
-</li>
 <li>Corrector
 : <a class="el" href="class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41">Point</a>
 </li>
 <li>CorrectorList
 : <a class="el" href="class_point.html#a42108245ceb7c99343bcccb347babbc8">Point</a>
-</li>
-<li>GraphicsItemList
-: <a class="el" href="class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b">GraphicsItem</a>
-</li>
-<li>Key
-: <a class="el" href="class_key_event.html#a3834189523a28dbfb5f9bf14881d285a">KeyEvent</a>
-</li>
-<li>signal_t
-: <a class="el" href="class_widget.html#a722503332a7264088569b8f3fb7b3441">Widget</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -141,7 +127,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
+    <li class="footer">Généré le Jeudi 8 Juin 2017 13:51:23 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

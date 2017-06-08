@@ -1,6 +1,7 @@
 var annotated =
 [
     [ "Application", "class_application.html", "class_application" ],
+    [ "Button", "class_button.html", "class_button" ],
     [ "Canvas", "class_canvas.html", "class_canvas" ],
     [ "Color", "class_color.html", "class_color" ],
     [ "Event", "class_event.html", "class_event" ],
@@ -20,6 +21,7 @@ var annotated =
     [ "GraphicsTriangle", "class_graphics_triangle.html", "class_graphics_triangle" ],
     [ "GroupPoints", "class_group_points.html", "class_group_points" ],
     [ "KeyEvent", "class_key_event.html", "class_key_event" ],
+    [ "Label", "class_label.html", "class_label" ],
     [ "LineEdit", "class_line_edit.html", "class_line_edit" ],
     [ "MainWindow", "class_main_window.html", "class_main_window" ],
     [ "MouseEvent", "class_mouse_event.html", "class_mouse_event" ],

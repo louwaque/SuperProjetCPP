@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_group_points.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,20 +113,17 @@ $(document).ready(function(){initNavTree('class_group_points.html','');});
 
 <p>Liste complète des membres de <a class="el" href="class_group_points.html">GroupPoints</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_group_points.html#ae976ab1712456edebc5f9d3ebc46f293">GroupPoints</a>()</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_group_points.html#ada135a7d9f454071f8812082a92d90fc">m_origin</a></td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_group_points.html#a8ba11c38c9bb66140c20d4a1332f4b9a">m_points</a></td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_group_points.html#a9c23ec98ecabaf694b5b16030213096f">origin</a>() const </td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_group_points.html#aa238d52f825b8ea8da6a5c4ae1b8d482">Point</a> class</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_group_points.html#a5d0d00417a192136922c27c8ce8ff98f">points</a>() const </td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_group_points.html#a2dcf8c026d02322add148ce76d97ff09">points</a>()</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_group_points.html#a05e55c3660ad11749c1552f212e12d26">setOrigin</a>(const Point *origin=nullptr)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GroupPoints</b>() (défini dans <a class="el" href="class_group_points.html">GroupPoints</a>)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>origin</b>() const  (défini dans <a class="el" href="class_group_points.html">GroupPoints</a>)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Point</b> (défini dans <a class="el" href="class_group_points.html">GroupPoints</a>)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>points</b>() const  (défini dans <a class="el" href="class_group_points.html">GroupPoints</a>)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setOrigin</b>(const Point *origin=nullptr) (défini dans <a class="el" href="class_group_points.html">GroupPoints</a>)</td><td class="entry"><a class="el" href="class_group_points.html">GroupPoints</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
+    <li class="footer">Généré le Jeudi 8 Juin 2017 13:51:22 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

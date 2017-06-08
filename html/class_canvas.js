@@ -18,6 +18,5 @@ var class_canvas =
     [ "setColor", "class_canvas.html#a817290cca06f0f43e9cf52cd980794d1", null ],
     [ "setFont", "class_canvas.html#ab2904e99ad4ca470be482cf2faf8c395", null ],
     [ "setThick", "class_canvas.html#a3ef38b87f65a9d13ec8abd7073142eb6", null ],
-    [ "width", "class_canvas.html#a39dbe4f300c998b4850e0f253c580ae9", null ],
-    [ "m_window", "class_canvas.html#a632a6686001b5f1e8f68537db086871d", null ]
+    [ "width", "class_canvas.html#a39dbe4f300c998b4850e0f253c580ae9", null ]
 ];

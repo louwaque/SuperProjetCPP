@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quit',['quit',['../class_application.html#a5174a3e65c18e8b1e9cdbd8364cad3a3',1,'Application']]]
+  ['value',['value',['../class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57',1,'Color']]]
 ];

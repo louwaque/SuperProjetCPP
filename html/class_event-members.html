@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_event.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,20 +113,20 @@ $(document).ready(function(){initNavTree('class_event.html','');});
 
 <p>Liste complète des membres de <a class="el" href="class_event.html">Event</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_event.html#a5a40dd4708297f7031e29b39e039ae10">Event</a>()</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321de">EventType</a> énumération</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea30723849ecde37d69096466c2daee03b">KeyType</a> valeur énumérée</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_event.html#aa306292f6e9bf31a622e79dfc54321dea25a8f49380a5c0bae7da07ca8523a9ef">MouseType</a> valeur énumérée</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_event.html#a8593a1bcdda00faa8a86e0eaaeba0446">operator&lt;&lt;</a>(std::ostream &amp;os, const Event &amp;event)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_event.html#af0c720ee042e454bc655288e00ed1e49">type</a>() const =0</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_event.html#a4917ed8f309f5f3ab18b52482a1f137d">write</a>(std::ostream &amp;os) const =0</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_event.html#ab864fd85c758006c42cd7a1b3369b483">~Event</a>()</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Event</b>() (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>EventType</b> énumération (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>KeyType</b> valeur énumérée (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>MouseType</b> valeur énumérée (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator&lt;&lt;</b> (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>type</b>() const =0 (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>write</b>(std::ostream &amp;os) const =0 (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Event</b>() (défini dans <a class="el" href="class_event.html">Event</a>)</td><td class="entry"><a class="el" href="class_event.html">Event</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Mercredi 7 Juin 2017 12:05:56 pour Super Project c++ par
+    <li class="footer">Généré le Jeudi 8 Juin 2017 13:51:22 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

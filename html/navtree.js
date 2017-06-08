@@ -2,28 +2,24 @@ var NAVTREE =
 [
   [ "Super Project c++", "index.html", [
     [ "SuperProjetCPP", "md__home_travis_build__l0_l022__super_projet_c_p_p__r_e_a_d_m_e.html", null ],
+    [ "Liste des choses à faire", "todo.html", null ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Classes", null, [
       [ "Liste des classes", "annotated.html", "annotated" ],
       [ "Index des classes", "classes.html", null ],
       [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ],
       [ "Membres de classe", "functions.html", [
-        [ "Tout", "functions.html", "functions_dup" ],
-        [ "Fonctions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Tout", "functions.html", null ],
+        [ "Fonctions", "functions_func.html", null ],
         [ "Définitions de type", "functions_type.html", null ],
-        [ "Énumérations", "functions_enum.html", null ],
-        [ "Valeurs énumérées", "functions_eval.html", null ],
-        [ "Fonctions associées", "functions_rela.html", null ]
+        [ "Énumérations", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "Fichiers", null, [
       [ "Liste des fichiers", "files.html", "files" ],
       [ "Membres de fichier", "globals.html", [
-        [ "Tout", "globals.html", "globals_dup" ],
-        [ "Fonctions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", "globals_vars" ],
-        [ "Définitions de type", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Tout", "globals.html", null ],
+        [ "Fonctions", "globals_func.html", null ]
       ] ]
     ] ]
   ] ]
@@ -31,11 +27,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"__c__make__c__compiler__id__8c_8js.html",
-"class__line__edit_8js.html#a47774e7a00e302f95da724e67fc9fc6c",
-"class_graphics_square.html#a82bd4ef147f786810f98337b8995cac1",
-"enumvalues__8_8js.html#ad01a7523f103d6242ef9b0451861231e",
-"jquery_8js.html#a42cbfadee2b4749e8f699ea8d745a0e4"
+"__point__8hpp_8js_source.html",
+"class_graphics_item.html",
+"classes__3_8js_source.html"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
