@@ -1,8 +1,6 @@
 var class_graphics_circle =
 [
-    [ "GraphicsCircle", "class_graphics_circle.html#a7ed268991238e452da25f857568a383d", null ],
-    [ "GraphicsCircle", "class_graphics_circle.html#ae4a932dfdc2d09ee0d08b30a3607aabf", null ],
-    [ "GraphicsCircle", "class_graphics_circle.html#a3eff40f7d842ac0fe9284e780e1c4297", null ],
+    [ "GraphicsCircle", "class_graphics_circle.html#a0891443aab157c94f76ad425b7327b84", null ],
     [ "center", "class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487", null ],
     [ "center", "class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c", null ],
     [ "meDraw", "class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16", null ],
