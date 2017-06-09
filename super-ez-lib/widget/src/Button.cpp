@@ -11,6 +11,7 @@ Button::Button(GraphicsItem *parent)
   m_background->setColor(Color(Color::Green));
 
   m_label = new Label(this);
+  m_label->setAlign(Label::LabelAlign::Center);
 
   widthChanged([this]() {
     m_background->setWidth(width());
