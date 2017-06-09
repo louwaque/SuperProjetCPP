@@ -37,9 +37,19 @@ bool operator==(const Font &l, const Font &r)
   return l.id() == r.id();
 }
 
+bool operator!=(const Font &l, const Font &r)
+{
+  return l.id() != r.id();
+}
+
 bool operator<(const Font &l, const Font &r)
 {
   return l.height() < r.height();
+}
+
+bool operator>(const Font &l, const Font &r)
+{
+  return l.height() > r.height();
 }
 
 std::ostream &operator<<(std::ostream &os, const Font &font)

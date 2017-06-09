@@ -28,7 +28,9 @@ private:
 };
 
 bool operator==(const Font &l, const Font &r);
+bool operator!=(const Font &l, const Font &r);
 bool operator<(const Font &l, const Font &r);
+bool operator>(const Font &l, const Font &r);
 std::ostream &operator<<(std::ostream &os, const Font &font);
 
 #endif
