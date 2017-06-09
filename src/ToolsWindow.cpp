@@ -2,6 +2,7 @@
 #include <Label.hpp>
 #include <Button.hpp>
 #include <LineEdit.hpp>
+#include <SpinBox.hpp>
 
 #include <GraphicsText.hpp>
 #include <GraphicsLine.hpp>
@@ -39,6 +40,9 @@ ToolsWindow::ToolsWindow(GraphicsItem *parent)
   rectangleButton->clicked([this](){
     new GraphicsRectangle(this->parent());
   });
+
+  SpinBox *spinBox = new SpinBox;
+  m_layout->push_back(spinBox);
 
   widthChanged([this](){
     m_layout->setWidth(width());
