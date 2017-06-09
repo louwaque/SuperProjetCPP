@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('_graphics_point_8cpp_source.html','');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/GraphicsPoint.hpp&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_mouse_event_8hpp.html">MouseEvent.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;GraphicsPoint::GraphicsPoint(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;GraphicsPoint::GraphicsPoint(<span class="keyword">const</span> Ptr &amp;parent)</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;: <a class="code" href="class_graphics_item.html">GraphicsItem</a>(parent), m_radius(5)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;GraphicsPoint::GraphicsPoint(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos, <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;GraphicsPoint::GraphicsPoint(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;pos, <span class="keyword">const</span> Ptr &amp;parent)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;: <a class="code" href="class_graphics_point.html">GraphicsPoint</a>(parent)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  position().<a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(pos);</div>
@@ -145,11 +145,11 @@ $(document).ready(function(){initNavTree('_graphics_point_8cpp_source.html','');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Permet la gestion des evenements. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00021">Event.hpp:21</a></div></div>
 <div class="ttc" id="_mouse_event_8hpp_html"><div class="ttname"><a href="_mouse_event_8hpp.html">MouseEvent.hpp</a></div><div class="ttdoc">Classe MouseEvent. </div></div>
-<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00011">Canvas.hpp:11</a></div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00008">Canvas.hpp:8</a></div></div>
 <div class="ttc" id="class_graphics_point_html"><div class="ttname"><a href="class_graphics_point.html">GraphicsPoint</a></div><div class="ttdoc">Un point. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_point_8hpp_source.html#l00012">GraphicsPoint.hpp:12</a></div></div>
 <div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00096">Point.cpp:96</a></div></div>
 <div class="ttc" id="class_mouse_event_html"><div class="ttname"><a href="class_mouse_event.html">MouseEvent</a></div><div class="ttdoc">Permet la gestion des evenements à la souri. </div><div class="ttdef"><b>Definition:</b> <a href="_mouse_event_8hpp_source.html#l00021">MouseEvent.hpp:21</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_graphics_point_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_e41412054721725fed5405775051cfbb.html">src</a></li><li class="navelem"><b>GraphicsPoint.cpp</b></li>
-    <li class="footer">Généré le Vendredi 9 Juin 2017 20:56:23 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 9 Juin 2017 21:07:28 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

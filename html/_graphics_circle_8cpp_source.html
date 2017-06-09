@@ -111,42 +111,55 @@ $(document).ready(function(){initNavTree('_graphics_circle_8cpp_source.html','')
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/GraphicsCircle.hpp&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;GraphicsCircle::GraphicsCircle(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;GraphicsCircle::GraphicsCircle(<span class="keyword">const</span> Id &amp;parent)</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;: <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(parent)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  m_points.emplace_back(&amp;position());</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  m_points.emplace_back(&amp;position());</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> GraphicsCircle::radius()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="class_point.html">Point</a> distP = <a class="code" href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">radiusPt</a>() - center();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> hypot(distP.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), distP.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;GraphicsCircle::GraphicsCircle(<span class="keyword">const</span> Ptr &amp;parent)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;: <a class="code" href="class_graphics_circle.html">GraphicsCircle</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  setParent(parent);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">GraphicsCircle::setRadius</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">//FIXME faire des maths</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> GraphicsCircle::meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">if</span> (canvas)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    canvas-&gt;drawCircle(center() - radius(), center() + radius(), isFill());</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">   28</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">GraphicsCircle::meIsOver</a>(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;absoluteP)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">//FIXME pas trop compliqué donc faut le faire !</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;GraphicsCircle::GraphicsCircle(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;: <a class="code" href="class_graphics_circle.html">GraphicsCircle</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  setParent(parent);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> GraphicsCircle::radius()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_point.html">Point</a> distP = <a class="code" href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">radiusPt</a>() - center();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">return</span> hypot(distP.<a class="code" href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">x</a>(), distP.<a class="code" href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">y</a>());</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">GraphicsCircle::setRadius</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> radius)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">//FIXME faire des maths</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="class_graphics_circle_html_adf0874f0e62be9e88361d799975c99bc"><div class="ttname"><a href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">GraphicsCircle::meIsOver</a></div><div class="ttdeci">bool meIsOver(const Point &amp;absoluteP)</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8cpp_source.html#l00028">GraphicsCircle.cpp:28</a></div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> GraphicsCircle::meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (canvas)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    canvas-&gt;drawCircle(center() - radius(), center() + radius(), isFill());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">GraphicsCircle::meIsOver</a>(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;absoluteP)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">//FIXME pas trop compliqué donc faut le faire !</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="class_graphics_circle_html_adf0874f0e62be9e88361d799975c99bc"><div class="ttname"><a href="class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc">GraphicsCircle::meIsOver</a></div><div class="ttdeci">bool meIsOver(const Point &amp;absoluteP)</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8cpp_source.html#l00040">GraphicsCircle.cpp:40</a></div></div>
 <div class="ttc" id="class_graphics_shape_html"><div class="ttname"><a href="class_graphics_shape.html">GraphicsShape</a></div><div class="ttdoc">Une forme. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_shape_8hpp_source.html#l00021">GraphicsShape.hpp:21</a></div></div>
 <div class="ttc" id="class_point_html_a2aa897aa68c2f3e6df3a46738f27a0ac"><div class="ttname"><a href="class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac">Point::x</a></div><div class="ttdeci">int x() const </div><div class="ttdoc">Donne l&#39;abscisse du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00080">Point.cpp:80</a></div></div>
-<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00011">Canvas.hpp:11</a></div></div>
-<div class="ttc" id="class_graphics_circle_html_a3a6b7c69ebd3b69a7be96230618a64bb"><div class="ttname"><a href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">GraphicsCircle::setRadius</a></div><div class="ttdeci">void setRadius(const int radius)</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8cpp_source.html#l00017">GraphicsCircle.cpp:17</a></div></div>
-<div class="ttc" id="class_graphics_circle_html_a3b702bcf7260035d3344ded956ceebed"><div class="ttname"><a href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">GraphicsCircle::radiusPt</a></div><div class="ttdeci">const Point &amp; radiusPt() const </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8hpp_source.html#l00022">GraphicsCircle.hpp:22</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00008">Canvas.hpp:8</a></div></div>
+<div class="ttc" id="class_graphics_circle_html_a3a6b7c69ebd3b69a7be96230618a64bb"><div class="ttname"><a href="class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb">GraphicsCircle::setRadius</a></div><div class="ttdeci">void setRadius(const int radius)</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8cpp_source.html#l00029">GraphicsCircle.cpp:29</a></div></div>
+<div class="ttc" id="class_graphics_circle_html"><div class="ttname"><a href="class_graphics_circle.html">GraphicsCircle</a></div><div class="ttdoc">Un cercle. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8hpp_source.html#l00012">GraphicsCircle.hpp:12</a></div></div>
+<div class="ttc" id="class_graphics_circle_html_a3b702bcf7260035d3344ded956ceebed"><div class="ttname"><a href="class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed">GraphicsCircle::radiusPt</a></div><div class="ttdeci">const Point &amp; radiusPt() const </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_circle_8hpp_source.html#l00024">GraphicsCircle.hpp:24</a></div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 <div class="ttc" id="class_point_html_a2226d8a3fb283b0b3c1f69106df144ba"><div class="ttname"><a href="class_point.html#a2226d8a3fb283b0b3c1f69106df144ba">Point::y</a></div><div class="ttdeci">int y() const </div><div class="ttdoc">Donne l&#39;ordonnée du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00088">Point.cpp:88</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -155,7 +168,7 @@ $(document).ready(function(){initNavTree('_graphics_circle_8cpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_e41412054721725fed5405775051cfbb.html">src</a></li><li class="navelem"><b>GraphicsCircle.cpp</b></li>
-    <li class="footer">Généré le Vendredi 9 Juin 2017 20:56:23 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 9 Juin 2017 21:07:28 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

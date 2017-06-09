@@ -111,13 +111,13 @@ $(document).ready(function(){initNavTree('_graphics_square_8hpp_source.html','')
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSSQUARE_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSSQUARE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;GraphicsItem.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//FIXME utiliser GraphicsShape</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_graphics_square.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_square.html">GraphicsSquare</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_square.html">GraphicsSquare</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_square.html">GraphicsSquare</a>(<span class="keyword">const</span> Ptr &amp;parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> &amp;topLeft()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_topLeft; }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">inline</span> <a class="code" href="class_point.html">Point</a> &amp;topLeft() { <span class="keywordflow">return</span> m_topLeft; }</div>
@@ -141,9 +141,10 @@ $(document).ready(function(){initNavTree('_graphics_square_8hpp_source.html','')
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00011">Canvas.hpp:11</a></div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00008">Canvas.hpp:8</a></div></div>
 <div class="ttc" id="class_graphics_square_html"><div class="ttname"><a href="class_graphics_square.html">GraphicsSquare</a></div><div class="ttdoc">Un carré </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_square_8hpp_source.html#l00013">GraphicsSquare.hpp:13</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="_graphics_item_8hpp_html"><div class="ttname"><a href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></div><div class="ttdoc">Classe GraphicsItem. </div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('_graphics_square_8hpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li><li class="navelem"><b>GraphicsSquare.hpp</b></li>
-    <li class="footer">Généré le Vendredi 9 Juin 2017 20:56:23 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 9 Juin 2017 21:07:28 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

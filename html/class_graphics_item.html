@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('class_graphics_item.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_item__coll__graph.svg" width="144" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_graphics_item__coll__graph.svg" width="144" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -166,6 +166,13 @@ Types publics</h2></td></tr>
 <b>ChildrenRecursively</b>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a4dee8acc881415963f0661571edf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8a4dee8acc881415963f0661571edf4"></a>
+typedef boost::uuids::uuid&#160;</td><td class="memItemRight" valign="bottom"><b>Id</b></td></tr>
+<tr class="separator:af8a4dee8acc881415963f0661571edf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1be9fee3f52e7c1cb1043286e49a00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e1be9fee3f52e7c1cb1043286e49a00"></a>
+typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:a4e1be9fee3f52e7c1cb1043286e49a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa643e574b9c2b6713b1b8def690f0c6b"></a>
 typedef std::vector<br class="typebreak"/>
 &lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
@@ -173,15 +180,33 @@ typedef std::vector<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c30111512bd4f198e9414b70bb3ccc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
-<tr class="separator:a96c30111512bd4f198e9414b70bb3ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf0a8de33aa83d5fa5ac8889e7e4392"></a>
-<a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const </td></tr>
-<tr class="separator:aeaf0a8de33aa83d5fa5ac8889e7e4392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bcbe86ba1854edffd7fbed0b4bc8cd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bcbe86ba1854edffd7fbed0b4bc8cd5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
-<tr class="separator:a8bcbe86ba1854edffd7fbed0b4bc8cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d72b50c9d65d3c0466ac5af0cedaeb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d72b50c9d65d3c0466ac5af0cedaeb3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (const Id &amp;parent=boost::uuids::nil_generator()())</td></tr>
+<tr class="separator:a3d72b50c9d65d3c0466ac5af0cedaeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bb2f022601ecd5352fb31e1cb18ad0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81bb2f022601ecd5352fb31e1cb18ad0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (const Ptr &amp;parent)</td></tr>
+<tr class="separator:a81bb2f022601ecd5352fb31e1cb18ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32eadba7cdc2f49a661ca7875a5b0af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab32eadba7cdc2f49a661ca7875a5b0af"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (const <a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
+<tr class="separator:ab32eadba7cdc2f49a661ca7875a5b0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add39b82382c6ab4ce9375c440241ec69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add39b82382c6ab4ce9375c440241ec69"></a>
+Id&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const </td></tr>
+<tr class="separator:add39b82382c6ab4ce9375c440241ec69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c24f62b161a5df8ed02590b137b01b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22c24f62b161a5df8ed02590b137b01b"></a>
+Id&#160;</td><td class="memItemRight" valign="bottom"><b>parentId</b> () const </td></tr>
+<tr class="separator:a22c24f62b161a5df8ed02590b137b01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294a3fd3f28c9fa6951da31877b5cb9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a294a3fd3f28c9fa6951da31877b5cb9f"></a>
+Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const </td></tr>
+<tr class="separator:a294a3fd3f28c9fa6951da31877b5cb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cad6a33f640f1357d93849d82c5e1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49cad6a33f640f1357d93849d82c5e1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (const Id &amp;parent=boost::uuids::nil_generator()())</td></tr>
+<tr class="separator:a49cad6a33f640f1357d93849d82c5e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c34f8d6f170a9c79db4200de19d8fe5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c34f8d6f170a9c79db4200de19d8fe5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (const Ptr &amp;parent)</td></tr>
+<tr class="separator:a0c34f8d6f170a9c79db4200de19d8fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e021614d06c3855ff537aea5dc2796"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13e021614d06c3855ff537aea5dc2796"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (const <a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent)</td></tr>
+<tr class="separator:a13e021614d06c3855ff537aea5dc2796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa892caff547a0fd1969898ee0740b186"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa892caff547a0fd1969898ee0740b186"></a>
 virtual GraphicsTypes&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
 <tr class="separator:aa892caff547a0fd1969898ee0740b186"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +273,10 @@ static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</t
 <tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5877c4c5815eacb9876c7b99b119aef7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
 <tr class="separator:a5877c4c5815eacb9876c7b99b119aef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c40f117afa7c631e78997d44433658"><td class="memTemplParams" colspan="2"><a class="anchor" id="a78c40f117afa7c631e78997d44433658"></a>
+template&lt;class T , class... Args&gt; </td></tr>
+<tr class="memitem:a78c40f117afa7c631e78997d44433658"><td class="memTemplItemLeft" align="right" valign="top">static std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make</b> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a78c40f117afa7c631e78997d44433658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
@@ -267,7 +296,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>meIsOver</b> 
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Classe de base. </p>
 
-<p>Définition à la ligne <a class="el" href="_graphics_item_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="_graphics_item_8hpp_source.html">GraphicsItem.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_graphics_item_8hpp_source.html#l00026">26</a> du fichier <a class="el" href="_graphics_item_8hpp_source.html">GraphicsItem.hpp</a>.</p>
 </div><hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_graphics_item_8hpp_source.html">GraphicsItem.hpp</a></li>
 <li><a class="el" href="_graphics_item_8cpp_source.html">GraphicsItem.cpp</a></li>
@@ -278,7 +307,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>meIsOver</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_item.html">GraphicsItem</a></li>
-    <li class="footer">Généré le Vendredi 9 Juin 2017 20:56:25 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 9 Juin 2017 21:07:30 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
