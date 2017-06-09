@@ -1,8 +1,8 @@
 var group__widget =
 [
     [ "Button", "class_button.html", [
-      [ "Button", "class_button.html#a533e3a3815061a3cbf7ae2539af4b206", null ],
-      [ "Button", "class_button.html#a2cfe02cc2981d9878f6c4660e5680388", null ],
+      [ "Button", "class_button.html#ae0bc0f6e32cd741d430cab3f54141c53", null ],
+      [ "Button", "class_button.html#a1eb7226a14a190026f4a0c4013abedc3", null ],
       [ "clicked", "class_button.html#a3869de27faa1d62b47f83dd752ec43fc", null ],
       [ "meHandleEvent", "class_button.html#ac8d84bc467ce5a7ac5791df121fe32dd", null ],
       [ "minimumHeight", "class_button.html#aec7d6551d9dd87879b985da6e3b34f3e", null ],
@@ -11,8 +11,12 @@ var group__widget =
       [ "text", "class_button.html#ad9fb8858260a4e8ace09e98fdf4db736", null ]
     ] ],
     [ "Label", "class_label.html", [
-      [ "Label", "class_label.html#a9845a587fdead39627009758c789e914", null ],
-      [ "Label", "class_label.html#ab3e52b26e15ed16f273a45c2912e5232", null ],
+      [ "Label", "class_label.html#a851d0df78f0eafa3884914b4b5198182", null ],
+      [ "Label", "class_label.html#a7beea840e9ed710923f69ebe47033187", null ],
+      [ "Label", "class_label.html#a2e2342bddc1540e438365f677c67f6b3", null ],
+      [ "Label", "class_label.html#ad441aee7e811ce40fa5c2cbeea68d68f", null ],
+      [ "Label", "class_label.html#a35649f67b37f02261802469f49a871a7", null ],
+      [ "Label", "class_label.html#a35b9b1f758ea790e3331eca5f21a4d76", null ],
       [ "minimumHeight", "class_label.html#a34427ae6ed59703ae99299e74c3214f9", null ],
       [ "minimumWidth", "class_label.html#abd832d1488ddb8c4c66aee954722d07c", null ],
       [ "setText", "class_label.html#a2bd65842919bc965ff8482407b34f097", null ],
@@ -20,7 +24,7 @@ var group__widget =
       [ "textChanged", "class_label.html#ac05b048246232571ffbe11ef4e1f480a", null ]
     ] ],
     [ "LineEdit", "class_line_edit.html", [
-      [ "LineEdit", "class_line_edit.html#a04e1cd86821efe7570868ae397978186", null ],
+      [ "LineEdit", "class_line_edit.html#ade30d2d0cb0fd931b55eeb42cc692c3f", null ],
       [ "meHandleEvent", "class_line_edit.html#a8d5e79e8a895901381e301d41d3d4343", null ],
       [ "setText", "class_line_edit.html#a636e2ac65a70dd82fcf02f863da5c446", null ],
       [ "text", "class_line_edit.html#a8677c9516beb229fdb289e48c9b8dd15", null ],
@@ -30,7 +34,9 @@ var group__widget =
       [ "co_t", "class_widget.html#a65d0e18de80c67e7988517ec66ef1c46", null ],
       [ "signal_t", "class_widget.html#a722503332a7264088569b8f3fb7b3441", null ],
       [ "slot_t", "class_widget.html#a3ea8845fc9833daf17e001fb5f04b949", null ],
-      [ "Widget", "class_widget.html#a819c625f51b8a0467f3ceb5056c721d5", null ],
+      [ "Widget", "class_widget.html#adb5e1b9e6989faaf19ea77c263cd4718", null ],
+      [ "Widget", "class_widget.html#a2755883971d84b823364a598d056485c", null ],
+      [ "Widget", "class_widget.html#a91dbf44ce28de49c8ee635c22e1ce46f", null ],
       [ "height", "class_widget.html#a5122729ed923e75463ee8f8bbcdb0cfa", null ],
       [ "heightChanged", "class_widget.html#a7925a19f1009e7125ab34b6d8188e07a", null ],
       [ "minimumHeight", "class_widget.html#a037c4fd4ada38dfc4af381642eb66127", null ],

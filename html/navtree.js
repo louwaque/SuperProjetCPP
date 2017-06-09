@@ -28,8 +28,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__graphics__item__8hpp_8js_source.html",
-"class_graphics_ellipse.html#a9e53dcd151f13db599712784951083a3",
-"class_window.html#af1f8bd54dfefaa68f58696d54b12e58b"
+"class_graphics_ellipse.html#a7c0d9094b07c745e450d822f2b8a029b",
+"class_widget.html#adb5e1b9e6989faaf19ea77c263cd4718"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
