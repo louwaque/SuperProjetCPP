@@ -61,7 +61,7 @@ jobs:
         - CTEST_OUTPUT_ON_FAILURE=1
       script:
         - echo -en 'travis_fold:start:boost\\r'
-        - if [ ! -d $HOME/boost-install ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 --with-test --with-signals --prefix="$HOME/boost-install" install && cd ..; fi
+        - if [ -z "$(ls -A $HOME/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 --with-test --with-signals --prefix="$HOME/boost-install" install && cd ..; fi
         - echo -en 'travis_fold:end:boost\\r'
         - echo -en 'travis_fold:start:cmake\\r'
         - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$TRAVIS_BUILD_DIR/boost_1_64_0 .
