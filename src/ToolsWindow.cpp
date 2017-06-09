@@ -16,7 +16,10 @@ ToolsWindow::ToolsWindow(GraphicsItem *parent)
   m_layout = new Layout(Layout::Vertical, this);
   m_layout->setSpacing(5);
 
-  m_layout->push_back(new Label("Outils"));
+  Label *label = new Label("Outils");
+  label->setAlign(Label::LabelAlign::Center);
+  m_layout->push_back(label);
+
   m_layout->push_back(new LineEdit);
 
   Button *textButton = new Button("Texte");
