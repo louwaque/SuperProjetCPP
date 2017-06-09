@@ -13,8 +13,13 @@
 class Label : public Widget
 {
 public:
-  explicit Label(GraphicsItem *parent = nullptr);
-  Label(const std::string &text, GraphicsItem *parent = nullptr);
+  explicit Label(const Id &parent = boost::uuids::nil_generator()());
+  explicit Label(const Ptr &parent);
+  explicit Label(const GraphicsItem *parent);
+
+  Label(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
+  Label(const std::string &text, const Ptr &parent);
+  Label(const std::string &text, const GraphicsItem *parent);
 
   inline std::string text() const { return m_text->text(); }
   void setText(const std::string &text);
@@ -33,7 +38,7 @@ private:
   void alignText();
 
 private:
-  GraphicsText *m_text;
+  std::shared_ptr<GraphicsText> m_text;
 
   signal_t m_textChanged;
 };

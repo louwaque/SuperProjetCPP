@@ -28,8 +28,8 @@ public:
    *
    */
 
-  Button(GraphicsItem *parent = nullptr);
-  Button(const std::string &text, GraphicsItem *parent = nullptr);
+  Button(const Ptr &parent = nullptr);
+  Button(const std::string &text, const Ptr &parent = nullptr);
 
   inline std::string text() const { return m_label->text(); }
   inline void setText(const std::string &text) { m_label->setText(text); }
@@ -48,8 +48,8 @@ protected:
   void meHandleEvent(const Event &event);
 
 private:
-  GraphicsRectangle *m_background;
-  Label *m_label;
+  std::shared_ptr<GraphicsRectangle> m_background;
+  std::shared_ptr<Label> m_label;
 
   signal_t m_clicked;
 };

@@ -9,6 +9,7 @@
 #include <Canvas.hpp>
 #include <Event.hpp>
 #include <boost/uuid/uuid.hpp>
+#include <boost/uuid/uuid_generators.hpp>
 #include <boost/core/noncopyable.hpp>
 
 /**
@@ -51,17 +52,19 @@ public:
     ChildrenRecursively
   };
 
-  explicit GraphicsItem(GraphicsItem *parent = nullptr);
+  explicit GraphicsItem(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsItem(const Ptr &parent);
+  explicit GraphicsItem(const GraphicsItem *parent);
 
   virtual ~GraphicsItem();
 
   inline Id id() const { return m_id; }
+  inline Id parentId() const { return m_parent; }
+  inline Ptr parent() const { return m_graphicsItems[m_parent]; }
 
-  GraphicsItem *parent() const {
-    return m_parent;
-  }
-
-  void setParent(GraphicsItem *parent);
+  void setParent(const Id &parent = boost::uuids::nil_generator()());
+  void setParent(const Ptr &parent);
+  void setParent(const GraphicsItem *parent);
 
   virtual GraphicsTypes type() const {
     return ItemType;
@@ -135,7 +138,7 @@ protected:
 
 private:
   Id m_id;
-  GraphicsItem *m_parent;
+  Id m_parent;
   std::vector<Id> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;

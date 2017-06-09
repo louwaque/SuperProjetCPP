@@ -12,7 +12,7 @@
 class GraphicsPolygon : public GraphicsShape
 {
 public:
-  explicit GraphicsPolygon(GraphicsItem *parent = nullptr);
+  explicit GraphicsPolygon(const Ptr &parent = nullptr);
 
   Point &newPoint();
   void popPoint();

@@ -1,6 +1,5 @@
 #include "../include/GraphicsItem.hpp"
 #include <MouseEvent.hpp>
-#include <boost/uuid/uuid_generators.hpp>
 #include <iostream>
 #include <algorithm>
 #include <utility>
@@ -8,9 +7,9 @@
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
 std::map<GraphicsItem::Id, GraphicsItem::Ptr> GraphicsItem::m_graphicsItems;
 
-GraphicsItem::GraphicsItem(GraphicsItem *parent)
+GraphicsItem::GraphicsItem(const Id &parent)
 : m_id(boost::uuids::random_generator()()),
-  m_parent(nullptr),
+  m_parent(boost::uuids::nil_generator()()),
   m_children(),
   m_position(),
   m_z(0),
@@ -23,28 +22,58 @@ GraphicsItem::GraphicsItem(GraphicsItem *parent)
   setParent(parent);
 }
 
-GraphicsItem::~GraphicsItem()
+GraphicsItem::GraphicsItem(const Ptr &parent)
+: GraphicsItem()
 {
-  //setParent(nullptr);
-  std::cerr << "GraphicsItem deleted :" << this << " of type : " << type() << std::endl;
-  m_graphicsItems.erase(id());
+  setParent(parent);
 }
 
-void GraphicsItem::setParent(GraphicsItem *parent)
+GraphicsItem::GraphicsItem(const GraphicsItem *parent)
+: GraphicsItem()
+{
+  setParent(parent);
+}
+
+GraphicsItem::~GraphicsItem()
+{
+  setParent();
+  std::cerr << "GraphicsItem deleted :" << this << " of type : " << type() << std::endl;
+}
+
+void GraphicsItem::setParent(const Id &parent)
 {
   if (m_parent == parent)
     return;
 
-  if (m_parent)
-    m_parent->m_children.erase(std::remove(m_parent->m_children.begin(), m_parent->m_children.end(), id()), m_parent->m_children.end());
+  auto ptr = m_graphicsItems[m_parent];
+  if (ptr)
+    ptr->m_children.erase(std::remove(ptr->m_children.begin(), ptr->m_children.end(), id()), ptr->m_children.end());
 
   m_parent = parent;
-  if (m_parent) {
-    m_parent->m_children.push_back(id());
-    m_position.setOrigin(&m_parent->position());
+
+  ptr = m_graphicsItems[m_parent];
+  if (ptr) {
+    ptr->m_children.push_back(id());
+    m_position.setOrigin(&ptr->position());
   } else {
     m_position.setOrigin(nullptr);
   }
+}
+
+void GraphicsItem::setParent(const Ptr &parent)
+{
+  if (parent)
+    setParent(parent->id());
+  else
+    setParent();
+}
+
+void GraphicsItem::setParent(const GraphicsItem *parent)
+{
+  if (parent)
+    setParent(parent->id());
+  else
+    setParent();
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const

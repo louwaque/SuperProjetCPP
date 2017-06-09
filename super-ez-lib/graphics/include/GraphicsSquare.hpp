@@ -13,7 +13,7 @@
 class GraphicsSquare : public GraphicsItem
 {
 public:
-  explicit GraphicsSquare(GraphicsItem *parent = nullptr);
+  explicit GraphicsSquare(const Ptr &parent = nullptr);
 
   inline const Point &topLeft() const { return m_topLeft; }
   inline Point &topLeft() { return m_topLeft; }

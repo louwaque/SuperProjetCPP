@@ -1,6 +1,6 @@
 #include "../include/GraphicsTriangle.hpp"
 
-GraphicsTriangle::GraphicsTriangle(GraphicsItem *parent)
+GraphicsTriangle::GraphicsTriangle(const Ptr &parent)
 : GraphicsShape(parent)
 {
   m_points.emplace_back(&position());

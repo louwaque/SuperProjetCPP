@@ -24,7 +24,9 @@ public:
   typedef signal_t::slot_type slot_t;
   typedef boost::signals2::connection co_t;
 
-  explicit Widget(GraphicsItem *parent = nullptr);
+  explicit Widget(const Id &parent = boost::uuids::nil_generator()());
+  explicit Widget(const Ptr &parent);
+  explicit Widget(const GraphicsItem *parent);
 
   inline size_t width() const { return std::max(m_width, minimumWidth()); }
 

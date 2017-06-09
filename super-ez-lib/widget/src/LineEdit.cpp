@@ -3,20 +3,20 @@
 #include <KeyEvent.hpp>
 #include <GraphicsBlinkAnimation.hpp>
 
-LineEdit::LineEdit(GraphicsItem *parent)
+LineEdit::LineEdit(const Ptr &parent)
 : Widget(parent),
   m_text(nullptr),
   m_rectangle(nullptr),
   m_line(nullptr)
 {
-  m_text = new GraphicsText(this);
+  m_text = make<GraphicsText>(this);
 
-  m_rectangle = new GraphicsRectangle(this);
+  m_rectangle = make<GraphicsRectangle>(this);
   m_rectangle->setHeight(m_text->font().height());
 
-  m_line = new GraphicsLine(this);
+  m_line = make<GraphicsLine>(this);
 
-  new GraphicsBlinkAnimation(m_line);
+  make<GraphicsBlinkAnimation>(m_line);
 
   setText("");
 }

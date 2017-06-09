@@ -1,6 +1,6 @@
 #include "../include/GraphicsPolygon.hpp"
 
-GraphicsPolygon::GraphicsPolygon(GraphicsItem *parent)
+GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
 : GraphicsShape(parent)
 {}
 

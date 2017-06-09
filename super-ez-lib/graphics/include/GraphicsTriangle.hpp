@@ -20,7 +20,7 @@
 class GraphicsTriangle : public GraphicsShape
 {
 public:
-  explicit GraphicsTriangle(GraphicsItem *parent = nullptr);
+  explicit GraphicsTriangle(const Ptr &parent = nullptr);
 
   /*!
    *  \brief Donne le premier point du triangle.

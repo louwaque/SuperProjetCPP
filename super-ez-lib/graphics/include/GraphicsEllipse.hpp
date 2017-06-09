@@ -12,7 +12,7 @@
 class GraphicsEllipse : public GraphicsShape
 {
 public:
-  explicit GraphicsEllipse(GraphicsItem *parent = nullptr);
+  explicit GraphicsEllipse(const Ptr &parent = nullptr);
 
   inline const Point &center() const { return m_points[0]; }
   inline Point &center() { return m_points[0]; }

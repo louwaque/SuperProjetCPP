@@ -1,7 +1,7 @@
 #include "../include/GraphicsCircle.hpp"
 #include <cmath>
 
-GraphicsCircle::GraphicsCircle(GraphicsItem *parent)
+GraphicsCircle::GraphicsCircle(const Ptr &parent)
 : GraphicsShape(parent)
 {
   m_points.emplace_back(&position());

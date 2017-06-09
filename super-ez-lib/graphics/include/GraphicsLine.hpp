@@ -12,7 +12,9 @@
 class GraphicsLine : public GraphicsShape
 {
 public:
-  explicit GraphicsLine(GraphicsItem *parent = nullptr);
+  explicit GraphicsLine(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsLine(const Ptr &parent);
+  explicit GraphicsLine(const GraphicsItem *parent);
 
   inline const Point &first() const { return m_points[0]; }
   inline Point &first() { return m_points[0]; }

@@ -1,6 +1,6 @@
 #include "../include/GraphicsEllipse.hpp"
 
-GraphicsEllipse::GraphicsEllipse(GraphicsItem *parent)
+GraphicsEllipse::GraphicsEllipse(const Ptr &parent)
 : GraphicsShape(parent)
 {
   m_points.emplace_back(&position());

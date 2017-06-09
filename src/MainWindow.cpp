@@ -22,83 +22,83 @@ MainWindow::MainWindow()
 {
   m_scene = GraphicsItem::make<GraphicsItem>();
 
-  auto point = GraphicsItem::make<GraphicsPoint>(m_scene.get());
+  auto point = GraphicsItem::make<GraphicsPoint>(m_scene);
   point->position().set(5, 5);
   point->setColor(Color(Color::Blue));
 
-  auto text = GraphicsItem::make<GraphicsText>("Je suis super fort !!!", point.get());
+  auto text = GraphicsItem::make<GraphicsText>("Je suis super fort !!!", point);
   text->position().setRelative(0, 10);
   text->setColor(Color(Color::Green));
   text->setFont(Font::w12h24);
 
-  auto text1 = GraphicsItem::make<GraphicsText>("EZDraw c'est rigolo ^^", point.get());
+  auto text1 = GraphicsItem::make<GraphicsText>("EZDraw c'est rigolo ^^", point);
   text1->position().setRelative(10, 30);
   text1->setColor(Color(Color::Green));
 
   {
-    auto rectangle = GraphicsItem::make<GraphicsRectangle>(m_scene.get());
+    auto rectangle = GraphicsItem::make<GraphicsRectangle>(m_scene);
     rectangle->position().set(50, 50);
     rectangle->topLeft().setRelative(-20, -20);
     rectangle->bottomRight().setRelative(20, 20);
     rectangle->setHeight(100);
     rectangle->setWidth(300);
 
-    auto rp1 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
+    auto rp1 = GraphicsItem::make<GraphicsPoint>(rectangle);
     rp1->position().join(rectangle->position());
 
-    auto rp2 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
+    auto rp2 = GraphicsItem::make<GraphicsPoint>(rectangle);
     rp2->position().join(rectangle->topLeft());
 
-    auto rp3 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
+    auto rp3 = GraphicsItem::make<GraphicsPoint>(rectangle);
     rp3->position().join(rectangle->bottomRight());
   }
 
   {
-    auto triangle = GraphicsItem::make<GraphicsTriangle>(m_scene.get());
+    auto triangle = GraphicsItem::make<GraphicsTriangle>(m_scene);
     triangle->position().set(200, 200);
     triangle->first().setRelative(0, -10);
     triangle->second().setRelative(-5, 10);
     triangle->third().setRelative(5, 10);
 
-    auto p1 = GraphicsItem::make<GraphicsPoint>(triangle.get());
+    auto p1 = GraphicsItem::make<GraphicsPoint>(triangle);
     p1->position().join(triangle->position());
 
-    auto p2 = GraphicsItem::make<GraphicsPoint>(triangle.get());
+    auto p2 = GraphicsItem::make<GraphicsPoint>(triangle);
     p2->position().join(triangle->first());
 
-    auto p3 = GraphicsItem::make<GraphicsPoint>(triangle.get());
+    auto p3 = GraphicsItem::make<GraphicsPoint>(triangle);
     p3->position().join(triangle->second());
 
-    auto p4 = GraphicsItem::make<GraphicsPoint>(triangle.get());
+    auto p4 = GraphicsItem::make<GraphicsPoint>(triangle);
     p4->position().join(triangle->third());
   }
 /*
-  GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
+  auto polygon = GraphicsItem::make<GraphicsPolygon>(m_scene);
   polygon->setFill(true);
   polygon->position().set(200, 100);
   polygon->setNbPoints(10);
   polygon->setNbPoints(5);
 
   {
-    GraphicsCircle *circle = new GraphicsCircle(&m_scene);
+    auto circle = GraphicsItem::make<GraphicsCircle>(m_scene);
     circle->position().set(100, 300);
     circle->radiusPt().setRelative(50, 50);
 
-    GraphicsPoint *p1 = new GraphicsPoint(circle);
+    auto p1 = GraphicsItem::make<GraphicsPoint>(circle);
     p1->position().join(circle->position());
 
-    GraphicsPoint *p2 = new GraphicsPoint(circle);
+    auto p2 = GraphicsItem::make<GraphicsPoint>(circle);
     p2->position().join(circle->radiusPt());
 
-    new GraphicsBlinkAnimation(Color(Color::Blue), circle);
+    GraphicsItem::make<GraphicsBlinkAnimation>(Color::Blue, circle);
   }
 
   {
-    GraphicsEllipse *ellipse = new GraphicsEllipse(&m_scene);
+    auto ellipse = GraphicsItem::make<GraphicsEllipse>(m_scene);
     ellipse->position().set(200, 300);
     ellipse->radius().setRelative(100, 50);
 
-    GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(ellipse);
+    auto blink = GraphicsItem::make<GraphicsBlinkAnimation>(ellipse);
     blink->setBlinkFrequency(500);
   }
 

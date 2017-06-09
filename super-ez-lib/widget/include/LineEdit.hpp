@@ -15,7 +15,7 @@
 class LineEdit : public Widget
 {
 public:
-  explicit LineEdit(GraphicsItem *parent = nullptr);
+  explicit LineEdit(const Ptr &parent = nullptr);
 
   inline std::string text() const { return m_text->text(); }
   void setText(const std::string &text);
@@ -31,9 +31,9 @@ protected:
   void meHandleEvent(const Event &event);
 
 private:
-  GraphicsText *m_text;
-  GraphicsRectangle *m_rectangle;
-  GraphicsLine *m_line;
+  std::shared_ptr<GraphicsText> m_text;
+  std::shared_ptr<GraphicsRectangle> m_rectangle;
+  std::shared_ptr<GraphicsLine> m_line;
 
   signal_t m_textChanged;
 };

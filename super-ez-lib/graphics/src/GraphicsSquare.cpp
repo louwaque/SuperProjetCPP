@@ -2,7 +2,7 @@
 #include <boost/bind.hpp>
 #include <cmath>
 
-GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
+GraphicsSquare::GraphicsSquare(const Ptr &parent)
 : GraphicsItem(parent),
   m_topLeft({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_bottomRight))}, &position()),
   m_bottomRight({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_topLeft))}, &position())

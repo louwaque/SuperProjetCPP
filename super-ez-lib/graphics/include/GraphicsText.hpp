@@ -18,8 +18,8 @@
  * \ingroup graphics
  */
 
-class GraphicsText : public GraphicsItem {
-
+class GraphicsText : public GraphicsItem
+{
 public:
 
   /*!
@@ -29,7 +29,9 @@ public:
    *
    */
 
-  explicit GraphicsText(GraphicsItem *parent = nullptr);
+  explicit GraphicsText(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsText(const Ptr &parent);
+  explicit GraphicsText(const GraphicsItem *parent);
 
   /*!
    * \brief Constructeur de GraphicsText avec un texte en paramètre.
@@ -38,7 +40,9 @@ public:
    *
    */
 
-  explicit GraphicsText(const std::string &text, GraphicsItem *parent = nullptr);
+  explicit GraphicsText(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsText(const std::string &text, const Ptr &parent);
+  explicit GraphicsText(const std::string &text, const GraphicsItem *parent);
 
   /*!
    * \brief Recupere le contenu de GraphicsText.
