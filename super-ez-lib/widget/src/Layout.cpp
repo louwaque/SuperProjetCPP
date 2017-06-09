@@ -7,7 +7,10 @@ Layout::Layout(GraphicsItem *parent)
   m_widgets(),
   m_minimumWidth(0),
   m_minimumHeight(0)
-{}
+{
+  widthChanged(boost::bind(&Layout::organize, this));
+  heightChanged(boost::bind(&Layout::organize, this));
+}
 
 Layout::Layout(const Orientation orientation, GraphicsItem *parent)
 : Layout(parent)
@@ -39,9 +42,9 @@ void Layout::organize()
     m_minimumWidth = std::max(m_minimumWidth, widget->minimumWidth());
     m_minimumHeight = std::max(m_minimumHeight, widget->minimumHeight());
   }
-  size_t x(position().x()), y(position().y());
+  size_t x(0), y(0);
   for (Widget *widget : m_widgets) {
-    widget->position().set(x, y);
+    widget->position().setRelative(x, y);
     if (m_orientation == Horizontal) {
       widget->setWidth(widget->minimumWidth());
       widget->setHeight(height());
