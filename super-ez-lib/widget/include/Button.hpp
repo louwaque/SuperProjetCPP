@@ -34,8 +34,8 @@ public:
   inline std::string text() const { return m_label->text(); }
   inline void setText(const std::string &text) { m_label->setText(text); }
 
-  size_t minimumWidth() const { return std::max(50ul, m_label->minimumWidth()); }
-  size_t minimumHeight() const { return std::max(20ul, m_label->minimumHeight()); }
+  size_t minimumWidth() const;
+  size_t minimumHeight() const;
 
   /*!
    * \name Signaux

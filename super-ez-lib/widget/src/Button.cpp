@@ -21,11 +21,11 @@ Button::Button(GraphicsItem *parent)
     m_label->setHeight(height());
   });
 
-  m_label->widthChanged([this]() {
-    setWidth(m_label->width());
+  m_label->minimumWidthChanged([this](){
+    m_minimumWidthChanged();
   });
-  m_label->heightChanged([this]() {
-    setHeight(m_label->height());
+  m_label->minimumHeightChanged([this](){
+    m_minimumHeightChanged();
   });
 }
 
@@ -33,6 +33,16 @@ Button::Button(const std::string &text, GraphicsItem *parent)
 : Button(parent)
 {
   m_label->setText(text);
+}
+
+size_t Button::minimumWidth() const
+{
+  return std::max(50ul, m_label->minimumWidth());
+}
+
+size_t Button::minimumHeight() const
+{
+  return std::max(20ul, m_label->minimumHeight());
 }
 
 void Button::meHandleEvent(const Event &event)
