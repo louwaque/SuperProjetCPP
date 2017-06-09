@@ -40,7 +40,6 @@ var group__graphics =
     ] ],
     [ "GraphicsItem", "class_graphics_item.html", [
       [ "GraphicsItemList", "class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b", null ],
-      [ "Id", "class_graphics_item.html#af8a4dee8acc881415963f0661571edf4", null ],
       [ "GraphicsTypes", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764f", [
         [ "UndefinedType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fadb17c857ab6d7845df19cfbdfba0e0cc", null ],
         [ "ItemType", "class_graphics_item.html#aedab0ae8727a1abc4ecb776e062c764fabad1df9300f6f2fcc0ca5977cf77801c", null ],
@@ -69,7 +68,6 @@ var group__graphics =
       [ "draw", "class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689", null ],
       [ "handleEvent", "class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2", null ],
       [ "hasFocus", "class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb", null ],
-      [ "id", "class_graphics_item.html#add39b82382c6ab4ce9375c440241ec69", null ],
       [ "isFill", "class_graphics_item.html#a349439f069cfa6ade361ebdcd6f43434", null ],
       [ "isOver", "class_graphics_item.html#a853ecc7b1940b8bce18600a3f3d6cda7", null ],
       [ "isVisible", "class_graphics_item.html#a2f5c21a12db9f875fffe77b491aa1605", null ],
