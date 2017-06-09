@@ -11,6 +11,8 @@ class Window;
 class Canvas
 {
 public:
+  typedef EZAlign TextAlign;
+
   inline size_t width() const { return m_window.getWidth(); }
 
   inline size_t height() const { return m_window.getHeight(); }
@@ -43,9 +45,9 @@ public:
 
   inline void drawTriangle(const Point &first, const Point &second, const Point &third, const bool isFill = false) { drawTriangle(first.x(), first.y(), second.x(), second.y(), third.x(), third.y(), isFill); }
 
-  inline void drawText(const EZAlign align, const int x, const int y, const std::string &text) { m_window.drawText(align, x, y, text); }
+  inline void drawText(const TextAlign align, const int x, const int y, const std::string &text) { m_window.drawText(align, x, y, text); }
 
-  inline void drawText(const EZAlign align, const Point &pos, const std::string &text) { m_window.drawText(align, pos.x(), pos.y(), text); }
+  inline void drawText(const TextAlign align, const Point &pos, const std::string &text) { m_window.drawText(align, pos.x(), pos.y(), text); }
 
 private:
   explicit Canvas(EZWindow &window);
