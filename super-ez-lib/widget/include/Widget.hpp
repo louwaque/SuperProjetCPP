@@ -44,7 +44,13 @@ public:
   ///@{
   inline co_t widthChanged(const slot_t &subscriber) { return m_widthChanged.connect(subscriber); }
   inline co_t heightChanged(const slot_t &subscriber) { return m_heightChanged.connect(subscriber); }
+  inline co_t minimumWidthChanged(const slot_t &subscriber) { return m_minimumWidthChanged.connect(subscriber); }
+  inline co_t minimumHeightChanged(const slot_t &subscriber) { return m_minimumHeightChanged.connect(subscriber); }
   ///@}
+
+protected:
+  signal_t m_minimumWidthChanged;
+  signal_t m_minimumHeightChanged;
 
 private:
   size_t m_width;

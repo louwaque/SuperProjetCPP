@@ -4,7 +4,16 @@ Widget::Widget(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_width(0),
   m_height(0)
-{}
+{
+  minimumWidthChanged([this](){
+    if (minimumWidth() == width())
+      m_widthChanged();
+  });
+  minimumHeightChanged([this](){
+    if (minimumHeight() == height())
+      m_heightChanged();
+  });
+}
 
 void Widget::setWidth(const size_t width)
 {
