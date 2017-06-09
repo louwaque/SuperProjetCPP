@@ -33,6 +33,7 @@ var hierarchy =
         [ "Label", "class_label.html", null ],
         [ "Layout", "class_layout.html", null ],
         [ "LineEdit", "class_line_edit.html", null ],
+        [ "SpinBox", "class_spin_box.html", null ],
         [ "ToolsWindow", "class_tools_window.html", null ]
       ] ]
     ] ],

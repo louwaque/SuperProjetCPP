@@ -27,6 +27,7 @@ var annotated =
     [ "MainWindow", "class_main_window.html", "class_main_window" ],
     [ "MouseEvent", "class_mouse_event.html", "class_mouse_event" ],
     [ "Point", "class_point.html", "class_point" ],
+    [ "SpinBox", "class_spin_box.html", "class_spin_box" ],
     [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ],
     [ "Widget", "class_widget.html", "class_widget" ],
     [ "Window", "class_window.html", "class_window" ]
