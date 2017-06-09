@@ -2,8 +2,7 @@
 
 Canvas::Canvas(EZWindow &window)
 : m_window(window)
-{
-}
+{}
 
 void Canvas::drawRectangle(const int topLeftX, const int topLeftY, const int bottomRightX, const int bottomRightY, const bool isFill)
 {
