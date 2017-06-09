@@ -16,60 +16,63 @@
 
 
 MainWindow::MainWindow()
-: Window(400, 400, "SuperProjetCPP"), m_scene(), currentItem(nullptr)
+: Window(400, 400, "SuperProjetCPP"),
+  m_scene(nullptr),
+  currentItem(nullptr)
 {
+  m_scene = GraphicsItem::make<GraphicsItem>();
 
-  GraphicsPoint *point = new GraphicsPoint(&m_scene);
+  auto point = GraphicsItem::make<GraphicsPoint>(m_scene.get());
   point->position().set(5, 5);
   point->setColor(Color(Color::Blue));
 
-  GraphicsText *text = new GraphicsText("Je suis super fort !!!", point);
+  auto text = GraphicsItem::make<GraphicsText>("Je suis super fort !!!", point.get());
   text->position().setRelative(0, 10);
   text->setColor(Color(Color::Green));
   text->setFont(Font::w12h24);
 
-  GraphicsText *text1 = new GraphicsText("EZDraw c'est rigolo ^^", point);
+  auto text1 = GraphicsItem::make<GraphicsText>("EZDraw c'est rigolo ^^", point.get());
   text1->position().setRelative(10, 30);
   text1->setColor(Color(Color::Green));
 
   {
-    GraphicsRectangle *rectangle = new GraphicsRectangle(&m_scene);
+    auto rectangle = GraphicsItem::make<GraphicsRectangle>(m_scene.get());
     rectangle->position().set(50, 50);
     rectangle->topLeft().setRelative(-20, -20);
     rectangle->bottomRight().setRelative(20, 20);
     rectangle->setHeight(100);
     rectangle->setWidth(300);
 
-    GraphicsPoint *rp1 = new GraphicsPoint(rectangle);
+    auto rp1 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
     rp1->position().join(rectangle->position());
 
-    GraphicsPoint *rp2 = new GraphicsPoint(rectangle);
+    auto rp2 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
     rp2->position().join(rectangle->topLeft());
 
-    GraphicsPoint *rp3 = new GraphicsPoint(rectangle);
+    auto rp3 = GraphicsItem::make<GraphicsPoint>(rectangle.get());
     rp3->position().join(rectangle->bottomRight());
   }
 
   {
-    GraphicsTriangle *triangle = new GraphicsTriangle(&m_scene);
+    auto triangle = GraphicsItem::make<GraphicsTriangle>(m_scene.get());
     triangle->position().set(200, 200);
     triangle->first().setRelative(0, -10);
     triangle->second().setRelative(-5, 10);
     triangle->third().setRelative(5, 10);
 
-    GraphicsPoint *p1 = new GraphicsPoint(triangle);
+    auto p1 = GraphicsItem::make<GraphicsPoint>(triangle.get());
     p1->position().join(triangle->position());
 
-    GraphicsPoint *p2 = new GraphicsPoint(triangle);
+    auto p2 = GraphicsItem::make<GraphicsPoint>(triangle.get());
     p2->position().join(triangle->first());
 
-    GraphicsPoint *p3 = new GraphicsPoint(triangle);
+    auto p3 = GraphicsItem::make<GraphicsPoint>(triangle.get());
     p3->position().join(triangle->second());
 
-    GraphicsPoint *p4 = new GraphicsPoint(triangle);
+    auto p4 = GraphicsItem::make<GraphicsPoint>(triangle.get());
     p4->position().join(triangle->third());
   }
-
+/*
   GraphicsPolygon *polygon = new GraphicsPolygon(&m_scene);
   polygon->setFill(true);
   polygon->position().set(200, 100);
@@ -134,12 +137,12 @@ MainWindow::MainWindow()
     if (GraphicsItem::focusItem()) {
       GraphicsItem::focusItem()->setThick(5);
     }
-  });
+  });*/
 }
 
 void MainWindow::drawEvent()
 {
-  m_scene.draw(&canvas());
+  m_scene->draw(&canvas());
 }
 
 void MainWindow::mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button)
@@ -165,12 +168,12 @@ void MainWindow::mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseBu
 
 void MainWindow::updateEvent(const unsigned int time)
 {
-  m_scene.update(time);
+  m_scene->update(time);
   drawRequest();
 }
 
 void MainWindow::handleEvent(const Event &event)
 {
-  m_scene.handleEvent(event);
+  m_scene->handleEvent(event);
   drawRequest();
 }

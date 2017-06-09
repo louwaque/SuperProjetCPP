@@ -19,7 +19,7 @@ protected:
   void createRectangle();
 
 private:
-  GraphicsItem m_scene;
+  GraphicsItem::Ptr m_scene;
   GraphicsItem *currentItem;
 };
 

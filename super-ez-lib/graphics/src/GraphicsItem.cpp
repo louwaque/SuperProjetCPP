@@ -3,8 +3,10 @@
 #include <boost/uuid/uuid_generators.hpp>
 #include <iostream>
 #include <algorithm>
+#include <utility>
 
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
+std::map<GraphicsItem::Id, GraphicsItem::Ptr> GraphicsItem::m_graphicsItems;
 
 GraphicsItem::GraphicsItem(GraphicsItem *parent)
 : m_id(boost::uuids::random_generator()()),
@@ -17,13 +19,15 @@ GraphicsItem::GraphicsItem(GraphicsItem *parent)
   m_isFill(false),
   m_isVisible(true)
 {
+  std::cerr << "new GraphicsItem: " << this << '\n';
   setParent(parent);
 }
 
 GraphicsItem::~GraphicsItem()
 {
-  setParent(nullptr);
+  //setParent(nullptr);
   std::cerr << "GraphicsItem deleted :" << this << " of type : " << type() << std::endl;
+  m_graphicsItems.erase(id());
 }
 
 void GraphicsItem::setParent(GraphicsItem *parent)
@@ -31,14 +35,12 @@ void GraphicsItem::setParent(GraphicsItem *parent)
   if (m_parent == parent)
     return;
 
-  if (m_parent) {
-    m_parent->m_children.erase(std::remove_if(m_parent->m_children.begin(), m_parent->m_children.end(), [this](const std::shared_ptr<GraphicsItem> &ptr){
-      return *ptr == *this;
-    }), m_parent->m_children.end());
-  }
+  if (m_parent)
+    m_parent->m_children.erase(std::remove(m_parent->m_children.begin(), m_parent->m_children.end(), id()), m_parent->m_children.end());
+
   m_parent = parent;
   if (m_parent) {
-    m_parent->m_children.push_back(std::shared_ptr<GraphicsItem>(this));
+    m_parent->m_children.push_back(id());
     m_position.setOrigin(&m_parent->position());
   } else {
     m_position.setOrigin(nullptr);
@@ -48,7 +50,8 @@ void GraphicsItem::setParent(GraphicsItem *parent)
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
 {
   GraphicsItemList list;
-  for (auto &ptr : m_children) {
+  for (const Id id : m_children) {
+    auto ptr = m_graphicsItems[id];
     if (ptr) {
       if (option == ChildrenRecursively) {
         GraphicsItemList sublist = ptr->children(filter, option);
@@ -66,9 +69,11 @@ void GraphicsItem::draw(Canvas *canvas)
   if (!m_isVisible)
     return;
 
-  for (auto &ptr : m_children)
+  for (const Id id : m_children) {
+    auto ptr = m_graphicsItems[id];
     if (ptr)
       ptr->draw(canvas);
+  }
   if(canvas) {
     canvas->setColor(m_color.hexa());
     canvas->setThick(m_thick);
@@ -78,9 +83,11 @@ void GraphicsItem::draw(Canvas *canvas)
 
 void GraphicsItem::update(const unsigned int time)
 {
-  for (auto &ptr : m_children)
+  for (const Id id : m_children) {
+    auto ptr = m_graphicsItems[id];
     if (ptr)
       ptr->update(time);
+  }
 
   meUpdate(time);
 }
@@ -98,9 +105,11 @@ void GraphicsItem::handleEvent(const Event &event)
       }
   }
 
-  for (auto &ptr : m_children)
+  for (const Id id : m_children) {
+    auto ptr = m_graphicsItems[id];
     if (ptr)
       ptr->handleEvent(event);
+  }
 
   meHandleEvent(event);
 }
@@ -112,9 +121,11 @@ bool GraphicsItem::isOver(const Point &p)
     return false;
 
   bool result = false;
-  for (auto &ptr : m_children)
+  for (const Id id : m_children) {
+    auto ptr = m_graphicsItems[id];
     if (ptr)
       result |= ptr->isOver(p);
+  }
   return result || meIsOver(p);
 }
 

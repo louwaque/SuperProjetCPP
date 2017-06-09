@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <set>
+#include <map>
 #include <memory>
 #include <Color.hpp>
 #include <Canvas.hpp>
@@ -24,6 +25,7 @@
 class GraphicsItem : private boost::noncopyable {
 public:
   typedef boost::uuids::uuid Id;
+  typedef std::shared_ptr<GraphicsItem> Ptr;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -122,6 +124,9 @@ public:
   inline static void setFocusItem(GraphicsItem *item) { m_focusItem = item; }
   inline bool hasFocus() const { return m_focusItem == this; };
 
+  template<class T, class... Args>
+  static std::shared_ptr<T> make(Args&&... args);
+
 protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
@@ -131,7 +136,7 @@ protected:
 private:
   Id m_id;
   GraphicsItem *m_parent;
-  std::vector<std::shared_ptr<GraphicsItem>> m_children;
+  std::vector<Id> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
   int m_z;
@@ -139,7 +144,17 @@ private:
   unsigned int m_thick;
   bool m_isFill;
   bool m_isVisible;
+
+  static std::map<Id, Ptr> m_graphicsItems;
 };
+
+template<class T, class... Args>
+std::shared_ptr<T> GraphicsItem::make(Args&&... args)
+{
+  auto ptr = std::make_shared<T>(std::forward<Args>(args)...);
+  m_graphicsItems[ptr->id()] = ptr;
+  return ptr;
+}
 
 bool operator==(const GraphicsItem &l, const GraphicsItem &r);
 bool operator!=(const GraphicsItem &l, const GraphicsItem &r);
