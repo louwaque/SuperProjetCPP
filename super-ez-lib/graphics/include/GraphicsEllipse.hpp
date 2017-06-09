@@ -12,7 +12,9 @@
 class GraphicsEllipse : public GraphicsShape
 {
 public:
-  explicit GraphicsEllipse(const Ptr &parent = nullptr);
+  explicit GraphicsEllipse(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsEllipse(const Ptr &parent );
+  explicit GraphicsEllipse(const GraphicsItem *parent);
 
   inline const Point &center() const { return m_points[0]; }
   inline Point &center() { return m_points[0]; }

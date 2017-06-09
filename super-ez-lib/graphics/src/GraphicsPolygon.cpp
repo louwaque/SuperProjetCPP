@@ -1,8 +1,17 @@
 #include "../include/GraphicsPolygon.hpp"
 
-GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
+GraphicsPolygon::GraphicsPolygon(const Id &parent)
 : GraphicsShape(parent)
 {}
+
+GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
+:GraphicsPolygon()
+{
+  setParent(parent);
+}
+
+GraphicsPolygon::GraphicsPolygon(const GraphicsItem *parent)
+:GraphicsPolygon();
 
 Point &GraphicsPolygon::newPoint()
 {
