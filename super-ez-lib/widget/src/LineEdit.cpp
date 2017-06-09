@@ -14,7 +14,8 @@ LineEdit::LineEdit(GraphicsItem *parent)
   m_label = new Label(this);
   m_rectangle = new GraphicsRectangle(this);
   m_line = new GraphicsLine(this);
-  new GraphicsBlinkAnimation(m_line);
+  GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(m_line);
+  blink->setBlinkFrequency(200);
 
   widthChanged([this]() {
     m_rectangle->setWidth(width());
@@ -57,33 +58,59 @@ void LineEdit::meHandleEvent(const Event &event)
     const KeyEvent &key = dynamic_cast<const KeyEvent&>(event);
     if (key.state() == KeyEvent::KeyPressed) {
       std::string text = m_text;
-      if (key.key() == KeyEvent::Key::BackSpace && !text.empty()) {
-        text.pop_back();
-        setText(text);
-      } else {
-        setText(text+key.keyString());
-      }
-    } else {
-      if (key.key() == KeyEvent::Key::Right && m_cursor < m_text.size()) {
+      if (key.key() == KeyEvent::Key::BackSpace) {
+          if (!text.empty() && m_cursor > 0) {
+          text.erase(m_cursor - 1, 1);
+          --m_cursor;
+        }
+      } else if (key.key() == KeyEvent::Key::Delete) {
+        if (m_cursor < text.size()) {
+          text.erase(m_cursor, 1);
+        }
+      } else if (!key.keyString().empty()) {
+        text.insert(m_cursor, key.keyString());
         ++m_cursor;
-        updateCursor();
+      } else if (key.key() == KeyEvent::Key::Right && m_cursor < m_text.size()) {
+        ++m_cursor;
       } else if (key.key() == KeyEvent::Key::Left && m_cursor > 0) {
         --m_cursor;
-        updateCursor();
       }
+      setText(text);
+      updateCursor();
     }
   }
 }
 
 void LineEdit::updateCursor()
 {
-  if (m_text.size() > m_cursor)
+  if (m_cursor > m_text.size())
     m_cursor = m_text.size();
 
-  //FIXME utiliser substr
-  m_label->setText(m_text);
-  size_t x = m_label->font().width()*m_cursor;
+  size_t nbDisplayableLetters = m_rectangle->width()/m_label->font().width();
+
+  size_t pos = 0, count = nbDisplayableLetters;
+
+  size_t x = 0;
+
+  if (m_text.size() > nbDisplayableLetters) {
+    if (m_cursor < nbDisplayableLetters/2) {
+      pos = 0;
+      x = m_cursor;
+    } else if (m_text.size() - m_cursor < nbDisplayableLetters/2) {
+      pos = m_text.size() - nbDisplayableLetters;
+      x = nbDisplayableLetters - (m_text.size() - m_cursor);
+    } else {
+      pos = m_cursor - nbDisplayableLetters/2;
+      x = nbDisplayableLetters/2;
+    }
+    m_label->setText(m_text.substr(pos, count));
+  } else {
+    m_label->setText(m_text);
+    x = m_cursor;
+  }
+
+  x *= m_label->font().width();
 
   m_line->first().setRelative(x, 2);
-  m_line->second().setRelative(x, m_label->font().height() - 2);
+  m_line->second().setRelative(x, m_rectangle->height() - 2);
 }
