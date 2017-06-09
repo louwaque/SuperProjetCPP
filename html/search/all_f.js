@@ -18,5 +18,6 @@ var searchData=
   ['settext',['setText',['../class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130',1,'GraphicsText::setText()'],['../class_label.html#a2bd65842919bc965ff8482407b34f097',1,'Label::setText()']]],
   ['setvalue',['setValue',['../class_color.html#a1b673b9755fa01412ea14a2f9c040185',1,'Color']]],
   ['setx',['setX',['../class_point.html#a62fd0fb2c699d6d4699d3be73762ffa2',1,'Point']]],
-  ['sety',['setY',['../class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8',1,'Point']]]
+  ['sety',['setY',['../class_point.html#a3cdf750fa08f24c2aaaf7ada42df5ad8',1,'Point']]],
+  ['spinbox',['SpinBox',['../class_spin_box.html',1,'']]]
 ];
