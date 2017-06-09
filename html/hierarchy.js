@@ -32,7 +32,9 @@ var hierarchy =
       [ "Widget", "class_widget.html", [
         [ "Button", "class_button.html", null ],
         [ "Label", "class_label.html", null ],
-        [ "LineEdit", "class_line_edit.html", null ]
+        [ "Layout", "class_layout.html", null ],
+        [ "LineEdit", "class_line_edit.html", null ],
+        [ "ToolsWindow", "class_tools_window.html", null ]
       ] ]
     ] ],
     [ "GroupPoints", "class_group_points.html", null ],

@@ -11,7 +11,7 @@ var class_window =
     [ "height", "class_window.html#ac22c92bbc9278e85a02c1dea351213e7", null ],
     [ "isVisible", "class_window.html#ab99d21f928e805cd862cba08cf107a1b", null ],
     [ "resize", "class_window.html#a3e7fcfcbfaa2d273b75bf5e568088b92", null ],
-    [ "resizeEvent", "class_window.html#ad5a637cbd1de0e67c0e84b356e81bde7", null ],
+    [ "resizeEvent", "class_window.html#a5345612c9db7e83df6f8da630399a4c1", null ],
     [ "setDoubleBuffer", "class_window.html#af1f8bd54dfefaa68f58696d54b12e58b", null ],
     [ "setHeight", "class_window.html#ab6f2fe7d5e5b9c34adca4ded6b783c5f", null ],
     [ "setVisible", "class_window.html#a6d19e406410cae24b821775361af4b23", null ],
