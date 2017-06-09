@@ -5,9 +5,13 @@ GraphicsAnimation::GraphicsAnimation(const Id &parent)
 {}
 
 GraphicsAnimation::GraphicsAnimation(const Ptr &parent)
-: GraphicsItem(parent)
-{}
+: GraphicsAnimation()
+{
+  setParent(parent);
+}
 
 GraphicsAnimation::GraphicsAnimation(const GraphicsItem *parent)
-: GraphicsItem(parent)
-{}
+: GraphicsAnimation()
+{
+  setParent(parent);
+}

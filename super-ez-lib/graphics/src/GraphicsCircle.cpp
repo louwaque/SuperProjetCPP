@@ -2,21 +2,20 @@
 #include <cmath>
 
 GraphicsCircle::GraphicsCircle(const Id &parent)
-:GraphicsItem(parent),
-m_points()
+: GraphicsShape(parent)
 {
   m_points.emplace_back(&position());
   m_points.emplace_back(&position());
 }
 
 GraphicsCircle::GraphicsCircle(const Ptr &parent)
-:GraphicsCircle()
+: GraphicsCircle()
 {
   setParent(parent);
 }
 
 GraphicsCircle::GraphicsCircle(const GraphicsItem *parent)
-:GraphicsCircle()
+: GraphicsCircle()
 {
   setParent(parent);
 }

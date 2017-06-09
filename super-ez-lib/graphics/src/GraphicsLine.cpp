@@ -8,13 +8,13 @@ GraphicsLine::GraphicsLine(const Id &parent)
 }
 
 GraphicsLine::GraphicsLine(const Ptr &parent)
-: GraphicsShape()
+: GraphicsLine()
 {
   setParent(parent);
 }
 
 GraphicsLine::GraphicsLine(const GraphicsItem *parent)
-: GraphicsShape()
+: GraphicsLine()
 {
   setParent(parent);
 }

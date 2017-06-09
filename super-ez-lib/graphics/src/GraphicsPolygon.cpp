@@ -5,13 +5,16 @@ GraphicsPolygon::GraphicsPolygon(const Id &parent)
 {}
 
 GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
-:GraphicsPolygon()
+: GraphicsPolygon()
 {
   setParent(parent);
 }
 
 GraphicsPolygon::GraphicsPolygon(const GraphicsItem *parent)
-:GraphicsPolygon();
+: GraphicsPolygon()
+{
+  setParent(parent);
+}
 
 Point &GraphicsPolygon::newPoint()
 {
