@@ -5,6 +5,10 @@ Color::Color(const Colors color)
 : m_color(color)
 {}
 
+Color::Color(const uint32_t hexa)
+: m_color(hexa)
+{}
+
 Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue)
 : m_color(red << 16 | green << 8 | blue)
 {}

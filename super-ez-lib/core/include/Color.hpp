@@ -40,12 +40,20 @@ public:
   };
 
   /*!
-   * \brief Constructeur par default de la classe Colors
+   * \brief Construit une couleur avec une couleur prédéfinie
    *
    * \param color Couleur à utiliser
    */
 
   Color(const Colors color = Black);
+
+  /*!
+   * \brief Construit une couleur avec une valeur hexadécimal
+   *
+   * \param hexa Valeur de la couleur en hexadécimal
+   */
+
+  Color(const uint32_t hexa);
 
   /*!
    * \brief Construit une couleur avec le système RGB
