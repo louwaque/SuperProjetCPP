@@ -58,7 +58,6 @@ var files =
     [ "class_mouse_event.js", "class__mouse__event_8js_source.html", null ],
     [ "class_point.js", "class__point_8js_source.html", null ],
     [ "class_tools_window.js", "class__tools__window_8js_source.html", null ],
-    [ "class_tools_windows.js", "class__tools__windows_8js_source.html", null ],
     [ "class_widget.js", "class__widget_8js_source.html", null ],
     [ "class_window.js", "class__window_8js_source.html", null ],
     [ "classes_0.js", "classes__0_8js_source.html", null ],
@@ -124,7 +123,7 @@ var files =
     [ "GraphicsEllipse.cpp", "_graphics_ellipse_8cpp_source.html", null ],
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp_source.html", null ],
     [ "GraphicsItem.cpp", "_graphics_item_8cpp_source.html", null ],
-    [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", null ],
+    [ "GraphicsItem.hpp", "_graphics_item_8hpp_source.html", null ],
     [ "GraphicsLine.cpp", "_graphics_line_8cpp_source.html", null ],
     [ "GraphicsLine.hpp", "_graphics_line_8hpp_source.html", null ],
     [ "GraphicsPoint.cpp", "_graphics_point_8cpp_source.html", null ],
@@ -181,7 +180,6 @@ var files =
     [ "ToolsWindow.hpp", "_tools_window_8hpp.html", [
       [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ]
     ] ],
-    [ "ToolsWindows.hpp", "_tools_windows_8hpp_source.html", null ],
     [ "typedefs_0.js", "typedefs__0_8js_source.html", null ],
     [ "Widget.cpp", "_widget_8cpp_source.html", null ],
     [ "Widget.hpp", "_widget_8hpp_source.html", null ],

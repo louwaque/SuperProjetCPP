@@ -6,7 +6,6 @@ var searchData=
   ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html',1,'']]],
   ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html',1,'']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],
-  ['graphicsitem_2ehpp',['GraphicsItem.hpp',['../_graphics_item_8hpp.html',1,'']]],
   ['graphicsline',['GraphicsLine',['../class_graphics_line.html',1,'']]],
   ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'']]],
   ['graphicspolygon',['GraphicsPolygon',['../class_graphics_polygon.html',1,'']]],

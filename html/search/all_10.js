@@ -4,7 +4,6 @@ var searchData=
   ['third',['third',['../class_graphics_triangle.html#a11e015d2c442ebab1344b4ca9021a2de',1,'GraphicsTriangle']]],
   ['toolswindow',['ToolsWindow',['../class_tools_window.html',1,'']]],
   ['toolswindow_2ehpp',['ToolsWindow.hpp',['../_tools_window_8hpp.html',1,'']]],
-  ['toolswindows',['ToolsWindows',['../class_tools_windows.html',1,'ToolsWindows'],['../class_tools_windows.html#a5e5b3d0c80c9247c9daf00d982208f86',1,'ToolsWindows::ToolsWindows()']]],
   ['topleft',['topLeft',['../class_graphics_rectangle.html#ac70a5125161b6c09abd387edd9a83597',1,'GraphicsRectangle']]],
   ['type',['type',['../class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d',1,'GraphicsText']]]
 ];

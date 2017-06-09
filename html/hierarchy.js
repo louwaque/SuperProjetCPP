@@ -28,7 +28,6 @@ var hierarchy =
       ] ],
       [ "GraphicsSquare", "class_graphics_square.html", null ],
       [ "GraphicsText", "class_graphics_text.html", null ],
-      [ "ToolsWindows", "class_tools_windows.html", null ],
       [ "Widget", "class_widget.html", [
         [ "Button", "class_button.html", null ],
         [ "Label", "class_label.html", null ],

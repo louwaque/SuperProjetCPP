@@ -28,7 +28,6 @@ var annotated =
     [ "MouseEvent", "class_mouse_event.html", "class_mouse_event" ],
     [ "Point", "class_point.html", "class_point" ],
     [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ],
-    [ "ToolsWindows", "class_tools_windows.html", "class_tools_windows" ],
     [ "Widget", "class_widget.html", "class_widget" ],
     [ "Window", "class_window.html", "class_window" ]
 ];
