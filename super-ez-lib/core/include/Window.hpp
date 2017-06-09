@@ -4,7 +4,6 @@
 #include <string>
 #include <chrono>
 #include <ez-lib/ez-draw++.hpp>
-#include "Point.hpp"
 #include "Canvas.hpp"
 #include "MouseEvent.hpp"
 #include "KeyEvent.hpp"
@@ -17,70 +16,44 @@ public:
   Window(const size_t width = 400, const size_t height = 400, const std::string &title = "");
   virtual ~Window();
 
-  bool doubleBuffer() const {
-    return m_doubleBuffer;
-  }
+  inline bool doubleBuffer() const { return m_doubleBuffer; }
 
   void setDoubleBuffer(const bool active = true);
 
-  size_t width() const {
-    return EZWindow::getWidth();
-  }
+  inline size_t width() const { return EZWindow::getWidth(); }
 
-  void setWidth(const size_t width) {
-    EZWindow::setWidth(width);
-  }
+  inline void setWidth(const size_t width) { EZWindow::setWidth(width); }
 
-  size_t height() const {
-    return EZWindow::getHeight();
-  }
+  inline size_t height() const { return EZWindow::getHeight(); }
 
-  void setHeight(const size_t height) {
-    EZWindow::setHeight(height);
-  }
+  inline void setHeight(const size_t height) { EZWindow::setHeight(height); }
 
-  void resize(const size_t width, const size_t height) {
-    EZWindow::setWidthHeight(width, height);
-  }
+  inline void resize(const size_t width, const size_t height) { EZWindow::setWidthHeight(width, height); }
 
-  bool isVisible() const {
-    return EZWindow::isVisible();
-  }
+  inline bool isVisible() const { return EZWindow::isVisible(); }
 
-  void setVisible(const bool visible) {
-    EZWindow::setVisible(visible);
-  }
+  inline void setVisible(const bool visible) { EZWindow::setVisible(visible); }
 
-  void drawRequest() {
-    EZWindow::sendExpose();
-  }
+  inline void drawRequest() { EZWindow::sendExpose(); }
 
-  Canvas &canvas() {
-    return m_canvas;
-  }
+  inline Canvas &canvas() { return m_canvas; }
 
 protected:
-  //souri en même temps que touche clavier
   virtual void drawEvent() {}
   virtual void resizeEvent(const size_t with, const size_t height) {}
   virtual void closeEvent() {}
-  virtual void mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button) {}
-  virtual void mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button) {}
-  virtual void mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button) {}
-  virtual void keyPressEvent(const KeyEvent::Key key) {}
-  virtual void keyReleaseEvent(const KeyEvent::Key key) {}
   virtual void handleEvent(const Event &event) {}
   virtual void updateEvent(const unsigned int time) {}
 
 private:
-  void expose() { drawEvent(); }
-  void configureNotify(int width, int height) { resizeEvent(width, height); }
-  void close() { closeEvent(); }
-  void buttonPress(int mouse_x, int mouse_y, int button);
-  void buttonRelease(int mouse_x, int mouse_y, int button);
-  void motionNotify(int mouse_x, int mouse_y, int button);
-  void keyPress(EZKeySym keysym);
-  void keyRelease(EZKeySym keysym);
+  inline void expose() { drawEvent(); }
+  inline void configureNotify(int width, int height) { resizeEvent(width, height); }
+  inline void close() { closeEvent(); }
+  inline void buttonPress(int mouse_x, int mouse_y, int button) { handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::ButtonPressed)); }
+  inline void buttonRelease(int mouse_x, int mouse_y, int button) { handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::ButtonReleased)); }
+  inline void motionNotify(int mouse_x, int mouse_y, int button) { handleEvent(MouseEvent(EZWindow::currentEvent(), MouseEvent::MouseMoved)); }
+  inline void keyPress(EZKeySym keysym) { handleEvent(KeyEvent(EZWindow::currentEvent(), KeyEvent::KeyPressed)); }
+  inline void keyRelease(EZKeySym keysym) { handleEvent(KeyEvent(EZWindow::currentEvent(), KeyEvent::KeyReleased)); }
   void timerNotify();
 
 private:
