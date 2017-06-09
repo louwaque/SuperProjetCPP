@@ -19,6 +19,9 @@ public:
   inline std::string text() const { return m_text->text(); }
   void setText(const std::string &text);
 
+  inline Font font() const { return m_text->font(); }
+  void setFont(const Font &font);
+
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
@@ -27,6 +30,7 @@ public:
    */
   ///@{
   inline co_t textChanged(const slot_t &subscriber) { return m_textChanged.connect(subscriber); }
+  inline co_t fontChanged(const slot_t &subscriber) { return m_fontChanged.connect(subscriber); }
   ///@}
 
 private:
@@ -36,6 +40,7 @@ private:
   GraphicsText *m_text;
 
   signal_t m_textChanged;
+  signal_t m_fontChanged;
 };
 
 #endif
