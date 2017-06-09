@@ -1,9 +1,8 @@
 #ifndef LINEEDIT_HPP
 #define LINEEDIT_HPP
 
-#include "Widget.hpp"
+#include "Label.hpp"
 #include <GraphicsRectangle.hpp>
-#include <GraphicsText.hpp>
 #include <GraphicsLine.hpp>
 
 /*!
@@ -17,8 +16,11 @@ class LineEdit : public Widget
 public:
   explicit LineEdit(GraphicsItem *parent = nullptr);
 
-  inline std::string text() const { return m_text->text(); }
+  inline std::string text() const { return m_text; }
   void setText(const std::string &text);
+
+  size_t minimumWidth() const;
+  size_t minimumHeight() const;
 
   /*!
    * \name Signaux
@@ -31,7 +33,13 @@ protected:
   void meHandleEvent(const Event &event);
 
 private:
-  GraphicsText *m_text;
+  void updateCursor();
+
+private:
+  std::string m_text;
+  size_t m_cursor;
+
+  Label *m_label;
   GraphicsRectangle *m_rectangle;
   GraphicsLine *m_line;
 
