@@ -2,7 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <Window.hpp>
-#include <GraphicsItem.hpp>
+#include <Widget.hpp>
 
 class MainWindow : public Window
 {
@@ -11,15 +11,14 @@ public:
 
 protected:
   void drawEvent();
-  void mousePressEvent(const Point &mousePos, const MouseEvent::MouseButton button);
-  void mouseReleaseEvent(const Point &mousePos, const MouseEvent::MouseButton button);
-  void mouseMoveEvent(const Point &mousePos, const MouseEvent::MouseButton button);
+  void resizeEvent(const size_t width, const size_t height);
   void updateEvent(const unsigned int time);
   void handleEvent(const Event &event);
   void createRectangle();
 
 private:
   GraphicsItem m_scene;
+  Widget *m_tool;
   GraphicsItem *currentItem;
 };
 
