@@ -13,6 +13,12 @@
 class Label : public Widget
 {
 public:
+  enum class LabelAlign {
+    Left,
+    Right,
+    Center
+  };
+
   explicit Label(GraphicsItem *parent = nullptr);
   Label(const std::string &text, GraphicsItem *parent = nullptr);
 
@@ -21,6 +27,9 @@ public:
 
   inline Font font() const { return m_text->font(); }
   void setFont(const Font &font);
+
+  inline LabelAlign align() const { return m_align; }
+  inline void setAlign(const LabelAlign align) { m_align = align; alignText(); }
 
   size_t minimumWidth() const;
   size_t minimumHeight() const;
@@ -38,6 +47,7 @@ private:
 
 private:
   GraphicsText *m_text;
+  LabelAlign m_align;
 
   signal_t m_textChanged;
   signal_t m_fontChanged;
