@@ -40,7 +40,7 @@ public:
 
 protected:
   virtual void drawEvent() {}
-  virtual void resizeEvent(const size_t with, const size_t height) {}
+  virtual void resizeEvent(const size_t width, const size_t height) {}
   virtual void closeEvent() {}
   virtual void handleEvent(const Event &event) {}
   virtual void updateEvent(const unsigned int time) {}
