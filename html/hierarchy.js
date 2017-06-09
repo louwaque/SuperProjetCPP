@@ -13,29 +13,30 @@ var hierarchy =
       ] ]
     ] ],
     [ "Font", "class_font.html", null ],
-    [ "GraphicsItem", "class_graphics_item.html", [
-      [ "GraphicsAnimation", "class_graphics_animation.html", [
-        [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
-      ] ],
-      [ "GraphicsPoint", "class_graphics_point.html", null ],
-      [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
-      [ "GraphicsShape", "class_graphics_shape.html", [
-        [ "GraphicsCircle", "class_graphics_circle.html", null ],
-        [ "GraphicsEllipse", "class_graphics_ellipse.html", null ],
-        [ "GraphicsLine", "class_graphics_line.html", null ],
-        [ "GraphicsPolygon", "class_graphics_polygon.html", null ],
-        [ "GraphicsTriangle", "class_graphics_triangle.html", null ]
-      ] ],
-      [ "GraphicsSquare", "class_graphics_square.html", null ],
-      [ "GraphicsText", "class_graphics_text.html", null ],
-      [ "Widget", "class_widget.html", [
-        [ "Button", "class_button.html", null ],
-        [ "Label", "class_label.html", null ],
-        [ "Layout", "class_layout.html", null ],
-        [ "LineEdit", "class_line_edit.html", null ],
-        [ "ToolsWindow", "class_tools_window.html", null ]
+    [ "GroupPoints", "class_group_points.html", null ],
+    [ "noncopyable", null, [
+      [ "GraphicsItem", "class_graphics_item.html", [
+        [ "GraphicsAnimation", "class_graphics_animation.html", [
+          [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
+        ] ],
+        [ "GraphicsPoint", "class_graphics_point.html", null ],
+        [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
+        [ "GraphicsShape", "class_graphics_shape.html", [
+          [ "GraphicsCircle", "class_graphics_circle.html", null ],
+          [ "GraphicsEllipse", "class_graphics_ellipse.html", null ],
+          [ "GraphicsLine", "class_graphics_line.html", null ],
+          [ "GraphicsPolygon", "class_graphics_polygon.html", null ],
+          [ "GraphicsTriangle", "class_graphics_triangle.html", null ]
+        ] ],
+        [ "GraphicsSquare", "class_graphics_square.html", null ],
+        [ "GraphicsText", "class_graphics_text.html", null ],
+        [ "ToolsWindows", "class_tools_windows.html", null ],
+        [ "Widget", "class_widget.html", [
+          [ "Button", "class_button.html", null ],
+          [ "Label", "class_label.html", null ],
+          [ "LineEdit", "class_line_edit.html", null ]
+        ] ]
       ] ]
     ] ],
-    [ "GroupPoints", "class_group_points.html", null ],
     [ "Point", "class_point.html", null ]
 ];

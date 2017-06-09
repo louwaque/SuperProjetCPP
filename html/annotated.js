@@ -22,12 +22,11 @@ var annotated =
     [ "GroupPoints", "class_group_points.html", "class_group_points" ],
     [ "KeyEvent", "class_key_event.html", "class_key_event" ],
     [ "Label", "class_label.html", "class_label" ],
-    [ "Layout", "class_layout.html", "class_layout" ],
     [ "LineEdit", "class_line_edit.html", "class_line_edit" ],
     [ "MainWindow", "class_main_window.html", "class_main_window" ],
     [ "MouseEvent", "class_mouse_event.html", "class_mouse_event" ],
     [ "Point", "class_point.html", "class_point" ],
-    [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ],
+    [ "ToolsWindows", "class_tools_windows.html", "class_tools_windows" ],
     [ "Widget", "class_widget.html", "class_widget" ],
     [ "Window", "class_window.html", "class_window" ]
 ];

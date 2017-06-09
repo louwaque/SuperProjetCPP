@@ -172,6 +172,9 @@ GraphicsTypes&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () 
 <tr class="memitem:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c30111512bd4f198e9414b70bb3ccc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *parent=nullptr)</td></tr>
 <tr class="separator:a96c30111512bd4f198e9414b70bb3ccc inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add39b82382c6ab4ce9375c440241ec69 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add39b82382c6ab4ce9375c440241ec69"></a>
+Id&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const </td></tr>
+<tr class="separator:add39b82382c6ab4ce9375c440241ec69 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf0a8de33aa83d5fa5ac8889e7e4392"></a>
 <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> () const </td></tr>
 <tr class="separator:aeaf0a8de33aa83d5fa5ac8889e7e4392 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,6 +281,13 @@ Membres hérités additionnels</h2></td></tr>
 <b>ChildrenRecursively</b>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a4dee8acc881415963f0661571edf4 inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8a4dee8acc881415963f0661571edf4"></a>
+typedef boost::uuids::uuid&#160;</td><td class="memItemRight" valign="bottom"><b>Id</b></td></tr>
+<tr class="separator:af8a4dee8acc881415963f0661571edf4 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1be9fee3f52e7c1cb1043286e49a00 inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e1be9fee3f52e7c1cb1043286e49a00"></a>
+typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="separator:a4e1be9fee3f52e7c1cb1043286e49a00 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa643e574b9c2b6713b1b8def690f0c6b"></a>
 typedef std::vector<br class="typebreak"/>
 &lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
@@ -289,6 +299,10 @@ static <a class="el" href="class_graphics_item.html">GraphicsItem</a> *&#160;</t
 <tr class="memitem:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5877c4c5815eacb9876c7b99b119aef7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</b> (<a class="el" href="class_graphics_item.html">GraphicsItem</a> *item)</td></tr>
 <tr class="separator:a5877c4c5815eacb9876c7b99b119aef7 inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c40f117afa7c631e78997d44433658 inherit pub_static_methods_class_graphics_item"><td class="memTemplParams" colspan="2"><a class="anchor" id="a78c40f117afa7c631e78997d44433658"></a>
+template&lt;class T , class... Args&gt; </td></tr>
+<tr class="memitem:a78c40f117afa7c631e78997d44433658 inherit pub_static_methods_class_graphics_item"><td class="memTemplItemLeft" align="right" valign="top">static std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make</b> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:a78c40f117afa7c631e78997d44433658 inherit pub_static_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Un rectangle. </p>
@@ -364,7 +378,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocusItem</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_rectangle.html">GraphicsRectangle</a></li>
-    <li class="footer">Généré le Vendredi 9 Juin 2017 11:40:58 pour Super Project c++ par
+    <li class="footer">Généré le Vendredi 9 Juin 2017 12:53:57 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
