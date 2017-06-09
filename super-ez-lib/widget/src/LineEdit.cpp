@@ -27,6 +27,7 @@ LineEdit::LineEdit(GraphicsItem *parent)
   });
 
   m_label->fontChanged([this]() {
+    m_minimumWidthChanged();
     m_minimumHeightChanged();
   });
 
@@ -44,7 +45,7 @@ void LineEdit::setText(const std::string &text)
 
 size_t LineEdit::minimumWidth() const
 {
-  return 10;
+  return m_label->font().width()*5;
 }
 
 size_t LineEdit::minimumHeight() const
@@ -67,6 +68,8 @@ void LineEdit::meHandleEvent(const Event &event)
         if (m_cursor < text.size()) {
           text.erase(m_cursor, 1);
         }
+      } else if (key.key() == KeyEvent::Key::Return) {
+        m_accepted();
       } else if (!key.keyString().empty()) {
         text.insert(m_cursor, key.keyString());
         ++m_cursor;

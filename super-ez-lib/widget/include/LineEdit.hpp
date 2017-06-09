@@ -27,6 +27,7 @@ public:
    */
   ///@{
   inline co_t textChanged(const slot_t &subscriber) { return m_textChanged.connect(subscriber); }
+  inline co_t accepted(const slot_t &subscriber) { return m_accepted.connect(subscriber); }
   ///@}
 
 protected:
@@ -44,6 +45,7 @@ private:
   GraphicsLine *m_line;
 
   signal_t m_textChanged;
+  signal_t m_accepted;
 };
 
 #endif
