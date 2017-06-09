@@ -15,8 +15,7 @@
 
 /*!
  * \class Color
- * \brief Permet la gestion des coulours des différentes *entitées
- *
+ * \brief Représente une couleur
  */
 
 class Color {
@@ -25,9 +24,7 @@ public:
 
   /*!
  * \enum Colors
- * \brief Constantes de couleurs
- *
- * Str_err_e est une série de constantes prédéfinie pour les * différentes couleurs possibles
+ * \brief Couleurs prédéfinies
  */
 
   enum Colors : uint32_t {
@@ -42,52 +39,41 @@ public:
     Mangenta = 0xFF00FF
   };
 
-
-
-  //pas super top
-
   /*!
-   * \brief Constructeur par default de la classe Colors.
+   * \brief Constructeur par default de la classe Colors
    *
-   * Crée une instance de Colors.
-   * La couleur par default est noir
+   * \param color Couleur à utiliser
    */
 
-  explicit Color(const Colors color = Black);
+  Color(const Colors color = Black);
 
   /*!
-   * \brief Constructeur de Color avec des couleurs en parametres
+   * \brief Construit une couleur avec le système RGB
    *
-   * Crée une instance de Colors celon le principe du RGB
-   * Les valeurs sont comprises en 0 et 255.
-   * \param red: valeur de la premier couleur primaire, rouge.
-   * \param green: valeur de la seconde couleur primaire, vert.
-   * \param blue: valeur de la troisieme couleur primaire, bleu.
-   * La synthese additivité donnera la couleur final de l'instance Colors.
+   * Les valeurs sont comprises entre 0 et 255.
+   *
+   * \param red La valeur du rouge
+   * \param green La valeur du vert
+   * \param blue La valeur du bleu
    */
 
-  Color(const uint8_t red, const uint8_t green, const uint8_t blue);
+  explicit Color(const uint8_t red, const uint8_t green, const uint8_t blue);
 
   /*!
-   * \brief Constructeur de Color avec la teinte,la saturation et la valeur en paramètres ( système HVS ).
+   * \brief Construit une couleur avec le système HSV
    *
-   * Crée une instance de Colors celon le principe HVS
-   * \param hue: valeur de la teinte.
-   * \param saturation: valeur de la saturation.
-   * \param value: valeur de la valeur.
-   *
+   * \param hue La valeur de la teinte
+   * \param saturation La valeur de la saturation
+   * \param value La valeur de la valeur
    */
 
-  Color(const double hue, const double saturation, const double value);
+  explicit Color(const double hue, const double saturation, const double value);
 
-
-    /*!
-     * \brief Constructeur de Color avec une teinte de gris en parametres
-     *
-     * Crée une instance de Colors celon une valeur de gris
-     * \param grey: valeur de la teinte
-     *
-     */
+  /*!
+   * \brief Construit une couleur avec une teinte de gris
+   *
+   * \param grey La valeur de la teinte
+   */
 
   explicit Color(const ulong grey);
 
@@ -212,9 +198,7 @@ public:
   std::string hexaStr() const;
 
 private:
-
   uint32_t m_color; /*!< La couleur */
-
 };
 
 #endif
