@@ -5,6 +5,7 @@
 
 LineEdit::LineEdit(GraphicsItem *parent)
 : Widget(parent),
+  m_margin(5),
   m_text(),
   m_cursor(0),
   m_label(nullptr),
@@ -12,6 +13,7 @@ LineEdit::LineEdit(GraphicsItem *parent)
   m_line(nullptr)
 {
   m_label = new Label(this);
+  m_label->position().setRelative(m_margin, m_margin);
   m_rectangle = new GraphicsRectangle(this);
   m_line = new GraphicsLine(this);
   GraphicsBlinkAnimation *blink = new GraphicsBlinkAnimation(m_line);
@@ -19,19 +21,19 @@ LineEdit::LineEdit(GraphicsItem *parent)
 
   widthChanged([this]() {
     m_rectangle->setWidth(width());
-    m_label->setWidth(width());
+    m_label->setWidth(width() - m_margin * 2);
+    updateCursor();
   });
   heightChanged([this]() {
     m_rectangle->setHeight(height());
-    m_label->setHeight(height());
+    m_label->setHeight(height() - m_margin * 2);
+    updateCursor();
   });
 
   m_label->fontChanged([this]() {
     m_minimumWidthChanged();
     m_minimumHeightChanged();
   });
-
-  setText("");
 }
 
 void LineEdit::setText(const std::string &text)
@@ -53,6 +55,13 @@ size_t LineEdit::minimumHeight() const
   return m_label->font().height();
 }
 
+void LineEdit::meUpdate(const unsigned int time)
+{
+  m_line->setEnable(m_rectangle->hasFocus());
+  if (!m_rectangle->hasFocus())
+    m_line->setVisible(false);
+}
+
 void LineEdit::meHandleEvent(const Event &event)
 {
   if (event.type() == Event::KeyType && m_rectangle->hasFocus()) {
@@ -63,23 +72,26 @@ void LineEdit::meHandleEvent(const Event &event)
           if (!text.empty() && m_cursor > 0) {
           text.erase(m_cursor - 1, 1);
           --m_cursor;
+          setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Delete) {
         if (m_cursor < text.size()) {
           text.erase(m_cursor, 1);
+          setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Return) {
         m_accepted();
       } else if (!key.keyString().empty()) {
         text.insert(m_cursor, key.keyString());
         ++m_cursor;
+        setText(text);
       } else if (key.key() == KeyEvent::Key::Right && m_cursor < m_text.size()) {
         ++m_cursor;
+        updateCursor();
       } else if (key.key() == KeyEvent::Key::Left && m_cursor > 0) {
         --m_cursor;
+        updateCursor();
       }
-      setText(text);
-      updateCursor();
     }
   }
 }
@@ -89,7 +101,7 @@ void LineEdit::updateCursor()
   if (m_cursor > m_text.size())
     m_cursor = m_text.size();
 
-  size_t nbDisplayableLetters = m_rectangle->width()/m_label->font().width();
+  size_t nbDisplayableLetters = m_label->width()/m_label->font().width();
 
   size_t pos = 0, count = nbDisplayableLetters;
 
@@ -114,6 +126,6 @@ void LineEdit::updateCursor()
 
   x *= m_label->font().width();
 
-  m_line->first().setRelative(x, 2);
-  m_line->second().setRelative(x, m_rectangle->height() - 2);
+  m_line->first().setRelative(x + m_margin, m_margin);
+  m_line->second().setRelative(x + m_margin, m_rectangle->height() - m_margin);
 }

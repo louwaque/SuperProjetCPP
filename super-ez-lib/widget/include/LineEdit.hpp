@@ -31,12 +31,15 @@ public:
   ///@}
 
 protected:
+  void meUpdate(const unsigned int time);
   void meHandleEvent(const Event &event);
 
 private:
   void updateCursor();
 
 private:
+  const size_t m_margin;
+
   std::string m_text;
   size_t m_cursor;
 
