@@ -12,7 +12,6 @@ var class_color =
       [ "Mangenta", "class_color.html#af1edae0ae19f7a958e091dbb85e7102fa8efd0a78290fe9f5b119c0da933fb29f", null ]
     ] ],
     [ "Color", "class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2", null ],
-    [ "Color", "class_color.html#ada281654a27f9df56793a80ad3ea8e95", null ],
     [ "Color", "class_color.html#aa71f228de4c860d6186c1c6341ccaf3b", null ],
     [ "Color", "class_color.html#adc2dc1409a554d34d7d4d389f726ee77", null ],
     [ "Color", "class_color.html#a1c908cbcc0ba8bd7baccf5eb0a48eac2", null ],

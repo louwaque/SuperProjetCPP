@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html#a4a5a09ece70c878e36694e3d07ed513f',1,'GraphicsRectangle']]],
-  ['graphicstext',['GraphicsText',['../class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb',1,'GraphicsText::GraphicsText(GraphicsItem *parent=nullptr)'],['../class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1',1,'GraphicsText::GraphicsText(const std::string &amp;text, GraphicsItem *parent=nullptr)']]],
+  ['graphicsrectangle',['GraphicsRectangle',['../class_graphics_rectangle.html#a3a9c88555efe5e13fd1b638d6d33f7d8',1,'GraphicsRectangle']]],
+  ['graphicstext',['GraphicsText',['../class_graphics_text.html#a53507c83f656e27df86ac7240f9637b8',1,'GraphicsText::GraphicsText(const Id &amp;parent=boost::uuids::nil_generator()())'],['../class_graphics_text.html#aaca842dff610ca610a1e5b1f2c5643de',1,'GraphicsText::GraphicsText(const std::string &amp;text, const Id &amp;parent=boost::uuids::nil_generator()())']]],
   ['green',['green',['../class_color.html#abeb092c67b007163b357bd6327189394',1,'Color']]]
 ];
