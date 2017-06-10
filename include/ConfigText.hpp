@@ -26,6 +26,7 @@ protected:
 
 private:
   std::shared_ptr<LineEdit> m_lineEditText;
+  std::shared_ptr<SpinBox> m_spinBoxSize;
 };
 
 #endif
