@@ -21,9 +21,6 @@ MainWindow::MainWindow()
   auto tool = GraphicsItem::make<ToolsWindow>();
   m_layout->push_back(tool);
 
-  m_config = GraphicsItem::make<ConfigItem>();
-  m_layout->push_back(m_config);
-
   organize();
 }
 
@@ -51,6 +48,6 @@ void MainWindow::handleEvent(const Event &event)
 
 void MainWindow::organize()
 {
-  m_layout->setWidth(width()*0.10);
-  m_layout->setHeight(height()*0.65);
+  m_layout->setWidth(width());
+  //m_layout->setHeight(height()*0.65);
 }
