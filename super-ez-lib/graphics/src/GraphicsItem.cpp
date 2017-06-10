@@ -19,7 +19,6 @@ GraphicsItem::GraphicsItem(const Id &parent)
   m_isEnable(true),
   m_isVisible(true)
 {
-  std::cerr << "new GraphicsItem: " << this << '\n';
   setParent(parent);
 }
 
@@ -38,45 +37,42 @@ GraphicsItem::GraphicsItem(const GraphicsItem *parent)
 GraphicsItem::~GraphicsItem()
 {
   setParent();
-  std::cerr << "GraphicsItem deleted :" << this << " of type : " << type() << std::endl;
 }
 
 void GraphicsItem::setParent(const Id &parent)
 {
-  if (m_parent == parent)
-    return;
-
-  auto ptr = m_graphicsItems[m_parent];
-  if (ptr)
-    ptr->m_children.erase(std::remove(ptr->m_children.begin(), ptr->m_children.end(), id()), ptr->m_children.end());
-
-  m_parent = parent;
-
-  ptr = m_graphicsItems[m_parent];
-  if (ptr) {
-    ptr->m_children.push_back(id());
-    if (m_graphicsItems[id()])
-      ptr->sortChildren();
-    m_position.setOrigin(&ptr->position());
-  } else {
-    m_position.setOrigin(nullptr);
+  if (m_parent != parent) {
+    auto ptr = m_graphicsItems[parent];
+    if (ptr)
+      setParent(ptr);
   }
 }
 
 void GraphicsItem::setParent(const Ptr &parent)
 {
   if (parent)
-    setParent(parent->id());
+    setParent(parent.get());
   else
     setParent();
 }
 
 void GraphicsItem::setParent(const GraphicsItem *parent)
 {
-  if (parent)
-    setParent(parent->id());
-  else
-    setParent();
+  auto ptr = m_graphicsItems[m_parent];
+  if (ptr)
+    ptr->m_children.erase(std::remove(ptr->m_children.begin(), ptr->m_children.end(), id()), ptr->m_children.end());
+
+  m_parent = boost::uuids::nil_generator()();
+  m_position.setOrigin(nullptr);
+
+  if (parent) {
+    GraphicsItem * p = const_cast<GraphicsItem*>(parent);
+    m_parent = p->id();
+    p->m_children.push_back(id());
+    if (m_graphicsItems[id()])
+      p->sortChildren();
+    m_position.setOrigin(&p->position());
+  }
 }
 
 GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
