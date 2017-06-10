@@ -5,6 +5,7 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   m_target(nullptr)
 {
   m_layout = new Layout(Layout::Vertical, this);
+  m_layout->setSpacing(5);
 
   Label *title = new Label("GraphicsItem");
   title->setAlign(Label::LabelAlign::Center);
