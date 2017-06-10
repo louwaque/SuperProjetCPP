@@ -14,7 +14,9 @@
 class LineEdit : public Widget
 {
 public:
-  explicit LineEdit(GraphicsItem *parent = nullptr);
+  explicit LineEdit(const Id &parent = boost::uuids::nil_generator()());
+  explicit LineEdit(const Ptr &parent);
+  explicit LineEdit(const GraphicsItem *parent);
 
   inline std::string text() const { return m_text; }
   void setText(const std::string &text);
@@ -43,9 +45,9 @@ private:
   std::string m_text;
   size_t m_cursor;
 
-  Label *m_label;
-  GraphicsRectangle *m_rectangle;
-  GraphicsLine *m_line;
+  std::shared_ptr<Label> m_label;
+  std::shared_ptr<GraphicsRectangle> m_rectangle;
+  std::shared_ptr<GraphicsLine> m_line;
 
   signal_t m_textChanged;
   signal_t m_accepted;

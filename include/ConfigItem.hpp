@@ -24,8 +24,8 @@ class ConfigItem : public Widget
 public:
   ConfigItem(GraphicsItem *parent = nullptr);
 
-  GraphicsItem *target() const { return m_target; }
-  void setTarget(GraphicsItem *target = nullptr);
+  Ptr target() const { return m_target; }
+  void setTarget(const Ptr &target = nullptr);
 
   size_t minimumWidth() const;
   size_t minimumHeight() const;
@@ -34,13 +34,12 @@ protected:
   virtual void loadData();
 
 protected:
-  GraphicsItem *m_target;
-
-  Layout *m_layout;
+  Ptr m_target;
+  std::shared_ptr<Layout> m_layout;
 
 private:
-  SpinBox *m_spinBoxPosX, *m_spinBoxPosY, *m_spinBoxZ, *m_spinBoxThick;
-  LineEdit *m_lineEditColor;
+  std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick;
+  std::shared_ptr<LineEdit> m_lineEditColor;
 };
 
 #endif

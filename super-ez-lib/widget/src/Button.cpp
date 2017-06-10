@@ -2,15 +2,15 @@
 #include <MouseEvent.hpp>
 #include <iostream>
 
-Button::Button(GraphicsItem *parent)
+Button::Button(const Id &parent)
 : Widget(parent),
   m_background(nullptr),
   m_label(nullptr)
 {
-  m_background = new GraphicsRectangle(this);
-  m_background->setColor(Color(Color::Green));
+  m_background = make<GraphicsRectangle>(this);
+  m_background->setColor(Color::Green);
 
-  m_label = new Label(this);
+  m_label = make<Label>(this);
   m_label->setAlign(Label::LabelAlign::Center);
 
   widthChanged([this]() {
@@ -30,10 +30,34 @@ Button::Button(GraphicsItem *parent)
   });
 }
 
-Button::Button(const std::string &text, GraphicsItem *parent)
+Button::Button(const Ptr &parent)
+: Button()
+{
+  setParent(parent);
+}
+
+Button::Button(const GraphicsItem *parent)
+: Button()
+{
+  setParent(parent);
+}
+
+Button::Button(const std::string &text, const Id &parent)
 : Button(parent)
 {
-  m_label->setText(text);
+  setText(text);
+}
+
+Button::Button(const std::string &text, const Ptr &parent)
+: Button(text)
+{
+  setParent(parent);
+}
+
+Button::Button(const std::string &text, const GraphicsItem *parent)
+: Button(text)
+{
+  setParent(parent);
 }
 
 size_t Button::minimumWidth() const

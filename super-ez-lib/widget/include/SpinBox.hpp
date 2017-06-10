@@ -13,8 +13,9 @@
 class SpinBox : public Widget
 {
 public:
-
-  explicit SpinBox(GraphicsItem *parent = nullptr);
+  explicit SpinBox(const Id &parent = boost::uuids::nil_generator()());
+  explicit SpinBox(const Ptr &parent);
+  explicit SpinBox(const GraphicsItem *parent);
 
   inline int value() const { return m_value; }
   void setValue(int value);
@@ -42,7 +43,7 @@ public:
 
 private:
   int m_value, m_minimumValue, m_maximumValue, m_step;
-  Layout *m_layout;
+  std::shared_ptr<Layout> m_layout;
 
   signal_t m_valueChanged, m_minimumValueChanged, m_maximumValueChanged;
 };

@@ -2,7 +2,7 @@
 #include "../include/LineEdit.hpp"
 #include "../include/Button.hpp"
 
-SpinBox::SpinBox(GraphicsItem *parent)
+SpinBox::SpinBox(const Id &parent)
 : Widget(parent),
   m_value(0),
   m_minimumValue(0),
@@ -10,15 +10,15 @@ SpinBox::SpinBox(GraphicsItem *parent)
   m_step(1),
   m_layout(nullptr)
 {
-  m_layout = new Layout(this);
+  m_layout = make<Layout>(this);
 
-  Button *minusButton = new Button("-");
+  auto minusButton = make<Button>("-");
   m_layout->push_back(minusButton);
   minusButton->clicked([this]() {
     setValue(m_value - m_step);
   });
 
-  LineEdit *lineEdit = new LineEdit;
+  auto lineEdit = make<LineEdit>();
   lineEdit->setZ(-1);
   lineEdit->setText(std::to_string(m_value));
   m_layout->push_back(lineEdit);
@@ -30,7 +30,7 @@ SpinBox::SpinBox(GraphicsItem *parent)
     }
   });
 
-  Button *plusButton = new Button("+");
+  auto plusButton = make<Button>("+");
   m_layout->push_back(plusButton);
   plusButton->clicked([this]() {
     setValue(m_value + m_step);
@@ -53,6 +53,18 @@ SpinBox::SpinBox(GraphicsItem *parent)
   m_layout->minimumHeightChanged([this]() {
     m_minimumHeightChanged();
   });
+}
+
+SpinBox::SpinBox(const Ptr &parent)
+: SpinBox()
+{
+  setParent(parent);
+}
+
+SpinBox::SpinBox(const GraphicsItem *parent)
+: SpinBox()
+{
+  setParent(parent);
 }
 
 void SpinBox::setValue(int value)

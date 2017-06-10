@@ -12,7 +12,9 @@
 class GraphicsCircle : public GraphicsShape
 {
 public:
-  explicit GraphicsCircle(GraphicsItem *parent);
+  explicit GraphicsCircle(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsCircle(const Ptr &parent);
+  explicit GraphicsCircle(const GraphicsItem *parent);
 
   inline const Point &center() const { return m_points[0]; }
   inline Point &center() { return m_points[0]; }

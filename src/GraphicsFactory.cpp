@@ -10,50 +10,50 @@
 #include <GraphicsText.hpp>
 #include <GraphicsTriangle.hpp>
 
-GraphicsItem *GraphicsFactory::circle()
+GraphicsItem::Ptr GraphicsFactory::circle()
 {
-  auto * item = new GraphicsCircle(nullptr);
+  auto item = GraphicsItem::make<GraphicsCircle>();
 
-  auto pt1 = new GraphicsPoint(item);
+  auto pt1 = GraphicsItem::make<GraphicsPoint>(item);
   pt1->position().join(item->position());
 
-  auto pt2 = new GraphicsPoint(item);
+  auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->radiusPt());
 
   return item;
 }
 
-GraphicsItem *GraphicsFactory::ellipse()
+GraphicsItem::Ptr GraphicsFactory::ellipse()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::line()
+GraphicsItem::Ptr GraphicsFactory::line()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::polygon()
+GraphicsItem::Ptr GraphicsFactory::polygon()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::rectangle()
+GraphicsItem::Ptr GraphicsFactory::rectangle()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::square()
+GraphicsItem::Ptr GraphicsFactory::square()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::text()
+GraphicsItem::Ptr GraphicsFactory::text()
 {
 
 }
 
-GraphicsItem *GraphicsFactory::triangle()
+GraphicsItem::Ptr GraphicsFactory::triangle()
 {
 
 }

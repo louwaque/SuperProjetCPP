@@ -25,7 +25,7 @@ public:
   size_t minimumHeight() const;
 
 private:
-  Layout *m_layout;
+  std::shared_ptr<Layout> m_layout;
 };
 
 #endif

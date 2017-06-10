@@ -1,6 +1,6 @@
 #include "../include/Widget.hpp"
 
-Widget::Widget(GraphicsItem *parent)
+Widget::Widget(const Id &parent)
 : GraphicsItem(parent),
   m_width(0),
   m_height(0)
@@ -13,6 +13,18 @@ Widget::Widget(GraphicsItem *parent)
     if (minimumHeight() == height())
       m_heightChanged();
   });
+}
+
+Widget::Widget(const Ptr &parent)
+: Widget()
+{
+  setParent(parent);
+}
+
+Widget::Widget(const GraphicsItem *parent)
+: Widget()
+{
+  setParent(parent);
 }
 
 void Widget::setWidth(const size_t width)

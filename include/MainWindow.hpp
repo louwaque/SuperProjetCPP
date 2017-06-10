@@ -21,9 +21,9 @@ private:
   void organize();
 
 private:
-  GraphicsItem m_scene;
-  Layout *m_layout;
-  Widget *m_config;
+  GraphicsItem::Ptr m_scene;
+  std::shared_ptr<Layout> m_layout;
+  std::shared_ptr<Widget> m_config;
   GraphicsItem *currentItem;
 };
 

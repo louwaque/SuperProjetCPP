@@ -12,8 +12,8 @@
 class GraphicsPoint : public GraphicsItem
 {
 public:
-  explicit GraphicsPoint(GraphicsItem *parent = nullptr);
-  explicit GraphicsPoint(const Point &pos, GraphicsItem *parent = nullptr);
+  explicit GraphicsPoint(const Ptr &parent = nullptr);
+  explicit GraphicsPoint(const Point &pos, const Ptr &parent = nullptr);
 
   unsigned int radius() const
   {

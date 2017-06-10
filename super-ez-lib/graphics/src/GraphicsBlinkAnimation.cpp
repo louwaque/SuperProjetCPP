@@ -1,10 +1,10 @@
 #include "../include/GraphicsBlinkAnimation.hpp"
 
-GraphicsBlinkAnimation::GraphicsBlinkAnimation(GraphicsItem *parent)
+GraphicsBlinkAnimation::GraphicsBlinkAnimation(const Ptr &parent)
 : GraphicsAnimation(parent), m_blinkFrequency(1000), m_elapsedTime(0), m_becomeColor(Color(Color::White)), m_parentColor(Color(Color::White)), m_colorApplied(false), m_becomeInvisible(true)
 {}
 
-GraphicsBlinkAnimation::GraphicsBlinkAnimation(const Color &color, GraphicsItem *parent)
+GraphicsBlinkAnimation::GraphicsBlinkAnimation(const Color &color, const Ptr &parent)
 : GraphicsAnimation(parent), m_blinkFrequency(1000), m_elapsedTime(0), m_becomeColor(color), m_parentColor(Color(Color::White)), m_colorApplied(false), m_becomeInvisible(false)
 {}
 

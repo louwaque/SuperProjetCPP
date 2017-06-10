@@ -21,7 +21,9 @@
 class GraphicsShape : public GraphicsItem
 {
 public:
-  explicit GraphicsShape(GraphicsItem *parent = nullptr);
+  explicit GraphicsShape(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsShape(const Ptr &parent);
+  explicit GraphicsShape(const GraphicsItem *parent);
 
   inline GraphicsTypes type() const { return ShapeType; }
 

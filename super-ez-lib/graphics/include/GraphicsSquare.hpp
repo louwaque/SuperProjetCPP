@@ -13,7 +13,9 @@
 class GraphicsSquare : public GraphicsItem
 {
 public:
-  explicit GraphicsSquare(GraphicsItem *parent = nullptr);
+  explicit GraphicsSquare(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsSquare(const Ptr &parent);
+  explicit GraphicsSquare(const GraphicsItem *parent);
 
   inline const Point &topLeft() const { return m_topLeft; }
   inline Point &topLeft() { return m_topLeft; }

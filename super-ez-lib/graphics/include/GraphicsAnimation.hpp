@@ -12,7 +12,9 @@
 class GraphicsAnimation : public GraphicsItem
 {
 public:
-  explicit GraphicsAnimation(GraphicsItem *parent = nullptr);
+  explicit GraphicsAnimation(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsAnimation(const Ptr &parent);
+  explicit GraphicsAnimation(const GraphicsItem *parent);
 
   GraphicsTypes type() const { return AnimationType; }
 };

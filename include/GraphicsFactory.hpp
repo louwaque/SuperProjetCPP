@@ -6,14 +6,14 @@
 class GraphicsFactory
 {
 public:
-  static GraphicsItem *circle();
-  static GraphicsItem *ellipse();
-  static GraphicsItem *line();
-  static GraphicsItem *polygon();
-  static GraphicsItem *rectangle();
-  static GraphicsItem *square();
-  static GraphicsItem *text();
-  static GraphicsItem *triangle();
+  static GraphicsItem::Ptr circle();
+  static GraphicsItem::Ptr ellipse();
+  static GraphicsItem::Ptr line();
+  static GraphicsItem::Ptr polygon();
+  static GraphicsItem::Ptr rectangle();
+  static GraphicsItem::Ptr square();
+  static GraphicsItem::Ptr text();
+  static GraphicsItem::Ptr triangle();
 
 private:
   GraphicsFactory();

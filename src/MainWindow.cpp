@@ -7,19 +7,21 @@
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"),
-  m_scene(),
+  m_scene(nullptr),
   m_layout(nullptr),
   m_config(nullptr),
   currentItem(nullptr)
 {
-  m_layout = new Layout(&m_scene);
+  m_scene = GraphicsItem::make<GraphicsItem>();
+
+  m_layout = GraphicsItem::make<Layout>(m_scene);
   m_layout->setSpacing(10);
   m_layout->position().set(5, 5);
 
-  ToolsWindow *tool = new ToolsWindow;
+  auto tool = GraphicsItem::make<ToolsWindow>();
   m_layout->push_back(tool);
 
-  m_config = new ConfigItem;
+  m_config = GraphicsItem::make<ConfigItem>();
   m_layout->push_back(m_config);
 
   organize();
@@ -27,7 +29,7 @@ MainWindow::MainWindow()
 
 void MainWindow::drawEvent()
 {
-  m_scene.draw(&canvas());
+  m_scene->draw(&canvas());
 }
 
 void MainWindow::resizeEvent(const size_t width, const size_t height)
@@ -37,13 +39,13 @@ void MainWindow::resizeEvent(const size_t width, const size_t height)
 
 void MainWindow::updateEvent(const unsigned int time)
 {
-  m_scene.update(time);
+  m_scene->update(time);
   drawRequest();
 }
 
 void MainWindow::handleEvent(const Event &event)
 {
-  m_scene.handleEvent(event);
+  m_scene->handleEvent(event);
   drawRequest();
 }
 

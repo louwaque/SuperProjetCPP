@@ -12,8 +12,8 @@
 class GraphicsBlinkAnimation : public GraphicsAnimation
 {
 public:
-  explicit GraphicsBlinkAnimation(GraphicsItem *parent = nullptr);
-  GraphicsBlinkAnimation(const Color &color, GraphicsItem *parent = nullptr);
+  explicit GraphicsBlinkAnimation(const Ptr &parent = nullptr);
+  GraphicsBlinkAnimation(const Color &color, const Ptr &parent = nullptr);
 
   inline unsigned int blinkFrequency() const { return m_blinkFrequency; }
   inline void setBlinkFrequency(const unsigned int frequency) { m_blinkFrequency = frequency; }

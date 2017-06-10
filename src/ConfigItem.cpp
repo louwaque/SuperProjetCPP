@@ -4,42 +4,42 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
 : Widget(parent),
   m_target(nullptr)
 {
-  m_layout = new Layout(Layout::Vertical, this);
+  m_layout = make<Layout>(Layout::Vertical, this);
   m_layout->setSpacing(5);
 
-  Label *title = new Label("GraphicsItem");
+  auto title = make<Label>("GraphicsItem");
   title->setAlign(Label::LabelAlign::Center);
   m_layout->push_back(title);
 
-  m_spinBoxPosX = new SpinBox;
+  m_spinBoxPosX = make<SpinBox>();
   m_layout->push_back(m_spinBoxPosX);
   m_spinBoxPosX->valueChanged([this]() {
     if (m_target)
       m_target->position().setX(m_spinBoxPosX->value());
   });
 
-  m_spinBoxPosY = new SpinBox;
+  m_spinBoxPosY = make<SpinBox>();
   m_layout->push_back(m_spinBoxPosY);
   m_spinBoxPosY->valueChanged([this]() {
     if (m_target)
       m_target->position().setY(m_spinBoxPosY->value());
   });
 
-  m_spinBoxZ = new SpinBox;
+  m_spinBoxZ = make<SpinBox>();
   m_layout->push_back(m_spinBoxZ);
   m_spinBoxZ->valueChanged([this]() {
     if (m_target)
       m_target->setZ(m_spinBoxZ->value());
   });
 
-  m_spinBoxThick = new SpinBox;
+  m_spinBoxThick = make<SpinBox>();
   m_layout->push_back(m_spinBoxThick);
   m_spinBoxThick->valueChanged([this]() {
     if (m_target)
       m_target->setThick(m_spinBoxThick->value());
   });
 
-  m_lineEditColor = new LineEdit;
+  m_lineEditColor = make<LineEdit>();
   m_layout->push_back(m_lineEditColor);
   m_lineEditColor->textChanged([this]() {
     //FIXME il faut le faire !
@@ -60,7 +60,7 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   });
 }
 
-void ConfigItem::setTarget(GraphicsItem *target)
+void ConfigItem::setTarget(const Ptr &target)
 {
   m_target = target;
   loadData();

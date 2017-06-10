@@ -28,8 +28,13 @@ public:
    *
    */
 
-  Button(GraphicsItem *parent = nullptr);
-  Button(const std::string &text, GraphicsItem *parent = nullptr);
+   explicit Button(const Id &parent = boost::uuids::nil_generator()());
+   explicit Button(const Ptr &parent);
+   explicit Button(const GraphicsItem *parent);
+
+   Button(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
+   Button(const std::string &text, const Ptr &parent);
+   Button(const std::string &text, const GraphicsItem *parent);
 
   inline std::string text() const { return m_label->text(); }
   inline void setText(const std::string &text) { m_label->setText(text); }
@@ -48,8 +53,8 @@ protected:
   void meHandleEvent(const Event &event);
 
 private:
-  GraphicsRectangle *m_background;
-  Label *m_label;
+  std::shared_ptr<GraphicsRectangle> m_background;
+  std::shared_ptr<Label> m_label;
 
   signal_t m_clicked;
 };

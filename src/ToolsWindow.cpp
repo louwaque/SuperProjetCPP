@@ -7,56 +7,56 @@ ToolsWindow::ToolsWindow(GraphicsItem *parent)
 : Widget(parent),
   m_layout(nullptr)
 {
-  m_layout = new Layout(Layout::Vertical, this);
+  m_layout = make<Layout>(Layout::Vertical, this);
   m_layout->setSpacing(5);
 
-  Label *label = new Label("Créer une forme");
+  auto label = make<Label>("Créer une forme");
   label->setAlign(Label::LabelAlign::Center);
   m_layout->push_back(label);
 
-  Button *circleButton = new Button("Cercle");
+  auto circleButton = make<Button>("Cercle");
   m_layout->push_back(circleButton);
   circleButton->clicked([this](){
     GraphicsFactory::circle()->setParent(this->parent());
   });
 
-  Button *ellipseButton = new Button("Ellipse");
+  auto ellipseButton = make<Button>("Ellipse");
   m_layout->push_back(ellipseButton);
   ellipseButton->clicked([this](){
     GraphicsFactory::ellipse()->setParent(this->parent());
   });
 
-  Button *lineButton = new Button("Ligne");
+  auto lineButton = make<Button>("Ligne");
   m_layout->push_back(lineButton);
   lineButton->clicked([this](){
     GraphicsFactory::line()->setParent(this->parent());
   });
 
-  Button *polygonButton = new Button("Polygone");
+  auto polygonButton = make<Button>("Polygone");
   m_layout->push_back(polygonButton);
   polygonButton->clicked([this](){
     GraphicsFactory::polygon()->setParent(this->parent());
   });
 
-  Button *rectangleButton = new Button("Rectangle");
+  auto rectangleButton = make<Button>("Rectangle");
   m_layout->push_back(rectangleButton);
   rectangleButton->clicked([this](){
     GraphicsFactory::rectangle()->setParent(this->parent());
   });
 
-  Button *squareButton = new Button("Carré");
+  auto squareButton = make<Button>("Carré");
   m_layout->push_back(squareButton);
   squareButton->clicked([this](){
     GraphicsFactory::square()->setParent(this->parent());
   });
 
-  Button *textButton = new Button("Texte");
+  auto textButton = make<Button>("Texte");
   m_layout->push_back(textButton);
   textButton->clicked([this](){
     GraphicsFactory::text()->setParent(this->parent());
   });
 
-  Button *triangleButton = new Button("Triangle");
+  auto triangleButton = make<Button>("Triangle");
   m_layout->push_back(triangleButton);
   triangleButton->clicked([this](){
     GraphicsFactory::triangle()->setParent(this->parent());

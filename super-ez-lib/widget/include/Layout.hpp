@@ -17,10 +17,15 @@ public:
     Vertical
   };
 
-  typedef std::vector<Widget*> Widgets;
+  typedef std::vector<std::shared_ptr<Widget>> Widgets;
 
-  explicit Layout(GraphicsItem *parent = nullptr);
-  Layout(const Orientation orientation, GraphicsItem *parent = nullptr);
+  explicit Layout(const Id &parent = boost::uuids::nil_generator()());
+  explicit Layout(const Ptr &parent);
+  explicit Layout(const GraphicsItem *parent);
+
+  Layout(const Orientation orientation, const Id &parent = boost::uuids::nil_generator()());
+  Layout(const Orientation orientation, const Ptr &parent);
+  Layout(const Orientation orientation, const GraphicsItem *parent);
 
   inline Orientation orientation() const { return m_orientation; }
   inline void setOrientation(const Orientation orientation) { m_orientation = orientation; organize(); }
@@ -28,8 +33,8 @@ public:
   inline size_t spacing() const { return m_spacing; }
   inline void setSpacing(const size_t spacing) { m_spacing = spacing; organize(); }
 
-  void push_back(Widget *widget);
-  Widget *pop_back();
+  void push_back(std::shared_ptr<Widget> widget);
+  std::shared_ptr<Widget> pop_back();
   inline size_t size() const { return m_widgets.size(); }
 
   inline size_t minimumWidth() const { return m_minimumWidth; }

@@ -2,11 +2,14 @@
 #define GRAPHICSITEM_HPP
 
 #include <vector>
-#include <set>
+#include <map>
 #include <memory>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
+#include <boost/uuid/uuid.hpp>
+#include <boost/uuid/uuid_generators.hpp>
+#include <boost/core/noncopyable.hpp>
 
 /**
  * \defgroup graphics Graphics
@@ -19,8 +22,10 @@
  * \ingroup graphics
  */
 
-class GraphicsItem {
+class GraphicsItem : private boost::noncopyable {
 public:
+  typedef boost::uuids::uuid Id;
+  typedef std::shared_ptr<GraphicsItem> Ptr;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
   enum GraphicsTypes { //mouse movable type ?
@@ -46,15 +51,19 @@ public:
     ChildrenRecursively
   };
 
-  explicit GraphicsItem(GraphicsItem *parent = nullptr);
+  explicit GraphicsItem(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsItem(const Ptr &parent);
+  explicit GraphicsItem(const GraphicsItem *parent);
 
   virtual ~GraphicsItem();
 
-  GraphicsItem *parent() const {
-    return m_parent;
-  }
+  inline Id id() const { return m_id; }
+  inline Id parentId() const { return m_parent; }
+  inline Ptr parent() const { return m_graphicsItems[m_parent]; }
 
-  void setParent(GraphicsItem *parent);
+  void setParent(const Id &parent = boost::uuids::nil_generator()());
+  void setParent(const Ptr &parent);
+  void setParent(const GraphicsItem *parent);
 
   virtual GraphicsTypes type() const {
     return ItemType;
@@ -73,9 +82,7 @@ public:
     return m_z;
   }
 
-  void setZ(const int z) {
-    m_z = z;
-  }
+  void setZ(const int z);
 
   void setColor(const Color color) {
     m_color = color;
@@ -125,6 +132,9 @@ public:
   inline static void setFocusItem(GraphicsItem *item) { m_focusItem = item; }
   inline bool hasFocus() const { return m_focusItem == this; };
 
+  template<class T, class... Args>
+  static std::shared_ptr<T> make(Args&&... args);
+
 protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
@@ -132,8 +142,12 @@ protected:
   virtual bool meIsOver(const Point &absoluteP) { return m_position == absoluteP; }
 
 private:
-  GraphicsItem *m_parent;
-  std::vector<std::unique_ptr<GraphicsItem>> m_children;
+  void sortChildren();
+
+private:
+  Id m_id;
+  Id m_parent;
+  std::vector<Id> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
   int m_z;
@@ -142,6 +156,24 @@ private:
   bool m_isFill;
   bool m_isEnable;
   bool m_isVisible;
+
+  static std::map<Id, Ptr> m_graphicsItems;
 };
+
+template<class T, class... Args>
+std::shared_ptr<T> GraphicsItem::make(Args&&... args)
+{
+  auto ptr = std::make_shared<T>(std::forward<Args>(args)...);
+  m_graphicsItems[ptr->id()] = ptr;
+
+  auto parent = ptr->parent();
+  if (parent)
+    parent->sortChildren();
+
+  return ptr;
+}
+
+bool operator==(const GraphicsItem &l, const GraphicsItem &r);
+bool operator!=(const GraphicsItem &l, const GraphicsItem &r);
 
 #endif
