@@ -8,6 +8,7 @@ SpinBox::SpinBox(const Id &parent)
   m_minimumValue(0),
   m_maximumValue(100),
   m_step(1),
+  m_isInfinite(true),
   m_layout(nullptr)
 {
   m_layout = make<Layout>(this);
@@ -70,11 +71,13 @@ SpinBox::SpinBox(const GraphicsItem *parent)
 void SpinBox::setValue(int value)
 {
   if (value != m_value) {
-    if (value < m_minimumValue)
-      value = m_minimumValue;
+    if (!m_isInfinite) {
+      if (value < m_minimumValue)
+        value = m_minimumValue;
 
-    if (value > m_maximumValue)
-      value = m_maximumValue;
+      if (value > m_maximumValue)
+        value = m_maximumValue;
+    }
 
     m_value = value;
     m_valueChanged();
@@ -83,6 +86,7 @@ void SpinBox::setValue(int value)
 
 void SpinBox::setMinimumValue(const int minimumValue)
 {
+  setInfinite(false);
   if (minimumValue != m_minimumValue) {
     m_minimumValue = minimumValue;
     setValue(m_value);
@@ -92,11 +96,18 @@ void SpinBox::setMinimumValue(const int minimumValue)
 
 void SpinBox::setMaximumValue(const int maximumValue)
 {
+  setInfinite(false);
   if (maximumValue != m_maximumValue) {
     m_maximumValue = maximumValue;
     setValue(m_value);
     m_maximumValueChanged();
   }
+}
+
+void SpinBox::setInfinite(const bool isInfinite)
+{
+  m_isInfinite = isInfinite;
+  setValue(m_value);
 }
 
 size_t SpinBox::minimumWidth() const

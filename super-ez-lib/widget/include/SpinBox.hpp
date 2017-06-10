@@ -29,6 +29,9 @@ public:
   inline int step() const { return m_step; }
   inline void setStep(const int step) { m_step = step; }
 
+  inline bool isInfinite() const { return m_isInfinite; }
+  void setInfinite(const bool isInfinite);
+
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
@@ -43,6 +46,7 @@ public:
 
 private:
   int m_value, m_minimumValue, m_maximumValue, m_step;
+  bool m_isInfinite;
   std::shared_ptr<Layout> m_layout;
 
   signal_t m_valueChanged, m_minimumValueChanged, m_maximumValueChanged;
