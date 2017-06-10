@@ -1,6 +1,7 @@
 #ifndef CANVAS_HPP
 #define CANVAS_HPP
 
+#include <boost/locale.hpp>
 #include <ez-lib/ez-draw++.hpp>
 #include "Color.hpp"
 #include "Point.hpp"
@@ -45,9 +46,9 @@ public:
 
   inline void drawTriangle(const Point &first, const Point &second, const Point &third, const bool isFill = false) { drawTriangle(first.x(), first.y(), second.x(), second.y(), third.x(), third.y(), isFill); }
 
-  inline void drawText(const TextAlign align, const int x, const int y, const std::string &text) { m_window.drawText(align, x, y, text); }
+  inline void drawText(const TextAlign align, const int x, const int y, const std::string &text) { m_window.drawText(align, x, y, boost::locale::conv::from_utf(text, "Latin1")); }
 
-  inline void drawText(const TextAlign align, const Point &pos, const std::string &text) { m_window.drawText(align, pos.x(), pos.y(), text); }
+  inline void drawText(const TextAlign align, const Point &pos, const std::string &text) { m_window.drawText(align, pos.x(), pos.y(), boost::locale::conv::from_utf(text, "Latin1")); }
 
 private:
   explicit Canvas(EZWindow &window);
