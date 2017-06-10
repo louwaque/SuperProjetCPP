@@ -52,8 +52,11 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
 
   m_lineEditColor = make<LineEdit>();
   m_layout->push_back("Couleur: ", m_lineEditColor);
-  m_lineEditColor->textChanged([this]() {
-    //FIXME il faut le faire !
+  m_lineEditColor->accepted([this]() {
+    if (m_target) {
+      m_target->setColor(m_lineEditColor->text());
+      m_lineEditColor->setText(m_target->color().hexaStr());
+    }
   });
 
   widthChanged([this]() {
@@ -104,6 +107,5 @@ void ConfigItem::loadData()
     m_spinBoxZ->setValue(m_target->z());
     m_spinBoxThick->setValue(m_target->thick());
     m_spinBoxFill->setValue(m_target->isFill());
-    m_lineEditColor->setText(m_target->color().hexaStr());
   }
 }
