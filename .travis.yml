@@ -55,7 +55,7 @@ script:
   - make -j2 check-app
   - echo -en 'travis_fold:end:test\\r'
   - echo -en 'travis_fold:start:doc\\r'
-  - make -j2 doc
+  - make -j2 doc 2>&1
   - echo -en 'travis_fold:end:doc\\r'
   - echo -en 'travis_fold:start:upload\\r'
   - cd $TRAVIS_BUILD_DIR
