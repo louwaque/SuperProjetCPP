@@ -72,7 +72,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="401.5" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ position()</text>
 <text text-anchor="start" x="401.5" y="-625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ color()</text>
 <text text-anchor="start" x="401.5" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ z()</text>
-<text text-anchor="start" x="401.5" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">et 13 de plus...</text>
+<text text-anchor="start" x="401.5" y="-603.5" font-family="Helvetica,sans-Serif" font-size="10.00">et 15 de plus...</text>
 <text text-anchor="start" x="401.5" y="-592.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
 <text text-anchor="start" x="401.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
 <text text-anchor="start" x="401.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
@@ -501,27 +501,28 @@ var sectionId = 'dynsection-0';
 <!-- Node19 -->
 <g id="node19" class="node"><title>Node19</title>
 <g id="a_node19"><a xlink:href="class_line_edit.html" target="_top" xlink:title="Saisir du texte. ">
-<polygon fill="white" stroke="black" points="1220.5,-39 1220.5,-195 1321.5,-195 1321.5,-39 1220.5,-39"/>
-<text text-anchor="middle" x="1271" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">LineEdit</text>
-<polyline fill="none" stroke="black" points="1220.5,-176 1321.5,-176 "/>
-<text text-anchor="middle" x="1271" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1220.5,-157 1321.5,-157 "/>
-<text text-anchor="start" x="1228.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">+ LineEdit()</text>
-<text text-anchor="start" x="1228.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
-<text text-anchor="start" x="1228.5" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
-<text text-anchor="start" x="1228.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
-<text text-anchor="start" x="1228.5" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
-<text text-anchor="start" x="1228.5" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">+ textChanged()</text>
-<text text-anchor="start" x="1228.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">+ accepted()</text>
-<text text-anchor="start" x="1228.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
-<text text-anchor="start" x="1228.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">* textChanged()</text>
-<text text-anchor="start" x="1228.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">* accepted()</text>
+<polygon fill="white" stroke="black" points="1220.5,-33.5 1220.5,-200.5 1321.5,-200.5 1321.5,-33.5 1220.5,-33.5"/>
+<text text-anchor="middle" x="1271" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">LineEdit</text>
+<polyline fill="none" stroke="black" points="1220.5,-181.5 1321.5,-181.5 "/>
+<text text-anchor="middle" x="1271" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1220.5,-162.5 1321.5,-162.5 "/>
+<text text-anchor="start" x="1228.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LineEdit()</text>
+<text text-anchor="start" x="1228.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
+<text text-anchor="start" x="1228.5" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
+<text text-anchor="start" x="1228.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
+<text text-anchor="start" x="1228.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<text text-anchor="start" x="1228.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ textChanged()</text>
+<text text-anchor="start" x="1228.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ accepted()</text>
+<text text-anchor="start" x="1228.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
+<text text-anchor="start" x="1228.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
+<text text-anchor="start" x="1228.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">* textChanged()</text>
+<text text-anchor="start" x="1228.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">* accepted()</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node19 -->
 <g id="edge18" class="edge"><title>Node14&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M1172.37,-287.77C1185.89,-270.347 1199.31,-251.959 1211,-234 1218.98,-221.742 1226.74,-208.298 1233.9,-195.042"/>
+<path fill="none" stroke="midnightblue" d="M1172.37,-287.77C1185.89,-270.347 1199.31,-251.959 1211,-234 1217.86,-223.453 1224.57,-212.026 1230.87,-200.598"/>
 <polygon fill="none" stroke="midnightblue" points="1169.57,-285.671 1166.17,-295.703 1175.09,-289.985 1169.57,-285.671"/>
 </g>
 <!-- Node20 -->

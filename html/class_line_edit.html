@@ -234,6 +234,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFill</b> () const <
 <tr class="memitem:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68ff48ffc002e83cea62ea094c5d6b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setFill</b> (const bool fill)</td></tr>
 <tr class="separator:aa68ff48ffc002e83cea62ea094c5d6b7 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c397db2b3d231d8c8a4261de2728456 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c397db2b3d231d8c8a4261de2728456"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEnable</b> () const </td></tr>
+<tr class="separator:a5c397db2b3d231d8c8a4261de2728456 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003ef0acc88943711b737b9018c714b5 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a003ef0acc88943711b737b9018c714b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnable</b> (const bool isEnable=true)</td></tr>
+<tr class="separator:a003ef0acc88943711b737b9018c714b5 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f5c21a12db9f875fffe77b491aa1605"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b> () const </td></tr>
 <tr class="separator:a2f5c21a12db9f875fffe77b491aa1605 inherit pub_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +264,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasFocus</b> () const
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:afccef654e430f0727aa9daa315fd3bac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afccef654e430f0727aa9daa315fd3bac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>meUpdate</b> (const unsigned int time)</td></tr>
+<tr class="separator:afccef654e430f0727aa9daa315fd3bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5e79e8a895901381e301d41d3d4343"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d5e79e8a895901381e301d41d3d4343"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>meHandleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:a8d5e79e8a895901381e301d41d3d4343"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,9 +274,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>meHandleEvent</b> (co
 <tr class="memitem:ab97734473720fa8365534448aa13733c inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab97734473720fa8365534448aa13733c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meDraw</b> (<a class="el" href="class_canvas.html">Canvas</a> *canvas)</td></tr>
 <tr class="separator:ab97734473720fa8365534448aa13733c inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7da307cdcde806bc966d813f58643649"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meUpdate</b> (const unsigned int time)</td></tr>
-<tr class="separator:a7da307cdcde806bc966d813f58643649 inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6616ded9057686f175bdbaa4c62218dc inherit pro_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6616ded9057686f175bdbaa4c62218dc"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>meIsOver</b> (const <a class="el" href="class_point.html">Point</a> &amp;absoluteP)</td></tr>
 <tr class="separator:a6616ded9057686f175bdbaa4c62218dc inherit pro_methods_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,7 +351,7 @@ signal_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumHeightCh
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_line_edit.html">LineEdit</a></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 08:46:35 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 10:13:45 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
