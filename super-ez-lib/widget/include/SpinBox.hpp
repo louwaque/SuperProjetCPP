@@ -3,6 +3,7 @@
 
 #include "Widget.hpp"
 #include "Layout.hpp"
+#include "LineEdit.hpp"
 
 /*!
  * \class Label
@@ -32,6 +33,9 @@ public:
   inline bool isInfinite() const { return m_isInfinite; }
   void setInfinite(const bool isInfinite);
 
+  std::vector<std::string> labels() const { return m_labels; }
+  void setLabels(const std::vector<std::string> &labels);
+
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
@@ -45,9 +49,14 @@ public:
   ///@}
 
 private:
+  void updateLineEditText();
+
+private:
   int m_value, m_minimumValue, m_maximumValue, m_step;
   bool m_isInfinite;
+  std::vector<std::string> m_labels;
   std::shared_ptr<Layout> m_layout;
+  std::shared_ptr<LineEdit> m_lineEdit;
 
   signal_t m_valueChanged, m_minimumValueChanged, m_maximumValueChanged;
 };

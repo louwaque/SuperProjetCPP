@@ -1,5 +1,4 @@
 #include "../include/SpinBox.hpp"
-#include "../include/LineEdit.hpp"
 #include "../include/Button.hpp"
 
 SpinBox::SpinBox(const Id &parent)
@@ -19,15 +18,14 @@ SpinBox::SpinBox(const Id &parent)
     setValue(m_value - m_step);
   });
 
-  auto lineEdit = make<LineEdit>();
-  lineEdit->setZ(-1);
-  lineEdit->setText(std::to_string(m_value));
-  m_layout->push_back(lineEdit);
-  lineEdit->accepted([this, lineEdit]() {
+  m_lineEdit = make<LineEdit>();
+  m_lineEdit->setZ(-1);
+  m_layout->push_back(m_lineEdit);
+  m_lineEdit->accepted([this]() {
     try {
-      setValue(std::stoi(lineEdit->text()));
+      setValue(std::stoi(m_lineEdit->text()));
     } catch (std::invalid_argument &err) {
-      lineEdit->setText(std::to_string(m_value));
+      updateLineEditText();
     }
   });
 
@@ -37,9 +35,7 @@ SpinBox::SpinBox(const Id &parent)
     setValue(m_value + m_step);
   });
 
-  valueChanged([this, lineEdit]() {
-    lineEdit->setText(std::to_string(m_value));
-  });
+  valueChanged(boost::bind(&SpinBox::updateLineEditText, this));
 
   widthChanged([this]() {
     m_layout->setWidth(width());
@@ -54,6 +50,8 @@ SpinBox::SpinBox(const Id &parent)
   m_layout->minimumHeightChanged([this]() {
     m_minimumHeightChanged();
   });
+
+  m_valueChanged();
 }
 
 SpinBox::SpinBox(const Ptr &parent)
@@ -110,6 +108,17 @@ void SpinBox::setInfinite(const bool isInfinite)
   setValue(m_value);
 }
 
+void SpinBox::setLabels(const std::vector<std::string> &labels)
+{
+  m_labels = labels;
+  m_lineEdit->setEditable(m_labels.empty());
+  if (!m_labels.empty()) {
+    setMinimumValue(0);
+    setMaximumValue(m_labels.size() - 1);
+  }
+  m_valueChanged();
+}
+
 size_t SpinBox::minimumWidth() const
 {
   return m_layout->minimumWidth();
@@ -118,4 +127,12 @@ size_t SpinBox::minimumWidth() const
 size_t SpinBox::minimumHeight() const
 {
   return m_layout->minimumHeight();
+}
+
+void SpinBox::updateLineEditText()
+{
+  if (0 <= m_value && m_value < m_labels.size())
+    m_lineEdit->setText(m_labels[m_value]);
+  else
+    m_lineEdit->setText(std::to_string(m_value));
 }
