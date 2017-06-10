@@ -47,12 +47,12 @@ void LineEdit::setText(const std::string &text)
 
 size_t LineEdit::minimumWidth() const
 {
-  return m_label->font().width()*5;
+  return m_label->font().width() + m_margin * 2;
 }
 
 size_t LineEdit::minimumHeight() const
 {
-  return m_label->font().height();
+  return m_label->font().height() + m_margin * 2;
 }
 
 void LineEdit::meUpdate(const unsigned int time)
