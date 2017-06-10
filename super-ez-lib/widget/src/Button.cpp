@@ -38,12 +38,12 @@ Button::Button(const std::string &text, GraphicsItem *parent)
 
 size_t Button::minimumWidth() const
 {
-  return std::max(50ul, m_label->minimumWidth());
+  return m_label->minimumWidth();
 }
 
 size_t Button::minimumHeight() const
 {
-  return std::max(20ul, m_label->minimumHeight());
+  return m_label->minimumHeight();
 }
 
 void Button::meHandleEvent(const Event &event)
