@@ -31,6 +31,7 @@ var annotated =
     [ "Point", "class_point.html", "class_point" ],
     [ "SpinBox", "class_spin_box.html", "class_spin_box" ],
     [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ],
+    [ "Toy", "class_toy.html", "class_toy" ],
     [ "Widget", "class_widget.html", "class_widget" ],
     [ "Window", "class_window.html", "class_window" ]
 ];

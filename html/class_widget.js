@@ -8,6 +8,7 @@ var class_widget =
     [ "Widget", "class_widget.html#a91dbf44ce28de49c8ee635c22e1ce46f", null ],
     [ "height", "class_widget.html#a5122729ed923e75463ee8f8bbcdb0cfa", null ],
     [ "heightChanged", "class_widget.html#a7925a19f1009e7125ab34b6d8188e07a", null ],
+    [ "meIsOver", "class_widget.html#a0a1f7b33ad21593415f31501132f0d28", null ],
     [ "minimumHeight", "class_widget.html#a037c4fd4ada38dfc4af381642eb66127", null ],
     [ "minimumHeightChanged", "class_widget.html#a609e1173f95a737406d804408f4c5225", null ],
     [ "minimumWidth", "class_widget.html#a64bd53454b3127bbaf26eaad6db28928", null ],

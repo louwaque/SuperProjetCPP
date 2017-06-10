@@ -79,6 +79,7 @@ var files =
     [ "ToolsWindow.hpp", "_tools_window_8hpp.html", [
       [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ]
     ] ],
+    [ "Toy.hpp", "_toy_8hpp_source.html", null ],
     [ "Widget.cpp", "_widget_8cpp_source.html", null ],
     [ "Widget.hpp", "_widget_8hpp_source.html", null ],
     [ "Window.cpp", "_window_8cpp_source.html", null ],

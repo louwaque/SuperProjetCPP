@@ -31,6 +31,7 @@ var hierarchy =
         ] ],
         [ "GraphicsSquare", "class_graphics_square.html", null ],
         [ "GraphicsText", "class_graphics_text.html", null ],
+        [ "Toy< ConfigHelper >", "class_toy.html", null ],
         [ "Widget", "class_widget.html", [
           [ "Button", "class_button.html", null ],
           [ "ConfigItem", "class_config_item.html", null ],
