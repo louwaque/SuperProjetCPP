@@ -55,6 +55,8 @@ public:
 
   Color(const uint32_t hexa);
 
+  Color(const std::string &hexa);
+
   /*!
    * \brief Construit une couleur avec le système RGB
    *
@@ -204,6 +206,8 @@ public:
    */
 
   std::string hexaStr() const;
+
+  void setHexaStr(const std::string &hexa);
 
 private:
   uint32_t m_color; /*!< La couleur */

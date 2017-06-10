@@ -9,6 +9,12 @@ Color::Color(const uint32_t hexa)
 : m_color(hexa)
 {}
 
+Color::Color(const std::string &hexa)
+: m_color(0)
+{
+  setHexaStr(hexa);
+}
+
 Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue)
 : m_color(red << 16 | green << 8 | blue)
 {}
@@ -89,4 +95,10 @@ std::string Color::hexaStr() const
   std::stringstream buf;
   buf << "0x" << std::hex << m_color;
   return buf.str();
+}
+
+void Color::setHexaStr(const std::string &hexa)
+{
+  std::stringstream buf(hexa);
+  buf >> std::hex >> m_color;
 }
