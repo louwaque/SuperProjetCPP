@@ -31,6 +31,7 @@ public:
   size_t minimumHeight() const;
 
 protected:
+  void meUpdate(const unsigned int time);
   virtual void loadData();
 
 protected:
@@ -38,7 +39,7 @@ protected:
   std::shared_ptr<Layout> m_layout;
 
 private:
-  std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick;
+  std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick, m_spinBoxFill;
   std::shared_ptr<LineEdit> m_lineEditColor;
 };
 
