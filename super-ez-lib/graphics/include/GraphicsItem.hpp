@@ -97,6 +97,14 @@ public:
     m_isFill = fill;
   }
 
+  bool isEnable() const {
+    return m_isEnable;
+  }
+
+  void setEnable(const bool isEnable = true) {
+    m_isEnable = isEnable;
+  }
+
   bool isVisible() const {
     return m_isVisible;
   }
@@ -132,6 +140,7 @@ private:
   Color m_color;
   unsigned int m_thick;
   bool m_isFill;
+  bool m_isEnable;
   bool m_isVisible;
 };
 

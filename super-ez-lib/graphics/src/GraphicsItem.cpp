@@ -12,6 +12,7 @@ GraphicsItem::GraphicsItem(GraphicsItem *parent)
   m_color(Color(Color::Black)),
   m_thick(1),
   m_isFill(false),
+  m_isEnable(true),
   m_isVisible(true)
 {
   setParent(parent);
@@ -75,6 +76,9 @@ void GraphicsItem::draw(Canvas *canvas)
 
 void GraphicsItem::update(const unsigned int time)
 {
+  if (!m_isEnable)
+    return;
+
   for (auto &ptr : m_children)
     ptr->update(time);
 
@@ -83,6 +87,9 @@ void GraphicsItem::update(const unsigned int time)
 
 void GraphicsItem::handleEvent(const Event &event)
 {
+  if (!m_isEnable)
+    return;
+
   if (event.type() == Event::MouseType) {
     const MouseEvent &mouse = dynamic_cast<const MouseEvent&>(event);
     if (mouse.button() == MouseEvent::LeftButton &&
@@ -103,11 +110,12 @@ void GraphicsItem::handleEvent(const Event &event)
 
 bool GraphicsItem::isOver(const Point &p)
 {
-  if (!m_isVisible)
+  if (!m_isEnable)
     return false;
 
   bool result = false;
   for (auto &ptr : m_children)
     result |= ptr->isOver(p);
+
   return result || meIsOver(p);
 }
