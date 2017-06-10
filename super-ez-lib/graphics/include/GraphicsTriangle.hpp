@@ -20,7 +20,9 @@
 class GraphicsTriangle : public GraphicsShape
 {
 public:
-  explicit GraphicsTriangle(const Ptr &parent = nullptr);
+  explicit GraphicsTriangle(const Id &parent = boost::uuids::nil_generator()());
+  explicit GraphicsTriangle(const Ptr &parent);
+  explicit GraphicsTriangle(const GraphicsItem *parent);
 
   /*!
    *  \brief Donne le premier point du triangle.
