@@ -54,6 +54,8 @@ void GraphicsItem::setParent(const Id &parent)
   ptr = m_graphicsItems[m_parent];
   if (ptr) {
     ptr->m_children.push_back(id());
+    if (m_graphicsItems[id()])
+      ptr->sortChildren();
     m_position.setOrigin(&ptr->position());
   } else {
     m_position.setOrigin(nullptr);
@@ -91,6 +93,13 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter
     }
   }
   return list;
+}
+
+void GraphicsItem::setZ(const int z)
+{
+  m_z = z;
+  if(parent())
+    parent()->sortChildren();
 }
 
 void GraphicsItem::draw(Canvas *canvas)
@@ -156,6 +165,17 @@ bool GraphicsItem::isOver(const Point &p)
       result |= ptr->isOver(p);
   }
   return result || meIsOver(p);
+}
+
+void GraphicsItem::sortChildren()
+{
+  std::sort(m_children.begin(), m_children.end(), [this](const Id &l, const Id &r) {
+    auto lItem = m_graphicsItems[l], rItem = m_graphicsItems[r];
+    if (lItem && rItem)
+      return lItem->z() < rItem->z();
+    else
+      throw std::runtime_error("sortChildren: null pointer");
+  });
 }
 
 bool operator==(const GraphicsItem &l, const GraphicsItem &r)

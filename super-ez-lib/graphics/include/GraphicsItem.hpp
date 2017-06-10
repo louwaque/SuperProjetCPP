@@ -2,7 +2,6 @@
 #define GRAPHICSITEM_HPP
 
 #include <vector>
-#include <set>
 #include <map>
 #include <memory>
 #include <Color.hpp>
@@ -83,9 +82,7 @@ public:
     return m_z;
   }
 
-  void setZ(const int z) {
-    m_z = z;
-  }
+  void setZ(const int z);
 
   void setColor(const Color color) {
     m_color = color;
@@ -137,6 +134,9 @@ protected:
   virtual bool meIsOver(const Point &absoluteP) { return m_position == absoluteP; }
 
 private:
+  void sortChildren();
+
+private:
   Id m_id;
   Id m_parent;
   std::vector<Id> m_children;
@@ -156,6 +156,11 @@ std::shared_ptr<T> GraphicsItem::make(Args&&... args)
 {
   auto ptr = std::make_shared<T>(std::forward<Args>(args)...);
   m_graphicsItems[ptr->id()] = ptr;
+
+  auto parent = ptr->parent();
+  if (parent)
+    parent->sortChildren();
+
   return ptr;
 }
 
