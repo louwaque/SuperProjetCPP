@@ -51,6 +51,9 @@ public:
   ///@}
 
 protected:
+  bool meIsOver(const Point &absoluteP);
+
+protected:
   signal_t m_minimumWidthChanged;
   signal_t m_minimumHeightChanged;
 

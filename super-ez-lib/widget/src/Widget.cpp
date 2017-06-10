@@ -42,3 +42,8 @@ void Widget::setHeight(const size_t height)
     m_heightChanged();
   }
 }
+
+bool Widget::meIsOver(const Point &absoluteP)
+{
+  return position() < absoluteP && absoluteP < position() + Point(width(), height());
+}
