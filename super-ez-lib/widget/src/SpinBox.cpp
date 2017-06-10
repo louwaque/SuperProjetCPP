@@ -1,5 +1,4 @@
 #include "../include/SpinBox.hpp"
-#include "../include/Layout.hpp"
 #include "../include/LineEdit.hpp"
 #include "../include/Button.hpp"
 
@@ -20,6 +19,7 @@ SpinBox::SpinBox(GraphicsItem *parent)
   });
 
   LineEdit *lineEdit = new LineEdit;
+  lineEdit->setZ(-1);
   lineEdit->setText(std::to_string(m_value));
   m_layout->push_back(lineEdit);
   lineEdit->accepted([this, lineEdit]() {
@@ -40,7 +40,7 @@ SpinBox::SpinBox(GraphicsItem *parent)
     lineEdit->setText(std::to_string(m_value));
   });
 
-  widthChanged([this, minusButton, lineEdit, plusButton]() {
+  widthChanged([this]() {
     m_layout->setWidth(width());
   });
   heightChanged([this]() {
@@ -57,13 +57,13 @@ SpinBox::SpinBox(GraphicsItem *parent)
 
 void SpinBox::setValue(int value)
 {
-  if (value < m_minimumValue)
-    value = m_minimumValue;
-
-  if (value > m_maximumValue)
-    value = m_maximumValue;
-
   if (value != m_value) {
+    if (value < m_minimumValue)
+      value = m_minimumValue;
+
+    if (value > m_maximumValue)
+      value = m_maximumValue;
+
     m_value = value;
     m_valueChanged();
   }
