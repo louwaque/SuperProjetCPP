@@ -9,13 +9,13 @@ GraphicsSquare::GraphicsSquare(const Id &parent)
 {}
 
 GraphicsSquare::GraphicsSquare(const Ptr &parent)
-: GraphicsItem()
+: GraphicsSquare()
 {
   setParent(parent);
 }
 
 GraphicsSquare::GraphicsSquare(const GraphicsItem *parent)
-:GraphicsSquare()
+: GraphicsSquare()
 {
   setParent(parent);
 }
