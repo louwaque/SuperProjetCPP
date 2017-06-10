@@ -1,19 +1,19 @@
 #ifndef GRAPHICSFACTORY_HPP
 #define GRAPHICSFACTORY_HPP
 
-#include <GraphicsItem.hpp>
+#include <Layout.hpp>
 
 class GraphicsFactory
 {
 public:
-  static GraphicsItem::Ptr circle();
-  static GraphicsItem::Ptr ellipse();
-  static GraphicsItem::Ptr line();
-  static GraphicsItem::Ptr polygon();
-  static GraphicsItem::Ptr rectangle();
-  static GraphicsItem::Ptr square();
-  static GraphicsItem::Ptr text();
-  static GraphicsItem::Ptr triangle();
+  static GraphicsItem::Ptr circle(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr ellipse(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr line(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr polygon(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr rectangle(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr square(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr text(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr triangle(std::shared_ptr<Layout> layout);
 
 private:
   GraphicsFactory();
