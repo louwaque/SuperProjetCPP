@@ -7,7 +7,7 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   m_layout = make<Layout>(Layout::Vertical, this);
   m_layout->setSpacing(5);
 
-  auto title = make<Label>("GraphicsItem");
+  auto title = make<Label>("Forme");
   title->setAlign(Label::LabelAlign::Center);
   m_layout->push_back(title);
 

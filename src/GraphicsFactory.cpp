@@ -1,6 +1,8 @@
 #include "../include/GraphicsFactory.hpp"
 #include "../include/Toy.hpp"
+
 #include "../include/ConfigItem.hpp"
+#include "../include/ConfigPolygon.hpp"
 
 #include <GraphicsCircle.hpp>
 #include <GraphicsEllipse.hpp>
@@ -64,7 +66,7 @@ GraphicsItem::Ptr GraphicsFactory::polygon(std::shared_ptr<Layout> layout)
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item);
   pt1->position().join(item->position());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigPolygon>>(item, layout, item);
 
   return item;
 }
