@@ -34,7 +34,10 @@ var hierarchy =
         [ "Toy< ConfigHelper >", "class_toy.html", null ],
         [ "Widget", "class_widget.html", [
           [ "Button", "class_button.html", null ],
-          [ "ConfigItem", "class_config_item.html", null ],
+          [ "ConfigItem", "class_config_item.html", [
+            [ "ConfigPolygon", "class_config_polygon.html", null ],
+            [ "ConfigText", "class_config_text.html", null ]
+          ] ],
           [ "Label", "class_label.html", null ],
           [ "Layout", "class_layout.html", null ],
           [ "LineEdit", "class_line_edit.html", null ],

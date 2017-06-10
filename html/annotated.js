@@ -5,6 +5,8 @@ var annotated =
     [ "Canvas", "class_canvas.html", "class_canvas" ],
     [ "Color", "class_color.html", "class_color" ],
     [ "ConfigItem", "class_config_item.html", "class_config_item" ],
+    [ "ConfigPolygon", "class_config_polygon.html", "class_config_polygon" ],
+    [ "ConfigText", "class_config_text.html", "class_config_text" ],
     [ "Event", "class_event.html", "class_event" ],
     [ "Font", "class_font.html", "class_font" ],
     [ "GraphicsAnimation", "class_graphics_animation.html", "class_graphics_animation" ],

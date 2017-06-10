@@ -1,5 +1,6 @@
 var class_toy =
 [
-    [ "Toy", "class_toy.html#abfd742b935562e4c2737b5cd4c7aa964", null ],
-    [ "meHandleEvent", "class_toy.html#a73d8e66b4667b11000c4688ed84af8be", null ]
+    [ "Toy", "class_toy.html#ab80996458a657277535da012b2df12a8", null ],
+    [ "alreadyOpen", "class_toy.html#a437c867f998f63d51f2dd3eb856cfcc2", null ],
+    [ "meUpdate", "class_toy.html#af5face2b4756e285cccf76d165e3b567", null ]
 ];

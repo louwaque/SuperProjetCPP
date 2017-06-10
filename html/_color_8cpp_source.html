@@ -119,98 +119,110 @@ $(document).ready(function(){initNavTree('_color_8cpp_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;: m_color(hexa)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_color.html#aa71f228de4c860d6186c1c6341ccaf3b">   12</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> uint8_t red, <span class="keyword">const</span> uint8_t green, <span class="keyword">const</span> uint8_t blue)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;: m_color(red &lt;&lt; 16 | green &lt;&lt; 8 | blue)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_color.html#adc2dc1409a554d34d7d4d389f726ee77">   16</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> hue, <span class="keyword">const</span> <span class="keywordtype">double</span> saturation, <span class="keyword">const</span> <span class="keywordtype">double</span> value)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;: m_color(EZWindow::getHSV(hue, saturation, value))</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_color.html#a1c908cbcc0ba8bd7baccf5eb0a48eac2">   20</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> ulong grey)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;: m_color(EZWindow::getGrey(grey))</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">Color::setRed</a>(<span class="keyword">const</span> uint8_t red)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  m_color &amp;= ~Red;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  m_color |= (red &lt;&lt; 16);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> std::string &amp;hexa)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;: m_color(0)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  setHexaStr(hexa);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_color.html#aa71f228de4c860d6186c1c6341ccaf3b">   18</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> uint8_t red, <span class="keyword">const</span> uint8_t green, <span class="keyword">const</span> uint8_t blue)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;: m_color(red &lt;&lt; 16 | green &lt;&lt; 8 | blue)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_color.html#adc2dc1409a554d34d7d4d389f726ee77">   22</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> hue, <span class="keyword">const</span> <span class="keywordtype">double</span> saturation, <span class="keyword">const</span> <span class="keywordtype">double</span> value)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;: m_color(EZWindow::getHSV(hue, saturation, value))</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_color.html#a1c908cbcc0ba8bd7baccf5eb0a48eac2">   26</a></span>&#160;<a class="code" href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a>(<span class="keyword">const</span> ulong grey)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;: m_color(EZWindow::getGrey(grey))</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">Color::setGreen</a>(<span class="keyword">const</span> uint8_t green)</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">Color::setRed</a>(<span class="keyword">const</span> uint8_t red)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  m_color &amp;= ~Green;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  m_color |= (green &lt;&lt; 8);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  m_color &amp;= ~Red;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  m_color |= (red &lt;&lt; 16);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">Color::setBlue</a>(<span class="keyword">const</span> uint8_t blue)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  m_color &amp;= ~Blue;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  m_color |= <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">Color::setGreen</a>(<span class="keyword">const</span> uint8_t green)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  m_color &amp;= ~Green;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  m_color |= (green &lt;&lt; 8);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">   43</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">Color::hue</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">double</span> h(0), r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">double</span> min = r &lt; g ? std::min(r, b) : std::min(g, b);</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">Color::setBlue</a>(<span class="keyword">const</span> uint8_t blue)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_color &amp;= ~Blue;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_color |= <a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span> (max == min) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    h = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == r) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    h = (60 * ((g-b)/(max-min)) + 360);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (h &gt; 360)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      h -= 360;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == g) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    h = 60 * ((b-r)/(max-min)) + 120;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == b) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    h = 60 * ((r-g)/(max-min)) + 240;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> h;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_color.html#a9e232063ef1dfe5e98970700db822561">   64</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">Color::saturation</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">double</span> s(0), r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (max == 0) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    s = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> min = r &lt; g ? std::min(r, b) : std::min(g, b);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    s = 1 - min/max;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">   79</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">Color::value</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">double</span> r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> max;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_color.html#ab112588e12ec0e9a8118fede17078937">   87</a></span>&#160;std::string <a class="code" href="class_color.html#ab112588e12ec0e9a8118fede17078937">Color::hexaStr</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::stringstream buf;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  buf &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span> &lt;&lt; std::hex &lt;&lt; m_color;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> buf.str();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="ttc" id="class_color_html_ae752d55b3758a7181fd3c201ab87ca3b"><div class="ttname"><a href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">Color::setBlue</a></div><div class="ttdeci">void setBlue(const uint8_t blue)</div><div class="ttdoc">Modifie la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00037">Color.cpp:37</a></div></div>
-<div class="ttc" id="class_color_html_a8ff299417275579e8ae4a065d8dfcf8d"><div class="ttname"><a href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">Color::setRed</a></div><div class="ttdeci">void setRed(const uint8_t red)</div><div class="ttdoc">Modifie la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00024">Color.cpp:24</a></div></div>
-<div class="ttc" id="class_color_html_ac99b62f877393bbadfeee7170eb31ecd"><div class="ttname"><a href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">Color::hue</a></div><div class="ttdeci">double hue() const </div><div class="ttdoc">Recupere la valeur de teinte ( systeme HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00043">Color.cpp:43</a></div></div>
-<div class="ttc" id="class_color_html_a1c17c3206b193c4a0ffabc13a6155e3d"><div class="ttname"><a href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">Color::setGreen</a></div><div class="ttdeci">void setGreen(const uint8_t green)</div><div class="ttdoc">Modifie la valeur de la seconde couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00030">Color.cpp:30</a></div></div>
-<div class="ttc" id="class_color_html_a9e232063ef1dfe5e98970700db822561"><div class="ttname"><a href="class_color.html#a9e232063ef1dfe5e98970700db822561">Color::saturation</a></div><div class="ttdeci">double saturation() const </div><div class="ttdoc">Recupere la valeur de saturation ( system HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00064">Color.cpp:64</a></div></div>
-<div class="ttc" id="class_color_html_ab112588e12ec0e9a8118fede17078937"><div class="ttname"><a href="class_color.html#ab112588e12ec0e9a8118fede17078937">Color::hexaStr</a></div><div class="ttdeci">std::string hexaStr() const </div><div class="ttdoc">Recupere la valeur de la couleur en hexadecimal sous forme de chaine de caractere. </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00087">Color.cpp:87</a></div></div>
-<div class="ttc" id="class_color_html_a5a3f8aa2c7079231d10fbf3c2c87bf61"><div class="ttname"><a href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">Color::red</a></div><div class="ttdeci">uint8_t red() const </div><div class="ttdoc">Recupere la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00094">Color.hpp:94</a></div></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">   49</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">Color::hue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> h(0), r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> min = r &lt; g ? std::min(r, b) : std::min(g, b);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (max == min) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    h = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == r) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    h = (60 * ((g-b)/(max-min)) + 360);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">while</span> (h &gt; 360)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      h -= 360;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == g) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    h = 60 * ((b-r)/(max-min)) + 120;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max == b) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    h = 60 * ((r-g)/(max-min)) + 240;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">return</span> h;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_color.html#a9e232063ef1dfe5e98970700db822561">   70</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#a9e232063ef1dfe5e98970700db822561">Color::saturation</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">double</span> s(0), r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (max == 0) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    s = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> min = r &lt; g ? std::min(r, b) : std::min(g, b);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    s = 1 - min/max;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">   85</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">Color::value</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">double</span> r(<a class="code" href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">red</a>()/255.0), g(<a class="code" href="class_color.html#abeb092c67b007163b357bd6327189394">green</a>()/255.0), b(<a class="code" href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">blue</a>()/255.0);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">double</span> max = r &gt; g ? std::max(r, b) : std::max(g, b);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> max;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_color.html#ab112588e12ec0e9a8118fede17078937">   93</a></span>&#160;std::string <a class="code" href="class_color.html#ab112588e12ec0e9a8118fede17078937">Color::hexaStr</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::stringstream buf;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  buf &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span> &lt;&lt; std::hex &lt;&lt; m_color;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> buf.str();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> Color::setHexaStr(<span class="keyword">const</span> std::string &amp;hexa)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::stringstream buf(hexa);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  buf &gt;&gt; std::hex &gt;&gt; m_color;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="ttc" id="class_color_html_ae752d55b3758a7181fd3c201ab87ca3b"><div class="ttname"><a href="class_color.html#ae752d55b3758a7181fd3c201ab87ca3b">Color::setBlue</a></div><div class="ttdeci">void setBlue(const uint8_t blue)</div><div class="ttdoc">Modifie la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00043">Color.cpp:43</a></div></div>
+<div class="ttc" id="class_color_html_a8ff299417275579e8ae4a065d8dfcf8d"><div class="ttname"><a href="class_color.html#a8ff299417275579e8ae4a065d8dfcf8d">Color::setRed</a></div><div class="ttdeci">void setRed(const uint8_t red)</div><div class="ttdoc">Modifie la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00030">Color.cpp:30</a></div></div>
+<div class="ttc" id="class_color_html_ac99b62f877393bbadfeee7170eb31ecd"><div class="ttname"><a href="class_color.html#ac99b62f877393bbadfeee7170eb31ecd">Color::hue</a></div><div class="ttdeci">double hue() const </div><div class="ttdoc">Recupere la valeur de teinte ( systeme HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00049">Color.cpp:49</a></div></div>
+<div class="ttc" id="class_color_html_a1c17c3206b193c4a0ffabc13a6155e3d"><div class="ttname"><a href="class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d">Color::setGreen</a></div><div class="ttdeci">void setGreen(const uint8_t green)</div><div class="ttdoc">Modifie la valeur de la seconde couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00036">Color.cpp:36</a></div></div>
+<div class="ttc" id="class_color_html_a9e232063ef1dfe5e98970700db822561"><div class="ttname"><a href="class_color.html#a9e232063ef1dfe5e98970700db822561">Color::saturation</a></div><div class="ttdeci">double saturation() const </div><div class="ttdoc">Recupere la valeur de saturation ( system HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00070">Color.cpp:70</a></div></div>
+<div class="ttc" id="class_color_html_ab112588e12ec0e9a8118fede17078937"><div class="ttname"><a href="class_color.html#ab112588e12ec0e9a8118fede17078937">Color::hexaStr</a></div><div class="ttdeci">std::string hexaStr() const </div><div class="ttdoc">Recupere la valeur de la couleur en hexadecimal sous forme de chaine de caractere. </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00093">Color.cpp:93</a></div></div>
+<div class="ttc" id="class_color_html_a5a3f8aa2c7079231d10fbf3c2c87bf61"><div class="ttname"><a href="class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61">Color::red</a></div><div class="ttdeci">uint8_t red() const </div><div class="ttdoc">Recupere la valeur de la premier couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00096">Color.hpp:96</a></div></div>
 <div class="ttc" id="class_color_html_a0936edb38b2c1c3d2de4214aad6a7ee2"><div class="ttname"><a href="class_color.html#a0936edb38b2c1c3d2de4214aad6a7ee2">Color::Color</a></div><div class="ttdeci">Color(const Colors color=Black)</div><div class="ttdoc">Construit une couleur avec une couleur prédéfinie. </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00004">Color.cpp:4</a></div></div>
-<div class="ttc" id="class_color_html_ae8cb1f2e0c1424555e2f606ba9d21e57"><div class="ttname"><a href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">Color::value</a></div><div class="ttdeci">double value() const </div><div class="ttdoc">Recupere la valeur de la valeur ( system HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00079">Color.cpp:79</a></div></div>
-<div class="ttc" id="class_color_html_ab8c3999a34eecf3ee1bfaced2b458cd6"><div class="ttname"><a href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">Color::blue</a></div><div class="ttdeci">uint8_t blue() const </div><div class="ttdoc">Recupere la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00126">Color.hpp:126</a></div></div>
-<div class="ttc" id="class_color_html_abeb092c67b007163b357bd6327189394"><div class="ttname"><a href="class_color.html#abeb092c67b007163b357bd6327189394">Color::green</a></div><div class="ttdeci">uint8_t green() const </div><div class="ttdoc">Recupere la valeur de la deuxieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00110">Color.hpp:110</a></div></div>
+<div class="ttc" id="class_color_html_ae8cb1f2e0c1424555e2f606ba9d21e57"><div class="ttname"><a href="class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57">Color::value</a></div><div class="ttdeci">double value() const </div><div class="ttdoc">Recupere la valeur de la valeur ( system HSV ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8cpp_source.html#l00085">Color.cpp:85</a></div></div>
+<div class="ttc" id="class_color_html_ab8c3999a34eecf3ee1bfaced2b458cd6"><div class="ttname"><a href="class_color.html#ab8c3999a34eecf3ee1bfaced2b458cd6">Color::blue</a></div><div class="ttdeci">uint8_t blue() const </div><div class="ttdoc">Recupere la valeur de la troisieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00128">Color.hpp:128</a></div></div>
+<div class="ttc" id="class_color_html_abeb092c67b007163b357bd6327189394"><div class="ttname"><a href="class_color.html#abeb092c67b007163b357bd6327189394">Color::green</a></div><div class="ttdeci">uint8_t green() const </div><div class="ttdoc">Recupere la valeur de la deuxieme couleur ( systeme RGB ). </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00112">Color.hpp:112</a></div></div>
 <div class="ttc" id="class_color_html_af1edae0ae19f7a958e091dbb85e7102f"><div class="ttname"><a href="class_color.html#af1edae0ae19f7a958e091dbb85e7102f">Color::Colors</a></div><div class="ttdeci">Colors</div><div class="ttdoc">Couleurs prédéfinies. </div><div class="ttdef"><b>Definition:</b> <a href="_color_8hpp_source.html#l00030">Color.hpp:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -218,7 +230,7 @@ $(document).ready(function(){initNavTree('_color_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_ab4dbad83e31a4749c8272a1e225fd92.html">src</a></li><li class="navelem"><b>Color.cpp</b></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 18:23:18 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 22:07:06 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
