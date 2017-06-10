@@ -1,4 +1,5 @@
 #include "../include/Layout.hpp"
+#include "../include/Label.hpp"
 
 Layout::Layout(const Id &parent)
 : Widget(parent),
@@ -52,6 +53,14 @@ void Layout::push_back(std::shared_ptr<Widget> widget)
     //widget->minimumHeightChanged(boost::bind(&Layout::organize, this));
     organize();
   }
+}
+
+void  Layout::push_back(const std::string &label, std::shared_ptr<Widget> widget)
+{
+  auto layout = make<Layout>(Horizontal);
+  layout->push_back(std::dynamic_pointer_cast<Widget>(make<Label>(label)));
+  layout->push_back(widget);
+  push_back(layout);
 }
 
 std::shared_ptr<Widget> Layout::pop_back()

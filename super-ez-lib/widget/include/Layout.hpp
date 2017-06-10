@@ -34,6 +34,7 @@ public:
   inline void setSpacing(const size_t spacing) { m_spacing = spacing; organize(); }
 
   void push_back(std::shared_ptr<Widget> widget);
+  void push_back(const std::string &label, std::shared_ptr<Widget> widget);
   std::shared_ptr<Widget> pop_back();
   inline size_t size() const { return m_widgets.size(); }
   void clear();
