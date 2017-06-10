@@ -19,7 +19,7 @@ MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"),
   m_scene(nullptr),
   currentItem(nullptr)
-{
+{ // Fonctionne
   m_scene = GraphicsItem::make<GraphicsItem>();
 
   auto point = GraphicsItem::make<GraphicsPoint>(m_scene);
@@ -35,7 +35,7 @@ MainWindow::MainWindow()
   text1->position().setRelative(10, 30);
   text1->setColor(Color(Color::Green));
 
-  {
+  { // Fonctionne
     auto rectangle = GraphicsItem::make<GraphicsRectangle>(m_scene);
     rectangle->position().set(50, 50);
     rectangle->topLeft().setRelative(-20, -20);
@@ -53,7 +53,7 @@ MainWindow::MainWindow()
     rp3->position().join(rectangle->bottomRight());
   }
 
-  {
+  { // Fonctionne
     auto triangle = GraphicsItem::make<GraphicsTriangle>(m_scene);
     triangle->position().set(200, 200);
     triangle->first().setRelative(0, -10);
@@ -72,17 +72,23 @@ MainWindow::MainWindow()
     auto p4 = GraphicsItem::make<GraphicsPoint>(triangle);
     p4->position().join(triangle->third());
   }
-/*
-  auto polygon = GraphicsItem::make<GraphicsPolygon>(m_scene);
-  polygon->setFill(true);
-  polygon->position().set(200, 100);
-  polygon->setNbPoints(10);
-  polygon->setNbPoints(5);
 
-  {
+
+  { // A tester plus tard
+    auto polygone = GraphicsItem::make<GraphicsPolygon>(m_scene);
+    polygone->position().set(150,150);
+    polygone->setNbPoints(5);
+
+    auto p1 = GraphicsItem::make<GraphicsPoint>(polygone);
+    p1->position().join(polygone->newPoint());
+  }
+
+
+  { // Fonctionne
     auto circle = GraphicsItem::make<GraphicsCircle>(m_scene);
-    circle->position().set(100, 300);
-    circle->radiusPt().setRelative(50, 50);
+    circle->position().set(100,300);
+    circle->radiusPt().setRelative(50,50);
+
 
     auto p1 = GraphicsItem::make<GraphicsPoint>(circle);
     p1->position().join(circle->position());
@@ -90,34 +96,37 @@ MainWindow::MainWindow()
     auto p2 = GraphicsItem::make<GraphicsPoint>(circle);
     p2->position().join(circle->radiusPt());
 
-    GraphicsItem::make<GraphicsBlinkAnimation>(Color::Blue, circle);
   }
 
-  {
+
+  { //Fonctionne
     auto ellipse = GraphicsItem::make<GraphicsEllipse>(m_scene);
     ellipse->position().set(200, 300);
     ellipse->radius().setRelative(100, 50);
 
-    auto blink = GraphicsItem::make<GraphicsBlinkAnimation>(ellipse);
-    blink->setBlinkFrequency(500);
+    auto p1 = GraphicsItem::make<GraphicsPoint>(ellipse);
+    p1->position().join(ellipse->position());
+
+    auto p2 = GraphicsItem::make<GraphicsPoint>(ellipse);
+    p2->position().join(ellipse->radius());
   }
 
-  {
-    GraphicsSquare *square = new GraphicsSquare(&m_scene);
+
+
+  { //Fonctionne
+    auto square = GraphicsItem::make<GraphicsSquare>(m_scene);
     square->setThick(5);
-    square->position().set(500, 100);
-    square->topLeft().setRelative(-10, -10);
-    square->bottomRight().setRelative(10, 10);
+    square->position().set(300, 200);
+    square->topLeft().setRelative(100, 150);
+    square->bottomRight().setRelative(150, 100);
 
-    GraphicsPoint *p1 = new GraphicsPoint(square);
-    p1->position().join(square->position());
-
-    GraphicsPoint *p2 = new GraphicsPoint(square);
-    p2->position().join(square->topLeft());
-
-    GraphicsPoint *p3 = new GraphicsPoint(square);
-    p3->position().join(square->bottomRight());
+    auto p1 = GraphicsItem::make<GraphicsPoint>(square);
+    p1->position().join(square->topLeft());
+    auto p2 = GraphicsItem::make<GraphicsPoint>(square);
+    p2->position().join(square->bottomRight());
   }
+
+  /*
 
   LineEdit *lineEdit = new LineEdit(&m_scene);
   lineEdit->position().set(100, 500);
