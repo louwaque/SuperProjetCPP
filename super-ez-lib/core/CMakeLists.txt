@@ -10,9 +10,12 @@ file(
 add_library(super-ez-lib-core ${SRC})
 target_link_libraries(super-ez-lib-core ez-lib)
 
-find_package(Boost 1.64.0 COMPONENTS unit_test_framework)
-if(Boost_FOUND)
+find_package(Boost 1.64.0 REQUIRED COMPONENTS locale unit_test_framework)
+
+IF (Boost_FOUND)
   include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
+  target_link_libraries(super-ez-lib-core ${Boost_LIBRARIES})
+  message(${Boost_LIBRARIES})
 
   enable_testing()
   add_definitions(-DBOOST_TEST_DYN_LINK)
@@ -21,7 +24,7 @@ if(Boost_FOUND)
   foreach(testSrc ${TEST_SRCS})
           get_filename_component(testName ${testSrc} NAME_WE)
           add_executable(${testName} ${testSrc} ${SRC})
-          target_link_libraries(${testName} ${Boost_LIBRARIES} super-ez-lib-core)
+          target_link_libraries(${testName} super-ez-lib-core)
           set_target_properties(${testName} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_CURRENT_BINARY_DIR}/testBin)
           add_test(NAME ${testName}
                    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/testBin
