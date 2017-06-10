@@ -4,6 +4,7 @@ var searchData=
   ['graphicsblinkanimation',['GraphicsBlinkAnimation',['../class_graphics_blink_animation.html',1,'']]],
   ['graphicscircle',['GraphicsCircle',['../class_graphics_circle.html',1,'']]],
   ['graphicsellipse',['GraphicsEllipse',['../class_graphics_ellipse.html',1,'']]],
+  ['graphicsfactory',['GraphicsFactory',['../class_graphics_factory.html',1,'']]],
   ['graphicsitem',['GraphicsItem',['../class_graphics_item.html',1,'']]],
   ['graphicsline',['GraphicsLine',['../class_graphics_line.html',1,'']]],
   ['graphicspoint',['GraphicsPoint',['../class_graphics_point.html',1,'']]],

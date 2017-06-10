@@ -13,6 +13,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Font", "class_font.html", null ],
+    [ "GraphicsFactory", "class_graphics_factory.html", null ],
     [ "GraphicsItem", "class_graphics_item.html", [
       [ "GraphicsAnimation", "class_graphics_animation.html", [
         [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
@@ -30,6 +31,7 @@ var hierarchy =
       [ "GraphicsText", "class_graphics_text.html", null ],
       [ "Widget", "class_widget.html", [
         [ "Button", "class_button.html", null ],
+        [ "ConfigItem", "class_config_item.html", null ],
         [ "Label", "class_label.html", null ],
         [ "Layout", "class_layout.html", null ],
         [ "LineEdit", "class_line_edit.html", null ],

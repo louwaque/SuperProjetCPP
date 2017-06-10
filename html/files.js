@@ -34,6 +34,7 @@ var files =
     [ "class_button.js", "class__button_8js_source.html", null ],
     [ "class_canvas.js", "class__canvas_8js_source.html", null ],
     [ "class_color.js", "class__color_8js_source.html", null ],
+    [ "class_config_item.js", "class__config__item_8js_source.html", null ],
     [ "class_event.js", "class__event_8js_source.html", null ],
     [ "class_font.js", "class__font_8js_source.html", null ],
     [ "class_graphics_animation.js", "class__graphics__animation_8js_source.html", null ],
@@ -80,6 +81,10 @@ var files =
     [ "Color.hpp", "_color_8hpp.html", [
       [ "Color", "class_color.html", "class_color" ]
     ] ],
+    [ "ConfigItem.cpp", "_config_item_8cpp_source.html", null ],
+    [ "ConfigItem.hpp", "_config_item_8hpp.html", [
+      [ "ConfigItem", "class_config_item.html", "class_config_item" ]
+    ] ],
     [ "dynsections.js", "dynsections_8js_source.html", null ],
     [ "enums_0.js", "enums__0_8js_source.html", null ],
     [ "Event.cpp", "_event_8cpp_source.html", null ],
@@ -124,6 +129,8 @@ var files =
     [ "GraphicsCircle.hpp", "_graphics_circle_8hpp_source.html", null ],
     [ "GraphicsEllipse.cpp", "_graphics_ellipse_8cpp_source.html", null ],
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp_source.html", null ],
+    [ "GraphicsFactory.cpp", "_graphics_factory_8cpp_source.html", null ],
+    [ "GraphicsFactory.hpp", "_graphics_factory_8hpp_source.html", null ],
     [ "GraphicsItem.cpp", "_graphics_item_8cpp_source.html", null ],
     [ "GraphicsItem.hpp", "_graphics_item_8hpp_source.html", null ],
     [ "GraphicsLine.cpp", "_graphics_line_8cpp_source.html", null ],
