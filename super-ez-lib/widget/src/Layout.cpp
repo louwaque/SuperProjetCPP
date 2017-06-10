@@ -23,6 +23,9 @@ void Layout::push_back(Widget *widget)
   if (widget) {
     m_widgets.push_back(widget);
     widget->setParent(this);
+    //FIXME il faut réfléchir
+    //widget->minimumWidthChanged(boost::bind(&Layout::organize, this));
+    //widget->minimumHeightChanged(boost::bind(&Layout::organize, this));
     organize();
   }
 }
@@ -61,22 +64,19 @@ void Layout::organize()
   if (!m_widgets.empty()) {
     int x(0), y(0), w(0), h(0);
 
-    if (m_orientation == Horizontal) {
-      w = width()/m_widgets.size() - m_spacing;
-      h = height();
-    } else if (m_orientation == Vertical) {
-      w = width();
-      h = height()/m_widgets.size() - m_spacing;
-    }
-
     for (Widget *widget : m_widgets) {
       widget->position().setRelative(x, y);
-      widget->setWidth(w);
-      widget->setHeight(h);
+
       if (m_orientation == Horizontal) {
-        x += m_spacing + w;
+        widget->setWidth(widget->minimumWidth()
+          + (width() - minimumWidth())/m_widgets.size());
+        widget->setHeight(height());
+        x += m_spacing + widget->width();
       } else if (m_orientation == Vertical) {
-        y += m_spacing + h;
+        widget->setWidth(width());
+        widget->setHeight(widget->minimumHeight()
+          + (height() - minimumHeight())/m_widgets.size());
+        y += m_spacing + widget->height();
       }
     }
   }
