@@ -36,6 +36,9 @@ public:
   void push_back(std::shared_ptr<Widget> widget);
   std::shared_ptr<Widget> pop_back();
   inline size_t size() const { return m_widgets.size(); }
+  void clear();
+
+  std::shared_ptr<Widget> operator[](const size_t index) { return m_widgets[index]; }
 
   inline size_t minimumWidth() const { return m_minimumWidth; }
   inline size_t minimumHeight() const { return m_minimumHeight; }

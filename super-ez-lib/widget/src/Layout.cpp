@@ -63,6 +63,14 @@ std::shared_ptr<Widget> Layout::pop_back()
   return widget;
 }
 
+void Layout::clear()
+{
+  for (auto widget : m_widgets)
+    widget->setParent(nullptr);
+  m_widgets.clear();
+  organize();
+}
+
 void Layout::organize()
 {
   size_t oldMW = m_minimumWidth, oldMH = m_minimumHeight;
