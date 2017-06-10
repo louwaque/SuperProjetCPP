@@ -8,6 +8,7 @@ LineEdit::LineEdit(const Id &parent)
   m_margin(5),
   m_text(),
   m_cursor(0),
+  m_editable(true),
   m_label(nullptr),
   m_rectangle(nullptr),
   m_line(nullptr)
@@ -84,19 +85,19 @@ void LineEdit::meHandleEvent(const Event &event)
     if (key.state() == KeyEvent::KeyPressed) {
       std::string text = m_text;
       if (key.key() == KeyEvent::Key::BackSpace) {
-          if (!text.empty() && m_cursor > 0) {
+          if (!text.empty() && m_cursor > 0 && m_editable) {
           text.erase(m_cursor - 1, 1);
           --m_cursor;
           setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Delete) {
-        if (m_cursor < text.size()) {
+        if (m_cursor < text.size() && m_editable) {
           text.erase(m_cursor, 1);
           setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Return) {
         m_accepted();
-      } else if (!key.keyString().empty()) {
+      } else if (!key.keyString().empty() && m_editable) {
         text.insert(m_cursor, key.keyString());
         ++m_cursor;
         setText(text);

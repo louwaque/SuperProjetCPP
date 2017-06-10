@@ -21,6 +21,9 @@ public:
   inline std::string text() const { return m_text; }
   void setText(const std::string &text);
 
+  inline bool editable() const { return m_editable; }
+  inline void setEditable(const bool editable) { m_editable = editable; }
+
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
@@ -44,6 +47,7 @@ private:
 
   std::string m_text;
   size_t m_cursor;
+  bool m_editable;
 
   std::shared_ptr<Label> m_label;
   std::shared_ptr<GraphicsRectangle> m_rectangle;
