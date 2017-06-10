@@ -3,6 +3,7 @@
 
 #include <Window.hpp>
 #include <Widget.hpp>
+#include <Layout.hpp>
 
 class MainWindow : public Window
 {
@@ -17,8 +18,12 @@ protected:
   void createRectangle();
 
 private:
+  void organize();
+
+private:
   GraphicsItem m_scene;
-  Widget *m_tool;
+  Layout *m_layout;
+  Widget *m_config;
   GraphicsItem *currentItem;
 };
 

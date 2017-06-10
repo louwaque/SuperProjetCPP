@@ -3,20 +3,26 @@
 #include "ToolsWindow.hpp"
 #include <LineEdit.hpp>
 #include <Button.hpp>
-#include <Layout.hpp>
-#include <iostream>
-
+#include "ConfigItem.hpp"
 
 MainWindow::MainWindow()
 : Window(400, 400, "SuperProjetCPP"),
   m_scene(),
-  m_tool(nullptr),
+  m_layout(nullptr),
+  m_config(nullptr),
   currentItem(nullptr)
 {
-  m_tool = new ToolsWindow(&m_scene);
-  m_tool->setHeight(height());
-  m_tool->setWidth(150);
-  m_tool->position().set(5, 5);
+  m_layout = new Layout(&m_scene);
+  m_layout->setSpacing(10);
+  m_layout->position().set(5, 5);
+
+  ToolsWindow *tool = new ToolsWindow;
+  m_layout->push_back(tool);
+
+  m_config = new ConfigItem;
+  m_layout->push_back(m_config);
+
+  organize();
 }
 
 void MainWindow::drawEvent()
@@ -26,8 +32,7 @@ void MainWindow::drawEvent()
 
 void MainWindow::resizeEvent(const size_t width, const size_t height)
 {
-  m_tool->setWidth(std::min(150ul, width));
-  m_tool->setHeight(height);
+  organize();
 }
 
 void MainWindow::updateEvent(const unsigned int time)
@@ -40,4 +45,10 @@ void MainWindow::handleEvent(const Event &event)
 {
   m_scene.handleEvent(event);
   drawRequest();
+}
+
+void MainWindow::organize()
+{
+  m_layout->setWidth(width()*0.10);
+  m_layout->setHeight(height()*0.65);
 }
