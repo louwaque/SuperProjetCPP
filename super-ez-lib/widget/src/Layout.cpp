@@ -38,21 +38,46 @@ Widget *Layout::pop_back()
 
 void Layout::organize()
 {
-  for (Widget *widget : m_widgets) {
-    m_minimumWidth = std::max(m_minimumWidth, widget->minimumWidth());
-    m_minimumHeight = std::max(m_minimumHeight, widget->minimumHeight());
+  size_t oldMW = m_minimumWidth, oldMH = m_minimumHeight;
+  m_minimumWidth = 0;
+  m_minimumHeight = 0;
+  if (m_orientation == Horizontal) {
+    for (Widget *widget : m_widgets) {
+      m_minimumWidth += widget->minimumWidth();
+      m_minimumHeight = std::max(m_minimumHeight, widget->minimumHeight());
+    }
+  } else if (m_orientation == Vertical) {
+    for (Widget *widget : m_widgets) {
+      m_minimumWidth = std::max(m_minimumWidth, widget->minimumWidth());
+      m_minimumHeight += widget->minimumHeight();
+    }
   }
-  size_t x(0), y(0);
-  for (Widget *widget : m_widgets) {
-    widget->position().setRelative(x, y);
+
+  if (m_minimumWidth != oldMW)
+    m_minimumWidthChanged();
+  if (m_minimumHeight != oldMH)
+    m_minimumHeightChanged();
+
+  if (!m_widgets.empty()) {
+    int x(0), y(0), w(0), h(0);
+
     if (m_orientation == Horizontal) {
-      widget->setWidth(widget->minimumWidth());
-      widget->setHeight(height());
-      x += m_spacing + widget->width();
+      w = width()/m_widgets.size() - m_spacing;
+      h = height();
     } else if (m_orientation == Vertical) {
-      widget->setWidth(width());
-      widget->setHeight(widget->minimumHeight());
-      y += m_spacing + widget->height();
+      w = width();
+      h = height()/m_widgets.size() - m_spacing;
+    }
+
+    for (Widget *widget : m_widgets) {
+      widget->position().setRelative(x, y);
+      widget->setWidth(w);
+      widget->setHeight(h);
+      if (m_orientation == Horizontal) {
+        x += m_spacing + w;
+      } else if (m_orientation == Vertical) {
+        y += m_spacing + h;
+      }
     }
   }
 }
