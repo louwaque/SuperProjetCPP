@@ -40,6 +40,7 @@ protected:
 
 private:
   unsigned int m_elapsedTime;
+  const unsigned int m_updateFrequency;
   std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick, m_spinBoxFill;
   std::shared_ptr<LineEdit> m_lineEditColor;
 };

@@ -2,7 +2,9 @@
 
 ConfigItem::ConfigItem(GraphicsItem *parent)
 : Widget(parent),
-  m_target(nullptr)
+  m_target(nullptr),
+  m_elapsedTime(0),
+  m_updateFrequency(200)
 {
   m_layout = make<Layout>(Layout::Vertical, this);
   m_layout->setSpacing(5);
@@ -87,7 +89,11 @@ size_t ConfigItem::minimumHeight() const
 
 void ConfigItem::meUpdate(const unsigned int time)
 {
-  loadData();
+  m_elapsedTime += time;
+  while (m_elapsedTime > m_updateFrequency) {
+    loadData();
+    m_elapsedTime -= m_updateFrequency;
+  }
 }
 
 void ConfigItem::loadData()
