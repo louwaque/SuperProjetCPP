@@ -35,6 +35,7 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   });
 
   m_spinBoxThick = make<SpinBox>();
+  m_spinBoxThick->setMinimumValue(0);
   m_layout->push_back("Épaisseur: ", m_spinBoxThick);
   m_spinBoxThick->valueChanged([this]() {
     if (m_target)
@@ -42,8 +43,7 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   });
 
   m_spinBoxFill = make<SpinBox>();
-  m_spinBoxFill->setInfinite(false);
-  m_spinBoxFill->setMaximumValue(1);
+  m_spinBoxFill->setLabels({"Désactivé", "Activé"});
   m_layout->push_back("Remplir: ", m_spinBoxFill);
   m_spinBoxFill->valueChanged([this]() {
     if (m_target)
