@@ -19,7 +19,10 @@
 class ToolsWindow : public Widget
 {
 public:
-    ToolsWindow(GraphicsItem *parent = nullptr);
+  ToolsWindow(GraphicsItem *parent = nullptr);
+
+  size_t minimumWidth() const;
+  size_t minimumHeight() const;
 
 private:
   Layout *m_layout;
