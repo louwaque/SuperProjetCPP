@@ -10,7 +10,7 @@ ConfigText::ConfigText(GraphicsItem *parent)
 
   m_lineEditText = make<LineEdit>();
   m_layout->push_back(m_lineEditText);
-  m_lineEditText->accepted([this]() {
+  m_lineEditText->textChanged([this]() {
     auto target = std::dynamic_pointer_cast<GraphicsText>(m_target);
     if (target)
       target->setText(m_lineEditText->text());
