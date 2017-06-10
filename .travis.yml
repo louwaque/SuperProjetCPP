@@ -43,19 +43,19 @@ cache:
 
 script:
   - echo -en 'travis_fold:start:boost\\r'
-  - if [ -z "$(ls -A $HOME/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 --with-test --with-signals --with-locale --with-serialization --with-program_options --prefix="$HOME/boost-install" install && cd ..; fi
+  - if [ -z "$(ls -A $HOME/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 -j2 -d0 --with-test --with-signals --with-locale --with-serialization --prefix="$HOME/boost-install" install && cd ..; fi
   - echo -en 'travis_fold:end:boost\\r'
   - echo -en 'travis_fold:start:cmake\\r'
   - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install .
   - echo -en 'travis_fold:end:cmake\\r'
   - echo -en 'travis_fold:start:test\\r'
-  - make check-core
-  - make check-graphics
-  - make check-widget
-  - make check-app
+  - make -j2 check-core
+  - make -j2 check-graphics
+  - make -j2 check-widget
+  - make -j2 check-app
   - echo -en 'travis_fold:end:test\\r'
   - echo -en 'travis_fold:start:doc\\r'
-  - make doc
+  - make -j2 doc
   - echo -en 'travis_fold:end:doc\\r'
   - echo -en 'travis_fold:start:upload\\r'
   - cd $TRAVIS_BUILD_DIR
