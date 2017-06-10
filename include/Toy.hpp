@@ -9,50 +9,54 @@ template<typename ConfigHelper>
 class Toy : public GraphicsItem
 {
 public:
-  Toy(Ptr target, std::shared_ptr<Layout> layout, const Ptr parent = nullptr);
+  Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, const Ptr parent = nullptr);
+
+  bool alreadyOpen() const;
 
 protected:
-  void meHandleEvent(const Event &event);
+  void meUpdate(const unsigned int time);
 
 private:
   Ptr m_target;
+  Ptr m_anchor;
   std::shared_ptr<Layout> m_layout;
-  bool m_alreadyOpen;
+  std::shared_ptr<ConfigHelper> m_config;
 };
 
 template<typename ConfigHelper>
-Toy<ConfigHelper>::Toy(Ptr target, std::shared_ptr<Layout> layout, const Ptr parent)
+Toy<ConfigHelper>::Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, const Ptr parent)
 : GraphicsItem(parent),
   m_target(target),
+  m_anchor(anchor),
   m_layout(layout),
-  m_alreadyOpen(false)
-{}
+  m_config(nullptr)
+{
+  m_config = make<ConfigHelper>();
+  m_config->setTarget(m_target);
+
+  if (m_anchor)
+    m_anchor->setColor(Color::Green);
+}
 
 template<typename ConfigHelper>
-void Toy<ConfigHelper>::meHandleEvent(const Event &event)
+bool Toy<ConfigHelper>::alreadyOpen() const
 {
-  if (m_target && m_layout && event.type() == Event::MouseType) {
-    const MouseEvent &mouse = dynamic_cast<const MouseEvent&>(event);
-    if (mouse.state() != MouseEvent::MouseMoved) {
-      if (m_target->hasFocus()) {
-        if (!m_alreadyOpen) {
-          m_layout->clear();
-          auto config = make<ConfigHelper>();
-          config->setTarget(m_target);
-          m_layout->push_back(config);
-          m_alreadyOpen = true;
-          std::cerr << "OPEN" << '\n';
-        }
-      }
-      // if (m_alreadyOpen && !m_layout->isOver(mouse.position())) {
-      //   m_layout->clear();
-      //   m_alreadyOpen = false;
-      //   std::cerr << "CLOSE" << '\n';
-      // }
-      std::cerr << '\n';
-      std::cerr << "m_alreadyOpen " << m_alreadyOpen << '\n';
-      std::cerr << "layout->isOver " << m_layout->isOver(mouse.position()) << '\n';
-    }
+  if (!m_layout || !m_config)
+    return false;
+
+  for (int i = 0; i < m_layout->size(); ++i)
+    if (*(*m_layout)[i] == *m_config)
+      return true;
+
+  return false;
+}
+
+template<typename ConfigHelper>
+void Toy<ConfigHelper>::meUpdate(const unsigned int time)
+{
+  if (m_layout && m_target && !alreadyOpen() && m_anchor && m_anchor->hasFocus()) {
+    m_layout->clear();
+    m_layout->push_back(m_config);
   }
 }
 
