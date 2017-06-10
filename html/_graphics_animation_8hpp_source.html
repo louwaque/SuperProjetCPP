@@ -111,26 +111,29 @@ $(document).ready(function(){initNavTree('_graphics_animation_8hpp_source.html',
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPHICSANIMATION_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSANIMATION_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;GraphicsItem.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_graphics_animation.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_animation.html">GraphicsAnimation</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_animation.html">GraphicsAnimation</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  GraphicsTypes type()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> AnimationType; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_animation.html">GraphicsAnimation</a>(<span class="keyword">const</span> Id &amp;parent = boost::uuids::nil_generator()());</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_animation.html">GraphicsAnimation</a>(<span class="keyword">const</span> Ptr &amp;parent);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_animation.html">GraphicsAnimation</a>(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  GraphicsTypes type()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> AnimationType; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_graphics_animation_html"><div class="ttname"><a href="class_graphics_animation.html">GraphicsAnimation</a></div><div class="ttdoc">Classe de base pour les animations. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_animation_8hpp_source.html#l00012">GraphicsAnimation.hpp:12</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="_graphics_item_8hpp_html"><div class="ttname"><a href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></div><div class="ttdoc">Classe GraphicsItem. </div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li><li class="navelem"><b>GraphicsAnimation.hpp</b></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 10:13:44 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 11:01:26 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

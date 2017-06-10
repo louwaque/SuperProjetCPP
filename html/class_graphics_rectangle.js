@@ -1,6 +1,8 @@
 var class_graphics_rectangle =
 [
-    [ "GraphicsRectangle", "class_graphics_rectangle.html#a4a5a09ece70c878e36694e3d07ed513f", null ],
+    [ "GraphicsRectangle", "class_graphics_rectangle.html#a3a9c88555efe5e13fd1b638d6d33f7d8", null ],
+    [ "GraphicsRectangle", "class_graphics_rectangle.html#a3550688cc0e930e2aa4cb9ae4674e856", null ],
+    [ "GraphicsRectangle", "class_graphics_rectangle.html#a834d5bbcb80bb283b66167a9635f8299", null ],
     [ "bottomRight", "class_graphics_rectangle.html#a9f8b62b6c66b0489f016fae094091248", null ],
     [ "bottomRight", "class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676", null ],
     [ "height", "class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429", null ],

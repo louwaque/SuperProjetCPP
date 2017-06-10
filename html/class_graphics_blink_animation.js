@@ -1,7 +1,7 @@
 var class_graphics_blink_animation =
 [
-    [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#a799b84ec5f97948d821bd5bb75c0d4de", null ],
-    [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#aff098fcde779f37d4dd541723f351567", null ],
+    [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#a0b6cd62f1827b6c5ed251df43e06cef6", null ],
+    [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#af33ab159462a80e9f4a44077cc32a2fc", null ],
     [ "becomeColor", "class_graphics_blink_animation.html#a0f7e7b5b7c1d4b6449aabe0a513417fc", null ],
     [ "becomeInvisible", "class_graphics_blink_animation.html#aeef0e1fc5c9f562ea66283bb04fba73e", null ],
     [ "blinkFrequency", "class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69", null ],

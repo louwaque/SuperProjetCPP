@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spinbox',['SpinBox',['../class_spin_box.html',1,'']]]
+  ['toolswindows',['ToolsWindows',['../class_tools_windows.html',1,'']]]
 ];

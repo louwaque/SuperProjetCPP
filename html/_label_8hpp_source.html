@@ -117,49 +117,36 @@ $(document).ready(function(){initNavTree('_label_8hpp_source.html','');});
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_label.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_label.html">Label</a> : <span class="keyword">public</span> <a class="code" href="class_widget.html">Widget</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">enum class</span> LabelAlign {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Left,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Right,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Center</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  };</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_label.html">Label</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> std::string &amp;text, <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">inline</span> std::string text()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_text-&gt;<a class="code" href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">text</a>(); }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_label.html#a2bd65842919bc965ff8482407b34f097">setText</a>(<span class="keyword">const</span> std::string &amp;text);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">inline</span> <a class="code" href="class_font.html">Font</a> font()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_text-&gt;font(); }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> setFont(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">inline</span> LabelAlign align()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_align; }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> setAlign(<span class="keyword">const</span> LabelAlign align) { m_align = align; alignText(); }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">size_t</span> minimumWidth() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">size_t</span> minimumHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> Id &amp;parent = boost::uuids::nil_generator()());</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> Ptr &amp;parent);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> std::string &amp;text, <span class="keyword">const</span> Id &amp;parent = boost::uuids::nil_generator()());</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> std::string &amp;text, <span class="keyword">const</span> Ptr &amp;parent);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="class_label.html">Label</a>(<span class="keyword">const</span> std::string &amp;text, <span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">inline</span> std::string text()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_text-&gt;text(); }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_label.html#a2bd65842919bc965ff8482407b34f097">setText</a>(<span class="keyword">const</span> std::string &amp;text);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">size_t</span> minimumWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">size_t</span> minimumHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">inline</span> co_t textChanged(<span class="keyword">const</span> slot_t &amp;subscriber) { <span class="keywordflow">return</span> m_textChanged.connect(subscriber); }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">inline</span> co_t textChanged(<span class="keyword">const</span> slot_t &amp;subscriber) { <span class="keywordflow">return</span> m_textChanged.connect(subscriber); }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">inline</span> co_t fontChanged(<span class="keyword">const</span> slot_t &amp;subscriber) { <span class="keywordflow">return</span> m_fontChanged.connect(subscriber); }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> alignText();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_graphics_text.html">GraphicsText</a> *m_text;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  LabelAlign m_align;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  signal_t m_textChanged;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  signal_t m_fontChanged;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_font_html"><div class="ttname"><a href="class_font.html">Font</a></div><div class="ttdef"><b>Definition:</b> <a href="_font_8hpp_source.html#l00006">Font.hpp:6</a></div></div>
-<div class="ttc" id="class_graphics_text_html"><div class="ttname"><a href="class_graphics_text.html">GraphicsText</a></div><div class="ttdoc">Du texte. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_text_8hpp_source.html#l00021">GraphicsText.hpp:21</a></div></div>
-<div class="ttc" id="class_graphics_text_html_aeb38c8c0df9473cde331540d9904d352"><div class="ttname"><a href="class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352">GraphicsText::text</a></div><div class="ttdeci">std::string text() const </div><div class="ttdoc">Recupere le contenu de GraphicsText. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_text_8hpp_source.html#l00050">GraphicsText.hpp:50</a></div></div>
-<div class="ttc" id="class_label_html_a2bd65842919bc965ff8482407b34f097"><div class="ttname"><a href="class_label.html#a2bd65842919bc965ff8482407b34f097">Label::setText</a></div><div class="ttdeci">void setText(const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="_label_8cpp_source.html#l00022">Label.cpp:22</a></div></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> alignText();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::shared_ptr&lt;GraphicsText&gt; m_text;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  signal_t m_textChanged;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_label_html_a2bd65842919bc965ff8482407b34f097"><div class="ttname"><a href="class_label.html#a2bd65842919bc965ff8482407b34f097">Label::setText</a></div><div class="ttdeci">void setText(const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="_label_8cpp_source.html#l00045">Label.cpp:45</a></div></div>
 <div class="ttc" id="_graphics_text_8hpp_html"><div class="ttname"><a href="_graphics_text_8hpp.html">GraphicsText.hpp</a></div><div class="ttdoc">Classe GraphicsText. </div></div>
 <div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_widget_8hpp_source.html#l00020">Widget.hpp:20</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 <div class="ttc" id="class_label_html"><div class="ttname"><a href="class_label.html">Label</a></div><div class="ttdoc">Afficher du texte. </div><div class="ttdef"><b>Definition:</b> <a href="_label_8hpp_source.html#l00013">Label.hpp:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -167,7 +154,7 @@ $(document).ready(function(){initNavTree('_label_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_21d6cd99624d45f807de4337bcc2f4c1.html">widget</a></li><li class="navelem"><a class="el" href="dir_413cf50c4457cdd0fe9b5375cd6b4ea3.html">include</a></li><li class="navelem"><b>Label.hpp</b></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 10:13:45 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 11:01:28 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

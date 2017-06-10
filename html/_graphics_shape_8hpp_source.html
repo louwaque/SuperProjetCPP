@@ -112,33 +112,36 @@ $(document).ready(function(){initNavTree('_graphics_shape_8hpp_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GRAPHICSSHAPE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GraphicsItem.hpp&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_item_8hpp.html">GraphicsItem.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_graphics_shape.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graphics_shape.html">GraphicsShape</a> : <span class="keyword">public</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">inline</span> GraphicsTypes type()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ShapeType; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(<span class="keyword">const</span> Id &amp;parent = boost::uuids::nil_generator()());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(<span class="keyword">const</span> Ptr &amp;parent);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="class_graphics_shape.html">GraphicsShape</a>(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::vector&lt;Point&gt; m_points;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">inline</span> GraphicsTypes type()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> ShapeType; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> meDraw(<a class="code" href="class_canvas.html">Canvas</a> *canvas);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  std::vector&lt;Point&gt; m_points;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_graphics_shape_html"><div class="ttname"><a href="class_graphics_shape.html">GraphicsShape</a></div><div class="ttdoc">Une forme. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_shape_8hpp_source.html#l00021">GraphicsShape.hpp:21</a></div></div>
-<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00012">Canvas.hpp:12</a></div></div>
-<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00022">GraphicsItem.hpp:22</a></div></div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="_canvas_8hpp_source.html#l00008">Canvas.hpp:8</a></div></div>
+<div class="ttc" id="_graphics_item_8hpp_html"><div class="ttname"><a href="_graphics_item_8hpp.html">GraphicsItem.hpp</a></div><div class="ttdoc">Classe GraphicsItem. </div></div>
+<div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00026">GraphicsItem.hpp:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_0d958518482f4d17b72ebe010e78aca5.html">graphics</a></li><li class="navelem"><a class="el" href="dir_4ac80104d22eb1bc54e82b1f8df029d0.html">include</a></li><li class="navelem"><a class="el" href="_graphics_shape_8hpp.html">GraphicsShape.hpp</a></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 10:13:45 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 11:01:26 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
