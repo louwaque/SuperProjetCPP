@@ -147,15 +147,25 @@ $(document).ready(function(){initNavTree('_font_8cpp_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">return</span> l.id() == r.id();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;r)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;r)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> l.height() &lt; r.height();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> l.id() != r.id();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;std::ostream &amp;<a class="code" href="_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;r)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;id &quot;</span> &lt;&lt; font.id() &lt;&lt; <span class="stringliteral">&quot; height &quot;</span> &lt;&lt; font.height() &lt;&lt; <span class="stringliteral">&quot; width &quot;</span> &lt;&lt; font.width();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> l.height() &lt; r.height();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> operator&gt;(<span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;l, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;r)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> l.height() &gt; r.height();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;std::ostream &amp;<a class="code" href="_point_8hpp.html#aab55cf13db83c55c46a961b2b2441960">operator&lt;&lt;</a>(std::ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_font.html">Font</a> &amp;font)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;id &quot;</span> &lt;&lt; font.id() &lt;&lt; <span class="stringliteral">&quot; height &quot;</span> &lt;&lt; font.height() &lt;&lt; <span class="stringliteral">&quot; width &quot;</span> &lt;&lt; font.width();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="ttc" id="_point_8hpp_html_a4e1acba0f26daf714b7816d3c1994a74"><div class="ttname"><a href="_point_8hpp.html#a4e1acba0f26daf714b7816d3c1994a74">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Point &amp;l, const Point &amp;r)</div><div class="ttdoc">Surchage de l&#39;operateur &lt;. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00185">Point.cpp:185</a></div></div>
 <div class="ttc" id="class_font_html"><div class="ttname"><a href="class_font.html">Font</a></div><div class="ttdef"><b>Definition:</b> <a href="_font_8hpp_source.html#l00006">Font.hpp:6</a></div></div>
 <div class="ttc" id="_point_8hpp_html_a872cb140a1e5f546a31b4b3d891b765a"><div class="ttname"><a href="_point_8hpp.html#a872cb140a1e5f546a31b4b3d891b765a">operator==</a></div><div class="ttdeci">bool operator==(const Point &amp;l, const Point &amp;r)</div><div class="ttdoc">Surchage de l&#39;operateur ==. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00161">Point.cpp:161</a></div></div>
@@ -166,7 +176,7 @@ $(document).ready(function(){initNavTree('_font_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_ab4dbad83e31a4749c8272a1e225fd92.html">src</a></li><li class="navelem"><b>Font.cpp</b></li>
-    <li class="footer">Généré le Samedi 10 Juin 2017 12:28:57 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 10 Juin 2017 13:07:39 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -13,6 +13,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Font", "class_font.html", null ],
+    [ "GraphicsFactory", "class_graphics_factory.html", null ],
     [ "GroupPoints", "class_group_points.html", null ],
     [ "noncopyable", null, [
       [ "GraphicsItem", "class_graphics_item.html", [
@@ -30,11 +31,14 @@ var hierarchy =
         ] ],
         [ "GraphicsSquare", "class_graphics_square.html", null ],
         [ "GraphicsText", "class_graphics_text.html", null ],
-        [ "ToolsWindows", "class_tools_windows.html", null ],
         [ "Widget", "class_widget.html", [
           [ "Button", "class_button.html", null ],
+          [ "ConfigItem", "class_config_item.html", null ],
           [ "Label", "class_label.html", null ],
-          [ "LineEdit", "class_line_edit.html", null ]
+          [ "Layout", "class_layout.html", null ],
+          [ "LineEdit", "class_line_edit.html", null ],
+          [ "SpinBox", "class_spin_box.html", null ],
+          [ "ToolsWindow", "class_tools_window.html", null ]
         ] ]
       ] ]
     ] ],
