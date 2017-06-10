@@ -39,6 +39,7 @@ protected:
   std::shared_ptr<Layout> m_layout;
 
 private:
+  unsigned int m_elapsedTime;
   std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick, m_spinBoxFill;
   std::shared_ptr<LineEdit> m_lineEditColor;
 };

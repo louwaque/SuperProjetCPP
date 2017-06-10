@@ -25,7 +25,7 @@ GraphicsItem::Ptr GraphicsFactory::circle(std::shared_ptr<Layout> layout)
   auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->radiusPt());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
@@ -40,7 +40,7 @@ GraphicsItem::Ptr GraphicsFactory::ellipse(std::shared_ptr<Layout> layout)
   auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->radius());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
@@ -55,7 +55,7 @@ GraphicsItem::Ptr GraphicsFactory::line(std::shared_ptr<Layout> layout)
   auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->second());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
@@ -67,7 +67,7 @@ GraphicsItem::Ptr GraphicsFactory::polygon(std::shared_ptr<Layout> layout)
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item);
   pt1->position().join(item->position());
 
-  GraphicsItem::make<Toy<ConfigPolygon>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigPolygon>>(item, pt1, layout, item);
 
   return item;
 }
@@ -82,7 +82,7 @@ GraphicsItem::Ptr GraphicsFactory::rectangle(std::shared_ptr<Layout> layout)
   auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->bottomRight());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
@@ -97,7 +97,7 @@ GraphicsItem::Ptr GraphicsFactory::square(std::shared_ptr<Layout> layout)
   auto pt2 = GraphicsItem::make<GraphicsPoint>(item);
   pt2->position().join(item->bottomRight());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
@@ -109,7 +109,7 @@ GraphicsItem::Ptr GraphicsFactory::text(std::shared_ptr<Layout> layout)
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item);
   pt1->position().join(item->position());
 
-  GraphicsItem::make<Toy<ConfigText>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigText>>(item, pt1, layout, item);
 
   return item;
 }
@@ -127,7 +127,7 @@ GraphicsItem::Ptr GraphicsFactory::triangle(std::shared_ptr<Layout> layout)
   auto pt3 = GraphicsItem::make<GraphicsPoint>(item);
   pt3->position().join(item->third());
 
-  GraphicsItem::make<Toy<ConfigItem>>(item, layout, item);
+  GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
 
   return item;
 }
