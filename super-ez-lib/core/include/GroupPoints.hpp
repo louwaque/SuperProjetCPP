@@ -6,6 +6,7 @@
 #include "Point.hpp"
 class Point;
 
+//FIXME utiliser shared_ptr PARTOUT pour pouvoir sérialiser correctement
 typedef std::vector<std::reference_wrapper<Point>> Points;
 
 class GroupPoints {

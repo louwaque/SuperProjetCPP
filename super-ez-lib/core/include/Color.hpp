@@ -209,6 +209,11 @@ public:
 
   void setHexaStr(const std::string &hexa);
 
+  template<class Archive>
+  void serialize(Archive& ar, const unsigned int version){
+    ar & m_color;
+  }
+
 private:
   uint32_t m_color; /*!< La couleur */
 };

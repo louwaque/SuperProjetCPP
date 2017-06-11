@@ -21,6 +21,11 @@ public:
   inline size_t width() const { return m_width; }
   inline size_t height() const { return m_height; }
 
+  template<class Archive>
+  void serialize(Archive& ar, const unsigned int version){
+    ar & m_id;
+  }
+
 private:
   uint m_id;
   size_t m_width;

@@ -10,7 +10,7 @@ file(
 add_library(super-ez-lib-core ${SRC})
 target_link_libraries(super-ez-lib-core ez-lib)
 
-find_package(Boost 1.64.0 REQUIRED COMPONENTS locale unit_test_framework)
+find_package(Boost 1.64.0 REQUIRED COMPONENTS locale serialization unit_test_framework)
 
 IF (Boost_FOUND)
   include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
