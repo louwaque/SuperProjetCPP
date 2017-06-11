@@ -103,22 +103,6 @@ void GraphicsItem::setParent(const GraphicsItem *parent)
   }
 }
 
-GraphicsItem::GraphicsItemList GraphicsItem::children(const GraphicsTypes filter, const SearchTypes option) const
-{
-  GraphicsItemList list;
-  for (const auto &ptr : m_children) {
-    if (ptr) {
-      if (option == ChildrenRecursively) {
-        GraphicsItemList sublist = ptr->children(filter, option);
-        list.insert(list.end(), sublist.begin(), sublist.end());
-      }
-      if (filter == UndefinedType or ptr->type() == filter)
-        list.push_back(ptr.get());
-    }
-  }
-  return list;
-}
-
 void GraphicsItem::setZ(const int z)
 {
   m_z = z;
@@ -200,6 +184,12 @@ void GraphicsItem::sortChildren()
     else
       throw std::runtime_error("GraphicsItem::sortChildren: null pointer");
   });
+}
+
+template<>
+GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) const
+{
+  return children<GraphicsItem>(option);
 }
 
 bool operator==(const GraphicsItem &l, const GraphicsItem &r)

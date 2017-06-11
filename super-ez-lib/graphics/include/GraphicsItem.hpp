@@ -4,6 +4,7 @@
 #include <vector>
 #include <map>
 #include <memory>
+#include <type_traits>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
@@ -70,7 +71,8 @@ public:
     return ItemType;
   }
 
-  GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
+  template<typename... Types>
+  GraphicsItemList children(const SearchTypes option = ChildrenRecursively) const;
 
   inline Point position() const { return m_position; }
   inline Point &position() { return m_position; }
@@ -145,6 +147,12 @@ protected:
 private:
   void sortChildren();
 
+  template<typename Type>
+  bool testTypes(const GraphicsItem * variable) const;
+
+  template<typename Type, typename Type2, typename... Types>
+  bool testTypes(const GraphicsItem * variable) const;
+
 private:
   Id m_id;
   GraphicsItem *m_parent;
@@ -160,6 +168,35 @@ private:
 
   static std::map<Id, GraphicsItem*> m_graphicsItems;
 };
+
+template<typename... Types>
+GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) const
+{
+  GraphicsItemList list;
+  for (const auto &ptr : m_children) {
+    if (ptr) {
+      if (option == ChildrenRecursively) {
+        GraphicsItemList sublist = ptr->children<Types...>(option);
+        list.insert(list.end(), sublist.begin(), sublist.end());
+      }
+      if (testTypes<Types...>(ptr.get()))
+        list.push_back(ptr.get());
+    }
+  }
+  return list;
+}
+
+template<typename Type>
+bool GraphicsItem::testTypes(const GraphicsItem * variable) const
+{
+  return dynamic_cast<const Type*>(variable) != nullptr;
+}
+
+template<typename Type, typename Type2, typename... Types>
+bool GraphicsItem::testTypes(const GraphicsItem * variable) const
+{
+  return testTypes<Type>(variable) || testTypes<Type2>(variable) || testTypes<Types...>(variable);
+}
 
 template<class T, class... Args>
 std::shared_ptr<T> GraphicsItem::make(Args&&... args)
