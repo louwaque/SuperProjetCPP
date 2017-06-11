@@ -4,7 +4,6 @@
 #include <vector>
 #include <map>
 #include <memory>
-#include <typeindex>
 #include <type_traits>
 #include <Color.hpp>
 #include <Canvas.hpp>
@@ -149,10 +148,10 @@ private:
   void sortChildren();
 
   template<typename Type>
-  std::vector<std::type_index> typesList() const;
+  bool testTypes(const GraphicsItem * variable) const;
 
   template<typename Type, typename Type2, typename... Types>
-  std::vector<std::type_index> typesList() const;
+  bool testTypes(const GraphicsItem * variable) const;
 
 private:
   Id m_id;
@@ -173,9 +172,6 @@ private:
 template<typename... Types>
 GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) const
 {
-  auto types = typesList<Types...>();
-  std::cerr << "types: " << types[0].name() << '\n';
-
   GraphicsItemList list;
   for (const auto &ptr : m_children) {
     if (ptr) {
@@ -183,8 +179,7 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) 
         GraphicsItemList sublist = ptr->children<Types...>(option);
         list.insert(list.end(), sublist.begin(), sublist.end());
       }
-      std::cerr << "ptr: " << typeid(*ptr).name() << '\n';
-      if (std::find(types.begin(), types.end(), typeid(*ptr)) != types.end())
+      if (testTypes<Types...>(ptr.get()))
         list.push_back(ptr.get());
     }
   }
@@ -192,15 +187,15 @@ GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) 
 }
 
 template<typename Type>
-std::vector<std::type_index> GraphicsItem::typesList() const
+bool GraphicsItem::testTypes(const GraphicsItem * variable) const
 {
-  return std::vector<std::type_index>({typeid(Type)});
+  return dynamic_cast<const Type*>(variable) != nullptr;
 }
 
 template<typename Type, typename Type2, typename... Types>
-std::vector<std::type_index> GraphicsItem::typesList() const
+bool GraphicsItem::testTypes(const GraphicsItem * variable) const
 {
-  return typesList<Type>() + typesList<Type2>() + typesList<Types...>();
+  return testTypes<Type>(variable) || testTypes<Type2>(variable) || testTypes<Types...>(variable);
 }
 
 template<class T, class... Args>
