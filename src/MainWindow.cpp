@@ -44,6 +44,9 @@ void MainWindow::handleEvent(const Event &event)
 {
   m_scene->handleEvent(event);
   drawRequest();
+//  std::cerr << "nbitems: "<< m_scene->children<GraphicsItem>(GraphicsItem::ChildrenRecursively).size() << '\n';
+//  std::cerr << "nbwidget: "<< m_scene->children<Widget>(GraphicsItem::ChildrenRecursively).size() << '\n';
+
 }
 
 void MainWindow::organize()

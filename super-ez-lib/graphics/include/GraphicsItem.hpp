@@ -4,6 +4,8 @@
 #include <vector>
 #include <map>
 #include <memory>
+#include <typeindex>
+#include <type_traits>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
@@ -70,7 +72,8 @@ public:
     return ItemType;
   }
 
-  GraphicsItemList children(const GraphicsTypes filter = UndefinedType, const SearchTypes option = ChildrenRecursively) const;
+  template<typename... Types>
+  GraphicsItemList children(const SearchTypes option = ChildrenRecursively) const;
 
   inline Point position() const { return m_position; }
   inline Point &position() { return m_position; }
@@ -145,6 +148,12 @@ protected:
 private:
   void sortChildren();
 
+  template<typename Type>
+  std::vector<std::type_index> typesList() const;
+
+  template<typename Type, typename Type2, typename... Types>
+  std::vector<std::type_index> typesList() const;
+
 private:
   Id m_id;
   GraphicsItem *m_parent;
@@ -160,6 +169,39 @@ private:
 
   static std::map<Id, GraphicsItem*> m_graphicsItems;
 };
+
+template<typename... Types>
+GraphicsItem::GraphicsItemList GraphicsItem::children(const SearchTypes option) const
+{
+  auto types = typesList<Types...>();
+  std::cerr << "types: " << types[0].name() << '\n';
+
+  GraphicsItemList list;
+  for (const auto &ptr : m_children) {
+    if (ptr) {
+      if (option == ChildrenRecursively) {
+        GraphicsItemList sublist = ptr->children<Types...>(option);
+        list.insert(list.end(), sublist.begin(), sublist.end());
+      }
+      std::cerr << "ptr: " << typeid(*ptr).name() << '\n';
+      if (std::find(types.begin(), types.end(), typeid(*ptr)) != types.end())
+        list.push_back(ptr.get());
+    }
+  }
+  return list;
+}
+
+template<typename Type>
+std::vector<std::type_index> GraphicsItem::typesList() const
+{
+  return std::vector<std::type_index>({typeid(Type)});
+}
+
+template<typename Type, typename Type2, typename... Types>
+std::vector<std::type_index> GraphicsItem::typesList() const
+{
+  return typesList<Type>() + typesList<Type2>() + typesList<Types...>();
+}
 
 template<class T, class... Args>
 std::shared_ptr<T> GraphicsItem::make(Args&&... args)
