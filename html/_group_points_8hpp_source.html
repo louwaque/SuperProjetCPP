@@ -116,29 +116,30 @@ $(document).ready(function(){initNavTree('_group_points_8hpp_source.html','');})
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_point.html">Point</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::reference_wrapper&lt;Point&gt;&gt; Points;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_group_points.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_group_points.html">GroupPoints</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="class_group_points.html">GroupPoints</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_point.html">Point</a> origin() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> setOrigin(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> *origin = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">inline</span> Points points()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_points; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">inline</span> Points &amp;points() { <span class="keywordflow">return</span> m_points; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> *m_origin;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  Points m_points;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_point.html">Point</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_group_points_html"><div class="ttname"><a href="class_group_points.html">GroupPoints</a></div><div class="ttdef"><b>Definition:</b> <a href="_group_points_8hpp_source.html#l00011">GroupPoints.hpp:11</a></div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//FIXME utiliser shared_ptr PARTOUT pour pouvoir sérialiser correctement</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">typedef</span> std::vector&lt;std::reference_wrapper&lt;Point&gt;&gt; Points;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_group_points.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_group_points.html">GroupPoints</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_group_points.html">GroupPoints</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_point.html">Point</a> origin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> setOrigin(<span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> *origin = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">inline</span> Points points()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_points; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">inline</span> Points &amp;points() { <span class="keywordflow">return</span> m_points; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_point.html">Point</a> *m_origin;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  Points m_points;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_point.html">Point</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_group_points_html"><div class="ttname"><a href="class_group_points.html">GroupPoints</a></div><div class="ttdef"><b>Definition:</b> <a href="_group_points_8hpp_source.html#l00012">GroupPoints.hpp:12</a></div></div>
 <div class="ttc" id="_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div><div class="ttdoc">Classe point. </div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -147,7 +148,7 @@ $(document).ready(function(){initNavTree('_group_points_8hpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_29886abfd05d10f353d5e88e3822275c.html">include</a></li><li class="navelem"><b>GroupPoints.hpp</b></li>
-    <li class="footer">Généré le Dimanche 11 Juin 2017 10:44:58 pour Super Project c++ par
+    <li class="footer">Généré le Dimanche 11 Juin 2017 15:04:11 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
