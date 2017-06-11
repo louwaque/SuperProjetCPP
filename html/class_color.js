@@ -24,7 +24,6 @@ var class_color =
     [ "hue", "class_color.html#ac99b62f877393bbadfeee7170eb31ecd", null ],
     [ "red", "class_color.html#a5a3f8aa2c7079231d10fbf3c2c87bf61", null ],
     [ "saturation", "class_color.html#a9e232063ef1dfe5e98970700db822561", null ],
-    [ "serialize", "class_color.html#a16191c563289316843adcd2f5a4a4c8f", null ],
     [ "setBlue", "class_color.html#ae752d55b3758a7181fd3c201ab87ca3b", null ],
     [ "setGreen", "class_color.html#a1c17c3206b193c4a0ffabc13a6155e3d", null ],
     [ "setHexa", "class_color.html#a075616705bfbe4802b121a343f4ed78e", null ],
