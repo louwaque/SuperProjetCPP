@@ -59,6 +59,14 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
     }
   });
 
+  auto removeButton = make<Button>("Supprimer");
+  m_layout->push_back(removeButton);
+  removeButton->clicked([this]() {
+    if (m_target)
+      m_target->setParent();
+    m_target.reset();
+  });
+
   widthChanged([this]() {
     m_layout->setWidth(width());
   });

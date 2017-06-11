@@ -13,6 +13,7 @@
 #include <Label.hpp>
 #include <LineEdit.hpp>
 #include <SpinBox.hpp>
+#include <Button.hpp>
 
 /*!
  * \class ConfigItem
