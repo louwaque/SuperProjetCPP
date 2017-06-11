@@ -6,6 +6,7 @@
 #include "Color.hpp"
 #include "Point.hpp"
 #include "Font.hpp"
+#include "Image.hpp"
 
 class Window;
 
@@ -49,6 +50,10 @@ public:
   inline void drawText(const TextAlign align, const int x, const int y, const std::string &text) { m_window.drawText(align, x, y, boost::locale::conv::from_utf(text, "Latin1")); }
 
   inline void drawText(const TextAlign align, const Point &pos, const std::string &text) { m_window.drawText(align, pos.x(), pos.y(), boost::locale::conv::from_utf(text, "Latin1")); }
+
+  inline void drawImage(const Image &image, const Point &pos) { image.m_image->paint(m_window, pos.x(), pos.y()); }
+
+  inline void drawImage(const Image &image, const Point &pos, const Point &source, const size_t width, const size_t height) { image.m_image->paintSubimage(m_window, pos.x(), pos.y(), source.x(), source.y(), width, height); }
 
 private:
   explicit Canvas(EZWindow &window);
