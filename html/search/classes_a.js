@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['spinbox',['SpinBox',['../class_spin_box.html',1,'']]]
+  ['pixel',['Pixel',['../class_pixel.html',1,'']]],
+  ['point',['Point',['../class_point.html',1,'']]]
 ];

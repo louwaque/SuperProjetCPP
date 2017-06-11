@@ -53,12 +53,14 @@ var files =
     [ "class_graphics_text.js", "class__graphics__text_8js_source.html", null ],
     [ "class_graphics_triangle.js", "class__graphics__triangle_8js_source.html", null ],
     [ "class_group_points.js", "class__group__points_8js_source.html", null ],
+    [ "class_image.js", "class__image_8js_source.html", null ],
     [ "class_key_event.js", "class__key__event_8js_source.html", null ],
     [ "class_label.js", "class__label_8js_source.html", null ],
     [ "class_layout.js", "class__layout_8js_source.html", null ],
     [ "class_line_edit.js", "class__line__edit_8js_source.html", null ],
     [ "class_main_window.js", "class__main__window_8js_source.html", null ],
     [ "class_mouse_event.js", "class__mouse__event_8js_source.html", null ],
+    [ "class_pixel.js", "class__pixel_8js_source.html", null ],
     [ "class_point.js", "class__point_8js_source.html", null ],
     [ "class_spin_box.js", "class__spin__box_8js_source.html", null ],
     [ "class_tools_window.js", "class__tools__window_8js_source.html", null ],
@@ -78,6 +80,7 @@ var files =
     [ "classes_a.js", "classes__a_8js_source.html", null ],
     [ "classes_b.js", "classes__b_8js_source.html", null ],
     [ "classes_c.js", "classes__c_8js_source.html", null ],
+    [ "classes_d.js", "classes__d_8js_source.html", null ],
     [ "CMakeCCompilerId.c", "_c_make_c_compiler_id_8c_source.html", null ],
     [ "CMakeCXXCompilerId.cpp", "_c_make_c_x_x_compiler_id_8cpp_source.html", null ],
     [ "Color.cpp", "_color_8cpp_source.html", null ],
@@ -113,6 +116,7 @@ var files =
     [ "files_5.js", "files__5_8js_source.html", null ],
     [ "files_6.js", "files__6_8js_source.html", null ],
     [ "files_7.js", "files__7_8js_source.html", null ],
+    [ "files_8.js", "files__8_8js_source.html", null ],
     [ "Font.cpp", "_font_8cpp_source.html", null ],
     [ "Font.hpp", "_font_8hpp_source.html", null ],
     [ "functions_0.js", "functions__0_8js_source.html", null ],
@@ -167,6 +171,10 @@ var files =
     [ "groups_0.js", "groups__0_8js_source.html", null ],
     [ "groups_1.js", "groups__1_8js_source.html", null ],
     [ "hierarchy.js", "hierarchy_8js_source.html", null ],
+    [ "Image.cpp", "_image_8cpp_source.html", null ],
+    [ "Image.hpp", "_image_8hpp.html", [
+      [ "Image", "class_image.html", "class_image" ]
+    ] ],
     [ "jquery.js", "jquery_8js_source.html", null ],
     [ "KeyEvent.cpp", "_key_event_8cpp_source.html", null ],
     [ "KeyEvent.hpp", "_key_event_8hpp.html", [
@@ -192,6 +200,10 @@ var files =
     [ "navtreeindex2.js", "navtreeindex2_8js_source.html", null ],
     [ "pages_0.js", "pages__0_8js_source.html", null ],
     [ "pages_1.js", "pages__1_8js_source.html", null ],
+    [ "Pixel.cpp", "_pixel_8cpp_source.html", null ],
+    [ "Pixel.hpp", "_pixel_8hpp.html", [
+      [ "Pixel", "class_pixel.html", "class_pixel" ]
+    ] ],
     [ "Point.cpp", "_point_8cpp_source.html", null ],
     [ "Point.hpp", "_point_8hpp.html", "_point_8hpp" ],
     [ "resize.js", "resize_8js_source.html", null ],

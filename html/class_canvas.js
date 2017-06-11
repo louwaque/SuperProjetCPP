@@ -4,6 +4,8 @@ var class_canvas =
     [ "clear", "class_canvas.html#ac4559a6535f497f17415032632aa9f6a", null ],
     [ "drawCircle", "class_canvas.html#a5d6c1ffe1d0279d24d13fb7956cc99a9", null ],
     [ "drawCircle", "class_canvas.html#a02f659c0cb7809f6dbb18746eb547778", null ],
+    [ "drawImage", "class_canvas.html#a34439485ef99a4473979dffcb2232c79", null ],
+    [ "drawImage", "class_canvas.html#a025eb0b4a5a735a67d8875624f99d100", null ],
     [ "drawLine", "class_canvas.html#aea67ac3f6984f8a1c67edcd892af289c", null ],
     [ "drawLine", "class_canvas.html#aa379d9765fc40e770309001da99832c3", null ],
     [ "drawPoint", "class_canvas.html#af1df45002e73cbbbfaa7273729133b3b", null ],

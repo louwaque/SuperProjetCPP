@@ -46,8 +46,10 @@ var hierarchy =
     [ "Font", "class_font.html", null ],
     [ "GraphicsFactory", "class_graphics_factory.html", null ],
     [ "GroupPoints", "class_group_points.html", null ],
+    [ "Image", "class_image.html", null ],
     [ "noncopyable", null, [
       [ "GraphicsItem", "class_graphics_item.html", null ]
     ] ],
+    [ "Pixel", "class_pixel.html", null ],
     [ "Point", "class_point.html", null ]
 ];
