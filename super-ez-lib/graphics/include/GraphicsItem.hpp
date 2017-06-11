@@ -9,6 +9,7 @@
 #include <Event.hpp>
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
+#include <boost/uuid/uuid_io.hpp>
 #include <boost/core/noncopyable.hpp>
 
 /**
@@ -22,7 +23,7 @@
  * \ingroup graphics
  */
 
-class GraphicsItem : private boost::noncopyable {
+class GraphicsItem : public std::enable_shared_from_this<GraphicsItem>, private boost::noncopyable {
 public:
   typedef boost::uuids::uuid Id;
   typedef std::shared_ptr<GraphicsItem> Ptr;
@@ -58,8 +59,8 @@ public:
   virtual ~GraphicsItem();
 
   inline Id id() const { return m_id; }
-  inline Id parentId() const { return m_parent; }
-  inline Ptr parent() const { return m_graphicsItems[m_parent]; }
+  inline Id parentId() const { return m_parent ? m_parent->id() : boost::uuids::nil_generator()(); }
+  inline GraphicsItem *parent() const { return m_parent; }
 
   void setParent(const Id &parent = boost::uuids::nil_generator()());
   void setParent(const Ptr &parent);
@@ -146,8 +147,8 @@ private:
 
 private:
   Id m_id;
-  Id m_parent;
-  std::vector<Id> m_children;
+  GraphicsItem *m_parent;
+  std::vector<Ptr> m_children;
   static GraphicsItem *m_focusItem;
   Point m_position;
   int m_z;
@@ -157,19 +158,19 @@ private:
   bool m_isEnable;
   bool m_isVisible;
 
-  static std::map<Id, Ptr> m_graphicsItems;
+  static std::map<Id, GraphicsItem*> m_graphicsItems;
 };
 
 template<class T, class... Args>
 std::shared_ptr<T> GraphicsItem::make(Args&&... args)
 {
-  auto ptr = std::make_shared<T>(std::forward<Args>(args)...);
-  m_graphicsItems[ptr->id()] = ptr;
-
-  auto parent = ptr->parent();
-  if (parent)
-    parent->sortChildren();
-
+  T * p = new T(std::forward<Args>(args)...);
+  std::shared_ptr<T> ptr;
+  try {
+    ptr = std::dynamic_pointer_cast<T>(p->shared_from_this());
+  } catch(std::bad_weak_ptr& e) {
+    ptr = std::shared_ptr<T>(p);
+  }
   return ptr;
 }
 
