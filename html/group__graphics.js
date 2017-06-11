@@ -87,7 +87,7 @@ var group__graphics =
       [ "meHandleEvent", "class_graphics_item.html#ad6009d75c16ccc9559a4b2ffad69045c", null ],
       [ "meIsOver", "class_graphics_item.html#a6616ded9057686f175bdbaa4c62218dc", null ],
       [ "meUpdate", "class_graphics_item.html#a7da307cdcde806bc966d813f58643649", null ],
-      [ "parent", "class_graphics_item.html#a294a3fd3f28c9fa6951da31877b5cb9f", null ],
+      [ "parent", "class_graphics_item.html#aeaf0a8de33aa83d5fa5ac8889e7e4392", null ],
       [ "parentId", "class_graphics_item.html#a22c24f62b161a5df8ed02590b137b01b", null ],
       [ "position", "class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6", null ],
       [ "position", "class_graphics_item.html#a8802f819c79ab12ed3b719af2b8afcbd", null ],

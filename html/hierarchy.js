@@ -3,19 +3,7 @@ var hierarchy =
     [ "Application", "class_application.html", null ],
     [ "Canvas", "class_canvas.html", null ],
     [ "Color", "class_color.html", null ],
-    [ "Event", "class_event.html", [
-      [ "KeyEvent", "class_key_event.html", null ],
-      [ "MouseEvent", "class_mouse_event.html", null ]
-    ] ],
-    [ "EZWindow", null, [
-      [ "Window", "class_window.html", [
-        [ "MainWindow", "class_main_window.html", null ]
-      ] ]
-    ] ],
-    [ "Font", "class_font.html", null ],
-    [ "GraphicsFactory", "class_graphics_factory.html", null ],
-    [ "GroupPoints", "class_group_points.html", null ],
-    [ "noncopyable", null, [
+    [ "enable_shared_from_this", null, [
       [ "GraphicsItem", "class_graphics_item.html", [
         [ "GraphicsAnimation", "class_graphics_animation.html", [
           [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
@@ -45,6 +33,21 @@ var hierarchy =
           [ "ToolsWindow", "class_tools_window.html", null ]
         ] ]
       ] ]
+    ] ],
+    [ "Event", "class_event.html", [
+      [ "KeyEvent", "class_key_event.html", null ],
+      [ "MouseEvent", "class_mouse_event.html", null ]
+    ] ],
+    [ "EZWindow", null, [
+      [ "Window", "class_window.html", [
+        [ "MainWindow", "class_main_window.html", null ]
+      ] ]
+    ] ],
+    [ "Font", "class_font.html", null ],
+    [ "GraphicsFactory", "class_graphics_factory.html", null ],
+    [ "GroupPoints", "class_group_points.html", null ],
+    [ "noncopyable", null, [
+      [ "GraphicsItem", "class_graphics_item.html", null ]
     ] ],
     [ "Point", "class_point.html", null ]
 ];
