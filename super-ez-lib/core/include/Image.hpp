@@ -53,7 +53,7 @@ public:
   Image extract(const Point &position, const size_t width, const size_t height) const { return m_image->extract(position.x(), position.y(), width, height); }
   Image verticalSymmetry() const { return m_image->verticalSymmetry(); }
   Image horizontalSymmetry() const { return m_image->horizontalSymmetry(); }
-  Image scale(const unsigned double factor) const { return m_image->scale(factor); }
+  Image scale(const double factor) const;
 
 private:
   Image(EZImage *image);

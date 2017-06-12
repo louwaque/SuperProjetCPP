@@ -34,3 +34,11 @@ const Pixel Image::pixel(const Point &position) const
 {
   return pixel(position);
 }
+
+Image Image::scale(const double factor) const
+{
+  if (factor > 0)
+    return m_image->scale(factor);
+  else
+    throw std::runtime_error("Image::scale a negative factor is prohibited");
+}
