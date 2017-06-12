@@ -1,6 +1,14 @@
 #ifndef GRAPHICSITEM_HPP
 #define GRAPHICSITEM_HPP
 
+/*!
+ * \file GraphicsItem.hpp
+ * \brief Classe GraphicsItem
+ * \author Loïc Escales, Leo Sudreau
+ * \version 0.1
+ * \date 22 mai 2017
+ */
+
 #include <vector>
 #include <map>
 #include <memory>
@@ -22,6 +30,12 @@
  * \class GraphicsItem
  * \brief Classe de base
  * \ingroup graphics
+ *
+ * La classe GraphicsItem est la base de tout éléments graphiques qui doit affichés.
+ *
+ *
+ *
+ *
  */
 
 class GraphicsItem : public std::enable_shared_from_this<GraphicsItem>, private boost::noncopyable {
