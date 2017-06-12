@@ -14,6 +14,7 @@ public:
   static GraphicsItem::Ptr square(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr text(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr triangle(std::shared_ptr<Layout> layout);
+  static GraphicsItem::Ptr image(std::shared_ptr<Layout> layout);
 
 private:
   GraphicsFactory();

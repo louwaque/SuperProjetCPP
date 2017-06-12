@@ -4,6 +4,7 @@
 #include "../include/ConfigItem.hpp"
 #include "../include/ConfigPolygon.hpp"
 #include "../include/ConfigText.hpp"
+#include "../include/ConfigImage.hpp"
 
 #include <GraphicsCircle.hpp>
 #include <GraphicsEllipse.hpp>
@@ -14,6 +15,7 @@
 #include <GraphicsSquare.hpp>
 #include <GraphicsText.hpp>
 #include <GraphicsTriangle.hpp>
+#include <GraphicsImage.hpp>
 
 GraphicsItem::Ptr GraphicsFactory::circle(std::shared_ptr<Layout> layout)
 {
@@ -128,6 +130,18 @@ GraphicsItem::Ptr GraphicsFactory::triangle(std::shared_ptr<Layout> layout)
   pt3->position().join(item->third());
 
   GraphicsItem::make<Toy<ConfigItem>>(item, pt1, layout, item);
+
+  return item;
+}
+
+GraphicsItem::Ptr GraphicsFactory::image(std::shared_ptr<Layout> layout)
+{
+  auto item = GraphicsItem::make<GraphicsImage>();
+
+  auto pt1 = GraphicsItem::make<GraphicsPoint>(item);
+  pt1->position().join(item->position());
+
+  GraphicsItem::make<Toy<ConfigImage>>(item, pt1, layout, item);
 
   return item;
 }
