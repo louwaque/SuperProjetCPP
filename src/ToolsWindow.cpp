@@ -70,6 +70,12 @@ ToolsWindow::ToolsWindow(GraphicsItem *parent)
     GraphicsFactory::triangle(m_layoutConfig)->setParent(this->parent());
   });
 
+  auto imageButton = make<Button>("Image");
+  m_layoutTool->push_back(imageButton);
+  imageButton->clicked([this](){
+    GraphicsFactory::image(m_layoutConfig)->setParent(this->parent());
+  });
+
   widthChanged([this](){
     m_layout->setWidth(width());
   });
