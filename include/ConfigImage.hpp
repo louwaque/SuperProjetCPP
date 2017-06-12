@@ -25,8 +25,9 @@ protected:
   void loadData();
 
 private:
-  std::shared_ptr<LineEdit> m_lineEditFileName;
-  std::shared_ptr<SpinBox> m_spinBoxOpacity;
+  std::shared_ptr<LineEdit> m_lineEditFileName, m_lineEditFill;
+  std::shared_ptr<SpinBox> m_spinBoxAlpha, m_spinBoxOpacity, m_spinBoxScale;
+  std::shared_ptr<Button> m_buttonVerticalSymmetry, m_buttonHorizontalSymmetry;
 };
 
 #endif
