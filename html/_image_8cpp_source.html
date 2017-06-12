@@ -144,6 +144,14 @@ $(document).ready(function(){initNavTree('_image_8cpp_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> pixel(position);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="class_image.html">Image</a> Image::scale(<span class="keyword">const</span> <span class="keywordtype">double</span> factor)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (factor &gt; 0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> m_image-&gt;scale(factor);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Image::scale a negative factor is prohibited&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="ttc" id="class_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdoc">Représente une image. </div><div class="ttdef"><b>Definition:</b> <a href="_image_8hpp_source.html#l00027">Image.hpp:27</a></div></div>
 <div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
 <div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Représente un pixel. </div><div class="ttdef"><b>Definition:</b> <a href="_pixel_8hpp_source.html#l00025">Pixel.hpp:25</a></div></div>
@@ -153,7 +161,7 @@ $(document).ready(function(){initNavTree('_image_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_c0bc96c2a96f7510267014d44ca54e24.html">core</a></li><li class="navelem"><a class="el" href="dir_ab4dbad83e31a4749c8272a1e225fd92.html">src</a></li><li class="navelem"><b>Image.cpp</b></li>
-    <li class="footer">Généré le Lundi 12 Juin 2017 15:26:04 pour Super Project c++ par
+    <li class="footer">Généré le Lundi 12 Juin 2017 19:37:56 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

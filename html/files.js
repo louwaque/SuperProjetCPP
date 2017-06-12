@@ -47,6 +47,7 @@ var files =
     [ "class_graphics_blink_animation.js", "class__graphics__blink__animation_8js_source.html", null ],
     [ "class_graphics_circle.js", "class__graphics__circle_8js_source.html", null ],
     [ "class_graphics_ellipse.js", "class__graphics__ellipse_8js_source.html", null ],
+    [ "class_graphics_factory.js", "class__graphics__factory_8js_source.html", null ],
     [ "class_graphics_image.js", "class__graphics__image_8js_source.html", null ],
     [ "class_graphics_item.js", "class__graphics__item_8js_source.html", null ],
     [ "class_graphics_line.js", "class__graphics__line_8js_source.html", null ],

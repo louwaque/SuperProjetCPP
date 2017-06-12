@@ -8,7 +8,7 @@ var searchData=
   ['configimage_2ehpp',['ConfigImage.hpp',['../_config_image_8hpp.html',1,'']]],
   ['configitem',['ConfigItem',['../class_config_item.html',1,'']]],
   ['configitem_2ehpp',['ConfigItem.hpp',['../_config_item_8hpp.html',1,'']]],
-  ['configpolygon',['ConfigPolygon',['../class_config_polygon.html',1,'ConfigPolygon'],['../class_config_polygon.html#a87c29fa03bf5df8e7880b1c6ba4bd80a',1,'ConfigPolygon::ConfigPolygon()']]],
+  ['configpolygon',['ConfigPolygon',['../class_config_polygon.html',1,'']]],
   ['configpolygon_2ehpp',['ConfigPolygon.hpp',['../_config_polygon_8hpp.html',1,'']]],
   ['configtext',['ConfigText',['../class_config_text.html',1,'']]],
   ['configtext_2ehpp',['ConfigText.hpp',['../_config_text_8hpp.html',1,'']]],

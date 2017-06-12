@@ -14,7 +14,7 @@ var annotated =
     [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", "class_graphics_blink_animation" ],
     [ "GraphicsCircle", "class_graphics_circle.html", "class_graphics_circle" ],
     [ "GraphicsEllipse", "class_graphics_ellipse.html", "class_graphics_ellipse" ],
-    [ "GraphicsFactory", "class_graphics_factory.html", null ],
+    [ "GraphicsFactory", "class_graphics_factory.html", "class_graphics_factory" ],
     [ "GraphicsImage", "class_graphics_image.html", "class_graphics_image" ],
     [ "GraphicsItem", "class_graphics_item.html", "class_graphics_item" ],
     [ "GraphicsLine", "class_graphics_line.html", "class_graphics_line" ],
