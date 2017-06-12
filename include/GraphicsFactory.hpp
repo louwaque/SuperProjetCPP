@@ -6,6 +6,8 @@
 class GraphicsFactory
 {
 public:
+  GraphicsFactory() = delete;
+
   static GraphicsItem::Ptr circle(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr ellipse(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr line(std::shared_ptr<Layout> layout);
@@ -15,9 +17,6 @@ public:
   static GraphicsItem::Ptr text(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr triangle(std::shared_ptr<Layout> layout);
   static GraphicsItem::Ptr image(std::shared_ptr<Layout> layout);
-
-private:
-  GraphicsFactory();
 };
 
 #endif
