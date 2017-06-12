@@ -72,6 +72,12 @@ std::shared_ptr<Widget> Layout::pop_back()
   return widget;
 }
 
+void Layout::erase(const std::shared_ptr<Widget> &widget)
+{
+  m_widgets.erase(std::remove(m_widgets.begin(), m_widgets.end(), widget), m_widgets.end());
+  organize();
+}
+
 void Layout::clear()
 {
   for (auto widget : m_widgets)

@@ -37,6 +37,7 @@ public:
   void push_back(const std::string &label, std::shared_ptr<Widget> widget);
   std::shared_ptr<Widget> pop_back();
   inline size_t size() const { return m_widgets.size(); }
+  void erase(const std::shared_ptr<Widget> &widget);
   void clear();
 
   std::shared_ptr<Widget> operator[](const size_t index) { return m_widgets[index]; }
