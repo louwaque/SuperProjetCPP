@@ -31,11 +31,12 @@
  * \brief Classe de base
  * \ingroup graphics
  *
- * La classe GraphicsItem est la base de tout éléments graphiques qui doit affichés.
+ * La classe GraphicsItem est la base de tout les éléments graphiques.
  *
+ * Une relation parent/enfant peut être créé entre deux GraphicsItem.
+ * Les enfants sont stockés dans des shared_ptr, ce qui signifie que la vie des enfants ne dépend pas toujours de celle du parent.
  *
- *
- *
+ * Il est très fortement conseillé d’utiliser la fonction make pour créer des GraphicsItem.
  */
 
 class GraphicsItem : public std::enable_shared_from_this<GraphicsItem>, private boost::noncopyable {
