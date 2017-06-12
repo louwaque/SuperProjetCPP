@@ -44,6 +44,15 @@ var group__graphics =
       [ "radius", "class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e", null ],
       [ "type", "class_graphics_ellipse.html#a0d58cbdcb5e9d47e12e3aa2e969c2c9a", null ]
     ] ],
+    [ "GraphicsImage", "class_graphics_image.html", [
+      [ "GraphicsImage", "class_graphics_image.html#a3569a0c8a2ff6e362711330db47a7caa", null ],
+      [ "GraphicsImage", "class_graphics_image.html#a3b5a6a1a98fb5de029a272da93ac02b1", null ],
+      [ "GraphicsImage", "class_graphics_image.html#a055cbf9472cbabf8e397622e8ba92ff7", null ],
+      [ "image", "class_graphics_image.html#af0f98ce806a946cf9eced608deafeb03", null ],
+      [ "image", "class_graphics_image.html#a3163b48663480262ebdc2e0db33e791e", null ],
+      [ "meDraw", "class_graphics_image.html#a60b5580824ee3a8c48cfb3776a9e313c", null ],
+      [ "meIsOver", "class_graphics_image.html#a7fbed40c7a53d915385200ff84ee77e5", null ]
+    ] ],
     [ "GraphicsItem", "class_graphics_item.html", [
       [ "GraphicsItemList", "class_graphics_item.html#aa643e574b9c2b6713b1b8def690f0c6b", null ],
       [ "Id", "class_graphics_item.html#af8a4dee8acc881415963f0661571edf4", null ],

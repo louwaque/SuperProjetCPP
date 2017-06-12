@@ -37,6 +37,7 @@ var files =
     [ "class_button.js", "class__button_8js_source.html", null ],
     [ "class_canvas.js", "class__canvas_8js_source.html", null ],
     [ "class_color.js", "class__color_8js_source.html", null ],
+    [ "class_config_image.js", "class__config__image_8js_source.html", null ],
     [ "class_config_item.js", "class__config__item_8js_source.html", null ],
     [ "class_config_polygon.js", "class__config__polygon_8js_source.html", null ],
     [ "class_config_text.js", "class__config__text_8js_source.html", null ],
@@ -46,6 +47,7 @@ var files =
     [ "class_graphics_blink_animation.js", "class__graphics__blink__animation_8js_source.html", null ],
     [ "class_graphics_circle.js", "class__graphics__circle_8js_source.html", null ],
     [ "class_graphics_ellipse.js", "class__graphics__ellipse_8js_source.html", null ],
+    [ "class_graphics_image.js", "class__graphics__image_8js_source.html", null ],
     [ "class_graphics_item.js", "class__graphics__item_8js_source.html", null ],
     [ "class_graphics_line.js", "class__graphics__line_8js_source.html", null ],
     [ "class_graphics_point.js", "class__graphics__point_8js_source.html", null ],
@@ -89,6 +91,10 @@ var files =
     [ "Color.cpp", "_color_8cpp_source.html", null ],
     [ "Color.hpp", "_color_8hpp.html", [
       [ "Color", "class_color.html", "class_color" ]
+    ] ],
+    [ "ConfigImage.cpp", "_config_image_8cpp_source.html", null ],
+    [ "ConfigImage.hpp", "_config_image_8hpp.html", [
+      [ "ConfigImage", "class_config_image.html", "class_config_image" ]
     ] ],
     [ "ConfigItem.cpp", "_config_item_8cpp_source.html", null ],
     [ "ConfigItem.hpp", "_config_item_8hpp.html", [
@@ -150,6 +156,8 @@ var files =
     [ "GraphicsEllipse.hpp", "_graphics_ellipse_8hpp_source.html", null ],
     [ "GraphicsFactory.cpp", "_graphics_factory_8cpp_source.html", null ],
     [ "GraphicsFactory.hpp", "_graphics_factory_8hpp_source.html", null ],
+    [ "GraphicsImage.cpp", "_graphics_image_8cpp_source.html", null ],
+    [ "GraphicsImage.hpp", "_graphics_image_8hpp_source.html", null ],
     [ "GraphicsItem.cpp", "_graphics_item_8cpp_source.html", null ],
     [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", "_graphics_item_8hpp" ],
     [ "GraphicsLine.cpp", "_graphics_line_8cpp_source.html", null ],

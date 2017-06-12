@@ -102,6 +102,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_canvas.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_canvas.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_color.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_color.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_config_image.js...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_config_image.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_config_item.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_config_item.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_config_polygon.js...
@@ -120,6 +122,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_circl
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_circle.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_ellipse.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_ellipse.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_image.js...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_image.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_item.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_item.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/class_graphics_line.js...
@@ -334,6 +338,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/search/typedefs_0.js
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/search/typedefs_0.js...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/html/svgpan.js...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/html/svgpan.js...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/include/ConfigImage.hpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/include/ConfigImage.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/include/ConfigPolygon.hpp...
@@ -349,6 +355,8 @@ Parsing file /home/travis/build/L0L022/SuperProjetCPP/include/ToolsWindow.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp...
 Reading /home/travis/build/L0L022/SuperProjetCPP/README.md...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/ConfigImage.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/ConfigImage.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/ConfigItem.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/src/ConfigItem.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/src/ConfigPolygon.cpp...
@@ -419,6 +427,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/inc
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsCircle.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsEllipse.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsEllipse.hpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsLine.hpp...
@@ -445,6 +455,8 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsCircle.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsEllipse.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsEllipse.cpp...
+Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsImage.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsImage.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsLine.cpp...
@@ -467,7 +479,15 @@ Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/inclu
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Label.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Label.hpp...
-Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp...
+Preprocessing /home/travis/build/L0L022/Supe/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:7: warning: Compound GraphicsFactory is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:12: warning: Compound Window is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Font.hpp:7: warning: Compound Font is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp:10: warning: Compound Toy is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/GroupPoints.hpp:12: warning: Compound GroupPoints is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:9: warning: Compound MainWindow is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Canvas.hpp:14: warning: Compound Canvas is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:15: warning: Compound SpinBox is not documented.
+rProjetCPP/super-ez-lib/widget/include/Layout.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/LineEdit.hpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/LineEdit.hpp...
@@ -478,15 +498,7 @@ Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/includ
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Button.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Button.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Label.cpp...
-Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:7: warning: Compound GraphicsFactory is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:12: warning: Compound Window is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Font.hpp:7: warning: Compound Font is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp:10: warning: Compound Toy is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/GroupPoints.hpp:12: warning: Compound GroupPoints is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:9: warning: Compound MainWindow is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Canvas.hpp:14: warning: Compound Canvas is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:15: warning: Compound SpinBox is not documented.
-lib/widget/src/Label.cpp...
+Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Label.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Layout.cpp...
 Parsing file /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/Layout.cpp...
 Preprocessing /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/src/LineEdit.cpp...
@@ -582,6 +594,7 @@ Generating code for file class_application.js...
 Generating code for file class_button.js...
 Generating code for file class_canvas.js...
 Generating code for file class_color.js...
+Generating code for file class_config_image.js...
 Generating code for file class_config_item.js...
 Generating code for file class_config_polygon.js...
 Generating code for file class_config_text.js...
@@ -591,6 +604,7 @@ Generating code for file class_graphics_animation.js...
 Generating code for file class_graphics_blink_animation.js...
 Generating code for file class_graphics_circle.js...
 Generating code for file class_graphics_ellipse.js...
+Generating code for file class_graphics_image.js...
 Generating code for file class_graphics_item.js...
 Generating code for file class_graphics_line.js...
 Generating code for file class_graphics_point.js...
@@ -633,6 +647,8 @@ Generating code for file CMakeCCompilerId.c...
 Generating code for file CMakeCXXCompilerId.cpp...
 Generating code for file Color.cpp...
 Generating code for file Color.hpp...
+Generating code for file ConfigImage.cpp...
+Generating code for file ConfigImage.hpp...
 Generating code for file ConfigItem.cpp...
 Generating code for file ConfigItem.hpp...
 Generating code for file ConfigPolygon.cpp...
@@ -679,25 +695,14 @@ Generating code for file GraphicsAnimation.cpp...
 Generating code for file GraphicsAnimation.hpp...
 Generating code for file GraphicsBlinkAnimation.cpp...
 Generating code for file GraphicsBlinkAnimation.hpp...
-Generating code for fi/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:228: warning: Member operator==(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:229: warning: Member operator!=(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
-  parameter 'p'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
-  parameter 'p'
-  parameter 'number'
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:309: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:309: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
-  parameter 'p'
-le GraphicsCircle.cpp...
+Generating code for file GraphicsCircle.cpp...
 Generating code for file GraphicsCircle.hpp...
 Generating code for file GraphicsEllipse.cpp...
 Generating code for file GraphicsEllipse.hpp...
 Generating code for file GraphicsFactory.cpp...
 Generating code for file GraphicsFactory.hpp...
+Generating code for file GraphicsImage.cpp...
+Generating code for file GraphicsImage.hpp...
 Generating code for file GraphicsItem.cpp...
 Generating code for file GraphicsItem.hpp...
 Generating code for file GraphicsLine.cpp...
@@ -756,39 +761,20 @@ Generating code for file search.js...
 Generating code for file SpinBox.cpp...
 Generating code for file SpinBox.hpp...
 Generating code for file svgpan.js...
-Generating code for file ToolsWindow.cpp...
-Generating code for file ToolsWindow.hpp...
-Generating code for file Toy.hpp...
-Generating code for file typedefs_0.js...
-Generating code for file Widget.cpp...
-Generating code for file Widget.hpp...
-Generating code for file Window.cpp...
-Generating code for file Window.hpp...
-Generating file documentation...
-Generating docs for file Application.hpp...
-Generating docs for file Button.hpp...
-Generating docs for file Color.hpp...
-Generating docs for file ConfigItem.hpp...
-Generating docs for file ConfigPolygon.hpp...
-Generating docs for file ConfigText.hpp...
-Generating docs for file Event.hpp...
-Generating docs for file GraphicsItem.hpp...
-Generating docs for file GraphicsShape.hpp...
-Generating docs for file GraphicsText.hpp...
-Generating docs for file GraphicsTriangle.hpp...
-Generating docs for file Image.hpp...
-Generating docs for file KeyEvent.hpp...
-Generating docs for file MouseEvent.hpp...
-Generating docs for file Pixel.hpp...
-Generating docs for file Point.hpp...
-Generating call graph for function operator+
-Generating call graph for function operator+
-Generating call graph for function operator-
-Generating call graph for function operator-
-Generating call graph for function operator<
-Generating call graph for function operator<<
-Generating call graph for function operator==
-Generating docs for file To/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:30: warning: Member Application(const Application &src)=delete (function) of class Application is not documented.
+Generating code f/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:228: warning: Member operator==(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:229: warning: Member operator!=(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: argument 'l' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: argument 'r' of command @param is not found in the argument list of operator-(const Point &p, const int number)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:298: warning: The following parameters of operator-(const Point &p, const int number) are not documented:
+  parameter 'p'
+  parameter 'number'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:309: warning: argument 'r' of command @param is not found in the argument list of operator<<(std::ostream &os, const Point &p)
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:309: warning: The following parameters of operator<<(std::ostream &os, const Point &p) are not documented:
+  parameter 'p'
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:30: warning: Member Application(const Application &src)=delete (function) of class Application is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:32: warning: Member exec() (function) of class Application is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:36: warning: Member autoQuit() const  (function) of class Application is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Application.hpp:37: warning: Member setAutoQuit(const bool enable) (function) of class Application is not documented.
@@ -893,6 +879,70 @@ Generating docs for file To/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:179: warning: argument 'saturation' of command @param is not found in the argument list of Color::setValue(const double value)
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Color.hpp:179: warning: The following parameters of Color::setValue(const double value) are not documented:
   parameter 'value'
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigImage.hpp:22: warning: Member ConfigImage(GraphicsItem *parent=nullptr) (function) of class ConfigImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:26: warning: Member ConfigItem(GraphicsItem *parent=nullptr) (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:28: warning: Member target() const  (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:29: warning: Member setTarget(const Ptr &target=nullptr) (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:31: warning: Member minimumWidth() const  (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:32: warning: Member minimumHeight() const  (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:27: warning: Member Widget(const Id &parent=boost::uuids::nil_generator()()) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:28: warning: Member Widget(const Ptr &parent) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:29: warning: Member Widget(const GraphicsItem *parent) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:31: warning: Member width() const  (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:33: warning: Member setWidth(const size_t width) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:35: warning: Member height() const  (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:37: warning: Member setHeight(const size_t height) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:70: warning: Member GraphicsItem(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:71: warning: Member GraphicsItem(const Ptr &parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:72: warning: Member GraphicsItem(const GraphicsItem *parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:76: warning: Member id() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:77: warning: Member parentId() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:78: warning: Member parent() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:80: warning: Member setParent(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:81: warning: Member setParent(const Ptr &parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:82: warning: Member setParent(const GraphicsItem *parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:84: warning: Member type() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:89: warning: Member children(const SearchTypes option=ChildrenRecursively) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:91: warning: Member position() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:92: warning: Member position() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:94: warning: Member color() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:98: warning: Member z() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:102: warning: Member setZ(const int z) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:104: warning: Member setColor(const Color color) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:108: warning: Member thick() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:112: warning: Member setThick(unsigned int thick=1) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:116: warning: Member isFill() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:120: warning: Member setFill(const bool fill) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:124: warning: Member isEnable() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:128: warning: Member setEnable(const bool isEnable=true) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:132: warning: Member isVisible() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:136: warning: Member setVisible(const bool isVisible=true) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:140: warning: Member draw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:142: warning: Member update(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:144: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:146: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigImage.hpp:25: warning: Member loadData() (function) of class ConfigImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:35: warning: Member meUpdate(const unsigned int time) (function) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:47: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:65: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:43: warning: Member Id (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Ptr (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:45: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:148: warning: Member focusItem() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:39: warning: Member m_target (variable) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:40: warning: Member m_layout (variable) of class ConfigItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:26: warning: Member ConfigItem(GraphicsItem *parent=nullptr) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:28: warning: Member target() const  (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:29: warning: Member setTarget(const Ptr &target=nullptr) (function) of class ConfigItem is not documented.
@@ -1311,6 +1361,55 @@ Generating docs for file To/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:14: warning: Member square(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:15: warning: Member text(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:16: warning: Member triangle(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:17: warning: Member image(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:16: warning: Member GraphicsImage(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:17: warning: Member GraphicsImage(const Ptr &parent) (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:18: warning: Member GraphicsImage(const GraphicsItem *parent) (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:20: warning: Member image() const  (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:21: warning: Member image() (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:70: warning: Member GraphicsItem(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:71: warning: Member GraphicsItem(const Ptr &parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:72: warning: Member GraphicsItem(const GraphicsItem *parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:76: warning: Member id() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:77: warning: Member parentId() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:78: warning: Member parent() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:80: warning: Member setParent(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:81: warning: Member setParent(const Ptr &parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:82: warning: Member setParent(const GraphicsItem *parent) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:84: warning: Member type() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:89: warning: Member children(const SearchTypes option=ChildrenRecursively) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:91: warning: Member position() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:92: warning: Member position() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:94: warning: Member color() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:98: warning: Member z() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:102: warning: Member setZ(const int z) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:104: warning: Member setColor(const Color color) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:108: warning: Member thick() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:112: warning: Member setThick(unsigned int thick=1) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:116: warning: Member isFill() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:120: warning: Member setFill(const bool fill) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:124: warning: Member isEnable() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:128: warning: Member setEnable(const bool isEnable=true) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:132: warning: Member isVisible() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:136: warning: Member setVisible(const bool isVisible=true) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:140: warning: Member draw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:142: warning: Member update(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:144: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:146: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:24: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:25: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsImage is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:47: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:65: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:43: warning: Member Id (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Ptr (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:45: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:148: warning: Member focusItem() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:47: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:65: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:43: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -2034,7 +2133,99 @@ Generating docs for file To/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Pixel.hpp:34: warning: Member position() const  (function) of class Pixel is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:239: warning: Member correctors() const  (function) of class Point is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:240: warning: Member correctors() (function) of class Point is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:17: warning: Member SpinBox(const Id &parent=boost::uuids::nil_generator()()) (function) of class SpinBox is not documented.
+or file ToolsWindow.cpp...
+Generating code for file ToolsWindow.hpp...
+Generating code for file Toy.hpp...
+Generating code for file typedefs_0.js...
+Generating code for file Widget.cpp...
+Generating code for file Widget.hpp...
+Generating code for file Window.cpp...
+Generating code for file Window.hpp...
+Generating file documentation...
+Generating docs for file Application.hpp...
+Generating docs for file Button.hpp...
+Generating docs for file Color.hpp...
+Generating docs for file ConfigImage.hpp...
+Generating docs for file ConfigItem.hpp...
+Generating docs for file ConfigPolygon.hpp...
+Generating docs for file ConfigText.hpp...
+Generating docs for file Event.hpp...
+Generating docs for file GraphicsItem.hpp...
+Generating docs for file GraphicsShape.hpp...
+Generating docs for file GraphicsText.hpp...
+Generating docs for file GraphicsTriangle.hpp...
+Generating docs for file Image.hpp...
+Generating docs for file KeyEvent.hpp...
+Generating docs for file MouseEvent.hpp...
+Generating docs for file Pixel.hpp...
+Generating docs for file Point.hpp...
+Generating call graph for function operator+
+Generating call graph for function operator+
+Generating call graph for function operator-
+Generating call graph for function operator-
+Generating call graph for function operator<
+Generating call graph for function operator<<
+Generating call graph for function operator==
+Generating docs for file ToolsWindow.hpp...
+Generating page documentation...
+Generating docs for page md__home_travis_build_L0L022_SuperProjetCPP_README...
+Generating docs for page todo...
+Generating group documentation...
+Generating class documentation...
+Generating docs for compound Application...
+Generating docs for compound Button...
+Generating docs for compound Canvas...
+Generating docs for compound Color...
+Generating caller graph for function Color::blue
+Generating caller graph for function Color::green
+Generating caller graph for function Color::hexa
+Generating call graph for function Color::hue
+Generating caller graph for function Color::hue
+Generating caller graph for function Color::red
+Generating call graph for function Color::saturation
+Generating caller graph for function Color::saturation
+Generating call graph for function Color::setBlue
+Generating call graph for function Color::setHexa
+Generating call graph for function Color::setHue
+Generating call graph for function Color::setSaturation
+Generating call graph for function Color::setValue
+Generating call graph for function Color::value
+Generating caller graph for function Color::value
+Generating docs for compound ConfigImage...
+Generating docs for compound ConfigItem...
+Generating docs for compound ConfigPolygon...
+Generating docs for compound ConfigText...
+Generating docs for compound Event...
+Generating docs for compound Font...
+Generating docs for compound GraphicsAnimation...
+Generating docs for compound GraphicsBlinkAnimation...
+Generating docs for compound GraphicsCircle...
+Generating docs for compound GraphicsEllipse...
+Generating docs for compound GraphicsFactory...
+Generating docs for compound GraphicsImage...
+Generating docs for compound GraphicsItem...
+Generating docs for compound GraphicsLine...
+Generating docs for compound GraphicsPoint...
+Generating docs for compound GraphicsPolygon...
+Generating docs for compound GraphicsRectangle...
+Generating docs for compound GraphicsShape...
+Generating docs for compound GraphicsSquare...
+Generating docs for compound GraphicsText...
+Generating call graph for function GraphicsText::GraphicsText
+Generating call graph for function GraphicsText::setText
+Generating caller graph for function GraphicsText::text
+Generating docs for compound GraphicsTriangle...
+Generating docs for compound GroupPoints...
+Generating docs for compound Image...
+Generating docs for compound KeyEvent...
+Generating docs for compound Label...
+Generating docs for compound Layout...
+Generating docs for compound LineEdit...
+Generating docs for compound MainWindow...
+Generating docs for compound MouseEvent...
+Generating docs for compound Pixel...
+Generating docs for compound Point...
+Generating/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:17: warning: Member SpinBox(const Id &parent=boost::uuids::nil_generator()()) (function) of class SpinBox is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:18: warning: Member SpinBox(const Ptr &parent) (function) of class SpinBox is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:19: warning: Member SpinBox(const GraphicsItem *parent) (function) of class SpinBox is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/SpinBox.hpp:21: warning: Member value() const  (function) of class SpinBox is not documented.
@@ -2283,64 +2474,7 @@ Generating docs for file To/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:44: warning: Member closeEvent() (function) of class Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:45: warning: Member handleEvent(const Event &event) (function) of class Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:46: warning: Member updateEvent(const unsigned int time) (function) of class Window is not documented.
-olsWindow.hpp...
-Generating page documentation...
-Generating docs for page md__home_travis_build_L0L022_SuperProjetCPP_README...
-Generating docs for page todo...
-Generating group documentation...
-Generating class documentation...
-Generating docs for compound Application...
-Generating docs for compound Button...
-Generating docs for compound Canvas...
-Generating docs for compound Color...
-Generating caller graph for function Color::blue
-Generating caller graph for function Color::green
-Generating caller graph for function Color::hexa
-Generating call graph for function Color::hue
-Generating caller graph for function Color::hue
-Generating caller graph for function Color::red
-Generating call graph for function Color::saturation
-Generating caller graph for function Color::saturation
-Generating call graph for function Color::setBlue
-Generating call graph for function Color::setHexa
-Generating call graph for function Color::setHue
-Generating call graph for function Color::setSaturation
-Generating call graph for function Color::setValue
-Generating call graph for function Color::value
-Generating caller graph for function Color::value
-Generating docs for compound ConfigItem...
-Generating docs for compound ConfigPolygon...
-Generating docs for compound ConfigText...
-Generating docs for compound Event...
-Generating docs for compound Font...
-Generating docs for compound GraphicsAnimation...
-Generating docs for compound GraphicsBlinkAnimation...
-Generating docs for compound GraphicsCircle...
-Generating docs for compound GraphicsEllipse...
-Generating docs for compound GraphicsFactory...
-Generating docs for compound GraphicsItem...
-Generating docs for compound GraphicsLine...
-Generating docs for compound GraphicsPoint...
-Generating docs for compound GraphicsPolygon...
-Generating docs for compound GraphicsRectangle...
-Generating docs for compound GraphicsShape...
-Generating docs for compound GraphicsSquare...
-Generating docs for compound GraphicsText...
-Generating call graph for function GraphicsText::GraphicsText
-Generating call graph for function GraphicsText::setText
-Generating caller graph for function GraphicsText::text
-Generating docs for compound GraphicsTriangle...
-Generating docs for compound GroupPoints...
-Generating docs for compound Image...
-Generating docs for compound KeyEvent...
-Generating docs for compound Label...
-Generating docs for compound Layout...
-Generating docs for compound LineEdit...
-Generating docs for compound MainWindow...
-Generating docs for compound MouseEvent...
-Generating docs for compound Pixel...
-Generating docs for compound Point...
-Generating caller graph for function Point::Point
+ caller graph for function Point::Point
 Generating call graph for function Point::~Point
 Generating call graph for function Point::join
 Generating call graph for function Point::operator=
@@ -2391,411 +2525,426 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 3 parallel threads...
-Running dot for graph 1/166
-Running dot for graph 2/166
-Running dot for graph 3/166
-Running dot for graph 4/166
-Running dot for graph 5/166
-Running dot for graph 6/166
-Running dot for graph 7/166
-Running dot for graph 8/166
-Running dot for graph 9/166
-Running dot for graph 10/166
-Running dot for graph 11/166
-Running dot for graph 12/166
-Running dot for graph 13/166
-Running dot for graph 14/166
-Running dot for graph 15/166
-Running dot for graph 16/166
-Running dot for graph 17/166
-Running dot for graph 18/166
-Running dot for graph 19/166
-Running dot for graph 20/166
-Running dot for graph 21/166
-Running dot for graph 22/166
-Running dot for graph 23/166
-Running dot for graph 24/166
-Running dot for graph 25/166
-Running dot for graph 26/166
-Running dot for graph 27/166
-Running dot for graph 28/166
-Running dot for graph 29/166
-Running dot for graph 30/166
-Running dot for graph 31/166
-Running dot for graph 32/166
-Running dot for graph 33/166
-Running dot for graph 34/166
-Running dot for graph 35/166
-Running dot for graph 36/166
-Running dot for graph 37/166
-Running dot for graph 38/166
-Running dot for graph 39/166
-Running dot for graph 40/166
-Running dot for graph 41/166
-Running dot for graph 42/166
-Running dot for graph 43/166
-Running dot for graph 44/166
-Running dot for graph 45/166
-Running dot for graph 46/166
-Running dot for graph 47/166
-Running dot for graph 48/166
-Running dot for graph 49/166
-Running dot for graph 50/166
-Running dot for graph 51/166
-Running dot for graph 52/166
-Running dot for graph 53/166
-Running dot for graph 54/166
-Running dot for graph 55/166
-Running dot for graph 56/166
-Running dot for graph 57/166
-Running dot for graph 58/166
-Running dot for graph 59/166
-Running dot for graph 60/166
-Running dot for graph 61/166
-Running dot for graph 62/166
-Running dot for graph 63/166
-Running dot for graph 64/166
-Running dot for graph 65/166
-Running dot for graph 66/166
-Running dot for graph 67/166
-Running dot for graph 68/166
-Running dot for graph 69/166
-Running dot for graph 70/166
-Running dot for graph 71/166
-Running dot for graph 72/166
-Running dot for graph 73/166
-Running dot for graph 74/166
-Running dot for graph 75/166
-Running dot for graph 76/166
-Running dot for graph 77/166
-Running dot for graph 78/166
-Running dot for graph 79/166
-Running dot for graph 80/166
-Running dot for graph 81/166
-Running dot for graph 82/166
-Running dot for graph 83/166
-Running dot for graph 84/166
-Running dot for graph 85/166
-Running dot for graph 86/166
-Running dot for graph 87/166
-Running dot for graph 88/166
-Running dot for graph 89/166
-Running dot for graph 90/166
-Running dot for graph 91/166
-Running dot for graph 92/166
-Running dot for graph 93/166
-Running dot for graph 94/166
-Running dot for graph 95/166
-Running dot for graph 96/166
-Running dot for graph 97/166
-Running dot for graph 98/166
-Running dot for graph 99/166
-Running dot for graph 100/166
-Running dot for graph 101/166
-Running dot for graph 102/166
-Running dot for graph 103/166
-Running dot for graph 104/166
-Running dot for graph 105/166
-Running dot for graph 106/166
-Running dot for graph 107/166
-Running dot for graph 108/166
-Running dot for graph 109/166
-Running dot for graph 110/166
-Running dot for graph 111/166
-Running dot for graph 112/166
-Running dot for graph 113/166
-Running dot for graph 114/166
-Running dot for graph 115/166
-Running dot for graph 116/166
-Running dot for graph 117/166
-Running dot for graph 118/166
-Running dot for graph 119/166
-Running dot for graph 120/166
-Running dot for graph 121/166
-Running dot for graph 122/166
-Running dot for graph 123/166
-Running dot for graph 124/166
-Running dot for graph 125/166
-Running dot for graph 126/166
-Running dot for graph 127/166
-Running dot for graph 128/166
-Running dot for graph 129/166
-Running dot for graph 130/166
-Running dot for graph 131/166
-Running dot for graph 132/166
-Running dot for graph 133/166
-Running dot for graph 134/166
-Running dot for graph 135/166
-Running dot for graph 136/166
-Running dot for graph 137/166
-Running dot for graph 138/166
-Running dot for graph 139/166
-Running dot for graph 140/166
-Running dot for graph 141/166
-Running dot for graph 142/166
-Running dot for graph 143/166
-Running dot for graph 144/166
-Running dot for graph 145/166
-Running dot for graph 146/166
-Running dot for graph 147/166
-Running dot for graph 148/166
-Running dot for graph 149/166
-Running dot for graph 150/166
-Running dot for graph 151/166
-Running dot for graph 152/166
-Running dot for graph 153/166
-Running dot for graph 154/166
-Running dot for graph 155/166
-Running dot for graph 156/166
-Running dot for graph 157/166
-Running dot for graph 158/166
-Running dot for graph 159/166
-Running dot for graph 160/166
-Running dot for graph 161/166
-Running dot for graph 162/166
-Running dot for graph 163/166
-Running dot for graph 164/166
-Running dot for graph 165/166
-Running dot for graph 166/166
-Patching output file 1/240
-Patching output file 2/240
-Patching output file 3/240
-Patching output file 4/240
-Patching output file 5/240
-Patching output file 6/240
-Patching output file 7/240
-Patching output file 8/240
-Patching output file 9/240
-Patching output file 10/240
-Patching output file 11/240
-Patching output file 12/240
-Patching output file 13/240
-Patching output file 14/240
-Patching output file 15/240
-Patching output file 16/240
-Patching output file 17/240
-Patching output file 18/240
-Patching output file 19/240
-Patching output file 20/240
-Patching output file 21/240
-Patching output file 22/240
-Patching output file 23/240
-Patching output file 24/240
-Patching output file 25/240
-Patching output file 26/240
-Patching output file 27/240
-Patching output file 28/240
-Patching output file 29/240
-Patching output file 30/240
-Patching output file 31/240
-Patching output file 32/240
-Patching output file 33/240
-Patching output file 34/240
-Patching output file 35/240
-Patching output file 36/240
-Patching output file 37/240
-Patching output file 38/240
-Patching output file 39/240
-Patching output file 40/240
-Patching output file 41/240
-Patching output file 42/240
-Patching output file 43/240
-Patching output file 44/240
-Patching output file 45/240
-Patching output file 46/240
-Patching output file 47/240
-Patching output file 48/240
-Patching output file 49/240
-Patching output file 50/240
-Patching output file 51/240
-Patching output file 52/240
-Patching output file 53/240
-Patching output file 54/240
-Patching output file 55/240
-Patching output file 56/240
-Patching output file 57/240
-Patching output file 58/240
-Patching output file 59/240
-Patching output file 60/240
-Patching output file 61/240
-Patching output file 62/240
-Patching output file 63/240
-Patching output file 64/240
-Patching output file 65/240
-Patching output file 66/240
-Patching output file 67/240
-Patching output file 68/240
-Patching output file 69/240
-Patching output file 70/240
-Patching output file 71/240
-Patching output file 72/240
-Patching output file 73/240
-Patching output file 74/240
-Patching output file 75/240
-Patching output file 76/240
-Patching output file 77/240
-Patching output file 78/240
-Patching output file 79/240
-Patching output file 80/240
-Patching output file 81/240
-Patching output file 82/240
-Patching output file 83/240
-Patching output file 84/240
-Patching output file 85/240
-Patching output file 86/240
-Patching output file 87/240
-Patching output file 88/240
-Patching output file 89/240
-Patching output file 90/240
-Patching output file 91/240
-Patching output file 92/240
-Patching output file 93/240
-Patching output file 94/240
-Patching output file 95/240
-Patching output file 96/240
-Patching output file 97/240
-Patching output file 98/240
-Patching output file 99/240
-Patching output file 100/240
-Patching output file 101/240
-Patching output file 102/240
-Patching output file 103/240
-Patching output file 104/240
-Patching output file 105/240
-Patching output file 106/240
-Patching output file 107/240
-Patching output file 108/240
-Patching output file 109/240
-Patching output file 110/240
-Patching output file 111/240
-Patching output file 112/240
-Patching output file 113/240
-Patching output file 114/240
-Patching output file 115/240
-Patching output file 116/240
-Patching output file 117/240
-Patching output file 118/240
-Patching output file 119/240
-Patching output file 120/240
-Patching output file 121/240
-Patching output file 122/240
-Patching output file 123/240
-Patching output file 124/240
-Patching output file 125/240
-Patching output file 126/240
-Patching output file 127/240
-Patching output file 128/240
-Patching output file 129/240
-Patching output file 130/240
-Patching output file 131/240
-Patching output file 132/240
-Patching output file 133/240
-Patching output file 134/240
-Patching output file 135/240
-Patching output file 136/240
-Patching output file 137/240
-Patching output file 138/240
-Patching output file 139/240
-Patching output file 140/240
-Patching output file 141/240
-Patching output file 142/240
-Patching output file 143/240
-Patching output file 144/240
-Patching output file 145/240
-Patching output file 146/240
-Patching output file 147/240
-Patching output file 148/240
-Patching output file 149/240
-Patching output file 150/240
-Patching output file 151/240
-Patching output file 152/240
-Patching output file 153/240
-Patching output file 154/240
-Patching output file 155/240
-Patching output file 156/240
-Patching output file 157/240
-Patching output file 158/240
-Patching output file 159/240
-Patching output file 160/240
-Patching output file 161/240
-Patching output file 162/240
-Patching output file 163/240
-Patching output file 164/240
-Patching output file 165/240
-Patching output file 166/240
-Patching output file 167/240
-Patching output file 168/240
-Patching output file 169/240
-Patching output file 170/240
-Patching output file 171/240
-Patching output file 172/240
-Patching output file 173/240
-Patching output file 174/240
-Patching output file 175/240
-Patching output file 176/240
-Patching output file 177/240
-Patching output file 178/240
-Patching output file 179/240
-Patching output file 180/240
-Patching output file 181/240
-Patching output file 182/240
-Patching output file 183/240
-Patching output file 184/240
-Patching output file 185/240
-Patching output file 186/240
-Patching output file 187/240
-Patching output file 188/240
-Patching output file 189/240
-Patching output file 190/240
-Patching output file 191/240
-Patching output file 192/240
-Patching output file 193/240
-Patching output file 194/240
-Patching output file 195/240
-Patching output file 196/240
-Patching output file 197/240
-Patching output file 198/240
-Patching output file 199/240
-Patching output file 200/240
-Patching output file 201/240
-Patching output file 202/240
-Patching output file 203/240
-Patching output file 204/240
-Patching output file 205/240
-Patching output file 206/240
-Patching output file 207/240
-Patching output file 208/240
-Patching output file 209/240
-Patching output file 210/240
-Patching output file 211/240
-Patching output file 212/240
-Patching output file 213/240
-Patching output file 214/240
-Patching output file 215/240
-Patching output file 216/240
-Patching output file 217/240
-Patching output file 218/240
-Patching output file 219/240
-Patching output file 220/240
-Patching output file 221/240
-Patching output file 222/240
-Patching output file 223/240
-Patching output file 224/240
-Patching output file 225/240
-Patching output file 226/240
-Patching output file 227/240
-Patching output file 228/240
-Patching output file 229/240
-Patching output file 230/240
-Patching output file 231/240
-Patching output file 232/240
-Patching output file 233/240
-Patching output file 234/240
-Patching output file 235/240
-Patching output file 236/240
-Patching output file 237/240
-Patching output file 238/240
-Patching output file 239/240
-Patching output file 240/240
-lookup cache used 1488/65536 hits=21306 misses=1531
+Running dot for graph 1/172
+Running dot for graph 2/172
+Running dot for graph 3/172
+Running dot for graph 4/172
+Running dot for graph 5/172
+Running dot for graph 6/172
+Running dot for graph 7/172
+Running dot for graph 8/172
+Running dot for graph 9/172
+Running dot for graph 10/172
+Running dot for graph 11/172
+Running dot for graph 12/172
+Running dot for graph 13/172
+Running dot for graph 14/172
+Running dot for graph 15/172
+Running dot for graph 16/172
+Running dot for graph 17/172
+Running dot for graph 18/172
+Running dot for graph 19/172
+Running dot for graph 20/172
+Running dot for graph 21/172
+Running dot for graph 22/172
+Running dot for graph 23/172
+Running dot for graph 24/172
+Running dot for graph 25/172
+Running dot for graph 26/172
+Running dot for graph 27/172
+Running dot for graph 28/172
+Running dot for graph 29/172
+Running dot for graph 30/172
+Running dot for graph 31/172
+Running dot for graph 32/172
+Running dot for graph 33/172
+Running dot for graph 34/172
+Running dot for graph 35/172
+Running dot for graph 36/172
+Running dot for graph 37/172
+Running dot for graph 38/172
+Running dot for graph 39/172
+Running dot for graph 40/172
+Running dot for graph 41/172
+Running dot for graph 42/172
+Running dot for graph 43/172
+Running dot for graph 44/172
+Running dot for graph 45/172
+Running dot for graph 46/172
+Running dot for graph 47/172
+Running dot for graph 48/172
+Running dot for graph 49/172
+Running dot for graph 50/172
+Running dot for graph 51/172
+Running dot for graph 52/172
+Running dot for graph 53/172
+Running dot for graph 54/172
+Running dot for graph 55/172
+Running dot for graph 56/172
+Running dot for graph 57/172
+Running dot for graph 58/172
+Running dot for graph 59/172
+Running dot for graph 60/172
+Running dot for graph 61/172
+Running dot for graph 62/172
+Running dot for graph 63/172
+Running dot for graph 64/172
+Running dot for graph 65/172
+Running dot for graph 66/172
+Running dot for graph 67/172
+Running dot for graph 68/172
+Running dot for graph 69/172
+Running dot for graph 70/172
+Running dot for graph 71/172
+Running dot for graph 72/172
+Running dot for graph 73/172
+Running dot for graph 74/172
+Running dot for graph 75/172
+Running dot for graph 76/172
+Running dot for graph 77/172
+Running dot for graph 78/172
+Running dot for graph 79/172
+Running dot for graph 80/172
+Running dot for graph 81/172
+Running dot for graph 82/172
+Running dot for graph 83/172
+Running dot for graph 84/172
+Running dot for graph 85/172
+Running dot for graph 86/172
+Running dot for graph 87/172
+Running dot for graph 88/172
+Running dot for graph 89/172
+Running dot for graph 90/172
+Running dot for graph 91/172
+Running dot for graph 92/172
+Running dot for graph 93/172
+Running dot for graph 94/172
+Running dot for graph 95/172
+Running dot for graph 96/172
+Running dot for graph 97/172
+Running dot for graph 98/172
+Running dot for graph 99/172
+Running dot for graph 100/172
+Running dot for graph 101/172
+Running dot for graph 102/172
+Running dot for graph 103/172
+Running dot for graph 104/172
+Running dot for graph 105/172
+Running dot for graph 106/172
+Running dot for graph 107/172
+Running dot for graph 108/172
+Running dot for graph 109/172
+Running dot for graph 110/172
+Running dot for graph 111/172
+Running dot for graph 112/172
+Running dot for graph 113/172
+Running dot for graph 114/172
+Running dot for graph 115/172
+Running dot for graph 116/172
+Running dot for graph 117/172
+Running dot for graph 118/172
+Running dot for graph 119/172
+Running dot for graph 120/172
+Running dot for graph 121/172
+Running dot for graph 122/172
+Running dot for graph 123/172
+Running dot for graph 124/172
+Running dot for graph 125/172
+Running dot for graph 126/172
+Running dot for graph 127/172
+Running dot for graph 128/172
+Running dot for graph 129/172
+Running dot for graph 130/172
+Running dot for graph 131/172
+Running dot for graph 132/172
+Running dot for graph 133/172
+Running dot for graph 134/172
+Running dot for graph 135/172
+Running dot for graph 136/172
+Running dot for graph 137/172
+Running dot for graph 138/172
+Running dot for graph 139/172
+Running dot for graph 140/172
+Running dot for graph 141/172
+Running dot for graph 142/172
+Running dot for graph 143/172
+Running dot for graph 144/172
+Running dot for graph 145/172
+Running dot for graph 146/172
+Running dot for graph 147/172
+Running dot for graph 148/172
+Running dot for graph 149/172
+Running dot for graph 150/172
+Running dot for graph 151/172
+Running dot for graph 152/172
+Running dot for graph 153/172
+Running dot for graph 154/172
+Running dot for graph 155/172
+Running dot for graph 156/172
+Running dot for graph 157/172
+Running dot for graph 158/172
+Running dot for graph 159/172
+Running dot for graph 160/172
+Running dot for graph 161/172
+Running dot for graph 162/172
+Running dot for graph 163/172
+Running dot for graph 164/172
+Running dot for graph 165/172
+Running dot for graph 166/172
+Running dot for graph 167/172
+Running dot for graph 168/172
+Running dot for graph 169/172
+Running dot for graph 170/172
+Running dot for graph 171/172
+Running dot for graph 172/172
+Patching output file 1/249
+Patching output file 2/249
+Patching output file 3/249
+Patching output file 4/249
+Patching output file 5/249
+Patching output file 6/249
+Patching output file 7/249
+Patching output file 8/249
+Patching output file 9/249
+Patching output file 10/249
+Patching output file 11/249
+Patching output file 12/249
+Patching output file 13/249
+Patching output file 14/249
+Patching output file 15/249
+Patching output file 16/249
+Patching output file 17/249
+Patching output file 18/249
+Patching output file 19/249
+Patching output file 20/249
+Patching output file 21/249
+Patching output file 22/249
+Patching output file 23/249
+Patching output file 24/249
+Patching output file 25/249
+Patching output file 26/249
+Patching output file 27/249
+Patching output file 28/249
+Patching output file 29/249
+Patching output file 30/249
+Patching output file 31/249
+Patching output file 32/249
+Patching output file 33/249
+Patching output file 34/249
+Patching output file 35/249
+Patching output file 36/249
+Patching output file 37/249
+Patching output file 38/249
+Patching output file 39/249
+Patching output file 40/249
+Patching output file 41/249
+Patching output file 42/249
+Patching output file 43/249
+Patching output file 44/249
+Patching output file 45/249
+Patching output file 46/249
+Patching output file 47/249
+Patching output file 48/249
+Patching output file 49/249
+Patching output file 50/249
+Patching output file 51/249
+Patching output file 52/249
+Patching output file 53/249
+Patching output file 54/249
+Patching output file 55/249
+Patching output file 56/249
+Patching output file 57/249
+Patching output file 58/249
+Patching output file 59/249
+Patching output file 60/249
+Patching output file 61/249
+Patching output file 62/249
+Patching output file 63/249
+Patching output file 64/249
+Patching output file 65/249
+Patching output file 66/249
+Patching output file 67/249
+Patching output file 68/249
+Patching output file 69/249
+Patching output file 70/249
+Patching output file 71/249
+Patching output file 72/249
+Patching output file 73/249
+Patching output file 74/249
+Patching output file 75/249
+Patching output file 76/249
+Patching output file 77/249
+Patching output file 78/249
+Patching output file 79/249
+Patching output file 80/249
+Patching output file 81/249
+Patching output file 82/249
+Patching output file 83/249
+Patching output file 84/249
+Patching output file 85/249
+Patching output file 86/249
+Patching output file 87/249
+Patching output file 88/249
+Patching output file 89/249
+Patching output file 90/249
+Patching output file 91/249
+Patching output file 92/249
+Patching output file 93/249
+Patching output file 94/249
+Patching output file 95/249
+Patching output file 96/249
+Patching output file 97/249
+Patching output file 98/249
+Patching output file 99/249
+Patching output file 100/249
+Patching output file 101/249
+Patching output file 102/249
+Patching output file 103/249
+Patching output file 104/249
+Patching output file 105/249
+Patching output file 106/249
+Patching output file 107/249
+Patching output file 108/249
+Patching output file 109/249
+Patching output file 110/249
+Patching output file 111/249
+Patching output file 112/249
+Patching output file 113/249
+Patching output file 114/249
+Patching output file 115/249
+Patching output file 116/249
+Patching output file 117/249
+Patching output file 118/249
+Patching output file 119/249
+Patching output file 120/249
+Patching output file 121/249
+Patching output file 122/249
+Patching output file 123/249
+Patching output file 124/249
+Patching output file 125/249
+Patching output file 126/249
+Patching output file 127/249
+Patching output file 128/249
+Patching output file 129/249
+Patching output file 130/249
+Patching output file 131/249
+Patching output file 132/249
+Patching output file 133/249
+Patching output file 134/249
+Patching output file 135/249
+Patching output file 136/249
+Patching output file 137/249
+Patching output file 138/249
+Patching output file 139/249
+Patching output file 140/249
+Patching output file 141/249
+Patching output file 142/249
+Patching output file 143/249
+Patching output file 144/249
+Patching output file 145/249
+Patching output file 146/249
+Patching output file 147/249
+Patching output file 148/249
+Patching output file 149/249
+Patching output file 150/249
+Patching output file 151/249
+Patching output file 152/249
+Patching output file 153/249
+Patching output file 154/249
+Patching output file 155/249
+Patching output file 156/249
+Patching output file 157/249
+Patching output file 158/249
+Patching output file 159/249
+Patching output file 160/249
+Patching output file 161/249
+Patching output file 162/249
+Patching output file 163/249
+Patching output file 164/249
+Patching output file 165/249
+Patching output file 166/249
+Patching output file 167/249
+Patching output file 168/249
+Patching output file 169/249
+Patching output file 170/249
+Patching output file 171/249
+Patching output file 172/249
+Patching output file 173/249
+Patching output file 174/249
+Patching output file 175/249
+Patching output file 176/249
+Patching output file 177/249
+Patching output file 178/249
+Patching output file 179/249
+Patching output file 180/249
+Patching output file 181/249
+Patching output file 182/249
+Patching output file 183/249
+Patching output file 184/249
+Patching output file 185/249
+Patching output file 186/249
+Patching output file 187/249
+Patching output file 188/249
+Patching output file 189/249
+Patching output file 190/249
+Patching output file 191/249
+Patching output file 192/249
+Patching output file 193/249
+Patching output file 194/249
+Patching output file 195/249
+Patching output file 196/249
+Patching output file 197/249
+Patching output file 198/249
+Patching output file 199/249
+Patching output file 200/249
+Patching output file 201/249
+Patching output file 202/249
+Patching output file 203/249
+Patching output file 204/249
+Patching output file 205/249
+Patching output file 206/249
+Patching output file 207/249
+Patching output file 208/249
+Patching output file 209/249
+Patching output file 210/249
+Patching output file 211/249
+Patching output file 212/249
+Patching output file 213/249
+Patching output file 214/249
+Patching output file 215/249
+Patching output file 216/249
+Patching output file 217/249
+Patching output file 218/249
+Patching output file 219/249
+Patching output file 220/249
+Patching output file 221/249
+Patching output file 222/249
+Patching output file 223/249
+Patching output file 224/249
+Patching output file 225/249
+Patching output file 226/249
+Patching output file 227/249
+Patching output file 228/249
+Patching output file 229/249
+Patching output file 230/249
+Patching output file 231/249
+Patching output file 232/249
+Patching output file 233/249
+Patching output file 234/249
+Patching output file 235/249
+Patching output file 236/249
+Patching output file 237/249
+Patching output file 238/249
+Patching output file 239/249
+Patching output file 240/249
+Patching output file 241/249
+Patching output file 242/249
+Patching output file 243/249
+Patching output file 244/249
+Patching output file 245/249
+Patching output file 246/249
+Patching output file 247/249
+Patching output file 248/249
+Patching output file 249/249
+lookup cache used 1533/65536 hits=22173 misses=1578
 finished...

@@ -8,6 +8,7 @@ var hierarchy =
         [ "GraphicsAnimation", "class_graphics_animation.html", [
           [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", null ]
         ] ],
+        [ "GraphicsImage", "class_graphics_image.html", null ],
         [ "GraphicsPoint", "class_graphics_point.html", null ],
         [ "GraphicsRectangle", "class_graphics_rectangle.html", null ],
         [ "GraphicsShape", "class_graphics_shape.html", [
@@ -23,6 +24,7 @@ var hierarchy =
         [ "Widget", "class_widget.html", [
           [ "Button", "class_button.html", null ],
           [ "ConfigItem", "class_config_item.html", [
+            [ "ConfigImage", "class_config_image.html", null ],
             [ "ConfigPolygon", "class_config_polygon.html", null ],
             [ "ConfigText", "class_config_text.html", null ]
           ] ],
