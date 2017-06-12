@@ -23,9 +23,16 @@ public:
 
 protected:
   void loadData();
+  void meHandleEvent(const Event &event);
 
 private:
-  std::shared_ptr<SpinBox> m_spinBoxNbPoints;
+  void updatePoints();
+  Ptr newPoint();
+  void popPoint();
+
+private:
+  std::vector<Ptr> m_points;
+  std::shared_ptr<SpinBox> m_spinBoxNbPoints, m_spinBoxMakeOnClick;
 };
 
 #endif
