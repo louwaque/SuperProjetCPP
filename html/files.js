@@ -1,5 +1,6 @@
 var files =
 [
+    [ "_graphics_item_8hpp.js", "__graphics__item__8hpp_8js_source.html", null ],
     [ "_point_8hpp.js", "__point__8hpp_8js_source.html", null ],
     [ "all_0.js", "all__0_8js_source.html", null ],
     [ "all_1.js", "all__1_8js_source.html", null ],
@@ -25,7 +26,9 @@ var files =
     [ "all_f.js", "all__f_8js_source.html", null ],
     [ "annotated.js", "annotated_8js_source.html", null ],
     [ "Application.cpp", "_application_8cpp_source.html", null ],
-    [ "Application.hpp", "_application_8hpp_source.html", null ],
+    [ "Application.hpp", "_application_8hpp.html", [
+      [ "Application", "class_application.html", "class_application" ]
+    ] ],
     [ "Button.cpp", "_button_8cpp_source.html", null ],
     [ "Button.hpp", "_button_8hpp.html", null ],
     [ "Canvas.cpp", "_canvas_8cpp_source.html", null ],
@@ -117,6 +120,7 @@ var files =
     [ "files_6.js", "files__6_8js_source.html", null ],
     [ "files_7.js", "files__7_8js_source.html", null ],
     [ "files_8.js", "files__8_8js_source.html", null ],
+    [ "files_9.js", "files__9_8js_source.html", null ],
     [ "Font.cpp", "_font_8cpp_source.html", null ],
     [ "Font.hpp", "_font_8hpp_source.html", null ],
     [ "functions_0.js", "functions__0_8js_source.html", null ],
@@ -147,7 +151,7 @@ var files =
     [ "GraphicsFactory.cpp", "_graphics_factory_8cpp_source.html", null ],
     [ "GraphicsFactory.hpp", "_graphics_factory_8hpp_source.html", null ],
     [ "GraphicsItem.cpp", "_graphics_item_8cpp_source.html", null ],
-    [ "GraphicsItem.hpp", "_graphics_item_8hpp_source.html", null ],
+    [ "GraphicsItem.hpp", "_graphics_item_8hpp.html", "_graphics_item_8hpp" ],
     [ "GraphicsLine.cpp", "_graphics_line_8cpp_source.html", null ],
     [ "GraphicsLine.hpp", "_graphics_line_8hpp_source.html", null ],
     [ "GraphicsPoint.cpp", "_graphics_point_8cpp_source.html", null ],
