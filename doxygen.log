@@ -2073,10 +2073,11 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:37: warning: Member push_back(const std::string &label, std::shared_ptr< Widget > widget) (function) of class Layout is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:38: warning: Member pop_back() (function) of class Layout is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:39: warning: Member size() const  (function) of class Layout is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:40: warning: Member clear() (function) of class Layout is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:42: warning: Member operator[](const size_t index) (function) of class Layout is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:44: warning: Member minimumWidth() const  (function) of class Layout is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:45: warning: Member minimumHeight() const  (function) of class Layout is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:40: warning: Member erase(const std::shared_ptr< Widget > &widget) (function) of class Layout is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:41: warning: Member clear() (function) of class Layout is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:43: warning: Member operator[](const size_t index) (function) of class Layout is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:45: warning: Member minimumWidth() const  (function) of class Layout is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Layout.hpp:46: warning: Member minimumHeight() const  (function) of class Layout is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:27: warning: Member Widget(const Id &parent=boost::uuids::nil_generator()()) (function) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:28: warning: Member Widget(const Ptr &parent) (function) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:29: warning: Member Widget(const GraphicsItem *parent) (function) of class Widget is not documented.
@@ -2950,5 +2951,5 @@ Patching output file 246/249
 Patching output file 247/249
 Patching output file 248/249
 Patching output file 249/249
-lookup cache used 1562/65536 hits=22831 misses=1611
+lookup cache used 1564/65536 hits=22874 misses=1613
 finished...

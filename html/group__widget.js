@@ -50,6 +50,7 @@ var group__widget =
       [ "Layout", "class_layout.html#a14b850194a6ae1e1b6919b4c2b6d04aa", null ],
       [ "Layout", "class_layout.html#a171272129100f517d96362baa54a561d", null ],
       [ "clear", "class_layout.html#a5a9bbebf49d4cc9112e3947af6c6de54", null ],
+      [ "erase", "class_layout.html#a0561ddc97664a3f1e3dd72e950a5b64d", null ],
       [ "minimumHeight", "class_layout.html#a42cd29a2ddc880ce716455727461b85c", null ],
       [ "minimumWidth", "class_layout.html#a011d32341d060cc7f4e117700ba4361a", null ],
       [ "operator[]", "class_layout.html#af83239870feff2a994b9b1546a0fd375", null ],
