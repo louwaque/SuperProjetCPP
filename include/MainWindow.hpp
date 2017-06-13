@@ -22,7 +22,7 @@ private:
 
 private:
   GraphicsItem::Ptr m_scene;
-  std::shared_ptr<Layout> m_layout;
+  std::shared_ptr<Layout> m_layout, m_layoutConfig;
   std::shared_ptr<Widget> m_config;
   GraphicsItem *currentItem;
 };

@@ -9,9 +9,18 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   m_layout = make<Layout>(Layout::Vertical, this);
   m_layout->setSpacing(5);
 
+  auto titleLayout = make<Layout>(Layout::Horizontal);
+  m_layout->push_back(titleLayout);
+
   auto title = make<Label>("Forme");
   title->setAlign(Label::LabelAlign::Center);
-  m_layout->push_back(title);
+  titleLayout->push_back(title);
+
+  auto m_buttonClose = make<Button>("x", this);
+  titleLayout->push_back(m_buttonClose);
+  m_buttonClose->clicked([this]() {
+    setParent();
+  });
 
   m_spinBoxPosX = make<SpinBox>();
   m_layout->push_back("X: ", m_spinBoxPosX);

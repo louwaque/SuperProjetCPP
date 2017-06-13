@@ -46,7 +46,7 @@ bool Toy<ConfigHelper>::alreadyOpen() const
 
   for (int i = 0; i < m_layout->size(); ++i)
     if (*(*m_layout)[i] == *m_config)
-      return true;
+      return m_config->parentId() == (*m_layout)[i]->id();
 
   return false;
 }

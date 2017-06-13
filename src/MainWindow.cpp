@@ -18,7 +18,11 @@ MainWindow::MainWindow()
   m_layout->setSpacing(10);
   m_layout->position().set(5, 5);
 
-  auto tool = GraphicsItem::make<ToolsWindow>();
+  m_layoutConfig = GraphicsItem::make<Layout>(m_scene);
+  m_layoutConfig->position().setRelativeX(5);
+  m_layoutConfig->setSpacing(5);
+
+  auto tool = GraphicsItem::make<ToolsWindow>(m_layoutConfig);
   m_layout->push_back(tool);
 
   organize();
@@ -48,6 +52,9 @@ void MainWindow::handleEvent(const Event &event)
 
 void MainWindow::organize()
 {
-  m_layout->setWidth(width());
-  //m_layout->setHeight(height()*0.65);
+  //m_layout->setWidth(width() - m_layout->position().x());
+  // ne marche pas bien, surement un prb de Layout...
+  
+  m_layoutConfig->setWidth(std::min(width()*0.30, 400.0));
+  m_layoutConfig->position().setRelativeY(m_layout->height() + 25);
 }

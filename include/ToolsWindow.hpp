@@ -19,7 +19,7 @@
 class ToolsWindow : public Widget
 {
 public:
-  ToolsWindow(GraphicsItem *parent = nullptr);
+  ToolsWindow(const std::shared_ptr<Layout> &layoutConfig, GraphicsItem *parent = nullptr);
 
   size_t minimumWidth() const;
   size_t minimumHeight() const;

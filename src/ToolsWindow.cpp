@@ -3,9 +3,10 @@
 #include <Label.hpp>
 #include <Button.hpp>
 
-ToolsWindow::ToolsWindow(GraphicsItem *parent)
+ToolsWindow::ToolsWindow(const std::shared_ptr<Layout> &layoutConfig, GraphicsItem *parent)
 : Widget(parent),
-  m_layout(nullptr)
+  m_layout(nullptr),
+  m_layoutConfig(layoutConfig)
 {
   m_layout = make<Layout>(this);
   m_layout->setSpacing(5);
@@ -13,10 +14,6 @@ ToolsWindow::ToolsWindow(GraphicsItem *parent)
   auto m_layoutTool = make<Layout>(Layout::Horizontal);
   m_layoutTool->setSpacing(5);
   m_layout->push_back(m_layoutTool);
-
-  m_layoutConfig = make<Layout>(Layout::Vertical);
-  m_layoutConfig->setSpacing(5);
-  m_layout->push_back(m_layoutConfig);
 
   auto label = make<Label>("Créer une forme : ");
   label->setAlign(Label::LabelAlign::Center);
