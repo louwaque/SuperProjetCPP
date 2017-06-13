@@ -168,7 +168,7 @@ var NAVTREEINDEX2 =
 "class_spin_box.html#aeb3637d30bd15c21ac9450d2d2bdd38c":[3,0,35,13],
 "class_spin_box.html#aff8a1d8980d86c57189290536665e015":[3,0,35,1],
 "class_tools_window.html":[3,0,36],
-"class_tools_window.html#a4074493f725fd942e5830561db6c084f":[3,0,36,0],
+"class_tools_window.html#a23a549cbc5954fc68b623183dd81c797":[3,0,36,0],
 "class_tools_window.html#ae8d8bfd1a88d4d840515a2526993b98d":[3,0,36,2],
 "class_tools_window.html#af9304beb9a98844e6a8a4229edeab895":[3,0,36,1],
 "class_toy.html":[3,0,37],
