@@ -9,6 +9,7 @@
  * \ingroup widget
  */
 
+//FIXME quand un enfant change de parent il faut l'enlever
 class Layout : public Widget
 {
 public:
