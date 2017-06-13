@@ -2,7 +2,9 @@
 
 GraphicsPolygon::GraphicsPolygon(const Id &parent)
 : GraphicsShape(parent)
-{}
+{
+  m_points.emplace_back(&position());
+}
 
 GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
 : GraphicsPolygon()
@@ -24,18 +26,17 @@ Point &GraphicsPolygon::newPoint()
 
 void GraphicsPolygon::popPoint()
 {
-  if (m_points.size() > 2)
+  if (m_points.size() > 1)
     m_points.pop_back();
 }
 
 void GraphicsPolygon::setNbPoints(const size_t nb)
 {
-  if (nb <= 1)
-    return;
+  if (nb > 0) {
+    while (nb > nbPoints())
+      newPoint();
 
-  while (nb > nbPoints())
-    newPoint();
-
-  while (nbPoints() > nb)
-    popPoint();
+    while (nbPoints() > nb)
+      popPoint();
+  }
 }
