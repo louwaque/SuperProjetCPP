@@ -11,6 +11,8 @@ ConfigPolygon::ConfigPolygon(GraphicsItem *parent)
   m_layout->push_back(title);
 
   m_spinBoxNbPoints = make<SpinBox>();
+  m_spinBoxNbPoints->setMinimumValue(1);
+  m_spinBoxNbPoints->setMaximumValue(200);
   m_layout->push_back("Nombre de sommets: ", m_spinBoxNbPoints);
   m_spinBoxNbPoints->valueChanged(boost::bind(&ConfigPolygon::updatePoints, this));
 
@@ -44,7 +46,7 @@ void ConfigPolygon::updatePoints()
   if (target) {
     const size_t nb = m_spinBoxNbPoints->value();
 
-    if (nb > 1) {
+    if (nb > 0 && nb != target->nbPoints()) {
       while (nb > target->nbPoints())
         newPoint();
 
