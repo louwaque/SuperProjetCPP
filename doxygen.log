@@ -758,8 +758,8 @@ Generating code for file Pixel.cpp...
 Generating code for file Pixel.hpp...
 Generating code for file Point.cpp...
 Generating code for file Point.hpp...
-Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:229: warning: Member operator==(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:230: warning: Member operator!=(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
+Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:225: warning: Member operator==(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:226: warning: Member operator!=(const GraphicsItem &l, const GraphicsItem &r) (function) of file GraphicsItem.hpp is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: argument 'l' of command @param is not found in the argument list of operator+(const Point &p, const int number)
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Point.hpp:276: warning: The following parameters of operator+(const Point &p, const int number) are not documented:
   parameter 'p'
@@ -822,11 +822,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Button.hpp:53: warning: Member meHandleEvent(const Event &event) (function) of class Button is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -837,7 +838,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Canvas.hpp:16: warning: Member TextAlign (typedef) of class Canvas is not documented.
@@ -919,12 +920,13 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigImage.hpp:25: warning: Member loadData() (function) of class ConfigImage is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:35: warning: Member meUpdate(const unsigned int time) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -935,7 +937,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:39: warning: Member m_target (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:40: warning: Member m_layout (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
@@ -982,12 +984,13 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:35: warning: Member meUpdate(const unsigned int time) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:36: warning: Member loadData() (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:39: warning: Member m_target (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:40: warning: Member m_layout (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
@@ -1002,7 +1005,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigPolygon.hpp:22: warning: Member ConfigPolygon(GraphicsItem *parent=nullptr) (function) of class ConfigPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:26: warning: Member ConfigItem(GraphicsItem *parent=nullptr) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:28: warning: Member target() const  (function) of class ConfigItem is not documented.
@@ -1046,12 +1049,13 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigPolygon.hpp:25: warning: Member loadData() (function) of class ConfigPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigPolygon.hpp:26: warning: Member meHandleEvent(const Event &event) (function) of class ConfigPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:35: warning: Member meUpdate(const unsigned int time) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -1062,7 +1066,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:39: warning: Member m_target (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:40: warning: Member m_layout (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
@@ -1110,12 +1114,13 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigText.hpp:25: warning: Member loadData() (function) of class ConfigText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:35: warning: Member meUpdate(const unsigned int time) (function) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -1126,7 +1131,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:39: warning: Member m_target (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ConfigItem.hpp:40: warning: Member m_layout (variable) of class ConfigItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
@@ -1175,7 +1180,8 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1183,11 +1189,11 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsBlinkAnimation.hpp:15: warning: Member GraphicsBlinkAnimation(const Ptr &parent=nullptr) (function) of class GraphicsBlinkAnimation is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsBlinkAnimation.hpp:16: warning: Member GraphicsBlinkAnimation(const Color &color, const Ptr &parent=nullptr) (function) of class GraphicsBlinkAnimation is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsBlinkAnimation.hpp:18: warning: Member blinkFrequency() const  (function) of class GraphicsBlinkAnimation is not documented.
@@ -1229,11 +1235,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsBlinkAnimation.hpp:30: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsBlinkAnimation is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1241,7 +1248,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsCircle.hpp:15: warning: Member GraphicsCircle(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsCircle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsCircle.hpp:16: warning: Member GraphicsCircle(const Ptr &parent) (function) of class GraphicsCircle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsCircle.hpp:17: warning: Member GraphicsCircle(const GraphicsItem *parent) (function) of class GraphicsCircle is not documented.
@@ -1283,11 +1290,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsCircle.hpp:35: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsCircle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1295,7 +1303,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsEllipse.hpp:15: warning: Member GraphicsEllipse(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsEllipse.hpp:16: warning: Member GraphicsEllipse(const Ptr &parent) (function) of class GraphicsEllipse is not documented.
@@ -1337,11 +1345,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsEllipse.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsEllipse is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1349,7 +1358,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:11: warning: Member circle(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/GraphicsFactory.hpp:12: warning: Member ellipse(std::shared_ptr< Layout > layout) (function) of class GraphicsFactory is not documented.
@@ -1395,11 +1404,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:24: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsImage is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsImage.hpp:25: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsImage is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1407,7 +1417,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1443,14 +1453,15 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsLine.hpp:15: warning: Member GraphicsLine(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsLine.hpp:16: warning: Member GraphicsLine(const Ptr &parent) (function) of class GraphicsLine is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsLine.hpp:17: warning: Member GraphicsLine(const GraphicsItem *parent) (function) of class GraphicsLine is not documented.
@@ -1492,7 +1503,8 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1500,11 +1512,11 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPoint.hpp:15: warning: Member GraphicsPoint(const Ptr &parent=nullptr) (function) of class GraphicsPoint is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPoint.hpp:16: warning: Member GraphicsPoint(const Point &pos, const Ptr &parent=nullptr) (function) of class GraphicsPoint is not documented.
@@ -1540,11 +1552,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPoint.hpp:33: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsPoint is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPoint.hpp:34: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsPoint is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPoint.hpp:35: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsPoint is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1552,7 +1565,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPolygon.hpp:16: warning: Member GraphicsPolygon(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPolygon.hpp:17: warning: Member GraphicsPolygon(const Ptr &parent) (function) of class GraphicsPolygon is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsPolygon.hpp:18: warning: Member GraphicsPolygon(const GraphicsItem *parent) (function) of class GraphicsPolygon is not documented.
@@ -1594,7 +1607,8 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1602,11 +1616,11 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsRectangle.hpp:34: warning: Member GraphicsRectangle(const Ptr &parent) (function) of class GraphicsRectangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsRectangle.hpp:35: warning: Member GraphicsRectangle(const GraphicsItem *parent) (function) of class GraphicsRectangle is not documented.
@@ -1647,11 +1661,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsRectangle.hpp:61: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsRectangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsRectangle.hpp:62: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsRectangle is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1659,7 +1674,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:24: warning: Member GraphicsShape(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:25: warning: Member GraphicsShape(const Ptr &parent) (function) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:26: warning: Member GraphicsShape(const GraphicsItem *parent) (function) of class GraphicsShape is not documented.
@@ -1693,11 +1708,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
@@ -1706,7 +1722,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsSquare.hpp:16: warning: Member GraphicsSquare(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsSquare is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsSquare.hpp:17: warning: Member GraphicsSquare(const Ptr &parent) (function) of class GraphicsSquare is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsSquare.hpp:18: warning: Member GraphicsSquare(const GraphicsItem *parent) (function) of class GraphicsSquare is not documented.
@@ -1744,11 +1760,12 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsSquare.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsSquare is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsSquare.hpp:32: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsSquare is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1756,7 +1773,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsText.hpp:33: warning: Member GraphicsText(const Ptr &parent) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsText.hpp:34: warning: Member GraphicsText(const GraphicsItem *parent) (function) of class GraphicsText is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsText.hpp:44: warning: Member GraphicsText(const std::string &text, const Ptr &parent) (function) of class GraphicsText is not documented.
@@ -1794,10 +1811,11 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsText.hpp:83: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsText is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1805,7 +1823,7 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsTriangle.hpp:23: warning: Member GraphicsTriangle(const Id &parent=boost::uuids::nil_generator()()) (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsTriangle.hpp:24: warning: Member GraphicsTriangle(const Ptr &parent) (function) of class GraphicsTriangle is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsTriangle.hpp:25: warning: Member GraphicsTriangle(const GraphicsItem *parent) (function) of class GraphicsTriangle is not documented.
@@ -1842,7 +1860,8 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -1850,11 +1869,11 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:31: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsShape is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsShape.hpp:34: warning: Member m_points (variable) of class GraphicsShape is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/GroupPoints.hpp:16: warning: Member origin() const  (function) of class GroupPoints is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/GroupPoints.hpp:17: warning: Member setOrigin(const Point *origin=nullptr) (function) of class GroupPoints is not documented.
@@ -1948,14 +1967,15 @@ Generating code fo/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 r file README.md...
@@ -2115,14 +2135,15 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/LineEdit.hpp:17: warning: Member LineEdit(const Id &parent=boost::uuids::nil_generator()()) (function) of class LineEdit is not documented.
@@ -2171,11 +2192,12 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/LineEdit.hpp:39: warning: Member meUpdate(const unsigned int time) (function) of class LineEdit is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/LineEdit.hpp:40: warning: Member meHandleEvent(const Event &event) (function) of class LineEdit is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -2186,7 +2208,7 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/MainWindow.hpp:14: warning: Member drawEvent() (function) of class MainWindow is not documented.
@@ -2278,7 +2300,8 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -2289,11 +2312,11 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/ToolsWindow.hpp:22: warning: Member ToolsWindow(GraphicsItem *parent=nullptr) (function) of class ToolsWindow is not documented.
@@ -2336,7 +2359,8 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -2347,11 +2371,11 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp:12: warning: Member Toy(Ptr target, Ptr anchor, std::shared_ptr< Layout > layout, const Ptr parent=nullptr) (function) of class Toy is not documented.
@@ -2386,11 +2410,12 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/include/Toy.hpp:17: warning: Member meUpdate(const unsigned int time) (function) of class Toy is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:162: warning: Member meIsOver(const Point &absoluteP) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:48: warning: Member GraphicsTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:66: warning: Member SearchTypes (enumeration) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:44: warning: Member Id (typedef) of class GraphicsItem is not documented.
@@ -2398,7 +2423,7 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:46: warning: Member GraphicsItemList (typedef) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:23: warning: Member signal_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:24: warning: Member slot_t (typedef) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:25: warning: Member co_t (typedef) of class Widget is not documented.
@@ -2446,16 +2471,17 @@ Generating docs for c/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widge
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:145: warning: Member handleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:147: warning: Member isOver(const Point &p) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:151: warning: Member hasFocus() const  (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:190: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:153: warning: Member ptr() (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/src/GraphicsItem.cpp:193: warning: Member children(const SearchTypes option) const  (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:54: warning: Member meIsOver(const Point &absoluteP) (function) of class Widget is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:157: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:158: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:159: warning: Member meDraw(Canvas *canvas) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:160: warning: Member meUpdate(const unsigned int time) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:161: warning: Member meHandleEvent(const Event &event) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:57: warning: Member m_minimumWidthChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/widget/include/Widget.hpp:58: warning: Member m_minimumHeightChanged (variable) of class Widget is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:149: warning: Member focusItem() (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:150: warning: Member setFocusItem(GraphicsItem *item) (function) of class GraphicsItem is not documented.
-/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:154: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
+/home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/graphics/include/GraphicsItem.hpp:156: warning: Member make(Args &&...args) (function) of class GraphicsItem is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:16: warning: Member Window(const size_t width=400, const size_t height=400, const std::string &title="") (function) of class Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:19: warning: Member doubleBuffer() const  (function) of class Window is not documented.
 /home/travis/build/L0L022/SuperProjetCPP/super-ez-lib/core/include/Window.hpp:21: warning: Member setDoubleBuffer(const bool active=true) (function) of class Window is not documented.
@@ -2951,5 +2977,5 @@ Patching output file 246/249
 Patching output file 247/249
 Patching output file 248/249
 Patching output file 249/249
-lookup cache used 1564/65536 hits=22874 misses=1613
+lookup cache used 1568/65536 hits=23117 misses=1617
 finished...

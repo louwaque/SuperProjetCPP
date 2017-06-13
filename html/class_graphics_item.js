@@ -47,6 +47,7 @@ var class_graphics_item =
     [ "parentId", "class_graphics_item.html#a22c24f62b161a5df8ed02590b137b01b", null ],
     [ "position", "class_graphics_item.html#a01a34e70b5ac17f7c6f50bcfe4301ed6", null ],
     [ "position", "class_graphics_item.html#a8802f819c79ab12ed3b719af2b8afcbd", null ],
+    [ "ptr", "class_graphics_item.html#a9dd2dab85cac24cb16088af436146329", null ],
     [ "setColor", "class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3", null ],
     [ "setEnable", "class_graphics_item.html#a003ef0acc88943711b737b9018c714b5", null ],
     [ "setFill", "class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7", null ],
