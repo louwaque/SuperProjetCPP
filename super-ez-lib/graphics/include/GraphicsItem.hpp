@@ -150,6 +150,8 @@ public:
   inline static void setFocusItem(GraphicsItem *item) { m_focusItem = item; }
   inline bool hasFocus() const { return m_focusItem == this; };
 
+  Ptr ptr();
+
   template<class T, class... Args>
   static std::shared_ptr<T> make(Args&&... args);
 
@@ -217,13 +219,7 @@ template<class T, class... Args>
 std::shared_ptr<T> GraphicsItem::make(Args&&... args)
 {
   T * p = new T(std::forward<Args>(args)...);
-  std::shared_ptr<T> ptr;
-  try {
-    ptr = std::dynamic_pointer_cast<T>(p->shared_from_this());
-  } catch(std::bad_weak_ptr& e) {
-    ptr = std::shared_ptr<T>(p);
-  }
-  return ptr;
+  return std::dynamic_pointer_cast<T>(p->ptr());
 }
 
 bool operator==(const GraphicsItem &l, const GraphicsItem &r);

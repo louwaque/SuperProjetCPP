@@ -91,13 +91,7 @@ void GraphicsItem::setParent(const GraphicsItem *parent)
   if (parent) {
     GraphicsItem * p = const_cast<GraphicsItem*>(parent);
     m_parent = p;
-
-    try {
-      p->m_children.emplace_back(shared_from_this());
-    } catch(std::bad_weak_ptr& e) {
-      p->m_children.emplace_back(this);
-    }
-
+    p->m_children.emplace_back(ptr());
     p->sortChildren();
     m_position.setOrigin(&p->position());
   }
@@ -174,6 +168,15 @@ bool GraphicsItem::isOver(const Point &p)
       result |= ptr->isOver(p);
 
   return result || meIsOver(p);
+}
+
+GraphicsItem::Ptr GraphicsItem::ptr()
+{
+  try {
+    return shared_from_this();
+  } catch(std::bad_weak_ptr& e) {
+    return std::shared_ptr<GraphicsItem>(this);
+  }
 }
 
 void GraphicsItem::sortChildren()
