@@ -37,16 +37,16 @@ install:
     if [ -z "$(ls -A cmake)" ]; then
       CMAKE_URL="https://cmake.org/files/v3.8/cmake-3.8.2-Linux-x86_64.tar.gz"
       mkdir cmake && travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
-      export PATH=${DEPS_DIR}/cmake/bin:${PATH}
     fi
+    export PATH=${DEPS_DIR}/cmake/bin:${PATH}
   - cmake --version
   - |
     if [ -z "$(ls -A doxygen)" ]; then
       DOXYGEN_URL="http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.11.linux.bin.tar.gz"
       mkdir doxygen && travis_retry wget --quiet -O - ${DOXYGEN_URL} | tar --strip-components=1 -xz -C doxygen
-      export PATH=${DEPS_DIR}/doxygen/bin:${PATH}
-      doxygen --version
     fi
+    export PATH=${DEPS_DIR}/doxygen/bin:${PATH}
+    doxygen --version
   - echo -en 'travis_fold:start:boost\\r'
   - |
     if [ -z "$(ls -A boost-install)" ]; then
