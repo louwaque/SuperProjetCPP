@@ -2,6 +2,7 @@
 #define GROUPPOINTS_HPP
 
 #include <functional>
+#include <boost/core/noncopyable.hpp>
 
 #include "Point.hpp"
 class Point;
@@ -15,7 +16,8 @@ typedef std::vector<std::reference_wrapper<Point>> Points;
  * \brief Représente un groupe de points
  */
 
-class GroupPoints {
+class GroupPoints : private boost::noncopyable
+{
 public:
   GroupPoints();
 

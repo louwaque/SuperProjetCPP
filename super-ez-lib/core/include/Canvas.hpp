@@ -2,6 +2,7 @@
 #define CANVAS_HPP
 
 #include <boost/locale.hpp>
+#include <boost/core/noncopyable.hpp>
 #include <ez-lib/ez-draw++.hpp>
 #include "Color.hpp"
 #include "Point.hpp"
@@ -16,7 +17,7 @@ class Window;
  * \brief Permet de dessiner dans une fenêtre
  */
 
-class Canvas
+class Canvas : private boost::noncopyable
 {
 public:
   typedef EZAlign TextAlign;
