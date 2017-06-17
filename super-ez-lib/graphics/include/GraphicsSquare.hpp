@@ -23,10 +23,6 @@ public:
   inline const Point &bottomRight() const { return m_bottomRight; }
   inline Point &bottomRight() { return m_bottomRight; }
 
-  GraphicsTypes type() const {
-    return SquareType;
-  }
-
 protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);

@@ -21,10 +21,6 @@ public:
 
   inline const Point &second() const { return m_points[1]; }
   inline Point &second() { return m_points[1]; }
-
-  GraphicsTypes type() const {
-    return LineType;
-  }
 };
 
 #endif

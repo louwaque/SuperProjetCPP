@@ -25,8 +25,6 @@ public:
   explicit GraphicsShape(const Ptr &parent);
   explicit GraphicsShape(const GraphicsItem *parent);
 
-  inline GraphicsTypes type() const { return ShapeType; }
-
 protected:
   void meDraw(Canvas *canvas);
 

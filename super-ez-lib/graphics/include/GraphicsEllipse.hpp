@@ -23,10 +23,6 @@ public:
   inline const Point &radius() const { return m_points[1]; }
   inline Point &radius() { return m_points[1]; }
 
-  GraphicsTypes type() const {
-    return EllipseType;
-  }
-
 protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);

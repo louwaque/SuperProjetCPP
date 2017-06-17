@@ -45,24 +45,6 @@ public:
   typedef std::shared_ptr<GraphicsItem> Ptr;
   typedef std::vector<GraphicsItem*> GraphicsItemList;
 
-  enum GraphicsTypes { //mouse movable type ?
-    UndefinedType = 0x0,
-    ItemType = 0x1,
-    PointType = 0x2,
-    TextType = 0x4,
-    ShapeType = 0x6,
-    LineType = 0x8,
-    TriangleType = 0x10,
-    RectangleType = 0x12,
-    PolygonType = 0x14,
-    AnchorType = 0x16,
-    CircleType = 0x18,
-    EllipseType = 0x20,
-    SquareType = 0x22,
-    AnimationType = 0x24,
-    BlinkAnimationType = 0x26
-  };
-
   enum SearchTypes {
     DirectChildren,
     ChildrenRecursively
@@ -71,7 +53,6 @@ public:
   explicit GraphicsItem(const Id &parent = boost::uuids::nil_generator()());
   explicit GraphicsItem(const Ptr &parent);
   explicit GraphicsItem(const GraphicsItem *parent);
-
   virtual ~GraphicsItem();
 
   inline Id id() const { return m_id; }
@@ -81,10 +62,6 @@ public:
   void setParent(const Id &parent = boost::uuids::nil_generator()());
   void setParent(const Ptr &parent);
   void setParent(const GraphicsItem *parent);
-
-  virtual GraphicsTypes type() const {
-    return ItemType;
-  }
 
   template<typename... Types>
   GraphicsItemList children(const SearchTypes option = ChildrenRecursively) const;

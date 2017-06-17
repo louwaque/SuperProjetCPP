@@ -24,8 +24,6 @@ public:
   inline bool becomeInvisible() const { return m_becomeInvisible; }
   inline void setBecomeInvisible(const bool invisible) { m_becomeInvisible = invisible; }
 
-  GraphicsTypes type() const { return BlinkAnimationType; }
-
 protected:
   void meUpdate(const unsigned int time);
 

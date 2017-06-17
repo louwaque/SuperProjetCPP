@@ -23,10 +23,6 @@ public:
 
   inline size_t nbPoints() const { return m_points.size(); }
   void setNbPoints(const size_t nb);
-
-  GraphicsTypes type() const {
-    return PolygonType;
-  }
 };
 
 #endif

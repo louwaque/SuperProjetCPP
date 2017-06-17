@@ -41,8 +41,6 @@ public:
    */
 
   inline Point &third() {  return m_points[2]; }
-
-  inline GraphicsTypes type() const { return TriangleType; }
 };
 
 #endif

@@ -25,10 +25,6 @@ public:
     m_radius = radius;
   }
 
-  GraphicsTypes type() const {
-    return PointType;
-  }
-
 protected:
   void meDraw(Canvas *canvas);
   void meHandleEvent(const Event &event);

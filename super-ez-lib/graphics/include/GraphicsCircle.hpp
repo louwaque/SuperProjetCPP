@@ -27,10 +27,6 @@ public:
   int radius() const;
   void setRadius(const int radius);
 
-  GraphicsTypes type() const {
-    return CircleType;
-  }
-
 protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);

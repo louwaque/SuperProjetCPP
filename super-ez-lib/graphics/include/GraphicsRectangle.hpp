@@ -55,8 +55,6 @@ public:
 
   void setHeight(const size_t height);
 
-  inline GraphicsTypes type() const { return RectangleType; }
-
 protected:
   void meDraw(Canvas *canvas);
   bool meIsOver(const Point &absoluteP);
