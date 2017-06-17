@@ -4,6 +4,8 @@
 #include <string>
 #include "Event.hpp"
 
+class Window;
+
 /*!
  * \file KeyEvent.hpp
  * \brief Classe KeyEvent
@@ -14,8 +16,8 @@
 
  /*!
   * \class KeyEvent
-  * \brief Permet la gestion des evenements au clavier.
-  *
+  * \ingroup core
+  * \brief Événement émit par le clavier
   */
 
 class KeyEvent : public Event
@@ -29,7 +31,6 @@ public:
   };
 
   KeyEvent(const Key key, const KeyState state, const std::string &keyName, const std::string &keyString);
-  explicit KeyEvent(const EZEvent &event, const KeyState state);
 
   inline Key key() const { return m_key; }
   inline KeyState state() const { return m_state; }
@@ -42,10 +43,15 @@ protected:
   std::ostream &write(std::ostream &os) const;
 
 private:
+  KeyEvent(const EZEvent &event, const KeyState state);
+
+private:
   Key m_key;
   KeyState m_state;
   std::string m_keyName;
   std::string m_keyString;
+
+  friend Window;
 };
 
 #endif
