@@ -38,9 +38,9 @@ void MainWindow::resizeEvent(const size_t width, const size_t height)
   organize();
 }
 
-void MainWindow::updateEvent(const unsigned int time)
+void MainWindow::updateEvent(const Milliseconds &time)
 {
-  m_scene->update(time);
+  m_scene->update(time.count());
   drawRequest();
 }
 
@@ -54,7 +54,7 @@ void MainWindow::organize()
 {
   //m_layout->setWidth(width() - m_layout->position().x());
   // ne marche pas bien, surement un prb de Layout...
-  
+
   m_layoutConfig->setWidth(std::min(width()*0.30, 400.0));
   m_layoutConfig->position().setRelativeY(m_layout->height() + 25);
 }

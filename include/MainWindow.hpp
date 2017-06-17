@@ -13,7 +13,7 @@ public:
 protected:
   void drawEvent();
   void resizeEvent(const size_t width, const size_t height);
-  void updateEvent(const unsigned int time);
+  void updateEvent(const Milliseconds &time);
   void handleEvent(const Event &event);
   void createRectangle();
 
