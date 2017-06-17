@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 2.8.7)
+cmake_minimum_required(VERSION 3.8.2)
 
 project(SuperProjetCPP)
 
-add_definitions(-std=c++11)
+set (CMAKE_CXX_STANDARD 17)
 
 include_directories(SYSTEM .)
 include_directories(SYSTEM super-ez-lib/core/include)
