@@ -12,8 +12,9 @@ branches:
 env:
   global:
     - GH_REPO_NAME: SuperProjetCPP
-    - DOXYFILE: $TRAVIS_BUILD_DIR/doc/DOXYFILE
+    - DOXYFILE: $TRAVIS_BUILD_DIR/build/doc/DOXYFILE
     - GH_REPO_REF: github.com/L0L022/SuperProjetCPP.git
+    - DOC_HTML_DIR: $TRAVIS_BUILD_DIR/build/html
     - CTEST_OUTPUT_ON_FAILURE: 1
 
 # Install dependencies
@@ -55,6 +56,7 @@ script:
   - make -j2 check-widget
   - echo -en 'travis_fold:end:test\\r'
   - echo -en 'travis_fold:start:doc\\r'
+  - make doc
   - cd $TRAVIS_BUILD_DIR
   - chmod +x doc/generateDocumentationAndDeploy.sh
   - ./doc/generateDocumentationAndDeploy.sh
