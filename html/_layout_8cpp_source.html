@@ -3,22 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
 <title>Super Project c++:  Fichier source de Layout.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Super Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
@@ -39,7 +41,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+<!-- Généré par Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('_layout_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,137 +110,7 @@ $(document).ready(function(){initNavTree('_layout_8cpp_source.html','');});
 <div class="title">Layout.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/Layout.hpp&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../include/Label.hpp&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Layout::Layout(<span class="keyword">const</span> Id &amp;parent)</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;: <a class="code" href="class_widget.html">Widget</a>(parent),</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  m_orientation(Horizontal),</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  m_spacing(0),</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  m_widgets(),</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  m_minimumWidth(0),</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  m_minimumHeight(0)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  widthChanged(boost::bind(&amp;Layout::organize, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  heightChanged(boost::bind(&amp;Layout::organize, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;Layout::Layout(<span class="keyword">const</span> Ptr &amp;parent)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;: <a class="code" href="class_layout.html">Layout</a>()</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  setParent(parent);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;Layout::Layout(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;: <a class="code" href="class_layout.html">Layout</a>()</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  setParent(parent);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> Id &amp;parent)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(parent)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  setOrientation(orientation);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> Ptr &amp;parent)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(orientation)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  setParent(parent);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(orientation)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  setParent(parent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">Layout::push_back</a>(std::shared_ptr&lt;Widget&gt; widget)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> (widget) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_widgets.push_back(widget);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    widget-&gt;setParent(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//FIXME il faut réfléchir</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//widget-&gt;minimumWidthChanged(boost::bind(&amp;Layout::organize, this));</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//widget-&gt;minimumHeightChanged(boost::bind(&amp;Layout::organize, this));</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    organize();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>  <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">Layout::push_back</a>(<span class="keyword">const</span> std::string &amp;label, std::shared_ptr&lt;Widget&gt; widget)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">auto</span> layout = make&lt;Layout&gt;(Horizontal);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  layout-&gt;push_back(std::dynamic_pointer_cast&lt;Widget&gt;(make&lt;Label&gt;(label)));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  layout-&gt;push_back(widget);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">push_back</a>(layout);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;std::shared_ptr&lt;Widget&gt; Layout::pop_back()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">auto</span> widget = m_widgets.back();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  widget-&gt;setParent(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  m_widgets.pop_back();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  organize();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> widget;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> Layout::erase(<span class="keyword">const</span> std::shared_ptr&lt;Widget&gt; &amp;widget)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  m_widgets.erase(std::remove(m_widgets.begin(), m_widgets.end(), widget), m_widgets.end());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  organize();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> Layout::clear()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    widget-&gt;setParent(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  m_widgets.clear();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  organize();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> Layout::organize()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">size_t</span> oldMW = m_minimumWidth, oldMH = m_minimumHeight;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  m_minimumWidth = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  m_minimumHeight = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (m_orientation == Horizontal) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      m_minimumWidth += widget-&gt;minimumWidth();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      m_minimumHeight = std::max(m_minimumHeight, widget-&gt;minimumHeight());</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_orientation == Vertical) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      m_minimumWidth = std::max(m_minimumWidth, widget-&gt;minimumWidth());</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      m_minimumHeight += widget-&gt;minimumHeight();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (m_minimumWidth != oldMW)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_minimumWidthChanged();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (m_minimumHeight != oldMH)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_minimumHeightChanged();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (!m_widgets.empty()) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> x(0), y(0), w(0), h(0);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      widget-&gt;position().setRelative(x, y);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">if</span> (m_orientation == Horizontal) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        widget-&gt;setWidth(widget-&gt;minimumWidth()</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          + (width() - minimumWidth())/m_widgets.size());</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        widget-&gt;setHeight(height());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        x += m_spacing + widget-&gt;width();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_orientation == Vertical) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        widget-&gt;setWidth(width());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        widget-&gt;setHeight(widget-&gt;minimumHeight()</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          + (height() - minimumHeight())/m_widgets.size());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        y += m_spacing + widget-&gt;height();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="ttc" id="class_layout_html"><div class="ttname"><a href="class_layout.html">Layout</a></div><div class="ttdoc">Organiser les widgets. </div><div class="ttdef"><b>Definition:</b> <a href="_layout_8hpp_source.html#l00013">Layout.hpp:13</a></div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/Layout.hpp&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../include/Label.hpp&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Layout::Layout(<span class="keyword">const</span> Id &amp;parent)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;: <a class="code" href="class_widget.html">Widget</a>(parent),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  m_orientation(Horizontal),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  m_spacing(0),</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  m_widgets(),</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  m_minimumWidth(0),</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  m_minimumHeight(0)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  widthChanged(boost::bind(&amp;Layout::organize, <span class="keyword">this</span>));</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  heightChanged(boost::bind(&amp;Layout::organize, <span class="keyword">this</span>));</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;Layout::Layout(<span class="keyword">const</span> Ptr &amp;parent)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;: <a class="code" href="class_layout.html">Layout</a>()</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  setParent(parent);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;Layout::Layout(<span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;: <a class="code" href="class_layout.html">Layout</a>()</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  setParent(parent);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> Id &amp;parent)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(parent)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  setOrientation(orientation);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> Ptr &amp;parent)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(orientation)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  setParent(parent);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Layout::Layout(<span class="keyword">const</span> Orientation orientation, <span class="keyword">const</span> <a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;: <a class="code" href="class_layout.html">Layout</a>(orientation)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  setParent(parent);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">Layout::push_back</a>(std::shared_ptr&lt;Widget&gt; widget)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> (widget) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_widgets.push_back(widget);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    widget-&gt;setParent(<span class="keyword">this</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//FIXME il faut réfléchir</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//widget-&gt;minimumWidthChanged(boost::bind(&amp;Layout::organize, this));</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//widget-&gt;minimumHeightChanged(boost::bind(&amp;Layout::organize, this));</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    organize();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>  <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">Layout::push_back</a>(<span class="keyword">const</span> std::string &amp;label, std::shared_ptr&lt;Widget&gt; widget)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">auto</span> layout = make&lt;Layout&gt;(Horizontal);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  layout-&gt;push_back(std::dynamic_pointer_cast&lt;Widget&gt;(make&lt;Label&gt;(label)));</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  layout-&gt;push_back(widget);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">push_back</a>(layout);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;std::shared_ptr&lt;Widget&gt; Layout::pop_back()</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">auto</span> widget = m_widgets.back();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  widget-&gt;setParent(<span class="keyword">nullptr</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  m_widgets.pop_back();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  organize();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> widget;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> Layout::erase(<span class="keyword">const</span> std::shared_ptr&lt;Widget&gt; &amp;widget)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  m_widgets.erase(std::remove(m_widgets.begin(), m_widgets.end(), widget), m_widgets.end());</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  organize();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> Layout::clear()</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets)</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    widget-&gt;setParent(<span class="keyword">nullptr</span>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  m_widgets.clear();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  organize();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> Layout::organize()</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">size_t</span> oldMW = m_minimumWidth, oldMH = m_minimumHeight;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  m_minimumWidth = 0;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  m_minimumHeight = 0;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (m_orientation == Horizontal) {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      m_minimumWidth += widget-&gt;minimumWidth();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      m_minimumHeight = std::max(m_minimumHeight, widget-&gt;minimumHeight());</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_orientation == Vertical) {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      m_minimumWidth = std::max(m_minimumWidth, widget-&gt;minimumWidth());</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      m_minimumHeight += widget-&gt;minimumHeight();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (m_minimumWidth != oldMW)</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_minimumWidthChanged();</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (m_minimumHeight != oldMH)</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_minimumHeightChanged();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (!m_widgets.empty()) {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> x(0), y(0), w(0), h(0);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> widget : m_widgets) {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      widget-&gt;position().setRelative(x, y);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">if</span> (m_orientation == Horizontal) {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        widget-&gt;setWidth(widget-&gt;minimumWidth()</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          + (width() - minimumWidth())/m_widgets.size());</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        widget-&gt;setHeight(height());</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        x += m_spacing + widget-&gt;width();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_orientation == Vertical) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        widget-&gt;setWidth(width());</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        widget-&gt;setHeight(widget-&gt;minimumHeight()</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          + (height() - minimumHeight())/m_widgets.size());</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        y += m_spacing + widget-&gt;height();</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      }</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div><div class="ttc" id="class_layout_html"><div class="ttname"><a href="class_layout.html">Layout</a></div><div class="ttdoc">Organiser les widgets. </div><div class="ttdef"><b>Definition:</b> <a href="_layout_8hpp_source.html#l00013">Layout.hpp:13</a></div></div>
 <div class="ttc" id="class_layout_html_a14588d778bfe0d736b46587425c53e8e"><div class="ttname"><a href="class_layout.html#a14588d778bfe0d736b46587425c53e8e">Layout::push_back</a></div><div class="ttdeci">void push_back(std::shared_ptr&lt; Widget &gt; widget)</div><div class="ttdef"><b>Definition:</b> <a href="_layout_8cpp_source.html#l00046">Layout.cpp:46</a></div></div>
 <div class="ttc" id="class_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdoc">Classe de base. </div><div class="ttdef"><b>Definition:</b> <a href="_widget_8hpp_source.html#l00020">Widget.hpp:20</a></div></div>
 <div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de baseLa classe GraphicsItem est la base de tout les éléments graphiques. ...</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00042">GraphicsItem.hpp:42</a></div></div>
@@ -248,9 +120,9 @@ $(document).ready(function(){initNavTree('_layout_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_136dfff0b8dc84fd05057dbd6fffcd12.html">super-ez-lib</a></li><li class="navelem"><a class="el" href="dir_21d6cd99624d45f807de4337bcc2f4c1.html">widget</a></li><li class="navelem"><a class="el" href="dir_138234855c052898274b7d9e1c93f3a3.html">src</a></li><li class="navelem"><b>Layout.cpp</b></li>
-    <li class="footer">Généré le Mardi 13 Juin 2017 09:52:48 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 17 Juin 2017 16:01:59 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

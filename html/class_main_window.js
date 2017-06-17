@@ -5,5 +5,5 @@ var class_main_window =
     [ "drawEvent", "class_main_window.html#a10cfd579cf686f7d35298941f7d4e25b", null ],
     [ "handleEvent", "class_main_window.html#a0c74824ef8e6256455545f2659610b31", null ],
     [ "resizeEvent", "class_main_window.html#a955a028eab58fd0d17254dcc569fe79a", null ],
-    [ "updateEvent", "class_main_window.html#a88f0d32e9521f1bfef88153c4f44ae56", null ]
+    [ "updateEvent", "class_main_window.html#adee1056459b56f1b394ff51797325f91", null ]
 ];

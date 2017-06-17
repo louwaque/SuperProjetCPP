@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "Application", "class_application.html", null ],
     [ "Canvas", "class_canvas.html", null ],
     [ "Color", "class_color.html", null ],
     [ "enable_shared_from_this", null, [
@@ -50,6 +49,7 @@ var hierarchy =
     [ "GroupPoints", "class_group_points.html", null ],
     [ "Image", "class_image.html", null ],
     [ "noncopyable", null, [
+      [ "Application", "class_application.html", null ],
       [ "GraphicsItem", "class_graphics_item.html", null ]
     ] ],
     [ "Pixel", "class_pixel.html", null ],

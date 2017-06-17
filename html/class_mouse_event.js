@@ -15,10 +15,9 @@ var class_mouse_event =
       [ "MouseMoved", "class_mouse_event.html#a1dcc45966a65644eaa69d99227d38aceaab88c662f6970397cde5d6610221b145", null ]
     ] ],
     [ "MouseEvent", "class_mouse_event.html#aab0057ea7e0a43ab52e155cd8059129a", null ],
-    [ "MouseEvent", "class_mouse_event.html#a4c6ecbcf9e517c6e0e3d76c66ff40e74", null ],
     [ "button", "class_mouse_event.html#a0e718c62022dc4296078294b5c6eb3e2", null ],
     [ "position", "class_mouse_event.html#a99ec3c735c6e61b96d539c5638b23608", null ],
     [ "state", "class_mouse_event.html#a0750646f0011ff65b384f108594208a3", null ],
     [ "type", "class_mouse_event.html#aafb7f34678f767028a61c45df1d58969", null ],
-    [ "write", "class_mouse_event.html#aa2ec9efda28b2bcf2326616c0022b228", null ]
+    [ "write", "class_mouse_event.html#ae9fc875ddf9a751d9d2e5219105c1546", null ]
 ];

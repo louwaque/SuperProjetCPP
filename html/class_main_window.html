@@ -3,22 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
 <title>Super Project c++: Référence de la classe MainWindow</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Super Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
@@ -39,7 +41,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+<!-- Généré par Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -96,7 +98,7 @@ $(document).ready(function(){initNavTree('class_main_window.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -138,9 +140,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawEvent</b> ()</td>
 <tr class="memitem:a955a028eab58fd0d17254dcc569fe79a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955a028eab58fd0d17254dcc569fe79a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (const size_t width, const size_t height)</td></tr>
 <tr class="separator:a955a028eab58fd0d17254dcc569fe79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88f0d32e9521f1bfef88153c4f44ae56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88f0d32e9521f1bfef88153c4f44ae56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateEvent</b> (const unsigned int time)</td></tr>
-<tr class="separator:a88f0d32e9521f1bfef88153c4f44ae56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee1056459b56f1b394ff51797325f91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee1056459b56f1b394ff51797325f91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateEvent</b> (const Milliseconds &amp;time)</td></tr>
+<tr class="separator:adee1056459b56f1b394ff51797325f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c74824ef8e6256455545f2659610b31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c74824ef8e6256455545f2659610b31"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (const <a class="el" href="class_event.html">Event</a> &amp;event)</td></tr>
 <tr class="separator:a0c74824ef8e6256455545f2659610b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +193,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRequest</b> ()</t
 <tr class="memitem:a47ea2e0f003fc805b8ca14396dcbb747 inherit pub_methods_class_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47ea2e0f003fc805b8ca14396dcbb747"></a>
 <a class="el" href="class_canvas.html">Canvas</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>canvas</b> ()</td></tr>
 <tr class="separator:a47ea2e0f003fc805b8ca14396dcbb747 inherit pub_methods_class_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_window"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_window')"><img src="closed.png" alt="-"/>&#160;Types protégés hérités de <a class="el" href="class_window.html">Window</a></td></tr>
+<tr class="memitem:a235780ef8dbba51f14c47cdb6c36851f inherit pro_types_class_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a235780ef8dbba51f14c47cdb6c36851f"></a>
+typedef std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><b>Milliseconds</b></td></tr>
+<tr class="separator:a235780ef8dbba51f14c47cdb6c36851f inherit pro_types_class_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock">
@@ -205,9 +211,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRequest</b> ()</t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
-    <li class="footer">Généré le Mardi 13 Juin 2017 09:52:51 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 17 Juin 2017 16:02:00 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

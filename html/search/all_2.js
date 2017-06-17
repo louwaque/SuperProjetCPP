@@ -12,6 +12,8 @@ var searchData=
   ['configpolygon_2ehpp',['ConfigPolygon.hpp',['../_config_polygon_8hpp.html',1,'']]],
   ['configtext',['ConfigText',['../class_config_text.html',1,'']]],
   ['configtext_2ehpp',['ConfigText.hpp',['../_config_text_8hpp.html',1,'']]],
+  ['core',['Core',['../group__core.html',1,'']]],
   ['corrector',['Corrector',['../class_point.html#a4c1b70a5a7df86700db3b2aecd3dba41',1,'Point']]],
-  ['correctorlist',['CorrectorList',['../class_point.html#a42108245ceb7c99343bcccb347babbc8',1,'Point']]]
+  ['correctorlist',['CorrectorList',['../class_point.html#a42108245ceb7c99343bcccb347babbc8',1,'Point']]],
+  ['core',['core',['../md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_core_README.html',1,'']]]
 ];

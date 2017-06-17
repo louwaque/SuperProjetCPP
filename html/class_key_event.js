@@ -6,7 +6,6 @@ var class_key_event =
       [ "KeyReleased", "class_key_event.html#a038e4f651c8a0edf48cef679d2de98fca8f048bdc91a8a4678f0b354fe48f6bc0", null ]
     ] ],
     [ "KeyEvent", "class_key_event.html#a6a45c0cffa537cf79c41140bb04d5aaf", null ],
-    [ "KeyEvent", "class_key_event.html#a552061a96df9513298e2016293f6a149", null ],
     [ "key", "class_key_event.html#a1516b65dbdf9635764288d7f35901eec", null ],
     [ "keyName", "class_key_event.html#a112ce1142e9fea04309f38817818614f", null ],
     [ "keyString", "class_key_event.html#a79345d47767acbcafc7d8435b70f048a", null ],

@@ -3,22 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
 <title>Super Project c++: Référence de la classe GraphicsImage</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Super Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
@@ -39,7 +41,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+<!-- Généré par Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -96,7 +98,7 @@ $(document).ready(function(){initNavTree('class_graphics_image.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -272,29 +274,29 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>meHandleEvent
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
 <tr class="inherit_header pub_types_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
-<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsTypes</b> { <br/>
+<tr class="memitem:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedab0ae8727a1abc4ecb776e062c764f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsTypes</b> { <br />
 &#160;&#160;<b>UndefinedType</b> = 0x0, 
 <b>ItemType</b> = 0x1, 
 <b>PointType</b> = 0x2, 
 <b>TextType</b> = 0x4, 
-<br/>
+<br />
 &#160;&#160;<b>ShapeType</b> = 0x6, 
 <b>LineType</b> = 0x8, 
 <b>TriangleType</b> = 0x10, 
 <b>RectangleType</b> = 0x12, 
-<br/>
+<br />
 &#160;&#160;<b>PolygonType</b> = 0x14, 
 <b>AnchorType</b> = 0x16, 
 <b>CircleType</b> = 0x18, 
 <b>EllipseType</b> = 0x20, 
-<br/>
+<br />
 &#160;&#160;<b>SquareType</b> = 0x22, 
 <b>AnimationType</b> = 0x24, 
 <b>BlinkAnimationType</b> = 0x26
-<br/>
+<br />
  }</td></tr>
 <tr class="separator:aedab0ae8727a1abc4ecb776e062c764f inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SearchTypes</b> { <b>DirectChildren</b>, 
+<tr class="memitem:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aab7c886fd1b149d2dfdcf32c0429fc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SearchTypes</b> { <b>DirectChildren</b>, 
 <b>ChildrenRecursively</b>
  }</td></tr>
 <tr class="separator:a5aab7c886fd1b149d2dfdcf32c0429fc inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,12 +304,10 @@ Membres hérités additionnels</h2></td></tr>
 typedef boost::uuids::uuid&#160;</td><td class="memItemRight" valign="bottom"><b>Id</b></td></tr>
 <tr class="separator:af8a4dee8acc881415963f0661571edf4 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1be9fee3f52e7c1cb1043286e49a00 inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e1be9fee3f52e7c1cb1043286e49a00"></a>
-typedef std::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+typedef std::shared_ptr&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
 <tr class="separator:a4e1be9fee3f52e7c1cb1043286e49a00 inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa643e574b9c2b6713b1b8def690f0c6b"></a>
-typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
+typedef std::vector&lt; <a class="el" href="class_graphics_item.html">GraphicsItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GraphicsItemList</b></td></tr>
 <tr class="separator:aa643e574b9c2b6713b1b8def690f0c6b inherit pub_types_class_graphics_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_graphics_item"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_graphics_item')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_graphics_item.html">GraphicsItem</a></td></tr>
 <tr class="memitem:ae17633bdf56258e2209ae335d0d1c3fa inherit pub_static_methods_class_graphics_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae17633bdf56258e2209ae335d0d1c3fa"></a>
@@ -335,9 +335,9 @@ template&lt;class T , class... Args&gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_graphics_image.html">GraphicsImage</a></li>
-    <li class="footer">Généré le Mardi 13 Juin 2017 09:52:49 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 17 Juin 2017 16:02:00 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

@@ -3,22 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.6"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
 <title>Super Project c++:  Fichier source de ConfigPolygon.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,7 +30,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Super Project c++
    &#160;<span id="projectnumber">0.1</span>
    </div>
@@ -39,7 +41,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Généré par Doxygen 1.8.6 -->
+<!-- Généré par Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('_config_polygon_8cpp_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,106 +110,23 @@ $(document).ready(function(){initNavTree('_config_polygon_8cpp_source.html','');
 <div class="title">ConfigPolygon.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/ConfigPolygon.hpp&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_mouse_event_8hpp.html">MouseEvent.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsPolygon.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;GraphicsPoint.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ConfigPolygon::ConfigPolygon(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;: <a class="code" href="class_config_item.html">ConfigItem</a>(parent)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">auto</span> title = make&lt;Label&gt;(<span class="stringliteral">&quot;Polygone&quot;</span>);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  title-&gt;setAlign(Label::LabelAlign::Center);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  m_layout-&gt;push_back(title);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  m_spinBoxNbPoints = make&lt;SpinBox&gt;();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  m_spinBoxNbPoints-&gt;setMinimumValue(1);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  m_spinBoxNbPoints-&gt;setMaximumValue(200);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  m_layout-&gt;push_back(<span class="stringliteral">&quot;Nombre de sommets: &quot;</span>, m_spinBoxNbPoints);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  m_spinBoxNbPoints-&gt;valueChanged(boost::bind(&amp;ConfigPolygon::updatePoints, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  m_spinBoxMakeOnClick = make&lt;SpinBox&gt;();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  m_spinBoxMakeOnClick-&gt;setLabels({<span class="stringliteral">&quot;Désactivé&quot;</span>, <span class="stringliteral">&quot;Activé&quot;</span>});</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  m_layout-&gt;push_back(<span class="stringliteral">&quot;Créer un point au clic: &quot;</span>, m_spinBoxMakeOnClick);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::loadData()</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ConfigItem::loadData();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">if</span> (target)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    m_spinBoxNbPoints-&gt;setValue(target-&gt;nbPoints());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::meHandleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html">Event</a> &amp;event)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">if</span> (event.type() == Event::MouseType) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mouse_event.html">MouseEvent</a> &amp;mouse = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="class_mouse_event.html">MouseEvent</a>&amp;<span class="keyword">&gt;</span>(event);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (mouse.state() == MouseEvent::ButtonReleased &amp;&amp;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        m_spinBoxMakeOnClick-&gt;value() &amp;&amp;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        !isOver(mouse.position()))</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      newPoint()-&gt;position().set(mouse.position());</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::updatePoints()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span> (target) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb = m_spinBoxNbPoints-&gt;value();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (nb &gt; 0 &amp;&amp; nb != target-&gt;nbPoints()) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">while</span> (nb &gt; target-&gt;nbPoints())</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        newPoint();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">while</span> (target-&gt;nbPoints() &gt; nb)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        popPoint();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;ConfigPolygon::Ptr ConfigPolygon::newPoint()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (target) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_point.html">Point</a> &amp;p = target-&gt;newPoint();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> gp = make&lt;GraphicsPoint&gt;(target);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    gp-&gt;position().join(p);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    m_points.push_back(gp);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> gp;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ConfigPolygon::newPoint null target&quot;</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::popPoint()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (target) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    target-&gt;popPoint();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">auto</span> gp = m_points.back();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    gp-&gt;setParent();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_points.pop_back();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ConfigPolygon::popPoint null target&quot;</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Permet la gestion des evenements. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00021">Event.hpp:21</a></div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../include/ConfigPolygon.hpp&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_mouse_event_8hpp.html">MouseEvent.hpp</a>&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsPolygon.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;GraphicsPoint.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ConfigPolygon::ConfigPolygon(<a class="code" href="class_graphics_item.html">GraphicsItem</a> *parent)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;: <a class="code" href="class_config_item.html">ConfigItem</a>(parent)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">auto</span> title = make&lt;Label&gt;(<span class="stringliteral">&quot;Polygone&quot;</span>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  title-&gt;setAlign(Label::LabelAlign::Center);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  m_layout-&gt;push_back(title);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  m_spinBoxNbPoints = make&lt;SpinBox&gt;();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  m_spinBoxNbPoints-&gt;setMinimumValue(1);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  m_spinBoxNbPoints-&gt;setMaximumValue(200);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  m_layout-&gt;push_back(<span class="stringliteral">&quot;Nombre de sommets: &quot;</span>, m_spinBoxNbPoints);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  m_spinBoxNbPoints-&gt;valueChanged(boost::bind(&amp;ConfigPolygon::updatePoints, <span class="keyword">this</span>));</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  m_spinBoxMakeOnClick = make&lt;SpinBox&gt;();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  m_spinBoxMakeOnClick-&gt;setLabels({<span class="stringliteral">&quot;Désactivé&quot;</span>, <span class="stringliteral">&quot;Activé&quot;</span>});</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  m_layout-&gt;push_back(<span class="stringliteral">&quot;Créer un point au clic: &quot;</span>, m_spinBoxMakeOnClick);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::loadData()</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  ConfigItem::loadData();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">if</span> (target)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    m_spinBoxNbPoints-&gt;setValue(target-&gt;nbPoints());</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::meHandleEvent(<span class="keyword">const</span> <a class="code" href="class_event.html">Event</a> &amp;event)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">if</span> (event.type() == Event::MouseType) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_mouse_event.html">MouseEvent</a> &amp;mouse = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="class_mouse_event.html">MouseEvent</a>&amp;<span class="keyword">&gt;</span>(event);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (mouse.state() == MouseEvent::ButtonReleased &amp;&amp;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        m_spinBoxMakeOnClick-&gt;value() &amp;&amp;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        !isOver(mouse.position()))</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      newPoint()-&gt;position().<a class="code" href="class_point.html#a43923c490fb5439d7d8a041e86520c34">set</a>(mouse.position());</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::updatePoints()</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span> (target) {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb = m_spinBoxNbPoints-&gt;value();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (nb &gt; 0 &amp;&amp; nb != target-&gt;nbPoints()) {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">while</span> (nb &gt; target-&gt;nbPoints())</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        newPoint();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">while</span> (target-&gt;nbPoints() &gt; nb)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        popPoint();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;ConfigPolygon::Ptr ConfigPolygon::newPoint()</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (target) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_point.html">Point</a> &amp;p = target-&gt;newPoint();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> gp = make&lt;GraphicsPoint&gt;(target);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    gp-&gt;position().join(p);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    m_points.push_back(gp);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> gp;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ConfigPolygon::newPoint null target&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> ConfigPolygon::popPoint()</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">auto</span> target = std::dynamic_pointer_cast&lt;<a class="code" href="class_graphics_polygon.html">GraphicsPolygon</a>&gt;(m_target);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (target) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    target-&gt;popPoint();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">auto</span> gp = m_points.back();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    gp-&gt;setParent();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_points.pop_back();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;ConfigPolygon::popPoint null target&quot;</span>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">Représente un événement. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8hpp_source.html#l00021">Event.hpp:21</a></div></div>
 <div class="ttc" id="_mouse_event_8hpp_html"><div class="ttname"><a href="_mouse_event_8hpp.html">MouseEvent.hpp</a></div><div class="ttdoc">Classe MouseEvent. </div></div>
-<div class="ttc" id="class_mouse_event_html"><div class="ttname"><a href="class_mouse_event.html">MouseEvent</a></div><div class="ttdoc">Permet la gestion des evenements à la souri. </div><div class="ttdef"><b>Definition:</b> <a href="_mouse_event_8hpp_source.html#l00021">MouseEvent.hpp:21</a></div></div>
+<div class="ttc" id="class_point_html_a43923c490fb5439d7d8a041e86520c34"><div class="ttname"><a href="class_point.html#a43923c490fb5439d7d8a041e86520c34">Point::set</a></div><div class="ttdeci">void set(const int x, const int y)</div><div class="ttdoc">Modifie les coordonnées du point par rapport à son origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8cpp_source.html#l00096">Point.cpp:96</a></div></div>
+<div class="ttc" id="class_mouse_event_html"><div class="ttname"><a href="class_mouse_event.html">MouseEvent</a></div><div class="ttdoc">Événement émit par la souris. </div><div class="ttdef"><b>Definition:</b> <a href="_mouse_event_8hpp_source.html#l00023">MouseEvent.hpp:23</a></div></div>
 <div class="ttc" id="class_config_item_html"><div class="ttname"><a href="class_config_item.html">ConfigItem</a></div><div class="ttdoc">IHM pour modifier un GraphicsItem. </div><div class="ttdef"><b>Definition:</b> <a href="_config_item_8hpp_source.html#l00023">ConfigItem.hpp:23</a></div></div>
 <div class="ttc" id="class_graphics_item_html"><div class="ttname"><a href="class_graphics_item.html">GraphicsItem</a></div><div class="ttdoc">Classe de baseLa classe GraphicsItem est la base de tout les éléments graphiques. ...</div><div class="ttdef"><b>Definition:</b> <a href="_graphics_item_8hpp_source.html#l00042">GraphicsItem.hpp:42</a></div></div>
 <div class="ttc" id="class_graphics_polygon_html"><div class="ttname"><a href="class_graphics_polygon.html">GraphicsPolygon</a></div><div class="ttdoc">Un polygone. </div><div class="ttdef"><b>Definition:</b> <a href="_graphics_polygon_8hpp_source.html#l00012">GraphicsPolygon.hpp:12</a></div></div>
-<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00040">Point.hpp:40</a></div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Représente un point avec une abscisse, une ordonnée et une origine. </div><div class="ttdef"><b>Definition:</b> <a href="_point_8hpp_source.html#l00041">Point.hpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>ConfigPolygon.cpp</b></li>
-    <li class="footer">Généré le Mardi 13 Juin 2017 09:52:47 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 17 Juin 2017 16:01:59 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

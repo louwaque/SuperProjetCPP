@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graphics',['Graphics',['../group__graphics.html',1,'']]]
+  ['core',['Core',['../group__core.html',1,'']]]
 ];
