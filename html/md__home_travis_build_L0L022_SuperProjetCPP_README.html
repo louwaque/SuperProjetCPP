@@ -106,13 +106,30 @@ $(document).ready(function(){initNavTree('md__home_travis_build_L0L022_SuperProj
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/L0L022/SuperProjetCPP"></a></p>
 <p>Projet C++ 2017 sur le dessin de formes</p>
-<p><a href="https://l0l022.github.io/SuperProjetCPP/html/">La documentation</a> </p>
-</div></div><!-- contents -->
+<h2>Documentation</h2>
+<p>La doc est disponible sur ce <a href="https://l0l022.github.io/SuperProjetCPP/html/">site</a> ou peut être généré à l'aide de la commande <code>make doc</code>.</p>
+<h2>Sources</h2>
+<p>Les sources sont disponibles <a href="https://github.com/L0L022/SuperProjetCPP">ici</a>.</p>
+<h2>Dépendances</h2>
+<p>Compilateur compatible c++17</p><ul>
+<li>Pour avoir l’exception std::bad_weak_ptr, <a href="http://en.cppreference.com/w/cpp/memory/enable_shared_from_this/shared_from_this">explication</a>.</li>
+</ul>
+<p><a href="https://cmake.org/files/v3.8/">CMake 3.8.2</a></p><ul>
+<li>Pour avoir : set (CMAKE_CXX_STANDARD 17)</li>
+</ul>
+<p><a href="http://www.boost.org/users/history/version_1_64_0.html">BOOST 1.64.0</a> avec :</p><ul>
+<li>signal2 : utilisé par widget</li>
+<li>locale : utilisé par core</li>
+<li>serialization : pour la sauvegarde</li>
+<li>test : pour les tests unitaires</li>
+</ul>
+<h2>Compilation</h2>
+<p>Dans les sources du projet exécutez : </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mkdir build &amp;&amp; cd build</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cmake .. -DCMAKE_BUILD_TYPE=Release</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;make app</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Samedi 17 Juin 2017 16:01:59 pour Super Project c++ par
+    <li class="footer">Généré le Samedi 17 Juin 2017 16:20:10 pour Super Project c++ par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
