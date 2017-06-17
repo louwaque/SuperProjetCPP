@@ -14,8 +14,8 @@
 
  /*!
   * \class Event
-  * \brief Permet la gestion des evenements
-  *
+  * \ingroup core
+  * \brief Représente un événement
   */
 
 class Event
