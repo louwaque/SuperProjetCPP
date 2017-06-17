@@ -12,7 +12,7 @@ branches:
 env:
   global:
     - GH_REPO_NAME: SuperProjetCPP
-    - DOXYFILE: $TRAVIS_BUILD_DIR/DOXYFILE
+    - DOXYFILE: $TRAVIS_BUILD_DIR/doc/DOXYFILE
     - GH_REPO_REF: github.com/L0L022/SuperProjetCPP.git
     - CTEST_OUTPUT_ON_FAILURE: 1
 
@@ -52,13 +52,9 @@ script:
   - make -j2 check-core
   - make -j2 check-graphics
   - make -j2 check-widget
-  - make -j2 check-app
   - echo -en 'travis_fold:end:test\\r'
   - echo -en 'travis_fold:start:doc\\r'
-  - make -j2 doc 2>&1 > /dev/null
-  - echo -en 'travis_fold:end:doc\\r'
-  - echo -en 'travis_fold:start:upload\\r'
   - cd $TRAVIS_BUILD_DIR
-  - chmod +x generateDocumentationAndDeploy.sh
-  - ./generateDocumentationAndDeploy.sh
-  - echo -en 'travis_fold:end:upload\\r'
+  - chmod +x doc/generateDocumentationAndDeploy.sh
+  - ./doc/generateDocumentationAndDeploy.sh
+  - echo -en 'travis_fold:end:doc\\r'
