@@ -14,9 +14,7 @@
 class SpinBox : public Widget
 {
 public:
-  explicit SpinBox(const Id &parent = boost::uuids::nil_generator()());
-  explicit SpinBox(const Ptr &parent);
-  explicit SpinBox(const GraphicsItem *parent);
+  explicit SpinBox(GraphicsItem *parent = nullptr);
 
   inline int value() const { return m_value; }
   void setValue(int value);

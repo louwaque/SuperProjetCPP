@@ -14,9 +14,7 @@
 class LineEdit : public Widget
 {
 public:
-  explicit LineEdit(const Id &parent = boost::uuids::nil_generator()());
-  explicit LineEdit(const Ptr &parent);
-  explicit LineEdit(const GraphicsItem *parent);
+  explicit LineEdit(GraphicsItem *parent = nullptr);
 
   inline std::string text() const { return m_text; }
   void setText(const std::string &text);

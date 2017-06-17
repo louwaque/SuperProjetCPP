@@ -1,7 +1,7 @@
 #include "../include/Layout.hpp"
 #include "../include/Label.hpp"
 
-Layout::Layout(const Id &parent)
+Layout::Layout(GraphicsItem *parent)
 : Widget(parent),
   m_orientation(Horizontal),
   m_spacing(0),
@@ -13,34 +13,10 @@ Layout::Layout(const Id &parent)
   heightChanged(boost::bind(&Layout::organize, this));
 }
 
-Layout::Layout(const Ptr &parent)
-: Layout()
-{
-  setParent(parent);
-}
-
-Layout::Layout(const GraphicsItem *parent)
-: Layout()
-{
-  setParent(parent);
-}
-
-Layout::Layout(const Orientation orientation, const Id &parent)
+Layout::Layout(const Orientation orientation, GraphicsItem *parent)
 : Layout(parent)
 {
   setOrientation(orientation);
-}
-
-Layout::Layout(const Orientation orientation, const Ptr &parent)
-: Layout(orientation)
-{
-  setParent(parent);
-}
-
-Layout::Layout(const Orientation orientation, const GraphicsItem *parent)
-: Layout(orientation)
-{
-  setParent(parent);
 }
 
 void Layout::push_back(std::shared_ptr<Widget> widget)

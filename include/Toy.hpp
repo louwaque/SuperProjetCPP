@@ -9,7 +9,7 @@ template<typename ConfigHelper>
 class Toy : public GraphicsItem
 {
 public:
-  Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, const Ptr parent = nullptr);
+  Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, GraphicsItem *parent = nullptr);
 
   bool alreadyOpen() const;
 
@@ -24,7 +24,7 @@ private:
 };
 
 template<typename ConfigHelper>
-Toy<ConfigHelper>::Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, const Ptr parent)
+Toy<ConfigHelper>::Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, GraphicsItem *parent)
 : GraphicsItem(parent),
   m_target(target),
   m_anchor(anchor),

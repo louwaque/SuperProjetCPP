@@ -61,7 +61,7 @@ ConfigPolygon::Ptr ConfigPolygon::newPoint()
   auto target = std::dynamic_pointer_cast<GraphicsPolygon>(m_target);
   if (target) {
     Point &p = target->newPoint();
-    auto gp = make<GraphicsPoint>(target);
+    auto gp = make<GraphicsPoint>(target.get());
     gp->position().join(p);
     m_points.push_back(gp);
     return gp;

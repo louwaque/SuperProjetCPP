@@ -14,11 +14,11 @@ MainWindow::MainWindow()
 {
   m_scene = GraphicsItem::make<GraphicsItem>();
 
-  m_layout = GraphicsItem::make<Layout>(m_scene);
+  m_layout = GraphicsItem::make<Layout>(m_scene.get());
   m_layout->setSpacing(10);
   m_layout->position().set(5, 5);
 
-  m_layoutConfig = GraphicsItem::make<Layout>(m_scene);
+  m_layoutConfig = GraphicsItem::make<Layout>(m_scene.get());
   m_layoutConfig->position().setRelativeX(5);
   m_layoutConfig->setSpacing(5);
 

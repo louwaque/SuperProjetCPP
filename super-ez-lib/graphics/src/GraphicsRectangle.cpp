@@ -1,22 +1,10 @@
 #include "../include/GraphicsRectangle.hpp"
 
-GraphicsRectangle::GraphicsRectangle(const Id &parent)
+GraphicsRectangle::GraphicsRectangle(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_topLeft(&position()),
   m_bottomRight(&position())
 {}
-
-GraphicsRectangle::GraphicsRectangle(const Ptr &parent)
-: GraphicsRectangle()
-{
-  setParent(parent);
-}
-
-GraphicsRectangle::GraphicsRectangle(const GraphicsItem *parent)
-: GraphicsRectangle()
-{
-  setParent(parent);
-}
 
 void GraphicsRectangle::meDraw(Canvas *canvas)
 {

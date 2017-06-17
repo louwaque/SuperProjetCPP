@@ -1,7 +1,7 @@
 #include "../include/SpinBox.hpp"
 #include "../include/Button.hpp"
 
-SpinBox::SpinBox(const Id &parent)
+SpinBox::SpinBox(GraphicsItem *parent)
 : Widget(parent),
   m_value(0),
   m_minimumValue(0),
@@ -52,18 +52,6 @@ SpinBox::SpinBox(const Id &parent)
   });
 
   m_valueChanged();
-}
-
-SpinBox::SpinBox(const Ptr &parent)
-: SpinBox()
-{
-  setParent(parent);
-}
-
-SpinBox::SpinBox(const GraphicsItem *parent)
-: SpinBox()
-{
-  setParent(parent);
 }
 
 void SpinBox::setValue(int value)

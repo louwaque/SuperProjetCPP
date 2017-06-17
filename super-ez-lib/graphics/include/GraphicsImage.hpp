@@ -13,9 +13,7 @@
 class GraphicsImage : public GraphicsItem
 {
 public:
-  explicit GraphicsImage(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsImage(const Ptr &parent);
-  explicit GraphicsImage(const GraphicsItem *parent);
+  explicit GraphicsImage(GraphicsItem *parent = nullptr);
 
   const Image &image() const { return m_image; }
   Image &image() { return m_image; }

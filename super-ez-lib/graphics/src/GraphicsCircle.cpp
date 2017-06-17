@@ -1,23 +1,11 @@
 #include "../include/GraphicsCircle.hpp"
 #include <cmath>
 
-GraphicsCircle::GraphicsCircle(const Id &parent)
+GraphicsCircle::GraphicsCircle(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
   m_points.emplace_back(&position());
   m_points.emplace_back(&position());
-}
-
-GraphicsCircle::GraphicsCircle(const Ptr &parent)
-: GraphicsCircle()
-{
-  setParent(parent);
-}
-
-GraphicsCircle::GraphicsCircle(const GraphicsItem *parent)
-: GraphicsCircle()
-{
-  setParent(parent);
 }
 
 int GraphicsCircle::radius() const

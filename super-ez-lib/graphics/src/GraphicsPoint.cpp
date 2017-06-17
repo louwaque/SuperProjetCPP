@@ -1,12 +1,12 @@
 #include "../include/GraphicsPoint.hpp"
 #include <MouseEvent.hpp>
 
-GraphicsPoint::GraphicsPoint(const Ptr &parent)
-: GraphicsItem(parent), m_radius(5)
-{
-}
+GraphicsPoint::GraphicsPoint(GraphicsItem *parent)
+: GraphicsItem(parent),
+  m_radius(5)
+{}
 
-GraphicsPoint::GraphicsPoint(const Point &pos, const Ptr &parent)
+GraphicsPoint::GraphicsPoint(const Point &pos, GraphicsItem *parent)
 : GraphicsPoint(parent)
 {
   position().set(pos);

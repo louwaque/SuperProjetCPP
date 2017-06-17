@@ -5,9 +5,8 @@
 #include <utility>
 
 GraphicsItem *GraphicsItem::m_focusItem = nullptr;
-std::map<GraphicsItem::Id, GraphicsItem*> GraphicsItem::m_graphicsItems;
 
-GraphicsItem::GraphicsItem(const Id &parent)
+GraphicsItem::GraphicsItem(GraphicsItem *parent)
 : m_id(boost::uuids::random_generator()()),
   m_parent(nullptr),
   m_children(),
@@ -19,45 +18,15 @@ GraphicsItem::GraphicsItem(const Id &parent)
   m_isEnable(true),
   m_isVisible(true)
 {
-  m_graphicsItems[m_id] = this;
-  setParent(parent);
-}
-
-GraphicsItem::GraphicsItem(const Ptr &parent)
-: GraphicsItem()
-{
-  setParent(parent);
-}
-
-GraphicsItem::GraphicsItem(const GraphicsItem *parent)
-: GraphicsItem()
-{
   setParent(parent);
 }
 
 GraphicsItem::~GraphicsItem()
 {
-  m_graphicsItems.erase(m_id);
-  setParent(nullptr);
+  setParent();
 }
 
-void GraphicsItem::setParent(const Id &parent)
-{
-  if (parentId() != parent) {
-    auto ptr = m_graphicsItems[parent];
-    if (ptr)
-      setParent(ptr);
-    else
-      setParent(nullptr);
-  }
-}
-
-void GraphicsItem::setParent(const Ptr &parent)
-{
-  setParent(parent.get());
-}
-
-void GraphicsItem::setParent(const GraphicsItem *parent)
+void GraphicsItem::setParent(GraphicsItem *parent)
 {
   if (m_parent == parent)
     return;
@@ -89,11 +58,10 @@ void GraphicsItem::setParent(const GraphicsItem *parent)
   }
 
   if (parent) {
-    GraphicsItem * p = const_cast<GraphicsItem*>(parent);
-    m_parent = p;
-    p->m_children.emplace_back(ptr());
-    p->sortChildren();
-    m_position.setOrigin(&p->position());
+    m_parent = parent;
+    m_parent->m_children.emplace_back(ptr());
+    m_parent->sortChildren();
+    m_position.setOrigin(&m_parent->position());
   }
 }
 

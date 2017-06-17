@@ -2,7 +2,7 @@
 #include <MouseEvent.hpp>
 #include <iostream>
 
-Button::Button(const Id &parent)
+Button::Button(GraphicsItem *parent)
 : Widget(parent),
   m_background(nullptr),
   m_label(nullptr)
@@ -30,34 +30,10 @@ Button::Button(const Id &parent)
   });
 }
 
-Button::Button(const Ptr &parent)
-: Button()
-{
-  setParent(parent);
-}
-
-Button::Button(const GraphicsItem *parent)
-: Button()
-{
-  setParent(parent);
-}
-
-Button::Button(const std::string &text, const Id &parent)
+Button::Button(const std::string &text, GraphicsItem *parent)
 : Button(parent)
 {
   setText(text);
-}
-
-Button::Button(const std::string &text, const Ptr &parent)
-: Button(text)
-{
-  setParent(parent);
-}
-
-Button::Button(const std::string &text, const GraphicsItem *parent)
-: Button(text)
-{
-  setParent(parent);
 }
 
 size_t Button::minimumWidth() const

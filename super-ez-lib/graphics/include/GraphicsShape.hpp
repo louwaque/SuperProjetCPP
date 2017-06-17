@@ -21,9 +21,7 @@
 class GraphicsShape : public GraphicsItem
 {
 public:
-  explicit GraphicsShape(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsShape(const Ptr &parent);
-  explicit GraphicsShape(const GraphicsItem *parent);
+  explicit GraphicsShape(GraphicsItem *parent = nullptr);
 
 protected:
   void meDraw(Canvas *canvas);

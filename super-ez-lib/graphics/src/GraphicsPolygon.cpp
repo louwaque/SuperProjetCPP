@@ -1,21 +1,9 @@
 #include "../include/GraphicsPolygon.hpp"
 
-GraphicsPolygon::GraphicsPolygon(const Id &parent)
+GraphicsPolygon::GraphicsPolygon(GraphicsItem *parent)
 : GraphicsShape(parent)
 {
   m_points.emplace_back(&position());
-}
-
-GraphicsPolygon::GraphicsPolygon(const Ptr &parent)
-: GraphicsPolygon()
-{
-  setParent(parent);
-}
-
-GraphicsPolygon::GraphicsPolygon(const GraphicsItem *parent)
-: GraphicsPolygon()
-{
-  setParent(parent);
 }
 
 Point &GraphicsPolygon::newPoint()

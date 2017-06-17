@@ -2,23 +2,11 @@
 #include <boost/bind.hpp>
 #include <cmath>
 
-GraphicsSquare::GraphicsSquare(const Id &parent)
+GraphicsSquare::GraphicsSquare(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_topLeft({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_bottomRight))}, &position()),
   m_bottomRight({boost::bind(&GraphicsSquare::corrector, _1, boost::cref(m_topLeft))}, &position())
 {}
-
-GraphicsSquare::GraphicsSquare(const Ptr &parent)
-: GraphicsSquare()
-{
-  setParent(parent);
-}
-
-GraphicsSquare::GraphicsSquare(const GraphicsItem *parent)
-: GraphicsSquare()
-{
-  setParent(parent);
-}
 
 void GraphicsSquare::meDraw(Canvas *canvas)
 {

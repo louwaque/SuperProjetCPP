@@ -1,6 +1,6 @@
 #include "../include/Label.hpp"
 
-Label::Label(const Id &parent)
+Label::Label(GraphicsItem *parent)
 : Widget(parent),
   m_text(nullptr),
   m_align(LabelAlign::Left)
@@ -13,34 +13,10 @@ Label::Label(const Id &parent)
   alignText();
 }
 
-Label::Label(const Ptr &parent)
-: Label()
-{
-  setParent(parent);
-}
-
-Label::Label(const GraphicsItem *parent)
-: Label()
-{
-  setParent(parent);
-}
-
-Label::Label(const std::string &text, const Id &parent)
+Label::Label(const std::string &text, GraphicsItem *parent)
 : Label(parent)
 {
   setText(text);
-}
-
-Label::Label(const std::string &text, const Ptr &parent)
-: Label(text)
-{
-  setParent(parent);
-}
-
-Label::Label(const std::string &text, const GraphicsItem *parent)
-: Label(text)
-{
-  setParent(parent);
 }
 
 void Label::setText(const std::string &text)

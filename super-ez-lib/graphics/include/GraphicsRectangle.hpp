@@ -30,9 +30,7 @@ public:
    *
    */
 
-  explicit GraphicsRectangle(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsRectangle(const Ptr &parent);
-  explicit GraphicsRectangle(const GraphicsItem *parent);
+  explicit GraphicsRectangle(GraphicsItem *parent = nullptr);
 
   /*!
    * \brief recupere les coordonnées.

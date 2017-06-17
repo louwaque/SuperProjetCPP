@@ -19,13 +19,8 @@ public:
     Center
   };
 
-  explicit Label(const Id &parent = boost::uuids::nil_generator()());
-  explicit Label(const Ptr &parent);
-  explicit Label(const GraphicsItem *parent);
-
-  Label(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
-  Label(const std::string &text, const Ptr &parent);
-  Label(const std::string &text, const GraphicsItem *parent);
+  explicit Label(GraphicsItem *parent = nullptr);
+  Label(const std::string &text, GraphicsItem *parent = nullptr);
 
   inline std::string text() const { return m_text->text(); }
   void setText(const std::string &text);

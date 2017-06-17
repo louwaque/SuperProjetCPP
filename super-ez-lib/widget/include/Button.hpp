@@ -21,6 +21,8 @@ class Button : public Widget
 {
 public:
 
+ explicit Button(GraphicsItem *parent = nullptr);
+
   /*!
    * \brief Constructeur de la classe Button
    *
@@ -28,13 +30,7 @@ public:
    *
    */
 
-   explicit Button(const Id &parent = boost::uuids::nil_generator()());
-   explicit Button(const Ptr &parent);
-   explicit Button(const GraphicsItem *parent);
-
-   Button(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
-   Button(const std::string &text, const Ptr &parent);
-   Button(const std::string &text, const GraphicsItem *parent);
+   Button(const std::string &text, GraphicsItem *parent = nullptr);
 
   inline std::string text() const { return m_label->text(); }
   inline void setText(const std::string &text) { m_label->setText(text); }

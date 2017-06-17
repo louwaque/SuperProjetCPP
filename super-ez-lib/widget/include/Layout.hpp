@@ -20,13 +20,8 @@ public:
 
   typedef std::vector<std::shared_ptr<Widget>> Widgets;
 
-  explicit Layout(const Id &parent = boost::uuids::nil_generator()());
-  explicit Layout(const Ptr &parent);
-  explicit Layout(const GraphicsItem *parent);
-
-  Layout(const Orientation orientation, const Id &parent = boost::uuids::nil_generator()());
-  Layout(const Orientation orientation, const Ptr &parent);
-  Layout(const Orientation orientation, const GraphicsItem *parent);
+  explicit Layout(GraphicsItem *parent = nullptr);
+  Layout(const Orientation orientation, GraphicsItem *parent = nullptr);
 
   inline Orientation orientation() const { return m_orientation; }
   inline void setOrientation(const Orientation orientation) { m_orientation = orientation; organize(); }

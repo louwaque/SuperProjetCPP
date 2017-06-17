@@ -29,9 +29,7 @@ public:
    *
    */
 
-  explicit GraphicsText(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsText(const Ptr &parent);
-  explicit GraphicsText(const GraphicsItem *parent);
+  explicit GraphicsText(GraphicsItem *parent = nullptr);
 
   /*!
    * \brief Constructeur de GraphicsText avec un texte en paramètre.
@@ -40,9 +38,7 @@ public:
    *
    */
 
-  explicit GraphicsText(const std::string &text, const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsText(const std::string &text, const Ptr &parent);
-  explicit GraphicsText(const std::string &text, const GraphicsItem *parent);
+  explicit GraphicsText(const std::string &text, GraphicsItem *parent = nullptr);
 
   /*!
    * \brief Recupere le contenu de GraphicsText.

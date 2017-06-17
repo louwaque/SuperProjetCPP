@@ -3,7 +3,7 @@
 #include <KeyEvent.hpp>
 #include <GraphicsBlinkAnimation.hpp>
 
-LineEdit::LineEdit(const Id &parent)
+LineEdit::LineEdit(GraphicsItem *parent)
 : Widget(parent),
   m_margin(5),
   m_text(),
@@ -20,7 +20,7 @@ LineEdit::LineEdit(const Id &parent)
 
   m_line = make<GraphicsLine>(this);
 
-  auto blink = make<GraphicsBlinkAnimation>(m_line);
+  auto blink = make<GraphicsBlinkAnimation>(m_line.get());
   blink->setBlinkFrequency(200);
 
   widthChanged([this]() {
@@ -38,18 +38,6 @@ LineEdit::LineEdit(const Id &parent)
     m_minimumWidthChanged();
     m_minimumHeightChanged();
   });
-}
-
-LineEdit::LineEdit(const Ptr &parent)
-: LineEdit()
-{
-  setParent(parent);
-}
-
-LineEdit::LineEdit(const GraphicsItem *parent)
-: LineEdit()
-{
-  setParent(parent);
 }
 
 void LineEdit::setText(const std::string &text)

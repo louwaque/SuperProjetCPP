@@ -12,11 +12,7 @@
 class GraphicsPolygon : public GraphicsShape
 {
 public:
-
-  explicit GraphicsPolygon(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsPolygon(const Ptr &parent);
-  explicit GraphicsPolygon(const GraphicsItem *parent);
-
+  explicit GraphicsPolygon(GraphicsItem *parent = nullptr);
 
   Point &newPoint();
   void popPoint();

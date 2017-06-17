@@ -1,20 +1,8 @@
 #include "../include/GraphicsImage.hpp"
 
-GraphicsImage::GraphicsImage(const Id &parent)
+GraphicsImage::GraphicsImage(GraphicsItem *parent)
 : GraphicsItem(parent)
 {}
-
-GraphicsImage::GraphicsImage(const Ptr &parent)
-: GraphicsImage()
-{
-  setParent(parent);
-}
-
-GraphicsImage::GraphicsImage(const GraphicsItem *parent)
-: GraphicsImage()
-{
-  setParent(parent);
-}
 
 void GraphicsImage::meDraw(Canvas *canvas)
 {

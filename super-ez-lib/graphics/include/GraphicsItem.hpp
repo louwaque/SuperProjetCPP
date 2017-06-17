@@ -10,9 +10,7 @@
  */
 
 #include <vector>
-#include <map>
 #include <memory>
-#include <type_traits>
 #include <Color.hpp>
 #include <Canvas.hpp>
 #include <Event.hpp>
@@ -39,7 +37,8 @@
  * Il est très fortement conseillé d’utiliser la fonction make pour créer des GraphicsItem.
  */
 
-class GraphicsItem : public std::enable_shared_from_this<GraphicsItem>, private boost::noncopyable {
+class GraphicsItem : public std::enable_shared_from_this<GraphicsItem>, private boost::noncopyable
+{
 public:
   typedef boost::uuids::uuid Id;
   typedef std::shared_ptr<GraphicsItem> Ptr;
@@ -50,18 +49,14 @@ public:
     ChildrenRecursively
   };
 
-  explicit GraphicsItem(const Id &parent = boost::uuids::nil_generator()());
-  explicit GraphicsItem(const Ptr &parent);
-  explicit GraphicsItem(const GraphicsItem *parent);
+  explicit GraphicsItem(GraphicsItem *parent = nullptr);
   virtual ~GraphicsItem();
 
   inline Id id() const { return m_id; }
   inline Id parentId() const { return m_parent ? m_parent->id() : boost::uuids::nil_generator()(); }
   inline GraphicsItem *parent() const { return m_parent; }
 
-  void setParent(const Id &parent = boost::uuids::nil_generator()());
-  void setParent(const Ptr &parent);
-  void setParent(const GraphicsItem *parent);
+  void setParent(GraphicsItem *parent = nullptr);
 
   template<typename... Types>
   GraphicsItemList children(const SearchTypes option = ChildrenRecursively) const;
@@ -159,8 +154,6 @@ private:
   bool m_isFill;
   bool m_isEnable;
   bool m_isVisible;
-
-  static std::map<Id, GraphicsItem*> m_graphicsItems;
 };
 
 template<typename... Types>

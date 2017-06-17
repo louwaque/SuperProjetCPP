@@ -1,21 +1,9 @@
 #include "../include/GraphicsShape.hpp"
 
-GraphicsShape::GraphicsShape(const Id &parent)
+GraphicsShape::GraphicsShape(GraphicsItem *parent)
 : GraphicsItem(parent),
   m_points()
 {}
-
-GraphicsShape::GraphicsShape(const Ptr &parent)
-: GraphicsShape()
-{
-  setParent(parent);
-}
-
-GraphicsShape::GraphicsShape(const GraphicsItem *parent)
-: GraphicsShape()
-{
-  setParent(parent);
-}
 
 void GraphicsShape::meDraw(Canvas *canvas)
 {
