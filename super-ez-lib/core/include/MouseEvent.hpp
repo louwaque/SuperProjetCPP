@@ -4,6 +4,8 @@
 #include "Event.hpp"
 #include "Point.hpp"
 
+class Window;
+
 /*!
  * \file MouseEvent.hpp
  * \brief Classe MouseEvent
@@ -14,8 +16,8 @@
 
  /*!
   * \class MouseEvent
-  * \brief Permet la gestion des evenements à la souri.
-  *
+  * \ingroup core
+  * \brief Événement émit par la souris.
   */
 
 class MouseEvent : public Event
@@ -38,7 +40,6 @@ public:
   };
 
   MouseEvent(const MouseButton button, const MouseState state, const Point &position);
-  explicit MouseEvent(const EZEvent &event, const MouseState state);
 
   inline MouseButton button() const { return m_button; }
   inline MouseState state() const { return m_state; }
@@ -50,9 +51,14 @@ protected:
   std::ostream &write(std::ostream &os) const;
 
 private:
+  MouseEvent(const EZEvent &event, const MouseState state);
+
+private:
   MouseButton m_button;
   MouseState m_state;
   Point m_position;
+
+  friend Window;
 };
 
 #endif
