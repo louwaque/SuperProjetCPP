@@ -48,7 +48,7 @@ script:
   - echo -en 'travis_fold:end:boost\\r'
   - echo -en 'travis_fold:start:cmake\\r'
   - mkdir build && cd build
-  - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install ..
+  - cmake .. -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install
   - echo -en 'travis_fold:end:cmake\\r'
   - echo -en 'travis_fold:start:test\\r'
   - make -j2 check-core
