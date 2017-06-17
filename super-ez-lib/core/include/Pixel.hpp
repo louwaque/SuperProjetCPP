@@ -19,7 +19,8 @@ class Image;
 
  /*!
   * \class Pixel
-  * \brief Représente un pixel
+  * \ingroup core
+  * \brief Représente un pixel dans une Image
   */
 
 class Pixel
