@@ -15,6 +15,7 @@
 
 /*!
  * \class Color
+ * \ingroup core
  * \brief Représente une couleur
  */
 
