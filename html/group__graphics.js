@@ -1,13 +1,11 @@
 var group__graphics =
 [
     [ "GraphicsAnimation", "class_graphics_animation.html", [
-      [ "GraphicsAnimation", "class_graphics_animation.html#aa04517ea053a31c0240c47a77aff7eb1", null ],
-      [ "GraphicsAnimation", "class_graphics_animation.html#aa58900933a2f08447fa5f427a6ea74e2", null ],
-      [ "GraphicsAnimation", "class_graphics_animation.html#af44141c192a9dd66f2754e4fb0daa53c", null ]
+      [ "GraphicsAnimation", "class_graphics_animation.html#a932a6494cc2ccc472ce17084453187d6", null ]
     ] ],
     [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html", [
-      [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#a0b6cd62f1827b6c5ed251df43e06cef6", null ],
-      [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#af33ab159462a80e9f4a44077cc32a2fc", null ],
+      [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#a799b84ec5f97948d821bd5bb75c0d4de", null ],
+      [ "GraphicsBlinkAnimation", "class_graphics_blink_animation.html#aff098fcde779f37d4dd541723f351567", null ],
       [ "becomeColor", "class_graphics_blink_animation.html#a0f7e7b5b7c1d4b6449aabe0a513417fc", null ],
       [ "becomeInvisible", "class_graphics_blink_animation.html#aeef0e1fc5c9f562ea66283bb04fba73e", null ],
       [ "blinkFrequency", "class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69", null ],
@@ -17,9 +15,7 @@ var group__graphics =
       [ "setBlinkFrequency", "class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa", null ]
     ] ],
     [ "GraphicsCircle", "class_graphics_circle.html", [
-      [ "GraphicsCircle", "class_graphics_circle.html#a7ed268991238e452da25f857568a383d", null ],
-      [ "GraphicsCircle", "class_graphics_circle.html#ae4a932dfdc2d09ee0d08b30a3607aabf", null ],
-      [ "GraphicsCircle", "class_graphics_circle.html#a3eff40f7d842ac0fe9284e780e1c4297", null ],
+      [ "GraphicsCircle", "class_graphics_circle.html#acc8f1eef1bbcb173dd532ab24bb8b01d", null ],
       [ "center", "class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487", null ],
       [ "center", "class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c", null ],
       [ "meDraw", "class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16", null ],
@@ -30,9 +26,7 @@ var group__graphics =
       [ "setRadius", "class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb", null ]
     ] ],
     [ "GraphicsEllipse", "class_graphics_ellipse.html", [
-      [ "GraphicsEllipse", "class_graphics_ellipse.html#aa1d11c4e4763d2b06372731a1b1707a3", null ],
-      [ "GraphicsEllipse", "class_graphics_ellipse.html#a25e5667a6926748dd3b0ef66163ba624", null ],
-      [ "GraphicsEllipse", "class_graphics_ellipse.html#a5e254eb34802ef67de24888579e61c58", null ],
+      [ "GraphicsEllipse", "class_graphics_ellipse.html#a9e53dcd151f13db599712784951083a3", null ],
       [ "center", "class_graphics_ellipse.html#a7c0d9094b07c745e450d822f2b8a029b", null ],
       [ "center", "class_graphics_ellipse.html#a358d42fda0b368a620aca1f9f2b0ce1f", null ],
       [ "meDraw", "class_graphics_ellipse.html#a14ace83491f74618a2ae3916355bd5a6", null ],
@@ -41,9 +35,7 @@ var group__graphics =
       [ "radius", "class_graphics_ellipse.html#a89d62ba1d1e08fdb72b42e398bd4ba8e", null ]
     ] ],
     [ "GraphicsImage", "class_graphics_image.html", [
-      [ "GraphicsImage", "class_graphics_image.html#a3569a0c8a2ff6e362711330db47a7caa", null ],
-      [ "GraphicsImage", "class_graphics_image.html#a3b5a6a1a98fb5de029a272da93ac02b1", null ],
-      [ "GraphicsImage", "class_graphics_image.html#a055cbf9472cbabf8e397622e8ba92ff7", null ],
+      [ "GraphicsImage", "class_graphics_image.html#a72cb2612c86dcdbbd5ee741de716c2e1", null ],
       [ "image", "class_graphics_image.html#af0f98ce806a946cf9eced608deafeb03", null ],
       [ "image", "class_graphics_image.html#a3163b48663480262ebdc2e0db33e791e", null ],
       [ "meDraw", "class_graphics_image.html#a60b5580824ee3a8c48cfb3776a9e313c", null ],
@@ -57,9 +49,7 @@ var group__graphics =
         [ "DirectChildren", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fca79162c22d42759b0afbc7c10450a7aca", null ],
         [ "ChildrenRecursively", "class_graphics_item.html#a5aab7c886fd1b149d2dfdcf32c0429fcafb2cc419646c564d64edb20bcf7b0665", null ]
       ] ],
-      [ "GraphicsItem", "class_graphics_item.html#a3d72b50c9d65d3c0466ac5af0cedaeb3", null ],
-      [ "GraphicsItem", "class_graphics_item.html#a81bb2f022601ecd5352fb31e1cb18ad0", null ],
-      [ "GraphicsItem", "class_graphics_item.html#ab32eadba7cdc2f49a661ca7875a5b0af", null ],
+      [ "GraphicsItem", "class_graphics_item.html#a96c30111512bd4f198e9414b70bb3ccc", null ],
       [ "~GraphicsItem", "class_graphics_item.html#ad76d7190cfa332054ae66d505fb37bb1", null ],
       [ "children", "class_graphics_item.html#add8da6dfd8f84b92d5f4a286e746972c", null ],
       [ "children", "class_graphics_item.html#a2315dd19bd364fed69bf7412c47d7792", null ],
@@ -84,9 +74,7 @@ var group__graphics =
       [ "setColor", "class_graphics_item.html#ac2a3edbc5d5628a75918d512314f33c3", null ],
       [ "setEnable", "class_graphics_item.html#a003ef0acc88943711b737b9018c714b5", null ],
       [ "setFill", "class_graphics_item.html#aa68ff48ffc002e83cea62ea094c5d6b7", null ],
-      [ "setParent", "class_graphics_item.html#a49cad6a33f640f1357d93849d82c5e1e", null ],
-      [ "setParent", "class_graphics_item.html#a0c34f8d6f170a9c79db4200de19d8fe5", null ],
-      [ "setParent", "class_graphics_item.html#a13e021614d06c3855ff537aea5dc2796", null ],
+      [ "setParent", "class_graphics_item.html#a0d300766a200f0dad64c1f26965e8093", null ],
       [ "setThick", "class_graphics_item.html#a4d7d6b9604728b7ad154e79731d1e8e6", null ],
       [ "setVisible", "class_graphics_item.html#a911dbcb4786b03e21400e821e0e6d632", null ],
       [ "setZ", "class_graphics_item.html#acc364937b5031bc99455d18638f77af3", null ],
@@ -95,17 +83,15 @@ var group__graphics =
       [ "z", "class_graphics_item.html#ab496f7642dc720844ff8dcb848acb7bd", null ]
     ] ],
     [ "GraphicsLine", "class_graphics_line.html", [
-      [ "GraphicsLine", "class_graphics_line.html#a4fd66714c9cff316a4040a06e8103a13", null ],
-      [ "GraphicsLine", "class_graphics_line.html#a7e15e49aa664d9e6d84c7fc3001f446f", null ],
-      [ "GraphicsLine", "class_graphics_line.html#ad0a96e7346e62e4af022e93ebde3c818", null ],
+      [ "GraphicsLine", "class_graphics_line.html#a23cc57510dd6e5a58891deb16b79b3fe", null ],
       [ "first", "class_graphics_line.html#a99444b0cb191972c4da4a2fc90026b04", null ],
       [ "first", "class_graphics_line.html#a7923055a0334f34b1458bc2ef6940ebc", null ],
       [ "second", "class_graphics_line.html#a5d088076198599fe0de8ad023d4ede23", null ],
       [ "second", "class_graphics_line.html#aacd2112737cf62eaa943b31c3a425779", null ]
     ] ],
     [ "GraphicsPoint", "class_graphics_point.html", [
-      [ "GraphicsPoint", "class_graphics_point.html#a067de3ef363b57508b4a23f29a28fd91", null ],
-      [ "GraphicsPoint", "class_graphics_point.html#a7cc2e6f35c0372b63f2132a85fa0b379", null ],
+      [ "GraphicsPoint", "class_graphics_point.html#a6ddcb4850dd928e091b2a068993a0895", null ],
+      [ "GraphicsPoint", "class_graphics_point.html#ac1242633c38521d881c9aa3548676dd4", null ],
       [ "meDraw", "class_graphics_point.html#a7c4ac7621b7bed96a192fa77d299a2cb", null ],
       [ "meHandleEvent", "class_graphics_point.html#aaceb83d2bd068629dccfde4aee9c60f5", null ],
       [ "meIsOver", "class_graphics_point.html#af3b01336f2559f13ddfdedd249203965", null ],
@@ -113,18 +99,14 @@ var group__graphics =
       [ "setRadius", "class_graphics_point.html#ae4314b809d5fad0ac5473b459e63cb12", null ]
     ] ],
     [ "GraphicsPolygon", "class_graphics_polygon.html", [
-      [ "GraphicsPolygon", "class_graphics_polygon.html#aea0338d1f382dd6264d5a4e782fd1a73", null ],
-      [ "GraphicsPolygon", "class_graphics_polygon.html#ae4400fc53439380f720023640ffe1dcd", null ],
-      [ "GraphicsPolygon", "class_graphics_polygon.html#a7dce14c95375750319cc27d04ea18fb7", null ],
+      [ "GraphicsPolygon", "class_graphics_polygon.html#a29e95f90707fed27e17b74060a6d0623", null ],
       [ "nbPoints", "class_graphics_polygon.html#a6d3ca707d0dcd1b8cc734651687f366f", null ],
       [ "newPoint", "class_graphics_polygon.html#a382da20738e4c38cd865cd02755e9ee6", null ],
       [ "popPoint", "class_graphics_polygon.html#a2cdf8adf1ef849fecc7b22e16b828a7e", null ],
       [ "setNbPoints", "class_graphics_polygon.html#a6de830eb214a9695cf84abcd4ebc7376", null ]
     ] ],
     [ "GraphicsRectangle", "class_graphics_rectangle.html", [
-      [ "GraphicsRectangle", "class_graphics_rectangle.html#a3a9c88555efe5e13fd1b638d6d33f7d8", null ],
-      [ "GraphicsRectangle", "class_graphics_rectangle.html#a3550688cc0e930e2aa4cb9ae4674e856", null ],
-      [ "GraphicsRectangle", "class_graphics_rectangle.html#a834d5bbcb80bb283b66167a9635f8299", null ],
+      [ "GraphicsRectangle", "class_graphics_rectangle.html#a4a5a09ece70c878e36694e3d07ed513f", null ],
       [ "bottomRight", "class_graphics_rectangle.html#a9f8b62b6c66b0489f016fae094091248", null ],
       [ "bottomRight", "class_graphics_rectangle.html#a4aa5825911d76e0d00fd9d08cddd3676", null ],
       [ "height", "class_graphics_rectangle.html#ab1a0b1219fdc7694c6f5902c19f9e429", null ],
@@ -137,16 +119,12 @@ var group__graphics =
       [ "width", "class_graphics_rectangle.html#ab7b6075e46e61d99dc9569219f1079bd", null ]
     ] ],
     [ "GraphicsShape", "class_graphics_shape.html", [
-      [ "GraphicsShape", "class_graphics_shape.html#ab3619dcb60cd8e3c16e838aed26e9d21", null ],
-      [ "GraphicsShape", "class_graphics_shape.html#a138d215aa301bbd06669701dda92ec1a", null ],
-      [ "GraphicsShape", "class_graphics_shape.html#a090063d6cc01eebe8ff24a0e2d9ddf4e", null ],
+      [ "GraphicsShape", "class_graphics_shape.html#ad416945628f3374abd7d0b55c40e6c11", null ],
       [ "meDraw", "class_graphics_shape.html#ad04e367a19e41326ab7b0f30207b66b5", null ],
       [ "m_points", "class_graphics_shape.html#a1e6333c05e35fbbd0550ab7fe0ac3e44", null ]
     ] ],
     [ "GraphicsSquare", "class_graphics_square.html", [
-      [ "GraphicsSquare", "class_graphics_square.html#a99b88bf2230f85a06a22526cbb42191f", null ],
-      [ "GraphicsSquare", "class_graphics_square.html#a7aec9fef10a375b9f9b3c21256ed89fe", null ],
-      [ "GraphicsSquare", "class_graphics_square.html#aa0dc1b3850ec8f4044d347f907c670de", null ],
+      [ "GraphicsSquare", "class_graphics_square.html#a14374df804233349ce8654bbe41531e7", null ],
       [ "bottomRight", "class_graphics_square.html#a163d3fa975f6c1a82bc632f508bfae3e", null ],
       [ "bottomRight", "class_graphics_square.html#a6024f0f716cebd76ea2760b960d89740", null ],
       [ "meDraw", "class_graphics_square.html#a82bd4ef147f786810f98337b8995cac1", null ],
@@ -155,12 +133,8 @@ var group__graphics =
       [ "topLeft", "class_graphics_square.html#a1bb860584c8f25357bc5cc8393716774", null ]
     ] ],
     [ "GraphicsText", "class_graphics_text.html", [
-      [ "GraphicsText", "class_graphics_text.html#a53507c83f656e27df86ac7240f9637b8", null ],
-      [ "GraphicsText", "class_graphics_text.html#a6a8047cdafb7c3ccf802f64c68bce986", null ],
-      [ "GraphicsText", "class_graphics_text.html#a0ce89b81b18830825b898b46a289ac32", null ],
-      [ "GraphicsText", "class_graphics_text.html#aaca842dff610ca610a1e5b1f2c5643de", null ],
-      [ "GraphicsText", "class_graphics_text.html#a15a55920a253dfd626b65c8ae1353ed3", null ],
-      [ "GraphicsText", "class_graphics_text.html#a660b634a8a4f7cf9cfa9e393a11d12ba", null ],
+      [ "GraphicsText", "class_graphics_text.html#a7a9525ba068e286e6aca9e49d49fc7fb", null ],
+      [ "GraphicsText", "class_graphics_text.html#a6c7c2225af9e3e29383835416c56f5e1", null ],
       [ "align", "class_graphics_text.html#a553ad5e4ea55568406479f8df7636790", null ],
       [ "font", "class_graphics_text.html#aaafb8f8246e4d3b0d5dd8ac5cc8586cc", null ],
       [ "meDraw", "class_graphics_text.html#a7b6432edbdd3b02d5c76761ac069aa57", null ],
@@ -171,9 +145,7 @@ var group__graphics =
       [ "text", "class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352", null ]
     ] ],
     [ "GraphicsTriangle", "class_graphics_triangle.html", [
-      [ "GraphicsTriangle", "class_graphics_triangle.html#af0e6ddda18633baa2a5a40fd47849fc1", null ],
-      [ "GraphicsTriangle", "class_graphics_triangle.html#ab5cdcaffacda934b8feffb4702f6c08f", null ],
-      [ "GraphicsTriangle", "class_graphics_triangle.html#af4691a81cd1123fb0caa79e6393f666d", null ],
+      [ "GraphicsTriangle", "class_graphics_triangle.html#ac7f1ce865bb739e1fc455aa6962d4b01", null ],
       [ "first", "class_graphics_triangle.html#a147180c3b819de53f00ce67f41c12bb4", null ],
       [ "second", "class_graphics_triangle.html#a0e102372963019779b658b153eb48389", null ],
       [ "third", "class_graphics_triangle.html#a11e015d2c442ebab1344b4ca9021a2de", null ]

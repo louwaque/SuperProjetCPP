@@ -1,8 +1,6 @@
 var class_spin_box =
 [
-    [ "SpinBox", "class_spin_box.html#a3a76145cee732793e2683c0759f6eddc", null ],
-    [ "SpinBox", "class_spin_box.html#aff8a1d8980d86c57189290536665e015", null ],
-    [ "SpinBox", "class_spin_box.html#ad63e41646f4c78ab4067e607b76c5d74", null ],
+    [ "SpinBox", "class_spin_box.html#a6c50d5722378aee314d31f314e89d06f", null ],
     [ "isInfinite", "class_spin_box.html#a199351ce99bf8e64f6fb3f2fd2e8b717", null ],
     [ "labels", "class_spin_box.html#a0f0f790edc8919881a4aa210a38918df", null ],
     [ "maximumValue", "class_spin_box.html#a4a0355c236ef799a7f199bc30daa021d", null ],
