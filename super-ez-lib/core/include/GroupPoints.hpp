@@ -9,6 +9,12 @@ class Point;
 //FIXME utiliser shared_ptr PARTOUT pour pouvoir sérialiser correctement
 typedef std::vector<std::reference_wrapper<Point>> Points;
 
+/*!
+ * \class GroupPoints
+ * \ingroup core
+ * \brief Représente un groupe de points
+ */
+
 class GroupPoints {
 public:
   GroupPoints();
