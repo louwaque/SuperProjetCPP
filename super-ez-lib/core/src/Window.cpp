@@ -9,7 +9,7 @@ Window::Window(const size_t width, const size_t height, const std::string &title
   m_elapsedTime(0)
 {
   EZWindow::setDoubleBuffer(m_doubleBuffer);
-  EZWindow::startTimer(m_updateFrequency);
+  EZWindow::startTimer(m_updateFrequency.count());
 }
 
 Window::~Window()
@@ -24,11 +24,11 @@ void Window::setDoubleBuffer(const bool active)
 void Window::timerNotify()
 {
   auto currentTime = Clock::now();
-  m_elapsedTime += std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - m_lastUpdate).count();
+  m_elapsedTime += std::chrono::duration_cast<Milliseconds>(currentTime - m_lastUpdate);
   m_lastUpdate = currentTime;
   while (m_elapsedTime > m_updateFrequency) {
     updateEvent(m_updateFrequency);
     m_elapsedTime -= m_updateFrequency;
   }
-  EZWindow::startTimer(m_updateFrequency);
+  EZWindow::startTimer(m_updateFrequency.count());
 }

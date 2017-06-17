@@ -8,6 +8,12 @@
 #include "MouseEvent.hpp"
 #include "KeyEvent.hpp"
 
+/*!
+ * \class Window
+ * \ingroup core
+ * \brief Représente une fenêtre
+ */
+
 class Window : private EZWindow
 {
   typedef std::chrono::high_resolution_clock Clock;
@@ -39,11 +45,14 @@ public:
   inline Canvas &canvas() { return m_canvas; }
 
 protected:
+  typedef std::chrono::milliseconds Milliseconds;
+
+protected:
   virtual void drawEvent() {}
   virtual void resizeEvent(const size_t width, const size_t height) {}
   virtual void closeEvent() {}
   virtual void handleEvent(const Event &event) {}
-  virtual void updateEvent(const unsigned int time) {}
+  virtual void updateEvent(const Milliseconds &time) {}
 
 private:
   inline void expose() { drawEvent(); }
@@ -59,9 +68,9 @@ private:
 private:
   bool m_doubleBuffer;
   Canvas m_canvas;
-  unsigned int m_updateFrequency;
+  Milliseconds m_updateFrequency;
   Clock::time_point m_lastUpdate;
-  unsigned int m_elapsedTime;
+  Milliseconds m_elapsedTime;
 };
 
 #endif
