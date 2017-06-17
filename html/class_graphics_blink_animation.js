@@ -8,6 +8,5 @@ var class_graphics_blink_animation =
     [ "meUpdate", "class_graphics_blink_animation.html#a2a75e0463116fcb3f9050e5f74d9e8ec", null ],
     [ "setBecomeColor", "class_graphics_blink_animation.html#a5936a96b0f666c4405ac1c6ae16a3275", null ],
     [ "setBecomeInvisible", "class_graphics_blink_animation.html#a80baced0f895d671d52d55528f0bacb6", null ],
-    [ "setBlinkFrequency", "class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa", null ],
-    [ "type", "class_graphics_blink_animation.html#a92c69ed38e842f0143c4dcb47b44b7ef", null ]
+    [ "setBlinkFrequency", "class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa", null ]
 ];

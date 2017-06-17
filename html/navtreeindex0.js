@@ -227,7 +227,6 @@ var NAVTREEINDEX0 =
 "class_graphics_animation.html":[3,1,0],
 "class_graphics_animation.html#aa04517ea053a31c0240c47a77aff7eb1":[3,1,0,0],
 "class_graphics_animation.html#aa58900933a2f08447fa5f427a6ea74e2":[3,1,0,1],
-"class_graphics_animation.html#abf1217ebaad3cefb3ed900f8776376f1":[3,1,0,3],
 "class_graphics_animation.html#af44141c192a9dd66f2754e4fb0daa53c":[3,1,0,2],
 "class_graphics_blink_animation.html":[3,1,1],
 "class_graphics_blink_animation.html#a03ba5dafa62bd49da252dfaea05ada69":[3,1,1,4],
@@ -236,7 +235,6 @@ var NAVTREEINDEX0 =
 "class_graphics_blink_animation.html#a2a75e0463116fcb3f9050e5f74d9e8ec":[3,1,1,5],
 "class_graphics_blink_animation.html#a5936a96b0f666c4405ac1c6ae16a3275":[3,1,1,6],
 "class_graphics_blink_animation.html#a80baced0f895d671d52d55528f0bacb6":[3,1,1,7],
-"class_graphics_blink_animation.html#a92c69ed38e842f0143c4dcb47b44b7ef":[3,1,1,9],
 "class_graphics_blink_animation.html#ab968632932b3564a9a6791165224d5fa":[3,1,1,8],
 "class_graphics_blink_animation.html#aeef0e1fc5c9f562ea66283bb04fba73e":[3,1,1,3],
 "class_graphics_blink_animation.html#af33ab159462a80e9f4a44077cc32a2fc":[3,1,1,1],
@@ -244,10 +242,12 @@ var NAVTREEINDEX0 =
 "class_graphics_circle.html#a0c332daff27b4a2eec0d8e07814b8a5c":[3,1,2,4],
 "class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb":[3,1,2,10],
 "class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed":[3,1,2,8],
-"class_graphics_circle.html#a3b8abd3846ad2d4b0f4dd8248118d64f":[3,1,2,11],
 "class_graphics_circle.html#a3eff40f7d842ac0fe9284e780e1c4297":[3,1,2,2],
 "class_graphics_circle.html#a5219f160f58c91aeb67922cf9ae3e487":[3,1,2,3],
 "class_graphics_circle.html#a60591e8f8e2cea0fb23f7b25ba1f49cb":[3,1,2,9],
 "class_graphics_circle.html#a7ed268991238e452da25f857568a383d":[3,1,2,0],
-"class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16":[3,1,2,5]
+"class_graphics_circle.html#a8533b7a4eb72f0063e98d8ad94210f16":[3,1,2,5],
+"class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa":[3,1,2,7],
+"class_graphics_circle.html#adf0874f0e62be9e88361d799975c99bc":[3,1,2,6],
+"class_graphics_circle.html#ae4a932dfdc2d09ee0d08b30a3607aabf":[3,1,2,1]
 };

@@ -12,6 +12,5 @@ var class_graphics_rectangle =
     [ "setWidth", "class_graphics_rectangle.html#a3efd2295cd742f75de829851bf7ca3dd", null ],
     [ "topLeft", "class_graphics_rectangle.html#ac70a5125161b6c09abd387edd9a83597", null ],
     [ "topLeft", "class_graphics_rectangle.html#adae2b3c26a2d3ae81e98cbb525b14753", null ],
-    [ "type", "class_graphics_rectangle.html#a2a381fcb23cb8f69e582bed007478025", null ],
     [ "width", "class_graphics_rectangle.html#ab7b6075e46e61d99dc9569219f1079bd", null ]
 ];

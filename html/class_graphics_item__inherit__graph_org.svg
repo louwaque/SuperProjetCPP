@@ -26,7 +26,7 @@
 <text text-anchor="start" x="517.5" y="-808" font-family="Helvetica,sans-Serif" font-size="10.00">+ setParent()</text>
 <text text-anchor="start" x="517.5" y="-797" font-family="Helvetica,sans-Serif" font-size="10.00">+ setParent()</text>
 <text text-anchor="start" x="517.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">+ setParent()</text>
-<text text-anchor="start" x="517.5" y="-775" font-family="Helvetica,sans-Serif" font-size="10.00">et 23 de plus...</text>
+<text text-anchor="start" x="517.5" y="-775" font-family="Helvetica,sans-Serif" font-size="10.00">et 22 de plus...</text>
 <text text-anchor="start" x="517.5" y="-764" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
 <text text-anchor="start" x="517.5" y="-753" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
 <text text-anchor="start" x="517.5" y="-742" font-family="Helvetica,sans-Serif" font-size="10.00">+ make()</text>
@@ -38,21 +38,20 @@
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="class_graphics_animation.html" target="_top" xlink:title="Classe de base pour les animations. ">
-<polygon fill="white" stroke="black" points="11,-481 11,-571 125,-571 125,-481 11,-481"/>
-<text text-anchor="middle" x="68" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsAnimation</text>
-<polyline fill="none" stroke="black" points="11,-552 125,-552 "/>
-<text text-anchor="middle" x="68" y="-540" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="11,-533 125,-533 "/>
-<text text-anchor="start" x="19" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
-<text text-anchor="start" x="19" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
-<text text-anchor="start" x="19" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
-<text text-anchor="start" x="19" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
+<polygon fill="white" stroke="black" points="11,-486.5 11,-565.5 125,-565.5 125,-486.5 11,-486.5"/>
+<text text-anchor="middle" x="68" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsAnimation</text>
+<polyline fill="none" stroke="black" points="11,-546.5 125,-546.5 "/>
+<text text-anchor="middle" x="68" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="11,-527.5 125,-527.5 "/>
+<text text-anchor="start" x="19" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
+<text text-anchor="start" x="19" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
+<text text-anchor="start" x="19" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsAnimation()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M499.325,-803.602C409.707,-788.366 241.038,-748.515 134,-654 109.041,-631.961 92.1278,-598.198 81.6759,-571.023"/>
+<path fill="none" stroke="midnightblue" d="M499.325,-803.602C409.707,-788.366 241.038,-748.515 134,-654 107.365,-630.481 89.8922,-593.61 79.6569,-565.642"/>
 <polygon fill="none" stroke="midnightblue" points="498.889,-807.077 509.326,-805.255 500.031,-800.171 498.889,-807.077"/>
 </g>
 <!-- Node6 -->
@@ -81,133 +80,128 @@
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
 <g id="a_node7"><a xlink:href="class_graphics_point.html" target="_top" xlink:title="Un point. ">
-<polygon fill="white" stroke="black" points="259.5,-459 259.5,-593 360.5,-593 360.5,-459 259.5,-459"/>
-<text text-anchor="middle" x="310" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsPoint</text>
-<polyline fill="none" stroke="black" points="259.5,-574 360.5,-574 "/>
-<text text-anchor="middle" x="310" y="-562" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="259.5,-555 360.5,-555 "/>
-<text text-anchor="start" x="267.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPoint()</text>
-<text text-anchor="start" x="267.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPoint()</text>
-<text text-anchor="start" x="267.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
-<text text-anchor="start" x="267.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ setRadius()</text>
-<text text-anchor="start" x="267.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="267.5" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="267.5" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
-<text text-anchor="start" x="267.5" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="259.5,-464.5 259.5,-587.5 360.5,-587.5 360.5,-464.5 259.5,-464.5"/>
+<text text-anchor="middle" x="310" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsPoint</text>
+<polyline fill="none" stroke="black" points="259.5,-568.5 360.5,-568.5 "/>
+<text text-anchor="middle" x="310" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="259.5,-549.5 360.5,-549.5 "/>
+<text text-anchor="start" x="267.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPoint()</text>
+<text text-anchor="start" x="267.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPoint()</text>
+<text text-anchor="start" x="267.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
+<text text-anchor="start" x="267.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setRadius()</text>
+<text text-anchor="start" x="267.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="267.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meHandleEvent()</text>
+<text text-anchor="start" x="267.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M500.856,-773.662C459.737,-744.681 405.898,-701.809 369,-654 354.963,-635.812 343.25,-613.746 334.057,-593.144"/>
+<path fill="none" stroke="midnightblue" d="M500.856,-773.662C459.737,-744.681 405.898,-701.809 369,-654 353.701,-634.176 341.161,-609.745 331.638,-587.624"/>
 <polygon fill="none" stroke="midnightblue" points="498.959,-776.606 509.164,-779.451 502.961,-770.862 498.959,-776.606"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
 <g id="a_node8"><a xlink:href="class_graphics_rectangle.html" target="_top" xlink:title="Un rectangle. ">
-<polygon fill="white" stroke="black" points="378.5,-426 378.5,-626 493.5,-626 493.5,-426 378.5,-426"/>
-<text text-anchor="middle" x="436" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsRectangle</text>
-<polyline fill="none" stroke="black" points="378.5,-607 493.5,-607 "/>
-<text text-anchor="middle" x="436" y="-595" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="378.5,-588 493.5,-588 "/>
-<text text-anchor="start" x="386.5" y="-576" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
-<text text-anchor="start" x="386.5" y="-565" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
-<text text-anchor="start" x="386.5" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
-<text text-anchor="start" x="386.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
-<text text-anchor="start" x="386.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
-<text text-anchor="start" x="386.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
-<text text-anchor="start" x="386.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
-<text text-anchor="start" x="386.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ width()</text>
-<text text-anchor="start" x="386.5" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">+ setWidth()</text>
-<text text-anchor="start" x="386.5" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">+ height()</text>
-<text text-anchor="start" x="386.5" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00">+ setHeight()</text>
-<text text-anchor="start" x="386.5" y="-455" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="386.5" y="-444" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="386.5" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="378.5,-431.5 378.5,-620.5 493.5,-620.5 493.5,-431.5 378.5,-431.5"/>
+<text text-anchor="middle" x="436" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsRectangle</text>
+<polyline fill="none" stroke="black" points="378.5,-601.5 493.5,-601.5 "/>
+<text text-anchor="middle" x="436" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="378.5,-582.5 493.5,-582.5 "/>
+<text text-anchor="start" x="386.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
+<text text-anchor="start" x="386.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
+<text text-anchor="start" x="386.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsRectangle()</text>
+<text text-anchor="start" x="386.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
+<text text-anchor="start" x="386.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
+<text text-anchor="start" x="386.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
+<text text-anchor="start" x="386.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
+<text text-anchor="start" x="386.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ width()</text>
+<text text-anchor="start" x="386.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setWidth()</text>
+<text text-anchor="start" x="386.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ height()</text>
+<text text-anchor="start" x="386.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setHeight()</text>
+<text text-anchor="start" x="386.5" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="386.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M505.364,-686.425C496.575,-666.224 487.585,-645.563 479.116,-626.096"/>
+<path fill="none" stroke="midnightblue" d="M505.297,-686.272C495.718,-664.256 485.904,-641.698 476.785,-620.741"/>
 <polygon fill="none" stroke="midnightblue" points="502.187,-687.895 509.386,-695.669 508.605,-685.102 502.187,-687.895"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
 <g id="a_node9"><a xlink:href="class_graphics_shape.html" target="_top" xlink:title="Une forme. ">
-<polygon fill="white" stroke="black" points="511,-475.5 511,-576.5 609,-576.5 609,-475.5 511,-475.5"/>
-<text text-anchor="middle" x="560" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsShape</text>
-<polyline fill="none" stroke="black" points="511,-557.5 609,-557.5 "/>
-<text text-anchor="start" x="519" y="-545.5" font-family="Helvetica,sans-Serif" font-size="10.00"># m_points</text>
-<polyline fill="none" stroke="black" points="511,-538.5 609,-538.5 "/>
-<text text-anchor="start" x="519" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
-<text text-anchor="start" x="519" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
-<text text-anchor="start" x="519" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
-<text text-anchor="start" x="519" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="519" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<polygon fill="white" stroke="black" points="511,-481 511,-571 609,-571 609,-481 511,-481"/>
+<text text-anchor="middle" x="560" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsShape</text>
+<polyline fill="none" stroke="black" points="511,-552 609,-552 "/>
+<text text-anchor="start" x="519" y="-540" font-family="Helvetica,sans-Serif" font-size="10.00"># m_points</text>
+<polyline fill="none" stroke="black" points="511,-533 609,-533 "/>
+<text text-anchor="start" x="519" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
+<text text-anchor="start" x="519" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
+<text text-anchor="start" x="519" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsShape()</text>
+<text text-anchor="start" x="519" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge"><title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M560,-680.328C560,-643.357 560,-605.409 560,-576.514"/>
+<path fill="none" stroke="midnightblue" d="M560,-680.489C560,-641.178 560,-600.745 560,-571.253"/>
 <polygon fill="none" stroke="midnightblue" points="556.5,-680.721 560,-690.721 563.5,-680.721 556.5,-680.721"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node"><title>Node15</title>
 <g id="a_node15"><a xlink:href="class_graphics_square.html" target="_top" xlink:title="Un carré ">
-<polygon fill="white" stroke="black" points="627.5,-448 627.5,-604 728.5,-604 728.5,-448 627.5,-448"/>
-<text text-anchor="middle" x="678" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsSquare</text>
-<polyline fill="none" stroke="black" points="627.5,-585 728.5,-585 "/>
-<text text-anchor="middle" x="678" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="627.5,-566 728.5,-566 "/>
-<text text-anchor="start" x="635.5" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
-<text text-anchor="start" x="635.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
-<text text-anchor="start" x="635.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
-<text text-anchor="start" x="635.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
-<text text-anchor="start" x="635.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
-<text text-anchor="start" x="635.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
-<text text-anchor="start" x="635.5" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
-<text text-anchor="start" x="635.5" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="635.5" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="635.5" y="-455" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="627.5,-453.5 627.5,-598.5 728.5,-598.5 728.5,-453.5 627.5,-453.5"/>
+<text text-anchor="middle" x="678" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsSquare</text>
+<polyline fill="none" stroke="black" points="627.5,-579.5 728.5,-579.5 "/>
+<text text-anchor="middle" x="678" y="-567.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="627.5,-560.5 728.5,-560.5 "/>
+<text text-anchor="start" x="635.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
+<text text-anchor="start" x="635.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
+<text text-anchor="start" x="635.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsSquare()</text>
+<text text-anchor="start" x="635.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
+<text text-anchor="start" x="635.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ topLeft()</text>
+<text text-anchor="start" x="635.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
+<text text-anchor="start" x="635.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bottomRight()</text>
+<text text-anchor="start" x="635.5" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="635.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
 <g id="edge14" class="edge"><title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M614.079,-681.386C625.039,-654.913 636.228,-627.889 646.118,-604.003"/>
+<path fill="none" stroke="midnightblue" d="M614.185,-681.129C625.933,-652.755 637.937,-623.762 648.318,-598.69"/>
 <polygon fill="none" stroke="midnightblue" points="610.805,-680.143 610.214,-690.721 617.273,-682.821 610.805,-680.143"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node"><title>Node16</title>
 <g id="a_node16"><a xlink:href="class_graphics_text.html" target="_top" xlink:title="Du texte. ">
-<polygon fill="white" stroke="black" points="747,-420.5 747,-631.5 837,-631.5 837,-420.5 747,-420.5"/>
-<text text-anchor="middle" x="792" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsText</text>
-<polyline fill="none" stroke="black" points="747,-612.5 837,-612.5 "/>
-<text text-anchor="middle" x="792" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="747,-593.5 837,-593.5 "/>
-<text text-anchor="start" x="755" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
-<text text-anchor="start" x="755" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
-<text text-anchor="start" x="755" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
-<text text-anchor="start" x="755" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ font()</text>
-<text text-anchor="start" x="755" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFont()</text>
-<text text-anchor="start" x="755" y="-471.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ align()</text>
-<text text-anchor="start" x="755" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setAlign()</text>
-<text text-anchor="start" x="755" y="-449.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="755" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="755" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="747,-426 747,-626 837,-626 837,-426 747,-426"/>
+<text text-anchor="middle" x="792" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsText</text>
+<polyline fill="none" stroke="black" points="747,-607 837,-607 "/>
+<text text-anchor="middle" x="792" y="-595" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="747,-588 837,-588 "/>
+<text text-anchor="start" x="755" y="-576" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-565" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsText()</text>
+<text text-anchor="start" x="755" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">+ text()</text>
+<text text-anchor="start" x="755" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">+ setText()</text>
+<text text-anchor="start" x="755" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">+ font()</text>
+<text text-anchor="start" x="755" y="-477" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFont()</text>
+<text text-anchor="start" x="755" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00">+ align()</text>
+<text text-anchor="start" x="755" y="-455" font-family="Helvetica,sans-Serif" font-size="10.00">+ setAlign()</text>
+<text text-anchor="start" x="755" y="-444" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="755" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node16 -->
 <g id="edge15" class="edge"><title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M619.205,-769.864C656.816,-740.723 704.382,-699.174 737,-654 742.064,-646.987 746.791,-639.435 751.176,-631.634"/>
+<path fill="none" stroke="midnightblue" d="M619.205,-769.864C656.816,-740.723 704.382,-699.174 737,-654 743.259,-645.331 749.004,-635.839 754.225,-626.071"/>
 <polygon fill="none" stroke="midnightblue" points="616.665,-767.401 610.853,-776.26 620.921,-772.959 616.665,-767.401"/>
 </g>
 <!-- Node17 -->
@@ -296,153 +290,147 @@
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="class_graphics_blink_animation.html" target="_top" xlink:title="Faire clignoter sont parent. ">
-<polygon fill="white" stroke="black" points="0,-161 0,-317 136,-317 136,-161 0,-161"/>
-<text text-anchor="middle" x="68" y="-305" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsBlinkAnimation</text>
-<polyline fill="none" stroke="black" points="0,-298 136,-298 "/>
-<text text-anchor="middle" x="68" y="-286" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="0,-279 136,-279 "/>
-<text text-anchor="start" x="8" y="-267" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsBlinkAnimation()</text>
-<text text-anchor="start" x="8" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsBlinkAnimation()</text>
-<text text-anchor="start" x="8" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ blinkFrequency()</text>
-<text text-anchor="start" x="8" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBlinkFrequency()</text>
-<text text-anchor="start" x="8" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ becomeColor()</text>
-<text text-anchor="start" x="8" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBecomeColor()</text>
-<text text-anchor="start" x="8" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ becomeInvisible()</text>
-<text text-anchor="start" x="8" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBecomeInvisible()</text>
-<text text-anchor="start" x="8" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="8" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
+<polygon fill="white" stroke="black" points="0,-166.5 0,-311.5 136,-311.5 136,-166.5 0,-166.5"/>
+<text text-anchor="middle" x="68" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsBlinkAnimation</text>
+<polyline fill="none" stroke="black" points="0,-292.5 136,-292.5 "/>
+<text text-anchor="middle" x="68" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="0,-273.5 136,-273.5 "/>
+<text text-anchor="start" x="8" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsBlinkAnimation()</text>
+<text text-anchor="start" x="8" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsBlinkAnimation()</text>
+<text text-anchor="start" x="8" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ blinkFrequency()</text>
+<text text-anchor="start" x="8" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBlinkFrequency()</text>
+<text text-anchor="start" x="8" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ becomeColor()</text>
+<text text-anchor="start" x="8" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBecomeColor()</text>
+<text text-anchor="start" x="8" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ becomeInvisible()</text>
+<text text-anchor="start" x="8" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setBecomeInvisible()</text>
+<text text-anchor="start" x="8" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M68,-470.689C68,-427.212 68,-365.687 68,-317.108"/>
-<polygon fill="none" stroke="midnightblue" points="64.5001,-470.781 68,-480.781 71.5001,-470.781 64.5001,-470.781"/>
+<path fill="none" stroke="midnightblue" d="M68,-476.118C68,-430.845 68,-362.96 68,-311.583"/>
+<polygon fill="none" stroke="midnightblue" points="64.5001,-476.267 68,-486.267 71.5001,-476.267 64.5001,-476.267"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node"><title>Node10</title>
 <g id="a_node10"><a xlink:href="class_graphics_circle.html" target="_top" xlink:title="Un cercle. ">
-<polygon fill="white" stroke="black" points="199,-150 199,-328 295,-328 295,-150 199,-150"/>
-<text text-anchor="middle" x="247" y="-316" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsCircle</text>
-<polyline fill="none" stroke="black" points="199,-309 295,-309 "/>
-<text text-anchor="middle" x="247" y="-297" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="199,-290 295,-290 "/>
-<text text-anchor="start" x="207" y="-278" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
-<text text-anchor="start" x="207" y="-267" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
-<text text-anchor="start" x="207" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
-<text text-anchor="start" x="207" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
-<text text-anchor="start" x="207" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
-<text text-anchor="start" x="207" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ radiusPt()</text>
-<text text-anchor="start" x="207" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ radiusPt()</text>
-<text text-anchor="start" x="207" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
-<text text-anchor="start" x="207" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ setRadius()</text>
-<text text-anchor="start" x="207" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="207" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="207" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="199,-155.5 199,-322.5 295,-322.5 295,-155.5 199,-155.5"/>
+<text text-anchor="middle" x="247" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsCircle</text>
+<polyline fill="none" stroke="black" points="199,-303.5 295,-303.5 "/>
+<text text-anchor="middle" x="247" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="199,-284.5 295,-284.5 "/>
+<text text-anchor="start" x="207" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
+<text text-anchor="start" x="207" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
+<text text-anchor="start" x="207" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsCircle()</text>
+<text text-anchor="start" x="207" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
+<text text-anchor="start" x="207" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
+<text text-anchor="start" x="207" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radiusPt()</text>
+<text text-anchor="start" x="207" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radiusPt()</text>
+<text text-anchor="start" x="207" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
+<text text-anchor="start" x="207" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setRadius()</text>
+<text text-anchor="start" x="207" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="207" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge"><title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M546.061,-465.843C537.345,-441.325 523.535,-414.752 502,-398 431.403,-343.082 374.835,-416.612 304,-362 292.336,-353.007 282.961,-341.052 275.454,-328.137"/>
-<polygon fill="none" stroke="midnightblue" points="542.787,-467.09 549.268,-475.471 549.428,-464.877 542.787,-467.09"/>
+<path fill="none" stroke="midnightblue" d="M547.85,-471.059C539.278,-445.168 525.072,-415.948 502,-398 431.403,-343.082 374.835,-416.612 304,-362 290.669,-351.723 280.329,-337.576 272.35,-322.549"/>
+<polygon fill="none" stroke="midnightblue" points="544.562,-472.273 550.867,-480.788 551.248,-470.2 544.562,-472.273"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
 <g id="a_node11"><a xlink:href="class_graphics_ellipse.html" target="_top" xlink:title="Une ellipse. ">
-<polygon fill="white" stroke="black" points="313,-161 313,-317 413,-317 413,-161 313,-161"/>
-<text text-anchor="middle" x="363" y="-305" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsEllipse</text>
-<polyline fill="none" stroke="black" points="313,-298 413,-298 "/>
-<text text-anchor="middle" x="363" y="-286" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="313,-279 413,-279 "/>
-<text text-anchor="start" x="321" y="-267" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
-<text text-anchor="start" x="321" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
-<text text-anchor="start" x="321" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
-<text text-anchor="start" x="321" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
-<text text-anchor="start" x="321" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
-<text text-anchor="start" x="321" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
-<text text-anchor="start" x="321" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
-<text text-anchor="start" x="321" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
-<text text-anchor="start" x="321" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
-<text text-anchor="start" x="321" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
+<polygon fill="white" stroke="black" points="313,-166.5 313,-311.5 413,-311.5 413,-166.5 313,-166.5"/>
+<text text-anchor="middle" x="363" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsEllipse</text>
+<polyline fill="none" stroke="black" points="313,-292.5 413,-292.5 "/>
+<text text-anchor="middle" x="363" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="313,-273.5 413,-273.5 "/>
+<text text-anchor="start" x="321" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
+<text text-anchor="start" x="321" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
+<text text-anchor="start" x="321" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsEllipse()</text>
+<text text-anchor="start" x="321" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
+<text text-anchor="start" x="321" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ center()</text>
+<text text-anchor="start" x="321" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
+<text text-anchor="start" x="321" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ radius()</text>
+<text text-anchor="start" x="321" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
+<text text-anchor="start" x="321" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00"># meIsOver()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node11 -->
 <g id="edge10" class="edge"><title>Node9&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M543.118,-465.884C534.026,-442.412 520.731,-416.628 502,-398 474.354,-370.507 449.948,-389.187 422,-362 409.015,-349.368 398.503,-333.298 390.152,-317"/>
-<polygon fill="none" stroke="midnightblue" points="539.894,-467.259 546.64,-475.429 546.462,-464.836 539.894,-467.259"/>
+<path fill="none" stroke="midnightblue" d="M545.153,-471.284C536.05,-446.444 522.18,-418.068 502,-398 474.354,-370.507 449.948,-389.187 422,-362 407.581,-347.974 396.212,-329.708 387.465,-311.599"/>
+<polygon fill="none" stroke="midnightblue" points="541.93,-472.673 548.529,-480.962 548.54,-470.367 541.93,-472.673"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
 <g id="a_node12"><a xlink:href="class_graphics_line.html" target="_top" xlink:title="Une ligne. ">
-<polygon fill="white" stroke="black" points="431.5,-172 431.5,-306 520.5,-306 520.5,-172 431.5,-172"/>
-<text text-anchor="middle" x="476" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsLine</text>
-<polyline fill="none" stroke="black" points="431.5,-287 520.5,-287 "/>
-<text text-anchor="middle" x="476" y="-275" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="431.5,-268 520.5,-268 "/>
-<text text-anchor="start" x="439.5" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
-<text text-anchor="start" x="439.5" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
-<text text-anchor="start" x="439.5" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
-<text text-anchor="start" x="439.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
-<text text-anchor="start" x="439.5" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
-<text text-anchor="start" x="439.5" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
-<text text-anchor="start" x="439.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
-<text text-anchor="start" x="439.5" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
+<polygon fill="white" stroke="black" points="431.5,-177.5 431.5,-300.5 520.5,-300.5 520.5,-177.5 431.5,-177.5"/>
+<text text-anchor="middle" x="476" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsLine</text>
+<polyline fill="none" stroke="black" points="431.5,-281.5 520.5,-281.5 "/>
+<text text-anchor="middle" x="476" y="-269.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="431.5,-262.5 520.5,-262.5 "/>
+<text text-anchor="start" x="439.5" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
+<text text-anchor="start" x="439.5" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
+<text text-anchor="start" x="439.5" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsLine()</text>
+<text text-anchor="start" x="439.5" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
+<text text-anchor="start" x="439.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
+<text text-anchor="start" x="439.5" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
+<text text-anchor="start" x="439.5" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node12 -->
 <g id="edge11" class="edge"><title>Node9&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M542.526,-465.714C528.808,-419.171 509.717,-354.395 495.502,-306.168"/>
-<polygon fill="none" stroke="midnightblue" points="539.184,-466.754 545.368,-475.357 545.898,-464.775 539.184,-466.754"/>
+<path fill="none" stroke="midnightblue" d="M544.11,-471.088C529.805,-422.552 508.801,-351.29 493.906,-300.754"/>
+<polygon fill="none" stroke="midnightblue" points="540.783,-472.179 546.967,-480.781 547.497,-470.2 540.783,-472.179"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node"><title>Node13</title>
 <g id="a_node13"><a xlink:href="class_graphics_polygon.html" target="_top" xlink:title="Un polygone. ">
-<polygon fill="white" stroke="black" points="538,-172 538,-306 644,-306 644,-172 538,-172"/>
-<text text-anchor="middle" x="591" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsPolygon</text>
-<polyline fill="none" stroke="black" points="538,-287 644,-287 "/>
-<text text-anchor="middle" x="591" y="-275" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="538,-268 644,-268 "/>
-<text text-anchor="start" x="546" y="-256" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
-<text text-anchor="start" x="546" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
-<text text-anchor="start" x="546" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
-<text text-anchor="start" x="546" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ newPoint()</text>
-<text text-anchor="start" x="546" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ popPoint()</text>
-<text text-anchor="start" x="546" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ nbPoints()</text>
-<text text-anchor="start" x="546" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ setNbPoints()</text>
-<text text-anchor="start" x="546" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
+<polygon fill="white" stroke="black" points="538,-177.5 538,-300.5 644,-300.5 644,-177.5 538,-177.5"/>
+<text text-anchor="middle" x="591" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsPolygon</text>
+<polyline fill="none" stroke="black" points="538,-281.5 644,-281.5 "/>
+<text text-anchor="middle" x="591" y="-269.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="538,-262.5 644,-262.5 "/>
+<text text-anchor="start" x="546" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
+<text text-anchor="start" x="546" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
+<text text-anchor="start" x="546" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsPolygon()</text>
+<text text-anchor="start" x="546" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ newPoint()</text>
+<text text-anchor="start" x="546" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ popPoint()</text>
+<text text-anchor="start" x="546" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ nbPoints()</text>
+<text text-anchor="start" x="546" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setNbPoints()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node13 -->
 <g id="edge12" class="edge"><title>Node9&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M566.512,-465.129C571.57,-418.629 578.579,-354.193 583.803,-306.168"/>
-<polygon fill="none" stroke="midnightblue" points="563.002,-465.037 565.4,-475.357 569.961,-465.794 563.002,-465.037"/>
+<path fill="none" stroke="midnightblue" d="M565.897,-470.784C571.176,-422.254 578.906,-351.184 584.392,-300.754"/>
+<polygon fill="none" stroke="midnightblue" points="562.412,-470.462 564.81,-480.781 569.371,-471.219 562.412,-470.462"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
 <g id="a_node14"><a xlink:href="class_graphics_triangle.html" target="_top" xlink:title="Un triangle quelconque. ">
-<polygon fill="white" stroke="black" points="662.5,-177.5 662.5,-300.5 767.5,-300.5 767.5,-177.5 662.5,-177.5"/>
-<text text-anchor="middle" x="715" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsTriangle</text>
-<polyline fill="none" stroke="black" points="662.5,-281.5 767.5,-281.5 "/>
-<text text-anchor="middle" x="715" y="-269.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="662.5,-262.5 767.5,-262.5 "/>
-<text text-anchor="start" x="670.5" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
-<text text-anchor="start" x="670.5" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
-<text text-anchor="start" x="670.5" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
-<text text-anchor="start" x="670.5" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
-<text text-anchor="start" x="670.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
-<text text-anchor="start" x="670.5" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ third()</text>
-<text text-anchor="start" x="670.5" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ type()</text>
+<polygon fill="white" stroke="black" points="662.5,-183 662.5,-295 767.5,-295 767.5,-183 662.5,-183"/>
+<text text-anchor="middle" x="715" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">GraphicsTriangle</text>
+<polyline fill="none" stroke="black" points="662.5,-276 767.5,-276 "/>
+<text text-anchor="middle" x="715" y="-264" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="662.5,-257 767.5,-257 "/>
+<text text-anchor="start" x="670.5" y="-245" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
+<text text-anchor="start" x="670.5" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
+<text text-anchor="start" x="670.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">+ GraphicsTriangle()</text>
+<text text-anchor="start" x="670.5" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">+ first()</text>
+<text text-anchor="start" x="670.5" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">+ second()</text>
+<text text-anchor="start" x="670.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">+ third()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node14 -->
 <g id="edge13" class="edge"><title>Node9&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M582.135,-466.045C591.678,-443.851 603.903,-418.935 618,-398 630.292,-379.745 639.271,-379.953 652,-362 665.443,-343.04 677.785,-320.826 687.914,-300.586"/>
-<polygon fill="none" stroke="midnightblue" points="578.863,-464.796 578.212,-475.37 585.316,-467.51 578.863,-464.796"/>
+<path fill="none" stroke="midnightblue" d="M579.885,-471.344C589.724,-447.884 602.769,-420.619 618,-398 630.292,-379.745 639.271,-379.953 652,-362 666.684,-341.29 680.054,-316.697 690.661,-295.036"/>
+<polygon fill="none" stroke="midnightblue" points="576.562,-470.222 576.003,-480.802 583.038,-472.879 576.562,-470.222"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node"><title>Node19</title>

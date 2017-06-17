@@ -13,6 +13,5 @@ var class_graphics_text =
     [ "setAlign", "class_graphics_text.html#af0ed3981eb67b4602330a7579bd5093f", null ],
     [ "setFont", "class_graphics_text.html#adc96243d9e35d7cbf3e0b8abbd1be5a9", null ],
     [ "setText", "class_graphics_text.html#ac42bb0e20251eb0dc2305be760714130", null ],
-    [ "text", "class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352", null ],
-    [ "type", "class_graphics_text.html#aa58f7cf080bad39a8f8be2e872abe61d", null ]
+    [ "text", "class_graphics_text.html#aeb38c8c0df9473cde331540d9904d352", null ]
 ];

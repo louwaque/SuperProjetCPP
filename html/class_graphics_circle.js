@@ -10,6 +10,5 @@ var class_graphics_circle =
     [ "radius", "class_graphics_circle.html#a8cf19074ff1c6b75b0be7becee5746aa", null ],
     [ "radiusPt", "class_graphics_circle.html#a3b702bcf7260035d3344ded956ceebed", null ],
     [ "radiusPt", "class_graphics_circle.html#a60591e8f8e2cea0fb23f7b25ba1f49cb", null ],
-    [ "setRadius", "class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb", null ],
-    [ "type", "class_graphics_circle.html#a3b8abd3846ad2d4b0f4dd8248118d64f", null ]
+    [ "setRadius", "class_graphics_circle.html#a3a6b7c69ebd3b69a7be96230618a64bb", null ]
 ];
