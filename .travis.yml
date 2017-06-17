@@ -16,6 +16,7 @@ env:
     - GH_REPO_REF: github.com/L0L022/SuperProjetCPP.git
     - DOC_HTML_DIR: $TRAVIS_BUILD_DIR/build/html
     - CTEST_OUTPUT_ON_FAILURE: 1
+    - DEPS_DIR: $HOME/deps
 
 # Install dependencies
 addons:
@@ -24,12 +25,6 @@ addons:
       - 'ubuntu-toolchain-r-test'
       - 'george-edison55-precise-backports'
     packages:
-      - cmake
-      - cmake-data
-      - doxygen
-      - doxygen-doc
-      - doxygen-latex
-      - doxygen-gui
       - graphviz
       - curl
       - g++-5
@@ -37,18 +32,34 @@ addons:
 
 install:
     - if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
+    - |
+    if [[ "${TRAVIS_OS_NAME}" == "linux" ]]; then
+      CMAKE_URL="https://cmake.org/files/v3.8/cmake-3.8.2-Linux-x86_64.tar.gz"
+      mkdir cmake && travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
+      export PATH=${DEPS_DIR}/cmake/bin:${PATH}
+    else
+      brew upgrade cmake || brew install cmake
+    fi
+  - cmake --version
+  - |
+    if [[ "${DOCUMENTATION}" == "true" ]]; then
+      DOXYGEN_URL="http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.11.linux.bin.tar.gz"
+      mkdir doxygen && travis_retry wget --quiet -O - ${DOXYGEN_URL} | tar --strip-components=1 -xz -C doxygen
+      export PATH=${DEPS_DIR}/doxygen/bin:${PATH}
+      doxygen --version
+    fi
+  - echo -en 'travis_fold:start:boost\\r'
+  - if [ -z "$(ls -A $DEPS_DIR/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 -j2 -d0 --with-test --with-signals --with-locale --with-serialization --prefix="$DEPS_DIR/boost-install" install && cd .. && rm -rf boost_1_64_0; fi
+  - echo -en 'travis_fold:end:boost\\r'
 
 cache:
   directories:
-  - $HOME/boost-install
+  - $DEPS_DIR
 
 script:
-  - echo -en 'travis_fold:start:boost\\r'
-  - if [ -z "$(ls -A $HOME/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 -j2 -d0 --with-test --with-signals --with-locale --with-serialization --prefix="$HOME/boost-install" install && cd .. && rm -rf boost_1_64_0; fi
-  - echo -en 'travis_fold:end:boost\\r'
   - echo -en 'travis_fold:start:cmake\\r'
   - mkdir build && cd build
-  - cmake .. -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install
+  - cmake .. -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$DEPS_DIR/boost-install
   - echo -en 'travis_fold:end:cmake\\r'
   - echo -en 'travis_fold:start:test\\r'
   - make -j2 check-core
