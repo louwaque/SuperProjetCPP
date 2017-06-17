@@ -59,6 +59,7 @@ install:
       rm -rf boost_1_64_0
     fi
   - echo -en 'travis_fold:end:boost\\r'
+  - cd $TRAVIS_BUILD_DIR
 
 cache:
   directories:
