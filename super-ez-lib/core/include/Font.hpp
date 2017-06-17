@@ -3,6 +3,12 @@
 
 #include <iostream>
 
+/*!
+ * \class Font
+ * \ingroup core
+ * \brief Représente une police d'écriture
+ */
+
 class Font
 {
 public:
