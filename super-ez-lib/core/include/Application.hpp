@@ -10,24 +10,27 @@
  */
 
 #include <ez-lib/ez-draw++.hpp>
+#include <memory>
+#include <boost/core/noncopyable.hpp>
+
+/**
+ * \defgroup core Core
+ * \brief Classes pour créer une application graphique
+ */
 
 /*!
  * \class Application
- * \brief Classe Apllication
  * \ingroup core
+ * \brief Classe Application
  *
- *  Cette classe est nécessaire à l'utilisation de certaines du module core ( éléments graphiques ).
- *  Q'une seul instance de cette classe doit être crée.
- *
- *
+ * Cette classe est nécessaire à l'utilisation de certaines classes du module core ( éléments graphiques ).
+ * Une seule instance de cette classe doit être créé.
  */
 
-class Application
+class Application : private boost::noncopyable
 {
 public:
   Application();
-  ~Application();
-  Application(const Application &src) = delete;
 
   inline void exec() { m_ezdraw->mainLoop(); }
 
@@ -38,7 +41,7 @@ public:
 
 private:
   static bool m_instantiated;
-  EZDraw *m_ezdraw;
+  std::unique_ptr<EZDraw> m_ezdraw;
   bool m_autoQuit;
 };
 
