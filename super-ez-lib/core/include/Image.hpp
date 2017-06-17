@@ -21,6 +21,7 @@ class Canvas;
 
  /*!
   * \class Image
+  * \ingroup core
   * \brief Représente une image
   */
 
