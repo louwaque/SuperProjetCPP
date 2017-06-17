@@ -18,7 +18,8 @@ class GroupPoints;
 
 /*!
  * \class Point
- * \brief Représente un point avec une abscisse, une ordonnée et une origine
+ * \ingroup core
+ * \brief Représente un point avec une abscisse, une ordonnée et une origine.
  *
  * Un point peut avoir un autre point comme origine.
  * Ainsi ses coordonnées x et y sont relatives par rapport à l'origine.
