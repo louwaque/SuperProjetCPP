@@ -46,7 +46,8 @@ script:
   - if [ -z "$(ls -A $HOME/boost-install)" ]; then curl -sL -o boost.tar.bz2 "https://dl.bintray.com/boostorg/release/1.64.0/source/boost_1_64_0.tar.bz2" && tar xf boost.tar.bz2 && cd boost_1_64_0 && ./bootstrap.sh && ./b2 -j2 -d0 --with-test --with-signals --with-locale --with-serialization --prefix="$HOME/boost-install" install && cd .. && rm -rf boost_1_64_0; fi
   - echo -en 'travis_fold:end:boost\\r'
   - echo -en 'travis_fold:start:cmake\\r'
-  - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install .
+  - mkdir build && cd build
+  - cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=$HOME/boost-install ..
   - echo -en 'travis_fold:end:cmake\\r'
   - echo -en 'travis_fold:start:test\\r'
   - make -j2 check-core
