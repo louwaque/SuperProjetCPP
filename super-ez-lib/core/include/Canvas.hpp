@@ -10,6 +10,12 @@
 
 class Window;
 
+/*!
+ * \class Canvas
+ * \ingroup core
+ * \brief Permet de dessiner dans une fenêtre
+ */
+
 class Canvas
 {
 public:
