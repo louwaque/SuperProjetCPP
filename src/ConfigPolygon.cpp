@@ -56,7 +56,7 @@ void ConfigPolygon::updatePoints()
   }
 }
 
-ConfigPolygon::Ptr ConfigPolygon::newPoint()
+GraphicsItem::Ptr ConfigPolygon::newPoint()
 {
   auto target = std::dynamic_pointer_cast<GraphicsPolygon>(m_target);
   if (target) {
