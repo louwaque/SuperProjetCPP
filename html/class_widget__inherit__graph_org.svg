@@ -62,25 +62,27 @@
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="class_config_item.html" target="_top" xlink:title="IHM pour modifier un GraphicsItem. ">
-<polygon fill="white" stroke="black" points="119,-188 119,-322 219,-322 219,-188 119,-188"/>
-<text text-anchor="middle" x="169" y="-310" font-family="Helvetica,sans-Serif" font-size="10.00">ConfigItem</text>
-<polyline fill="none" stroke="black" points="119,-303 219,-303 "/>
-<text text-anchor="start" x="127" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00"># m_target</text>
-<text text-anchor="start" x="127" y="-280" font-family="Helvetica,sans-Serif" font-size="10.00"># m_layout</text>
-<polyline fill="none" stroke="black" points="119,-273 219,-273 "/>
-<text text-anchor="start" x="127" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConfigItem()</text>
-<text text-anchor="start" x="127" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ target()</text>
-<text text-anchor="start" x="127" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ setTarget()</text>
-<text text-anchor="start" x="127" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
-<text text-anchor="start" x="127" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<polygon fill="white" stroke="black" points="119,-177 119,-333 219,-333 219,-177 119,-177"/>
+<text text-anchor="middle" x="169" y="-321" font-family="Helvetica,sans-Serif" font-size="10.00">ConfigItem</text>
+<polyline fill="none" stroke="black" points="119,-314 219,-314 "/>
+<text text-anchor="start" x="127" y="-302" font-family="Helvetica,sans-Serif" font-size="10.00"># m_target</text>
+<text text-anchor="start" x="127" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00"># m_layout</text>
+<polyline fill="none" stroke="black" points="119,-284 219,-284 "/>
+<text text-anchor="start" x="127" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConfigItem()</text>
+<text text-anchor="start" x="127" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ target()</text>
+<text text-anchor="start" x="127" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ setTarget()</text>
+<text text-anchor="start" x="127" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
+<text text-anchor="start" x="127" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<text text-anchor="start" x="127" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">+ wantClose()</text>
 <text text-anchor="start" x="127" y="-206" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
 <text text-anchor="start" x="127" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00"># loadData()</text>
+<text text-anchor="start" x="127" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00">* wantClose()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M323.394,-488.925C290.532,-462.871 254.273,-429.836 228,-394 212.209,-372.461 199.604,-346.047 190.166,-322.115"/>
+<path fill="none" stroke="midnightblue" d="M323.394,-488.925C290.532,-462.871 254.273,-429.836 228,-394 214.597,-375.718 203.489,-353.924 194.665,-333.116"/>
 <polygon fill="none" stroke="midnightblue" points="321.634,-491.992 331.668,-495.396 325.947,-486.479 321.634,-491.992"/>
 </g>
 <!-- Node10 -->
@@ -213,20 +215,21 @@
 <!-- Node14 -->
 <g id="node14" class="node"><title>Node14</title>
 <g id="a_node14"><a xlink:href="class_tools_window.html" target="_top" xlink:title="Barre d&#39;outils pour créer des formes. ">
-<polygon fill="white" stroke="black" points="749,-215.5 749,-294.5 849,-294.5 849,-215.5 749,-215.5"/>
-<text text-anchor="middle" x="799" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToolsWindow</text>
-<polyline fill="none" stroke="black" points="749,-275.5 849,-275.5 "/>
-<text text-anchor="middle" x="799" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="749,-256.5 849,-256.5 "/>
-<text text-anchor="start" x="757" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ToolsWindow()</text>
-<text text-anchor="start" x="757" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
-<text text-anchor="start" x="757" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<polygon fill="white" stroke="black" points="749,-210 749,-300 849,-300 849,-210 749,-210"/>
+<text text-anchor="middle" x="799" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">ToolsWindow</text>
+<polyline fill="none" stroke="black" points="749,-281 849,-281 "/>
+<text text-anchor="middle" x="799" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="749,-262 849,-262 "/>
+<text text-anchor="start" x="757" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ ToolsWindow()</text>
+<text text-anchor="start" x="757" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
+<text text-anchor="start" x="757" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<text text-anchor="start" x="757" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge13" class="edge"><title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M487.905,-526.75C562.513,-505.578 670.756,-464.78 740,-394 766.876,-366.527 782.368,-324.9 790.673,-294.55"/>
+<path fill="none" stroke="midnightblue" d="M487.905,-526.75C562.513,-505.578 670.756,-464.78 740,-394 765.236,-368.204 780.435,-329.928 789.071,-300.226"/>
 <polygon fill="none" stroke="midnightblue" points="486.764,-523.434 478.066,-529.484 488.638,-530.179 486.764,-523.434"/>
 </g>
 <!-- Node2 -->
@@ -247,7 +250,7 @@
 <text text-anchor="start" x="362.5" y="-818" font-family="Helvetica,sans-Serif" font-size="10.00">+ position()</text>
 <text text-anchor="start" x="362.5" y="-807" font-family="Helvetica,sans-Serif" font-size="10.00">+ position()</text>
 <text text-anchor="start" x="362.5" y="-796" font-family="Helvetica,sans-Serif" font-size="10.00">+ color()</text>
-<text text-anchor="start" x="362.5" y="-785" font-family="Helvetica,sans-Serif" font-size="10.00">et 18 de plus...</text>
+<text text-anchor="start" x="362.5" y="-785" font-family="Helvetica,sans-Serif" font-size="10.00">et 19 de plus...</text>
 <text text-anchor="start" x="362.5" y="-774" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
 <text text-anchor="start" x="362.5" y="-763" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
 <text text-anchor="start" x="362.5" y="-752" font-family="Helvetica,sans-Serif" font-size="10.00">+ make()</text>
@@ -307,8 +310,8 @@
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M139.316,-178.429C130.36,-157.789 119.969,-135.693 109,-116 101.059,-101.743 91.0903,-86.817 82.0109,-74.0688"/>
-<polygon fill="none" stroke="midnightblue" points="136.173,-179.982 143.327,-187.797 142.608,-177.226 136.173,-179.982"/>
+<path fill="none" stroke="midnightblue" d="M134.385,-167.253C126.63,-149.973 118.01,-132.176 109,-116 101.059,-101.743 91.0903,-86.817 82.0109,-74.0688"/>
+<polygon fill="none" stroke="midnightblue" points="131.356,-169.057 138.601,-176.786 137.757,-166.225 131.356,-169.057"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
@@ -326,8 +329,8 @@
 </g>
 <!-- Node6&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node6&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M169,-177.609C169,-144.366 169,-106.858 169,-79.5669"/>
-<polygon fill="none" stroke="midnightblue" points="165.5,-177.773 169,-187.773 172.5,-177.773 165.5,-177.773"/>
+<path fill="none" stroke="midnightblue" d="M169,-166.642C169,-136.401 169,-104.031 169,-79.7218"/>
+<polygon fill="none" stroke="midnightblue" points="165.5,-166.801 169,-176.801 172.5,-166.801 165.5,-166.801"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
@@ -344,8 +347,8 @@
 </g>
 <!-- Node6&#45;&gt;Node9 -->
 <g id="edge8" class="edge"><title>Node6&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M198.303,-178.535C207.11,-157.894 217.3,-135.773 228,-116 235.671,-101.824 245.263,-86.9141 253.989,-74.1558"/>
-<polygon fill="none" stroke="midnightblue" points="195.014,-177.326 194.356,-187.9 201.465,-180.044 195.014,-177.326"/>
+<path fill="none" stroke="midnightblue" d="M203.149,-167.356C210.766,-150.068 219.211,-132.242 228,-116 235.671,-101.824 245.263,-86.9141 253.989,-74.1558"/>
+<polygon fill="none" stroke="midnightblue" points="199.781,-166.325 199.005,-176.892 206.201,-169.115 199.781,-166.325"/>
 </g>
 </g>
 </svg>

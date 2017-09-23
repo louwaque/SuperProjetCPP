@@ -72,7 +72,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="517.5" y="-818" font-family="Helvetica,sans-Serif" font-size="10.00">+ position()</text>
 <text text-anchor="start" x="517.5" y="-807" font-family="Helvetica,sans-Serif" font-size="10.00">+ position()</text>
 <text text-anchor="start" x="517.5" y="-796" font-family="Helvetica,sans-Serif" font-size="10.00">+ color()</text>
-<text text-anchor="start" x="517.5" y="-785" font-family="Helvetica,sans-Serif" font-size="10.00">et 18 de plus...</text>
+<text text-anchor="start" x="517.5" y="-785" font-family="Helvetica,sans-Serif" font-size="10.00">et 19 de plus...</text>
 <text text-anchor="start" x="517.5" y="-774" font-family="Helvetica,sans-Serif" font-size="10.00">+ focusItem()</text>
 <text text-anchor="start" x="517.5" y="-763" font-family="Helvetica,sans-Serif" font-size="10.00">+ setFocusItem()</text>
 <text text-anchor="start" x="517.5" y="-752" font-family="Helvetica,sans-Serif" font-size="10.00">+ make()</text>
@@ -480,25 +480,27 @@ var sectionId = 'dynsection-0';
 <!-- Node20 -->
 <g id="node20" class="node"><title>Node20</title>
 <g id="a_node20"><a xlink:href="class_config_item.html" target="_top" xlink:title="IHM pour modifier un GraphicsItem. ">
-<polygon fill="white" stroke="black" points="906,-188 906,-322 1006,-322 1006,-188 906,-188"/>
-<text text-anchor="middle" x="956" y="-310" font-family="Helvetica,sans-Serif" font-size="10.00">ConfigItem</text>
-<polyline fill="none" stroke="black" points="906,-303 1006,-303 "/>
-<text text-anchor="start" x="914" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00"># m_target</text>
-<text text-anchor="start" x="914" y="-280" font-family="Helvetica,sans-Serif" font-size="10.00"># m_layout</text>
-<polyline fill="none" stroke="black" points="906,-273 1006,-273 "/>
-<text text-anchor="start" x="914" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConfigItem()</text>
-<text text-anchor="start" x="914" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ target()</text>
-<text text-anchor="start" x="914" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ setTarget()</text>
-<text text-anchor="start" x="914" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
-<text text-anchor="start" x="914" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<polygon fill="white" stroke="black" points="906,-177 906,-333 1006,-333 1006,-177 906,-177"/>
+<text text-anchor="middle" x="956" y="-321" font-family="Helvetica,sans-Serif" font-size="10.00">ConfigItem</text>
+<polyline fill="none" stroke="black" points="906,-314 1006,-314 "/>
+<text text-anchor="start" x="914" y="-302" font-family="Helvetica,sans-Serif" font-size="10.00"># m_target</text>
+<text text-anchor="start" x="914" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00"># m_layout</text>
+<polyline fill="none" stroke="black" points="906,-284 1006,-284 "/>
+<text text-anchor="start" x="914" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00">+ ConfigItem()</text>
+<text text-anchor="start" x="914" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ target()</text>
+<text text-anchor="start" x="914" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ setTarget()</text>
+<text text-anchor="start" x="914" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
+<text text-anchor="start" x="914" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<text text-anchor="start" x="914" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">+ wantClose()</text>
 <text text-anchor="start" x="914" y="-206" font-family="Helvetica,sans-Serif" font-size="10.00"># meUpdate()</text>
 <text text-anchor="start" x="914" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00"># loadData()</text>
+<text text-anchor="start" x="914" y="-184" font-family="Helvetica,sans-Serif" font-size="10.00">* wantClose()</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node20 -->
 <g id="edge19" class="edge"><title>Node18&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1029.76,-421.512C1024.62,-412.284 1019.64,-403.047 1015,-394 1003.22,-371.05 991.73,-345.212 982.065,-322.153"/>
+<path fill="none" stroke="midnightblue" d="M1029.76,-421.512C1024.62,-412.284 1019.64,-403.047 1015,-394 1005.07,-374.643 995.336,-353.232 986.733,-333.166"/>
 <polygon fill="none" stroke="midnightblue" points="1026.78,-423.353 1034.73,-430.351 1032.88,-419.92 1026.78,-423.353"/>
 </g>
 <!-- Node24 -->
@@ -631,20 +633,21 @@ var sectionId = 'dynsection-0';
 <!-- Node28 -->
 <g id="node28" class="node"><title>Node28</title>
 <g id="a_node28"><a xlink:href="class_tools_window.html" target="_top" xlink:title="Barre d&#39;outils pour créer des formes. ">
-<polygon fill="white" stroke="black" points="1536,-215.5 1536,-294.5 1636,-294.5 1636,-215.5 1536,-215.5"/>
-<text text-anchor="middle" x="1586" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToolsWindow</text>
-<polyline fill="none" stroke="black" points="1536,-275.5 1636,-275.5 "/>
-<text text-anchor="middle" x="1586" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1536,-256.5 1636,-256.5 "/>
-<text text-anchor="start" x="1544" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ToolsWindow()</text>
-<text text-anchor="start" x="1544" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
-<text text-anchor="start" x="1544" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<polygon fill="white" stroke="black" points="1536,-210 1536,-300 1636,-300 1636,-210 1536,-210"/>
+<text text-anchor="middle" x="1586" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">ToolsWindow</text>
+<polyline fill="none" stroke="black" points="1536,-281 1636,-281 "/>
+<text text-anchor="middle" x="1586" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1536,-262 1636,-262 "/>
+<text text-anchor="start" x="1544" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">+ ToolsWindow()</text>
+<text text-anchor="start" x="1544" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumWidth()</text>
+<text text-anchor="start" x="1544" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimumHeight()</text>
+<text text-anchor="start" x="1544" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00"># meDraw()</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node28 -->
 <g id="edge27" class="edge"><title>Node18&#45;&gt;Node28</title>
-<path fill="none" stroke="midnightblue" d="M1190,-535.884C1282.96,-520.484 1432.91,-482.891 1527,-394 1555.13,-367.427 1570.47,-325.247 1578.41,-294.509"/>
+<path fill="none" stroke="midnightblue" d="M1190,-535.884C1282.96,-520.484 1432.91,-482.891 1527,-394 1553.42,-369.038 1568.57,-330.303 1576.88,-300.217"/>
 <polygon fill="none" stroke="midnightblue" points="1189.39,-532.437 1180.07,-537.48 1190.5,-539.349 1189.39,-532.437"/>
 </g>
 <!-- Node21 -->
@@ -662,8 +665,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node20&#45;&gt;Node21 -->
 <g id="edge20" class="edge"><title>Node20&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M926.316,-178.429C917.36,-157.789 906.969,-135.693 896,-116 888.059,-101.743 878.09,-86.817 869.011,-74.0688"/>
-<polygon fill="none" stroke="midnightblue" points="923.173,-179.982 930.327,-187.797 929.608,-177.226 923.173,-179.982"/>
+<path fill="none" stroke="midnightblue" d="M921.385,-167.253C913.63,-149.973 905.01,-132.176 896,-116 888.059,-101.743 878.09,-86.817 869.011,-74.0688"/>
+<polygon fill="none" stroke="midnightblue" points="918.356,-169.057 925.601,-176.786 924.757,-166.225 918.356,-169.057"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node"><title>Node22</title>
@@ -681,8 +684,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node20&#45;&gt;Node22 -->
 <g id="edge21" class="edge"><title>Node20&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M956,-177.609C956,-144.366 956,-106.858 956,-79.5669"/>
-<polygon fill="none" stroke="midnightblue" points="952.5,-177.773 956,-187.773 959.5,-177.773 952.5,-177.773"/>
+<path fill="none" stroke="midnightblue" d="M956,-166.642C956,-136.401 956,-104.031 956,-79.7218"/>
+<polygon fill="none" stroke="midnightblue" points="952.5,-166.801 956,-176.801 959.5,-166.801 952.5,-166.801"/>
 </g>
 <!-- Node23 -->
 <g id="node23" class="node"><title>Node23</title>
@@ -699,8 +702,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node20&#45;&gt;Node23 -->
 <g id="edge22" class="edge"><title>Node20&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M985.303,-178.535C994.11,-157.894 1004.3,-135.773 1015,-116 1022.67,-101.824 1032.26,-86.9141 1040.99,-74.1558"/>
-<polygon fill="none" stroke="midnightblue" points="982.014,-177.326 981.356,-187.9 988.465,-180.044 982.014,-177.326"/>
+<path fill="none" stroke="midnightblue" d="M990.149,-167.356C997.766,-150.068 1006.21,-132.242 1015,-116 1022.67,-101.824 1032.26,-86.9141 1040.99,-74.1558"/>
+<polygon fill="none" stroke="midnightblue" points="986.781,-166.325 986.005,-176.892 993.201,-169.115 986.781,-166.325"/>
 </g>
 </g>
 </svg>

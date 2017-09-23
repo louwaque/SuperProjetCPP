@@ -3,6 +3,8 @@ var NAVTREE =
   [ "Super Project c++", "index.html", [
     [ "SuperProjetCPP", "md__home_travis_build_L0L022_SuperProjetCPP_README.html", null ],
     [ "core", "md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_core_README.html", null ],
+    [ "graphics", "md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_graphics_README.html", null ],
+    [ "widget", "md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_widget_README.html", null ],
     [ "Liste des choses à faire", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
@@ -29,8 +31,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cpp_source.html",
-"class_graphics_factory.html",
-"class_point.html#a89bad78a572d1d51871c5cd4493a38b1"
+"class_graphics_ellipse.html#ae757f82dedd87c05654eef5ee83b582d",
+"class_point.html#a7eb9a5f8efd5d11e6fa8e2af19250410"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

@@ -12,6 +12,7 @@ var class_graphics_item =
     [ "children", "class_graphics_item.html#add8da6dfd8f84b92d5f4a286e746972c", null ],
     [ "children", "class_graphics_item.html#a2315dd19bd364fed69bf7412c47d7792", null ],
     [ "color", "class_graphics_item.html#a29aeb3047cd596ecedf48f565293dbc2", null ],
+    [ "deleteLater", "class_graphics_item.html#a1c5b64f46569d749ec793572a412159f", null ],
     [ "draw", "class_graphics_item.html#af4f2af374b066e17a5e0e1dd1565c689", null ],
     [ "handleEvent", "class_graphics_item.html#ad6c62fa07246bc1d7b9eae6340a246e2", null ],
     [ "hasFocus", "class_graphics_item.html#a1f3b7de02ad675cd54aa46feec7de2eb", null ],
