@@ -21,16 +21,10 @@ bool GraphicsSquare::meIsOver(const Point &absoluteP)
 
 Point GraphicsSquare::corrector(const Point &pos, const Point &corner)
 {
-  Point diffP(pos - corner);
-  double radius = std::hypot(diffP.x(), diffP.y());
-
-  Point res(std::cos(std::sqrt(2)/2.0)*radius, std::sin(std::sqrt(2)/2.0)*radius);
-
-  if (diffP.x() < 0)
-    res.setX(-res.x());
-
-  if (diffP.y() < 0)
-    res.setY(-res.y());
-
+  Point diffP(pos - corner), res;
+  if (abs(diffP.x()) >= abs(diffP.y()))
+    res = {diffP.x(), diffP.x()};
+  else
+    res = {diffP.y(), diffP.y()};
   return corner + res;
 }
