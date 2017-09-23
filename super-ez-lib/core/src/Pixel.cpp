@@ -39,5 +39,8 @@ EZPixel Pixel::pixel()
 
 const EZPixel Pixel::pixel() const
 {
-  return pixel();
+  if (m_image)
+    return m_image->getPixel(m_position.x(), m_position.y());
+  else
+    throw std::runtime_error("Pixel::pixel const image ptr is null");
 }

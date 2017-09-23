@@ -56,6 +56,8 @@ public:
   Image horizontalSymmetry() const { return m_image->horizontalSymmetry(); }
   Image scale(const double factor) const;
 
+  static Image rainbow(const size_t width, const size_t height);
+
 private:
   Image(EZImage *image);
 

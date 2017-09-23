@@ -42,3 +42,19 @@ Image Image::scale(const double factor) const
   else
     throw std::runtime_error("Image::scale a negative factor is prohibited");
 }
+
+Image Image::rainbow(const size_t width, const size_t height)
+{
+  Image image(width, height);
+  for (int x = 0; x < image.width(); ++x) {
+    for (int y = 0; y < image.height(); ++y) {
+      auto p = image.pixel({x, y});
+      auto c = p.color();
+      c.setValue(1);
+      c.setSaturation(1);
+      c.setHue(y/double(image.height())*360.0);
+      p.setColor(c);
+    }
+  }
+  return image;
+}
