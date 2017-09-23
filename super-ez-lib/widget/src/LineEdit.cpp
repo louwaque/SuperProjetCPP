@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <KeyEvent.hpp>
 #include <GraphicsBlinkAnimation.hpp>
+#include <UTF8Helper.hpp>
 
 LineEdit::LineEdit(GraphicsItem *parent)
 : Widget(parent),
@@ -74,22 +75,22 @@ void LineEdit::meHandleEvent(const Event &event)
       std::string text = m_text;
       if (key.key() == KeyEvent::Key::BackSpace) {
           if (!text.empty() && m_cursor > 0 && m_editable) {
-          text.erase(m_cursor - 1, 1);
+          UTF8Helper::erase(text, m_cursor - 1, 1);
           --m_cursor;
           setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Delete) {
-        if (m_cursor < text.size() && m_editable) {
-          text.erase(m_cursor, 1);
+        if (m_cursor < UTF8Helper::size(text) && m_editable) {
+          UTF8Helper::erase(text, m_cursor, 1);
           setText(text);
         }
       } else if (key.key() == KeyEvent::Key::Return) {
         m_accepted();
       } else if (!key.keyString().empty() && m_editable) {
-        text.insert(m_cursor, key.keyString());
+        UTF8Helper::insert(text, m_cursor, key.keyString());
         ++m_cursor;
         setText(text);
-      } else if (key.key() == KeyEvent::Key::Right && m_cursor < m_text.size()) {
+      } else if (key.key() == KeyEvent::Key::Right && m_cursor < UTF8Helper::size(m_text)) {
         ++m_cursor;
         updateCursor();
       } else if (key.key() == KeyEvent::Key::Left && m_cursor > 0) {
@@ -102,8 +103,9 @@ void LineEdit::meHandleEvent(const Event &event)
 
 void LineEdit::updateCursor()
 {
-  if (m_cursor > m_text.size())
-    m_cursor = m_text.size();
+  size_t m_textSize = UTF8Helper::size(m_text);
+  if (m_cursor > m_textSize)
+    m_cursor = m_textSize;
 
   size_t nbDisplayableLetters = m_label->width()/m_label->font().width();
 
@@ -111,18 +113,18 @@ void LineEdit::updateCursor()
 
   size_t x = 0;
 
-  if (m_text.size() > nbDisplayableLetters) {
+  if (m_textSize > nbDisplayableLetters) {
     if (m_cursor < nbDisplayableLetters/2) {
       pos = 0;
       x = m_cursor;
-    } else if (m_text.size() - m_cursor < nbDisplayableLetters/2) {
-      pos = m_text.size() - nbDisplayableLetters;
-      x = nbDisplayableLetters - (m_text.size() - m_cursor);
+    } else if (m_textSize - m_cursor < nbDisplayableLetters/2) {
+      pos = m_textSize - nbDisplayableLetters;
+      x = nbDisplayableLetters - (m_textSize - m_cursor);
     } else {
       pos = m_cursor - nbDisplayableLetters/2;
       x = nbDisplayableLetters/2;
     }
-    m_label->setText(m_text.substr(pos, count));
+    m_label->setText(UTF8Helper::substr(m_text, pos, count));
   } else {
     m_label->setText(m_text);
     x = m_cursor;

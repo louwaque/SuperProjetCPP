@@ -21,10 +21,10 @@ Compilateur compatible c++17
 - Pour avoir : set (CMAKE_CXX_STANDARD 17)
 
 [BOOST 1.64.0](http://www.boost.org/users/history/version_1_64_0.html) avec :
-- signal2 : utilisé par widget
-- locale : utilisé par core
-- serialization : pour la sauvegarde
-- test : pour les tests unitaires
+- signal2 : signaux dans les widgets
+- locale : conversion UTF-8 <-> Latin-1 et itération dans une chaine UTF-8
+- serialization : pour la sauvegarde (pas fait)
+- test : tests unitaires
 
 ## Compilation
 

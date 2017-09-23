@@ -44,6 +44,3 @@ Le même principe qu'EZPixel mais en utilisant la classe Color.
 
 #### TODO
 - Être compatible avec BOOST serialization
-
-### Canvas et KeyEvent TODO
-- Pouvoir afficher les accents provenant du code et du clavier

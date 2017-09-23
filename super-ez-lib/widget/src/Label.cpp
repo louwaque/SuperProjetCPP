@@ -1,8 +1,10 @@
 #include "../include/Label.hpp"
+#include <UTF8Helper.hpp>
 
 Label::Label(GraphicsItem *parent)
 : Widget(parent),
   m_text(nullptr),
+  m_textSize(0),
   m_align(LabelAlign::Left)
 {
   m_text = make<GraphicsText>(this);
@@ -23,6 +25,7 @@ void Label::setText(const std::string &text)
 {
   if (m_text->text() != text) {
     m_text->setText(text);
+    m_textSize = UTF8Helper::size(m_text->text());
     m_textChanged();
     m_minimumWidthChanged();
 
@@ -44,7 +47,7 @@ void Label::setFont(const Font &font)
 
 size_t Label::minimumWidth() const
 {
-  return m_text->font().width() * m_text->text().size();
+  return m_text->font().width() * m_textSize;
 }
 
 size_t Label::minimumHeight() const

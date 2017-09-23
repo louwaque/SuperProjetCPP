@@ -47,6 +47,7 @@ private:
 
 private:
   std::shared_ptr<GraphicsText> m_text;
+  size_t m_textSize;
   LabelAlign m_align;
 
   signal_t m_textChanged;
