@@ -1,7 +1,8 @@
 # core
 
-Le module core est une couche construite au-dessus de la bibliothèque EZDraw++ et qui a pour but de la cacher.
-Cela nous permet en suite de construire par-dessus d’autres modules avec plus de « cohésion » que si nous avions utilisé EZDraw++ directement.
+Le module core est une couche construite par-dessus la bibliothèque EZDraw++.
+Le reste de l'application est donc indépendant de l'interface d'EZDraw++.
+Des fonctionnalités qui ne sont pas dans EZDraw++ ont aussi été ajouté.
 
 ### Application
 C’est une simple surcharge de la classe EZDraw.
