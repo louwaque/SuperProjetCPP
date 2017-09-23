@@ -90,6 +90,8 @@ var files =
       [ "ToolsWindow", "class_tools_window.html", "class_tools_window" ]
     ] ],
     [ "Toy.hpp", "_toy_8hpp_source.html", null ],
+    [ "UTF8Helper.cpp", "_u_t_f8_helper_8cpp_source.html", null ],
+    [ "UTF8Helper.hpp", "_u_t_f8_helper_8hpp.html", "_u_t_f8_helper_8hpp" ],
     [ "Widget.cpp", "_widget_8cpp_source.html", null ],
     [ "Widget.hpp", "_widget_8hpp_source.html", null ],
     [ "Window.cpp", "_window_8cpp_source.html", null ],

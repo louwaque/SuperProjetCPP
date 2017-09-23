@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['widget',['widget',['../md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_widget_README.html',1,'']]],
-  ['widget',['Widget',['../class_widget.html',1,'Widget'],['../group__widget.html',1,'(Espace de nommage global)']]],
-  ['window',['Window',['../class_window.html',1,'']]]
+  ['value',['value',['../class_color.html#ae8cb1f2e0c1424555e2f606ba9d21e57',1,'Color']]]
 ];

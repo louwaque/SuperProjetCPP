@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['x',['x',['../class_point.html#a2aa897aa68c2f3e6df3a46738f27a0ac',1,'Point']]]
+  ['widget',['widget',['../md__home_travis_build_L0L022_SuperProjetCPP_super-ez-lib_widget_README.html',1,'']]],
+  ['widget',['Widget',['../class_widget.html',1,'Widget'],['../group__widget.html',1,'(Espace de nommage global)']]],
+  ['window',['Window',['../class_window.html',1,'']]]
 ];
