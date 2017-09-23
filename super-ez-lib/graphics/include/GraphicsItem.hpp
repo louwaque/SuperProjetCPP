@@ -127,6 +127,8 @@ public:
   template<class T, class... Args>
   static std::shared_ptr<T> make(Args&&... args);
 
+  inline void deleteLater() { m_deleteLater = true; }
+
 protected:
   virtual void meDraw(Canvas *canvas) {}
   virtual void meUpdate(const unsigned int time) {}
@@ -154,6 +156,7 @@ private:
   bool m_isFill;
   bool m_isEnable;
   bool m_isVisible;
+  bool m_deleteLater;
 };
 
 template<typename... Types>

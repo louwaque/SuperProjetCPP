@@ -16,7 +16,8 @@ GraphicsItem::GraphicsItem(GraphicsItem *parent)
   m_thick(1),
   m_isFill(false),
   m_isEnable(true),
-  m_isVisible(true)
+  m_isVisible(true),
+  m_deleteLater(false)
 {
   setParent(parent);
 }
@@ -93,9 +94,14 @@ void GraphicsItem::update(const unsigned int time)
   if (!m_isEnable)
     return;
 
-  for (auto &ptr : m_children)
-    if (ptr)
-      ptr->update(time);
+  for (auto &ptr : m_children) {
+    if (ptr) {
+      if (ptr->m_deleteLater)
+        ptr->setParent(); // or delete
+      else
+        ptr->update(time);
+    }
+  }
 
   meUpdate(time);
 }
