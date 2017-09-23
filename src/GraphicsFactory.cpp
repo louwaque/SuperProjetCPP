@@ -20,6 +20,7 @@
 GraphicsItem::Ptr GraphicsFactory::circle(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsCircle>();
+  item->radiusPt().setRelative(50, 50);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -35,6 +36,7 @@ GraphicsItem::Ptr GraphicsFactory::circle(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::ellipse(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsEllipse>();
+  item->radius().setRelative(100, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -50,6 +52,7 @@ GraphicsItem::Ptr GraphicsFactory::ellipse(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::line(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsLine>();
+  item->second().setRelative(100, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -77,6 +80,7 @@ GraphicsItem::Ptr GraphicsFactory::polygon(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::rectangle(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsRectangle>();
+  item->bottomRight().setRelative(100, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -92,6 +96,7 @@ GraphicsItem::Ptr GraphicsFactory::rectangle(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::square(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsSquare>();
+  item->bottomRight().setRelative(100, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -107,6 +112,7 @@ GraphicsItem::Ptr GraphicsFactory::square(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::text(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsText>();
+  item->setText("texte demo");
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -119,6 +125,8 @@ GraphicsItem::Ptr GraphicsFactory::text(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::triangle(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsTriangle>();
+  item->second().setRelative(-100, 100);
+  item->third().setRelative(100, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());
@@ -137,6 +145,7 @@ GraphicsItem::Ptr GraphicsFactory::triangle(std::shared_ptr<Layout> layout)
 GraphicsItem::Ptr GraphicsFactory::image(std::shared_ptr<Layout> layout)
 {
   auto item = GraphicsItem::make<GraphicsImage>();
+  item->image() = Image::rainbow(200, 100);
 
   auto pt1 = GraphicsItem::make<GraphicsPoint>(item.get());
   pt1->position().join(item->position());

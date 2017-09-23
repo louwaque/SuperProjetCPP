@@ -16,10 +16,10 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   title->setAlign(Label::LabelAlign::Center);
   titleLayout->push_back(title);
 
-  auto m_buttonClose = make<Button>("x", this);
+  auto m_buttonClose = make<Button>("Fermer", this);
   titleLayout->push_back(m_buttonClose);
   m_buttonClose->clicked([this]() {
-    setParent();
+    m_wantClose();
   });
 
   m_spinBoxPosX = make<SpinBox>();
@@ -71,9 +71,11 @@ ConfigItem::ConfigItem(GraphicsItem *parent)
   auto removeButton = make<Button>("Supprimer");
   m_layout->push_back(removeButton);
   removeButton->clicked([this]() {
+    m_wantClose(); //FIXME on triche un peu
     if (m_target)
-      m_target->setParent();
-    m_target.reset();
+      m_target->deleteLater();
+
+    setTarget(nullptr);
   });
 
   widthChanged([this]() {

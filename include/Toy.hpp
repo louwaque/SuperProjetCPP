@@ -33,6 +33,9 @@ Toy<ConfigHelper>::Toy(Ptr target, Ptr anchor, std::shared_ptr<Layout> layout, G
 {
   m_config = make<ConfigHelper>();
   m_config->setTarget(m_target);
+  m_config->wantClose([this]() {
+    m_layout->clear();
+  });
 
   if (m_anchor)
     m_anchor->setColor(Color::Green);

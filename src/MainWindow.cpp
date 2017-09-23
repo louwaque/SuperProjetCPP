@@ -6,7 +6,7 @@
 #include "ConfigItem.hpp"
 
 MainWindow::MainWindow()
-: Window(400, 400, "SuperProjetCPP"),
+: Window(800, 600, "SuperProjetCPP"),
   m_scene(nullptr),
   m_layout(nullptr),
   m_config(nullptr),

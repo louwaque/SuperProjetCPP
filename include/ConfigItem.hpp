@@ -31,6 +31,13 @@ public:
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
+  /*!
+   * \name Signaux
+   */
+  ///@{
+  inline co_t wantClose(const slot_t &subscriber) { return m_wantClose.connect(subscriber); }
+  ///@}
+
 protected:
   void meUpdate(const unsigned int time);
   virtual void loadData();
@@ -44,6 +51,8 @@ private:
   const unsigned int m_updateFrequency;
   std::shared_ptr<SpinBox> m_spinBoxPosX, m_spinBoxPosY, m_spinBoxZ, m_spinBoxThick, m_spinBoxFill;
   std::shared_ptr<LineEdit> m_lineEditColor;
+
+  signal_t m_wantClose;
 };
 
 #endif

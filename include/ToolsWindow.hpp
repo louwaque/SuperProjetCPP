@@ -24,8 +24,15 @@ public:
   size_t minimumWidth() const;
   size_t minimumHeight() const;
 
+protected:
+  void meDraw(Canvas* canvas);
+
+private:
+  void configItem(GraphicsItem::Ptr item);
+
 private:
   std::shared_ptr<Layout> m_layout, m_layoutConfig;
+  Point m_spawnPoint;
 };
 
 #endif

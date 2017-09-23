@@ -22,55 +22,55 @@ ToolsWindow::ToolsWindow(const std::shared_ptr<Layout> &layoutConfig, GraphicsIt
   auto circleButton = make<Button>("Cercle");
   m_layoutTool->push_back(circleButton);
   circleButton->clicked([this](){
-    GraphicsFactory::circle(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::circle(m_layoutConfig));
   });
 
   auto ellipseButton = make<Button>("Ellipse");
   m_layoutTool->push_back(ellipseButton);
   ellipseButton->clicked([this](){
-    GraphicsFactory::ellipse(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::ellipse(m_layoutConfig));
   });
 
   auto lineButton = make<Button>("Ligne");
   m_layoutTool->push_back(lineButton);
   lineButton->clicked([this](){
-    GraphicsFactory::line(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::line(m_layoutConfig));
   });
 
   auto polygonButton = make<Button>("Polygone");
   m_layoutTool->push_back(polygonButton);
   polygonButton->clicked([this](){
-    GraphicsFactory::polygon(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::polygon(m_layoutConfig));
   });
 
   auto rectangleButton = make<Button>("Rectangle");
   m_layoutTool->push_back(rectangleButton);
   rectangleButton->clicked([this](){
-    GraphicsFactory::rectangle(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::rectangle(m_layoutConfig));
   });
 
   auto squareButton = make<Button>("Carré");
   m_layoutTool->push_back(squareButton);
   squareButton->clicked([this](){
-    GraphicsFactory::square(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::square(m_layoutConfig));
   });
 
   auto textButton = make<Button>("Texte");
   m_layoutTool->push_back(textButton);
   textButton->clicked([this](){
-    GraphicsFactory::text(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::text(m_layoutConfig));
   });
 
   auto triangleButton = make<Button>("Triangle");
   m_layoutTool->push_back(triangleButton);
   triangleButton->clicked([this](){
-    GraphicsFactory::triangle(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::triangle(m_layoutConfig));
   });
 
   auto imageButton = make<Button>("Image");
   m_layoutTool->push_back(imageButton);
   imageButton->clicked([this](){
-    GraphicsFactory::image(m_layoutConfig)->setParent(this->parent());
+    configItem(GraphicsFactory::image(m_layoutConfig));
   });
 
   widthChanged([this](){
@@ -96,4 +96,16 @@ size_t ToolsWindow::minimumWidth() const
 size_t ToolsWindow::minimumHeight() const
 {
   return m_layout->minimumHeight();
+}
+
+void ToolsWindow::meDraw(Canvas* canvas)
+{
+  if (canvas)
+    m_spawnPoint.set(canvas->width()/2.0, canvas->height()/2.0);
+}
+
+void ToolsWindow::configItem(GraphicsItem::Ptr item)
+{
+  item->setParent(this->parent());
+  item->position().set(m_spawnPoint);
 }
